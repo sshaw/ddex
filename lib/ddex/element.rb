@@ -19,6 +19,11 @@ module DDEX
       end
     end
 
+    def to_xml(options = {})
+      # Defaults to Nokorigi or LibMXL elements
+      super.to_s
+    end
+
     def to_hash
       hash = {}
       roxml_attributes.keys.each do |attr|

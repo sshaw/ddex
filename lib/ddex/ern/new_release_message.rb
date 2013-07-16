@@ -3,7 +3,8 @@ require "ddex/ern/resource_list"
 module DDEX
   module ERN
     class NewReleaseMessage < Element
-      
+      xml_name "NewReleaseMessage"
+
       # TODO: get this from ERN.default_versoion, prob will have to override from_xml?      
       xml_namespaces :ernm => "http://ddex.net/xml/2010/ern-main/32"
       

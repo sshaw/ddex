@@ -37,10 +37,10 @@ module DDEX
     mattr_reader :config
     @@config = DEFAULT_CONFIG
 
-    def self.read(path)
+    def self.read(path, options = {})
     end
 
-    def self.write(object)
+    def self.write(object, options = {})
     end
   end
 end

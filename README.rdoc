@@ -1,6 +1,6 @@
 = DDEX
 
-DDEX metadata serialization 
+DDEX metadata serialization
 
 <b>DO NOT USE, WORK IN PROGRESS</b>
 

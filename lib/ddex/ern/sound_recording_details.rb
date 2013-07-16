@@ -4,6 +4,7 @@ module DDEX
   module ERN
     # TODO: SoundRecordindDetailsByTerritory is also defined in ddexC, investigate creating a base class
     class SoundRecordingDetails < Element
+      xml_name "SoundRecordindDetailsByTerritory"
       xml_accessor :language, :from => "@LanguageAndScriptCode"
 
 

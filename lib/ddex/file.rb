@@ -1,5 +1,7 @@
 module DDEX
   class File < Element
+    xml_name "File"
+
     xml_accessor :file_name, :from => "FileName"
     xml_accessor :file_path, :from => "FilePath"
     xml_accessor :hash_sum, :from => "HashSum", :in => "HashSum"
