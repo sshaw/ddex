@@ -1,7 +1,5 @@
 module DDEX
   class BitRate < Element
-    xml_name "BitRate"
-
     xml_accessor :unit_of_measure, :from => "@UnitOfMeasure"
     #xml_accessor :rate, :from => "node()", :as => Float
     xml_accessor :rate, :from => ".", :as => Float

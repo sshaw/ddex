@@ -1,6 +1,7 @@
 require "active_support/core_ext/module/attribute_accessors"
 
 require "ddex/core"
+require "ddex/ern/image"
 require "ddex/ern/new_release_message"
 require "ddex/ern/preview_details"
 require "ddex/ern/resource_list"

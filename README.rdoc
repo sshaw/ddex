@@ -30,8 +30,8 @@ DDEX metadata serialization
  xml = DDEX::ERN.write(message)
 
  details = TechnicalSoundRecordingDetails.new(hash)
- p details.to_xml
  p details.to_hash
+ puts details.to_xml
 
 Currently only the music portion of Electronic Release Notification Message (ERN[M]) is supported -for now!
 
@@ -41,7 +41,7 @@ Currently only the music portion of Electronic Release Notification Message (ERN
 
 A version must have a configuration that describes the important XML attributes. These can be added/modified as necessary:
 
-  cfg = DDEX::ERN.config[ DDEX::ERB.version ]
+  cfg = DDEX::ERN.config[ DDEX::ERN.version ]
   p cfg[:namespace]
   p cfg[:schema_location]
   p cfg[:message_schema_location_id]

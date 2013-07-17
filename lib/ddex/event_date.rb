@@ -1,7 +1,5 @@
 module DDEX
   class EventDate < Element
-    xml_name "EventDate"
-
     %w[IsApproximate IsBefore IsAfter].each do |attr|
       xml_accessor "#{attr.underscore}?", :from => "@#{attr}"
     end

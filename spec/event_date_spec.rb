@@ -3,7 +3,7 @@ require "spec_helper"
 describe DDEX::EventDate do
   options = {:language => "en-US", :location_description => "Great!", :territory => "US"}
   subject { described_class.new(options) }
-
+  
   it { should be_a_kind_of DDEX::Element }
   its(:to_hash) { should eq options }
   # Need date!

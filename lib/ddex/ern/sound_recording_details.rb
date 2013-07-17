@@ -8,13 +8,13 @@ module DDEX
       xml_accessor :language, :from => "@LanguageAndScriptCode"
 
 
-      xml_accessor :creation_date, :from => "CreationDate", :as => EventDate
+      xml_accessor :creation_date, :as => EventDate
       xml_accessor :details, :from => "TechnicalSoundRecordingDetails", :as => TechnicalSoundRecordingDetails
       xml_accessor :excluded_territories, :from => "ExcludedTerritoryCode", :as => []
-      xml_accessor :parental_warning_type, :from => "ParentalWarningType"
-      xml_accessor :sequence_number, :from => "SequenceNumber"
+      xml_accessor :parental_warning_type
+      xml_accessor :sequence_number, :as => Integer
       xml_accessor :territories, :from => "TerritoryCode", :as => []
-      #xml_accessor :title, :
+      xml_accessor :title, :as => [Title]
     end
   end
 end

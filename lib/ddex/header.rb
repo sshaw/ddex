@@ -1,8 +1,8 @@
 require "ddex/messaging_party"
 
 module DDEX
-  # MessageHeader
   class Header < Element
+    xml_name "MessageHeader"
 
     #xml_accessor :audit_trail, :from => "MessageAuditTrail", :as => 
     xml_accessor :comment, :from => "Comment"

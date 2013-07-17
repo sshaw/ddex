@@ -2,6 +2,8 @@ module DDEX
   class Element
     include ROXML
 
+    xml_convention :camelcase
+
     def initialize(attributes = {})
       attributes.each do |name, value|
         name   = name.to_s
