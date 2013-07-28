@@ -5,6 +5,6 @@ module DDEX
   class ImageDetails < Element
     xml_name "ImageDetailsByTerritory"
 
-    xml_accessor :territory, :from => "TerritoryCode"
+    xml_accessor :territory_code, :from => :attr
   end  
 end

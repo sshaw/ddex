@@ -1,10 +1,11 @@
 require "active_support/core_ext/module/attribute_accessors"
 
 require "ddex/core"
+require "ddex/ern/deal_list"
 require "ddex/ern/image"
 require "ddex/ern/new_release_message"
 require "ddex/ern/preview_details"
-require "ddex/ern/resource_list"
+require "ddex/ern/release_deal"
 require "ddex/ern/sound_recording"
 require "ddex/ern/sound_recording_details"
 require "ddex/ern/technical_sound_recording_details"

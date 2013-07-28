@@ -1,7 +1,7 @@
 require "ddex/user_defined_value"
 
 module DDEX
-  class ImageType < SimpleElement
+  class SoundRecordingType < SimpleElement
     include UserDefinedValue
 
     # def to_s

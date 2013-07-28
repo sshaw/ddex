@@ -28,15 +28,15 @@ module DDEX
 
     def to_hash
       hash = {}
-      roxml_attributes.keys.each do |attr|
-        value = send(attr)
+      roxml_attributes.values.each do |attr|
+        value = send(attr.accessor)
         value = if value.is_a?(Array)
           value.map { |v| v.respond_to?(:to_hash) ? v.to_hash : v }
         else
           value.respond_to?(:to_hash) ? value.to_hash : value
         end
 
-        hash[attr.to_sym] = value unless value.nil?
+        hash[attr.attr_name.to_sym] = value unless value.nil?
       end
 
       hash
@@ -46,7 +46,7 @@ module DDEX
     def roxml_attributes
       @roxml_attributes ||= begin
         attr = {}
-        self.class.roxml_attrs.each { |v| attr[v.accessor] = v }
+        self.class.roxml_attrs.each { |v| attr[v.attr_name] = v }
         attr
       end
     end

@@ -1,15 +1,15 @@
 require "spec_helper"
 
 describe DDEX::EventDate do
-  options = {:language => "en-US", :location_description => "Great!", :territory => "US"}
-  subject { described_class.new(options) }
-  
-  it { should be_a_kind_of DDEX::Element }
-  its(:to_hash) { should eq options }
-  # Need date!
-  its(:to_xml) { should equal_xml %|<EventDate Language="en-US" LocationDescription="Great!" TerritoryCode="US"/>| }
+  let(:attributes) { Fabricate.attributes_for(:event_date) }
+  let(:xmldoc) {
+    %|<EventDate IsApproximate="#{attributes["approximate"]}"
+                 IsAfter="#{attributes["after"]}"
+                 IsBefore="#{attributes["before"]}"
+                 Language="#{attributes["language"]}"
+                 LocationDescription="#{attributes["location_description"]}"
+                 TerritoryCode="#{attributes["territory"]}"/>|
+  }
 
-  options.each do |method, value|
-    its(method) { should eq value }
-  end
+  it_should_behave_like "a DDEX element"
 end

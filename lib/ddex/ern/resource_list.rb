@@ -8,7 +8,7 @@ module DDEX
       xml_accessor :images, :from => "Image", :as => [Image]
       xml_accessor :sound_recordings, :from => "SoundRecording", :as => [SoundRecording]
 
-      #xml_accessor :midi, :from => "Midi", :as => [Midi]
+      #xml_accessor :midi, :from => "MIDI", :as => [MIDI]
       #xml_accessor :sheet_music, :from => "SheetMusic", :as => [SheetMusic]
       #xml_accessor :software, :from => "Software", :as => [Software]
       #xml_accessor :text, :from => "Text", :as => [Text]

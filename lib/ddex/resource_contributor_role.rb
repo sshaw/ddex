@@ -1,11 +1,9 @@
 require "ddex/user_defined_value"
 
 module DDEX
-  class ImageType < SimpleElement
+  class ResourceContributorRole < Element
     include UserDefinedValue
 
-    # def to_s
-    #   value.to_s
-    # end
+    xml_accessor :value, :from => "."
   end
 end

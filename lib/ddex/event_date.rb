@@ -1,11 +1,15 @@
+require "ddex/language"
+
 module DDEX
   class EventDate < Element
-    %w[IsApproximate IsBefore IsAfter].each do |attr|
-      xml_accessor "#{attr.underscore}?", :from => "@#{attr}"
+    include Language
+
+    %w[Approximate Before After].each do |attr|
+      xml_accessor "#{attr.underscore}?", :from => "@Is#{attr}"
     end
 
-    xml_accessor :language, :from => "@Language"
     xml_accessor :location_description, :from => "@LocationDescription"
     xml_accessor :territory, :from => "@TerritoryCode"
+    xml_accessor :value, :from => ".", :as => DateTime
   end
 end

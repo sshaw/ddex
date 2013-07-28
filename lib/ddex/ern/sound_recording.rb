@@ -3,7 +3,9 @@ require "ddex/ern/sound_recording_details"
 module DDEX
   module ERN
     # TODO: Also a ddexC sound recording, investigate base class
-    class SoundRecording < Resource
+    class SoundRecording < Element
+      include Resource
+      include UserDefinedValue
 
       %w[IsMedley IsPotpourri IsInstrumental IsBackground IsComputerGenerated].each do |attr|
         xml_accessor "#{attr.underscore}?", :from => "@#{attr}"
@@ -13,7 +15,6 @@ module DDEX
       xml_accessor :duration
       xml_accessor :instrumentation_description
       xml_accessor :instrumentation_description_language, :in => "InstrumentationDescription", :from => "@LanguageAndScriptCode"
-      xml_accessor :language, :from => "@LanguageAndScriptCode"
       xml_accessor :language_of_performance
       xml_accessor :mastered_date, :as => EventDate
 
