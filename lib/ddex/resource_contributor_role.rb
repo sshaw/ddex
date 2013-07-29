@@ -1,9 +1,7 @@
 require "ddex/user_defined_value"
 
 module DDEX
-  class ResourceContributorRole < Element
+  class ResourceContributorRole < SimpleElement
     include UserDefinedValue
-
-    xml_accessor :value, :from => "."
   end
 end

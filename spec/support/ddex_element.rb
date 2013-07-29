@@ -44,7 +44,14 @@ shared_examples_for "a DDEX element" do
   def to_hash(attributes)
     hash = {}
     attributes.each do |k,v|
-      hash[k.to_sym] = v.respond_to?(:to_hash) ? v.to_hash : v
+      hash[k.to_sym] = case
+        when v.respond_to?(:to_hash)
+          v.to_hash
+        when Array === v
+          v.map { |e| e.respond_to?(:to_hash) ? e.to_hash : e }
+        else
+          v
+      end
     end
     hash
   end

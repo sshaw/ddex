@@ -5,16 +5,19 @@ module DDEX
     xml_convention :camelcase
 
     def initialize(attributes = {})
+      raise ArgumentError, "attributes must be a Hash" unless Hash === attributes
+
       attributes.each do |name, value|
         name   = name.to_s
         method = "#{name}="
         next unless attr = roxml_attributes[name] and respond_to?(method)
 
-        if !attr.sought_type.instance_of?(Symbol)
-          value = attr.array? ?
-            # v should be a Hash
-            Array(value).map { |v| attr.sought_type.new(v) } :
-            attr.sought_type.new(name => value)
+        if !attr.sought_type.instance_of?(Symbol) # If it's not a ROXML directive
+          if attr.array?
+            value = Array(value)
+          elsif !attr.hash?
+            value = attr.sought_type.new(name => value)
+          end
         end
 
         send(method, value)
@@ -40,6 +43,15 @@ module DDEX
       end
 
       hash
+    end
+
+    # TODO: hash
+    def eql?(other)
+      instance_of?(other.class) && roxml_attributes.keys.all? { |attr| other.respond_to?(attr) && other.send(attr) == send(attr) }
+    end
+
+    def ==(other)
+      eql?(other)
     end
 
     private
