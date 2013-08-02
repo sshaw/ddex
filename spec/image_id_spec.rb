@@ -1,12 +1,11 @@
 require "spec_helper"
 
 describe DDEX::ImageId do
-  let(:proprietary_id) { Fabricate(:proprietary_id) }
-  let(:attributes) { Fabricate.attributes_for(:image_id, :proprietary_id => [proprietary_id]) }
+  let(:attributes) { Fabricate.attributes_for(:image_id) }
   let(:xmldoc) {
     <<-XML
       <ImageId IsReplaced="#{attributes["replaced"]}">
-        #{proprietary_id.to_xml}
+        #{attributes["proprietary_id"].to_xml}
       </ImageId>
     XML
   }

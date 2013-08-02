@@ -12,14 +12,7 @@ module DDEX
         method = "#{name}="
         next unless attr = roxml_attributes[name] and respond_to?(method)
 
-        if !attr.sought_type.instance_of?(Symbol) # If it's not a ROXML directive
-          if attr.array?
-            value = Array(value)
-          elsif !attr.hash?
-            value = attr.sought_type.new(name => value)
-          end
-        end
-
+        value = Array(value) if !attr.sought_type.instance_of?(Symbol) && attr.array? # If it's not a ROXML directive && ...          
         send(method, value)
       end
     end
@@ -47,7 +40,7 @@ module DDEX
 
     # TODO: hash
     def eql?(other)
-      instance_of?(other.class) && roxml_attributes.keys.all? { |attr| other.respond_to?(attr) && other.send(attr) == send(attr) }
+      instance_of?(other.class) && roxml_attributes.values.all? { |attr| other.respond_to?(attr.accessor) && other.send(attr.accessor) == send(attr.accessor) }
     end
 
     def ==(other)

@@ -10,6 +10,6 @@ module DDEX
 
     xml_accessor :location_description, :from => "@LocationDescription"
     xml_accessor :territory, :from => "@TerritoryCode"
-    xml_accessor :value, :from => ".", :as => DateTime
+    xml_accessor :value, :from => ".", :as => Time
   end
 end

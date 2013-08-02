@@ -7,6 +7,6 @@ module DDEX
     include Party
     include SequenceNumber
 
-    xml_accessor :resource_contributor_role, :as => [ResourceContributorRole]
+    xml_accessor :resource_contributor_roles, :as => [ResourceContributorRole]
   end
 end

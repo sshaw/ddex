@@ -12,3 +12,13 @@ unless [].respond_to?(:sample)
     end
   end
 end
+
+module SpecHelper
+  def to_xml(obj)
+    Array(obj).map { |e| e.to_xml }.join 
+  end  
+end
+
+RSpec.configure do |cfg|
+  cfg.include SpecHelper
+end

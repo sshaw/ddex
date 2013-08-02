@@ -7,6 +7,6 @@ module DDEX
     include Party
     include SequenceNumber
 
-    xml_accessor :indirect_resource_contributor_role, :as => [MusicalWorkContributorRole]
+    xml_accessor :indirect_resource_contributor_roles, :as => [MusicalWorkContributorRole]
   end
 end

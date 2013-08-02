@@ -1,8 +1,6 @@
 module DDEX
-  class PartyName < Element     
-    xml_name "PartyName"
-
-    xml_accessor :full_name, :from => "FullName"
-    xml_accessor :abbrivated_name, :from => "AbbrivatedName"
+  class PartyName < Element
+    xml_accessor :full_name
+    xml_accessor :abbreviated_name
   end
 end
