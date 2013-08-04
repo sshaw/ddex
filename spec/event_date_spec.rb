@@ -6,9 +6,9 @@ describe DDEX::EventDate do
     %|<EventDate IsApproximate="#{attributes["approximate"]}"
                  IsAfter="#{attributes["after"]}"
                  IsBefore="#{attributes["before"]}"
-                 Language="#{attributes["language"]}"
+                 LanguageAndScriptCode="#{attributes["language_and_script_code"]}"
                  LocationDescription="#{attributes["location_description"]}"
-                 TerritoryCode="#{attributes["territory"]}"/>|
+                 TerritoryCode="#{attributes["territory"]}">#{attributes["value"]}</EventDate>|
   }
 
   it_should_behave_like "a DDEX element"

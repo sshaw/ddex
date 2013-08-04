@@ -8,8 +8,11 @@ module DDEX
       xml_accessor "#{attr.underscore}?", :from => "@Is#{attr}"
     end
 
-    xml_accessor :location_description, :from => "@LocationDescription"
+    xml_accessor :location_description, :from => :attr
     xml_accessor :territory, :from => "@TerritoryCode"
-    xml_accessor :value, :from => ".", :as => Time
+
+    # The "problem" with this is that xsd:date -even though there's no time component- supports
+    # a TZ offset. Not sure I've ever seen this in the wild so we'll try using Date
+    xml_accessor :value, :from => ".", :as => Date
   end
 end

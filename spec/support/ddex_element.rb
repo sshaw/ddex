@@ -1,6 +1,5 @@
 RSpec::Matchers.define :have_attributes do |expected|
-  #diffable
-  failure_message_for_should { |actual| "expected attribute :#{@failure[:method]} to return #{@failure[:expected].inspect} but got #{@failure[:actual].inspect}" }
+  failure_message_for_should { |actual| "expected attribute :#{@failure[:method]} to return #{@failure[:expected]} but got #{@failure[:actual]}" }
 
   match_for_should do |actual|
     @failure = {}
@@ -25,9 +24,7 @@ shared_examples_for "a DDEX element" do
     described_class.from_xml(xmldoc).should have_attributes(attributes)
   end
 
-  require "pp"
   it "creates an instance from a Hash" do
-    #pp DDEX::PartyId.new.send(:roxml_attributes)
     described_class.new(attributes).should have_attributes(attributes)
   end
 

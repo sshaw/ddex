@@ -4,9 +4,9 @@ describe DDEX::ImageDetailsByTerritory do
   let(:attributes) { Fabricate.attributes_for(:image_details_by_territory) }
   let(:xmldoc) {
     <<-XML
-      <ImageDetailsByTerritory LanguageAndScriptCodes="#{attributes["language_and_script_code"]}">
-        #{to_xml(attributes["territory_codes"])}
-        #{to_xml(attributes["excluded_territory_codes"])}
+      <ImageDetailsByTerritory LanguageAndScriptCode="#{attributes["language_and_script_code"]}">
+        <TerritoryCode>#{attributes["territory_codes"][0]}</TerritoryCode>
+        <ExcludedTerritoryCode>#{attributes["excluded_territory_codes"][0]}</ExcludedTerritoryCode>
         #{to_xml(attributes["resource_contributors"])}
         #{to_xml(attributes["indirect_resource_contributors"])}
         #{to_xml(attributes["clines"])}
@@ -16,6 +16,6 @@ describe DDEX::ImageDetailsByTerritory do
       </ImageDetailsByTerritory>
     XML
   }
-  
+   
   it_should_behave_like "a DDEX element"
 end
