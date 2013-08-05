@@ -7,3 +7,9 @@ Fabricator :event_date, :from => DDEX::EventDate do
   approximate true
   value { Date.today }
 end
+
+Fabricator :creation_date, :from => :event_date, :class_name => DDEX::CreationDate do
+end
+
+Fabricator :original_resource_release_date, :from => :event_date, :class_name => DDEX::OriginalResourceReleaseDate do
+end

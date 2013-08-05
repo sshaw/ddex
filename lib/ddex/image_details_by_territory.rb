@@ -1,8 +1,8 @@
 require "ddex/cline"
 require "ddex/courtesy_line"
 require "ddex/description"
-require "ddex/event_date"
 require "ddex/indirect_resource_contributor"
+require "ddex/original_resource_release_date"
 require "ddex/resource_contributor"
 
 module DDEX
@@ -16,6 +16,6 @@ module DDEX
     xml_accessor :clines, :from => "CLine", :as => [CLine]
     xml_accessor :description, :as => Description
     xml_accessor :courtesy_line, :as => CourtesyLine
-    xml_accessor :original_resource_release_date, :from => "EventDate", :as => EventDate
+    xml_accessor :original_resource_release_date, :as => OriginalResourceReleaseDate
   end
 end

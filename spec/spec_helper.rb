@@ -15,7 +15,7 @@ end
 
 module SpecHelper
   def to_xml(obj)
-    Array(obj).map { |e| e.to_xml }.join 
+    Array(obj).map { |e| e.to_xml }.join("\n")
   end  
 end
 

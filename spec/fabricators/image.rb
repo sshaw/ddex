@@ -1,7 +1,12 @@
 Fabricator :image, :class_name => DDEX::Image do
   artist_related false
-  language_and_script_code "en-US"
+  creation_date
+  image_ids(:count => 1) { Fabricate(:image_id) }
   image_type
+  image_details_by_territory(:count => 1) { Fabricate(:image_details_by_territory) }
+  language_and_script_code "en-US"
+  resource_reference "A1"
+  titles(:count => 1) { Fabricate(:title) }
 end
 
 Fabricator :image_type, :class_name => DDEX::ImageType do
@@ -12,6 +17,4 @@ end
 
 Fabricator :ern_image, :from => :image, :class_name => DDEX::ERN::Image do
   updated false
-  hidden_resource false
-  title ["61*"]
 end

@@ -4,12 +4,17 @@ describe DDEX::Image do
   let(:attributes) { Fabricate.attributes_for(:image) }
   let(:xmldoc) {
     <<-XML
-      <Image>
-        <ImageType>#{attributes["image_type"]}</ImageType>
-        #{attributes["image_id"].to_xml}
+      <Image LanguageAndScriptCode="#{attributes["language_and_script_code"]}">
+        #{attributes["image_type"].to_xml}
+        <IsArtistRelated>#{attributes["artist_related"]}</IsArtistRelated>
+        #{to_xml(attributes["image_ids"])}
         <ResourceReference>#{attributes["resource_reference"]}</ResourceReference>
-        #{attributes["image_details"].to_xml}
+        #{to_xml(attributes["titles"])}
+        #{attributes["creation_date"].to_xml}
+        #{to_xml(attributes["image_details_by_territory"])}
       </Image>
     XML
   }
+
+  it_should_behave_like "a DDEX element"
 end

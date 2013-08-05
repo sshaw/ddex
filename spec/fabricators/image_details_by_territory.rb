@@ -7,5 +7,5 @@ Fabricator :image_details_by_territory, :class_name => DDEX::ImageDetailsByTerri
   clines(:count => 1) { Fabricate(:cline) }
   description
   courtesy_line
-  original_resource_release_date { Fabricate(:event_date) }
+  original_resource_release_date
 end

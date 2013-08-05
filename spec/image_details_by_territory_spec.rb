@@ -16,6 +16,6 @@ describe DDEX::ImageDetailsByTerritory do
       </ImageDetailsByTerritory>
     XML
   }
-   
+
   it_should_behave_like "a DDEX element"
 end

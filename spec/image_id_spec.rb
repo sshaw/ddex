@@ -5,7 +5,7 @@ describe DDEX::ImageId do
   let(:xmldoc) {
     <<-XML
       <ImageId IsReplaced="#{attributes["replaced"]}">
-        #{attributes["proprietary_id"].to_xml}
+        #{to_xml(attributes["proprietary_ids"])}
       </ImageId>
     XML
   }
