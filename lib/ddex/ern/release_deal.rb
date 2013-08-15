@@ -7,7 +7,7 @@ module DDEX
 
       xml_accessor :deal_release_references, :as => []
       xml_accessor :deals, :from => "Deal", :as => [Deal]
-      xml_accessor :effective_date, :as => [Time]
+      xml_accessor :effective_date, :as => [Date]
     end
   end
 end

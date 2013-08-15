@@ -1,8 +1,7 @@
 require "ddex/language"
 
 module DDEX
-  class Description < Element
+  class Description < SimpleElement
     include Language
-    xml_accessor :value, :from => "."
   end
 end

@@ -1,4 +1,1 @@
-Fabricator :fulfillment_date, :from => DDEX::FulfillmentDate do
-  fulfillment_date { Date.today }
-  resource_release_references ["A1"]
-end
+# Sub factories wont load if in diff file (load order probally)

@@ -9,3 +9,12 @@ Fabricator :image_details_by_territory, :class_name => DDEX::ImageDetailsByTerri
   courtesy_line
   original_resource_release_date
 end
+
+Fabricator :ern_image_details_by_territory, :from => :image_details_by_territory, :class_name => DDEX::ERN::ImageDetailsByTerritory do
+  fulfillment_date
+  keywords(:count => 1) { Fabricate(:keywords) }
+  synopsis
+  genres(:count => 1) { Fabricate(:genre) }
+  parental_warning_types(:count => 1) { Fabricate(:parental_warning_type) }
+  technical_image_details(:count => 1) { Fabricate(:technical_image_details) }
+end

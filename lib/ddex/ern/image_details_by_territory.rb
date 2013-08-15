@@ -1,3 +1,5 @@
+require "ddex/ern/technical_image_details"
+
 module DDEX
   module ERN
     class ImageDetailsByTerritory < DDEX::ImageDetailsByTerritory
