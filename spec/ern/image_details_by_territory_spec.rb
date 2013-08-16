@@ -23,6 +23,7 @@ describe DDEX::ERN::ImageDetailsByTerritory do
     XML
   }
   
+  ##
   it("ASS") { puts xmldoc }
   it_should_behave_like "a DDEX element"
 end
