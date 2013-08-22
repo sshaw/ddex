@@ -5,6 +5,7 @@ module DDEX
     class SoundRecording < DDEX::SoundRecording
       # Keep this..? Overlaps with Language
       #include Resource
+      xml_accessor :updated?, :from => "@IsUpdated"
     end
   end
 end

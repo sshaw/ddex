@@ -4,7 +4,7 @@ require "ddex/party"
 module DDEX
   class DSP < Element
     include Language
-    include Party
+    extend Party
 
     xml_accessor :territories, :as => []
     xml_accessor :trading_name, :as => Name

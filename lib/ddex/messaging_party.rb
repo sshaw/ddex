@@ -3,7 +3,11 @@ require "ddex/party"
 
 module DDEX
   class MessagingParty < Element
-    include Party
+    extend Party
+
+    party_id
+    party_name
+
     xml_accessor :trading_name, :as => Name
   end
 end
