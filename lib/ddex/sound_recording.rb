@@ -5,7 +5,7 @@ require "ddex/sound_recording_id"
 require "ddex/sound_recording_type"
 require "ddex/resource_musical_work_reference"
 require "ddex/resource_contained_resource_reference"
-#require "ddex/sound_recording_details_by_territory"
+require "ddex/sound_recording_details_by_territory"
 
 module DDEX
   class InstrumentationDescription < Description; end
@@ -28,15 +28,15 @@ module DDEX
     xml_accessor :duration
     xml_accessor :rights_agreement_id, :as => RightsAgreementId
 
-    xml_accessor :resource_musical_work_reference_list, :from => "ResourceMusicalWorkReferenceList", :as => [ResourceMusicalWorkReference]
+    xml_accessor :resource_musical_work_reference_list, :as => [ResourceMusicalWorkReference]
     # alias_method :resource_musical_work_references, :resource_musical_work_reference_list
 
-    xml_accessor :resource_contained_resource_reference_list, :from => "ResourceContainedResourceReferenceList", :as => [ResourceContainedResourceReference]
+    xml_accessor :resource_contained_resource_reference_list, :as => [ResourceContainedResourceReference]
     #alias_method :resource_musical_work_references, :resource_contained_resource_reference_list
     
     xml_accessor :creation_date, :as => CreationDate
     xml_accessor :mastered_date, :as => MasteredDate
 
-    #xml_accessor :sound_recording_details_by_territory, :as => [SoundRecordingDetailsByTerritory]
+    xml_accessor :sound_recording_details_by_territory, :as => [SoundRecordingDetailsByTerritory]
   end
 end

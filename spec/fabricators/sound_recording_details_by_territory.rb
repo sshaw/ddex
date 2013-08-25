@@ -1,5 +1,5 @@
 Fabricator :display_artist, :from => :artist, :class_name => DDEX::DisplayArtist
-Fabricator :remastered_date, :from => :event_date, :class_name => DDEX::EventDate
+Fabricator :remastered_date, :from => :event_date, :class_name => DDEX::RemasteredDate
 
 Fabricator :sound_recording_details_by_territory, :class_name => DDEX::SoundRecordingDetailsByTerritory do
   language_and_script_code "en-US"
@@ -14,5 +14,5 @@ Fabricator :sound_recording_details_by_territory, :class_name => DDEX::SoundReco
   rights_controller(:count => 1) { Fabricate(:rights_controller) }
   remastered_date
   original_resource_release_date
-  pline(:count => 1) { Fabricate(:pline) }
+  plines(:count => 1) { Fabricate(:pline) }
 end

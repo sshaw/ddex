@@ -8,8 +8,6 @@ Fabricator :event_date, :from => DDEX::EventDate do
   value { Date.today }
 end
 
-Fabricator :creation_date, :from => :event_date, :class_name => DDEX::CreationDate do
-end
-
-Fabricator :original_resource_release_date, :from => :event_date, :class_name => DDEX::OriginalResourceReleaseDate do
-end
+Fabricator :mastered_date, :from => :event_date, :class_name => DDEX::MasteredDate
+Fabricator :creation_date, :from => :event_date, :class_name => DDEX::CreationDate
+Fabricator :original_resource_release_date, :from => :event_date, :class_name => DDEX::OriginalResourceReleaseDate

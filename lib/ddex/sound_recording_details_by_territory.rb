@@ -28,6 +28,6 @@ module DDEX
     xml_accessor :rights_controller, :as => [RightsController]
     xml_accessor :remastered_date, :as => RemasteredDate
     xml_accessor :original_resource_release_date, :as => OriginalResourceReleaseDate
-    xml_accessor :plines, :as => [PLine]    
+    xml_accessor :plines, :from => "PLine", :as => [PLine]    
   end
 end
