@@ -22,3 +22,9 @@ Fabricator :sound_recording, :class_name => DDEX::SoundRecording do
   mastered_date
   sound_recording_details_by_territory(:count => 1) { Fabricate(:sound_recording_details_by_territory) }
 end
+
+Fabricator :ern_sound_recording, :from => :sound_recording, :class_name => DDEX::ERN::SoundRecording do
+  updated false
+  no_silence_after true
+  no_silence_before false
+end

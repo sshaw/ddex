@@ -3,9 +3,9 @@ require "ddex/ern/sound_recording_details"
 module DDEX
   module ERN
     class SoundRecording < DDEX::SoundRecording
-      # Keep this..? Overlaps with Language
-      #include Resource
       xml_accessor :updated?, :from => "@IsUpdated"
+      xml_accessor :no_silence_before?, :as => :bool
+      xml_accessor :no_silence_after?, :as => :bool
     end
   end
 end
