@@ -17,8 +17,8 @@ module DDEX
   class SoundRecordingDetailsByTerritory < Element
     include Language
 
-    xml_accessor :territory_codes, :as => []
-    xml_accessor :excluded_territory_codes, :as => []
+    xml_accessor :territory_codes, :from => "TerritoryCode", :as => []
+    xml_accessor :excluded_territory_codes, :from => "ExcludedTerritoryCode", :as => []
     xml_accessor :titles, :as => [Title]
     xml_accessor :display_artists, :as => [DisplayArtist]
     xml_accessor :resource_contributors, :as => [ResourceContributor]

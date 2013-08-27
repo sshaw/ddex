@@ -4,7 +4,7 @@ describe DDEX::ERN::TechnicalImageDetails do
   let(:attributes) { Fabricate.attributes_for(:technical_image_details) }
   let(:xmldoc) {
     <<-XML
-      <TechnicalImageDetails IsPreview="#{attributes["preview"]}">
+      <TechnicalImageDetails LanguageAndScriptCode="#{attributes["language_and_script_code"]}">
         <TechnicalResourceDetailsReference>#{attributes["technical_resource_details_reference"]}</TechnicalResourceDetailsReference>
         #{attributes["drm_platform_type"].to_xml}
         #{attributes["container_format"].to_xml}
@@ -14,6 +14,7 @@ describe DDEX::ERN::TechnicalImageDetails do
         <AspectRatio>#{attributes["aspect_ratio"]}</AspectRatio>
         <ColorDepth>#{attributes["color_depth"]}</ColorDepth>
         <ImageResolution>#{attributes["image_resolution"]}</ImageResolution>
+        <IsPreview>#{attributes["preview"]}</IsPreview>
         #{attributes["preview_details"].to_xml}
         #{attributes["fulfillment_date"].to_xml}
         #{attributes["consumer_fulfillment_date"].to_xml}

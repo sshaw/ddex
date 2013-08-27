@@ -3,6 +3,7 @@ Fabricator :instrumentation_description, :from => :description, :class_name => D
 Fabricator :sound_recording, :class_name => DDEX::SoundRecording do
   language_and_script_code "en-US"
   artist_related false
+  sound_recording_type
   sound_recording_ids(:count => 1) { Fabricate(:sound_recording_id) }
   instrumentation_description
   medley true

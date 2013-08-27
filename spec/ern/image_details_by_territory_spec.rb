@@ -22,6 +22,9 @@ describe DDEX::ERN::ImageDetailsByTerritory do
       </ImageDetailsByTerritory>
     XML
   }
-  
+
+  #it "a" do p described_class.roxml_attrs.map { |a| a.accessor }.sort end  
+  #it "a" do puts xmldoc; p"="*20; puts described_class.new(attributes).technical_image_details[0].to_xml end
+  #it "a" do puts xmldoc; p"="*20; puts described_class.new(attributes).to_xml end
   it_should_behave_like "a DDEX element"
 end

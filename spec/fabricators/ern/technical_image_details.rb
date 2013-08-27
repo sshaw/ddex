@@ -1,4 +1,5 @@
 Fabricator :technical_image_details, :class_name => DDEX::ERN::TechnicalImageDetails do
+  language_and_script_code "en-US"
   technical_resource_details_reference "A1"
   drm_platform_type
   container_format

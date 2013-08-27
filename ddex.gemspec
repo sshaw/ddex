@@ -20,5 +20,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency "fabrication"
   s.add_development_dependency "rake", "~> 0.9.2"
   s.add_development_dependency "rspec", "~> 2.9"
-  s.add_development_dependency "test_xml"
+  #s.add_development_dependency "test_xml"
 end
