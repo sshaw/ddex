@@ -38,7 +38,7 @@ module DDEX
       hash
     end
 
-    # TODO: hash
+    # TODO: hash()
     def eql?(other)
       instance_of?(other.class) && roxml_attributes.values.all? { |attr| other.respond_to?(attr.accessor) && other.send(attr.accessor) == send(attr.accessor) }
     end

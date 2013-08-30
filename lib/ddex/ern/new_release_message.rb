@@ -6,12 +6,9 @@ module DDEX
     class NewReleaseMessage < Element
       include Language
 
-      xml_name "NewReleaseMessage"
-
       # TODO: get this from ERN.default_versoion, prob will have to override from_xml?      
       xml_namespaces :ernm => "http://ddex.net/xml/2010/ern-main/32"
       
-      #xml_name "NewReleaseRecord"
       #xml_reader :publisher, :from => 'name', :in => 'publisher'
 
       xml_accessor :business_profile_version_id, :from => :attr

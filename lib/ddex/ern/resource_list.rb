@@ -1,4 +1,5 @@
 require "ddex/ern/sound_recording"
+require "ddex/ern/video"
 
 module DDEX
   module ERN
@@ -13,7 +14,7 @@ module DDEX
       #xml_accessor :software, :from => "Software", :as => [Software]
       #xml_accessor :text, :from => "Text", :as => [Text]
       #xml_accessor :user_defined, :from => "UserDefined", :as => [UserDefined]
-      #xml_accessor :videos, :from => "Video", :as => [Video]
+      xml_accessor :videos, :as => [Video]
 
       def push(resource)
         case resource

@@ -46,9 +46,14 @@ module DDEX
     @@config = DEFAULT_CONFIG
 
     def self.read(path, options = {})
+      # doc = ...
+      version = config.find { |v, cfg| cfg[:message_schema_version_id] == doc.root["MessageSchemaVersionId"] }
+      raise "unknown DDEX version '#{doc.root["MessageSchemaVersionId"]}'" unless version
+      # version[0] is target version
     end
 
     def self.write(object, options = {})
+      raise ArgumentError, "not a DDEX object" unless object.is_a?(DDEX::Element)
     end
   end
 end
