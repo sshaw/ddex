@@ -27,4 +27,5 @@ Fabricator :ern_sound_recording, :from => :sound_recording, :class_name => DDEX:
   updated false
   no_silence_after true
   no_silence_before false
+  sound_recording_collection_reference_list(:count => 1) { Fabricate(:sound_recording_collection_reference_list) }
 end

@@ -21,6 +21,7 @@ describe DDEX::ERN::SoundRecording do
         <LanguageOfPerformance>#{attributes["language_of_performance"]}</LanguageOfPerformance>
         <Duration>#{attributes["duration"]}</Duration>
         #{attributes["rights_agreement_id"].to_xml}
+        #{to_xml(attributes["sound_recording_collection_reference_list"])}
         #{to_xml(attributes["resource_musical_work_reference_list"])}
         #{to_xml(attributes["resource_contained_resource_reference_list"])}
         #{attributes["creation_date"].to_xml}
