@@ -1,11 +1,12 @@
-Fabricator :instrumentation_description, :from => :description, :class_name => DDEX::InstrumentationDescription
-
 Fabricator :sound_recording, :class_name => DDEX::SoundRecording do
   language_and_script_code "en-US"
   artist_related false
   sound_recording_type
   sound_recording_ids(:count => 1) { Fabricate(:sound_recording_id) }
-  instrumentation_description
+  indirect_sound_recording_ids(:count => 1) { Fabricate(:musical_work_id) }
+  resource_reference "A1"
+  reference_title
+  instrumentation_description { Fabricate(:description) }
   medley true
   potpourri true
   instrumental false
@@ -27,5 +28,5 @@ Fabricator :ern_sound_recording, :from => :sound_recording, :class_name => DDEX:
   updated false
   no_silence_after true
   no_silence_before false
-  sound_recording_collection_reference_list(:count => 1) { Fabricate(:sound_recording_collection_reference_list) }
+  sound_recording_collection_reference_list
 end

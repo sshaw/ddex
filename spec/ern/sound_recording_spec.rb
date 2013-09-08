@@ -8,7 +8,10 @@ describe DDEX::ERN::SoundRecording do
         #{attributes["sound_recording_type"].to_xml}
         <IsArtistRelated>#{attributes["artist_related"]}</IsArtistRelated>
         #{to_xml(attributes["sound_recording_ids"])}
-        #{attributes["instrumentation_description"].to_xml}
+        #{to_xml(attributes["indirect_sound_recording_ids"]).gsub("MusicalWorkId", "IndirectSoundRecordingId")}
+        <ResourceReference>#{attributes["resource_reference"]}</ResourceReference>
+        #{attributes["reference_title"].to_xml}
+        #{attributes["instrumentation_description"].to_xml.gsub(/(Description)/, 'Instrumentation\1')}
         <IsMedley>#{attributes["medley"]}</IsMedley>
         <IsPotpourri>#{attributes["potpourri"]}</IsPotpourri>
         <IsInstrumental>#{attributes["instrumental"]}</IsInstrumental>
@@ -21,7 +24,7 @@ describe DDEX::ERN::SoundRecording do
         <LanguageOfPerformance>#{attributes["language_of_performance"]}</LanguageOfPerformance>
         <Duration>#{attributes["duration"]}</Duration>
         #{attributes["rights_agreement_id"].to_xml}
-        #{to_xml(attributes["sound_recording_collection_reference_list"])}
+        #{attributes["sound_recording_collection_reference_list"].to_xml}
         #{to_xml(attributes["resource_musical_work_reference_list"])}
         #{to_xml(attributes["resource_contained_resource_reference_list"])}
         #{attributes["creation_date"].to_xml}

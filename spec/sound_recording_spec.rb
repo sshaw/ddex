@@ -8,7 +8,10 @@ describe DDEX::SoundRecording do
         #{attributes["sound_recording_type"].to_xml}
         <IsArtistRelated>#{attributes["artist_related"]}</IsArtistRelated>
         #{to_xml(attributes["sound_recording_ids"])}
-        #{attributes["instrumentation_description"].to_xml}
+        #{to_xml(attributes["indirect_sound_recording_ids"]).gsub("MusicalWorkId", "IndirectSoundRecordingId")}
+        <ResourceReference>#{attributes["resource_reference"]}</ResourceReference>
+        #{attributes["reference_title"].to_xml}
+        #{attributes["instrumentation_description"].to_xml.gsub(/(Description)/, 'Instrumentation\1')}
         <IsMedley>#{attributes["medley"]}</IsMedley>
         <IsPotpourri>#{attributes["potpourri"]}</IsPotpourri>
         <IsInstrumental>#{attributes["instrumental"]}</IsInstrumental>

@@ -5,8 +5,8 @@ describe DDEX::Title do
   let(:xmldoc) {
     <<-XML
       <Title TitleType="#{attributes["title_type"]}" LanguageAndScriptCode="#{attributes["language_and_script_code"]}">
-        <TitleText>#{attributes["title"]}</TitleText>
-        <SubTitle>#{attributes["subtitle"][0]}</SubTitle>
+        #{attributes["title_text"].to_xml}
+        #{to_xml(attributes["sub_title"]).gsub(/\bTypedSubTitle\b/, "SubTitle")}
       </Title>
     XML
   }
