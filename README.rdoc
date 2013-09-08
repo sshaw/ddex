@@ -47,3 +47,9 @@ A version must have a configuration that describes the important XML attributes.
   p cfg[:message_schema_location_id]
 
   DDEX::ERN.config["3.2"][:schema_location] = "somethang_custom"
+
+=== TODO
+
+Many things... but: ROXML.from_xml does not check the root element's name. Need to add something like:
+  
+  raise "unknown element #{xml.name}" unless xml.name == tag_name

@@ -1,6 +1,4 @@
 require "ddex/description"
-require "ddex/creation_date"
-require "ddex/mastered_date"
 require "ddex/sound_recording_id"
 require "ddex/sound_recording_type"
 require "ddex/reference_title"
