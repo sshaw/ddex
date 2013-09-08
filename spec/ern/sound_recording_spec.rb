@@ -27,8 +27,8 @@ describe DDEX::ERN::SoundRecording do
         #{attributes["sound_recording_collection_reference_list"].to_xml}
         #{to_xml(attributes["resource_musical_work_reference_list"])}
         #{to_xml(attributes["resource_contained_resource_reference_list"])}
-        #{attributes["creation_date"].to_xml}
-        #{attributes["mastered_date"].to_xml}
+        #{attributes["creation_date"].to_xml.gsub("EventDate", "CreationDate")}
+        #{attributes["mastered_date"].to_xml.gsub("EventDate", "MasteredDate")}
         #{to_xml(attributes["sound_recording_details_by_territory"])}
       </SoundRecording>
     XML

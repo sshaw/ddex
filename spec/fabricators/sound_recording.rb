@@ -19,8 +19,8 @@ Fabricator :sound_recording, :class_name => DDEX::SoundRecording do
   rights_agreement_id
   resource_musical_work_reference_list(:count => 1) { Fabricate(:resource_musical_work_reference) }
   resource_contained_resource_reference_list(:count => 1) { Fabricate(:resource_contained_resource_reference) }
-  creation_date
-  mastered_date
+  creation_date { Fabricate(:event_date) }
+  mastered_date { Fabricate(:event_date) }
   sound_recording_details_by_territory(:count => 1) { Fabricate(:sound_recording_details_by_territory) }
 end
 

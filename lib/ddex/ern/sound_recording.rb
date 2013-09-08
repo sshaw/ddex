@@ -38,9 +38,9 @@ module DDEX
       xml_accessor :resource_contained_resource_reference_list, :from => "ResourceContainedResourceReference", :as => [ResourceContainedResourceReference]
       #alias_method :resource_musical_work_references, :resource_contained_resource_reference_list
 
-      xml_accessor :creation_date, :as => CreationDate
-      xml_accessor :mastered_date, :as => MasteredDate
-
+      xml_accessor :creation_date, :as => EventDate
+      xml_accessor :mastered_date, :as => EventDate
+      
       xml_accessor :sound_recording_details_by_territory, :as => [SoundRecordingDetailsByTerritory]
     end
   end
