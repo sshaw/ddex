@@ -10,7 +10,9 @@ module DDEX
     xml_accessor :rights_agreement_id, :as => RightsAgreementId
     xml_accessor :titles, :as => [Title]
     xml_accessor :display_artists, :as => [Artist]
-    xml_accessor :administration_recording_companies, :as => [AdministratingRecordCompany]
+    xml_accessor :administrating_record_companies, :as => [AdministratingRecordCompany]
+    xml_accessor :track_number
+    xml_accessor :volume_number_in_set
   end
 end
 

@@ -8,13 +8,13 @@ describe DDEX::SoundRecordingDetailsByTerritory do
         <TerritoryCode>#{attributes["territory_codes"][0]}</TerritoryCode>
         <ExcludedTerritoryCode>#{attributes["excluded_territory_codes"][0]}</ExcludedTerritoryCode>
         #{to_xml(attributes["titles"])}
-        #{to_xml(attributes["display_artists"])}
+        #{to_xml(attributes["display_artists"]).gsub(/(Artist)\b/, 'Display\1')}
         #{to_xml(attributes["resource_contributors"])}
         #{to_xml(attributes["indirect_resource_contributors"])}
         #{attributes["rights_agreement_id"].to_xml}
         #{to_xml(attributes["label_names"])}
         #{to_xml(attributes["rights_controller"])}
-        #{attributes["remastered_date"].to_xml}
+        #{attributes["remastered_date"].to_xml.gsub("Event", "Remastered")}
         #{attributes["original_resource_release_date"].to_xml}
         #{to_xml(attributes["plines"])}
       </SoundRecordingDetailsByTerritory>
