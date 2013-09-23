@@ -12,7 +12,7 @@ class PLine < Element
   
   xml_name "PLine"
 
-      xml_accessor :year, :as => DateTime, :from => "Year", :required => false
+      xml_accessor :year, :as => Integer, :from => "Year", :required => false
 
       xml_accessor :p_line_company, :from => "PLineCompany", :required => false
 
