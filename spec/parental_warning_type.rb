@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe DDEX::ParentalWarningType do
+describe DDEX::V20120404::DDEXC::ParentalWarningType do
   let(:attributes) { Fabricate.attributes_for(:parental_warning_type) }
   let(:xmldoc) {
     %|<ParentalWarningType Namespace="#{attributes["namespace"]}" UserDefinedValue="#{attributes["user_defined_value"]}">#{attributes["value"]}</ParentalWarningType>|

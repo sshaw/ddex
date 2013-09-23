@@ -1,4 +1,4 @@
-Fabricator :technical_image_details, :class_name => DDEX::ERN::TechnicalImageDetails do
+Fabricator :technical_image_details, :class_name => DDEX::ERN::V341::TechnicalImageDetails do
   language_and_script_code "en-US"
   technical_resource_details_reference "A1"
   drm_platform_type
@@ -13,7 +13,7 @@ Fabricator :technical_image_details, :class_name => DDEX::ERN::TechnicalImageDet
   preview_details
   fulfillment_date
   consumer_fulfillment_date
-  file_availability_descriptions(:count => 1) { Fabricate(:file_availability_description) }
+  file_availability_descriptions(:count => 1) { Fabricate(:description) }
   files(:count => 1) { Fabricate(:file) }
   fingerprints(:count => 1) { Fabricate(:fingerprint) }
 end

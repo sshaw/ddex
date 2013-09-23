@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe DDEX::AvRating do
+describe DDEX::V20120404::DDEXC::AvRating do
   let(:attributes) { Fabricate.attributes_for(:av_rating) }
   let(:xmldoc) {
     <<-XML

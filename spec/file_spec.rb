@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe DDEX::File do
+describe DDEX::V20120404::DDEXC::File do
   let(:attributes) { Fabricate.attributes_for(:file) }
   let(:xmldoc) {
     <<-XML

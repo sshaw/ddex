@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe DDEX::ERN::PreviewDetails do
+describe DDEX::ERN::V341::PreviewDetails do
   let(:attributes) { Fabricate.attributes_for(:ern_preview_details) }
   let(:xmldoc) {
     <<-XML

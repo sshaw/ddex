@@ -1,4 +1,4 @@
-Fabricator :image_details_by_territory, :class_name => DDEX::ImageDetailsByTerritory do
+Fabricator :image_details_by_territory, :class_name => DDEX::V20120404::DDEXC::ImageDetailsByTerritory do
   language_and_script_code "en-US"
   territory_codes ["US"]
   excluded_territory_codes ["CA"]
@@ -10,7 +10,7 @@ Fabricator :image_details_by_territory, :class_name => DDEX::ImageDetailsByTerri
   original_resource_release_date
 end
 
-Fabricator :ern_image_details_by_territory, :from => :image_details_by_territory, :class_name => DDEX::ERN::ImageDetailsByTerritory do
+Fabricator :ern_image_details_by_territory, :from => :image_details_by_territory, :class_name => DDEX::ERN::V341::ImageDetailsByTerritory do
   fulfillment_date
   keywords(:count => 1) { Fabricate(:keywords) }
   synopsis

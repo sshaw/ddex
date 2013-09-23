@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe DDEX::ReferenceTitle do
+describe DDEX::V20120404::DDEXC::ReferenceTitle do
   let(:attributes) { Fabricate.attributes_for(:reference_title) }
   let(:xmldoc) {
     <<-XML

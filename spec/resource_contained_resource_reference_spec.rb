@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe DDEX::ResourceContainedResourceReference do
+describe DDEX::V20120404::DDEXC::ResourceContainedResourceReference do
   let(:attributes) { Fabricate.attributes_for(:resource_contained_resource_reference) }
   let(:xmldoc) {
     <<-XML

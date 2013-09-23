@@ -1,4 +1,4 @@
-Fabricator :release_id, :class_name => DDEX::ReleaseId do
+Fabricator :release_id, :class_name => DDEX::V20120404::DDEXC::ReleaseId do
   replaced false
   grid "A12425GABC1234002M"
   isrc "BRBMG0300711"

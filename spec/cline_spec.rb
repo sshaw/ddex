@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe DDEX::CLine do
+describe DDEX::V20120404::DDEXC::CLine do
   let(:attributes) { Fabricate.attributes_for(:cline) }
   let(:xmldoc) {
     <<-XML

@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe DDEX::ResourceContributor do
+describe DDEX::V20120404::DDEXC::ResourceContributor do
   let(:attributes) { Fabricate.attributes_for(:resource_contributor) }
   let(:xmldoc) {
     <<-XML

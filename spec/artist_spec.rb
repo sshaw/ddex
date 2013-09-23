@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe DDEX::Artist do
+describe DDEX::V20120404::DDEXC::Artist do
   let(:attributes) { Fabricate.attributes_for(:artist) }
   let(:xmldoc) {
     <<-XML

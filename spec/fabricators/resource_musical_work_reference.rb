@@ -1,4 +1,4 @@
-Fabricator :resource_musical_work_reference, :class_name => DDEX::ResourceMusicalWorkReference do
+Fabricator :resource_musical_work_reference, :class_name => DDEX::V20120404::DDEXC::ResourceMusicalWorkReference do
   sequence_number { sequence }
   duration_used "PT1H2M3S"
   fragment false

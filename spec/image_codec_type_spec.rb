@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe DDEX::ImageCodecType do
+describe DDEX::V20120404::DDEXC::ImageCodecType do
   let(:attributes) { Fabricate.attributes_for(:drm_platform_type) }
   let(:xmldoc) { %|<ImageCodecType Namespace="#{attributes["namespace"]}" UserDefinedValue="#{attributes["user_defined_value"]}" Version="#{attributes["version"]}">#{attributes["value"]}</ImageCodecType>| }
 

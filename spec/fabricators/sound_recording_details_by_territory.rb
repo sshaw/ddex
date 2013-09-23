@@ -1,4 +1,4 @@
-Fabricator :sound_recording_details_by_territory, :class_name => DDEX::SoundRecordingDetailsByTerritory do
+Fabricator :sound_recording_details_by_territory, :class_name => DDEX::V20120404::DDEXC::SoundRecordingDetailsByTerritory do
   language_and_script_code "en-US"
   territory_codes ["US"]
   excluded_territory_codes ["US"]

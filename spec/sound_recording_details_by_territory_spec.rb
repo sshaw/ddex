@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe DDEX::SoundRecordingDetailsByTerritory do
+describe DDEX::V20120404::DDEXC::SoundRecordingDetailsByTerritory do
   let(:attributes) { Fabricate.attributes_for(:sound_recording_details_by_territory) }
   let(:xmldoc) {
     <<-XML

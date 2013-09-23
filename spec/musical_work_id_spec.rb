@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe DDEX::MusicalWorkId do
+describe DDEX::V20120404::DDEXC::MusicalWorkId do
   let(:attributes) { Fabricate.attributes_for(:musical_work_id) }
   let(:xmldoc) {
     <<-XML

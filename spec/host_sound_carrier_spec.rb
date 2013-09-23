@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe DDEX::HostSoundCarrier do
+describe DDEX::V20120404::DDEXC::HostSoundCarrier do
   let(:attributes) { Fabricate.attributes_for(:host_sound_carrier) }
   let(:xmldoc) {
     <<-XML

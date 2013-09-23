@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe DDEX::ImageId do
+describe DDEX::V20120404::DDEXC::ImageId do
   let(:attributes) { Fabricate.attributes_for(:image_id) }
   let(:xmldoc) {
     <<-XML

@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe DDEX::PartyName do
+describe DDEX::V20120404::DDEXC::PartyName do
   let(:attributes) { Fabricate.attributes_for(:party_name) }
   let(:xmldoc) {
     <<-XML

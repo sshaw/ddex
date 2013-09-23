@@ -1,10 +1,7 @@
-Fabricator :genre_text, :from => :description, :class_name => DDEX::GenreText
-Fabricator :sub_genre, :from => :description, :class_name => DDEX::SubGenre
-
-Fabricator :genre, :class_name => DDEX::Genre do
+Fabricator :genre, :class_name => DDEX::V20120404::DDEXC::Genre do
   language_and_script_code "en-US"
-  genre_text
-  sub_genre
+  genre_text { Fabricator(:description) }
+  sub_genre  { Fabricator(:description) }
 end
 
 

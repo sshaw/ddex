@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe DDEX::ERN::Image do
+describe DDEX::ERN::V341::Image do
   let(:attributes) { Fabricate.attributes_for(:ern_image) }
   let(:xmldoc) {
     <<-XML
@@ -16,6 +16,6 @@ describe DDEX::ERN::Image do
     XML
   }
 
-  it { should be_a_kind_of DDEX::Image }
+  it { should be_a_kind_of DDEX::V20120404::DDEXC::Image }
   it_should_behave_like "a DDEX element"
 end

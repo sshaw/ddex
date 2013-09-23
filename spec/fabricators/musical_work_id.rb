@@ -1,4 +1,4 @@
-Fabricator :musical_work_id, :class_name => DDEX::MusicalWorkId do
+Fabricator :musical_work_id, :class_name => DDEX::V20120404::DDEXC::MusicalWorkId do
   replaced true
   iswc "T-000.000.001-0"
   opus_number "1"

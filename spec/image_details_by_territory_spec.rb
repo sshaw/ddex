@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe DDEX::ImageDetailsByTerritory do
+describe DDEX::V20120404::DDEXC::ImageDetailsByTerritory do
   let(:attributes) { Fabricate.attributes_for(:image_details_by_territory) }
   let(:xmldoc) {
     <<-XML

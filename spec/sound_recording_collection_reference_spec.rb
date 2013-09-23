@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe DDEX::SoundRecordingCollectionReference do
+describe DDEX::V20120404::DDEXC::SoundRecordingCollectionReference do
   let(:attributes) { Fabricate.attributes_for(:sound_recording_collection_reference) }
   let(:xmldoc) {
     <<-XML

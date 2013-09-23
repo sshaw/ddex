@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe DDEX::ERN::TechnicalImageDetails do
+describe DDEX::ERN::V341::TechnicalImageDetails do
   let(:attributes) { Fabricate.attributes_for(:technical_image_details) }
   let(:xmldoc) {
     <<-XML
@@ -18,7 +18,7 @@ describe DDEX::ERN::TechnicalImageDetails do
         #{attributes["preview_details"].to_xml}
         #{attributes["fulfillment_date"].to_xml}
         #{attributes["consumer_fulfillment_date"].to_xml}
-        #{to_xml(attributes["file_availability_descriptions"])}
+        #{to_xml(attributes["file_availability_descriptions"]).sub("FileAvailability", "")}
         #{to_xml(attributes["files"])}
         #{to_xml(attributes["fingerprints"])}
       </TechnicalImageDetails>

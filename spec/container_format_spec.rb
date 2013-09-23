@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe DDEX::ContainerFormat do
+describe DDEX::V20120404::DDEXC::ContainerFormat do
   let(:attributes) { Fabricate.attributes_for(:container_format) }
   let(:xmldoc) { %|<ContainerFormat Namespace="#{attributes["namespace"]}" UserDefinedValue="#{attributes["user_defined_value"]}">#{attributes["value"]}</ContainerFormat>| }
 

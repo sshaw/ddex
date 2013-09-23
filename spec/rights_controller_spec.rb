@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe DDEX::RightsController do
+describe DDEX::V20120404::DDEXC::RightsController do
   let(:attributes) { Fabricate.attributes_for(:rights_controller) }
   let(:xmldoc) {
     <<-XML

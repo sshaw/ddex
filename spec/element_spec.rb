@@ -1,6 +1,6 @@
 require "spec_helper"
 
-# describe DDEX::Element do
+# describe DDEX::V20120404::DDEXC::Element do
 #   class Child < Element
 #     xml_accessor :name
 #   end

@@ -1,4 +1,4 @@
-Fabricator :sound_recording, :class_name => DDEX::SoundRecording do
+Fabricator :sound_recording, :class_name => DDEX::V20120404::DDEXC::SoundRecording do
   language_and_script_code "en-US"
   artist_related false
   sound_recording_type
@@ -24,7 +24,7 @@ Fabricator :sound_recording, :class_name => DDEX::SoundRecording do
   sound_recording_details_by_territory(:count => 1) { Fabricate(:sound_recording_details_by_territory) }
 end
 
-Fabricator :ern_sound_recording, :from => :sound_recording, :class_name => DDEX::ERN::SoundRecording do
+Fabricator :ern_sound_recording, :from => :sound_recording, :class_name => DDEX::V341::ERN::SoundRecording do
   updated false
   no_silence_after true
   no_silence_before false

@@ -1,0 +1,837 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:iso4217a="http://ddex.net/xml/20120404/iso4217a"
+           targetNamespace="http://ddex.net/xml/20120404/iso4217a"
+           elementFormDefault="unqualified"
+           attributeFormDefault="unqualified">
+   <xs:annotation>
+      <xs:documentation>© 2006-2012 Digital Data Exchange, LLC (DDEX)</xs:documentation>
+   </xs:annotation>
+   <xs:simpleType name="CurrencyCode">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">An ISO4217 three-letter code representing a ddex:Currency.</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="AED">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">UAE Dirham.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="AFN">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Afghani.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ALL">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Lek.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="AMD">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Armenian Dram.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ANG">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Netherlands Antillian Guilder.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="AOA">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Kwanza.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ARS">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Argentine Peso.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="AUD">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Australian Dollar.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="AWG">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Aruban Guilder.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="AZN">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Azerbaijanian Manat.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="BAM">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Convertible Marks.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="BBD">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Barbados Dollar.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="BDT">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Taka.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="BGN">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Bulgarian Lev.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="BHD">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Bahraini Dinar.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="BIF">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Burundi Franc.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="BMD">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Bermudian Dollar.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="BND">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Brunei Dollar.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="BOB">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Boliviano.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="BOV">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Mvdol.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="BRL">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Brazilian Real.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="BSD">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Bahamian Dollar.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="BTN">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Ngultrum.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="BWP">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Pula.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="BYR">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Belarussian Ruble.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="BZD">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Belize Dollar.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="CAD">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Canadian Dollar.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="CDF">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Congolese Franc.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="CHF">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Swiss Franc.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="CLF">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Unidades de fomento.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="CLP">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Chilean Peso.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="CNY">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Yuan Renminbi.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="COP">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Colombian Peso.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="COU">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Unidad de Valor Real.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="CRC">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Costa Rican Colón.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="CUC">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Peso Convertible.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="CUP">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Cuban Peso.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="CVE">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Cape Verde Escudo.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="CZK">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Czech Koruna.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="DJF">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Djibouti Franc.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="DKK">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Danish Krone.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="DOP">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Dominican Peso.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="DZD">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Algerian Dinar.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="EEK">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Kroon.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="EGP">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Egyptian Pound.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ERN">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Nakfa.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ETB">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Ethiopian Birr.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="EUR">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Euro.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="FJD">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Fiji Dollar.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="FKP">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Falkland Islands Pound.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="GBP">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Pound Sterling.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="GEL">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Lari.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="GHS">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Cedi.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="GIP">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Gibraltar Pound.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="GMD">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Dalasi.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="GNF">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Guinea Franc.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="GTQ">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Quetzal.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="GYD">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Guyana Dollar.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="HKD">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Hong Kong Dollar.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="HNL">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Lempira.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="HRK">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Croatian Kuna.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="HTG">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Gourde.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="HUF">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Forint.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="IDR">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Rupiah.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ILS">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">New Israeli Sheqel.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="INR">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Indian Rupee.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="IQD">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Iraqi Dinar.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="IRR">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Iranian Rial.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ISK">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Iceland Króna.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="JMD">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Jamaican Dollar.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="JOD">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Jordanian Dinar.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="JPY">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Yen.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="KES">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Kenyan Shilling.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="KGS">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Som.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="KHR">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Riel.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="KMF">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Comoro Franc.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="KPW">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">North Korean Won.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="KRW">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Won.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="KWD">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Kuwaiti Dinar.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="KYD">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Cayman Islands Dollar.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="KZT">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Tenge.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="LAK">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Kip.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="LBP">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Lebanese Pound.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="LKR">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Sri Lanka Rupee.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="LRD">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Liberian Dollar.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="LSL">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Loti.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="LTL">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Lithuanian Litas.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="LVL">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Latvian Lats.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="LYD">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Libyan Dinar.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="MAD">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Moroccan Dirham.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="MDL">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Moldovan Leu.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="MGA">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Malagasy Ariary.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="MKD">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Denar.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="MMK">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Kyat.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="MNT">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Tugrik.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="MOP">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Pataca.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="MRO">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Ouguiya.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="MUR">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Mauritius Rupee.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="MVR">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Rufiyaa.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="MWK">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Kwacha.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="MXN">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Mexican Peso.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="MXV">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Mexican Unidad de Inversion.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="MYR">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Malaysian Ringgit.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="MZM">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Metical.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="NAD">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Namibia Dollar.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="NGN">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Naira.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="NIO">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Córdoba Oro.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="NOK">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Norwegian Krone.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="NPR">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Nepalese Rupee.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="NZD">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">New Zealand Dollar.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="OMR">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Rial Omani.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="PAB">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Balboa.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="PEN">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Nuevo Sol.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="PGK">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Kina.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="PHP">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Philippine Peso.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="PKR">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Pakistan Rupee.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="PLN">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Zloty.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="PYG">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Guarani.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="QAR">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Qatari Rial.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="RON">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">New Leu.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="RSD">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Serbian Dinar.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="RUB">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Russian Ruble.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="RWF">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Rwanda Franc.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="SAR">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Saudi Riyal.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="SBD">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Solomon Islands Dollar.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="SCR">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Seychelles Rupee.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="SDG">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Sudanese Pound.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="SEK">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Swedish Krona.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="SGD">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Singapore Dollar.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="SHP">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Saint Helena Pound.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="SLL">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Leone.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="SOS">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Somali Shilling.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="SRD">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Suriname Dollar.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="STD">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Dobra.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="SVC">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">El Salvador Colón.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="SYP">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Syrian Pound.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="SZL">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Lilangeni.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="THB">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Baht.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="TJS">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Somoni.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="TMT">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Manat.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="TND">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Tunisian Dinar.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="TOP">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Pa'anga.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="TRY">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Turkish Lira.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="TTD">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Trinidad and Tobago Dollar.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="TWD">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">New Taiwan Dollar.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="TZS">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Tanzanian Shilling.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="UAH">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Hryvnia.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="UGX">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Uganda Shilling.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="USD">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">US Dollar.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="UYI">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Uruguay Peso en Unidades Indexadas.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="UYU">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Peso Uruguayo.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="UZS">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Uzbekistan Sum.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="VEF">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Bolivar Fuerte.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="VND">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Dong.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="VUV">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Vatu.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="WST">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Tala.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="XAF">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">CFA Franc BEAC.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="XCD">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">East Caribbean Dollar.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="XOF">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">CFA Franc BCEAO.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="XPF">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">CFP Franc.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="YER">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Yemeni Rial.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ZAR">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Rand.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ZMK">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Zambian Kwacha.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ZWL">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Zimbabwe Dollar.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+</xs:schema>

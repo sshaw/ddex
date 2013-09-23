@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe DDEX::ResourceMusicalWorkReference do
+describe DDEX::V20120404::DDEXC::ResourceMusicalWorkReference do
   let(:attributes) { Fabricate.attributes_for(:resource_musical_work_reference) }
   let(:xmldoc) {
     <<-XML

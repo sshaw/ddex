@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe DDEX::Fingerprint do
+describe DDEX::V20120404::DDEXC::Fingerprint do
   let(:attributes) { Fabricate.attributes_for(:fingerprint) }
   let(:xmldoc) {
     <<-XML

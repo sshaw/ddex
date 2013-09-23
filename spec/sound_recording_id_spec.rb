@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe DDEX::SoundRecordingId do
+describe DDEX::V20120404::DDEXC::SoundRecordingId do
   let(:attributes) { Fabricate.attributes_for(:sound_recording_id) }
   let(:xmldoc) {
     <<-XML

@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe DDEX::VideoDetailsByTerritory do
+describe DDEX::V20120404::DDEXC::VideoDetailsByTerritory do
   let(:attributes) { Fabricate.attributes_for(:video_details_by_territory) }
   let(:xmldoc) {
     <<-XML

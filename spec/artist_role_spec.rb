@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe DDEX::ArtistRole do
+describe DDEX::V20120404::DDEXC::ArtistRole do
   let(:attributes) { Fabricate.attributes_for(:artist_role) }
   let(:xmldoc) { 
     %|<ArtistRole UserDefinedValue="#{attributes["user_defined_value"]}" Namespace="#{attributes["namespace"]}">#{attributes["value"]}</ArtistRole>|

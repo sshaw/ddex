@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe DDEX::RightsAgreementId do
+describe DDEX::V20120404::DDEXC::RightsAgreementId do
   let(:attributes) { Fabricate.attributes_for(:rights_agreement_id) }
   let(:xmldoc) {
     <<-XML

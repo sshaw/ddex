@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe DDEX::Genre do
+describe DDEX::V20120404::DDEXC::Genre do
   let(:attributes) { Fabricate.attributes_for(:genre) }
   let(:xmldoc) {
     <<-XML

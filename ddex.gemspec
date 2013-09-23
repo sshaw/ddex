@@ -16,9 +16,10 @@ Gem::Specification.new do |s|
   s.homepage    = "http://github.com/sshaw/ddex"
   s.license     = "MIT"
   s.add_dependency "roxml"
+  s.add_dependency "nokogiri"
   s.add_dependency "activesupport", "~> 2.3"
   s.add_development_dependency "fabrication"
   s.add_development_dependency "rake", "~> 0.9.2"
   s.add_development_dependency "rspec", "~> 2.9"
-  #s.add_development_dependency "test_xml"
+  s.add_development_dependency "test_xml"
 end

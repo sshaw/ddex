@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe DDEX::AdministratingRecordCompany do
+describe DDEX::V20120404::DDEXC::AdministratingRecordCompany do
   let(:attributes) { Fabricate.attributes_for(:administrating_record_company) }
   let(:xmldoc) {
     <<-XML

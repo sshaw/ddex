@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe DDEX::VideoId do
+describe DDEX::V20120404::DDEXC::VideoId do
   let(:attributes) { Fabricate.attributes_for(:video_id) }
   let(:xmldoc) {
     <<-XML

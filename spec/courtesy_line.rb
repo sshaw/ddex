@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe DDEX::CourtesyLine do
+describe DDEX::V20120404::DDEXC::CourtesyLine do
   let(:attributes) { Fabricate.attributes_for(:courtesy_line) }
   let(:xmldoc) { %|<CourtesyLine LanguageAndScriptCode="#{attributes["language_and_script_code"]}">#{attributes["value"]}</CourtesyLine>| }
 

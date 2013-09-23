@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe DDEX::ReleaseId do
+describe DDEX::V20120404::DDEXC::ReleaseId do
   let(:attributes) { Fabricate.attributes_for(:release_id) }
   let(:xmldoc) {
     <<-XML

@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe DDEX::FulfillmentDate do
+describe DDEX::V20120404::DDEXC::FulfillmentDate do
   let(:attributes) { Fabricate.attributes_for(:fulfillment_date) }
   let(:xmldoc) {
     <<-XML

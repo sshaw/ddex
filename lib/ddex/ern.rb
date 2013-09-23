@@ -1,20 +1,5 @@
 require "active_support/core_ext/module/attribute_accessors"
-
-require "ddex/core"
-require "ddex/ern/consumer_fulfillment_date"
-require "ddex/ern/deal_list"
-require "ddex/ern/file_availability_description"
-require "ddex/ern/image"
-require "ddex/ern/image_details_by_territory"
-require "ddex/ern/image_height"
-require "ddex/ern/image_width"
-require "ddex/ern/new_release_message"
-require "ddex/ern/preview_details"
-require "ddex/ern/release_deal"
-require "ddex/ern/sound_recording"
-require "ddex/ern/sound_recording_details"
-require "ddex/ern/technical_image_details"
-require "ddex/ern/technical_sound_recording_details"
+require "nokogiri"
 
 module DDEX
   module ERN
@@ -44,16 +29,40 @@ module DDEX
 
     mattr_reader :config
     @@config = DEFAULT_CONFIG
-
+    
+    # take a path, doc, IO ...
     def self.read(path, options = {})
-      # doc = ...
-      version = config.find { |v, cfg| cfg[:message_schema_version_id] == doc.root["MessageSchemaVersionId"] }
-      raise "unknown DDEX version '#{doc.root["MessageSchemaVersionId"]}'" unless version
-      # version[0] is target version
+      # check IO perf.
+      #version = config.find { |v, cfg| cfg[:message_schema_version_id] == doc.root["MessageSchemaVersionId"] }
+      raise DDEXError, "unknown DDEX version '#{doc.root["MessageSchemaVersionId"]}'" unless version
+      #klass = load_version(version[0])
+      klass = load_version("3.4.1")
+
+      begin 
+        klass.from_xml(File.read(path))
+      rescue => e
+        raise DDEXError, "failed to load #{path}: #{e}"
+      end
     end
 
     def self.write(object, options = {})
       raise ArgumentError, "not a DDEX object" unless object.is_a?(DDEX::Element)
+      klass = load_version(version[0])
+      # ...
+    end
+
+    private
+    def self.load_version(version)
+      v = "v#{version.tr(".", "")}"
+      klass = "#{v.upcase}" #::NewReleaseMessage"
+      return DDEX::ERN.const_get(klass) if DDEX::ERN.const_defined?(klass)
+
+      root = File.dirname(File.expand_path(__FILE__))
+      Dir["#{root}/ern/#{v}/*.rb"].each { |path| require path }
+
+      DDEX::ERN.const_get(klass).const_get("NewReleaseMessage")
+    rescue LoadError, NameError => e
+      raise DDEXError, "failed to load ERN v#{version}: #{e}"
     end
   end
 end

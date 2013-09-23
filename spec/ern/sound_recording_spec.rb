@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe DDEX::ERN::SoundRecording do
+describe DDEX::ERN::V341::SoundRecording do
   let(:attributes) { Fabricate.attributes_for(:ern_sound_recording) }
   let(:xmldoc) {
     <<-XML

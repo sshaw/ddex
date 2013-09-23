@@ -1,4 +1,4 @@
-Fabricator :host_sound_carrier, :class_name => DDEX::HostSoundCarrier do
+Fabricator :host_sound_carrier, :class_name => DDEX::V20120404::DDEXC::HostSoundCarrier do
   release_ids(:count => 1) { Fabricate(:release_id) }
   rights_agreement_id
   titles(:count => 1) { Fabricate(:title) }

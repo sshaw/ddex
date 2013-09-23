@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe DDEX::PLine do
+describe DDEX::V20120404::DDEXC::PLine do
   let(:attributes) { Fabricate.attributes_for(:pline) }
   let(:xmldoc) {
     <<-XML

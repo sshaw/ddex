@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe DDEX::MusicalWorkContributorRole do
+describe DDEX::V20120404::DDEXC::MusicalWorkContributorRole do
   let(:attributes) { Fabricate.attributes_for(:musical_work_contributor) }
   let(:xmldoc) {
     <<-XML
