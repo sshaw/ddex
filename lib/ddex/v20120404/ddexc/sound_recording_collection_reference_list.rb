@@ -13,10 +13,10 @@ class SoundRecordingCollectionReferenceList < Element
   
   xml_name "SoundRecordingCollectionReferenceList"
 
-      xml_accessor :number_of_collections, :from => "NumberOfCollections", :required => false
+      xml_accessor :number_of_collections, :as => Integer, :from => "NumberOfCollections", :required => false
 
       
-      xml_accessor :sound_recording_collection_references, :as => [], :from => "SoundRecordingCollectionReference", :required => true
+      xml_accessor :sound_recording_collection_references, :as => [DDEX::V20120404::DDEXC::SoundRecordingCollectionReference], :from => "SoundRecordingCollectionReference", :required => true
 
 
 

@@ -17,13 +17,13 @@ class PartyId < ContentElement
     alias_method :value, :content
 
   
-      xml_accessor :namespace, :from => "@Namespace" 
+      xml_accessor :namespace, :from => "@Namespace", :required => false
     
   
-      xml_accessor :dpid?, :from => "@IsDPID" 
+      xml_accessor :dpid?, :from => "@IsDPID", :required => false
     
   
-      xml_accessor :isni?, :from => "@IsISNI" 
+      xml_accessor :isni?, :from => "@IsISNI", :required => false
     
   
 end

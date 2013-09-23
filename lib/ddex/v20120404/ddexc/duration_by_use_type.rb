@@ -19,16 +19,16 @@ class DurationByUseType < Element
       xml_accessor :duration, :from => "Duration", :required => true
 
       
-      xml_accessor :use_types, :as => [], :from => "UseType", :required => true
+      xml_accessor :use_types, :as => [DDEX::V20120404::DDEXC::UseType], :from => "UseType", :required => true
 
       
-      xml_accessor :user_interface_types, :as => [], :from => "UserInterfaceType", :required => false
+      xml_accessor :user_interface_types, :as => [DDEX::V20120404::DDEXC::UserInterfaceType], :from => "UserInterfaceType", :required => false
 
       
-      xml_accessor :distribution_channel_types, :as => [], :from => "DistributionChannelType", :required => false
+      xml_accessor :distribution_channel_types, :as => [DDEX::V20120404::DDEXC::DistributionChannelType], :from => "DistributionChannelType", :required => false
 
       
-      xml_accessor :carrier_types, :as => [], :from => "CarrierType", :required => false
+      xml_accessor :carrier_types, :as => [DDEX::V20120404::DDEXC::CarrierType], :from => "CarrierType", :required => false
 
 
 

@@ -17,13 +17,13 @@ class DeductionRate < ContentElement
     alias_method :value, :content
 
   
-      xml_accessor :deduction_rate_type, :from => "@DeductionRateType" 
+      xml_accessor :deduction_rate_type, :from => "@DeductionRateType", :required => true
     
   
-      xml_accessor :deduction_description, :from => "@DeductionDescription" 
+      xml_accessor :deduction_description, :from => "@DeductionDescription", :required => false
     
   
-      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode" 
+      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
 end

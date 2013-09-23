@@ -23,24 +23,24 @@ class MessageHeader < Element
 
       xml_accessor :message_file_name, :from => "MessageFileName", :required => false
 
-      xml_accessor :message_sender, :from => "MessageSender", :required => true
+      xml_accessor :message_sender, :as => DDEX::V20120404::DDEXC::MessagingParty, :from => "MessageSender", :required => true
 
-      xml_accessor :sent_on_behalf_of, :from => "SentOnBehalfOf", :required => false
+      xml_accessor :sent_on_behalf_of, :as => DDEX::V20120404::DDEXC::MessagingParty, :from => "SentOnBehalfOf", :required => false
 
-      xml_accessor :message_recipient, :from => "MessageRecipient", :required => true
+      xml_accessor :message_recipient, :as => DDEX::V20120404::DDEXC::MessagingParty, :from => "MessageRecipient", :required => true
 
-      xml_accessor :message_created_date_time, :from => "MessageCreatedDateTime", :required => true
+      xml_accessor :message_created_date_time, :as => DateTime, :from => "MessageCreatedDateTime", :required => true
 
-      xml_accessor :message_audit_trail, :from => "MessageAuditTrail", :required => false
+      xml_accessor :message_audit_trail, :as => DDEX::V20120404::DDEXC::MessageAuditTrail, :from => "MessageAuditTrail", :required => false
 
-      xml_accessor :comment, :from => "Comment", :required => false
+      xml_accessor :comment, :as => DDEX::V20120404::DDEXC::Comment, :from => "Comment", :required => false
 
       xml_accessor :message_control_type, :from => "MessageControlType", :required => false
 
 
 
   
-      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode" 
+      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
 end

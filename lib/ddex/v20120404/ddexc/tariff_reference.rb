@@ -17,10 +17,10 @@ class TariffReference < ContentElement
     alias_method :value, :content
 
   
-      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode" 
+      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
-      xml_accessor :tariff_sub_reference, :from => "@TariffSubReference" 
+      xml_accessor :tariff_sub_reference, :from => "@TariffSubReference", :required => false
     
   
 end

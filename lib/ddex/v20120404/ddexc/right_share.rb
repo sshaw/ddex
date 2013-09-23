@@ -23,11 +23,11 @@ class RightShare < Element
   
   xml_name "RightShare"
 
-      xml_accessor :right_share_id, :from => "RightShareId", :required => false
+      xml_accessor :right_share_id, :as => DDEX::V20120404::DDEXC::RightsAgreementId, :from => "RightShareId", :required => false
 
       xml_accessor :right_share_reference, :from => "RightShareReference", :required => true
 
-      xml_accessor :right_share_creation_reference_list, :from => "RightShareCreationReferenceList", :required => false
+      xml_accessor :right_share_creation_reference_list, :as => DDEX::V20120404::DDEXC::RightShareCreationReferenceList, :from => "RightShareCreationReferenceList", :required => false
 
       
       xml_accessor :excluded_territory_codes, :as => [], :from => "ExcludedTerritoryCode", :required => false
@@ -36,36 +36,36 @@ class RightShare < Element
       xml_accessor :territory_codes, :as => [], :from => "TerritoryCode", :required => false
 
       
-      xml_accessor :rights_types, :as => [], :from => "RightsType", :required => false
+      xml_accessor :rights_types, :as => [DDEX::V20120404::DDEXC::RightsType], :from => "RightsType", :required => false
 
       
-      xml_accessor :use_types, :as => [], :from => "UseType", :required => false
+      xml_accessor :use_types, :as => [DDEX::V20120404::DDEXC::UseType], :from => "UseType", :required => false
 
       
-      xml_accessor :user_interface_types, :as => [], :from => "UserInterfaceType", :required => false
+      xml_accessor :user_interface_types, :as => [DDEX::V20120404::DDEXC::UserInterfaceType], :from => "UserInterfaceType", :required => false
 
       
-      xml_accessor :distribution_channel_types, :as => [], :from => "DistributionChannelType", :required => false
+      xml_accessor :distribution_channel_types, :as => [DDEX::V20120404::DDEXC::DistributionChannelType], :from => "DistributionChannelType", :required => false
 
       
-      xml_accessor :carrier_types, :as => [], :from => "CarrierType", :required => false
+      xml_accessor :carrier_types, :as => [DDEX::V20120404::DDEXC::CarrierType], :from => "CarrierType", :required => false
 
       
-      xml_accessor :commercial_model_types, :as => [], :from => "CommercialModelType", :required => false
+      xml_accessor :commercial_model_types, :as => [DDEX::V20120404::DDEXC::CommercialModelType], :from => "CommercialModelType", :required => false
 
       
       xml_accessor :musical_work_rights_claim_types, :as => [], :from => "MusicalWorkRightsClaimType", :required => false
 
       
-      xml_accessor :rights_controllers, :as => [], :from => "RightsController", :required => false
+      xml_accessor :rights_controllers, :as => [DDEX::V20120404::DDEXC::RightsController], :from => "RightsController", :required => false
 
-      xml_accessor :validity_period, :from => "ValidityPeriod", :required => true
+      xml_accessor :validity_period, :as => DDEX::V20120404::DDEXC::Period, :from => "ValidityPeriod", :required => true
 
       xml_accessor :percentage_rate, :from => "PercentageRate", :required => false
 
       xml_accessor :percentage_unknown, :from => "PercentageUnknown", :required => false
 
-      xml_accessor :tariff_reference, :from => "TariffReference", :required => false
+      xml_accessor :tariff_reference, :as => DDEX::V20120404::DDEXC::TariffReference, :from => "TariffReference", :required => false
 
       xml_accessor :license_status, :from => "LicenseStatus", :required => false
 
@@ -74,7 +74,7 @@ class RightShare < Element
 
 
   
-      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode" 
+      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
 end

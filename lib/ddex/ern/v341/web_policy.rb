@@ -27,7 +27,7 @@ class WebPolicy < Element
 
       xml_accessor :access_blocking_requested, :from => "AccessBlockingRequested", :required => false
 
-      xml_accessor :condition, :from => "Condition", :required => false
+      xml_accessor :condition, :as => DDEX::ERN::V341::Condition, :from => "Condition", :required => false
 
 
 

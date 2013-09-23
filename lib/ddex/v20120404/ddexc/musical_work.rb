@@ -20,34 +20,34 @@ class MusicalWork < Element
   xml_name "MusicalWork"
 
       
-      xml_accessor :musical_work_ids, :as => [], :from => "MusicalWorkId", :required => true
+      xml_accessor :musical_work_ids, :as => [DDEX::V20120404::DDEXC::MusicalWorkId], :from => "MusicalWorkId", :required => true
 
       xml_accessor :musical_work_reference, :from => "MusicalWorkReference", :required => true
 
       
-      xml_accessor :reference_titles, :as => [], :from => "ReferenceTitle", :required => true
+      xml_accessor :reference_titles, :as => [DDEX::V20120404::DDEXC::ReferenceTitle], :from => "ReferenceTitle", :required => true
 
-      xml_accessor :rights_agreement_id, :from => "RightsAgreementId", :required => false
-
-      
-      xml_accessor :musical_work_contributors, :as => [], :from => "MusicalWorkContributor", :required => true
+      xml_accessor :rights_agreement_id, :as => DDEX::V20120404::DDEXC::RightsAgreementId, :from => "RightsAgreementId", :required => false
 
       
-      xml_accessor :musical_work_types, :as => [], :from => "MusicalWorkType", :required => false
+      xml_accessor :musical_work_contributors, :as => [DDEX::V20120404::DDEXC::MusicalWorkContributor], :from => "MusicalWorkContributor", :required => true
 
       
-      xml_accessor :right_shares, :as => [], :from => "RightShare", :required => false
+      xml_accessor :musical_work_types, :as => [DDEX::V20120404::DDEXC::MusicalWorkType], :from => "MusicalWorkType", :required => false
 
       
-      xml_accessor :musical_work_details_by_territories, :as => [], :from => "MusicalWorkDetailsByTerritory", :required => false
+      xml_accessor :right_shares, :as => [DDEX::V20120404::DDEXC::RightShare], :from => "RightShare", :required => false
+
+      
+      xml_accessor :musical_work_details_by_territories, :as => [DDEX::V20120404::DDEXC::MusicalWorkDetailsByTerritory], :from => "MusicalWorkDetailsByTerritory", :required => false
 
 
 
   
-      xml_accessor :updated?, :from => "@IsUpdated" 
+      xml_accessor :updated?, :from => "@IsUpdated", :required => false
     
   
-      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode" 
+      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
 end

@@ -14,12 +14,12 @@ class WorkList < Element
   xml_name "WorkList"
 
       
-      xml_accessor :musical_works, :as => [], :from => "MusicalWork", :required => true
+      xml_accessor :musical_works, :as => [DDEX::V20120404::DDEXC::MusicalWork], :from => "MusicalWork", :required => true
 
 
 
   
-      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode" 
+      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
 end

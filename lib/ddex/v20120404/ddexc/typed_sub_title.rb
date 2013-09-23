@@ -17,10 +17,10 @@ class TypedSubTitle < ContentElement
     alias_method :value, :content
 
   
-      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode" 
+      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
-      xml_accessor :sub_title_type, :from => "@SubTitleType" 
+      xml_accessor :sub_title_type, :from => "@SubTitleType", :required => false
     
   
 end

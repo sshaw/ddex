@@ -18,18 +18,18 @@ class HostSoundCarrier < Element
   xml_name "HostSoundCarrier"
 
       
-      xml_accessor :release_ids, :as => [], :from => "ReleaseId", :required => false
+      xml_accessor :release_ids, :as => [DDEX::V20120404::DDEXC::ReleaseId], :from => "ReleaseId", :required => false
 
-      xml_accessor :rights_agreement_id, :from => "RightsAgreementId", :required => false
-
-      
-      xml_accessor :titles, :as => [], :from => "Title", :required => false
+      xml_accessor :rights_agreement_id, :as => DDEX::V20120404::DDEXC::RightsAgreementId, :from => "RightsAgreementId", :required => false
 
       
-      xml_accessor :display_artists, :as => [], :from => "DisplayArtist", :required => false
+      xml_accessor :titles, :as => [DDEX::V20120404::DDEXC::Title], :from => "Title", :required => false
 
       
-      xml_accessor :administrating_record_companies, :as => [], :from => "AdministratingRecordCompany", :required => false
+      xml_accessor :display_artists, :as => [DDEX::V20120404::DDEXC::Artist], :from => "DisplayArtist", :required => false
+
+      
+      xml_accessor :administrating_record_companies, :as => [DDEX::V20120404::DDEXC::AdministratingRecordCompany], :from => "AdministratingRecordCompany", :required => false
 
       xml_accessor :track_number, :from => "TrackNumber", :required => false
 

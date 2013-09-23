@@ -14,12 +14,12 @@ class SoftwareId < Element
   xml_name "SoftwareId"
 
       
-      xml_accessor :proprietary_ids, :as => [], :from => "ProprietaryId", :required => true
+      xml_accessor :proprietary_ids, :as => [DDEX::V20120404::DDEXC::ProprietaryId], :from => "ProprietaryId", :required => true
 
 
 
   
-      xml_accessor :replaced?, :from => "@IsReplaced" 
+      xml_accessor :replaced?, :from => "@IsReplaced", :required => false
     
   
 end

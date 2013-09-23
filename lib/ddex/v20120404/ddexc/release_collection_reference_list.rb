@@ -13,10 +13,10 @@ class ReleaseCollectionReferenceList < Element
   
   xml_name "ReleaseCollectionReferenceList"
 
-      xml_accessor :number_of_collections, :from => "NumberOfCollections", :required => false
+      xml_accessor :number_of_collections, :as => Integer, :from => "NumberOfCollections", :required => false
 
       
-      xml_accessor :release_collection_references, :as => [], :from => "ReleaseCollectionReference", :required => true
+      xml_accessor :release_collection_references, :as => [DDEX::V20120404::DDEXC::ReleaseCollectionReference], :from => "ReleaseCollectionReference", :required => true
 
 
 

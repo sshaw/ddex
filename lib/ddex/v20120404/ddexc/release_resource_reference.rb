@@ -17,7 +17,7 @@ class ReleaseResourceReference < ContentElement
     alias_method :value, :content
 
   
-      xml_accessor :release_resource_type, :from => "@ReleaseResourceType" 
+      xml_accessor :release_resource_type, :from => "@ReleaseResourceType", :required => false
     
   
 end

@@ -22,17 +22,17 @@ class ReleaseSummaryDetailsByTerritory < Element
       xml_accessor :territory_codes, :as => [], :from => "TerritoryCode", :required => false
 
       
-      xml_accessor :display_artist_names, :as => [], :from => "DisplayArtistName", :required => false
+      xml_accessor :display_artist_names, :as => [DDEX::V20120404::DDEXC::Name], :from => "DisplayArtistName", :required => false
 
       
-      xml_accessor :label_names, :as => [], :from => "LabelName", :required => false
+      xml_accessor :label_names, :as => [DDEX::V20120404::DDEXC::LabelName], :from => "LabelName", :required => false
 
-      xml_accessor :rights_agreement_id, :from => "RightsAgreementId", :required => false
+      xml_accessor :rights_agreement_id, :as => DDEX::V20120404::DDEXC::RightsAgreementId, :from => "RightsAgreementId", :required => false
 
 
 
   
-      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode" 
+      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
 end

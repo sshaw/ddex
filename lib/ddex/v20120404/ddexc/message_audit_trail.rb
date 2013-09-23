@@ -14,12 +14,12 @@ class MessageAuditTrail < Element
   xml_name "MessageAuditTrail"
 
       
-      xml_accessor :message_audit_trail_events, :as => [], :from => "MessageAuditTrailEvent", :required => true
+      xml_accessor :message_audit_trail_events, :as => [DDEX::V20120404::DDEXC::MessageAuditTrailEvent], :from => "MessageAuditTrailEvent", :required => true
 
 
 
   
-      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode" 
+      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
 end

@@ -19,7 +19,7 @@ class File < Element
 
       xml_accessor :file_path, :from => "FilePath", :required => false
 
-      xml_accessor :hash_sum, :from => "HashSum", :required => false
+      xml_accessor :hash_sum, :as => DDEX::V20120404::DDEXC::HashSum, :from => "HashSum", :required => false
 
 
 

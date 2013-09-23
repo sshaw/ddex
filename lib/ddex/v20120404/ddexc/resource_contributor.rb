@@ -16,17 +16,18 @@ class ResourceContributor < Element
   xml_name "ResourceContributor"
 
       
-      xml_accessor :party_names, :as => [], :from => "PartyName", :required => false
+      xml_accessor :party_names, :as => [DDEX::V20120404::DDEXC::PartyName], :from => "PartyName", :required => false
 
-      xml_accessor :party_id, :from => "PartyId", :required => false
+      xml_accessor :party_id, :as => DDEX::V20120404::DDEXC::PartyId, :from => "PartyId", :required => false
 
       
-      xml_accessor :resource_contributor_roles, :as => [], :from => "ResourceContributorRole", :required => false
+      xml_accessor :resource_contributor_roles, :as => [DDEX::V20120404::DDEXC::ResourceContributorRole], :from => "ResourceContributorRole", :required => false
 
 
 
   
-      xml_accessor :sequence_number, :from => "@SequenceNumber" 
+
+      xml_accessor :sequence_number, :as => Integer, :from => "@SequenceNumber", :required => false
     
   
 end

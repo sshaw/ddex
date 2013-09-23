@@ -12,9 +12,9 @@ class MessageNotificationPeriod < Element
   
   xml_name "MessageNotificationPeriod"
 
-      xml_accessor :start_date, :from => "StartDate", :required => true
+      xml_accessor :start_date, :as => DateTime, :from => "StartDate", :required => true
 
-      xml_accessor :end_date, :from => "EndDate", :required => true
+      xml_accessor :end_date, :as => DateTime, :from => "EndDate", :required => true
 
 
 

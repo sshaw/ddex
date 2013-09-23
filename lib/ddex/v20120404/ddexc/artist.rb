@@ -16,17 +16,18 @@ class Artist < Element
   xml_name "Artist"
 
       
-      xml_accessor :party_names, :as => [], :from => "PartyName", :required => false
+      xml_accessor :party_names, :as => [DDEX::V20120404::DDEXC::PartyName], :from => "PartyName", :required => false
 
-      xml_accessor :party_id, :from => "PartyId", :required => false
+      xml_accessor :party_id, :as => DDEX::V20120404::DDEXC::PartyId, :from => "PartyId", :required => false
 
       
-      xml_accessor :artist_roles, :as => [], :from => "ArtistRole", :required => false
+      xml_accessor :artist_roles, :as => [DDEX::V20120404::DDEXC::ArtistRole], :from => "ArtistRole", :required => false
 
 
 
   
-      xml_accessor :sequence_number, :from => "@SequenceNumber" 
+
+      xml_accessor :sequence_number, :as => Integer, :from => "@SequenceNumber", :required => false
     
   
 end

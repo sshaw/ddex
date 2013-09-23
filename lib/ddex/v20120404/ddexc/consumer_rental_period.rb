@@ -17,7 +17,7 @@ class ConsumerRentalPeriod < ContentElement
     alias_method :value, :content
 
   
-      xml_accessor :extensible?, :from => "@IsExtensible" 
+      xml_accessor :extensible?, :from => "@IsExtensible", :required => false
     
   
 end

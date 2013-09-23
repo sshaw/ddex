@@ -16,12 +16,12 @@ class SheetMusicId < Element
       xml_accessor :ismn, :from => "ISMN", :required => false
 
       
-      xml_accessor :proprietary_ids, :as => [], :from => "ProprietaryId", :required => false
+      xml_accessor :proprietary_ids, :as => [DDEX::V20120404::DDEXC::ProprietaryId], :from => "ProprietaryId", :required => false
 
 
 
   
-      xml_accessor :replaced?, :from => "@IsReplaced" 
+      xml_accessor :replaced?, :from => "@IsReplaced", :required => false
     
   
 end

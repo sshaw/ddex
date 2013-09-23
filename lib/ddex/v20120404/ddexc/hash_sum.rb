@@ -15,7 +15,7 @@ class HashSum < Element
 
       xml_accessor :hash_sum, :from => "HashSum", :required => true
 
-      xml_accessor :hash_sum_algorithm_type, :from => "HashSumAlgorithmType", :required => true
+      xml_accessor :hash_sum_algorithm_type, :as => DDEX::V20120404::DDEXC::HashSumAlgorithmType, :from => "HashSumAlgorithmType", :required => true
 
 
 

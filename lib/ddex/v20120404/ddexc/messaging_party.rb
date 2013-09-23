@@ -15,16 +15,16 @@ class MessagingParty < Element
   
   xml_name "MessagingParty"
 
-      xml_accessor :party_id, :from => "PartyId", :required => true
+      xml_accessor :party_id, :as => DDEX::V20120404::DDEXC::PartyId, :from => "PartyId", :required => true
 
-      xml_accessor :party_name, :from => "PartyName", :required => false
+      xml_accessor :party_name, :as => DDEX::V20120404::DDEXC::PartyName, :from => "PartyName", :required => false
 
-      xml_accessor :trading_name, :from => "TradingName", :required => false
+      xml_accessor :trading_name, :as => DDEX::V20120404::DDEXC::Name, :from => "TradingName", :required => false
 
 
 
   
-      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode" 
+      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
 end

@@ -19,17 +19,17 @@ class ReleaseId < Element
 
       xml_accessor :isrc, :from => "ISRC", :required => false
 
-      xml_accessor :icpn, :from => "ICPN", :required => false
+      xml_accessor :icpn, :as => DDEX::V20120404::DDEXC::ICPN, :from => "ICPN", :required => false
 
-      xml_accessor :catalog_number, :from => "CatalogNumber", :required => false
+      xml_accessor :catalog_number, :as => DDEX::V20120404::DDEXC::CatalogNumber, :from => "CatalogNumber", :required => false
 
       
-      xml_accessor :proprietary_ids, :as => [], :from => "ProprietaryId", :required => false
+      xml_accessor :proprietary_ids, :as => [DDEX::V20120404::DDEXC::ProprietaryId], :from => "ProprietaryId", :required => false
 
 
 
   
-      xml_accessor :replaced?, :from => "@IsReplaced" 
+      xml_accessor :replaced?, :from => "@IsReplaced", :required => false
     
   
 end

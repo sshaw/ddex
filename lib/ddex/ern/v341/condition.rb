@@ -12,7 +12,7 @@ class Condition < Element
   
   xml_name "Condition"
 
-      xml_accessor :value, :from => "Value", :required => true
+      xml_accessor :value, :as => Integer, :from => "Value", :required => true
 
       xml_accessor :unit, :from => "Unit", :required => true
 

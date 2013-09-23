@@ -20,37 +20,37 @@ class Text < Element
   
   xml_name "Text"
 
-      xml_accessor :text_type, :from => "TextType", :required => false
+      xml_accessor :text_type, :as => DDEX::V20120404::DDEXC::TextType, :from => "TextType", :required => false
 
       xml_accessor :artist_related?, :from => "IsArtistRelated", :required => false
 
       
-      xml_accessor :text_ids, :as => [], :from => "TextId", :required => false
+      xml_accessor :text_ids, :as => [DDEX::V20120404::DDEXC::TextId], :from => "TextId", :required => false
 
       
-      xml_accessor :indirect_text_ids, :as => [], :from => "IndirectTextId", :required => false
+      xml_accessor :indirect_text_ids, :as => [DDEX::V20120404::DDEXC::MusicalWorkId], :from => "IndirectTextId", :required => false
 
       xml_accessor :resource_reference, :from => "ResourceReference", :required => true
 
-      xml_accessor :resource_musical_work_reference_list, :from => "ResourceMusicalWorkReferenceList", :required => false
+      xml_accessor :resource_musical_work_reference_list, :as => DDEX::V20120404::DDEXC::ResourceMusicalWorkReferenceList, :from => "ResourceMusicalWorkReferenceList", :required => false
 
-      xml_accessor :resource_contained_resource_reference_list, :from => "ResourceContainedResourceReferenceList", :required => false
-
-      
-      xml_accessor :titles, :as => [], :from => "Title", :required => false
-
-      xml_accessor :creation_date, :from => "CreationDate", :required => false
+      xml_accessor :resource_contained_resource_reference_list, :as => DDEX::V20120404::DDEXC::ResourceContainedResourceReferenceList, :from => "ResourceContainedResourceReferenceList", :required => false
 
       
-      xml_accessor :text_details_by_territories, :as => [], :from => "TextDetailsByTerritory", :required => true
+      xml_accessor :titles, :as => [DDEX::V20120404::DDEXC::Title], :from => "Title", :required => false
+
+      xml_accessor :creation_date, :as => DDEX::V20120404::DDEXC::EventDate, :from => "CreationDate", :required => false
+
+      
+      xml_accessor :text_details_by_territories, :as => [DDEX::ERN::V341::TextDetailsByTerritory], :from => "TextDetailsByTerritory", :required => true
 
 
 
   
-      xml_accessor :updated?, :from => "@IsUpdated" 
+      xml_accessor :updated?, :from => "@IsUpdated", :required => false
     
   
-      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode" 
+      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
 end

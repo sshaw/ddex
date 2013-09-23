@@ -14,7 +14,7 @@ class CollectionResourceReferenceList < Element
   xml_name "CollectionResourceReferenceList"
 
       
-      xml_accessor :collection_resource_references, :as => [], :from => "CollectionResourceReference", :required => true
+      xml_accessor :collection_resource_references, :as => [DDEX::ERN::V341::CollectionResourceReference], :from => "CollectionResourceReference", :required => true
 
 
 

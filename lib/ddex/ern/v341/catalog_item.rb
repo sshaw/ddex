@@ -26,30 +26,30 @@ class CatalogItem < Element
       xml_accessor :territory_codes, :as => [], :from => "TerritoryCode", :required => true
 
       
-      xml_accessor :release_ids, :as => [], :from => "ReleaseId", :required => true
+      xml_accessor :release_ids, :as => [DDEX::V20120404::DDEXC::ReleaseId], :from => "ReleaseId", :required => true
 
-      xml_accessor :title, :from => "Title", :required => true
+      xml_accessor :title, :as => DDEX::V20120404::DDEXC::Title, :from => "Title", :required => true
 
-      xml_accessor :display_artist_name, :from => "DisplayArtistName", :required => true
-
-      
-      xml_accessor :contributor_names, :as => [], :from => "ContributorName", :required => true
-
-      xml_accessor :display_title, :from => "DisplayTitle", :required => true
+      xml_accessor :display_artist_name, :as => DDEX::V20120404::DDEXC::Name, :from => "DisplayArtistName", :required => true
 
       
-      xml_accessor :label_names, :as => [], :from => "LabelName", :required => true
+      xml_accessor :contributor_names, :as => [DDEX::V20120404::DDEXC::Name], :from => "ContributorName", :required => true
+
+      xml_accessor :display_title, :as => DDEX::V20120404::DDEXC::ReferenceTitle, :from => "DisplayTitle", :required => true
 
       
-      xml_accessor :genres, :as => [], :from => "Genre", :required => false
+      xml_accessor :label_names, :as => [DDEX::V20120404::DDEXC::LabelName], :from => "LabelName", :required => true
 
       
-      xml_accessor :p_lines, :as => [], :from => "PLine", :required => false
+      xml_accessor :genres, :as => [DDEX::V20120404::DDEXC::Genre], :from => "Genre", :required => false
 
       
-      xml_accessor :c_lines, :as => [], :from => "CLine", :required => false
+      xml_accessor :p_lines, :as => [DDEX::V20120404::DDEXC::PLine], :from => "PLine", :required => false
 
-      xml_accessor :release_date, :from => "ReleaseDate", :required => true
+      
+      xml_accessor :c_lines, :as => [DDEX::V20120404::DDEXC::CLine], :from => "CLine", :required => false
+
+      xml_accessor :release_date, :as => DDEX::V20120404::DDEXC::EventDate, :from => "ReleaseDate", :required => true
 
 
 

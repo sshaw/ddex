@@ -17,10 +17,10 @@ class LinkedReleaseResourceReference < ContentElement
     alias_method :value, :content
 
   
-      xml_accessor :link_description, :from => "@LinkDescription" 
+      xml_accessor :link_description, :from => "@LinkDescription", :required => false
     
   
-      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode" 
+      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
 end

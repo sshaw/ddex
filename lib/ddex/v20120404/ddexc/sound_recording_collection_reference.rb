@@ -12,7 +12,7 @@ class SoundRecordingCollectionReference < Element
   
   xml_name "SoundRecordingCollectionReference"
 
-      xml_accessor :sequence_number, :from => "SequenceNumber", :required => false
+      xml_accessor :sequence_number, :as => Integer, :from => "SequenceNumber", :required => false
 
       xml_accessor :sound_recording_collection_reference, :from => "SoundRecordingCollectionReference", :required => true
 

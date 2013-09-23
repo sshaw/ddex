@@ -14,13 +14,13 @@ class TaxRate < Element
   
   xml_name "TaxRate"
 
-      xml_accessor :rate, :from => "Rate", :required => true
+      xml_accessor :rate, :as => Integer, :from => "Rate", :required => true
 
       
-      xml_accessor :tax_types, :as => [], :from => "TaxType", :required => true
+      xml_accessor :tax_types, :as => [DDEX::V20120404::DDEXC::TaxType], :from => "TaxType", :required => true
 
       
-      xml_accessor :tax_scopes, :as => [], :from => "TaxScope", :required => true
+      xml_accessor :tax_scopes, :as => [DDEX::V20120404::DDEXC::TaxScope], :from => "TaxScope", :required => true
 
 
 

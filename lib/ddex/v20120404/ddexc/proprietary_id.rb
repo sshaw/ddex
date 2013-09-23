@@ -17,7 +17,7 @@ class ProprietaryId < ContentElement
     alias_method :value, :content
 
   
-      xml_accessor :namespace, :from => "@Namespace" 
+      xml_accessor :namespace, :from => "@Namespace", :required => true
     
   
 end

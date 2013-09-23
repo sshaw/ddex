@@ -25,19 +25,19 @@ class TechnicalSoundRecordingDetails < Element
 
       xml_accessor :technical_resource_details_reference, :from => "TechnicalResourceDetailsReference", :required => true
 
-      xml_accessor :drm_platform_type, :from => "DrmPlatformType", :required => false
+      xml_accessor :drm_platform_type, :as => DDEX::V20120404::DDEXC::DrmPlatformType, :from => "DrmPlatformType", :required => false
 
-      xml_accessor :container_format, :from => "ContainerFormat", :required => false
+      xml_accessor :container_format, :as => DDEX::V20120404::DDEXC::ContainerFormat, :from => "ContainerFormat", :required => false
 
-      xml_accessor :audio_codec_type, :from => "AudioCodecType", :required => false
+      xml_accessor :audio_codec_type, :as => DDEX::V20120404::DDEXC::AudioCodecType, :from => "AudioCodecType", :required => false
 
-      xml_accessor :bit_rate, :from => "BitRate", :required => false
+      xml_accessor :bit_rate, :as => DDEX::V20120404::DDEXC::BitRate, :from => "BitRate", :required => false
 
-      xml_accessor :number_of_channels, :from => "NumberOfChannels", :required => false
+      xml_accessor :number_of_channels, :as => Integer, :from => "NumberOfChannels", :required => false
 
-      xml_accessor :sampling_rate, :from => "SamplingRate", :required => false
+      xml_accessor :sampling_rate, :as => DDEX::V20120404::DDEXC::SamplingRate, :from => "SamplingRate", :required => false
 
-      xml_accessor :bits_per_sample, :from => "BitsPerSample", :required => false
+      xml_accessor :bits_per_sample, :as => Integer, :from => "BitsPerSample", :required => false
 
       xml_accessor :duration, :from => "Duration", :required => false
 
@@ -47,25 +47,25 @@ class TechnicalSoundRecordingDetails < Element
 
       xml_accessor :preview?, :from => "IsPreview", :required => false
 
-      xml_accessor :preview_details, :from => "PreviewDetails", :required => false
+      xml_accessor :preview_details, :as => DDEX::ERN::V341::SoundRecordingPreviewDetails, :from => "PreviewDetails", :required => false
 
-      xml_accessor :fulfillment_date, :from => "FulfillmentDate", :required => false
+      xml_accessor :fulfillment_date, :as => DDEX::V20120404::DDEXC::FulfillmentDate, :from => "FulfillmentDate", :required => false
 
-      xml_accessor :consumer_fulfillment_date, :from => "ConsumerFulfillmentDate", :required => false
-
-      
-      xml_accessor :files, :as => [], :from => "File", :required => false
+      xml_accessor :consumer_fulfillment_date, :as => DDEX::V20120404::DDEXC::FulfillmentDate, :from => "ConsumerFulfillmentDate", :required => false
 
       
-      xml_accessor :file_availability_descriptions, :as => [], :from => "FileAvailabilityDescription", :required => false
+      xml_accessor :files, :as => [DDEX::V20120404::DDEXC::File], :from => "File", :required => false
 
       
-      xml_accessor :fingerprints, :as => [], :from => "Fingerprint", :required => false
+      xml_accessor :file_availability_descriptions, :as => [DDEX::V20120404::DDEXC::Description], :from => "FileAvailabilityDescription", :required => false
+
+      
+      xml_accessor :fingerprints, :as => [DDEX::V20120404::DDEXC::Fingerprint], :from => "Fingerprint", :required => false
 
 
 
   
-      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode" 
+      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
 end

@@ -12,7 +12,7 @@ class ResourceMusicalWorkReference < Element
   
   xml_name "ResourceMusicalWorkReference"
 
-      xml_accessor :sequence_number, :from => "SequenceNumber", :required => false
+      xml_accessor :sequence_number, :as => Integer, :from => "SequenceNumber", :required => false
 
       xml_accessor :duration_used, :from => "DurationUsed", :required => false
 

@@ -15,7 +15,7 @@ class Fingerprint < Element
 
       xml_accessor :fingerprint, :from => "Fingerprint", :required => true
 
-      xml_accessor :fingerprint_algorithm_type, :from => "FingerprintAlgorithmType", :required => true
+      xml_accessor :fingerprint_algorithm_type, :as => DDEX::V20120404::DDEXC::FingerprintAlgorithmType, :from => "FingerprintAlgorithmType", :required => true
 
       xml_accessor :fingerprint_algorithm_version, :from => "FingerprintAlgorithmVersion", :required => false
 

@@ -17,13 +17,13 @@ class UserDefinedValue < ContentElement
     alias_method :value, :content
 
   
-      xml_accessor :namespace, :from => "@Namespace" 
+      xml_accessor :namespace, :from => "@Namespace", :required => false
     
   
-      xml_accessor :description, :from => "@Description" 
+      xml_accessor :description, :from => "@Description", :required => false
     
   
-      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode" 
+      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
 end

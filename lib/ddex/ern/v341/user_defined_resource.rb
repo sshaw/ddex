@@ -20,38 +20,38 @@ class UserDefinedResource < Element
   
   xml_name "UserDefinedResource"
 
-      xml_accessor :user_defined_resource_type, :from => "UserDefinedResourceType", :required => false
+      xml_accessor :user_defined_resource_type, :as => DDEX::V20120404::DDEXC::UserDefinedResourceType, :from => "UserDefinedResourceType", :required => false
 
       xml_accessor :artist_related?, :from => "IsArtistRelated", :required => false
 
       
-      xml_accessor :user_defined_resource_ids, :as => [], :from => "UserDefinedResourceId", :required => true
+      xml_accessor :user_defined_resource_ids, :as => [DDEX::V20120404::DDEXC::UserDefinedResourceId], :from => "UserDefinedResourceId", :required => true
 
       
-      xml_accessor :indirect_user_defined_resource_ids, :as => [], :from => "IndirectUserDefinedResourceId", :required => false
+      xml_accessor :indirect_user_defined_resource_ids, :as => [DDEX::V20120404::DDEXC::MusicalWorkId], :from => "IndirectUserDefinedResourceId", :required => false
 
       xml_accessor :resource_reference, :from => "ResourceReference", :required => true
 
-      xml_accessor :resource_musical_work_reference_list, :from => "ResourceMusicalWorkReferenceList", :required => false
+      xml_accessor :resource_musical_work_reference_list, :as => DDEX::V20120404::DDEXC::ResourceMusicalWorkReferenceList, :from => "ResourceMusicalWorkReferenceList", :required => false
 
-      xml_accessor :resource_contained_resource_reference_list, :from => "ResourceContainedResourceReferenceList", :required => false
-
-      
-      xml_accessor :titles, :as => [], :from => "Title", :required => false
+      xml_accessor :resource_contained_resource_reference_list, :as => DDEX::V20120404::DDEXC::ResourceContainedResourceReferenceList, :from => "ResourceContainedResourceReferenceList", :required => false
 
       
-      xml_accessor :user_defined_values, :as => [], :from => "UserDefinedValue", :required => false
+      xml_accessor :titles, :as => [DDEX::V20120404::DDEXC::Title], :from => "Title", :required => false
 
       
-      xml_accessor :user_defined_resource_details_by_territories, :as => [], :from => "UserDefinedResourceDetailsByTerritory", :required => true
+      xml_accessor :user_defined_values, :as => [DDEX::V20120404::DDEXC::UserDefinedValue], :from => "UserDefinedValue", :required => false
+
+      
+      xml_accessor :user_defined_resource_details_by_territories, :as => [DDEX::ERN::V341::UserDefinedResourceDetailsByTerritory], :from => "UserDefinedResourceDetailsByTerritory", :required => true
 
 
 
   
-      xml_accessor :updated?, :from => "@IsUpdated" 
+      xml_accessor :updated?, :from => "@IsUpdated", :required => false
     
   
-      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode" 
+      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
 end

@@ -21,33 +21,33 @@ class ResourceList < Element
   xml_name "ResourceList"
 
       
-      xml_accessor :sound_recordings, :as => [], :from => "SoundRecording", :required => false
+      xml_accessor :sound_recordings, :as => [DDEX::ERN::V341::SoundRecording], :from => "SoundRecording", :required => false
 
       
-      xml_accessor :midis, :as => [], :from => "MIDI", :required => false
+      xml_accessor :midis, :as => [DDEX::ERN::V341::MIDI], :from => "MIDI", :required => false
 
       
-      xml_accessor :videos, :as => [], :from => "Video", :required => false
+      xml_accessor :videos, :as => [DDEX::ERN::V341::Video], :from => "Video", :required => false
 
       
-      xml_accessor :images, :as => [], :from => "Image", :required => false
+      xml_accessor :images, :as => [DDEX::ERN::V341::Image], :from => "Image", :required => false
 
       
-      xml_accessor :texts, :as => [], :from => "Text", :required => false
+      xml_accessor :texts, :as => [DDEX::ERN::V341::Text], :from => "Text", :required => false
 
       
-      xml_accessor :sheet_musics, :as => [], :from => "SheetMusic", :required => false
+      xml_accessor :sheet_musics, :as => [DDEX::ERN::V341::SheetMusic], :from => "SheetMusic", :required => false
 
       
-      xml_accessor :softwares, :as => [], :from => "Software", :required => false
+      xml_accessor :softwares, :as => [DDEX::ERN::V341::Software], :from => "Software", :required => false
 
       
-      xml_accessor :user_defined_resources, :as => [], :from => "UserDefinedResource", :required => false
+      xml_accessor :user_defined_resources, :as => [DDEX::ERN::V341::UserDefinedResource], :from => "UserDefinedResource", :required => false
 
 
 
   
-      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode" 
+      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
 end

@@ -14,12 +14,12 @@ class UserDefinedResourceId < Element
   xml_name "UserDefinedResourceId"
 
       
-      xml_accessor :proprietary_ids, :as => [], :from => "ProprietaryId", :required => true
+      xml_accessor :proprietary_ids, :as => [DDEX::V20120404::DDEXC::ProprietaryId], :from => "ProprietaryId", :required => true
 
 
 
   
-      xml_accessor :replaced?, :from => "@IsReplaced" 
+      xml_accessor :replaced?, :from => "@IsReplaced", :required => false
     
   
 end

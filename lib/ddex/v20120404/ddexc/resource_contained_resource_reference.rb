@@ -17,9 +17,9 @@ class ResourceContainedResourceReference < Element
 
       xml_accessor :duration_used, :from => "DurationUsed", :required => false
 
-      xml_accessor :start_point, :from => "StartPoint", :required => false
+      xml_accessor :start_point, :as => Integer, :from => "StartPoint", :required => false
 
-      xml_accessor :purpose, :from => "Purpose", :required => false
+      xml_accessor :purpose, :as => DDEX::V20120404::DDEXC::Purpose, :from => "Purpose", :required => false
 
 
 

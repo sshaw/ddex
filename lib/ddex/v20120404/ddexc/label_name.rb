@@ -17,10 +17,10 @@ class LabelName < ContentElement
     alias_method :value, :content
 
   
-      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode" 
+      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
-      xml_accessor :label_name_type, :from => "@LabelNameType" 
+      xml_accessor :label_name_type, :from => "@LabelNameType", :required => false
     
   
 end

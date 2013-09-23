@@ -16,13 +16,13 @@ class Period < Element
   
   xml_name "Period"
 
-      xml_accessor :start_date_time, :from => "StartDateTime", :required => false
+      xml_accessor :start_date_time, :as => DDEX::V20120404::DDEXC::EventDateTime, :from => "StartDateTime", :required => false
 
-      xml_accessor :end_date_time, :from => "EndDateTime", :required => false
+      xml_accessor :end_date_time, :as => DDEX::V20120404::DDEXC::EventDateTime, :from => "EndDateTime", :required => false
 
-      xml_accessor :start_date, :from => "StartDate", :required => false
+      xml_accessor :start_date, :as => DDEX::V20120404::DDEXC::EventDate, :from => "StartDate", :required => false
 
-      xml_accessor :end_date, :from => "EndDate", :required => false
+      xml_accessor :end_date, :as => DDEX::V20120404::DDEXC::EventDate, :from => "EndDate", :required => false
 
 
 

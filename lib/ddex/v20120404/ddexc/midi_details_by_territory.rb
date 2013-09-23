@@ -29,36 +29,36 @@ class MidiDetailsByTerritory < Element
       xml_accessor :territory_codes, :as => [], :from => "TerritoryCode", :required => false
 
       
-      xml_accessor :titles, :as => [], :from => "Title", :required => false
+      xml_accessor :titles, :as => [DDEX::V20120404::DDEXC::Title], :from => "Title", :required => false
 
       
-      xml_accessor :display_artists, :as => [], :from => "DisplayArtist", :required => false
+      xml_accessor :display_artists, :as => [DDEX::V20120404::DDEXC::Artist], :from => "DisplayArtist", :required => false
 
       
-      xml_accessor :resource_contributors, :as => [], :from => "ResourceContributor", :required => false
+      xml_accessor :resource_contributors, :as => [DDEX::V20120404::DDEXC::ResourceContributor], :from => "ResourceContributor", :required => false
 
       
-      xml_accessor :indirect_resource_contributors, :as => [], :from => "IndirectResourceContributor", :required => false
+      xml_accessor :indirect_resource_contributors, :as => [DDEX::V20120404::DDEXC::IndirectResourceContributor], :from => "IndirectResourceContributor", :required => false
 
-      xml_accessor :rights_agreement_id, :from => "RightsAgreementId", :required => false
-
-      
-      xml_accessor :label_names, :as => [], :from => "LabelName", :required => false
+      xml_accessor :rights_agreement_id, :as => DDEX::V20120404::DDEXC::RightsAgreementId, :from => "RightsAgreementId", :required => false
 
       
-      xml_accessor :rights_controllers, :as => [], :from => "RightsController", :required => false
-
-      xml_accessor :remastered_date, :from => "RemasteredDate", :required => false
-
-      xml_accessor :original_resource_release_date, :from => "OriginalResourceReleaseDate", :required => false
+      xml_accessor :label_names, :as => [DDEX::V20120404::DDEXC::LabelName], :from => "LabelName", :required => false
 
       
-      xml_accessor :c_lines, :as => [], :from => "CLine", :required => false
+      xml_accessor :rights_controllers, :as => [DDEX::V20120404::DDEXC::RightsController], :from => "RightsController", :required => false
+
+      xml_accessor :remastered_date, :as => DDEX::V20120404::DDEXC::EventDate, :from => "RemasteredDate", :required => false
+
+      xml_accessor :original_resource_release_date, :as => DDEX::V20120404::DDEXC::EventDate, :from => "OriginalResourceReleaseDate", :required => false
+
+      
+      xml_accessor :c_lines, :as => [DDEX::V20120404::DDEXC::CLine], :from => "CLine", :required => false
 
 
 
   
-      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode" 
+      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
 end

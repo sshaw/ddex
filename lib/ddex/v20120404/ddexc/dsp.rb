@@ -16,11 +16,11 @@ class DSP < Element
   xml_name "DSP"
 
       
-      xml_accessor :party_names, :as => [], :from => "PartyName", :required => false
+      xml_accessor :party_names, :as => [DDEX::V20120404::DDEXC::PartyName], :from => "PartyName", :required => false
 
-      xml_accessor :party_id, :from => "PartyId", :required => false
+      xml_accessor :party_id, :as => DDEX::V20120404::DDEXC::PartyId, :from => "PartyId", :required => false
 
-      xml_accessor :trading_name, :from => "TradingName", :required => false
+      xml_accessor :trading_name, :as => DDEX::V20120404::DDEXC::Name, :from => "TradingName", :required => false
 
       
       xml_accessor :urls, :as => [], :from => "URL", :required => false
@@ -30,7 +30,7 @@ class DSP < Element
 
 
   
-      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode" 
+      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
 end

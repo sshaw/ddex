@@ -17,7 +17,7 @@ class PriceConsumerPaidExcSalesTax < ContentElement
     alias_method :value, :content
 
   
-      xml_accessor :currency_code, :from => "@CurrencyCode" 
+      xml_accessor :currency_code, :from => "@CurrencyCode", :required => false
     
   
 end

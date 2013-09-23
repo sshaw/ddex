@@ -21,10 +21,10 @@ class CollectionDetailsByTerritory < Element
       xml_accessor :territory_codes, :as => [], :from => "TerritoryCode", :required => false
 
       
-      xml_accessor :titles, :as => [], :from => "Title", :required => false
+      xml_accessor :titles, :as => [DDEX::V20120404::DDEXC::Title], :from => "Title", :required => false
 
       
-      xml_accessor :contributors, :as => [], :from => "Contributor", :required => false
+      xml_accessor :contributors, :as => [DDEX::V20120404::DDEXC::ResourceContributor], :from => "Contributor", :required => false
 
       xml_accessor :complete?, :from => "IsComplete", :required => false
 

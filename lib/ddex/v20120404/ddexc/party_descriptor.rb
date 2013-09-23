@@ -15,9 +15,9 @@ class PartyDescriptor < Element
   xml_name "PartyDescriptor"
 
       
-      xml_accessor :party_names, :as => [], :from => "PartyName", :required => false
+      xml_accessor :party_names, :as => [DDEX::V20120404::DDEXC::PartyName], :from => "PartyName", :required => false
 
-      xml_accessor :party_id, :from => "PartyId", :required => false
+      xml_accessor :party_id, :as => DDEX::V20120404::DDEXC::PartyId, :from => "PartyId", :required => false
 
 
 

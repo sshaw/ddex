@@ -14,9 +14,9 @@ class RelatedLicenseOrClaimId < Element
   
   xml_name "RelatedLicenseOrClaimId"
 
-      xml_accessor :license_or_claim_id, :from => "LicenseOrClaimId", :required => false
+      xml_accessor :license_or_claim_id, :as => DDEX::V20120404::DDEXC::RightsAgreementId, :from => "LicenseOrClaimId", :required => false
 
-      xml_accessor :license_or_claim_update_reason, :from => "LicenseOrClaimUpdateReason", :required => false
+      xml_accessor :license_or_claim_update_reason, :as => DDEX::V20120404::DDEXC::LicenseOrClaimUpdateReason, :from => "LicenseOrClaimUpdateReason", :required => false
 
 
 

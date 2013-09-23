@@ -17,7 +17,8 @@ class CalculationType < ContentElement
     alias_method :value, :content
 
   
-      xml_accessor :sequence_number, :from => "@SequenceNumber" 
+
+      xml_accessor :sequence_number, :as => Integer, :from => "@SequenceNumber", :required => false
     
   
 end

@@ -17,7 +17,7 @@ class NumberOfDataMismatchItems < ContentElement
     alias_method :value, :content
 
   
-      xml_accessor :data_mismatch_status, :from => "@DataMismatchStatus" 
+      xml_accessor :data_mismatch_status, :from => "@DataMismatchStatus", :required => false
     
   
 end

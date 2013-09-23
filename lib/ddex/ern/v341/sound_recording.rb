@@ -24,21 +24,21 @@ class SoundRecording < Element
   
   xml_name "SoundRecording"
 
-      xml_accessor :sound_recording_type, :from => "SoundRecordingType", :required => false
+      xml_accessor :sound_recording_type, :as => DDEX::V20120404::DDEXC::SoundRecordingType, :from => "SoundRecordingType", :required => false
 
       xml_accessor :artist_related?, :from => "IsArtistRelated", :required => false
 
       
-      xml_accessor :sound_recording_ids, :as => [], :from => "SoundRecordingId", :required => true
+      xml_accessor :sound_recording_ids, :as => [DDEX::V20120404::DDEXC::SoundRecordingId], :from => "SoundRecordingId", :required => true
 
       
-      xml_accessor :indirect_sound_recording_ids, :as => [], :from => "IndirectSoundRecordingId", :required => false
+      xml_accessor :indirect_sound_recording_ids, :as => [DDEX::V20120404::DDEXC::MusicalWorkId], :from => "IndirectSoundRecordingId", :required => false
 
       xml_accessor :resource_reference, :from => "ResourceReference", :required => true
 
-      xml_accessor :reference_title, :from => "ReferenceTitle", :required => true
+      xml_accessor :reference_title, :as => DDEX::V20120404::DDEXC::ReferenceTitle, :from => "ReferenceTitle", :required => true
 
-      xml_accessor :instrumentation_description, :from => "InstrumentationDescription", :required => false
+      xml_accessor :instrumentation_description, :as => DDEX::V20120404::DDEXC::Description, :from => "InstrumentationDescription", :required => false
 
       xml_accessor :medley?, :from => "IsMedley", :required => false
 
@@ -64,28 +64,28 @@ class SoundRecording < Element
 
       xml_accessor :duration, :from => "Duration", :required => true
 
-      xml_accessor :rights_agreement_id, :from => "RightsAgreementId", :required => false
+      xml_accessor :rights_agreement_id, :as => DDEX::V20120404::DDEXC::RightsAgreementId, :from => "RightsAgreementId", :required => false
 
-      xml_accessor :sound_recording_collection_reference_list, :from => "SoundRecordingCollectionReferenceList", :required => false
+      xml_accessor :sound_recording_collection_reference_list, :as => DDEX::V20120404::DDEXC::SoundRecordingCollectionReferenceList, :from => "SoundRecordingCollectionReferenceList", :required => false
 
-      xml_accessor :resource_musical_work_reference_list, :from => "ResourceMusicalWorkReferenceList", :required => false
+      xml_accessor :resource_musical_work_reference_list, :as => DDEX::V20120404::DDEXC::ResourceMusicalWorkReferenceList, :from => "ResourceMusicalWorkReferenceList", :required => false
 
-      xml_accessor :resource_contained_resource_reference_list, :from => "ResourceContainedResourceReferenceList", :required => false
+      xml_accessor :resource_contained_resource_reference_list, :as => DDEX::V20120404::DDEXC::ResourceContainedResourceReferenceList, :from => "ResourceContainedResourceReferenceList", :required => false
 
-      xml_accessor :creation_date, :from => "CreationDate", :required => false
+      xml_accessor :creation_date, :as => DDEX::V20120404::DDEXC::EventDate, :from => "CreationDate", :required => false
 
-      xml_accessor :mastered_date, :from => "MasteredDate", :required => false
+      xml_accessor :mastered_date, :as => DDEX::V20120404::DDEXC::EventDate, :from => "MasteredDate", :required => false
 
       
-      xml_accessor :sound_recording_details_by_territories, :as => [], :from => "SoundRecordingDetailsByTerritory", :required => true
+      xml_accessor :sound_recording_details_by_territories, :as => [DDEX::ERN::V341::SoundRecordingDetailsByTerritory], :from => "SoundRecordingDetailsByTerritory", :required => true
 
 
 
   
-      xml_accessor :updated?, :from => "@IsUpdated" 
+      xml_accessor :updated?, :from => "@IsUpdated", :required => false
     
   
-      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode" 
+      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
 end

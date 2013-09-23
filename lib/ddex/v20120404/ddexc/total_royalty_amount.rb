@@ -16,12 +16,12 @@ class TotalRoyaltyAmount < Element
   xml_name "TotalRoyaltyAmount"
 
       
-      xml_accessor :release_types, :as => [], :from => "ReleaseType", :required => false
+      xml_accessor :release_types, :as => [DDEX::V20120404::DDEXC::ReleaseType], :from => "ReleaseType", :required => false
 
       
-      xml_accessor :rights_types, :as => [], :from => "RightsType", :required => false
+      xml_accessor :rights_types, :as => [DDEX::V20120404::DDEXC::RightsType], :from => "RightsType", :required => false
 
-      xml_accessor :royalty_amount, :from => "RoyaltyAmount", :required => true
+      xml_accessor :royalty_amount, :as => DDEX::V20120404::DDEXC::RoyaltyAmount, :from => "RoyaltyAmount", :required => true
 
 
 

@@ -14,7 +14,7 @@ class ResourceContainedResourceReferenceList < Element
   xml_name "ResourceContainedResourceReferenceList"
 
       
-      xml_accessor :resource_contained_resource_references, :as => [], :from => "ResourceContainedResourceReference", :required => true
+      xml_accessor :resource_contained_resource_references, :as => [DDEX::V20120404::DDEXC::ResourceContainedResourceReference], :from => "ResourceContainedResourceReference", :required => true
 
 
 

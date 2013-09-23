@@ -19,7 +19,7 @@ class SocietyAffiliation < Element
       
       xml_accessor :territory_codes, :as => [], :from => "TerritoryCode", :required => false
 
-      xml_accessor :music_rights_society, :from => "MusicRightsSociety", :required => true
+      xml_accessor :music_rights_society, :as => DDEX::V20120404::DDEXC::PartyDescriptor, :from => "MusicRightsSociety", :required => true
 
 
 

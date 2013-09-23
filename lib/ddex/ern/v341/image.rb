@@ -17,30 +17,30 @@ class Image < Element
   
   xml_name "Image"
 
-      xml_accessor :image_type, :from => "ImageType", :required => false
+      xml_accessor :image_type, :as => DDEX::V20120404::DDEXC::ImageType, :from => "ImageType", :required => false
 
       xml_accessor :artist_related?, :from => "IsArtistRelated", :required => false
 
       
-      xml_accessor :image_ids, :as => [], :from => "ImageId", :required => true
+      xml_accessor :image_ids, :as => [DDEX::V20120404::DDEXC::ImageId], :from => "ImageId", :required => true
 
       xml_accessor :resource_reference, :from => "ResourceReference", :required => true
 
       
-      xml_accessor :titles, :as => [], :from => "Title", :required => false
+      xml_accessor :titles, :as => [DDEX::V20120404::DDEXC::Title], :from => "Title", :required => false
 
-      xml_accessor :creation_date, :from => "CreationDate", :required => false
+      xml_accessor :creation_date, :as => DDEX::V20120404::DDEXC::EventDate, :from => "CreationDate", :required => false
 
       
-      xml_accessor :image_details_by_territories, :as => [], :from => "ImageDetailsByTerritory", :required => true
+      xml_accessor :image_details_by_territories, :as => [DDEX::ERN::V341::ImageDetailsByTerritory], :from => "ImageDetailsByTerritory", :required => true
 
 
 
   
-      xml_accessor :updated?, :from => "@IsUpdated" 
+      xml_accessor :updated?, :from => "@IsUpdated", :required => false
     
   
-      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode" 
+      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
 end

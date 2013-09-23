@@ -14,12 +14,12 @@ class CollectionList < Element
   xml_name "CollectionList"
 
       
-      xml_accessor :collections, :as => [], :from => "Collection", :required => true
+      xml_accessor :collections, :as => [DDEX::ERN::V341::Collection], :from => "Collection", :required => true
 
 
 
   
-      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode" 
+      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
 end

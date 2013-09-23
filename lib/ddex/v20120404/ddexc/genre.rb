@@ -14,14 +14,14 @@ class Genre < Element
   
   xml_name "Genre"
 
-      xml_accessor :genre_text, :from => "GenreText", :required => true
+      xml_accessor :genre_text, :as => DDEX::V20120404::DDEXC::Description, :from => "GenreText", :required => true
 
-      xml_accessor :sub_genre, :from => "SubGenre", :required => false
+      xml_accessor :sub_genre, :as => DDEX::V20120404::DDEXC::Description, :from => "SubGenre", :required => false
 
 
 
   
-      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode" 
+      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
 end

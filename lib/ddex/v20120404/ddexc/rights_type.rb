@@ -17,13 +17,13 @@ class RightsType < ContentElement
     alias_method :value, :content
 
   
-      xml_accessor :territory_code, :from => "@TerritoryCode" 
+      xml_accessor :territory_code, :from => "@TerritoryCode", :required => true
     
   
-      xml_accessor :namespace, :from => "@Namespace" 
+      xml_accessor :namespace, :from => "@Namespace", :required => false
     
   
-      xml_accessor :user_defined_value, :from => "@UserDefinedValue" 
+      xml_accessor :user_defined_value, :from => "@UserDefinedValue", :required => false
     
   
 end

@@ -20,37 +20,37 @@ class NewReleaseMessage < Element
   
   xml_name "NewReleaseMessage"
 
-      xml_accessor :message_header, :from => "MessageHeader", :required => true
+      xml_accessor :message_header, :as => DDEX::V20120404::DDEXC::MessageHeader, :from => "MessageHeader", :required => true
 
       xml_accessor :update_indicator, :from => "UpdateIndicator", :required => true
 
-      xml_accessor :catalog_transfer, :from => "CatalogTransfer", :required => false
+      xml_accessor :catalog_transfer, :as => DDEX::ERN::V341::CatalogTransfer, :from => "CatalogTransfer", :required => false
 
-      xml_accessor :work_list, :from => "WorkList", :required => false
+      xml_accessor :work_list, :as => DDEX::V20120404::DDEXC::WorkList, :from => "WorkList", :required => false
 
-      xml_accessor :cue_sheet_list, :from => "CueSheetList", :required => false
+      xml_accessor :cue_sheet_list, :as => DDEX::ERN::V341::CueSheetList, :from => "CueSheetList", :required => false
 
-      xml_accessor :resource_list, :from => "ResourceList", :required => true
+      xml_accessor :resource_list, :as => DDEX::ERN::V341::ResourceList, :from => "ResourceList", :required => true
 
-      xml_accessor :collection_list, :from => "CollectionList", :required => false
+      xml_accessor :collection_list, :as => DDEX::ERN::V341::CollectionList, :from => "CollectionList", :required => false
 
-      xml_accessor :release_list, :from => "ReleaseList", :required => true
+      xml_accessor :release_list, :as => DDEX::ERN::V341::ReleaseList, :from => "ReleaseList", :required => true
 
-      xml_accessor :deal_list, :from => "DealList", :required => false
+      xml_accessor :deal_list, :as => DDEX::ERN::V341::DealList, :from => "DealList", :required => false
 
 
 
   
-      xml_accessor :message_schema_version_id, :from => "@MessageSchemaVersionId" 
+      xml_accessor :message_schema_version_id, :from => "@MessageSchemaVersionId", :required => true
     
   
-      xml_accessor :business_profile_version_id, :from => "@BusinessProfileVersionId" 
+      xml_accessor :business_profile_version_id, :from => "@BusinessProfileVersionId", :required => false
     
   
-      xml_accessor :release_profile_version_id, :from => "@ReleaseProfileVersionId" 
+      xml_accessor :release_profile_version_id, :from => "@ReleaseProfileVersionId", :required => false
     
   
-      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode" 
+      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
 end

@@ -14,18 +14,18 @@ class Title < Element
   
   xml_name "Title"
 
-      xml_accessor :title_text, :from => "TitleText", :required => true
+      xml_accessor :title_text, :as => DDEX::V20120404::DDEXC::TitleText, :from => "TitleText", :required => true
 
       
-      xml_accessor :sub_titles, :as => [], :from => "SubTitle", :required => false
+      xml_accessor :sub_titles, :as => [DDEX::V20120404::DDEXC::TypedSubTitle], :from => "SubTitle", :required => false
 
 
 
   
-      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode" 
+      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
-      xml_accessor :title_type, :from => "@TitleType" 
+      xml_accessor :title_type, :from => "@TitleType", :required => false
     
   
 end

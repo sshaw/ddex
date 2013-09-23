@@ -15,20 +15,20 @@ class AdministratingRecordCompany < Element
   xml_name "AdministratingRecordCompany"
 
       
-      xml_accessor :party_names, :as => [], :from => "PartyName", :required => false
+      xml_accessor :party_names, :as => [DDEX::V20120404::DDEXC::PartyName], :from => "PartyName", :required => false
 
-      xml_accessor :party_id, :from => "PartyId", :required => false
+      xml_accessor :party_id, :as => DDEX::V20120404::DDEXC::PartyId, :from => "PartyId", :required => false
 
 
 
   
-      xml_accessor :namespace, :from => "@Namespace" 
+      xml_accessor :namespace, :from => "@Namespace", :required => false
     
   
-      xml_accessor :user_defined_value, :from => "@UserDefinedValue" 
+      xml_accessor :user_defined_value, :from => "@UserDefinedValue", :required => false
     
   
-      xml_accessor :role, :from => "@Role" 
+      xml_accessor :role, :from => "@Role", :required => true
     
   
 end

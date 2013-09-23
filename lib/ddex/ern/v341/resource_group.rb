@@ -21,35 +21,35 @@ class ResourceGroup < Element
   xml_name "ResourceGroup"
 
       
-      xml_accessor :titles, :as => [], :from => "Title", :required => false
+      xml_accessor :titles, :as => [DDEX::V20120404::DDEXC::Title], :from => "Title", :required => false
 
-      xml_accessor :sequence_number, :from => "SequenceNumber", :required => false
-
-      
-      xml_accessor :display_artists, :as => [], :from => "DisplayArtist", :required => false
+      xml_accessor :sequence_number, :as => Integer, :from => "SequenceNumber", :required => false
 
       
-      xml_accessor :resource_contributors, :as => [], :from => "ResourceContributor", :required => false
+      xml_accessor :display_artists, :as => [DDEX::V20120404::DDEXC::Artist], :from => "DisplayArtist", :required => false
 
       
-      xml_accessor :indirect_resource_contributors, :as => [], :from => "IndirectResourceContributor", :required => false
+      xml_accessor :resource_contributors, :as => [DDEX::V20120404::DDEXC::ResourceContributor], :from => "ResourceContributor", :required => false
 
       
-      xml_accessor :resource_groups, :as => [], :from => "ResourceGroup", :required => false
-
-      xml_accessor :resource_group_resource_reference_list, :from => "ResourceGroupResourceReferenceList", :required => false
+      xml_accessor :indirect_resource_contributors, :as => [DDEX::V20120404::DDEXC::IndirectResourceContributor], :from => "IndirectResourceContributor", :required => false
 
       
-      xml_accessor :resource_group_content_items, :as => [], :from => "ResourceGroupContentItem", :required => false
+      xml_accessor :resource_groups, :as => [DDEX::ERN::V341::ResourceGroup], :from => "ResourceGroup", :required => false
 
-      xml_accessor :release_id, :from => "ReleaseId", :required => false
+      xml_accessor :resource_group_resource_reference_list, :as => DDEX::V20120404::DDEXC::ResourceGroupResourceReferenceList, :from => "ResourceGroupResourceReferenceList", :required => false
+
+      
+      xml_accessor :resource_group_content_items, :as => [DDEX::ERN::V341::ResourceGroupContentItem], :from => "ResourceGroupContentItem", :required => false
+
+      xml_accessor :release_id, :as => DDEX::V20120404::DDEXC::ReleaseId, :from => "ReleaseId", :required => false
 
       xml_accessor :resource_group_release_reference, :from => "ResourceGroupReleaseReference", :required => false
 
 
 
   
-      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode" 
+      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
 end

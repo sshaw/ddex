@@ -18,20 +18,20 @@ class Usage < Element
   xml_name "Usage"
 
       
-      xml_accessor :use_types, :as => [], :from => "UseType", :required => true
+      xml_accessor :use_types, :as => [DDEX::V20120404::DDEXC::UseType], :from => "UseType", :required => true
 
       
-      xml_accessor :user_interface_types, :as => [], :from => "UserInterfaceType", :required => false
+      xml_accessor :user_interface_types, :as => [DDEX::V20120404::DDEXC::UserInterfaceType], :from => "UserInterfaceType", :required => false
 
       
-      xml_accessor :distribution_channel_types, :as => [], :from => "DistributionChannelType", :required => false
+      xml_accessor :distribution_channel_types, :as => [DDEX::V20120404::DDEXC::DistributionChannelType], :from => "DistributionChannelType", :required => false
 
       
-      xml_accessor :carrier_types, :as => [], :from => "CarrierType", :required => false
+      xml_accessor :carrier_types, :as => [DDEX::V20120404::DDEXC::CarrierType], :from => "CarrierType", :required => false
 
-      xml_accessor :technical_instantiation, :from => "TechnicalInstantiation", :required => false
+      xml_accessor :technical_instantiation, :as => DDEX::V20120404::DDEXC::TechnicalInstantiation, :from => "TechnicalInstantiation", :required => false
 
-      xml_accessor :number_of_usages, :from => "NumberOfUsages", :required => false
+      xml_accessor :number_of_usages, :as => Integer, :from => "NumberOfUsages", :required => false
 
 
 

@@ -14,7 +14,7 @@ class CueSheetList < Element
   xml_name "CueSheetList"
 
       
-      xml_accessor :cue_sheets, :as => [], :from => "CueSheet", :required => true
+      xml_accessor :cue_sheets, :as => [DDEX::V20120404::DDEXC::CueSheet], :from => "CueSheet", :required => true
 
 
 

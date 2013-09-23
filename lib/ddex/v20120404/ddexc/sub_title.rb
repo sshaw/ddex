@@ -17,7 +17,7 @@ class SubTitle < ContentElement
     alias_method :value, :content
 
   
-      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode" 
+      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
 end

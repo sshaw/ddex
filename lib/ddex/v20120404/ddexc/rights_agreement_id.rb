@@ -17,7 +17,7 @@ class RightsAgreementId < Element
       xml_accessor :mwlis, :as => [], :from => "MWLI", :required => false
 
       
-      xml_accessor :proprietary_ids, :as => [], :from => "ProprietaryId", :required => false
+      xml_accessor :proprietary_ids, :as => [DDEX::V20120404::DDEXC::ProprietaryId], :from => "ProprietaryId", :required => false
 
 
 

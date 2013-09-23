@@ -29,29 +29,29 @@ class TechnicalMidiDetails < Element
 
       xml_accessor :preview?, :from => "IsPreview", :required => false
 
-      xml_accessor :preview_details, :from => "PreviewDetails", :required => false
+      xml_accessor :preview_details, :as => DDEX::ERN::V341::SoundRecordingPreviewDetails, :from => "PreviewDetails", :required => false
 
-      xml_accessor :fulfillment_date, :from => "FulfillmentDate", :required => false
+      xml_accessor :fulfillment_date, :as => DDEX::V20120404::DDEXC::FulfillmentDate, :from => "FulfillmentDate", :required => false
 
-      xml_accessor :consumer_fulfillment_date, :from => "ConsumerFulfillmentDate", :required => false
-
-      
-      xml_accessor :files, :as => [], :from => "File", :required => false
+      xml_accessor :consumer_fulfillment_date, :as => DDEX::V20120404::DDEXC::FulfillmentDate, :from => "ConsumerFulfillmentDate", :required => false
 
       
-      xml_accessor :file_availability_descriptions, :as => [], :from => "FileAvailabilityDescription", :required => false
-
-      xml_accessor :number_of_voices, :from => "NumberOfVoices", :required => false
-
-      xml_accessor :sound_processor_type, :from => "SoundProcessorType", :required => false
+      xml_accessor :files, :as => [DDEX::V20120404::DDEXC::File], :from => "File", :required => false
 
       
-      xml_accessor :fingerprints, :as => [], :from => "Fingerprint", :required => false
+      xml_accessor :file_availability_descriptions, :as => [DDEX::V20120404::DDEXC::Description], :from => "FileAvailabilityDescription", :required => false
+
+      xml_accessor :number_of_voices, :as => Integer, :from => "NumberOfVoices", :required => false
+
+      xml_accessor :sound_processor_type, :as => DDEX::V20120404::DDEXC::SoundProcessorType, :from => "SoundProcessorType", :required => false
+
+      
+      xml_accessor :fingerprints, :as => [DDEX::V20120404::DDEXC::Fingerprint], :from => "Fingerprint", :required => false
 
 
 
   
-      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode" 
+      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
 end

@@ -17,16 +17,16 @@ class AppliedRoyaltyRate < ContentElement
     alias_method :value, :content
 
   
-      xml_accessor :value_type, :from => "@ValueType" 
+      xml_accessor :value_type, :from => "@ValueType", :required => true
     
   
-      xml_accessor :royalty_rate_type, :from => "@RoyaltyRateType" 
+      xml_accessor :royalty_rate_type, :from => "@RoyaltyRateType", :required => true
     
   
-      xml_accessor :namespace, :from => "@Namespace" 
+      xml_accessor :namespace, :from => "@Namespace", :required => false
     
   
-      xml_accessor :user_defined_value, :from => "@UserDefinedValue" 
+      xml_accessor :user_defined_value, :from => "@UserDefinedValue", :required => false
     
   
 end

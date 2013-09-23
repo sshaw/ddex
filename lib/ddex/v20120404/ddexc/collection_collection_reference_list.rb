@@ -13,10 +13,10 @@ class CollectionCollectionReferenceList < Element
   
   xml_name "CollectionCollectionReferenceList"
 
-      xml_accessor :number_of_collections, :from => "NumberOfCollections", :required => false
+      xml_accessor :number_of_collections, :as => Integer, :from => "NumberOfCollections", :required => false
 
       
-      xml_accessor :collection_collection_references, :as => [], :from => "CollectionCollectionReference", :required => true
+      xml_accessor :collection_collection_references, :as => [DDEX::V20120404::DDEXC::CollectionCollectionReference], :from => "CollectionCollectionReference", :required => true
 
 
 

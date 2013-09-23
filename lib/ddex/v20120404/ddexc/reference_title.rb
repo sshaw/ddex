@@ -14,14 +14,14 @@ class ReferenceTitle < Element
   
   xml_name "ReferenceTitle"
 
-      xml_accessor :title_text, :from => "TitleText", :required => true
+      xml_accessor :title_text, :as => DDEX::V20120404::DDEXC::TitleText, :from => "TitleText", :required => true
 
-      xml_accessor :sub_title, :from => "SubTitle", :required => false
+      xml_accessor :sub_title, :as => DDEX::V20120404::DDEXC::SubTitle, :from => "SubTitle", :required => false
 
 
 
   
-      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode" 
+      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
 end

@@ -19,7 +19,7 @@ class TechnicalInstantiation < Element
 
       xml_accessor :coding_type, :from => "CodingType", :required => false
 
-      xml_accessor :bit_rate, :from => "BitRate", :required => false
+      xml_accessor :bit_rate, :as => DDEX::V20120404::DDEXC::BitRate, :from => "BitRate", :required => false
 
 
 

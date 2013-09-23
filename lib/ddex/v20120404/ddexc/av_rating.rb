@@ -15,7 +15,7 @@ class AvRating < Element
 
       xml_accessor :rating_text, :from => "RatingText", :required => true
 
-      xml_accessor :rating_agency, :from => "RatingAgency", :required => true
+      xml_accessor :rating_agency, :as => DDEX::V20120404::DDEXC::RatingAgency, :from => "RatingAgency", :required => true
 
 
 

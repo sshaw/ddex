@@ -23,15 +23,15 @@ class ErnMessageInBatch < Element
       xml_accessor :url, :from => "URL", :required => true
 
       
-      xml_accessor :included_release_ids, :as => [], :from => "IncludedReleaseId", :required => true
+      xml_accessor :included_release_ids, :as => [DDEX::V20120404::DDEXC::ReleaseId], :from => "IncludedReleaseId", :required => true
 
-      xml_accessor :delivery_type, :from => "DeliveryType", :required => true
+      xml_accessor :delivery_type, :as => DDEX::V20120404::DDEXC::MessageActionType, :from => "DeliveryType", :required => true
 
-      xml_accessor :product_type, :from => "ProductType", :required => true
+      xml_accessor :product_type, :as => DDEX::V20120404::DDEXC::ProductType, :from => "ProductType", :required => true
 
       xml_accessor :signature, :from => "Signature", :required => false
 
-      xml_accessor :hash_sum, :from => "HashSum", :required => false
+      xml_accessor :hash_sum, :as => DDEX::V20120404::DDEXC::HashSum, :from => "HashSum", :required => false
 
 
 

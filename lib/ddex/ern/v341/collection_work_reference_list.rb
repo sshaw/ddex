@@ -14,7 +14,7 @@ class CollectionWorkReferenceList < Element
   xml_name "CollectionWorkReferenceList"
 
       
-      xml_accessor :collection_work_references, :as => [], :from => "CollectionWorkReference", :required => true
+      xml_accessor :collection_work_references, :as => [DDEX::ERN::V341::CollectionWorkReference], :from => "CollectionWorkReference", :required => true
 
 
 

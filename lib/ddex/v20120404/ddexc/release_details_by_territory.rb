@@ -27,34 +27,34 @@ class ReleaseDetailsByTerritory < Element
       xml_accessor :territory_codes, :as => [], :from => "TerritoryCode", :required => false
 
       
-      xml_accessor :display_artist_names, :as => [], :from => "DisplayArtistName", :required => false
+      xml_accessor :display_artist_names, :as => [DDEX::V20120404::DDEXC::Name], :from => "DisplayArtistName", :required => false
 
       
-      xml_accessor :label_names, :as => [], :from => "LabelName", :required => false
+      xml_accessor :label_names, :as => [DDEX::V20120404::DDEXC::LabelName], :from => "LabelName", :required => false
 
-      xml_accessor :rights_agreement_id, :from => "RightsAgreementId", :required => false
-
-      
-      xml_accessor :titles, :as => [], :from => "Title", :required => false
+      xml_accessor :rights_agreement_id, :as => DDEX::V20120404::DDEXC::RightsAgreementId, :from => "RightsAgreementId", :required => false
 
       
-      xml_accessor :display_artists, :as => [], :from => "DisplayArtist", :required => true
+      xml_accessor :titles, :as => [DDEX::V20120404::DDEXC::Title], :from => "Title", :required => false
+
+      
+      xml_accessor :display_artists, :as => [DDEX::V20120404::DDEXC::Artist], :from => "DisplayArtist", :required => true
 
       xml_accessor :multi_artist_compilation?, :from => "IsMultiArtistCompilation", :required => false
 
       
-      xml_accessor :administrating_record_companies, :as => [], :from => "AdministratingRecordCompany", :required => false
+      xml_accessor :administrating_record_companies, :as => [DDEX::V20120404::DDEXC::AdministratingRecordCompany], :from => "AdministratingRecordCompany", :required => false
 
       
-      xml_accessor :release_types, :as => [], :from => "ReleaseType", :required => false
+      xml_accessor :release_types, :as => [DDEX::V20120404::DDEXC::ReleaseType], :from => "ReleaseType", :required => false
 
       
-      xml_accessor :related_releases, :as => [], :from => "RelatedRelease", :required => false
+      xml_accessor :related_releases, :as => [DDEX::V20120404::DDEXC::RelatedRelease], :from => "RelatedRelease", :required => false
 
 
 
   
-      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode" 
+      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
 end

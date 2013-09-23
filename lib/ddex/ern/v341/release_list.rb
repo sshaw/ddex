@@ -14,12 +14,12 @@ class ReleaseList < Element
   xml_name "ReleaseList"
 
       
-      xml_accessor :releases, :as => [], :from => "Release", :required => false
+      xml_accessor :releases, :as => [DDEX::ERN::V341::Release], :from => "Release", :required => false
 
 
 
   
-      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode" 
+      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
 end

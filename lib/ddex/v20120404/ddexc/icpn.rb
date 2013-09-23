@@ -17,7 +17,7 @@ class ICPN < ContentElement
     alias_method :value, :content
 
   
-      xml_accessor :ean?, :from => "@IsEan" 
+      xml_accessor :ean?, :from => "@IsEan", :required => true
     
   
 end

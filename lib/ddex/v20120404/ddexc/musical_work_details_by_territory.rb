@@ -20,12 +20,12 @@ class MusicalWorkDetailsByTerritory < Element
       xml_accessor :territory_codes, :as => [], :from => "TerritoryCode", :required => false
 
       
-      xml_accessor :musical_work_contributors, :as => [], :from => "MusicalWorkContributor", :required => true
+      xml_accessor :musical_work_contributors, :as => [DDEX::V20120404::DDEXC::MusicalWorkContributor], :from => "MusicalWorkContributor", :required => true
 
 
 
   
-      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode" 
+      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
 end

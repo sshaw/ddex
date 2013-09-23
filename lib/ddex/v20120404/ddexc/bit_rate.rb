@@ -17,7 +17,7 @@ class BitRate < ContentElement
     alias_method :value, :content
 
   
-      xml_accessor :unit_of_measure, :from => "@UnitOfMeasure" 
+      xml_accessor :unit_of_measure, :from => "@UnitOfMeasure", :required => false
     
   
 end

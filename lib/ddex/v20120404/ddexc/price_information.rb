@@ -18,17 +18,17 @@ class PriceInformation < Element
   
   xml_name "PriceInformation"
 
-      xml_accessor :description, :from => "Description", :required => false
+      xml_accessor :description, :as => DDEX::V20120404::DDEXC::Description, :from => "Description", :required => false
 
-      xml_accessor :price_range_type, :from => "PriceRangeType", :required => false
+      xml_accessor :price_range_type, :as => DDEX::V20120404::DDEXC::PriceRangeType, :from => "PriceRangeType", :required => false
 
-      xml_accessor :price_type, :from => "PriceType", :required => false
+      xml_accessor :price_type, :as => DDEX::V20120404::DDEXC::PriceType, :from => "PriceType", :required => false
 
-      xml_accessor :wholesale_price_per_unit, :from => "WholesalePricePerUnit", :required => false
+      xml_accessor :wholesale_price_per_unit, :as => DDEX::V20120404::DDEXC::Price, :from => "WholesalePricePerUnit", :required => false
 
-      xml_accessor :bulk_order_wholesale_price_per_unit, :from => "BulkOrderWholesalePricePerUnit", :required => false
+      xml_accessor :bulk_order_wholesale_price_per_unit, :as => DDEX::V20120404::DDEXC::Price, :from => "BulkOrderWholesalePricePerUnit", :required => false
 
-      xml_accessor :suggested_retail_price, :from => "SuggestedRetailPrice", :required => false
+      xml_accessor :suggested_retail_price, :as => DDEX::V20120404::DDEXC::Price, :from => "SuggestedRetailPrice", :required => false
 
 
 

@@ -14,26 +14,26 @@ class CatalogListMessage < Element
   
   xml_name "CatalogListMessage"
 
-      xml_accessor :message_header, :from => "MessageHeader", :required => true
+      xml_accessor :message_header, :as => DDEX::V20120404::DDEXC::MessageHeader, :from => "MessageHeader", :required => true
 
-      xml_accessor :publication_date, :from => "PublicationDate", :required => true
+      xml_accessor :publication_date, :as => DateTime, :from => "PublicationDate", :required => true
 
       
-      xml_accessor :catalog_items, :as => [], :from => "CatalogItem", :required => true
+      xml_accessor :catalog_items, :as => [DDEX::ERN::V341::CatalogItem], :from => "CatalogItem", :required => true
 
 
 
   
-      xml_accessor :message_schema_version_id, :from => "@MessageSchemaVersionId" 
+      xml_accessor :message_schema_version_id, :from => "@MessageSchemaVersionId", :required => true
     
   
-      xml_accessor :business_profile_version_id, :from => "@BusinessProfileVersionId" 
+      xml_accessor :business_profile_version_id, :from => "@BusinessProfileVersionId", :required => false
     
   
-      xml_accessor :release_profile_version_id, :from => "@ReleaseProfileVersionId" 
+      xml_accessor :release_profile_version_id, :from => "@ReleaseProfileVersionId", :required => false
     
   
-      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode" 
+      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
 end

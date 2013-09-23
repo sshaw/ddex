@@ -17,7 +17,7 @@ class ExternalLocationDescriptor < ContentElement
     alias_method :value, :content
 
   
-      xml_accessor :descriptor_syntax, :from => "@DescriptorSyntax" 
+      xml_accessor :descriptor_syntax, :from => "@DescriptorSyntax", :required => false
     
   
 end

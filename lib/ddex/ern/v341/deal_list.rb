@@ -14,12 +14,12 @@ class DealList < Element
   xml_name "DealList"
 
       
-      xml_accessor :release_deals, :as => [], :from => "ReleaseDeal", :required => false
+      xml_accessor :release_deals, :as => [DDEX::ERN::V341::ReleaseDeal], :from => "ReleaseDeal", :required => false
 
 
 
   
-      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode" 
+      xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
 end

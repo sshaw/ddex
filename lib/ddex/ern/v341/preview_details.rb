@@ -13,11 +13,11 @@ class PreviewDetails < Element
   
   xml_name "PreviewDetails"
 
-      xml_accessor :part_type, :from => "PartType", :required => false
+      xml_accessor :part_type, :as => DDEX::V20120404::DDEXC::Description, :from => "PartType", :required => false
 
-      xml_accessor :top_left_corner, :from => "TopLeftCorner", :required => false
+      xml_accessor :top_left_corner, :as => Integer, :from => "TopLeftCorner", :required => false
 
-      xml_accessor :bottom_right_corner, :from => "BottomRightCorner", :required => false
+      xml_accessor :bottom_right_corner, :as => Integer, :from => "BottomRightCorner", :required => false
 
       xml_accessor :expression_type, :from => "ExpressionType", :required => true
 

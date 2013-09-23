@@ -15,11 +15,11 @@ class SalesReportingProxyReleaseId < Element
   
   xml_name "SalesReportingProxyReleaseId"
 
-      xml_accessor :release_id, :from => "ReleaseId", :required => true
+      xml_accessor :release_id, :as => DDEX::V20120404::DDEXC::ReleaseId, :from => "ReleaseId", :required => true
 
-      xml_accessor :reason, :from => "Reason", :required => false
+      xml_accessor :reason, :as => DDEX::V20120404::DDEXC::Reason, :from => "Reason", :required => false
 
-      xml_accessor :reason_type, :from => "ReasonType", :required => true
+      xml_accessor :reason_type, :as => DDEX::V20120404::DDEXC::ReasonType, :from => "ReasonType", :required => true
 
 
 
