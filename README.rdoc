@@ -15,7 +15,7 @@ DDEX metadata serialization
    p resource.details.size
  end
 
- include DDEX::ERN
+ include DDEX::ERN::V341   # v3.4.1
  message = NewReleaseMessage.new(hash)
  record  = SoundRecording.new
  record.language = "en-US"
