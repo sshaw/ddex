@@ -1,0 +1,50 @@
+require "roxml"
+require "ddex/<%= klass.element.text? ? "content_element" : "element" %>"
+
+<%- klass.requires.each do |mod| -%>
+require "<%= mod %>"
+<%- end -%>
+
+<%= klass.module.map { |mod| "module #{mod}" }.join " " %>
+
+class <%= klass.name %> < <%= klass.element.text? ? "ContentElement" : "Element" %>
+  include ROXML
+
+  <%# if klass.element.namespace -%>    
+    #xml_namespaces <%# klass.element.namespace.prefix %> => "<%= klass.element.namespace %>"
+  <%#- end -%>
+
+  xml_name "<%= klass.element.name %>"
+
+  <%- klass.element.children.each do |e| -%>
+    <%- if e.array? -%>
+      <%# ROXML doesn't like String as an argument to :as ?! %>
+      xml_accessor :<%= e.accessor %>, :as => [<%= e.type unless e.type == "String" %>], :from => "<%= e.name %>", :required => <%= e.required? %>
+
+    <%- elsif e.hash? -%>
+      xml_accessor :<%= e.accessor %>, :as => {}, :from => "<%= e.name %>", :required => <%= e.required? %>
+
+    <%- elsif e.type == :boolean || e.type == "String" -%>
+      xml_accessor :<%= e.accessor %>, :from => "<%= e.name %>", :required => <%= e.required? %>
+
+    <%- else -%>
+      xml_accessor :<%= e.accessor %>, :as => <%= e.type %>, :from => "<%= e.name %>", :required => <%= e.required? %>
+
+    <%- end -%>
+  <%- end -%>
+
+  <%- if klass.element.text? -%>
+    xml_accessor :content, :from => ".", :required => <%= klass.element.required? %>
+    alias_method :value, :content
+  <%- end -%>
+
+  <% klass.element.attributes.each do |attr| %>
+    <%- if attr.type == :boolean || attr.type == "String" -%>
+      xml_accessor :<%= attr.accessor %>, :from => "@<%= attr.name %>", :required => <%= attr.required? %>
+    <% else %>
+      xml_accessor :<%= attr.accessor %>, :as => <%= attr.type %>, :from => "@<%= attr.name %>", :required => <%= attr.required? %>
+    <% end %>
+  <% end %>
+end
+
+<%= klass.module.map { "end" }.join " " %>

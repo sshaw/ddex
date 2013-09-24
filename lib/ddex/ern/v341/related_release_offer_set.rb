@@ -1,7 +1,6 @@
 require "roxml"
 require "ddex/element"
 
-#require "ddex/ern/v341/deal"
 require "ddex/v20120404/ddexc/description"
 require "ddex/v20120404/ddexc/release_id"
 

@@ -5,10 +5,22 @@ module DDEX
   module ERN
     DEFAULT_VERSION = "3.2"
     DEFAULT_CONFIG = {
+      "3.6" => {
+        :namespace => "ern=http://ddex.net/xml/ern/36",
+        :schema_location => "http://ddex.net/xml/ern/36/release-notification.xsd",
+        :message_schema_version_id => "ern/36"
+      },
+
       "3.5.1" => {
         :namespace => "ern=http://ddex.net/xml/ern/351",
         :schema_location => "http://ddex.net/xml/ern/351/release-notification.xsd",
         :message_schema_version_id => "ern/351"
+      },
+
+      "3.4.1" => {
+        :namespace => "ern=http://ddex.net/xml/ern/341",
+        :schema_location => "http://ddex.net/xml/ern/341/release-notification.xsd",
+        :message_schema_version_id => "ern/341"
       },
 
       "3.4" => {
@@ -35,8 +47,7 @@ module DDEX
       # check IO perf.
       #version = config.find { |v, cfg| cfg[:message_schema_version_id] == doc.root["MessageSchemaVersionId"] }
       raise DDEXError, "unknown DDEX version '#{doc.root["MessageSchemaVersionId"]}'" unless version
-      #klass = load_version(version[0])
-      klass = load_version("3.4.1")
+      klass = load_version(version[0])
 
       begin 
         klass.from_xml(File.read(path))

@@ -35,6 +35,11 @@ DDEX metadata serialization
 
 Currently only the music portion of Electronic Release Notification Message (ERN[M]) is supported -for now!
 
+==== How this differs from the spec
+
+* <code>ern:PriceInformation/@PriceType</code> has been renamed to <code>@Type</code> to avoid conflicting with the element of the same (ERN v3.6)
+
+
 ==== ERN version and schema
 
   DDEX::ERN.version = "3.5.1"
