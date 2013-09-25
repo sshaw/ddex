@@ -10,7 +10,7 @@ DDEX metadata serialization
 
  message = DDEX::ERN.read("path/to/metadata.xml")
  p message.update_indicator
- message.resources.each do |resource|
+ message.resource_list.each do |resource|
    p resource.title
    p resource.details.size
  end
@@ -33,7 +33,7 @@ DDEX metadata serialization
  p details.to_hash
  puts details.to_xml
 
-=== Where this differs from the spec
+=== How this differs from the spec
 
 Every DDEX version handled by this module is fully supported, but there are some things you'll need to know.
 
@@ -46,7 +46,7 @@ CamelCase for classes, and {snake_case}[https://en.wikipedia.org/wiki/Snake_case
     <FullName>sshaw</FullName>
   </PartyName>
 
-Would be manipulated using via:
+Would be manipulated via:
 
   party = PartyName.new(:full_name => "sshaw")
   puts party.full_name  
@@ -54,7 +54,7 @@ Would be manipulated using via:
   
 ==== Cardinally
 
-Elements that _can_ occur more than once will be placed in an <code>Array</code> and the parent class' accessor method will use the plural form of 
+Elements that _can_ occur more than once will be placed in an <code>Array</code> and their parent classes' accessor methods will use the plural form of 
 the element/attribute's name. For example:
 
   <Release>
