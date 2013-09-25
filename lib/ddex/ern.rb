@@ -41,39 +41,54 @@ module DDEX
 
     mattr_reader :config
     @@config = DEFAULT_CONFIG
-    
-    # take a path, doc, IO ...
-    def self.read(path, options = {})
-      # check IO perf.
-      #version = config.find { |v, cfg| cfg[:message_schema_version_id] == doc.root["MessageSchemaVersionId"] }
-      raise DDEXError, "unknown DDEX version '#{doc.root["MessageSchemaVersionId"]}'" unless version
+
+    def self.read(xml, options = {})
+      doc     = parse(xml)
+      version = config.find { |v, cfg| cfg[:message_schema_version_id] == doc.root["MessageSchemaVersionId"] }
+      raise UnknownVersionError, "ERN version '#{doc.root["MessageSchemaVersionId"]}'" unless version
+
       klass = load_version(version[0])
 
-      begin 
-        klass.from_xml(File.read(path))
-      rescue => e
-        raise DDEXError, "failed to load #{path}: #{e}"
+      begin
+        klass.from_xml(doc)
+      rescue NoMethodError => e         # Yes, fo real... this is from ROXML
+        raise unless e.name == :root    # It's legit
+        raise XMLLoadError, "XML is not well-formed"
+      rescue ROXML::XML::Error => e
+        raise XMLLoadError, "cannot create DDEX object: #{e}"
       end
     end
 
     def self.write(object, options = {})
-      raise ArgumentError, "not a DDEX object" unless object.is_a?(DDEX::Element)
-      klass = load_version(version[0])
+      raise ArgumentError, "not a DDEX object" unless object.is_a?(DDEX::Element)      
+      # version = object.something || config.version || DEFAULT_VERSION
       # ...
     end
 
     private
-    def self.load_version(version)
+    def self.parse(xml)
+      xml = File.read(xml) if xml.is_a?(String) and xml !~ /\A\s*<[?\w]/
+      Nokogiri::XML(xml) { |cfg| cfg.strict }
+    rescue IOError, SystemCallError => e
+      raise XMLLoadError, "cannot load XML: #{e}"
+    rescue Nokogiri::XML::SyntaxError => e
+      raise XMLLoadError, "XML parsing error: #{e}"
+    end
+    
+    def self.load_version(version)      
       v = "v#{version.tr(".", "")}"
-      klass = "#{v.upcase}" #::NewReleaseMessage"
-      return DDEX::ERN.const_get(klass) if DDEX::ERN.const_defined?(klass)
+      klass = v.upcase
+
+      ## 2.0 allows for one call
+      loader = lambda { DDEX::ERN.const_get(klass).const_get("NewReleaseMessage") }
+      return loader[] if DDEX::ERN.const_defined?(klass)
 
       root = File.dirname(File.expand_path(__FILE__))
       Dir["#{root}/ern/#{v}/*.rb"].each { |path| require path }
 
-      DDEX::ERN.const_get(klass).const_get("NewReleaseMessage")
+      loader[]
     rescue LoadError, NameError => e
-      raise DDEXError, "failed to load ERN v#{version}: #{e}"
+      raise UnknownVersionError, "ERN version #{version}"
     end
   end
 end

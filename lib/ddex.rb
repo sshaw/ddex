@@ -5,5 +5,6 @@ require "ddex/ern"
 
 module DDEX
   class DDEXError < StandardError; end
-  # subtypes..?
+  class UnknownVersionError < DDEXError; end
+  class XMLLoadError < DDEXError; end
 end
