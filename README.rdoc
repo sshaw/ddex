@@ -18,26 +18,76 @@ DDEX metadata serialization
  include DDEX::ERN::V341   # v3.4.1
  message = NewReleaseMessage.new(hash)
  record  = SoundRecording.new
- record.language = "en-US"
+ record.language_and_script_code = "en-US"
  # ...
 
  image = Image.new
  image.type = "FrontCoverImage"
  # ...
 
- message.resources << image
- message.resources << record
+ message.resource_list << image
+ message.resource_list << record
  xml = DDEX::ERN.write(message)
 
  details = TechnicalSoundRecordingDetails.new(hash)
  p details.to_hash
  puts details.to_xml
 
-Currently only the music portion of Electronic Release Notification Message (ERN[M]) is supported -for now!
+=== Where this differs from the spec
 
-==== How this differs from the spec
+Every DDEX version handled by this module is fully supported, but there are some things you'll need to know.
 
-* <code>ern:PriceInformation/@PriceType</code> has been renamed to <code>@Type</code> to avoid conflicting with the element of the same (ERN v3.6)
+==== Naming conventions
+
+DDEX elements and attributes use the {CamelCase naming convention}[https://en.wikipedia.org/wiki/CamelCase], this module uses Ruby naming conversions: 
+CamelCase for classes, and {snake_case}[https://en.wikipedia.org/wiki/Snake_case] for class attributes. For example, this DDEX XML:
+
+  <PartyName>
+    <FullName>sshaw</FullName>
+  </PartyName>
+
+Would be manipulated using via:
+
+  party = PartyName.new(:full_name => "sshaw")
+  puts party.full_name  
+  party.full_name = "gwozdzie"
+  
+==== Cardinally
+
+Elements that _can_ occur more than once will be placed in an <code>Array</code> and the parent class' accessor method will use the plural form of 
+the element/attribute's name. For example:
+
+  <Release>
+    <!-- More data -->
+    <PLine>
+      <Year>1994</Year>
+      <PLineText>Track Copyright</PLineText>
+    </PLine>
+    <PLine>
+      <Year>2001</Year>
+      <PLineText>Another Track Copyright</PLineText>
+    </PLine>
+  </Release>
+
+Would be manipulated via:
+
+  release.p_lines.each { |line| puts line.p_line_text }
+  release.p_lines << PLine.new(:year => 1999)
+
+<b>There are a few --hopefully obvious-- exceptions</b>. If the DDEX name indicates that its a collection, it's left alone.
++SoundRecordingDetailsByTerritory+ and +ResourceList+ come to mind.
+
+==== Boolean elements and atrributes
+
++IsEan+ = +ean?+
+
+TODO: See Types 
+
+==== Version specific changes
+
+===== ERN v3.6
+
+<code>ern:PriceInformation/@PriceType</code> has been renamed to <code>@Type</code> to avoid conflicting with the element of the same
 
 
 ==== ERN version and schema
@@ -56,5 +106,5 @@ A version must have a configuration that describes the important XML attributes.
 === TODO
 
 Many things... but: ROXML.from_xml does not check the root element's name. Need to add something like:
-  
+
   raise "unknown element #{xml.name}" unless xml.name == tag_name
