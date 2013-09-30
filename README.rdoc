@@ -105,9 +105,9 @@ A version must have a configuration that describes the important XML attributes.
 
 === More Info
 
-  * {Source code}[https://github.com/sshaw/ddex]
-  * {Bugs}[https://github.com/sshaw/ddex/issues]
-  * {jaxb2ruby}[https://github.com/sshaw/jaxb2ruby] (Generates Ruby objects from an XML schema)
+* {Source code}[https://github.com/sshaw/ddex]
+* {Bugs}[https://github.com/sshaw/ddex/issues]
+* {jaxb2ruby}[https://github.com/sshaw/jaxb2ruby] (Generates Ruby objects from an XML schema)
 
 === TODO
 

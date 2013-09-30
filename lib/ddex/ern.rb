@@ -82,7 +82,6 @@ module DDEX
     end
 
     def self.find_version(want)
-      want = want.strip
       version = config.find { |v, cfg| cfg[:message_schema_version_id] == want }
       raise UnknownVersionError, "ERN version '#{want}'" unless version # use default if none found?
       version
