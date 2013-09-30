@@ -39,7 +39,7 @@ Every DDEX version handled by this module is fully supported, but there are some
 
 ==== Naming conventions
 
-DDEX elements and attributes use the {CamelCase naming convention}[https://en.wikipedia.org/wiki/CamelCase], this module uses Ruby naming conversions: 
+DDEX elements and attributes use the {CamelCase naming convention}[https://en.wikipedia.org/wiki/CamelCase], this module uses Ruby naming conversions:
 CamelCase for classes, and {snake_case}[https://en.wikipedia.org/wiki/Snake_case] for class attributes. For example, this DDEX XML:
 
   <PartyName>
@@ -49,12 +49,12 @@ CamelCase for classes, and {snake_case}[https://en.wikipedia.org/wiki/Snake_case
 Would be manipulated via:
 
   party = PartyName.new(:full_name => "sshaw")
-  puts party.full_name  
+  puts party.full_name
   party.full_name = "gwozdzie"
-  
+
 ==== Cardinally
 
-Elements that _can_ occur more than once will be placed in an <code>Array</code> and their parent classes' accessor methods will use the plural form of 
+Elements that _can_ occur more than once will be placed in an <code>Array</code> and their parent classes' accessor methods will use the plural form of
 the element/attribute's name. For example:
 
   <Release>
@@ -81,7 +81,7 @@ Would be manipulated via:
 
 +IsEan+ = +ean?+
 
-TODO: See Types 
+TODO: See Types
 
 ==== Version specific changes
 
@@ -102,6 +102,12 @@ A version must have a configuration that describes the important XML attributes.
   p cfg[:message_schema_location_id]
 
   DDEX::ERN.config["3.2"][:schema_location] = "somethang_custom"
+
+=== More Info
+
+  * {Source code}[https://github.com/sshaw/ddex]
+  * {Bugs}[https://github.com/sshaw/ddex/issues]
+  * {jaxb2ruby}[https://github.com/sshaw/jaxb2ruby] (Generates Ruby objects from an XML schema)
 
 === TODO
 

@@ -3,7 +3,7 @@ require "nokogiri"
 
 module DDEX
   module ERN
-    DEFAULT_VERSION = "3.2"
+    DEFAULT_VERSION = "3.4.1"
     DEFAULT_CONFIG = {
       "3.6" => {
         :namespace => "ern=http://ddex.net/xml/ern/36",
@@ -42,11 +42,10 @@ module DDEX
     mattr_reader :config
     @@config = DEFAULT_CONFIG
 
+    # options[:validate] ???
     def self.read(xml, options = {})
       doc     = parse(xml)
-      version = config.find { |v, cfg| cfg[:message_schema_version_id] == doc.root["MessageSchemaVersionId"] }
-      raise UnknownVersionError, "ERN version '#{doc.root["MessageSchemaVersionId"]}'" unless version
-
+      version = find_version(doc.root["MessageSchemaVersionId"])
       klass = load_version(version[0])
 
       begin
@@ -60,9 +59,16 @@ module DDEX
     end
 
     def self.write(object, options = {})
-      raise ArgumentError, "not a DDEX object" unless object.is_a?(DDEX::Element)      
-      # version = object.something || config.version || DEFAULT_VERSION
-      # ...
+      raise ArgumentError, "not a DDEX object" unless object.is_a?(DDEX::Element)
+
+      # If it's not the root element we don't care about the version stuff
+      return object.to_xml unless object.respond_to(:mesage_schema_version_id)
+
+      v = object.message_schema_version_id 
+      v = self.class.version if v.nil? or v.strip.empty?
+      cfg = find_version(v)
+      
+      # do something with NS
     end
 
     private
@@ -74,8 +80,15 @@ module DDEX
     rescue Nokogiri::XML::SyntaxError => e
       raise XMLLoadError, "XML parsing error: #{e}"
     end
-    
-    def self.load_version(version)      
+
+    def self.find_version(want)
+      want = want.strip
+      version = config.find { |v, cfg| cfg[:message_schema_version_id] == want }
+      raise UnknownVersionError, "ERN version '#{want}'" unless version # use default if none found?
+      version
+    end
+
+    def self.load_version(version)
       v = "v#{version.tr(".", "")}"
       klass = v.upcase
 
