@@ -11,7 +11,7 @@ class ReleaseSummaryDetailsByTerritory < Element
   include ROXML
 
       
-    #xml_namespaces  => "http://ddex.net/xml/20120404/ddexC"
+    
   
   xml_name "ReleaseSummaryDetailsByTerritory"
 

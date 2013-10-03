@@ -11,7 +11,7 @@ class CueSheet < Element
   include ROXML
 
       
-    #xml_namespaces  => "http://ddex.net/xml/ern/341"
+    
   
   xml_name "CueSheet"
 

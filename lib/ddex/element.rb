@@ -2,7 +2,23 @@ module DDEX
   class Element
     include ROXML
 
+    # Set parser for ROXML
+    XML_PARSER = "nokogiri".freeze
+
     xml_convention :camelcase
+
+    # ROXML doesn't have complete namespace support.
+    # We use this to set a namespace on calls to to_xml().
+    class << self
+      def ns
+        @namespace
+      end
+
+      private
+      def setns(prefix, name)
+        @namespace = [prefix, name].compact
+      end
+    end
 
     def initialize(attributes = {})
       raise ArgumentError, "attributes must be a Hash" unless Hash === attributes
@@ -12,14 +28,21 @@ module DDEX
         method = "#{name}="
         next unless attr = roxml_attributes[name] and respond_to?(method)
 
-        value = Array(value) if !attr.sought_type.instance_of?(Symbol) && attr.array? # If it's not a ROXML directive && ...          
+        value = Array(value) if !attr.sought_type.instance_of?(Symbol) && attr.array? # If it's not a ROXML directive && ...
         send(method, value)
       end
     end
 
     def to_xml(options = {})
-      # Defaults to Nokorigi or LibMXL elements
-      super.to_s
+      doc = super
+      ns  = self.class.ns
+
+      if ns and ns.size == 2 # prefix and name
+        doc.add_namespace_definition(*ns) 
+        doc.name = "#{ns.first}:#{doc.name}"
+      end
+
+      doc.to_s
     end
 
     def to_hash

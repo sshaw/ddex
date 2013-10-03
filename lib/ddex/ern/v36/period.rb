@@ -12,7 +12,7 @@ class Period < Element
   include ROXML
 
       
-    #xml_namespaces  => "http://ddex.net/xml/ern/36"
+    
   
   xml_name "Period"
 

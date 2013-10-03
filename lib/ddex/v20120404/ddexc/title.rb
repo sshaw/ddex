@@ -9,9 +9,8 @@ module DDEX module V20120404 module DDEXC
 class Title < Element
   include ROXML
 
+    
       
-    #xml_namespaces  => "http://ddex.net/xml/20120404/ddexC"
-  
   xml_name "Title"
 
       xml_accessor :title_text, :as => DDEX::V20120404::DDEXC::TitleText, :from => "TitleText", :required => true

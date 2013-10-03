@@ -53,7 +53,9 @@ module DDEX
       rescue NoMethodError => e         # Yes, fo real... this is from ROXML
         raise unless e.name == :root    # It's legit
         raise XMLLoadError, "XML is not well-formed"
-      rescue ROXML::XML::Error => e
+        # ROXML::RequiredElementMissing
+      #rescue ROXML::XML::Error => e
+      rescue  => e
         raise XMLLoadError, "cannot create DDEX object: #{e}"
       end
     end
