@@ -1,13 +1,13 @@
 require "rspec"
-require "test_xml/spec"
+#require "test_xml/spec"
 require "ddex"
 require "fabrication"
 
-%w[/support/**/*.rb 
-   /../lib/ddex/v20120404/ddexc/*.rb
-   /../lib/ddex/ern/v341/*.rb].each do |glob|
-  Dir[ File.dirname(__FILE__) + glob ].each { |path| require path }
-end
+# %w[/support/**/*.rb 
+#    /../lib/ddex/v20120404/ddexc/*.rb
+#    /../lib/ddex/ern/v341/*.rb].each do |glob|
+#   Dir[ File.dirname(__FILE__) + glob ].each { |path| require path }
+# end
 
 unless [].respond_to?(:sample)
   class Array
