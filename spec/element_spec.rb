@@ -19,7 +19,7 @@ describe DDEX::Element do
   describe "#eql?" do
     it "returns true if the elements contain the same attribute values" do
       a = Parent.new(parent_attr)
-      b = Parent.new(parent_attr.dup)
+      b = Parent.new(Hash[ parent_attr.map { |k,v| [k,v.dup] } ])
       expect(a).to eq b
     end
 
@@ -47,7 +47,7 @@ describe DDEX::Element do
 
   describe "#new" do
     it "creates an instance" do
-      Parent.new.should be_an_instance_of(Parent)
+      expect(Parent.new).to be_an_instance_of(Parent)
     end
 
     it "sets the instance's attributes" do
