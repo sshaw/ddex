@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   DESC
   s.authors     = ["Skye Shaw"]
   s.email       = "skye.shaw@gmail.com"
-  s.test_files  = Dir["spec/**/*.*"] 
+  s.test_files  = Dir["spec/**/*.*"]
   s.extra_rdoc_files = %w[README.rdoc]
   s.files       = Dir["lib/**/*.rb"] + s.test_files + s.extra_rdoc_files
   s.homepage    = "http://github.com/sshaw/ddex"

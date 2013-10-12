@@ -9,6 +9,7 @@ require "fabrication"
 #   Dir[ File.dirname(__FILE__) + glob ].each { |path| require path }
 # end
 
+
 unless [].respond_to?(:sample)
   class Array
     def sample
@@ -18,6 +19,11 @@ unless [].respond_to?(:sample)
 end
 
 module SpecHelper
+  def fixture(basename)
+    basename << ".xml" unless basename.end_with?(".xml")
+    File.join(File.dirname(__FILE__), "fixtures", basename)
+  end
+  
   def to_xml(obj)
     Array(obj).map { |e| e.to_xml }.join("\n")
   end
