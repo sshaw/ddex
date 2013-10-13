@@ -8,7 +8,9 @@ module DDEX
     XML_SCHEMA_INSTANCE_NS     = "http://www.w3.org/2001/XMLSchema-instance"
     XML_SCHEMA_INSTANCE_ATTR   = "#{XML_SCHEMA_INSTANCE_PREFIX}:schemaLocation"
 
+    ROOT_ELEMENT    = "NewReleaseMessage"
     VERSION_ATTR    = "MessageSchemaVersionId"
+
     DEFAULT_VERSION = "3.4.1"
     DEFAULT_CONFIG  = {
       "3.6" => {
@@ -49,21 +51,20 @@ module DDEX
       raise ArgumentError, "options must be a Hash" unless options.is_a?(Hash)
 
       doc     = parse(xml)
-      version = find_version(doc.root[VERSION_ATTR])
-      raise_unknown_version(doc.root[VERSION_ATTR]) unless version # options[:force] ?
+      version = doc.root[VERSION_ATTR]
+      config  = find_version(version)
+      raise_unknown_version(version) unless config # options[:force] ?
 
-      klass = load_version(version[0])
+      klass = load_version(config[0])
 
       begin
         klass.from_xml(doc)
       rescue NoMethodError => e         # Yes, fo real... this is from ROXML
         raise unless e.name == :root    # It's legit
         raise XMLLoadError, "XML is not well-formed"
+      # This is a subclass of Exception(!) so we must name it
       rescue ROXML::RequiredElementMissing => e
-        # This is a subclass of Exception (!) so we must name it
-      #rescue ROXML::XML::Error => e
-      rescue  => e
-        raise XMLLoadError, "cannot create DDEX object: #{e}"
+        raise XMLLoadError, "missing required element: #{e}"
       end
     end
 
@@ -80,7 +81,7 @@ module DDEX
       schema = options[:schema]
       unless schema
         config = find_version(object.message_schema_version_id)
-        schema = config[1][:schema] if config[1][:schema]
+        schema = config[1][:schema] if config
       end
 
       if schema
@@ -116,7 +117,7 @@ module DDEX
       klass = v.upcase
 
       ## 2.0 allows for one call
-      loader = lambda { DDEX::ERN.const_get(klass).const_get("NewReleaseMessage") }
+      loader = lambda { DDEX::ERN.const_get(klass).const_get(ROOT_ELEMENT) }
       return loader[] if DDEX::ERN.const_defined?(klass)
 
       root = File.dirname(File.expand_path(__FILE__))
