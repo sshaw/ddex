@@ -1,11 +1,5 @@
 require "roxml"
 require "ddex/element"
-
-require "ddex/v20120404/ddexc/name"
-require "ddex/v20120404/ddexc/name"
-require "ddex/v20120404/ddexc/name"
-require "ddex/v20120404/ddexc/name"
-require "ddex/v20120404/ddexc/name"
 require "ddex/v20120404/ddexc/name"
 
 module DDEX module V20120404 module DDEXC
