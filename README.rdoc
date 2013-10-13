@@ -27,11 +27,10 @@ DDEX metadata serialization
 
  message.resource_list << image
  message.resource_list << record
- xml = DDEX::ERN.write(message)
+ p message.to_hash
 
- details = TechnicalSoundRecordingDetails.new(hash)
- p details.to_hash
- puts details.to_xml
+ xml = DDEX::ERN.write(message)
+ File.open("bloat.xml", "w") { |io| io.puts(xml) }
 
 === How this differs from the spec
 
@@ -88,20 +87,6 @@ TODO: See Types
 ===== ERN v3.6
 
 <code>ern:PriceInformation/@PriceType</code> has been renamed to <code>@Type</code> to avoid conflicting with the element of the same
-
-
-==== ERN version and schema
-
-  DDEX::ERN.version = "3.5.1"
-
-A version must have a configuration that describes the important XML attributes. These can be added/modified as necessary:
-
-  cfg = DDEX::ERN.config[ DDEX::ERN.version ]
-  p cfg[:namespace]
-  p cfg[:schema_location]
-  p cfg[:message_schema_location_id]
-
-  DDEX::ERN.config["3.2"][:schema_location] = "somethang_custom"
 
 === More Info
 

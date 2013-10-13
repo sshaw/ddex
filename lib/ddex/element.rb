@@ -42,7 +42,7 @@ module DDEX
         doc.name = "#{ns.first}:#{doc.name}"
       end
 
-      doc.to_s
+      doc
     end
 
     def to_hash

@@ -3,35 +3,36 @@ require "nokogiri"
 
 module DDEX
   module ERN
+
+    XML_SCHEMA_INSTANCE_PREFIX = "xsi"
+    XML_SCHEMA_INSTANCE_NS     = "http://www.w3.org/2001/XMLSchema-instance"
+    XML_SCHEMA_INSTANCE_ATTR   = "#{XML_SCHEMA_INSTANCE_PREFIX}:schemaLocation"
+
+    VERSION_ATTR    = "MessageSchemaVersionId"
     DEFAULT_VERSION = "3.4.1"
-    DEFAULT_CONFIG = {
+    DEFAULT_CONFIG  = {
       "3.6" => {
-        :namespace => "ern=http://ddex.net/xml/ern/36",
-        :schema_location => "http://ddex.net/xml/ern/36/release-notification.xsd",
+        :schema => "http://ddex.net/xml/ern/36/release-notification.xsd",
         :message_schema_version_id => "ern/36"
       },
 
       "3.5.1" => {
-        :namespace => "ern=http://ddex.net/xml/ern/351",
-        :schema_location => "http://ddex.net/xml/ern/351/release-notification.xsd",
+        :schema => "http://ddex.net/xml/ern/351/release-notification.xsd",
         :message_schema_version_id => "ern/351"
       },
 
       "3.4.1" => {
-        :namespace => "ern=http://ddex.net/xml/ern/341",
-        :schema_location => "http://ddex.net/xml/ern/341/release-notification.xsd",
+        :schema => "http://ddex.net/xml/ern/341/release-notification.xsd",
         :message_schema_version_id => "ern/341"
       },
 
       "3.4" => {
-        :namespace => "ern=http://ddex.net/xml/ern/34",
-        :schema_location => "http://ddex.net/xml/ern/34/release-notification.xsd",
+        :schema => "http://ddex.net/xml/ern/34/release-notification.xsd",
         :message_schema_version_id => "ern/34"
       },
 
       "3.2" => {
-        :namespace => "ernm=http://ddex.net/xml/2010/ern-main/32",
-        :schema_location => "http://ddex.net/xml/2010/ern-main/32/ern-main.xsd",
+        :schema => "http://ddex.net/xml/2010/ern-main/32/ern-main.xsd",
         :message_schema_version_id => "2010/ern-main/32"
       }
     }
@@ -43,9 +44,14 @@ module DDEX
     @@config = DEFAULT_CONFIG
 
     # options[:validate] ???
-    def self.read(xml, options = {})
+    def self.read(xml, options = nil)
+      options ||= {}
+      raise ArgumentError, "options must be a Hash" unless options.is_a?(Hash)
+
       doc     = parse(xml)
-      version = find_version(doc.root["MessageSchemaVersionId"])
+      version = find_version(doc.root[VERSION_ATTR])
+      raise_unknown_version(doc.root[VERSION_ATTR]) unless version # options[:force] ?
+
       klass = load_version(version[0])
 
       begin
@@ -53,24 +59,37 @@ module DDEX
       rescue NoMethodError => e         # Yes, fo real... this is from ROXML
         raise unless e.name == :root    # It's legit
         raise XMLLoadError, "XML is not well-formed"
-        # ROXML::RequiredElementMissing
+      rescue ROXML::RequiredElementMissing => e
+        # This is a subclass of Exception (!) so we must name it
       #rescue ROXML::XML::Error => e
       rescue  => e
         raise XMLLoadError, "cannot create DDEX object: #{e}"
       end
     end
 
-    def self.write(object, options = {})
+    # TODO: format optopns
+    def self.write(object, options = nil)
       raise ArgumentError, "not a DDEX object" unless object.is_a?(DDEX::Element)
 
-      # If it's not the root element we don't care about the version stuff
-      return object.to_xml unless object.respond_to(:mesage_schema_version_id)
+      options ||= {}
+      raise ArgumentError, "options must be a Hash" unless options.is_a?(Hash)
 
-      v = object.message_schema_version_id 
-      v = self.class.version if v.nil? or v.strip.empty?
-      cfg = find_version(v)
-      
-      # do something with NS
+      doc = object.to_xml
+      return doc.to_s unless object.respond_to?(:message_schema_version_id) # Is it the root element
+
+      schema = options[:schema]
+      unless schema
+        config = find_version(object.message_schema_version_id)
+        schema = config[1][:schema] if config[1][:schema]
+      end
+
+      if schema
+        # TODO: if !schema.start_with?("http") set up "NS Location" attr
+        doc.add_namespace_definition(XML_SCHEMA_INSTANCE_PREFIX, XML_SCHEMA_INSTANCE_NS)
+        doc[XML_SCHEMA_INSTANCE_ATTR] = XML_SCHEMA_INSTANCE_NS
+      end
+
+      doc.to_s
     end
 
     private
@@ -84,9 +103,12 @@ module DDEX
     end
 
     def self.find_version(want)
-      version = config.find { |v, cfg| cfg[:message_schema_version_id] == want }
-      raise UnknownVersionError, "ERN version '#{want}'" unless version # use default if none found?
-      version
+      config.find { |v, cfg| cfg[:message_schema_version_id] == want }
+    end
+
+    def self.raise_unknown_version(version)
+      message = "ERN version %s" % (version ? "'#{version}'" : "attribute missing")
+      raise UnknownVersionError, message
     end
 
     def self.load_version(version)
@@ -102,7 +124,7 @@ module DDEX
 
       loader[]
     rescue LoadError, NameError => e
-      raise UnknownVersionError, "ERN version #{version}"
+      unknown_version_error(v)
     end
   end
 end
