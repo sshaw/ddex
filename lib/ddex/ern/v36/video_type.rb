@@ -1,10 +1,10 @@
 require "roxml"
-require "ddex/content_element"
+require "ddex/element"
 
 
 module DDEX module ERN module V36
 
-class VideoType < ContentElement
+class VideoType < Element
   include ROXML
 
       
@@ -13,8 +13,8 @@ class VideoType < ContentElement
   xml_name "VideoType"
 
 
-    xml_accessor :content, :from => ".", :required => false
-    alias_method :value, :content
+    xml_accessor :value, :from => ".", :required => false
+    
 
   
       xml_accessor :namespace, :from => "@Namespace", :required => false

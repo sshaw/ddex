@@ -1,10 +1,10 @@
 require "roxml"
-require "ddex/content_element"
+require "ddex/element"
 
 
 module DDEX module ERN module V36
 
-class PriceType < ContentElement
+class PriceType < Element
   include ROXML
 
       
@@ -13,8 +13,8 @@ class PriceType < ContentElement
   xml_name "PriceType"
 
 
-    xml_accessor :content, :from => ".", :required => false
-    alias_method :value, :content
+    xml_accessor :value, :from => ".", :required => false
+    
 
   
       xml_accessor :namespace, :from => "@Namespace", :required => true

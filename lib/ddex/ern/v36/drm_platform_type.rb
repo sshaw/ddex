@@ -1,10 +1,10 @@
 require "roxml"
-require "ddex/content_element"
+require "ddex/element"
 
 
 module DDEX module ERN module V36
 
-class DrmPlatformType < ContentElement
+class DrmPlatformType < Element
   include ROXML
 
       
@@ -13,8 +13,8 @@ class DrmPlatformType < ContentElement
   xml_name "DrmPlatformType"
 
 
-    xml_accessor :content, :from => ".", :required => false
-    alias_method :value, :content
+    xml_accessor :value, :from => ".", :required => false
+    
 
   
       xml_accessor :version, :from => "@Version", :required => false

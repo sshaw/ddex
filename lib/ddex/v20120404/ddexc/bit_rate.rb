@@ -1,10 +1,10 @@
 require "roxml"
-require "ddex/content_element"
+require "ddex/element"
 
 
 module DDEX module V20120404 module DDEXC
 
-class BitRate < ContentElement
+class BitRate < Element
   include ROXML
 
       
@@ -13,8 +13,8 @@ class BitRate < ContentElement
   xml_name "BitRate"
 
 
-    xml_accessor :content, :from => ".", :required => false
-    alias_method :value, :content
+    xml_accessor :value, :from => ".", :required => false
+    
 
   
       xml_accessor :unit_of_measure, :from => "@UnitOfMeasure", :required => false

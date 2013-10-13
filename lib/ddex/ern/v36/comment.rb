@@ -1,10 +1,10 @@
 require "roxml"
-require "ddex/content_element"
+require "ddex/element"
 
 
 module DDEX module ERN module V36
 
-class Comment < ContentElement
+class Comment < Element
   include ROXML
 
       
@@ -13,8 +13,8 @@ class Comment < ContentElement
   xml_name "Comment"
 
 
-    xml_accessor :content, :from => ".", :required => false
-    alias_method :value, :content
+    xml_accessor :value, :from => ".", :required => false
+    
 
   
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false

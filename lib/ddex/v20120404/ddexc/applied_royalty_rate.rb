@@ -1,10 +1,10 @@
 require "roxml"
-require "ddex/content_element"
+require "ddex/element"
 
 
 module DDEX module V20120404 module DDEXC
 
-class AppliedRoyaltyRate < ContentElement
+class AppliedRoyaltyRate < Element
   include ROXML
 
       
@@ -13,8 +13,8 @@ class AppliedRoyaltyRate < ContentElement
   xml_name "AppliedRoyaltyRate"
 
 
-    xml_accessor :content, :from => ".", :required => false
-    alias_method :value, :content
+    xml_accessor :value, :from => ".", :required => false
+    
 
   
       xml_accessor :value_type, :from => "@ValueType", :required => true

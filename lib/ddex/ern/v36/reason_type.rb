@@ -1,10 +1,10 @@
 require "roxml"
-require "ddex/content_element"
+require "ddex/element"
 
 
 module DDEX module ERN module V36
 
-class ReasonType < ContentElement
+class ReasonType < Element
   include ROXML
 
       
@@ -13,8 +13,8 @@ class ReasonType < ContentElement
   xml_name "ReasonType"
 
 
-    xml_accessor :content, :from => ".", :required => false
-    alias_method :value, :content
+    xml_accessor :value, :from => ".", :required => false
+    
 
   
       xml_accessor :namespace, :from => "@Namespace", :required => false

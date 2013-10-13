@@ -1,10 +1,10 @@
 require "roxml"
-require "ddex/content_element"
+require "ddex/element"
 
 
 module DDEX module V20120404 module DDEXC
 
-class ImageCodecType < ContentElement
+class ImageCodecType < Element
   include ROXML
 
       
@@ -13,8 +13,8 @@ class ImageCodecType < ContentElement
   xml_name "ImageCodecType"
 
 
-    xml_accessor :content, :from => ".", :required => false
-    alias_method :value, :content
+    xml_accessor :value, :from => ".", :required => false
+    
 
   
       xml_accessor :version, :from => "@Version", :required => false

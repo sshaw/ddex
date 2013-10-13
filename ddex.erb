@@ -7,7 +7,7 @@ require "<%= mod %>"
 
 <%= klass.module.map { |mod| "module #{mod}" }.join " " %>
 
-class <%= klass.name %> < <%= klass.element.text? ? "ContentElement" : "Element" %>
+class <%= klass.name %> < Element
   include ROXML
 
   <%- if klass.element.namespace -%>    
@@ -34,8 +34,7 @@ class <%= klass.name %> < <%= klass.element.text? ? "ContentElement" : "Element"
   <%- end -%>
 
   <%- if klass.element.text? -%>
-    xml_accessor :content, :from => ".", :required => <%= klass.element.required? %>
-    alias_method :value, :content
+    xml_accessor :value, :from => ".", :required => <%= klass.element.required? %>
   <%- end -%>
 
   <% klass.element.attributes.each do |attr| %>

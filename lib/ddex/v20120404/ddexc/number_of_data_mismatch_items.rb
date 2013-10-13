@@ -1,10 +1,10 @@
 require "roxml"
-require "ddex/content_element"
+require "ddex/element"
 
 
 module DDEX module V20120404 module DDEXC
 
-class NumberOfDataMismatchItems < ContentElement
+class NumberOfDataMismatchItems < Element
   include ROXML
 
       
@@ -13,8 +13,8 @@ class NumberOfDataMismatchItems < ContentElement
   xml_name "NumberOfDataMismatchItems"
 
 
-    xml_accessor :content, :from => ".", :required => false
-    alias_method :value, :content
+    xml_accessor :value, :from => ".", :required => false
+    
 
   
       xml_accessor :data_mismatch_status, :from => "@DataMismatchStatus", :required => false

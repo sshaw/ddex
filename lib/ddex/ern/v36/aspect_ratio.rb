@@ -1,10 +1,10 @@
 require "roxml"
-require "ddex/content_element"
+require "ddex/element"
 
 
 module DDEX module ERN module V36
 
-class AspectRatio < ContentElement
+class AspectRatio < Element
   include ROXML
 
       
@@ -13,8 +13,8 @@ class AspectRatio < ContentElement
   xml_name "AspectRatio"
 
 
-    xml_accessor :content, :from => ".", :required => false
-    alias_method :value, :content
+    xml_accessor :value, :from => ".", :required => false
+    
 
   
       xml_accessor :aspect_ratio_type, :from => "@AspectRatioType", :required => false
