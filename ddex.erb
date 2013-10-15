@@ -10,14 +10,14 @@ require "<%= mod %>"
 class <%= klass.name %> < Element
   include ROXML
 
-  <%- if klass.element.namespace -%>    
+  <%- if klass.element.root? -%>
     setns "<%= klass.element.namespace.prefix %>", "<%= klass.element.namespace.name %>"
   <%- end -%>
 
   xml_name "<%= klass.element.name %>"
 
   <%- klass.element.children.each do |e| -%>
-    <%- if e.array? -%>    
+    <%- if e.array? -%>
       <%# ROXML doesn't like String as an argument to :as ?! %>
       xml_accessor :<%= e.accessor %>, :as => [<%= e.type unless e.type == "String" %>], :from => "<%= e.name %>", :required => <%= e.required? %>
 
