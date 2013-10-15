@@ -6,6 +6,7 @@ RSpec::Core::RakeTask.new(:spec)
 task :default => "spec"
 
 task :generate do
-  # schema = ENV["SCHEMA"]
-  # sh jaxb2ruby ...
+  schema = ENV["SCHEMA"]
+  abort "usage: rake generate SCHEMA=the_schema.xsd" unless schema
+  sh "jaxb2ruby -t ddex.erb -n namespaces.yml #{schema}"
 end
