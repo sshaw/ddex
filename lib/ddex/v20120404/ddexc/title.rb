@@ -10,14 +10,13 @@ class Title < Element
   include ROXML
 
     
-  xml_namespaces :e => "http://x.cm", :x => "x123"
-  xml_namespace :e #:x => "x123"
+      
   xml_name "Title"
 
-      xml_accessor :title_text, :as => DDEX::V20120404::DDEXC::TitleText, :from => "x:TitleText", :required => true
+      xml_accessor :title_text, :as => DDEX::V20120404::DDEXC::TitleText, :from => "TitleText", :required => true
 
       
-      xml_accessor :sub_titles, :as => [DDEX::V20120404::DDEXC::TypedSubTitle], :from => "e:SubTitle", :required => false
+      xml_accessor :sub_titles, :as => [DDEX::V20120404::DDEXC::TypedSubTitle], :from => "SubTitle", :required => false
 
 
 
