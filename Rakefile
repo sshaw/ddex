@@ -12,6 +12,7 @@ task :generate do
   output = File.join(Dir.tmpdir, "ddex-schema-#{Time.now.to_i}")
   abort "usage: rake generate SCHEMA=schema.xsd" unless schema
   sh "jaxb2ruby -o #{output} -t ddex.erb -n namespaces.yml #{schema}"
+  puts "Files output to #{output}"
 end
 
 desc "List currently generated versions"

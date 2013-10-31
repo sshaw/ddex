@@ -51,6 +51,9 @@ Would be manipulated via:
   puts party.full_name
   party.full_name = "gwozdzie"
 
+
+See also {Boolean elements and attributes}[rdoc-ref:README@Boolean+elements+and+attributes]
+
 ==== Cardinally
 
 Elements that _can_ occur more than once will be placed in an <code>Array</code> and their parent classes' accessor methods will use the plural form of
@@ -73,12 +76,22 @@ Would be manipulated via:
   release.p_lines.each { |line| puts line.p_line_text }
   release.p_lines << PLine.new(:year => 1999)
 
-<b>There are a few --hopefully obvious-- exceptions</b>. If the DDEX name indicates that its a collection, it's left alone.
+<b>There are a few -hopefully obvious- exceptions</b>. If the DDEX name indicates that its a collection, it's left alone.
 +SoundRecordingDetailsByTerritory+ and +ResourceList+ come to mind.
 
-==== Boolean elements and atrributes
+==== Boolean elements and attributes
 
-+IsEan+ = +ean?+
+The following are applied to accessors derived from DDEX elements and attributes with an XML schema type of +boolean+:
+
+* <code>"Is"</code> is removed from the beginning of the name
+* The *reader* *method* is turned into a predicate accessor, i.e., has a <code>"?"</code> appended to it.
+
+For example, <code>SoundRecording/IsArtistRelated</code>:
+
+  recording = SoundRecording.new(:artist_related => true)
+  p recording.artist_related?  # true
+  recording.artist_related = false
+
 
 TODO: See Types
 
@@ -86,16 +99,17 @@ TODO: See Types
 
 ===== ERN v3.6
 
-<code>ern:PriceInformation/@PriceType</code> has been renamed to <code>@Type</code> to avoid conflicting with the element of the same
+<code>ern:PriceInformation/@PriceType</code> has been renamed to <code>@Type</code> to avoid conflicting with the 
+element of the same name (<code>ern:PriceInformation/PriceType</code>)
 
 === More Info
 
 * {Source code}[https://github.com/sshaw/ddex]
 * {Bugs}[https://github.com/sshaw/ddex/issues]
-* {jaxb2ruby}[https://github.com/sshaw/jaxb2ruby] (Generates Ruby objects from an XML schema)
+* {jaxb2ruby}[https://github.com/sshaw/jaxb2ruby] (Generate Ruby objects from an XML schema)
 
 === TODO
 
-Many things... but: ROXML.from_xml does not check the root element's name. Need to add something like:
+Many things... but: `ROXML.from_xml` does not check the root element's name. Need to add something like:
 
   raise "unknown element #{xml.name}" unless xml.name == tag_name
