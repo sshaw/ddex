@@ -87,7 +87,7 @@ module DDEX
       if schema
         # TODO: if !schema.start_with?("http") set up "NS Location" attr
         doc.add_namespace_definition(XML_SCHEMA_INSTANCE_PREFIX, XML_SCHEMA_INSTANCE_NS)
-        doc[XML_SCHEMA_INSTANCE_ATTR] = XML_SCHEMA_INSTANCE_NS
+        doc[XML_SCHEMA_INSTANCE_ATTR] = schema
       end
 
       doc.to_s
@@ -97,7 +97,8 @@ module DDEX
     def self.parse(xml)
       xml = File.read(xml) if xml.is_a?(String) and xml !~ /\A\s*<[?\w]/
       Nokogiri::XML(xml) { |cfg| cfg.strict }
-    rescue IOError, SystemCallError => e
+    # ArgumentError means there was a problem with types, expected an int, got a str
+    rescue IOError, SystemCallError, ArgumentError => e
       raise XMLLoadError, "cannot load XML: #{e}"
     rescue Nokogiri::XML::SyntaxError => e
       raise XMLLoadError, "XML parsing error: #{e}"
@@ -125,7 +126,7 @@ module DDEX
 
       loader[]
     rescue LoadError, NameError => e
-      unknown_version_error(v)
+      raise_unknown_version(version)
     end
   end
 end

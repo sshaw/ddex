@@ -23,7 +23,7 @@ describe DDEX::Element do
       expect(a).to eq b
     end
 
-    it "accounts for the equality of contained object's values when do the comparison" do
+    it "accounts for the equality of contained object's values when doing the comparison" do
       a = Parent.new(parent_attr.merge(:child => Child.new(:numbers => [1])))
       b = Parent.new(parent_attr.merge(:child => Child.new(:numbers => [3])))
       expect(a).not_to eq b

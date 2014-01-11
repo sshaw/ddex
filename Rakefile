@@ -11,8 +11,16 @@ task :generate do
   schema = ENV["SCHEMA"]
   output = File.join(Dir.tmpdir, "ddex-schema-#{Time.now.to_i}")
   abort "usage: rake generate SCHEMA=schema.xsd" unless schema
-  sh "jaxb2ruby -o #{output} -t ddex.erb -n namespaces.yml #{schema}"
+  sh "jaxb2ruby -o #{output} -t etc/ddex.erb -n etc/namespaces.yml #{schema}"
   puts "Files output to #{output}"
+  # TODO: Automate this
+  puts "REMEMBER: For ERN 3.4 - 3.6, you'll need to modify RelatedReleaseOfferSet:", <<-DEAL
+    # remove this require:
+    require "ddex/ern/vXX/deal"
+
+    # and forward declare Deal
+    class Deal < Element; include ROXML end
+  DEAL
 end
 
 desc "List currently generated versions"
