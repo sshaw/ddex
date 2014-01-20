@@ -7,7 +7,7 @@
     <filenameExtension>xml</filenameExtension>
     <noOfInstances>1</noOfInstances>
     <openFirstInstance>true</openFirstInstance>
-    <defaultNamespace></defaultNamespace>
+    <defaultNamespace>&lt;NO_NAMESPACE></defaultNamespace>
     <valuesMaxLength>30</valuesMaxLength>
     <isUseIncrementalNamesForValues>true</isUseIncrementalNamesForValues>
     <discardOptionalElementsAfterNestedLevel>30</discardOptionalElementsAfterNestedLevel>
