@@ -23,8 +23,26 @@ task :generate do
   DEAL
 end
 
+%w[ern].each do |spec|
+  root = File.expand_path("../etc/schemas/#{spec}", __FILE__)
+  Dir.entries(root).each do |dir|
+    next if dir == "." or dir == ".."
+    # Ignore patch version
+    schema = dir[0..2].to_i < 34 ? "ern-main.xsd" : "release-notification.xsd"
+    schema = File.join(root, dir, schema)
+
+    desc "Validate the instance doc given by FILE against #{spec} v#{dir}"
+    task "validate:#{spec}#{dir}" do
+      abort "missing FILE argument" unless ENV["FILE"]
+      # Empty block to silence the stack trace, that aside, we do want verboseness
+      sh "xmllint --noout --schema #{schema} #{ENV["FILE"]}" do end
+    end
+  end
+end
+
+
 desc "List currently generated versions"
-task :versions do 
+task :versions do
   # Maybe better to use a method on DDEX...
   root  = File.expand_path("../lib/ddex", __FILE__)
   specs = Dir.glob("#{root}/*").select { |path| File.directory?(path) }
