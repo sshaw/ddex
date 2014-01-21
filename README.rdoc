@@ -1,8 +1,8 @@
 = DDEX
 
-DDEX metadata serialization for Ruby
+{<img src="https://secure.travis-ci.org/sshaw/ddex.png"/>}[http://travis-ci.org/sshaw/ddex]
 
-<b>DO NOT USE, WORK IN PROGRESS</b>
+DDEX metadata serialization for Ruby
 
 === Overview
 
