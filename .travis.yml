@@ -1,0 +1,4 @@
+language: ruby
+rvm:
+  # For now, really we need to remove JRuby deps for spec running
+  - jruby-19mode
