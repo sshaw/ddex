@@ -40,7 +40,6 @@ end
   end
 end
 
-
 desc "List currently generated versions"
 task :versions do
   # Maybe better to use a method on DDEX...
