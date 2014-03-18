@@ -41,7 +41,7 @@ end
     task "validate:#{spec}#{dir}" do
       abort "missing FILE argument" unless ENV["FILE"]
       # Empty block to silence the stack trace, that aside, we do want verboseness
-      sh "xmllint --noout --schema #{schema} #{ENV["FILE"]}" do end
+      sh "xmllint --noout --schema #{schema} #{ENV["FILE"]}"
     end
   end
 end

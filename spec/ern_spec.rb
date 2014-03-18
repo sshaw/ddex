@@ -8,26 +8,36 @@ describe DDEX::ERN do
       expect { DDEX::ERN.write({}) }.to raise_error(ArgumentError, "not a DDEX object")
     end
 
-    it "adds the version's schema to the root element" do
-      pending
+    it "adds the version's schema to the root element's schemaLocation attribute" do
       ern = DDEX::ERN::V36::NewReleaseMessage.new(:message_schema_version_id => "ern/36")
       xml = DDEX::ERN.write(ern)
+      doc = Nokogiri::XML(xml)
+      expect(doc.root["xsi:schemaLocation"]).to eq DDEX::ERN::DEFAULT_CONFIG["3.6"].values_at(:namespace, :schema).join(" ")
     end
 
     describe "the :schema option" do
-      it "adds a remote schema to the root element" do
-        #pending
-        ern = DDEX::ERN::V36::NewReleaseMessage.new(:message_schema_version_id => "ern/36")
-        xml = DDEX::ERN.write(ern, :schema => "http://example.com")
-        expect(xml).to contain_xml(<<-XML)
-	  <NewReleaseMessage xsi:schemaLocation="http://ddex.net/xml/ern/36/release-notification.xsd"></NewRelaseMessage>
-        XML
+      context "when given a schema" do
+        it "includes it in the root element's schemaLocation attribute" do
+          schema = "schema.xsd"
+          schema_location = sprintf "%s %s", DDEX::ERN::DEFAULT_CONFIG["3.6"][:namespace], schema
+
+          ern = DDEX::ERN::V36::NewReleaseMessage.new(:message_schema_version_id => "ern/36")
+          xml = DDEX::ERN.write(ern, :schema => schema)
+          doc = Nokogiri::XML(xml)
+
+          expect(doc.root["xsi:schemaLocation"]).to eq schema_location
+        end
       end
 
-      it "adds a local schema to the root element" do
-        pending
-        ern = DDEX::ERN::V36::NewReleaseMessage.new(:message_schema_version_id => "ern/36")
-        xml = DDEX::ERN.write(ern, :schema => "a/schema.xsd")
+      context "when given a namespace and schema" do
+        it "includes them in the root element's schemaLocation attribute" do
+          schema_location = "http://blah/x schema.xsd"
+          ern = DDEX::ERN::V36::NewReleaseMessage.new(:message_schema_version_id => "ern/36")
+          xml = DDEX::ERN.write(ern, :schema => schema_location)
+          doc = Nokogiri::XML(xml)
+
+          expect(doc.root["xsi:schemaLocation"]).to eq schema_location
+        end
       end
     end
 

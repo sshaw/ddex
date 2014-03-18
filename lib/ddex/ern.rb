@@ -14,26 +14,31 @@ module DDEX
     DEFAULT_VERSION = "3.4.1"
     DEFAULT_CONFIG  = {
       "3.6" => {
+        :namespace => "http://ddex.net/xml/ern/36",
         :schema => "http://ddex.net/xml/ern/36/release-notification.xsd",
         :message_schema_version_id => "ern/36"
       },
 
       "3.5.1" => {
+        :namespace => "http://ddex.net/xml/ern/351",
         :schema => "http://ddex.net/xml/ern/351/release-notification.xsd",
         :message_schema_version_id => "ern/351"
       },
 
       "3.4.1" => {
+        :namespace => "http://ddex.net/xml/ern/341",
         :schema => "http://ddex.net/xml/ern/341/release-notification.xsd",
         :message_schema_version_id => "ern/341"
       },
 
       "3.4" => {
+        :namespace => "http://ddex.net/xml/ern/34",
         :schema => "http://ddex.net/xml/ern/34/release-notification.xsd",
         :message_schema_version_id => "ern/34"
       },
 
       "3.2" => {
+        :namespace => "http://ddex.net/xml/2010/ern-main/32",
         :schema => "http://ddex.net/xml/2010/ern-main/32/ern-main.xsd",
         :message_schema_version_id => "2010/ern-main/32"
       }
@@ -76,16 +81,10 @@ module DDEX
       raise ArgumentError, "options must be a Hash" unless options.is_a?(Hash)
 
       doc = object.to_xml
-      return doc.to_s unless object.respond_to?(:message_schema_version_id) # Is it the root element
+      return doc.to_s unless object.respond_to?(:message_schema_version_id) # Is it the root element?
 
-      schema = options[:schema]
-      unless schema
-        config = find_version(object.message_schema_version_id)
-        schema = config[1][:schema] if config
-      end
-
+      schema = schema_location(object, options[:schema])
       if schema
-        # TODO: if !schema.start_with?("http") set up "NS Location" attr
         doc.add_namespace_definition(XML_SCHEMA_INSTANCE_PREFIX, XML_SCHEMA_INSTANCE_NS)
         doc[XML_SCHEMA_INSTANCE_ATTR] = schema
       end
@@ -94,6 +93,18 @@ module DDEX
     end
 
     private
+    def self.schema_location(object, schema)
+      config = find_version(object.message_schema_version_id)
+      return schema unless config
+
+      # Check if it's "NS schema"
+      if schema && schema.include?(" ")
+        schema
+      else
+        sprintf "%s %s", config[1][:namespace], schema || config[1][:schema]
+      end
+    end
+
     def self.parse(xml)
       xml = File.read(xml) if xml.is_a?(String) and xml !~ /\A\s*<[?\w]/
       Nokogiri::XML(xml) { |cfg| cfg.strict }
