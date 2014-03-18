@@ -46,10 +46,6 @@ describe DDEX::Element do
   end
 
   describe "#new" do
-    it "creates an instance" do
-      expect(Parent.new).to be_an_instance_of(Parent)
-    end
-
     it "sets the instance's attributes" do
       nested = parent_attr
       nested[:child] = Child.new(child_attr)

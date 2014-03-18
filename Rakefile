@@ -10,8 +10,14 @@ desc "Generate code from the schema given by SCHEMA"
 task :generate do
   schema = ENV["SCHEMA"]
   output = File.join(Dir.tmpdir, "ddex-schema-#{Time.now.to_i}")
+
+  abort "code generation requires JRuby" unless RUBY_PLATFORM == "java"
   abort "usage: rake generate SCHEMA=schema.xsd" unless schema
-  sh "jaxb2ruby -o #{output} -t etc/ddex.erb -n etc/namespaces.yml #{schema}"
+
+  sh "jaxb2ruby -o #{output} -t etc/ddex.erb -n etc/namespaces.yml #{schema}" do |ok, rv|
+    abort "code generation failed (#{rv.exitstatus})" unless ok
+  end
+
   puts "Files output to #{output}"
   # TODO: Automate this
   puts "REMEMBER: For ERN 3.4 - 3.6, you'll need to modify RelatedReleaseOfferSet:", <<-DEAL

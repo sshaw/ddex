@@ -16,9 +16,12 @@ describe DDEX::ERN do
 
     describe "the :schema option" do
       it "adds a remote schema to the root element" do
-        pending
+        #pending
         ern = DDEX::ERN::V36::NewReleaseMessage.new(:message_schema_version_id => "ern/36")
         xml = DDEX::ERN.write(ern, :schema => "http://example.com")
+        expect(xml).to contain_xml(<<-XML)
+	  <NewReleaseMessage xsi:schemaLocation="http://ddex.net/xml/ern/36/release-notification.xsd"></NewRelaseMessage>
+        XML
       end
 
       it "adds a local schema to the root element" do
