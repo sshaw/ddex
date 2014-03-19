@@ -11,7 +11,8 @@ end
 
 describe DDEX::ERN do
   # Again, maybe use a class method to retrieve this info
-  %w[3.4  3.4.1  3.5  3.6].each do |spec|
+  # 3.5 wasn't really 3.5
+  %w[3.4  3.4.1 3.6].each do |spec|
     describe "ERN #{spec} metadata serialization" do
       each_fixture("ern/#{ spec.tr(".", "") }").each do |path|
         context "given #{File.basename(path)}" do
@@ -21,3 +22,4 @@ describe DDEX::ERN do
     end
   end
 end
+

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ern:NewReleaseMessage BusinessProfileVersionId="stDACqrMl-ZTiXy" LanguageAndScriptCode="en_US" MessageSchemaVersionId="ern/36" ReleaseProfileVersionId="WctX_sTX_iic0TU9uYgpYU" xmlns:ern="http://ddex.net/xml/ern/36" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ddex.net/xml/ern/36/release-notification.xsd">
+<ern:NewReleaseMessage BusinessProfileVersionId="stDACqrMl-ZTiXy" LanguageAndScriptCode="en_US" MessageSchemaVersionId="ern/36" ReleaseProfileVersionId="WctX_sTX_iic0TU9uYgpYU" xmlns:ern="http://ddex.net/xml/ern/36" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ddex.net/xml/ern/36 http://ddex.net/xml/ern/36/release-notification.xsd">
     <MessageHeader LanguageAndScriptCode="es_MX">
         <MessageThreadId>Bu._UcZLsNbTVitjYnci</MessageThreadId>
         <MessageId>DbVn-iuUB-SiHl05B2IqW3_</MessageId>

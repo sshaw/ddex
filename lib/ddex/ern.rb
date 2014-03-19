@@ -4,14 +4,9 @@ require "nokogiri"
 module DDEX
   module ERN
 
-    XML_SCHEMA_INSTANCE_PREFIX = "xsi"
-    XML_SCHEMA_INSTANCE_NS     = "http://www.w3.org/2001/XMLSchema-instance"
-    XML_SCHEMA_INSTANCE_ATTR   = "#{XML_SCHEMA_INSTANCE_PREFIX}:schemaLocation"
-
     ROOT_ELEMENT    = "NewReleaseMessage"
     VERSION_ATTR    = "MessageSchemaVersionId"
 
-    DEFAULT_VERSION = "3.4.1"
     DEFAULT_CONFIG  = {
       "3.6" => {
         :namespace => "http://ddex.net/xml/ern/36",
@@ -44,8 +39,11 @@ module DDEX
       }
     }
 
-    mattr_accessor :version
-    self.version = DEFAULT_VERSION
+    # Good enough for now
+    DEFAULT_VERSION = DEFAULT_CONFIG.keys.sort { |a,b| b <=> a }.first
+
+    mattr_accessor :default_version
+    self.default_version = DEFAULT_VERSION
 
     mattr_reader :config
     @@config = DEFAULT_CONFIG
@@ -55,10 +53,10 @@ module DDEX
       options ||= {}
       raise ArgumentError, "options must be a Hash" unless options.is_a?(Hash)
 
-      doc     = parse(xml)
+      doc     = parse(xml, options)
       version = doc.root[VERSION_ATTR]
       config  = find_version(version)
-      raise_unknown_version(version) unless config # options[:force] ?
+      raise_unknown_version(version) unless config
 
       klass = load_version(config[0])
 
@@ -73,28 +71,32 @@ module DDEX
       end
     end
 
-    # TODO: format optopns
     def self.write(object, options = nil)
       raise ArgumentError, "not a DDEX object" unless object.is_a?(DDEX::Element)
 
       options ||= {}
       raise ArgumentError, "options must be a Hash" unless options.is_a?(Hash)
 
-      doc = object.to_xml
-      return doc.to_s unless object.respond_to?(:message_schema_version_id) # Is it the root element?
+      xmlopts = options.reject { |k, _| k == :schema }
 
-      schema = schema_location(object, options[:schema])
+      node = object.to_xml
+      return node.to_xml(xmlopts) unless object.respond_to?(:message_schema_version_id) # Is it the root element?
+
+      schema = schema_location(object.message_schema_version_id, options[:schema])
       if schema
-        doc.add_namespace_definition(XML_SCHEMA_INSTANCE_PREFIX, XML_SCHEMA_INSTANCE_NS)
-        doc[XML_SCHEMA_INSTANCE_ATTR] = schema
+        node.add_namespace_definition(XML_SCHEMA_INSTANCE_PREFIX, XML_SCHEMA_INSTANCE_NS)
+        node[XML_SCHEMA_INSTANCE_ATTR] = schema
       end
 
-      doc.to_s
+      doc = Nokogiri::XML::Document.new
+      doc.root = node
+      doc.to_xml(xmlopts)
     end
 
     private
-    def self.schema_location(object, schema)
-      config = find_version(object.message_schema_version_id)
+    def self.schema_location(id, schema)
+      id = config[default_version][:message_schema_version_id] unless id or !config.include?(default_version)
+      config = find_version(id)
       return schema unless config
 
       # Check if it's "NS schema"
@@ -105,9 +107,9 @@ module DDEX
       end
     end
 
-    def self.parse(xml)
+    def self.parse(xml, options)
       xml = File.read(xml) if xml.is_a?(String) and xml !~ /\A\s*<[?\w]/
-      Nokogiri::XML(xml) { |cfg| cfg.strict }
+      Nokogiri::XML(xml, nil, options[:encoding]) { |cfg| cfg.strict }
     # ArgumentError means there was a problem with types, expected an int, got a str
     rescue IOError, SystemCallError, ArgumentError => e
       raise XMLLoadError, "cannot load XML: #{e}"

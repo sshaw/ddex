@@ -3,6 +3,10 @@ require "nokogiri"
 require "ddex/ern/v36/new_release_message"
 
 describe DDEX::ERN do
+  def version_schema_location(version)
+    DDEX::ERN::DEFAULT_CONFIG[version].values_at(:namespace, :schema).join(" ")
+  end
+
   describe ".write" do
     it "requires a DDEX::Element" do
       expect { DDEX::ERN.write({}) }.to raise_error(ArgumentError, "not a DDEX object")
@@ -12,7 +16,7 @@ describe DDEX::ERN do
       ern = DDEX::ERN::V36::NewReleaseMessage.new(:message_schema_version_id => "ern/36")
       xml = DDEX::ERN.write(ern)
       doc = Nokogiri::XML(xml)
-      expect(doc.root["xsi:schemaLocation"]).to eq DDEX::ERN::DEFAULT_CONFIG["3.6"].values_at(:namespace, :schema).join(" ")
+      expect(doc.root[DDEX::XML_SCHEMA_INSTANCE_ATTR]).to eq version_schema_location("3.6")
     end
 
     describe "the :schema option" do
@@ -25,7 +29,7 @@ describe DDEX::ERN do
           xml = DDEX::ERN.write(ern, :schema => schema)
           doc = Nokogiri::XML(xml)
 
-          expect(doc.root["xsi:schemaLocation"]).to eq schema_location
+          expect(doc.root[DDEX::XML_SCHEMA_INSTANCE_ATTR]).to eq schema_location
         end
       end
 
@@ -36,8 +40,15 @@ describe DDEX::ERN do
           xml = DDEX::ERN.write(ern, :schema => schema_location)
           doc = Nokogiri::XML(xml)
 
-          expect(doc.root["xsi:schemaLocation"]).to eq schema_location
+          expect(doc.root[DDEX::XML_SCHEMA_INSTANCE_ATTR]).to eq schema_location
         end
+      end
+    end
+
+    describe "the :encoding option" do
+      it "is included in the resulting XML document" do
+        xml = DDEX::ERN.write(DDEX::ERN::V36::NewReleaseMessage.new, :encoding => "iso-8859-1")
+        expect(xml).to start_with('<?xml version="1.0" encoding="iso-8859-1"?>')
       end
     end
 
@@ -46,7 +57,11 @@ describe DDEX::ERN do
     end
 
     context "when the object has no version information" do
-      it "uses the configured default"
+      it "uses the configured default" do
+        xml = DDEX::ERN.write(DDEX::ERN::V36::NewReleaseMessage.new)
+        doc = Nokogiri::XML(xml)
+        expect(doc.root[DDEX::XML_SCHEMA_INSTANCE_ATTR]).to eq version_schema_location(DDEX::ERN.default_version)
+      end
     end
   end
 
