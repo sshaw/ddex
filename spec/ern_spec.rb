@@ -3,8 +3,18 @@ require "nokogiri"
 require "ddex/ern/v36/new_release_message"
 
 describe DDEX::ERN do
-  def version_schema_location(version)
-    DDEX::ERN::DEFAULT_CONFIG[version].values_at(:namespace, :schema).join(" ")
+  describe ".supports?" do
+    it "returns true when the ERN version is supported" do
+      expect(DDEX::ERN.supports?("3.6")).to be_true
+    end
+
+    it "returns false when the ERN version is not supported" do
+      expect(DDEX::ERN.supports?("9.99999")).to be_false
+    end
+
+    it "accepts supported MessageSchemaVersionId values" do
+      expect(DDEX::ERN.supports?("ern/36")).to be_true
+    end
   end
 
   describe ".write" do
@@ -16,14 +26,14 @@ describe DDEX::ERN do
       ern = DDEX::ERN::V36::NewReleaseMessage.new(:message_schema_version_id => "ern/36")
       xml = DDEX::ERN.write(ern)
       doc = Nokogiri::XML(xml)
-      expect(doc.root[DDEX::XML_SCHEMA_INSTANCE_ATTR]).to eq version_schema_location("3.6")
+      expect(doc.root[DDEX::XML_SCHEMA_INSTANCE_ATTR]).to eq [ern.class.ns[1], DDEX::ERN::DEFAULT_CONFIG["ern/36"][:schema]].join(" ")
     end
 
     describe "the :schema option" do
       context "when given a schema" do
         it "includes it in the root element's schemaLocation attribute" do
           schema = "schema.xsd"
-          schema_location = sprintf "%s %s", DDEX::ERN::DEFAULT_CONFIG["3.6"][:namespace], schema
+          schema_location = sprintf "%s %s", DDEX::ERN::V36::NewReleaseMessage.ns[1], schema
 
           ern = DDEX::ERN::V36::NewReleaseMessage.new(:message_schema_version_id => "ern/36")
           xml = DDEX::ERN.write(ern, :schema => schema)
@@ -48,7 +58,8 @@ describe DDEX::ERN do
     describe "the :encoding option" do
       it "is included in the resulting XML document" do
         xml = DDEX::ERN.write(DDEX::ERN::V36::NewReleaseMessage.new, :encoding => "iso-8859-1")
-        expect(xml).to start_with('<?xml version="1.0" encoding="iso-8859-1"?>')
+        doc = Nokogiri::XML(xml)
+        expect(doc.encoding).to eq "iso-8859-1"
       end
     end
 
@@ -58,9 +69,10 @@ describe DDEX::ERN do
 
     context "when the object has no version information" do
       it "uses the configured default" do
-        xml = DDEX::ERN.write(DDEX::ERN::V36::NewReleaseMessage.new)
+        ern = DDEX::ERN::V36::NewReleaseMessage.new(:message_schema_version_id => "ern/36")
+        xml = DDEX::ERN.write(ern)
         doc = Nokogiri::XML(xml)
-        expect(doc.root[DDEX::XML_SCHEMA_INSTANCE_ATTR]).to eq version_schema_location(DDEX::ERN.default_version)
+        expect(doc.root[DDEX::XML_SCHEMA_INSTANCE_ATTR]).to eq [ern.class.ns[1], DDEX::ERN::DEFAULT_CONFIG["ern/36"][:schema]].join(" ")
       end
     end
   end

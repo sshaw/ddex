@@ -8,57 +8,49 @@ module DDEX
     VERSION_ATTR    = "MessageSchemaVersionId"
 
     DEFAULT_CONFIG  = {
-      "3.6" => {
-        :namespace => "http://ddex.net/xml/ern/36",
+      "ern/36" => {
         :schema => "http://ddex.net/xml/ern/36/release-notification.xsd",
-        :message_schema_version_id => "ern/36"
+        :version => "3.6"
       },
 
-      "3.5.1" => {
-        :namespace => "http://ddex.net/xml/ern/351",
+      "ern/351" => {
         :schema => "http://ddex.net/xml/ern/351/release-notification.xsd",
-        :message_schema_version_id => "ern/351"
+        :version => "3.5.1"
       },
 
-      "3.4.1" => {
-        :namespace => "http://ddex.net/xml/ern/341",
+      "ern/341" => {
         :schema => "http://ddex.net/xml/ern/341/release-notification.xsd",
-        :message_schema_version_id => "ern/341"
+        :version => "3.4.1"
       },
 
-      "3.4" => {
-        :namespace => "http://ddex.net/xml/ern/34",
+      "ern/34" => {
         :schema => "http://ddex.net/xml/ern/34/release-notification.xsd",
-        :message_schema_version_id => "ern/34"
+        :version => "3.4",
       },
 
-      "3.2" => {
-        :namespace => "http://ddex.net/xml/2010/ern-main/32",
+      "2010/ern-main/32" => {
         :schema => "http://ddex.net/xml/2010/ern-main/32/ern-main.xsd",
-        :message_schema_version_id => "2010/ern-main/32"
+        :version => "3.2",
       }
     }
 
-    # Good enough for now
-    DEFAULT_VERSION = DEFAULT_CONFIG.keys.sort { |a,b| b <=> a }.first
-
-    mattr_accessor :default_version
-    self.default_version = DEFAULT_VERSION
-
     mattr_reader :config
     @@config = DEFAULT_CONFIG
+
+    def self.supports?(version)
+      config.find { |name,cfg| name == version || cfg[:version] == version }
+    end
 
     # options[:validate] ???
     def self.read(xml, options = nil)
       options ||= {}
       raise ArgumentError, "options must be a Hash" unless options.is_a?(Hash)
 
-      doc     = parse(xml, options)
-      version = doc.root[VERSION_ATTR]
-      config  = find_version(version)
-      raise_unknown_version(version) unless config
+      doc = parse(xml, options)
+      ver = doc.root[VERSION_ATTR]
+      raise_unknown_version(ver) unless config.include?(ver)
 
-      klass = load_version(config[0])
+      klass = load_version(ver)
 
       begin
         klass.from_xml(doc)
@@ -82,7 +74,7 @@ module DDEX
       node = object.to_xml
       return node.to_xml(xmlopts) unless object.respond_to?(:message_schema_version_id) # Is it the root element?
 
-      schema = schema_location(object.message_schema_version_id, options[:schema])
+      schema = schema_location(object, options[:schema])
       if schema
         node.add_namespace_definition(XML_SCHEMA_INSTANCE_PREFIX, XML_SCHEMA_INSTANCE_NS)
         node[XML_SCHEMA_INSTANCE_ATTR] = schema
@@ -94,16 +86,14 @@ module DDEX
     end
 
     private
-    def self.schema_location(id, schema)
-      id = config[default_version][:message_schema_version_id] unless id or !config.include?(default_version)
-      config = find_version(id)
-      return schema unless config
+    def self.schema_location(object, schema)
+      return unless schema or config.include?(object.message_schema_version_id)
 
       # Check if it's "NS schema"
-      if schema && schema.include?(" ")
+      if schema && schema.strip.include?(" ")
         schema
       else
-        sprintf "%s %s", config[1][:namespace], schema || config[1][:schema]
+        sprintf "%s %s", object.class.ns[1], schema || config[object.message_schema_version_id][:schema]
       end
     end
 
@@ -117,21 +107,17 @@ module DDEX
       raise XMLLoadError, "XML parsing error: #{e}"
     end
 
-    def self.find_version(want)
-      config.find { |v, cfg| cfg[:message_schema_version_id] == want }
-    end
-
     def self.raise_unknown_version(version)
       message = "ERN version %s" % (version ? "'#{version}'" : "attribute missing")
       raise UnknownVersionError, message
     end
 
     def self.load_version(version)
-      v = "v#{version.tr(".", "")}"
+      v = "v#{version.gsub(%r{\A\w+/}, "")}"
       klass = v.upcase
 
       ## 2.0 allows for one call
-      loader = lambda { DDEX::ERN.const_get(klass).const_get(ROOT_ELEMENT) }
+      loader= lambda { DDEX::ERN.const_get(klass).const_get(ROOT_ELEMENT) }
       return loader[] if DDEX::ERN.const_defined?(klass)
 
       root = File.dirname(File.expand_path(__FILE__))
