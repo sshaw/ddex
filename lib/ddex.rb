@@ -11,6 +11,14 @@ module DDEX
   class UnknownVersionError < DDEXError; end
   class XMLLoadError < DDEXError; end
 
+  def self.supports?(name)
+    spec, ver = name.split("/", 2)
+    spec.upcase.tr("^[A-Z0-9]", "")
+    DDEX.const_defined?(spec) ? DDEX.const_get(spec).supports?(ver) : false
+  rescue NameError
+    false
+  end
+
   # TODO: figure out what top level spec...
   def self.read(xml, options = nil)
     DDEX::ERN.read(xml, options)
