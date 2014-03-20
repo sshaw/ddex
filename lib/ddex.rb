@@ -13,8 +13,13 @@ module DDEX
 
   def self.supports?(name)
     spec, ver = name.split("/", 2)
-    spec.upcase.tr("^[A-Z0-9]", "")
-    DDEX.const_defined?(spec) ? DDEX.const_get(spec).supports?(ver) : false
+
+    spec.upcase!
+    spec.tr!("^[A-Z0-9]", "")
+    return false unless DDEX.const_defined?(spec)
+
+    klass = DDEX.const_get(spec)
+    klass.supports?(ver) || klass.supports?(name)
   rescue NameError
     false
   end

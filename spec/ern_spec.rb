@@ -15,6 +15,10 @@ describe DDEX::ERN do
     it "accepts supported MessageSchemaVersionId values" do
       expect(DDEX::ERN.supports?("ern/36")).to be_true
     end
+
+    it "ignores case" do
+      expect(DDEX::ERN.supports?("eRn/36")).to be_true
+    end
   end
 
   describe ".write" do

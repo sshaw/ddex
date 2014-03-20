@@ -38,7 +38,8 @@ module DDEX
     @@config = DEFAULT_CONFIG
 
     def self.supports?(version)
-      config.find { |name,cfg| name == version || cfg[:version] == version }
+      version = version.downcase
+      config.any? { |name,cfg| name == version || cfg[:version] == version }
     end
 
     # options[:validate] ???
