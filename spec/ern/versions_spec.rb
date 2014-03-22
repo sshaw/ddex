@@ -32,9 +32,9 @@ end
 
 describe DDEX::ERN do
   # Again, maybe use a class method to retrieve this info
-  %w[3.4  3.4.1  3.5  3.5.1  3.6].each do |spec|
-    describe "ERN #{spec} metadata serialization" do
-      each_fixture("ern/#{ spec.tr(".", "") }").each do |path|
+  DDEX::ERN.supported_versions.each do |version|
+    describe "ERN #{version} metadata serialization" do
+      each_fixture("ern/#{ version.tr(".", "") }").each do |path|
         context "given #{File.basename(path)}" do
           include_examples "metadata serialization", path
         end

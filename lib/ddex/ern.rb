@@ -30,20 +30,24 @@ module DDEX
 
       "ern/34" => {
         :schema => "http://ddex.net/xml/ern/34/release-notification.xsd",
-        :version => "3.4",
+        :version => "3.4"
       },
 
-      "2010/ern-main/32" => {
-        :schema => "http://ddex.net/xml/2010/ern-main/32/ern-main.xsd",
-        :version => "3.2",
-      }
+      # "2011/ern-main/33" => {
+      #   :schema => "http://ddex.net/xml/2011/ern-main/33/ern-main.xsd",
+      #   :version => "3.3"
+      # }
     }
 
     mattr_reader :config
     @@config = DEFAULT_CONFIG
 
+    def self.supported_versions
+      config.values.map { |cfg| cfg[:version].dup }.sort
+    end
+
     def self.supports?(version)
-      version = version.downcase
+      version = version.downcase.strip
       config.any? { |name,cfg| name == version || cfg[:version] == version }
     end
 
@@ -119,7 +123,8 @@ module DDEX
     end
 
     def self.load_version(version)
-      v = "v#{version.gsub(%r{\A\w+/}, "")}"
+      version = $1 if version =~ %r{/(\d+)\z}
+      v = "v#{version}"
       klass = v.upcase
 
       ## 2.0 allows for one call
@@ -131,6 +136,7 @@ module DDEX
 
       loader[]
     rescue LoadError, NameError => e
+      p e
       raise_unknown_version(version)
     end
   end

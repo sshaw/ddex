@@ -20,7 +20,7 @@ task :generate do
 
   puts "Files output to #{output}"
   # TODO: Automate this
-  puts "REMEMBER: For ERN 3.4 - 3.6, you'll need to modify RelatedReleaseOfferSet:", <<-DEAL
+  puts "REMEMBER: For ERN 3.3 - 3.6, you'll need to modify RelatedReleaseOfferSet:", <<-DEAL
     # remove this require:
     require "ddex/ern/vXX/deal"
 
