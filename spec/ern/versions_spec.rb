@@ -9,6 +9,27 @@ shared_examples_for "metadata serialization" do |path|
   end
 end
 
+shared_examples_for "PriceInformation/@PriceType mapping" do
+  let(:doc) do
+    x = described_class.new(:price_type => "a", :type => "b")
+    p x
+    xml = DDEX::ERN.write(described_class.new(:price_type => "a", :type => "b"))
+    Nokogiri::XML(xml)
+  end
+
+  describe "#type" do
+    it "is serialized to the PriceType attribute" do
+      expect(doc["PriceType"]).to eq "a"
+    end
+  end
+
+  describe "#price_type" do
+    it "is serialized to the PriceType element" do
+      expect(doc.at("PriceType").text).to eq "b"
+    end
+  end
+end
+
 describe DDEX::ERN do
   # Again, maybe use a class method to retrieve this info
   %w[3.4  3.4.1  3.5  3.5.1  3.6].each do |spec|
@@ -21,4 +42,10 @@ describe DDEX::ERN do
     end
   end
 end
+
+#require "ddex/ern/v36/price_information"
+
+# describe DDEX::ERN::V36::PriceInformation do  
+#   it_should_behave_like "PriceInformation/@PriceType mapping"
+# end
 

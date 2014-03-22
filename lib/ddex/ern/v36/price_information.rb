@@ -36,7 +36,7 @@ class PriceInformation < Element
 
 
   
-      xml_accessor :type, :from => "@Type", :required => false
+      xml_accessor :type, :from => "@PriceType", :required => false
     
   
 end

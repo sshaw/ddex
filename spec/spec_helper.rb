@@ -1,5 +1,6 @@
 require "rspec"
 require "test_xml/spec"
+require "nokogiri"
 require "ddex"
 
 module SpecHelper

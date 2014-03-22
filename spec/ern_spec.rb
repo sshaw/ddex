@@ -1,5 +1,4 @@
 require "spec_helper"
-require "nokogiri"
 require "ddex/ern/v36/new_release_message"
 
 describe DDEX::ERN do

@@ -2578,7 +2578,7 @@
                         <URL>qWa0kVEIgT7eezfk6OI</URL>
                         <TerritoryCode>US</TerritoryCode>
                     </DistributionChannel>
-                    <PriceInformation Type="PreOrderPrice">
+                    <PriceInformation PriceType="PreOrderPrice">
                         <Description LanguageAndScriptCode="en_US">UW4</Description>
                         <PriceRangeType Namespace="Psr0cZXCFlHoh0BPAVhEQ">ANp5GKcTwiT3TLxS</PriceRangeType>
                         <PriceType Namespace="waGJPzsGJaoO22jiEmACQEbj4.4x7">a_FS.uAPUXQ9j1D.xR</PriceType>
