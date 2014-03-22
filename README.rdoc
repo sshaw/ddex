@@ -101,6 +101,13 @@ For example, <code>SoundRecording/IsArtistRelated</code>:
 
 TODO: See Types
 
+==== Version specific changes
+
+===== ERN v3.6
+
+<code>ern:PriceInformation/@PriceType</code> has been renamed to <code>@Type</code> to avoid conflicting with the
+element of the same name (<code>ern:PriceInformation/PriceType</code>)
+
 === More Info
 
 * {Source code}[https://github.com/sshaw/ddex]
