@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE settings [   
+<!DOCTYPE settings [
     <!ENTITY date1 "2011-11-21">
     <!ENTITY date2 "2015-01-02">
     <!ENTITY datetime1 "&date1;T07:45:02+00:00">
@@ -18,7 +18,11 @@
     <isUseIncrementalNamesForValues>true</isUseIncrementalNamesForValues>
     <discardOptionalElementsAfterNestedLevel>30</discardOptionalElementsAfterNestedLevel>
     <namespaceMapping ns="http://ddex.net/xml/ern/35" proxy="ern"/>
-    <namespaceMapping ns="http://ddex.net/xml/avs/avs" proxy="avs"/>
+    <namespaceMapping ns="http://ddex.net/xml/20120719/ddex" proxy="ddex"/>
+    <namespaceMapping ns="http://ddex.net/xml/20120719/ddexC" proxy="ddexC"/>
+    <namespaceMapping ns="http://ddex.net/xml/20120719/iso4217a" proxy="iso4217a"/>
+    <namespaceMapping ns="http://ddex.net/xml/20120719/iso639a2" proxy="iso639a2"/>
+    <namespaceMapping ns="http://ddex.net/xml/20120719/iso3166a2" proxy="iso3166a2"/>
     <element namespace="&lt;ANY>" name="&lt;ANY>">
         <generateOptionalElements>true</generateOptionalElements>
         <generateOptionalAttributes>true</generateOptionalAttributes>
@@ -349,8 +353,8 @@
         <maximumRecursivityLevel>1</maximumRecursivityLevel>
         <alternativeStrategy>FIRST</alternativeStrategy>
         <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
-        <elementValue>&datetime1;</elementValue>       
-        <elementValue>&datetime2;</elementValue>        
+        <elementValue>&datetime1;</elementValue>
+        <elementValue>&datetime2;</elementValue>
         <attribute namespace="&lt;ANY>" name="&lt;ANY>">
         </attribute>
     </element>
@@ -362,8 +366,8 @@
         <maximumRecursivityLevel>1</maximumRecursivityLevel>
         <alternativeStrategy>FIRST</alternativeStrategy>
         <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
-        <elementValue>2013</elementValue>       
-        <elementValue>2018</elementValue>        
+        <elementValue>2013</elementValue>
+        <elementValue>2018</elementValue>
         <attribute namespace="&lt;ANY>" name="&lt;ANY>">
         </attribute>
     </element>
@@ -375,8 +379,8 @@
         <maximumRecursivityLevel>1</maximumRecursivityLevel>
         <alternativeStrategy>FIRST</alternativeStrategy>
         <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
-        <elementValue>&datetime1;</elementValue>       
-        <elementValue>&datetime2;</elementValue>        
+        <elementValue>&datetime1;</elementValue>
+        <elementValue>&datetime2;</elementValue>
         <attribute namespace="&lt;ANY>" name="&lt;ANY>">
         </attribute>
     </element>
@@ -388,11 +392,11 @@
         <maximumRecursivityLevel>1</maximumRecursivityLevel>
         <alternativeStrategy>FIRST</alternativeStrategy>
         <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
-        <elementValue>&date1;</elementValue>       
-        <elementValue>&date2;</elementValue>        
+        <elementValue>&date1;</elementValue>
+        <elementValue>&date2;</elementValue>
         <attribute namespace="&lt;ANY>" name="&lt;ANY>">
         </attribute>
-    </element>    
+    </element>
     <element namespace="&lt;ANY>" name="EffectiveDate">
         <generateOptionalElements>false</generateOptionalElements>
         <generateOptionalAttributes>false</generateOptionalAttributes>
@@ -401,8 +405,8 @@
         <maximumRecursivityLevel>1</maximumRecursivityLevel>
         <alternativeStrategy>FIRST</alternativeStrategy>
         <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
-        <elementValue>&date1;</elementValue>       
-        <elementValue>&date2;</elementValue>        
+        <elementValue>&date1;</elementValue>
+        <elementValue>&date2;</elementValue>
         <attribute namespace="&lt;ANY>" name="&lt;ANY>">
         </attribute>
     </element>
@@ -414,8 +418,8 @@
         <maximumRecursivityLevel>1</maximumRecursivityLevel>
         <alternativeStrategy>FIRST</alternativeStrategy>
         <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
-        <elementValue>&datetime1;</elementValue>       
-        <elementValue>&datetime2;</elementValue>        
+        <elementValue>&datetime1;</elementValue>
+        <elementValue>&datetime2;</elementValue>
         <attribute namespace="&lt;ANY>" name="&lt;ANY>">
         </attribute>
     </element>
@@ -427,8 +431,8 @@
         <maximumRecursivityLevel>1</maximumRecursivityLevel>
         <alternativeStrategy>FIRST</alternativeStrategy>
         <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
-        <elementValue>&date1;</elementValue>       
-        <elementValue>&date2;</elementValue>        
+        <elementValue>&date1;</elementValue>
+        <elementValue>&date2;</elementValue>
         <attribute namespace="&lt;ANY>" name="&lt;ANY>">
         </attribute>
     </element>
@@ -440,8 +444,34 @@
         <maximumRecursivityLevel>1</maximumRecursivityLevel>
         <alternativeStrategy>FIRST</alternativeStrategy>
         <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
-        <elementValue>&datetime1;</elementValue>       
-        <elementValue>&datetime2;</elementValue>        
+        <elementValue>&datetime1;</elementValue>
+        <elementValue>&datetime2;</elementValue>
+        <attribute namespace="&lt;ANY>" name="&lt;ANY>">
+        </attribute>
+    </element>
+    <element namespace="&lt;ANY>" name="StartDate">
+        <generateOptionalElements>false</generateOptionalElements>
+        <generateOptionalAttributes>false</generateOptionalAttributes>
+        <valuesForContentType>DEFAULT</valuesForContentType>
+        <preferredNumberOfRepetitions>1</preferredNumberOfRepetitions>
+        <maximumRecursivityLevel>1</maximumRecursivityLevel>
+        <alternativeStrategy>FIRST</alternativeStrategy>
+        <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
+        <elementValue>&date1;</elementValue>
+        <elementValue>&date2;</elementValue>
+        <attribute namespace="&lt;ANY>" name="&lt;ANY>">
+        </attribute>
+    </element>
+    <element namespace="&lt;ANY>" name="EndDate">
+        <generateOptionalElements>false</generateOptionalElements>
+        <generateOptionalAttributes>false</generateOptionalAttributes>
+        <valuesForContentType>DEFAULT</valuesForContentType>
+        <preferredNumberOfRepetitions>1</preferredNumberOfRepetitions>
+        <maximumRecursivityLevel>1</maximumRecursivityLevel>
+        <alternativeStrategy>FIRST</alternativeStrategy>
+        <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
+        <elementValue>&date1;</elementValue>
+        <elementValue>&date2;</elementValue>
         <attribute namespace="&lt;ANY>" name="&lt;ANY>">
         </attribute>
     </element>

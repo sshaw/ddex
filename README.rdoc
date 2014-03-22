@@ -2,7 +2,7 @@
 
 {<img src="https://secure.travis-ci.org/sshaw/ddex.png"/>}[http://travis-ci.org/sshaw/ddex]
 
-DDEX metadata serialization for Ruby
+{DDEX}[http://ddex.net] metadata serialization for Ruby
 
 === Overview
 
@@ -36,7 +36,7 @@ DDEX metadata serialization for Ruby
  message.resource_list << record
  p message.to_hash
 
- xml = DDEX::ERN.write(message)
+ xml = DDEX.write(message)
  File.open("bloat.xml", "w") { |io| io.puts(xml) }
 
 === How this differs from the spec

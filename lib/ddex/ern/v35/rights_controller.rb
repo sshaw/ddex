@@ -33,9 +33,9 @@ class RightsController < Element
 
       xml_accessor :territory_of_registration, :from => "TerritoryOfRegistration", :required => false
 
-      xml_accessor :start_date, :as => DateTime, :from => "StartDate", :required => true
+      xml_accessor :start_date, :as => Date, :from => "StartDate", :required => true
 
-      xml_accessor :end_date, :as => DateTime, :from => "EndDate", :required => false
+      xml_accessor :end_date, :as => Date, :from => "EndDate", :required => false
 
 
 

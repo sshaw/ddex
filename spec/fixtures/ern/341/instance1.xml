@@ -6,7 +6,7 @@
  xmlns:iso3166a2="http://ddex.net/xml/20120404/iso3166a2"
  xmlns:iso4217a="http://ddex.net/xml/20120404/iso4217a"
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="http://ddex.net/xml/ern/341/release-notification.xsd" MessageSchemaVersionId="ern/341" BusinessProfileVersionId="wTYG4zxI_T5NyG5w" ReleaseProfileVersionId="d0CZd7x2eOAVxVTFX"
+ xsi:schemaLocation="http://ddex.net/xml/ern/341 http://ddex.net/xml/ern/341/release-notification.xsd" MessageSchemaVersionId="ern/341" BusinessProfileVersionId="wTYG4zxI_T5NyG5w" ReleaseProfileVersionId="d0CZd7x2eOAVxVTFX"
      LanguageAndScriptCode="es_MX">
     <MessageHeader LanguageAndScriptCode="es_MX">
         <MessageThreadId>Qy8o0</MessageThreadId>
@@ -1851,8 +1851,15 @@
                         <RightsClaimPolicyType>ReportUsage</RightsClaimPolicyType>
                     </RightsClaimPolicy>
                     <WebPolicy>
-                        <AccessBlockingRequested>1</AccessBlockingRequested>
-                    </WebPolicy>
+                        <AccessBlockingRequested>1</AccessBlockingRequested>                        
+                    </WebPolicy>                    
+                    <WebPolicy>
+                        <Condition>
+                            <Value>-124933908.794</Value>
+                            <Unit>Minute</Unit>
+                            <RelationalRelator>LessThan</RelationalRelator>
+                        </Condition>
+                    </WebPolicy>                   
                 </DealTerms>
                 <ResourceUsage>
                     <DealResourceReference>A5</DealResourceReference>

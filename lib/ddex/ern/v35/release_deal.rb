@@ -22,7 +22,7 @@ class ReleaseDeal < Element
       
       xml_accessor :deals, :as => [DDEX::ERN::V35::Deal], :from => "Deal", :required => true
 
-      xml_accessor :effective_date, :as => DateTime, :from => "EffectiveDate", :required => false
+      xml_accessor :effective_date, :as => Date, :from => "EffectiveDate", :required => false
 
 
 

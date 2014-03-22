@@ -1,0 +1,2586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ern:NewReleaseMessage xmlns:iso3166a2="http://ddex.net/xml/20121219/iso3166a2"
+ xmlns:ddexC="http://ddex.net/xml/20121219/ddexC"
+ xmlns:iso639a2="http://ddex.net/xml/20121219/iso639a2"
+ xmlns:ddex="http://ddex.net/xml/20121219/ddex"
+ xmlns:ern="http://ddex.net/xml/ern/351"
+ xmlns:iso4217a="http://ddex.net/xml/20121219/iso4217a"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://ddex.net/xml/ern/351 http://ddex.net/xml/ern/351/release-notification.xsd" MessageSchemaVersionId="ern/351" BusinessProfileVersionId="t0fOG.rwWvrnkO7fvs6bHIJis-" ReleaseProfileVersionId="zctP-5UB3"
+     LanguageAndScriptCode="es_MX">
+    <MessageHeader LanguageAndScriptCode="es_MX">
+        <MessageThreadId>KqM</MessageThreadId>
+        <MessageId>y</MessageId>
+        <MessageFileName>dB8I</MessageFileName>
+        <MessageSender LanguageAndScriptCode="es_MX">
+            <PartyId Namespace="w_wXfkqOM9-O6fodpjgl6te." IsDPID="false" IsISNI="true">nHUK_DiRsrS6_w1FNVCz2pExXO</PartyId>
+            <PartyName LanguageAndScriptCode="es_MX">
+                <FullName LanguageAndScriptCode="en_US">OS8cADHo0suHkME</FullName>
+                <FullNameAsciiTranscribed>xi_3UQtBGGaNWQD_zGNf-PWMC</FullNameAsciiTranscribed>
+                <FullNameIndexed LanguageAndScriptCode="es_MX">yAqn7p6AiL</FullNameIndexed>
+                <NamesBeforeKeyName LanguageAndScriptCode="es_MX">Uolf4BZ9DhTnrAnYUh5II</NamesBeforeKeyName>
+                <KeyName LanguageAndScriptCode="en_US">z</KeyName>
+                <NamesAfterKeyName LanguageAndScriptCode="es_MX">nd6_hq4U_ZHRq96FHv1QHFzMAa6H</NamesAfterKeyName>
+                <AbbreviatedName LanguageAndScriptCode="en_US">shYq</AbbreviatedName>
+            </PartyName>
+            <TradingName LanguageAndScriptCode="en_US">pEKFeTvX</TradingName>
+        </MessageSender>
+        <SentOnBehalfOf LanguageAndScriptCode="es_MX">
+            <PartyId Namespace="VUe6_qkys-vtKrWZAQBhM" IsDPID="true" IsISNI="false">XU4eLqgVCo8xd</PartyId>
+            <PartyName LanguageAndScriptCode="es_MX">
+                <FullName LanguageAndScriptCode="es_MX">mpyVW9dZXthoj3J</FullName>
+                <FullNameAsciiTranscribed>mnZra-pxreVxCa</FullNameAsciiTranscribed>
+                <FullNameIndexed LanguageAndScriptCode="en_US">eBMA7o7Y0T_A</FullNameIndexed>
+                <NamesBeforeKeyName LanguageAndScriptCode="en_US">m3uEDbtaptWcGNtRL</NamesBeforeKeyName>
+                <KeyName LanguageAndScriptCode="en_US">YQ1Lzd25</KeyName>
+                <NamesAfterKeyName LanguageAndScriptCode="en_US">q9px</NamesAfterKeyName>
+                <AbbreviatedName LanguageAndScriptCode="es_MX">sKqq5</AbbreviatedName>
+            </PartyName>
+            <TradingName LanguageAndScriptCode="en_US">jVpSBf82rmEc</TradingName>
+        </SentOnBehalfOf>
+        <MessageRecipient LanguageAndScriptCode="en_US">
+            <PartyId Namespace="p9u-hjDcXHqA" IsDPID="true" IsISNI="true">iATS_QlsBls</PartyId>
+            <PartyName LanguageAndScriptCode="es_MX">
+                <FullName LanguageAndScriptCode="en_US">MGRrcA-uxYUw</FullName>
+                <FullNameAsciiTranscribed>miWrSCWTFQbG39oGQunVU8</FullNameAsciiTranscribed>
+                <FullNameIndexed LanguageAndScriptCode="es_MX">XzMQdNk8VzOm5vfwIHxkmNCzO4a0NK</FullNameIndexed>
+                <NamesBeforeKeyName LanguageAndScriptCode="es_MX">VOa09t2x7BA66HF3wZhU-Pi1IrIy4</NamesBeforeKeyName>
+                <KeyName LanguageAndScriptCode="es_MX">zmCuVH5.s7wiMRUeVHt5MDIwGZ-</KeyName>
+                <NamesAfterKeyName LanguageAndScriptCode="en_US">kt6H</NamesAfterKeyName>
+                <AbbreviatedName LanguageAndScriptCode="en_US">nLsvCMUQs5gyZ6egpwj1-kjKh</AbbreviatedName>
+            </PartyName>
+            <TradingName LanguageAndScriptCode="en_US">NevDj8x_Q_k0c.Xfn</TradingName>
+        </MessageRecipient>
+        <MessageCreatedDateTime>2011-11-21T07:45:02+00:00</MessageCreatedDateTime>
+        <MessageAuditTrail LanguageAndScriptCode="es_MX">
+            <MessageAuditTrailEvent>
+                <MessagingPartyDescriptor LanguageAndScriptCode="es_MX">
+                    <PartyId Namespace="IU6sQi4" IsDPID="false" IsISNI="false">WZxTs1l2ZWQ-trl8UcxSO8DRID</PartyId>
+                    <PartyName LanguageAndScriptCode="es_MX">
+                        <FullName LanguageAndScriptCode="en_US">CBiLyQe6OY</FullName>
+                        <FullNameAsciiTranscribed>uqUD-UW_e._C9</FullNameAsciiTranscribed>
+                        <FullNameIndexed LanguageAndScriptCode="en_US">UcZ_Pq7WGY1-Agwa0bf</FullNameIndexed>
+                        <NamesBeforeKeyName LanguageAndScriptCode="es_MX">ETk0mGO1vIurN</NamesBeforeKeyName>
+                        <KeyName LanguageAndScriptCode="en_US">X5VAdF49</KeyName>
+                        <NamesAfterKeyName LanguageAndScriptCode="es_MX">gcx.JblKMgHWjpNAdhXWBrHcggY</NamesAfterKeyName>
+                        <AbbreviatedName LanguageAndScriptCode="en_US">Kj.klye</AbbreviatedName>
+                    </PartyName>
+                    <TradingName LanguageAndScriptCode="en_US">f7rbaC7igmt1BbkmV-F1C2jXkQqxv</TradingName>
+                </MessagingPartyDescriptor>
+                <DateTime>2011-11-21T07:45:02+00:00</DateTime>
+            </MessageAuditTrailEvent>
+        </MessageAuditTrail>
+        <Comment LanguageAndScriptCode="es_MX">Y-p</Comment>
+        <MessageControlType>LiveMessage</MessageControlType>
+    </MessageHeader>
+    <UpdateIndicator>OriginalMessage</UpdateIndicator>    
+    <CatalogTransfer>
+        <CatalogTransferCompleted>true</CatalogTransferCompleted>
+        <EffectiveTransferDate IsApproximate="true" IsBefore="true" IsAfter="true" TerritoryCode="US" LocationDescription="FIeHnmQ9RemOPycec9"
+             LanguageAndScriptCode="es_MX">2015-09-23Z</EffectiveTransferDate>
+        <CatalogReleaseReferenceList>
+            <CatalogReleaseReference>R_</CatalogReleaseReference>
+        </CatalogReleaseReferenceList>
+        <TerritoryCode>MX</TerritoryCode>
+        <TransferringFrom>
+            <PartyId Namespace="uMYrVA" IsDPID="false" IsISNI="true">mP7c3oL7u</PartyId>
+        </TransferringFrom>
+        <TransferringTo>
+            <PartyId Namespace="N9rcspA-Ac3oIImgR" IsDPID="true" IsISNI="false">_TUzIM6rywhQaJ2_Gik35lC89kt4BF</PartyId>
+        </TransferringTo>
+    </CatalogTransfer>
+    <WorkList LanguageAndScriptCode="en_US">
+        <MusicalWork IsUpdated="true" LanguageAndScriptCode="en_US">
+            <MusicalWorkId IsReplaced="false">
+                <ISWC>rKX3rFA-uz</ISWC>
+                <OpusNumber>zhOflBYyDaYvhUQ</OpusNumber>
+                <ComposerCatalogNumber>C0r.mGCCj</ComposerCatalogNumber>
+                <ProprietaryId Namespace="dpWcsVy">iS-E.BoArUXM-Z6m7SPNZi5S6oO9</ProprietaryId>
+            </MusicalWorkId>
+            <MusicalWorkReference>W_</MusicalWorkReference>
+            <ReferenceTitle LanguageAndScriptCode="es_MX">
+                <TitleText LanguageAndScriptCode="en_US">f0Muj0wga2_dE</TitleText>
+                <SubTitle LanguageAndScriptCode="en_US">ibX_I_-_CQePJ8Wo-5oI</SubTitle>
+            </ReferenceTitle>
+            <RightsAgreementId>
+                <MWLI>RbQ0tn</MWLI>
+                <ProprietaryId Namespace="lvTQjNds9hhY5V">SWvlIefod</ProprietaryId>
+            </RightsAgreementId>
+            <MusicalWorkContributor SequenceNumber="-210909001">
+                <PartyId Namespace="CvzahxpJ4XNebU8KNc_b7xvxp.99m" IsDPID="false" IsISNI="true">eC65</PartyId>
+                <MusicalWorkContributorRole Namespace="i" UserDefinedValue="lShvo9SwEYQCK99Z">Unknown</MusicalWorkContributorRole>
+                <SocietyAffiliation>
+                    <TerritoryCode>US</TerritoryCode>
+                    <MusicRightsSociety>
+                        <PartyId Namespace="USGErG9" IsDPID="true" IsISNI="true">KMdq_XMuyc8MhrSivTr.9j0YD</PartyId>
+                    </MusicRightsSociety>
+                </SocietyAffiliation>
+            </MusicalWorkContributor>
+            <MusicalWorkType Namespace="atxag3af.rwRYJsbx2LC" UserDefinedValue="DxQf">LyricReplacement</MusicalWorkType>
+            <RightShare LanguageAndScriptCode="en_US">
+                <RightShareId>
+                    <MWLI>KS7phIL</MWLI>
+                    <ProprietaryId Namespace="U4vDKnZz8EL04xwjhJWPSg6Ta7kg4">eO</ProprietaryId>
+                </RightShareId>
+                <RightShareReference>S-</RightShareReference>
+                <RightShareCreationReferenceList>
+                    <RightShareWorkReference>W_</RightShareWorkReference>
+                    <RightShareResourceReference>A3</RightShareResourceReference>
+                    <RightShareReleaseReference>R9</RightShareReleaseReference>
+                </RightShareCreationReferenceList>
+                <ExcludedTerritoryCode>BB</ExcludedTerritoryCode>
+                <RightsType TerritoryCode="US" Namespace="_zLZ_cR" UserDefinedValue="U_.kIvzXxnlB">MakeAvailableRight</RightsType>
+                <UseType Namespace="XBn" UserDefinedValue="vi32w4pbrZE.lHIimbOAM">PermanentDownload</UseType>
+                <UserInterfaceType Namespace="EV8Z3QLN8RHnSO6" UserDefinedValue="kczrPBW3DcV4odHQ">PortableDevice</UserInterfaceType>
+                <DistributionChannelType Namespace="T" UserDefinedValue="kMkb">OnDemandStream</DistributionChannelType>
+                <CarrierType Namespace="_NVT1OEq-1pyAkiD.W" UserDefinedValue="UbCmNp53dJ">CdVideo5LpPAL</CarrierType>
+                <CommercialModelType Namespace="m6YaYC_vEWUP8XCYSNddKsN-oe" UserDefinedValue="TUDy">SubscriptionModel</CommercialModelType>
+                <MusicalWorkRightsClaimType>NonMemberClaim</MusicalWorkRightsClaimType>
+                <RightsController SequenceNumber="985652130">
+                    <PartyId Namespace="i" IsDPID="false" IsISNI="true">Yn</PartyId>
+                    <RightsControllerRole>RightsAdministrator</RightsControllerRole>
+                    <RightSharePercentage>vH</RightSharePercentage>
+                </RightsController>
+                <ValidityPeriod>
+                    <StartDate>2011-11-21</StartDate>
+                    <EndDate>2011-11-21</EndDate>
+                </ValidityPeriod>
+                <RightShareUnknown>0</RightShareUnknown>
+                <TariffReference LanguageAndScriptCode="es_MX" TariffSubReference="ulyyFgNq">UmKaWBUhJhWvgmQL96BEePR1-V6O</TariffReference>
+                <LicenseStatus>Revoked</LicenseStatus>
+                <HasFirstLicenseRefusal>false</HasFirstLicenseRefusal>
+            </RightShare>
+            <MusicalWorkDetailsByTerritory LanguageAndScriptCode="en_US">
+                <ExcludedTerritoryCode>BM</ExcludedTerritoryCode>
+                <MusicalWorkContributor SequenceNumber="283235415">
+                    <PartyId Namespace="x9ZzZwFpwGB_pqc" IsDPID="true" IsISNI="true">nD3q8Osvb8d</PartyId>
+                    <MusicalWorkContributorRole Namespace="AaLl0AWpFVc-gdtCFqWM." UserDefinedValue="w">Contributor</MusicalWorkContributorRole>
+                    <SocietyAffiliation>
+                        <ExcludedTerritoryCode>CF</ExcludedTerritoryCode>
+                        <MusicRightsSociety>
+                            <PartyName LanguageAndScriptCode="en_US">
+                                <FullName LanguageAndScriptCode="en_US">Cp6X14yCO1WH</FullName>
+                                <FullNameAsciiTranscribed>QsJcqpUpwobJh.</FullNameAsciiTranscribed>
+                                <FullNameIndexed LanguageAndScriptCode="es_MX">TkCI16BFUZjRV</FullNameIndexed>
+                                <NamesBeforeKeyName LanguageAndScriptCode="es_MX">En2dGFgMojKTzVDSe_M-KgsVLG</NamesBeforeKeyName>
+                                <KeyName LanguageAndScriptCode="es_MX">Pb_QX3m2rkFbKBWjx_TUEAA.I</KeyName>
+                                <NamesAfterKeyName LanguageAndScriptCode="en_US">gSaXJp2dlc_b-Fvynz_</NamesAfterKeyName>
+                                <AbbreviatedName LanguageAndScriptCode="en_US">e1_f0X4kK0</AbbreviatedName>
+                            </PartyName>
+                            <PartyId Namespace="lGy1K-bsPV" IsDPID="true" IsISNI="false">isCq</PartyId>
+                        </MusicRightsSociety>
+                    </SocietyAffiliation>
+                </MusicalWorkContributor>
+            </MusicalWorkDetailsByTerritory>
+        </MusicalWork>
+    </WorkList>
+    <CueSheetList>
+        <CueSheet>
+            <CueSheetId Namespace="oUo_9BynLc7Z3C64BLA3fhqZaM">ggDiwhKmwRI76Y2Nuu6kP</CueSheetId>
+            <CueSheetReference>Q__-d</CueSheetReference>
+            <CueSheetType Namespace="ny1cB5hBoTbN_rpgL_XHaO2bTJU" UserDefinedValue="J3dsulXL7kgE1OmY9Kfl6YtJn">CompositeCueSheet</CueSheetType>
+            <Cue>
+                <CueUseType Namespace="A5RhyWcmMAB5vFgnb" UserDefinedValue="svoSXhGclDmTLnFG3">Background</CueUseType>
+                <CueThemeType Namespace="nwFQexbewf_8vw" UserDefinedValue="Z">UserDefined</CueThemeType>
+                <CueVocalType Namespace="fV." UserDefinedValue="kCk4ourCXK8C72">Vocal</CueVocalType>
+                <IsDance>true</IsDance>
+                <CueVisualPerceptionType Namespace="iVin.7jA.t4QmQbju" UserDefinedValue="eG-DED_LDL.">Background</CueVisualPerceptionType>
+                <CueOrigin Namespace="tk2lol" UserDefinedValue="pTnba37ewflY84">PreexistingMusic</CueOrigin>
+                <CueCreationReference>
+                    <CueResourceReference>A-0S</CueResourceReference>
+                </CueCreationReference>
+                <HasMusicalContent>false</HasMusicalContent>
+                <StartTime>P4Y8M2DT1H10M0S</StartTime>
+                <Duration>P0Y3M0DT1H10M0S</Duration>
+                <EndTime>P8Y0M9DT1H10M0S</EndTime>
+                <PLine LanguageAndScriptCode="es_MX" PLineType="RemasteringPLine">
+                    <Year>2018</Year>
+                    <PLineCompany>e</PLineCompany>
+                    <PLineText>q2x0.lb4AppEv8ce</PLineText>
+                </PLine>
+                <CLine LanguageAndScriptCode="en_US">
+                    <Year>2018</Year>
+                    <CLineCompany>T5vy9U3l82LIULgggjVgG</CLineCompany>
+                    <CLineText>e_gsHOpY</CLineText>
+                </CLine>
+            </Cue>
+        </CueSheet>
+    </CueSheetList>
+    <ResourceList LanguageAndScriptCode="en_US">
+        <SoundRecording IsUpdated="false" LanguageAndScriptCode="es_MX">
+            <SoundRecordingType Namespace="VcEa" UserDefinedValue="Q-">NonMusicalWorkSoundRecording</SoundRecordingType>
+            <IsArtistRelated>false</IsArtistRelated>
+            <SoundRecordingId IsReplaced="false">
+                <ISRC>e3r65H0XmVf</ISRC>
+                <CatalogNumber Namespace="m9PTAciyUJdSBfRVI2u6eQ">rcLIFQLNgFNCKkMW7dX-PwIqyK5k</CatalogNumber>
+                <ProprietaryId Namespace="V_Tf4N6oA6VHci9st1">i-bG</ProprietaryId>
+            </SoundRecordingId>
+            <IndirectSoundRecordingId IsReplaced="true">
+                <ISWC>eKKtgL0xhd9MkZSKezXj4mWan</ISWC>
+                <OpusNumber>cvVRFB0Pr</OpusNumber>
+                <ComposerCatalogNumber>XUMgG-TfU</ComposerCatalogNumber>
+                <ProprietaryId Namespace="M2b">YW57PPXOk</ProprietaryId>
+            </IndirectSoundRecordingId>
+            <ResourceReference>A2</ResourceReference>
+            <ReferenceTitle LanguageAndScriptCode="es_MX">
+                <TitleText LanguageAndScriptCode="es_MX">z.N0o.44MF36jOLLtEa5</TitleText>
+                <SubTitle LanguageAndScriptCode="en_US">WIAIInkPf0-</SubTitle>
+            </ReferenceTitle>
+            <InstrumentationDescription LanguageAndScriptCode="es_MX">JFvN8OUahjKR3r0bolY2K8YH0mouH</InstrumentationDescription>
+            <IsMedley>false</IsMedley>
+            <IsPotpourri>true</IsPotpourri>
+            <IsInstrumental>true</IsInstrumental>
+            <IsBackground>false</IsBackground>
+            <IsHiddenResource>true</IsHiddenResource>
+            <IsBonusResource>true</IsBonusResource>
+            <IsComputerGenerated>true</IsComputerGenerated>
+            <IsRemastered>false</IsRemastered>
+            <NoSilenceBefore>false</NoSilenceBefore>
+            <NoSilenceAfter>0</NoSilenceAfter>
+            <PerformerInformationRequired>0</PerformerInformationRequired>
+            <LanguageOfPerformance>sg</LanguageOfPerformance>
+            <Duration>P6Y6M3DT1H10M0S</Duration>
+            <RightsAgreementId>
+                <MWLI>cEsYpnUO</MWLI>
+                <ProprietaryId Namespace="Yt4">iSuA</ProprietaryId>
+            </RightsAgreementId>
+            <SoundRecordingCollectionReferenceList>
+                <NumberOfCollections>691452645</NumberOfCollections>
+                <SoundRecordingCollectionReference>
+                    <SequenceNumber>270572023</SequenceNumber>
+                    <SoundRecordingCollectionReference>XM-</SoundRecordingCollectionReference>
+                    <StartTime>P2Y4M4DT1H10M0S</StartTime>
+                    <Duration>P0Y4M7DT1H10M0S</Duration>
+                    <EndTime>P0Y5M0DT1H10M0S</EndTime>
+                    <ReleaseResourceType>SecondaryResource</ReleaseResourceType>
+                </SoundRecordingCollectionReference>
+            </SoundRecordingCollectionReferenceList>
+            <ResourceMusicalWorkReferenceList>
+                <ResourceMusicalWorkReference>
+                    <SequenceNumber>1235734977</SequenceNumber>
+                    <DurationUsed>P8Y7M6DT1H10M0S</DurationUsed>
+                    <IsFragment>false</IsFragment>
+                    <ResourceMusicalWorkReference>WC6A-</ResourceMusicalWorkReference>
+                </ResourceMusicalWorkReference>
+            </ResourceMusicalWorkReferenceList>
+            <ResourceContainedResourceReferenceList>
+                <ResourceContainedResourceReference>
+                    <ResourceContainedResourceReference>A-s7-</ResourceContainedResourceReference>
+                    <DurationUsed>P0Y0M5DT1H10M0S</DurationUsed>
+                    <StartPoint>644849417.576</StartPoint>
+                    <Purpose Namespace="EhHe" UserDefinedValue="smI">Extract</Purpose>
+                </ResourceContainedResourceReference>
+            </ResourceContainedResourceReferenceList>
+            <CreationDate IsApproximate="false" IsBefore="false" IsAfter="false" TerritoryCode="MX" LocationDescription="D.8XCHB_UwQq"
+                 LanguageAndScriptCode="es_MX">2014-07-14Z</CreationDate>
+            <MasteredDate IsApproximate="false" IsBefore="true" IsAfter="false" TerritoryCode="US" LocationDescription="zsYhEupe9PxH6s-"
+                 LanguageAndScriptCode="es_MX">2015-11-27Z</MasteredDate>
+            <SoundRecordingDetailsByTerritory LanguageAndScriptCode="es_MX">
+                <TerritoryCode>MX</TerritoryCode>
+                <Title LanguageAndScriptCode="es_MX" TitleType="SearchTitle">
+                    <TitleText LanguageAndScriptCode="es_MX">FXmQO</TitleText>
+                    <SubTitle LanguageAndScriptCode="es_MX" SubTitleType="e0cEbcs_WvyO4UGiXGQyaLtbsw">TGCt9i4t22g</SubTitle>
+                </Title>
+                <DisplayArtist SequenceNumber="-931627123">
+                    <PartyId Namespace="t4154T6fvt5xLKVNfM3473owBlxGf" IsDPID="false" IsISNI="true">oEeB8zXk.jg.5</PartyId>
+                    <ArtistRole Namespace="q-5A5QiuI6sAjG.HBSZkvSD" UserDefinedValue="cNtt5Y">PrimaryMusician</ArtistRole>
+                </DisplayArtist>
+                <DisplayConductor SequenceNumber="1467886564">
+                    <PartyName LanguageAndScriptCode="en_US">
+                        <FullName LanguageAndScriptCode="es_MX">imsq4Grsau02phu170nWW0EtDo4LfM</FullName>
+                        <FullNameAsciiTranscribed>vrBO9kDHFVy9g8FT2KtlrF7DS</FullNameAsciiTranscribed>
+                        <FullNameIndexed LanguageAndScriptCode="en_US">MhntYuPqwAadT5LHQwCK-tSV7</FullNameIndexed>
+                        <NamesBeforeKeyName LanguageAndScriptCode="es_MX">BmUN</NamesBeforeKeyName>
+                        <KeyName LanguageAndScriptCode="es_MX">zUWovDd8Dh</KeyName>
+                        <NamesAfterKeyName LanguageAndScriptCode="en_US">p8xZol4</NamesAfterKeyName>
+                        <AbbreviatedName LanguageAndScriptCode="es_MX">brW1nXkzMIEx8vx</AbbreviatedName>
+                    </PartyName>
+                    <PartyId Namespace="q7_MjCsmjE1U-ZiU86.AmM5CBL8" IsDPID="true" IsISNI="false">NhE2JB</PartyId>
+                    <ArtistRole Namespace="WXxwZWGu" UserDefinedValue="TZYyZcvpx7rLrznNfCO">Composer</ArtistRole>
+                </DisplayConductor>
+                <ResourceContributor SequenceNumber="56585737">
+                    <PartyName LanguageAndScriptCode="es_MX">
+                        <FullName LanguageAndScriptCode="es_MX">ygSy</FullName>
+                        <FullNameAsciiTranscribed>N0vE9</FullNameAsciiTranscribed>
+                        <FullNameIndexed LanguageAndScriptCode="en_US">WjbqvXcnGtg.X8QHS11</FullNameIndexed>
+                        <NamesBeforeKeyName LanguageAndScriptCode="es_MX">Hd0xE-3su-uxRgbn</NamesBeforeKeyName>
+                        <KeyName LanguageAndScriptCode="en_US">xOdXGr6</KeyName>
+                        <NamesAfterKeyName LanguageAndScriptCode="en_US">kqw7qyKG8T9IyBaxM2lmuFVzSZoTel</NamesAfterKeyName>
+                        <AbbreviatedName LanguageAndScriptCode="en_US">rYzNpSj</AbbreviatedName>
+                    </PartyName>
+                    <PartyId Namespace="nVY7LfppifBa" IsDPID="true" IsISNI="false">nRxHBBLjEn-WFa</PartyId>
+                    <ResourceContributorRole Namespace="nQtDyHvIHSJF2VORvwqq_Vosb" UserDefinedValue="eyJsT">ScreenplayAuthor</ResourceContributorRole>
+                    <IsFeaturedArtist>true</IsFeaturedArtist>
+                    <IsContractedArtist>false</IsContractedArtist>
+                    <TerritoryOfPerformance>FJ</TerritoryOfPerformance>
+                    <InstrumentType>stmuSj</InstrumentType>
+                    <ArtistDelegatedUsageRights>
+                        <UseType Namespace="R5CXKqPwlYLgh0_Quq15GX9SM1." UserDefinedValue="AAzgWPjlnKmhv2f1V_t">ConditionalDownload</UseType>
+                        <UserInterfaceType Namespace="_gWxc0WW8XBiaEVQcM.iF" UserDefinedValue="rYJ">UserDefined</UserInterfaceType>
+                        <PeriodOfRightsDelegation>
+                            <StartDateTime IsApproximate="true" IsBefore="true" IsAfter="true" TerritoryCode="MX" LocationDescription="yV6Mghp3bYvvVepZZ36VZXH"
+                                 LanguageAndScriptCode="es_MX">2014-05-26T00:48:51</StartDateTime>
+                            <EndDateTime IsApproximate="false" IsBefore="false" IsAfter="false" TerritoryCode="MX" LocationDescription="FIcqLIxKhSy4"
+                                 LanguageAndScriptCode="es_MX">2016-03-17T00:48:51</EndDateTime>
+                        </PeriodOfRightsDelegation>
+                        <TerritoryOfRightsDelegation>FK</TerritoryOfRightsDelegation>
+                        <MembershipType>WorldwideMember</MembershipType>
+                    </ArtistDelegatedUsageRights>
+                    <Sex>Unknown</Sex>
+                    <DateAndPlaceOfBirth IsApproximate="false" IsBefore="true" IsAfter="false" TerritoryCode="MX" LocationDescription="iL" LanguageAndScriptCode="es_MX">2014-06-03</DateAndPlaceOfBirth>
+                    <DateAndPlaceOfDeath IsApproximate="false" IsBefore="false" IsAfter="false" TerritoryCode="US" LocationDescription="qjJAtPvx1p6Cl0KGN_Q9aa"
+                         LanguageAndScriptCode="en_US">2014-09-26Z</DateAndPlaceOfDeath>
+                    <PrimaryRole Namespace="Ke2kEC5f_V07hP8-X_" UserDefinedValue="TUw164T2cnMu75Kqgzw">SubPublisher</PrimaryRole>
+                    <PrimaryInstrumentType>tCzB17BK3oBL2q14</PrimaryInstrumentType>
+                    <GoverningAgreementType Namespace="URES44.ccpLfKaTKpq-7oTgobF" UserDefinedValue="XG">UserDefined</GoverningAgreementType>
+                    <ContactInformation>
+                        <EmailAddress>VSCvEt</EmailAddress>
+                        <PhoneNumber>r2uhIoKlTOhqUHQ</PhoneNumber>
+                        <FaxNumber>RaCFKq</FaxNumber>
+                    </ContactInformation>
+                    <TerritoryOfResidency>HN</TerritoryOfResidency>
+                    <AdditionalRoles Namespace="a0T52" UserDefinedValue="O_RodOJhKJeiPt2yMSK2OEItLXtiKw">OriginalPublisher</AdditionalRoles>
+                    <Genre LanguageAndScriptCode="en_US">
+                        <GenreText LanguageAndScriptCode="es_MX">HmS1tQRlL8TCZuDiCs</GenreText>
+                        <SubGenre LanguageAndScriptCode="en_US">s</SubGenre>
+                    </Genre>
+                    <Membership>
+                        <Organization>
+                            <PartyName LanguageAndScriptCode="en_US">
+                                <FullName LanguageAndScriptCode="es_MX">zicOEijjQaI.gHd5PD67y</FullName>
+                                <FullNameAsciiTranscribed>lmH2eaxeCIGoV4fhoBg-nV3xz</FullNameAsciiTranscribed>
+                                <FullNameIndexed LanguageAndScriptCode="en_US">E5ywOsDX5FF1D4CYLY7</FullNameIndexed>
+                                <NamesBeforeKeyName LanguageAndScriptCode="en_US">pcHcGH61IH0I4dD44oAa</NamesBeforeKeyName>
+                                <KeyName LanguageAndScriptCode="es_MX">R4pY8QT7</KeyName>
+                                <NamesAfterKeyName LanguageAndScriptCode="en_US">BkFB</NamesAfterKeyName>
+                                <AbbreviatedName LanguageAndScriptCode="en_US">Nks95vqR3buNxI0Wlsw</AbbreviatedName>
+                            </PartyName>
+                            <PartyId Namespace="Dl0vaCe" IsDPID="false" IsISNI="false">cYvrgk6HxhpFc2ev9yVanW</PartyId>
+                        </Organization>
+                        <MembershipType>NationalMember</MembershipType>
+                        <StartDate>2011-11-21</StartDate>
+                        <EndDate>2011-11-21</EndDate>
+                    </Membership>
+                </ResourceContributor>
+                <IndirectResourceContributor SequenceNumber="365801939">
+                    <PartyId Namespace="_EKDSIpiLD8VgHaH0N65" IsDPID="false" IsISNI="false">BYKk.MvddF</PartyId>
+                    <IndirectResourceContributorRole Namespace="CWZ5byV0MKIaec5hPBISIA5Cw5" UserDefinedValue="q_lkC4JBJXT6x0E">Contributor</IndirectResourceContributorRole>
+                </IndirectResourceContributor>
+                <RightsAgreementId>
+                    <MWLI>L06Zq0_CPkAArK</MWLI>
+                    <ProprietaryId Namespace="zW7e">h4rF4Fmwo</ProprietaryId>
+                </RightsAgreementId>
+                <LabelName LanguageAndScriptCode="en_US" LabelNameType="EEqmNXBc">P3K88</LabelName>
+                <RightsController SequenceNumber="-839568381">
+                    <PartyId Namespace="qx6GwxKsafbs9rsz3CQyvKTje8f" IsDPID="false" IsISNI="true">U2U7L_4CH</PartyId>
+                    <RightsControllerRole>RoyaltyAdministrator</RightsControllerRole>
+                    <RightSharePercentage>gARLrV</RightSharePercentage>
+                    <RightsControllerType>SuccessorInTitle</RightsControllerType>
+                    <TerritoryOfRegistration>AZ</TerritoryOfRegistration>
+                    <StartDate>2015-01-02</StartDate>
+                    <EndDate>2015-01-02</EndDate>
+                </RightsController>
+                <RemasteredDate IsApproximate="true" IsBefore="false" IsAfter="false" TerritoryCode="US" LocationDescription="cPrvaq04vaeJoVbeskGYo6qB-j"
+                     LanguageAndScriptCode="es_MX">2015-11-28</RemasteredDate>
+                <OriginalResourceReleaseDate IsApproximate="false" IsBefore="true" IsAfter="false" TerritoryCode="MX" LocationDescription="Bm0BgOpgsp0vJG"
+                     LanguageAndScriptCode="es_MX">2015-09-29Z</OriginalResourceReleaseDate>
+                <PLine LanguageAndScriptCode="en_US" PLineType="RemasteringPLine">
+                    <Year>2013</Year>
+                    <PLineCompany>MJoc74</PLineCompany>
+                    <PLineText>pkUK2UQj_eEfeLynHjYup</PLineText>
+                </PLine>
+                <CourtesyLine LanguageAndScriptCode="es_MX">XQ2d</CourtesyLine>
+                <SequenceNumber>zVG3lB_Ai87NWQ14CUr8xu1n2m_F</SequenceNumber>
+                <HostSoundCarrier>
+                    <ReleaseId IsReplaced="false">
+                        <GRid>ogERcBmavGC6</GRid>
+                        <ISRC>ukO9M-0B4h</ISRC>
+                        <ICPN IsEan="true">Bt0GOv00PQm8WNr_Jg-3Opco</ICPN>
+                        <CatalogNumber Namespace="IFMD71c6T0W">y_nfEor</CatalogNumber>
+                        <ProprietaryId Namespace="rlxTZkIu">x2zL0Xs_50tZ.</ProprietaryId>
+                    </ReleaseId>
+                    <RightsAgreementId>
+                        <MWLI>kT1c1f7ZAwtMvCbZTK0cQ</MWLI>
+                        <ProprietaryId Namespace="l">L3l6iFwACJ2wJ</ProprietaryId>
+                    </RightsAgreementId>
+                    <Title LanguageAndScriptCode="es_MX" TitleType="IncorrectTitle">
+                        <TitleText LanguageAndScriptCode="es_MX">Gs9EEM9gEW.YsfQe2xrc7EUgnNzI</TitleText>
+                        <SubTitle LanguageAndScriptCode="en_US" SubTitleType="eoEsU1AKUYOrC_7Wawp">oM</SubTitle>
+                    </Title>
+                    <DisplayArtist SequenceNumber="1455103944">
+                        <PartyId Namespace="wJLYPRo" IsDPID="true" IsISNI="true">Eanhkv29peB-fvk2DIL.PAOg</PartyId>
+                        <ArtistRole Namespace="il3drwKreZHp-mOlq7xx_prf" UserDefinedValue="XwJqK">Band</ArtistRole>
+                    </DisplayArtist>
+                    <AdministratingRecordCompany Namespace="AQb2csPrlzH1m1HwloJ" UserDefinedValue="mu3KEblb8zCvu7_q4AcyA5WTK9y" Role="RightsAdministrator">
+                        <PartyId Namespace="Iselgq7uJAbVV" IsDPID="false" IsISNI="false">XS</PartyId>
+                    </AdministratingRecordCompany>
+                    <TrackNumber>RQ</TrackNumber>
+                    <VolumeNumberInSet>B3zZ8-LngKz.qIylUG20J</VolumeNumberInSet>
+                </HostSoundCarrier>
+                <MarketingComment LanguageAndScriptCode="en_US">dPOR62z.Kf-7ka2VmM5-RR.VWa6SIv</MarketingComment>
+                <Genre LanguageAndScriptCode="en_US">
+                    <GenreText LanguageAndScriptCode="es_MX">eBjtQhNq7eLxtUrif5wG6</GenreText>
+                    <SubGenre LanguageAndScriptCode="es_MX">mPuHxTC6zH</SubGenre>
+                </Genre>
+                <ParentalWarningType Namespace="yvb" UserDefinedValue="l2YF6">ExplicitContentEdited</ParentalWarningType>
+                <AvRating>
+                    <RatingText>S5.OywdSdxGZpTcf0r</RatingText>
+                    <RatingAgency Namespace="BZy4b3JsA0Kdgyhh" UserDefinedValue="ZMzTy9h6xwhXXdmD">CBFC</RatingAgency>
+                </AvRating>
+                <TechnicalSoundRecordingDetails LanguageAndScriptCode="es_MX">
+                    <TechnicalResourceDetailsReference>TS_</TechnicalResourceDetailsReference>
+                    <DrmPlatformType Version="u3cjdpH" Namespace="MzzNC0ul5EH_urcN5D0UvQf1" UserDefinedValue="Lx7YoYoj">Unknown</DrmPlatformType>
+                    <ContainerFormat Namespace="Pipn_D91vKU0PLqLW19Mv9Y4b5b" UserDefinedValue="S.Y810sF_U_p0vwOemLugK">AIFF</ContainerFormat>
+                    <AudioCodecType Version="Ozfwsz3FYJSCeubigy" Namespace="fOoh6hGbMHhZ.q-.pPr" UserDefinedValue="BczI">MP3</AudioCodecType>
+                    <BitRate UnitOfMeasure="Mbps">-683189751.436</BitRate>
+                    <NumberOfChannels>1554555586</NumberOfChannels>
+                    <SamplingRate UnitOfMeasure="Hz">-303939379.925</SamplingRate>
+                    <BitsPerSample>-57528222</BitsPerSample>
+                    <Duration>P6Y2M3DT1H10M0S</Duration>
+                    <ResourceProcessingRequired>false</ResourceProcessingRequired>
+                    <UsableResourceDuration>P8Y4M6DT1H10M0S</UsableResourceDuration>
+                    <IsPreview>false</IsPreview>
+                    <PreviewDetails>
+                        <PartType LanguageAndScriptCode="en_US">EhnFuOLuEs3Em1X0s</PartType>
+                        <StartPoint>2079646493.094</StartPoint>
+                        <EndPoint>1918825932.479</EndPoint>
+                        <Duration>P3Y4M6DT1H10M0S</Duration>
+                        <TopLeftCorner>654031867.134</TopLeftCorner>
+                        <BottomRightCorner>548995459.444</BottomRightCorner>
+                        <ExpressionType>Informative</ExpressionType>
+                    </PreviewDetails>
+                    <FulfillmentDate>
+                        <FulfillmentDate>2011-11-21</FulfillmentDate>
+                    </FulfillmentDate>
+                    <ConsumerFulfillmentDate>
+                        <FulfillmentDate>2015-01-02</FulfillmentDate>
+                        <ResourceReleaseReference>R-9</ResourceReleaseReference>
+                    </ConsumerFulfillmentDate>
+                    <File>
+                        <FileName>Kx4nKZhCzp9yo-W0WQ</FileName>
+                        <FilePath>i2fvDVzS</FilePath>
+                        <HashSum>
+                            <HashSum>ZKLKvFI29</HashSum>
+                            <HashSumAlgorithmType Namespace="Tj2S9YnnvxDIeFxvvvCKnMZvy8" UserDefinedValue="wA8W8xcaq">SHA</HashSumAlgorithmType>
+                        </HashSum>
+                    </File>
+                    <Fingerprint>
+                        <Fingerprint>rWGb3j41zD_5GxAxpNN-Lr</Fingerprint>
+                        <FingerprintAlgorithmType Namespace="ciXC_JJwQevZSf0R_e" UserDefinedValue="niksN9HRT6Ms6lj5tn4Yv">UserDefined</FingerprintAlgorithmType>
+                        <FingerprintAlgorithmVersion>Hde</FingerprintAlgorithmVersion>
+                        <FingerprintAlgorithmParameter>cAAjQ6Z.Ag_4Yrr</FingerprintAlgorithmParameter>
+                    </Fingerprint>
+                </TechnicalSoundRecordingDetails>
+                <FulfillmentDate>
+                    <FulfillmentDate>2015-01-02</FulfillmentDate>
+                </FulfillmentDate>
+                <Keywords LanguageAndScriptCode="es_MX">KC_LHJ0kbd.Knl1</Keywords>
+                <Synopsis LanguageAndScriptCode="en_US">m9-dI_Y-wt7</Synopsis>
+            </SoundRecordingDetailsByTerritory>
+            <TerritoryOfCommissioning>SH</TerritoryOfCommissioning>
+            <NumberOfFeaturedArtists>1527882902</NumberOfFeaturedArtists>
+            <NumberOfNonFeaturedArtists>-874599533</NumberOfNonFeaturedArtists>
+            <NumberOfContractedArtists>570646261</NumberOfContractedArtists>
+            <NumberOfNonContractedArtists>980828669</NumberOfNonContractedArtists>
+        </SoundRecording>
+        <MIDI IsUpdated="true" LanguageAndScriptCode="es_MX">
+            <MidiType Namespace="M59L_AvMISai1q7hrL" UserDefinedValue="VB_QuRZerPw.lZP">Unknown</MidiType>
+            <IsArtistRelated>false</IsArtistRelated>
+            <MidiId IsReplaced="true">
+                <ProprietaryId Namespace="F99LmmlON">l.ESCj</ProprietaryId>
+            </MidiId>
+            <IndirectMidiId IsReplaced="false">
+                <ISWC>OEiJxt</ISWC>
+                <OpusNumber>ZY10HvC1sFoafkHCzxEUv</OpusNumber>
+                <ComposerCatalogNumber>kSbq1Eo4H2fOSJSDmzmViu1n8msc4</ComposerCatalogNumber>
+                <ProprietaryId Namespace="Oqv">cC</ProprietaryId>
+            </IndirectMidiId>
+            <ResourceReference>AsN</ResourceReference>
+            <ReferenceTitle LanguageAndScriptCode="es_MX">
+                <TitleText LanguageAndScriptCode="es_MX">u4NavUCkgFnPnru-8qtm81OEoUR</TitleText>
+                <SubTitle LanguageAndScriptCode="en_US">Mj6-_YcNR</SubTitle>
+            </ReferenceTitle>
+            <InstrumentationDescription LanguageAndScriptCode="en_US">i17cH4</InstrumentationDescription>
+            <IsMedley>true</IsMedley>
+            <IsPotpourri>true</IsPotpourri>
+            <IsInstrumental>true</IsInstrumental>
+            <IsBackground>true</IsBackground>
+            <IsHiddenResource>false</IsHiddenResource>
+            <IsBonusResource>true</IsBonusResource>
+            <IsComputerGenerated>true</IsComputerGenerated>
+            <NoSilenceBefore>0</NoSilenceBefore>
+            <NoSilenceAfter>1</NoSilenceAfter>
+            <PerformerInformationRequired>0</PerformerInformationRequired>
+            <LanguageOfPerformance>mt</LanguageOfPerformance>
+            <Duration>P0Y6M8DT1H10M0S</Duration>
+            <RightsAgreementId>
+                <MWLI>PNjeRMXrQ6GJN0lm9eslwmrB</MWLI>
+                <ProprietaryId Namespace="GAk9zKPMmqr">c2NuAEWylc-DYeF9s_0o848b</ProprietaryId>
+            </RightsAgreementId>
+            <ResourceMusicalWorkReferenceList>
+                <ResourceMusicalWorkReference>
+                    <SequenceNumber>1625786397</SequenceNumber>
+                    <DurationUsed>P9Y9M8DT1H10M0S</DurationUsed>
+                    <IsFragment>true</IsFragment>
+                    <ResourceMusicalWorkReference>W_</ResourceMusicalWorkReference>
+                </ResourceMusicalWorkReference>
+            </ResourceMusicalWorkReferenceList>
+            <ResourceContainedResourceReferenceList>
+                <ResourceContainedResourceReference>
+                    <ResourceContainedResourceReference>Au</ResourceContainedResourceReference>
+                    <DurationUsed>P2Y8M1DT1H10M0S</DurationUsed>
+                    <StartPoint>-551051642.419</StartPoint>
+                    <Purpose Namespace="dF3DkhtgXrq" UserDefinedValue="UYf1qA31z7-7ni">FilmTrailerMusic</Purpose>
+                </ResourceContainedResourceReference>
+            </ResourceContainedResourceReferenceList>
+            <CreationDate IsApproximate="false" IsBefore="false" IsAfter="false" TerritoryCode="US" LocationDescription="E_R0yl"
+                 LanguageAndScriptCode="es_MX">2014-08-19</CreationDate>
+            <MasteredDate IsApproximate="false" IsBefore="true" IsAfter="false" TerritoryCode="US" LocationDescription="nZv94useY_F1"
+                 LanguageAndScriptCode="en_US">2016-03-10</MasteredDate>
+            <MidiDetailsByTerritory LanguageAndScriptCode="es_MX">
+                <TerritoryCode>MX</TerritoryCode>
+                <Title LanguageAndScriptCode="es_MX" TitleType="TitleWithoutPunctuation">
+                    <TitleText LanguageAndScriptCode="es_MX">D29VT82.SnUTgfWF0TGZS</TitleText>
+                    <SubTitle LanguageAndScriptCode="en_US" SubTitleType="QYUsFMpB-Gl7t7CKNRhLn3vHLC">VsMOtjHdp8GG2s</SubTitle>
+                </Title>
+                <DisplayArtist SequenceNumber="1302572828">
+                    <PartyName LanguageAndScriptCode="es_MX">
+                        <FullName LanguageAndScriptCode="en_US">wDUo-yzG2raK7</FullName>
+                        <FullNameAsciiTranscribed>Si6Fr</FullNameAsciiTranscribed>
+                        <FullNameIndexed LanguageAndScriptCode="es_MX">igINIeZVPkN-KwPF.y</FullNameIndexed>
+                        <NamesBeforeKeyName LanguageAndScriptCode="en_US">fCd</NamesBeforeKeyName>
+                        <KeyName LanguageAndScriptCode="es_MX">Izt70zlIG30GAdFeZsIu80</KeyName>
+                        <NamesAfterKeyName LanguageAndScriptCode="en_US">d.dnTSfW-K</NamesAfterKeyName>
+                        <AbbreviatedName LanguageAndScriptCode="es_MX">G</AbbreviatedName>
+                    </PartyName>
+                    <PartyId Namespace="QVQt21I.95xMO4IHyMtXrc5O0GM" IsDPID="true" IsISNI="true">e</PartyId>
+                    <ArtistRole Namespace="hC_1-sJPzrBNu_YLAxWuvHD" UserDefinedValue="mboH4">ComposerLyricist</ArtistRole>
+                </DisplayArtist>
+                <ResourceContributor SequenceNumber="695812331">
+                    <PartyId Namespace="TKdO2cxS0xKQSwa3m4FR17TnI9c" IsDPID="false" IsISNI="true">kwC1VXgbqj_sZexuz</PartyId>
+                    <ResourceContributorRole Namespace="snJO" UserDefinedValue="edcNN_">FilmDirector</ResourceContributorRole>
+                    <IsFeaturedArtist>false</IsFeaturedArtist>
+                    <IsContractedArtist>false</IsContractedArtist>
+                    <TerritoryOfPerformance>KH</TerritoryOfPerformance>
+                    <InstrumentType>xNrccQ2</InstrumentType>
+                    <ArtistDelegatedUsageRights>
+                        <UseType Namespace="fAub9NqfVwHPDg-GCC" UserDefinedValue="utkbZexShO">PurchaseAsPhysicalProduct</UseType>
+                        <UserInterfaceType Namespace="iLDayd" UserDefinedValue="ABHdBwJx.4zx7">ConnectedDevice</UserInterfaceType>
+                        <PeriodOfRightsDelegation>
+                            <StartDate>2015-01-02</StartDate>
+                            <EndDate>2015-01-02</EndDate>
+                        </PeriodOfRightsDelegation>
+                        <TerritoryOfRightsDelegation>MC</TerritoryOfRightsDelegation>
+                        <MembershipType>NationalMember</MembershipType>
+                    </ArtistDelegatedUsageRights>
+                    <Sex>Male</Sex>
+                    <DateAndPlaceOfBirth IsApproximate="false" IsBefore="false" IsAfter="true" TerritoryCode="MX" LocationDescription="tdZ4q2k7Cojf8OZsG6sipNlffG"
+                         LanguageAndScriptCode="en_US">2014-07-08Z</DateAndPlaceOfBirth>
+                    <DateAndPlaceOfDeath IsApproximate="false" IsBefore="false" IsAfter="true" TerritoryCode="MX" LocationDescription="XG5Jj"
+                         LanguageAndScriptCode="es_MX">2014-06-27</DateAndPlaceOfDeath>
+                    <PrimaryRole Namespace="DF.YzC_5kVWcfAKj5i" UserDefinedValue="QzZ">Lyricist</PrimaryRole>
+                    <PrimaryInstrumentType>rZJylkUpQqtIEWeHRpTaYiJJNq</PrimaryInstrumentType>
+                    <GoverningAgreementType Namespace="Ksz87tSR7UXl7oq78b" UserDefinedValue="NLRUkDHiK_iAF4me">UserDefined</GoverningAgreementType>
+                    <ContactInformation>
+                        <EmailAddress>NYeSBGM1O0A1IynhQWnw2cKQ3NK</EmailAddress>
+                        <PhoneNumber>awt0tu56sRj1WBet1hViiwuav7el</PhoneNumber>
+                        <FaxNumber>qj3ep4dPiTM-.XbmSPkJ4c96w9nO</FaxNumber>
+                    </ContactInformation>
+                    <TerritoryOfResidency>MM</TerritoryOfResidency>
+                    <AdditionalRoles Namespace="pQrR" UserDefinedValue="wk_Hm77VfxRlRx8Z-wTH97">Director</AdditionalRoles>
+                    <Genre LanguageAndScriptCode="en_US">
+                        <GenreText LanguageAndScriptCode="en_US">JiB3mQ_oXMjSYwGk</GenreText>
+                        <SubGenre LanguageAndScriptCode="es_MX">VEmCgITdrGGBtyF6IRyLginSASo</SubGenre>
+                    </Genre>
+                    <Membership>
+                        <Organization>
+                            <PartyName LanguageAndScriptCode="es_MX">
+                                <FullName LanguageAndScriptCode="es_MX">LB4EcMQHxoj</FullName>
+                                <FullNameAsciiTranscribed>WAPQickUtdo</FullNameAsciiTranscribed>
+                                <FullNameIndexed LanguageAndScriptCode="es_MX">YkOT-wOCwx.hl8Le</FullNameIndexed>
+                                <NamesBeforeKeyName LanguageAndScriptCode="es_MX">FxjfLCqvd-SOLE</NamesBeforeKeyName>
+                                <KeyName LanguageAndScriptCode="es_MX">lX5mUciOlLcl.bVHynwGD.FhqAfzA</KeyName>
+                                <NamesAfterKeyName LanguageAndScriptCode="en_US">pAJlIEOZ</NamesAfterKeyName>
+                                <AbbreviatedName LanguageAndScriptCode="es_MX">Uxp5YLoOC7dCBavn</AbbreviatedName>
+                            </PartyName>
+                            <PartyId Namespace="g_ZE26QpfFxa6WwL1FDy3z_g" IsDPID="false" IsISNI="false">XlulgkIdAR7Y3hXqV07e5nfe0</PartyId>
+                        </Organization>
+                        <MembershipType>NationalMember</MembershipType>
+                        <StartDate>2015-01-02</StartDate>
+                        <EndDate>2011-11-21</EndDate>
+                    </Membership>
+                </ResourceContributor>
+                <IndirectResourceContributor SequenceNumber="-577042822">
+                    <PartyId Namespace="F" IsDPID="true" IsISNI="true">Tfog7beEHY3</PartyId>
+                    <IndirectResourceContributorRole Namespace="lOAaHNHLQOB33-b2h" UserDefinedValue="XFU8_Buqy6psb.yrUkAt5pv">AssociatedPerformer</IndirectResourceContributorRole>
+                </IndirectResourceContributor>
+                <RightsAgreementId>
+                    <MWLI>n.P6_n2m.PePGvCec_4SayhOWur0</MWLI>
+                    <ProprietaryId Namespace="k6MVsqiwnIaWFwABuiY">VtWDFEF24QQU9gAofD</ProprietaryId>
+                </RightsAgreementId>
+                <LabelName LanguageAndScriptCode="es_MX" LabelNameType="oZYJsAmzbgfo9_B">fci86s0JwwGcTp5LwDa4oRXrG</LabelName>
+                <RightsController SequenceNumber="1758228045">
+                    <PartyName LanguageAndScriptCode="en_US">
+                        <FullName LanguageAndScriptCode="en_US">aEsoXgrfH5FoK_</FullName>
+                        <FullNameAsciiTranscribed>BZprgcOchwsYqf4br8J_dPz5ib</FullNameAsciiTranscribed>
+                        <FullNameIndexed LanguageAndScriptCode="es_MX">BGQ</FullNameIndexed>
+                        <NamesBeforeKeyName LanguageAndScriptCode="es_MX">wFZ3fSVR9r6mjSqRdALA6Ku</NamesBeforeKeyName>
+                        <KeyName LanguageAndScriptCode="es_MX">lj75U6nZYur40bFWVf0862</KeyName>
+                        <NamesAfterKeyName LanguageAndScriptCode="en_US">zVbzDJ</NamesAfterKeyName>
+                        <AbbreviatedName LanguageAndScriptCode="es_MX">My</AbbreviatedName>
+                    </PartyName>
+                    <PartyId Namespace="_kwqWlX.ImO1QL" IsDPID="false" IsISNI="false">QnkJe7Tz.u</PartyId>
+                    <RightsControllerRole>AdministratingRecordCompany</RightsControllerRole>
+                    <RightSharePercentage>winiFkgBrlQk</RightSharePercentage>
+                    <RightsControllerType>SuccessorInTitle</RightsControllerType>
+                    <TerritoryOfRegistration>PA</TerritoryOfRegistration>
+                    <StartDate>2011-11-21</StartDate>
+                    <EndDate>2011-11-21</EndDate>
+                </RightsController>
+                <RemasteredDate IsApproximate="true" IsBefore="true" IsAfter="false" TerritoryCode="MX" LocationDescription="B8M94Oo8JNwdF"
+                     LanguageAndScriptCode="en_US">2015-01-12Z</RemasteredDate>
+                <OriginalResourceReleaseDate IsApproximate="true" IsBefore="false" IsAfter="false" TerritoryCode="US" LocationDescription="AALUjDVA5gNxUUwF-CW7AXZc"
+                     LanguageAndScriptCode="es_MX">2014-07-15</OriginalResourceReleaseDate>
+                <CLine LanguageAndScriptCode="en_US">
+                    <Year>2018</Year>
+                    <CLineCompany>NUjpmnhy</CLineCompany>
+                    <CLineText>XkSf_5jxaZn61k.HEjBm5eXJOx-2d</CLineText>
+                </CLine>
+                <CourtesyLine LanguageAndScriptCode="es_MX">P</CourtesyLine>
+                <SequenceNumber>hSE22yx6m</SequenceNumber>
+                <HostSoundCarrier>
+                    <ReleaseId IsReplaced="true">
+                        <GRid>XeP-3Dv.0zbx</GRid>
+                        <ISRC>z31njCK1EVD</ISRC>
+                        <ICPN IsEan="true">gg</ICPN>
+                        <CatalogNumber Namespace="xl3hynZobHhYjp6c">f5N</CatalogNumber>
+                        <ProprietaryId Namespace="A.EO-WMjp92rYP0oV-Q">vmccdrmiu8jP7F6</ProprietaryId>
+                    </ReleaseId>
+                    <RightsAgreementId>
+                        <MWLI>pIPuJ-tWe</MWLI>
+                        <ProprietaryId Namespace="T_5v5yhFidSvK8_6kLvz">Pg.T90El</ProprietaryId>
+                    </RightsAgreementId>
+                    <Title LanguageAndScriptCode="es_MX" TitleType="DisplayTitle">
+                        <TitleText LanguageAndScriptCode="es_MX">Ny8dffRJIu3f5zxVZY9</TitleText>
+                        <SubTitle LanguageAndScriptCode="en_US" SubTitleType="sW6BJg6zcYvHCg38sqCU2KDy">w2QeI7RDBF_iHz.JEYPuzCh</SubTitle>
+                    </Title>
+                    <DisplayArtist SequenceNumber="-151666718">
+                        <PartyName LanguageAndScriptCode="es_MX">
+                            <FullName LanguageAndScriptCode="es_MX">ffSVpa.a.</FullName>
+                            <FullNameAsciiTranscribed>F5Pvx3Bs</FullNameAsciiTranscribed>
+                            <FullNameIndexed LanguageAndScriptCode="es_MX">u6eaaTtTnGVShAXjJBbz0SI</FullNameIndexed>
+                            <NamesBeforeKeyName LanguageAndScriptCode="en_US">HeBXdb8KHN2dWc54MqGOBMo1</NamesBeforeKeyName>
+                            <KeyName LanguageAndScriptCode="es_MX">m6uIVvxxavHwFS8FUIK.l</KeyName>
+                            <NamesAfterKeyName LanguageAndScriptCode="en_US">yxl1</NamesAfterKeyName>
+                            <AbbreviatedName LanguageAndScriptCode="es_MX">Gdku</AbbreviatedName>
+                        </PartyName>
+                        <PartyId Namespace="n._QPdyFWzjf2x5gbGgt4Yg60p" IsDPID="true" IsISNI="true">CHV0SaFYZBbTSH-OV.G</PartyId>
+                        <ArtistRole Namespace="Y0XJz-jMQRxtEUuWbkTES3WPn" UserDefinedValue="r6hMLGu">MusicPublisher</ArtistRole>
+                    </DisplayArtist>
+                    <AdministratingRecordCompany Namespace="B0cZ7B" UserDefinedValue="t0uirU0jO9Ksud8dj4-c8b7" Role="RoyaltyAdministrator">
+                        <PartyName LanguageAndScriptCode="en_US">
+                            <FullName LanguageAndScriptCode="en_US">STZFLc0v30nV1B_xqq</FullName>
+                            <FullNameAsciiTranscribed>goNkzkiLldIzEjYuoPNz5N0xIF</FullNameAsciiTranscribed>
+                            <FullNameIndexed LanguageAndScriptCode="en_US">S8HgP8nj3z8GT3PuTgGKEDno</FullNameIndexed>
+                            <NamesBeforeKeyName LanguageAndScriptCode="es_MX">zH8zGQ</NamesBeforeKeyName>
+                            <KeyName LanguageAndScriptCode="en_US">XH2w1RN6-uCIyX6srsu1LEe</KeyName>
+                            <NamesAfterKeyName LanguageAndScriptCode="es_MX">DemSu4ASxP7LEfUXwx4wHDh</NamesAfterKeyName>
+                            <AbbreviatedName LanguageAndScriptCode="en_US">Wb5lMPxski6nw0C6H3</AbbreviatedName>
+                        </PartyName>
+                        <PartyId Namespace="_wv1jr6G.ejzLvHyArsaXuCot_yv.N" IsDPID="true" IsISNI="false">jjyKbrgr-4_aAL_qz_eeQi</PartyId>
+                    </AdministratingRecordCompany>
+                    <TrackNumber>Yb2NA-PMOm</TrackNumber>
+                    <VolumeNumberInSet>qaPrGC8GeHFwl_</VolumeNumberInSet>
+                </HostSoundCarrier>
+                <MarketingComment LanguageAndScriptCode="es_MX">JW9bxmwEVuclmFlUZn2eV1dhj</MarketingComment>
+                <Genre LanguageAndScriptCode="es_MX">
+                    <GenreText LanguageAndScriptCode="es_MX">l</GenreText>
+                    <SubGenre LanguageAndScriptCode="en_US">hv.v2d_Tj7qtvtih_GKIZ0iURRGE9h</SubGenre>
+                </Genre>
+                <ParentalWarningType Namespace="lLgb" UserDefinedValue="kARwdDQVl2BhWdxS8P6aqkDLRFof">ExplicitContentEdited</ParentalWarningType>
+                <FulfillmentDate>
+                    <FulfillmentDate>2015-01-02</FulfillmentDate>
+                </FulfillmentDate>
+                <Keywords LanguageAndScriptCode="en_US">c6N2hHith6mgSMszopAH1ydevW</Keywords>
+                <Synopsis LanguageAndScriptCode="es_MX">VYc</Synopsis>
+                <TechnicalMidiDetails LanguageAndScriptCode="en_US">
+                    <TechnicalResourceDetailsReference>Tq</TechnicalResourceDetailsReference>
+                    <Duration>P7Y7M1DT1H10M0S</Duration>
+                    <ResourceProcessingRequired>true</ResourceProcessingRequired>
+                    <UsableResourceDuration>P6Y6M2DT1H10M0S</UsableResourceDuration>
+                    <IsPreview>true</IsPreview>
+                    <PreviewDetails>
+                        <PartType LanguageAndScriptCode="es_MX">oWsnNnn</PartType>
+                        <StartPoint>-1860573586.27</StartPoint>
+                        <EndPoint>813681316.636</EndPoint>
+                        <Duration>P2Y6M0DT1H10M0S</Duration>
+                        <TopLeftCorner>-351056698.82</TopLeftCorner>
+                        <BottomRightCorner>1785218168.868</BottomRightCorner>
+                        <ExpressionType>Informative</ExpressionType>
+                    </PreviewDetails>
+                    <FulfillmentDate>
+                        <FulfillmentDate>2015-01-02</FulfillmentDate>
+                    </FulfillmentDate>
+                    <ConsumerFulfillmentDate>
+                        <FulfillmentDate>2011-11-21</FulfillmentDate>
+                        <ResourceReleaseReference>R-</ResourceReleaseReference>
+                    </ConsumerFulfillmentDate>
+                    <FileAvailabilityDescription LanguageAndScriptCode="es_MX">IAY</FileAvailabilityDescription>
+                    <NumberOfVoices>264925170</NumberOfVoices>
+                    <SoundProcessorType Version="r_2mf8RBME" Namespace="Q8b5ZybLz" UserDefinedValue="dtDP6P1r">MidiProcessor</SoundProcessorType>
+                    <Fingerprint>
+                        <Fingerprint>xp.6zWjWK4Gq6yFc18K7TsWe</Fingerprint>
+                        <FingerprintAlgorithmType Namespace="S3C89Aw9" UserDefinedValue="Yb-zDqYsVSfbVL.4">UserDefined</FingerprintAlgorithmType>
+                        <FingerprintAlgorithmVersion>su3qtFZXtMaGTNRdvd-FpYdL3Ng</FingerprintAlgorithmVersion>
+                        <FingerprintAlgorithmParameter>m8_mpxV4rufBTBiPebGI</FingerprintAlgorithmParameter>
+                    </Fingerprint>
+                </TechnicalMidiDetails>
+            </MidiDetailsByTerritory>
+        </MIDI>
+        <Video IsUpdated="true" LanguageAndScriptCode="en_US">
+            <VideoType Namespace="yH2Z9vfbjGIFB" UserDefinedValue="ln7XJUlBBi5gzcCrnJKR3S0O">UserDefined</VideoType>
+            <IsArtistRelated>false</IsArtistRelated>
+            <VideoId IsReplaced="false">
+                <ISRC>iFdjtvUqpz.-7U0TahR</ISRC>
+                <ISAN>tlshsQTNAg</ISAN>
+                <VISAN>T1f5JQ_w_wxPVc3iFNIxpGvdbn</VISAN>
+                <CatalogNumber Namespace="Qeb6fAzvFuIqrZwDxpiL32kv">ipQZHTzZ5om6BjK_</CatalogNumber>
+                <ProprietaryId Namespace="jG">L</ProprietaryId>
+            </VideoId>
+            <IndirectVideoId IsReplaced="false">
+                <ISWC>me2yv3lrKBSnJSm0Gr</ISWC>
+                <OpusNumber>x</OpusNumber>
+                <ComposerCatalogNumber>yjb-5JLSYVLIKntcrB7l_TboWJe8</ComposerCatalogNumber>
+                <ProprietaryId Namespace="DddkIhvS7">gfs8i</ProprietaryId>
+            </IndirectVideoId>
+            <ResourceReference>A_-s_</ResourceReference>
+            <ReasonForCueSheetAbsence LanguageAndScriptCode="es_MX">V8ARKRnkId8c0jydg7mfZwkg3</ReasonForCueSheetAbsence>
+            <ReferenceTitle LanguageAndScriptCode="en_US">
+                <TitleText LanguageAndScriptCode="es_MX">f</TitleText>
+                <SubTitle LanguageAndScriptCode="es_MX">O9IgY7PqOoXGxpqB</SubTitle>
+            </ReferenceTitle>
+            <Title LanguageAndScriptCode="es_MX" TitleType="FormalTitle">
+                <TitleText LanguageAndScriptCode="es_MX">GxcGYGctbS6Nc</TitleText>
+                <SubTitle LanguageAndScriptCode="en_US" SubTitleType="kfywxGoM3">qf.-xSCo2</SubTitle>
+            </Title>
+            <InstrumentationDescription LanguageAndScriptCode="es_MX">a7_JF</InstrumentationDescription>
+            <IsMedley>true</IsMedley>
+            <IsPotpourri>true</IsPotpourri>
+            <IsInstrumental>true</IsInstrumental>
+            <IsBackground>false</IsBackground>
+            <IsHiddenResource>true</IsHiddenResource>
+            <IsBonusResource>false</IsBonusResource>
+            <IsRemastered>true</IsRemastered>
+            <NoSilenceBefore>0</NoSilenceBefore>
+            <NoSilenceAfter>false</NoSilenceAfter>
+            <PerformerInformationRequired>1</PerformerInformationRequired>
+            <LanguageOfPerformance>ms</LanguageOfPerformance>
+            <Duration>P7Y9M2DT1H10M0S</Duration>
+            <RightsAgreementId>
+                <MWLI>rXBedbjr6X</MWLI>
+                <ProprietaryId Namespace="hSBC2wL28r">xGDTEWZfg_wef45</ProprietaryId>
+            </RightsAgreementId>
+            <VideoCollectionReferenceList>
+                <NumberOfCollections>50969755</NumberOfCollections>
+                <SoundRecordingCollectionReference>
+                    <SequenceNumber>1079465932</SequenceNumber>
+                    <SoundRecordingCollectionReference>Xm7</SoundRecordingCollectionReference>
+                    <StartTime>P3Y6M2DT1H10M0S</StartTime>
+                    <Duration>P8Y8M7DT1H10M0S</Duration>
+                    <EndTime>P9Y8M4DT1H10M0S</EndTime>
+                    <ReleaseResourceType>SecondaryResource</ReleaseResourceType>
+                </SoundRecordingCollectionReference>
+            </VideoCollectionReferenceList>
+            <ResourceMusicalWorkReferenceList>
+                <ResourceMusicalWorkReference>
+                    <SequenceNumber>-1351265783</SequenceNumber>
+                    <DurationUsed>P0Y8M1DT1H10M0S</DurationUsed>
+                    <IsFragment>false</IsFragment>
+                    <ResourceMusicalWorkReference>W-J7</ResourceMusicalWorkReference>
+                </ResourceMusicalWorkReference>
+            </ResourceMusicalWorkReferenceList>
+            <ResourceContainedResourceReferenceList>
+                <ResourceContainedResourceReference>
+                    <ResourceContainedResourceReference>A-</ResourceContainedResourceReference>
+                    <DurationUsed>P1Y9M3DT1H10M0S</DurationUsed>
+                    <StartPoint>802059593.06</StartPoint>
+                    <Purpose Namespace="nJNyXzWf0JZApxzGLJWJzCx9C_WZ" UserDefinedValue="h3aaUDkkEnIGWRdIJTw">FilmTrailerMusic</Purpose>
+                </ResourceContainedResourceReference>
+            </ResourceContainedResourceReferenceList>
+            <CreationDate IsApproximate="true" IsBefore="false" IsAfter="false" TerritoryCode="US" LocationDescription="yPAeLWMw1eqEkQq"
+                 LanguageAndScriptCode="en_US">2015-12-03</CreationDate>
+            <MasteredDate IsApproximate="false" IsBefore="false" IsAfter="true" TerritoryCode="US" LocationDescription="gMJfAXm1wC8paRNQgl5nfNem0z"
+                 LanguageAndScriptCode="en_US">2014-07-26Z</MasteredDate>
+            <VideoDetailsByTerritory LanguageAndScriptCode="es_MX">
+                <TerritoryCode>US</TerritoryCode>
+                <Title LanguageAndScriptCode="es_MX" TitleType="FirstLineOfText">
+                    <TitleText LanguageAndScriptCode="en_US">A</TitleText>
+                    <SubTitle LanguageAndScriptCode="en_US" SubTitleType="G8SPpBtDnb3GxzGgmX">JY7Z-_2-h5zv9EXqi7Sm-FSZyPY</SubTitle>
+                </Title>
+                <DisplayArtist SequenceNumber="-1597345048">
+                    <PartyId Namespace="IeUTaKeOauyK0I5QvHXIO2y8hBgb8" IsDPID="false" IsISNI="true">HZ-n2d_V7ig-</PartyId>
+                    <ArtistRole Namespace="JqP7j7vtok8ZGAiM0Xljkg8Ac" UserDefinedValue="nYUm">Actor</ArtistRole>
+                </DisplayArtist>
+                <DisplayConductor SequenceNumber="1196948989">
+                    <PartyName LanguageAndScriptCode="es_MX">
+                        <FullName LanguageAndScriptCode="en_US">BeN6Y9k34yNFItzbO</FullName>
+                        <FullNameAsciiTranscribed>i5b</FullNameAsciiTranscribed>
+                        <FullNameIndexed LanguageAndScriptCode="en_US">eHMGtWgbk829U</FullNameIndexed>
+                        <NamesBeforeKeyName LanguageAndScriptCode="es_MX">rU</NamesBeforeKeyName>
+                        <KeyName LanguageAndScriptCode="en_US">_Qum0Fj</KeyName>
+                        <NamesAfterKeyName LanguageAndScriptCode="es_MX">bIPASmwYqefYVc7zq</NamesAfterKeyName>
+                        <AbbreviatedName LanguageAndScriptCode="es_MX">uDE61E4mxi9.</AbbreviatedName>
+                    </PartyName>
+                    <PartyId Namespace="Ebys5H5_mVzUB.4u8vtO5" IsDPID="true" IsISNI="false">CieSh</PartyId>
+                    <ArtistRole Namespace="NH17HO_3LFmMdrY" UserDefinedValue="bq5QTT3pn3">StudioPersonnel</ArtistRole>
+                </DisplayConductor>
+                <ResourceContributor SequenceNumber="736983227">
+                    <PartyName LanguageAndScriptCode="es_MX">
+                        <FullName LanguageAndScriptCode="en_US">U01</FullName>
+                        <FullNameAsciiTranscribed>iUG3a2R-ht8</FullNameAsciiTranscribed>
+                        <FullNameIndexed LanguageAndScriptCode="en_US">nuhbPL47fN</FullNameIndexed>
+                        <NamesBeforeKeyName LanguageAndScriptCode="es_MX">RAg9hW8m7BDd</NamesBeforeKeyName>
+                        <KeyName LanguageAndScriptCode="es_MX">iTJMfzucWltvoairetxgoHmqy</KeyName>
+                        <NamesAfterKeyName LanguageAndScriptCode="en_US">G_tXv1bICZaPSDQEa</NamesAfterKeyName>
+                        <AbbreviatedName LanguageAndScriptCode="en_US">F</AbbreviatedName>
+                    </PartyName>
+                    <PartyId Namespace="DW1IL" IsDPID="true" IsISNI="false">dBwFnuk295pK35O-</PartyId>
+                    <ResourceContributorRole Namespace="a12f.3qRFiN9" UserDefinedValue="SKkKtjkNuw">PhotographyDirector</ResourceContributorRole>
+                    <IsFeaturedArtist>false</IsFeaturedArtist>
+                    <IsContractedArtist>true</IsContractedArtist>
+                    <TerritoryOfPerformance>LU</TerritoryOfPerformance>
+                    <InstrumentType>zSgNpkKbIUHPy</InstrumentType>
+                    <ArtistDelegatedUsageRights>
+                        <UseType Namespace="p" UserDefinedValue="aqh5Ic1FrU_1IHQLMuqB">AsPerContract</UseType>
+                        <UserInterfaceType Namespace="OUjAs-cLKcK5sAM3" UserDefinedValue="_os30IGtX3EItQgap">Unknown</UserInterfaceType>
+                        <PeriodOfRightsDelegation>
+                            <StartDate>2015-01-02</StartDate>
+                            <EndDate>2011-11-21</EndDate>
+                        </PeriodOfRightsDelegation>
+                        <TerritoryOfRightsDelegation>ZW</TerritoryOfRightsDelegation>
+                        <MembershipType>WorldwideMember</MembershipType>
+                    </ArtistDelegatedUsageRights>
+                    <Sex>Unknown</Sex>
+                    <DateAndPlaceOfBirth IsApproximate="false" IsBefore="false" IsAfter="false" TerritoryCode="MX" LocationDescription="Bggi"
+                         LanguageAndScriptCode="en_US">2014-12-26</DateAndPlaceOfBirth>
+                    <DateAndPlaceOfDeath IsApproximate="false" IsBefore="false" IsAfter="true" TerritoryCode="MX" LocationDescription="LG1aAjCX2DhCmPCMaSJBMLbIHb"
+                         LanguageAndScriptCode="en_US">2014-11-13Z</DateAndPlaceOfDeath>
+                    <PrimaryRole Namespace="rWhm" UserDefinedValue="zUDt9NTBtIiVb1oMJr4hYsIz">Journalist</PrimaryRole>
+                    <PrimaryInstrumentType>jP8OQIr</PrimaryInstrumentType>
+                    <GoverningAgreementType Namespace="ztc" UserDefinedValue="zhBlWc1vR4ueLEn">UserDefined</GoverningAgreementType>
+                    <ContactInformation>
+                        <EmailAddress>fGTxAw9cy1gHEu</EmailAddress>
+                        <PhoneNumber>dD7chhXjkWn.VASyvtW2VsLo0q</PhoneNumber>
+                        <FaxNumber>rocyu1uQ</FaxNumber>
+                    </ContactInformation>
+                    <TerritoryOfResidency>KE</TerritoryOfResidency>
+                    <AdditionalRoles Namespace="FDVd.cvCRHV0w4ZIdirNU6O7Ju" UserDefinedValue="OAEEiGxLlcsHR">PhotographyDirector</AdditionalRoles>
+                    <Genre LanguageAndScriptCode="en_US">
+                        <GenreText LanguageAndScriptCode="en_US">o6Ee5Ji4wDyBYZiV</GenreText>
+                        <SubGenre LanguageAndScriptCode="en_US">NrL50</SubGenre>
+                    </Genre>
+                    <Membership>
+                        <Organization>
+                            <PartyName LanguageAndScriptCode="es_MX">
+                                <FullName LanguageAndScriptCode="es_MX">Eiw</FullName>
+                                <FullNameAsciiTranscribed>R82soXBVJ.KTcJy_AB_zmEBjzc9</FullNameAsciiTranscribed>
+                                <FullNameIndexed LanguageAndScriptCode="en_US">sfgtuLRvh</FullNameIndexed>
+                                <NamesBeforeKeyName LanguageAndScriptCode="en_US">fCJE</NamesBeforeKeyName>
+                                <KeyName LanguageAndScriptCode="es_MX">W</KeyName>
+                                <NamesAfterKeyName LanguageAndScriptCode="en_US">H6j5NB</NamesAfterKeyName>
+                                <AbbreviatedName LanguageAndScriptCode="en_US">JDfEiVSTh9ksZacLVdWHIW</AbbreviatedName>
+                            </PartyName>
+                            <PartyId Namespace="APp-5" IsDPID="false" IsISNI="false">co7gfr_HTd</PartyId>
+                        </Organization>
+                        <MembershipType>NationalMember</MembershipType>
+                        <StartDate>2011-11-21</StartDate>
+                        <EndDate>2015-01-02</EndDate>
+                    </Membership>
+                </ResourceContributor>
+                <IndirectResourceContributor SequenceNumber="-982527476">
+                    <PartyId Namespace="A.wE0_Ytn" IsDPID="false" IsISNI="false">zgy_FNulaN5G95dsIC7Ctq8bkA</PartyId>
+                    <IndirectResourceContributorRole Namespace="UZGLTxvdFvByZZF" UserDefinedValue="CD">Adapter</IndirectResourceContributorRole>
+                </IndirectResourceContributor>
+                <RightsAgreementId>
+                    <MWLI>yISEG</MWLI>
+                    <ProprietaryId Namespace="CPOB-5KvtDO1lq">JqyfaR6ElwPR2MNPh_PpI3X</ProprietaryId>
+                </RightsAgreementId>
+                <LabelName LanguageAndScriptCode="es_MX" LabelNameType="zPolVz1">mLhLCslqeFbQa5EdhAVGioSI1Kb</LabelName>
+                <RightsController SequenceNumber="-599833463">
+                    <PartyId Namespace="W_-FquWclC" IsDPID="false" IsISNI="false">QDVvDBBeU_HoV</PartyId>
+                    <RightsControllerRole>AdministratingRecordCompany</RightsControllerRole>
+                    <RightSharePercentage>_M.19b</RightSharePercentage>
+                    <RightsControllerType>OriginalOwner</RightsControllerType>
+                    <TerritoryOfRegistration>KR</TerritoryOfRegistration>
+                    <StartDate>2011-11-21</StartDate>
+                    <EndDate>2011-11-21</EndDate>
+                </RightsController>
+                <RemasteredDate IsApproximate="false" IsBefore="false" IsAfter="false" TerritoryCode="US" LocationDescription="yegQWZUmLa0g9yq"
+                     LanguageAndScriptCode="es_MX">2015-02-11Z</RemasteredDate>
+                <OriginalResourceReleaseDate IsApproximate="false" IsBefore="false" IsAfter="false" TerritoryCode="US" LocationDescription="PS6atIxSWl"
+                     LanguageAndScriptCode="en_US">2015-02-15Z</OriginalResourceReleaseDate>
+                <PLine LanguageAndScriptCode="es_MX" PLineType="RemasteringPLine">
+                    <Year>2018</Year>
+                    <PLineCompany>YnnDwXILBvjcxMhatxwjwa</PLineCompany>
+                    <PLineText>JOFa</PLineText>
+                </PLine>
+                <CourtesyLine LanguageAndScriptCode="es_MX">jMEHInUAfEfQTf3JUEc2m_O</CourtesyLine>
+                <SequenceNumber>C</SequenceNumber>
+                <HostSoundCarrier>
+                    <ReleaseId IsReplaced="false">
+                        <GRid>zejcw</GRid>
+                        <ISRC>H__7GGE3t39fKoM1h32Hme3Fj</ISRC>
+                        <ICPN IsEan="true">ZH3E</ICPN>
+                        <CatalogNumber Namespace="JEf_MYfO46OppSHq">YabVK5PaBLC</CatalogNumber>
+                        <ProprietaryId Namespace="_AhOlFBSJ">AGgkKhHWrQWem0ql5y</ProprietaryId>
+                    </ReleaseId>
+                    <RightsAgreementId>
+                        <MWLI>_rEPHtjHIpEoIx_MFx6jFG2</MWLI>
+                        <ProprietaryId Namespace="ooKM94Jd5YP7OTYtCPf">_j4dTDy9W6QSj</ProprietaryId>
+                    </RightsAgreementId>
+                    <Title LanguageAndScriptCode="es_MX" TitleType="GroupingTitle">
+                        <TitleText LanguageAndScriptCode="es_MX">vlV-z4</TitleText>
+                        <SubTitle LanguageAndScriptCode="en_US" SubTitleType="V4B_">gGo_a</SubTitle>
+                    </Title>
+                    <DisplayArtist SequenceNumber="448055151">
+                        <PartyId Namespace="Cx1WHFgl11isTCWz" IsDPID="true" IsISNI="false">Ir</PartyId>
+                        <ArtistRole Namespace="f8PB" UserDefinedValue="oyWEVUqoEeaGaa">OriginalPublisher</ArtistRole>
+                    </DisplayArtist>
+                    <AdministratingRecordCompany Namespace="Ew" UserDefinedValue="yDM" Role="Unknown">
+                        <PartyId Namespace="Wh" IsDPID="false" IsISNI="true">jOQOaRftBoIdWwKXO8t-O9Cv_U.qI</PartyId>
+                    </AdministratingRecordCompany>
+                    <TrackNumber>vY6co9iM4gMVC5tm-k1YZ4Z0BQMR2</TrackNumber>
+                    <VolumeNumberInSet>Z6</VolumeNumberInSet>
+                </HostSoundCarrier>
+                <MarketingComment LanguageAndScriptCode="en_US">IFSdlsmgOFkpyvo</MarketingComment>
+                <Genre LanguageAndScriptCode="en_US">
+                    <GenreText LanguageAndScriptCode="es_MX">qC</GenreText>
+                    <SubGenre LanguageAndScriptCode="es_MX">XXdxhpq0N</SubGenre>
+                </Genre>
+                <ParentalWarningType Namespace="L.9eU0G7k8xbBlnOG" UserDefinedValue="EwvLkxl5GuxLQmkHMR2dZ">Explicit</ParentalWarningType>
+                <AvRating>
+                    <RatingText>UuXc</RatingText>
+                    <RatingAgency Namespace="G.cFtEVpjml79TWqcefv" UserDefinedValue="DK">BBFC</RatingAgency>
+                </AvRating>
+                <FulfillmentDate>
+                    <FulfillmentDate>2011-11-21</FulfillmentDate>
+                </FulfillmentDate>
+                <Keywords LanguageAndScriptCode="es_MX">eQI0FV</Keywords>
+                <Synopsis LanguageAndScriptCode="en_US">SUwLqrrv</Synopsis>
+                <CLine LanguageAndScriptCode="es_MX">
+                    <Year>2013</Year>
+                    <CLineCompany>Vn7YPSQmv7MxqanO6_5C7QS9</CLineCompany>
+                    <CLineText>Bf</CLineText>
+                </CLine>
+                <TechnicalVideoDetails LanguageAndScriptCode="es_MX">
+                    <TechnicalResourceDetailsReference>TesYf</TechnicalResourceDetailsReference>
+                    <DrmPlatformType Version="x5sgvLzaaR5Tgd.m9_L" Namespace="whYkvtV" UserDefinedValue="YTL3J-rRPkKRZ_">UserDefined</DrmPlatformType>
+                    <OverallBitRate UnitOfMeasure="Gbps">699038423.593</OverallBitRate>
+                    <ContainerFormat Namespace="XTJV8zOOjLv1aOlHGf1Z_G" UserDefinedValue="i4e2T">Ogg</ContainerFormat>
+                    <VideoCodecType Version="KpJUw3dpszCivFU" Namespace="kK7k._hfGSx5F7JQ.FvDj" UserDefinedValue="YsKZsApn_0W">MPEG-2</VideoCodecType>
+                    <VideoBitRate UnitOfMeasure="Mbps">-1632095015.794</VideoBitRate>
+                    <FrameRate UnitOfMeasure="Hz(interlaced)">1502092206.457</FrameRate>
+                    <ImageHeight UnitOfMeasure="PercentOfScreen">-1062302934.44</ImageHeight>
+                    <ImageWidth UnitOfMeasure="mm">-1720811957.883</ImageWidth>
+                    <AspectRatio>1406747685.719</AspectRatio>
+                    <ColorDepth>-12402147</ColorDepth>
+                    <VideoDefinitionType>StandardDefinition</VideoDefinitionType>
+                    <AudioCodecType Version="n9jDqMZ9tEFwAxfYJqkm_el" Namespace="MR0sBGeZ8Haz28GykoddP_2_Pqm7hy" UserDefinedValue="IVIwg0txMy">WMA</AudioCodecType>
+                    <AudioBitRate UnitOfMeasure="Mbps">-2117180120.896</AudioBitRate>
+                    <NumberOfAudioChannels>-1197064732</NumberOfAudioChannels>
+                    <AudioSamplingRate UnitOfMeasure="Hz">-784207618.349</AudioSamplingRate>
+                    <AudioBitsPerSample>-858909349</AudioBitsPerSample>
+                    <Duration>P0Y5M5DT1H10M0S</Duration>
+                    <ResourceProcessingRequired>false</ResourceProcessingRequired>
+                    <UsableResourceDuration>P7Y1M1DT1H10M0S</UsableResourceDuration>
+                    <IsPreview>false</IsPreview>
+                    <PreviewDetails>
+                        <PartType LanguageAndScriptCode="en_US">iuhiaDX8</PartType>
+                        <StartPoint>448387442.23</StartPoint>
+                        <EndPoint>408160406.962</EndPoint>
+                        <Duration>P4Y4M1DT1H10M0S</Duration>
+                        <TopLeftCorner>108560749.073</TopLeftCorner>
+                        <BottomRightCorner>439528203.815</BottomRightCorner>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </PreviewDetails>
+                    <FulfillmentDate>
+                        <FulfillmentDate>2015-01-02</FulfillmentDate>
+                    </FulfillmentDate>
+                    <ConsumerFulfillmentDate>
+                        <FulfillmentDate>2015-01-02</FulfillmentDate>
+                        <ResourceReleaseReference>R_T-_</ResourceReleaseReference>
+                    </ConsumerFulfillmentDate>
+                    <File>
+                        <FileName>IKHMkRd6dD7EaJbFuGpVLf</FileName>
+                        <FilePath>t-.Km8_0d6</FilePath>
+                        <HashSum>
+                            <HashSum>VuqX3jy-4GgBgP</HashSum>
+                            <HashSumAlgorithmType Namespace="eU5_Pka6BS.DWEPkQJ7ua" UserDefinedValue="Ukg96X0UzcQTpscf8Oc2o0r">MD4</HashSumAlgorithmType>
+                        </HashSum>
+                    </File>
+                    <Fingerprint>
+                        <Fingerprint>K7tBa-64TbZrAOQq</Fingerprint>
+                        <FingerprintAlgorithmType Namespace="oc" UserDefinedValue="MxLgSlXznmkAZuB-">UserDefined</FingerprintAlgorithmType>
+                        <FingerprintAlgorithmVersion>s-y7P9glfO9bDzKPk</FingerprintAlgorithmVersion>
+                        <FingerprintAlgorithmParameter>KHxXSzwIC4e</FingerprintAlgorithmParameter>
+                    </Fingerprint>
+                </TechnicalVideoDetails>
+                <Character SequenceNumber="-663892093">
+                    <PartyId Namespace="hmL" IsDPID="true" IsISNI="true">YLeVNI7</PartyId>
+                    <ResourceContributor SequenceNumber="-1531806468">
+                        <PartyId Namespace="P16sf.KXG7aarUDg4KX" IsDPID="true" IsISNI="true">S3hpP-RY1</PartyId>
+                        <ResourceContributorRole Namespace="zGApwkGX6RiEq7UkEzS" UserDefinedValue="I">SubtitlesTranslator</ResourceContributorRole>
+                        <IsFeaturedArtist>false</IsFeaturedArtist>
+                        <IsContractedArtist>false</IsContractedArtist>
+                        <TerritoryOfPerformance>CY</TerritoryOfPerformance>
+                        <InstrumentType>PtnP9</InstrumentType>
+                        <ArtistDelegatedUsageRights>
+                            <UseType Namespace="HM" UserDefinedValue="Id2n2MXAkfHe.FbADUnk">Stream</UseType>
+                            <UserInterfaceType Namespace="vDBFNoW395eO-Pshjw8lx-YDH" UserDefinedValue="QZGGl2q6fZCy1KyhZb.ITd">UserDefined</UserInterfaceType>
+                            <PeriodOfRightsDelegation>
+                                <StartDateTime IsApproximate="false" IsBefore="true" IsAfter="true" TerritoryCode="MX" LocationDescription="n4QxN1l1k"
+                                     LanguageAndScriptCode="es_MX">2015-11-25T00:48:51</StartDateTime>
+                                <EndDateTime IsApproximate="true" IsBefore="true" IsAfter="true" TerritoryCode="MX" LocationDescription="AyY0NWLSVS"
+                                     LanguageAndScriptCode="es_MX">2014-07-16T00:48:51Z</EndDateTime>
+                            </PeriodOfRightsDelegation>
+                            <TerritoryOfRightsDelegation>IR</TerritoryOfRightsDelegation>
+                            <MembershipType>RegionalMember</MembershipType>
+                        </ArtistDelegatedUsageRights>
+                        <Sex>Female</Sex>
+                        <DateAndPlaceOfBirth IsApproximate="true" IsBefore="true" IsAfter="false" TerritoryCode="US" LocationDescription="bljA" LanguageAndScriptCode="en_US">2014-03-30</DateAndPlaceOfBirth>
+                        <DateAndPlaceOfDeath IsApproximate="true" IsBefore="true" IsAfter="true" TerritoryCode="US" LocationDescription="vIBZ3SbmmQnyvBX"
+                             LanguageAndScriptCode="en_US">2016-02-25</DateAndPlaceOfDeath>
+                        <PrimaryRole Namespace="xsU-vn9UF35d85m_SsVQF" UserDefinedValue="WODN">Conductor</PrimaryRole>
+                        <PrimaryInstrumentType>gEozVt</PrimaryInstrumentType>
+                        <GoverningAgreementType Namespace="DoPH7VOdC6" UserDefinedValue="MUHDxoenJE.">UserDefined</GoverningAgreementType>
+                        <ContactInformation>
+                            <EmailAddress>UU39C4gyj-m-PpbOFaXa</EmailAddress>
+                            <PhoneNumber>OV97kiTG6Inbzpae</PhoneNumber>
+                            <FaxNumber>gkSTFWVtLW</FaxNumber>
+                        </ContactInformation>
+                        <TerritoryOfResidency>TR</TerritoryOfResidency>
+                        <AdditionalRoles Namespace="eVzDeTjsK4W" UserDefinedValue="ATyjpCiv8AQzJtp3lWzH77eE7C0Qp">MusicPublisher</AdditionalRoles>
+                        <Genre LanguageAndScriptCode="es_MX">
+                            <GenreText LanguageAndScriptCode="es_MX">Fo</GenreText>
+                            <SubGenre LanguageAndScriptCode="en_US">QZdJbBE</SubGenre>
+                        </Genre>
+                        <Membership>
+                            <Organization>
+                                <PartyName LanguageAndScriptCode="en_US">
+                                    <FullName LanguageAndScriptCode="en_US">sxiU3zzdS8Fe6PDkx</FullName>
+                                    <FullNameAsciiTranscribed>u9d</FullNameAsciiTranscribed>
+                                    <FullNameIndexed LanguageAndScriptCode="en_US">dXE43gffXc6NvG6fmK48tGmCtQlUu</FullNameIndexed>
+                                    <NamesBeforeKeyName LanguageAndScriptCode="en_US">j9X7yJgrkkjPUDqJ</NamesBeforeKeyName>
+                                    <KeyName LanguageAndScriptCode="es_MX">LQvqyTfxXc</KeyName>
+                                    <NamesAfterKeyName LanguageAndScriptCode="en_US">Ei-RHVsNkLAVJjs2</NamesAfterKeyName>
+                                    <AbbreviatedName LanguageAndScriptCode="es_MX">TaWc1h</AbbreviatedName>
+                                </PartyName>
+                                <PartyId Namespace="PSTyXyIy.KwpgbUwEt6" IsDPID="true" IsISNI="true">VBcVjsw</PartyId>
+                            </Organization>
+                            <MembershipType>RegionalMember</MembershipType>
+                            <StartDate>2015-01-02</StartDate>
+                            <EndDate>2015-01-02</EndDate>
+                        </Membership>
+                    </ResourceContributor>
+                </Character>
+            </VideoDetailsByTerritory>
+            <TerritoryOfCommissioning>SL</TerritoryOfCommissioning>
+            <NumberOfFeaturedArtists>943487161</NumberOfFeaturedArtists>
+            <NumberOfNonFeaturedArtists>-1949176540</NumberOfNonFeaturedArtists>
+            <NumberOfContractedArtists>-781362478</NumberOfContractedArtists>
+            <NumberOfNonContractedArtists>1498883309</NumberOfNonContractedArtists>
+        </Video>
+        <Image IsUpdated="false" LanguageAndScriptCode="en_US">
+            <ImageType Namespace="LVjH0hoFo9m-_xkbmJaKn6iCxDMt" UserDefinedValue="KKY">TrayImage</ImageType>
+            <IsArtistRelated>true</IsArtistRelated>
+            <ImageId IsReplaced="false">
+                <ProprietaryId Namespace="B_f1H5uBEZf66JFfLjdrV">wZftOALjrzQTeE</ProprietaryId>
+            </ImageId>
+            <ResourceReference>Ab</ResourceReference>
+            <Title LanguageAndScriptCode="es_MX" TitleType="TranslatedTitle">
+                <TitleText LanguageAndScriptCode="en_US">GcAznKOGBbs</TitleText>
+                <SubTitle LanguageAndScriptCode="es_MX" SubTitleType="B8NYOuDUSZUB">hqk5FcT_yZoUg-TQwu-jo1rpZMtZs</SubTitle>
+            </Title>
+            <CreationDate IsApproximate="false" IsBefore="false" IsAfter="true" TerritoryCode="US" LocationDescription="scsM"
+                 LanguageAndScriptCode="en_US">2016-02-10Z</CreationDate>
+            <ImageDetailsByTerritory LanguageAndScriptCode="en_US">
+                <ExcludedTerritoryCode>VE</ExcludedTerritoryCode>
+                <ResourceContributor SequenceNumber="-957874576">
+                    <PartyId Namespace="Kid6shifK2A0w" IsDPID="false" IsISNI="true">C_9zRmE</PartyId>
+                    <ResourceContributorRole Namespace="fPnX1E2ya8-Bps4GOUzi3upF" UserDefinedValue="xZo8av0dda.LI_QGv6btjgk">StudioPersonnel</ResourceContributorRole>
+                    <IsFeaturedArtist>true</IsFeaturedArtist>
+                    <IsContractedArtist>true</IsContractedArtist>
+                    <TerritoryOfPerformance>NE</TerritoryOfPerformance>
+                    <InstrumentType>u4a10zf_</InstrumentType>
+                    <ArtistDelegatedUsageRights>
+                        <UseType Namespace="NV" UserDefinedValue="cKIOR">UseAsRingbackTone</UseType>
+                        <UserInterfaceType Namespace="m__IRiT5ZxoP3" UserDefinedValue="fINInQx0_nZWi9KL2WyPzc6EkOBb5">GameConsole</UserInterfaceType>
+                        <PeriodOfRightsDelegation>
+                            <StartDate>2015-01-02</StartDate>
+                            <EndDate>2011-11-21</EndDate>
+                        </PeriodOfRightsDelegation>
+                        <TerritoryOfRightsDelegation>MY</TerritoryOfRightsDelegation>
+                        <MembershipType>WorldwideMember</MembershipType>
+                    </ArtistDelegatedUsageRights>
+                    <Sex>Female</Sex>
+                    <DateAndPlaceOfBirth IsApproximate="false" IsBefore="true" IsAfter="false" TerritoryCode="US" LocationDescription="RpMQb0SXUfAlYR.FmRFdwIErjz"
+                         LanguageAndScriptCode="en_US">2015-02-10Z</DateAndPlaceOfBirth>
+                    <DateAndPlaceOfDeath IsApproximate="true" IsBefore="false" IsAfter="false" TerritoryCode="MX" LocationDescription="lB8I7oi0_cjDRvid4i91mMNxbkl0um"
+                         LanguageAndScriptCode="es_MX">2015-12-10Z</DateAndPlaceOfDeath>
+                    <PrimaryRole Namespace="WaBFnUSGhWhhPWTZy-r" UserDefinedValue="oNqCDQ65sD">Arranger</PrimaryRole>
+                    <PrimaryInstrumentType>x8g8KcoT5C</PrimaryInstrumentType>
+                    <GoverningAgreementType Namespace="SdBbtzTexdq4F_GwMKaxFOa2" UserDefinedValue="tIT.">UserDefined</GoverningAgreementType>
+                    <ContactInformation>
+                        <EmailAddress>sZOX9AASCQOYzr4s</EmailAddress>
+                        <PhoneNumber>JGWuhuqDdGk_uTS6tgrVBvO-SQJYn</PhoneNumber>
+                        <FaxNumber>IiR-</FaxNumber>
+                    </ContactInformation>
+                    <TerritoryOfResidency>CZ</TerritoryOfResidency>
+                    <AdditionalRoles Namespace="yiz.MhN5" UserDefinedValue="P4NkaGrema4Rc6XwjsqZywyx_.qnU">Programmer</AdditionalRoles>
+                    <Genre LanguageAndScriptCode="en_US">
+                        <GenreText LanguageAndScriptCode="es_MX">wA</GenreText>
+                        <SubGenre LanguageAndScriptCode="en_US">_tmCyeXlwCz</SubGenre>
+                    </Genre>
+                    <Membership>
+                        <Organization>
+                            <PartyName LanguageAndScriptCode="es_MX">
+                                <FullName LanguageAndScriptCode="en_US">WDPorLt</FullName>
+                                <FullNameAsciiTranscribed>HkMVY7Ny-aN1tglTVU78FswIkcpG</FullNameAsciiTranscribed>
+                                <FullNameIndexed LanguageAndScriptCode="es_MX">yJC-VxS781-v9ZhQwp2fwj9J</FullNameIndexed>
+                                <NamesBeforeKeyName LanguageAndScriptCode="es_MX">m_Yi.24sV</NamesBeforeKeyName>
+                                <KeyName LanguageAndScriptCode="en_US">axqZwknUFk3sIsk-OUBsZ5</KeyName>
+                                <NamesAfterKeyName LanguageAndScriptCode="es_MX">T4O9DB51m23Y</NamesAfterKeyName>
+                                <AbbreviatedName LanguageAndScriptCode="en_US">MauCtPhXU-44</AbbreviatedName>
+                            </PartyName>
+                            <PartyId Namespace="tMjgsBZJ3WW" IsDPID="true" IsISNI="false">eBJXuXEIZX</PartyId>
+                        </Organization>
+                        <MembershipType>NationalMember</MembershipType>
+                        <StartDate>2015-01-02</StartDate>
+                        <EndDate>2015-01-02</EndDate>
+                    </Membership>
+                </ResourceContributor>
+                <IndirectResourceContributor SequenceNumber="37475505">
+                    <PartyName LanguageAndScriptCode="es_MX">
+                        <FullName LanguageAndScriptCode="en_US">KyfXJgDmp25Cz.g5CuGP_wbCk</FullName>
+                        <FullNameAsciiTranscribed>fFN_yPq5iEHiDg834JtOU5</FullNameAsciiTranscribed>
+                        <FullNameIndexed LanguageAndScriptCode="es_MX">i35EbXfLdNhi5AkXaN1qSdGhv5X</FullNameIndexed>
+                        <NamesBeforeKeyName LanguageAndScriptCode="en_US">t0Tg8mcKa4yGzl9v.ZRKqfIzbVs</NamesBeforeKeyName>
+                        <KeyName LanguageAndScriptCode="es_MX">rxS</KeyName>
+                        <NamesAfterKeyName LanguageAndScriptCode="es_MX">T1b8</NamesAfterKeyName>
+                        <AbbreviatedName LanguageAndScriptCode="en_US">kPOpYj1MEXwOw2ONBdStj2ELJMme</AbbreviatedName>
+                    </PartyName>
+                    <PartyId Namespace="fxM_IIpxI93qkKssL5h0T.." IsDPID="false" IsISNI="false">xQk2K5ATRJLr</PartyId>
+                    <IndirectResourceContributorRole Namespace="GuFkV2P8SJPiqg" UserDefinedValue="phXkZqWA.3Cv4mM-NmpeQt0WxD.">Lyricist</IndirectResourceContributorRole>
+                </IndirectResourceContributor>
+                <CLine LanguageAndScriptCode="en_US">
+                    <Year>2018</Year>
+                    <CLineCompany>JFyd06tXxmX</CLineCompany>
+                    <CLineText>E2dnK9R-Xktf</CLineText>
+                </CLine>
+                <Description LanguageAndScriptCode="en_US">kjX_fR0_X</Description>
+                <CourtesyLine LanguageAndScriptCode="es_MX">tvDl2o</CourtesyLine>
+                <OriginalResourceReleaseDate IsApproximate="false" IsBefore="false" IsAfter="true" TerritoryCode="MX" LocationDescription="Z.KIKzByGf4p2K07OCBYA1J4o"
+                     LanguageAndScriptCode="es_MX">2014-07-07Z</OriginalResourceReleaseDate>
+                <FulfillmentDate>
+                    <FulfillmentDate>2015-01-02</FulfillmentDate>
+                </FulfillmentDate>
+                <Keywords LanguageAndScriptCode="es_MX">S5B-bL</Keywords>
+                <Synopsis LanguageAndScriptCode="es_MX">X5Y5h</Synopsis>
+                <Genre LanguageAndScriptCode="en_US">
+                    <GenreText LanguageAndScriptCode="es_MX">vPwu</GenreText>
+                    <SubGenre LanguageAndScriptCode="en_US">sL9UhyjyZ4R1</SubGenre>
+                </Genre>
+                <ParentalWarningType Namespace="fcRXu_Bxr6D18t29ofaD" UserDefinedValue="Ja0eRF3iw0p.aoySVsPAS">NotExplicit</ParentalWarningType>
+                <TechnicalImageDetails LanguageAndScriptCode="es_MX">
+                    <TechnicalResourceDetailsReference>T_y</TechnicalResourceDetailsReference>
+                    <DrmPlatformType Version="SYFp" Namespace="c1eGYy6ml" UserDefinedValue="EnLFCzRL0x">OMA</DrmPlatformType>
+                    <ContainerFormat Namespace="qikgqqtI" UserDefinedValue="SAwQblY8svcg3oxHqr">AIFF</ContainerFormat>
+                    <ImageCodecType Version="lpMwPiMAmrDX7Q" Namespace="Nw3KMJlbUJhB" UserDefinedValue="qtPBxW_Iq-kQ911USK">TIFF</ImageCodecType>
+                    <ImageHeight UnitOfMeasure="mm">-674985766.701</ImageHeight>
+                    <ImageWidth UnitOfMeasure="PercentOfScreen">-1663663191.991</ImageWidth>
+                    <AspectRatio>-1012673931.986</AspectRatio>
+                    <ColorDepth>1841334831</ColorDepth>
+                    <ImageResolution>-195845289</ImageResolution>
+                    <IsPreview>false</IsPreview>
+                    <PreviewDetails>
+                        <PartType LanguageAndScriptCode="en_US">liHcDET4Ve.PMlR</PartType>
+                        <TopLeftCorner>1823782337.221</TopLeftCorner>
+                        <BottomRightCorner>-1776567453.431</BottomRightCorner>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </PreviewDetails>
+                    <FulfillmentDate>
+                        <FulfillmentDate>2015-01-02</FulfillmentDate>
+                    </FulfillmentDate>
+                    <ConsumerFulfillmentDate>
+                        <FulfillmentDate>2015-01-02</FulfillmentDate>
+                        <ResourceReleaseReference>R1</ResourceReleaseReference>
+                    </ConsumerFulfillmentDate>
+                    <FileAvailabilityDescription LanguageAndScriptCode="en_US">bp7-ql.Xnu52Rf93GPs</FileAvailabilityDescription>
+                    <Fingerprint>
+                        <Fingerprint>dR3p00WCNuup_TEEgM</Fingerprint>
+                        <FingerprintAlgorithmType Namespace="fJmE4-PWuxpO4q2h_ePxxXQqM.N1q" UserDefinedValue="MS7g2G88DSCP1ackGAosGp-b">UserDefined</FingerprintAlgorithmType>
+                        <FingerprintAlgorithmVersion>ifbHzLyQS.v</FingerprintAlgorithmVersion>
+                        <FingerprintAlgorithmParameter>BHk</FingerprintAlgorithmParameter>
+                    </Fingerprint>
+                </TechnicalImageDetails>
+            </ImageDetailsByTerritory>
+        </Image>
+        <Text IsUpdated="false" LanguageAndScriptCode="es_MX">
+            <TextType Namespace="bUxSccwRrlj_OTUMWqFOyVpbvb" UserDefinedValue="m9sD2.LBZH4VHSmB2lHNeGr1SnrANQ">NonInteractiveBooklet</TextType>
+            <IsArtistRelated>false</IsArtistRelated>
+            <TextId IsReplaced="false">
+                <ISBN>IahbyA7giX_M1DRxfj0I</ISBN>
+                <ISSN>EcVR-x3O2uoHq7IlJheBuvFk9x0</ISSN>
+                <SICI>OjcCt</SICI>
+                <ProprietaryId Namespace="Edv_sNMG5vmNJ_Tjko">nRWu.i171TV</ProprietaryId>
+            </TextId>
+            <IndirectTextId IsReplaced="false">
+                <ISWC>vpnElvbht</ISWC>
+                <OpusNumber>P-CA-ksrJ6LpqV58wTVoxZlQJp</OpusNumber>
+                <ComposerCatalogNumber>If</ComposerCatalogNumber>
+                <ProprietaryId Namespace="mC7.">FQ854LsX.XP</ProprietaryId>
+            </IndirectTextId>
+            <ResourceReference>A_T-</ResourceReference>
+            <ResourceMusicalWorkReferenceList>
+                <ResourceMusicalWorkReference>
+                    <SequenceNumber>-1756625877</SequenceNumber>
+                    <DurationUsed>P1Y9M2DT1H10M0S</DurationUsed>
+                    <IsFragment>false</IsFragment>
+                    <ResourceMusicalWorkReference>W-</ResourceMusicalWorkReference>
+                </ResourceMusicalWorkReference>
+            </ResourceMusicalWorkReferenceList>
+            <ResourceContainedResourceReferenceList>
+                <ResourceContainedResourceReference>
+                    <ResourceContainedResourceReference>A_</ResourceContainedResourceReference>
+                    <DurationUsed>P2Y0M2DT1H10M0S</DurationUsed>
+                    <StartPoint>-2131380275.654</StartPoint>
+                    <Purpose Namespace="V" UserDefinedValue="Bvv_-CknoSf-">ForegroundMusic</Purpose>
+                </ResourceContainedResourceReference>
+            </ResourceContainedResourceReferenceList>
+            <Title LanguageAndScriptCode="es_MX" TitleType="MisspelledTitle">
+                <TitleText LanguageAndScriptCode="en_US">_Xw_1W9LY-r36KK</TitleText>
+                <SubTitle LanguageAndScriptCode="en_US" SubTitleType="N">BZjAaqc</SubTitle>
+            </Title>
+            <CreationDate IsApproximate="false" IsBefore="true" IsAfter="true" TerritoryCode="US" LocationDescription="roTUzaeOAwfonQ6S13FHLUo.SLyl"
+                 LanguageAndScriptCode="en_US">2015-06-08Z</CreationDate>
+            <TextDetailsByTerritory LanguageAndScriptCode="en_US">
+                <TerritoryCode>US</TerritoryCode>
+                <ResourceContributor SequenceNumber="620925762">
+                    <PartyId Namespace="hVwhd" IsDPID="true" IsISNI="true">piTtihl</PartyId>
+                    <ResourceContributorRole Namespace="tY.clE_SuwG-1PFIv" UserDefinedValue="zK00ojKavG0OruCrSjVCfAJh">Ensemble</ResourceContributorRole>
+                    <IsFeaturedArtist>true</IsFeaturedArtist>
+                    <IsContractedArtist>false</IsContractedArtist>
+                    <TerritoryOfPerformance>NC</TerritoryOfPerformance>
+                    <InstrumentType>Mu4VFfVEL8.O7kFxT-rXNp-u</InstrumentType>
+                    <ArtistDelegatedUsageRights>
+                        <UseType Namespace="YqLymlmuQ-S2gKudjhBQkE5vPgTk2" UserDefinedValue="No_Mo7oLgDrg">PurchaseAsPhysicalProduct</UseType>
+                        <UserInterfaceType Namespace="gqhUtWK" UserDefinedValue="K">KaraokeMachine</UserInterfaceType>
+                        <PeriodOfRightsDelegation>
+                            <StartDateTime IsApproximate="false" IsBefore="true" IsAfter="true" TerritoryCode="MX" LocationDescription="N8GQF0"
+                                 LanguageAndScriptCode="es_MX">2015-07-08T00:48:51</StartDateTime>
+                            <EndDateTime IsApproximate="false" IsBefore="true" IsAfter="false" TerritoryCode="MX" LocationDescription="AffosWm"
+                                 LanguageAndScriptCode="es_MX">2015-11-07T00:48:51</EndDateTime>
+                        </PeriodOfRightsDelegation>
+                        <TerritoryOfRightsDelegation>ME</TerritoryOfRightsDelegation>
+                        <MembershipType>RegionalMember</MembershipType>
+                    </ArtistDelegatedUsageRights>
+                    <Sex>Male</Sex>
+                    <DateAndPlaceOfBirth IsApproximate="true" IsBefore="true" IsAfter="true" TerritoryCode="MX" LocationDescription="HGqfs" LanguageAndScriptCode="en_US">2014-11-18Z</DateAndPlaceOfBirth>
+                    <DateAndPlaceOfDeath IsApproximate="false" IsBefore="true" IsAfter="true" TerritoryCode="US" LocationDescription="Mt6XG5EG"
+                         LanguageAndScriptCode="es_MX">2016-02-22Z</DateAndPlaceOfDeath>
+                    <PrimaryRole Namespace="kebw.p" UserDefinedValue="y1pHGq9Q_5">GraphicArtist</PrimaryRole>
+                    <PrimaryInstrumentType>gvaRk</PrimaryInstrumentType>
+                    <GoverningAgreementType Namespace="SoN2PdCCdmgXg07r" UserDefinedValue="BkhFWL1tTcTRYG4b9zuxDsFy_">UserDefined</GoverningAgreementType>
+                    <ContactInformation>
+                        <EmailAddress>oRabtQ</EmailAddress>
+                        <PhoneNumber>PgI_-D_bW8nsyzMjXhMbRcpU</PhoneNumber>
+                        <FaxNumber>Np</FaxNumber>
+                    </ContactInformation>
+                    <TerritoryOfResidency>GD</TerritoryOfResidency>
+                    <AdditionalRoles Namespace="Wsh394" UserDefinedValue="nl75.axHftM28pNlGCCy">OriginalPublisher</AdditionalRoles>
+                    <Genre LanguageAndScriptCode="en_US">
+                        <GenreText LanguageAndScriptCode="es_MX">VfRr</GenreText>
+                        <SubGenre LanguageAndScriptCode="en_US">_MPrgvxvdN3vtR4g_</SubGenre>
+                    </Genre>
+                    <Membership>
+                        <Organization>
+                            <PartyId Namespace="pp9gK" IsDPID="true" IsISNI="false">Tw75HhLWVg-.Ky8RbLayod1K</PartyId>
+                        </Organization>
+                        <MembershipType>NationalMember</MembershipType>
+                        <StartDate>2015-01-02</StartDate>
+                        <EndDate>2015-01-02</EndDate>
+                    </Membership>
+                </ResourceContributor>
+                <IndirectResourceContributor SequenceNumber="-2044195158">
+                    <PartyName LanguageAndScriptCode="en_US">
+                        <FullName LanguageAndScriptCode="es_MX">YiloMrrkofq4cklwDtV5shmuF</FullName>
+                        <FullNameAsciiTranscribed>aINZkI0XbYeZYeJvBov.niH5Kmk</FullNameAsciiTranscribed>
+                        <FullNameIndexed LanguageAndScriptCode="es_MX">VuFM</FullNameIndexed>
+                        <NamesBeforeKeyName LanguageAndScriptCode="en_US">URUD_YMwD</NamesBeforeKeyName>
+                        <KeyName LanguageAndScriptCode="es_MX">sJ59</KeyName>
+                        <NamesAfterKeyName LanguageAndScriptCode="en_US">p-oVU2IXx</NamesAfterKeyName>
+                        <AbbreviatedName LanguageAndScriptCode="en_US">ZnpWh_dSWQuR0s47_35OpXEg.7</AbbreviatedName>
+                    </PartyName>
+                    <PartyId Namespace="kbIVD5Tec" IsDPID="true" IsISNI="false">Gz1gAgfQ70kggSy.IX0zBC8D</PartyId>
+                    <IndirectResourceContributorRole Namespace="f0aNEAPaBzE0" UserDefinedValue="j9TAoxde7">Lyricist</IndirectResourceContributorRole>
+                </IndirectResourceContributor>
+                <CLine LanguageAndScriptCode="es_MX">
+                    <Year>2018</Year>
+                    <CLineCompany>kYCzXr7KKInl</CLineCompany>
+                    <CLineText>D</CLineText>
+                </CLine>
+                <CourtesyLine LanguageAndScriptCode="es_MX">nnBgNG7On</CourtesyLine>
+                <OriginalResourceReleaseDate IsApproximate="true" IsBefore="false" IsAfter="true" TerritoryCode="MX" LocationDescription="N6fJK9hyuTGpcfgsJ_F"
+                     LanguageAndScriptCode="es_MX">2014-10-25Z</OriginalResourceReleaseDate>
+                <FulfillmentDate>
+                    <FulfillmentDate>2015-01-02</FulfillmentDate>
+                </FulfillmentDate>
+                <Keywords LanguageAndScriptCode="es_MX">s2Q</Keywords>
+                <Synopsis LanguageAndScriptCode="es_MX">C-FYdeow</Synopsis>
+                <Genre LanguageAndScriptCode="es_MX">
+                    <GenreText LanguageAndScriptCode="en_US">rVHd9zWqLF4-3EGKLfTWNzY60Nt</GenreText>
+                    <SubGenre LanguageAndScriptCode="en_US">oH1Q6</SubGenre>
+                </Genre>
+                <ParentalWarningType Namespace="fYsC9jN.rwhECwtNt.qkR94ne" UserDefinedValue="AVJOsoTQvE_Ml">Unknown</ParentalWarningType>
+                <TechnicalTextDetails LanguageAndScriptCode="en_US">
+                    <TechnicalResourceDetailsReference>T-</TechnicalResourceDetailsReference>
+                    <DrmPlatformType Version="XKnbkc0r7vMRA" Namespace="vYDwA" UserDefinedValue="W-0jo53sAe">Fairplay</DrmPlatformType>
+                    <ContainerFormat Namespace="sZn8Nf4cevXHkvVgUxmX" UserDefinedValue="czMfQfakNbKUNbpe1Nui0wZ">AVI</ContainerFormat>
+                    <TextCodecType Version="Rp0-OYlQioCa" Namespace="VJx6qmR" UserDefinedValue="b">UserDefined</TextCodecType>
+                    <IsPreview>false</IsPreview>
+                    <PreviewDetails>
+                        <PartType LanguageAndScriptCode="es_MX">y</PartType>
+                        <TopLeftCorner>2020765107.022</TopLeftCorner>
+                        <BottomRightCorner>1094539410.974</BottomRightCorner>
+                        <ExpressionType>Informative</ExpressionType>
+                    </PreviewDetails>
+                    <FulfillmentDate>
+                        <FulfillmentDate>2011-11-21</FulfillmentDate>
+                    </FulfillmentDate>
+                    <ConsumerFulfillmentDate>
+                        <FulfillmentDate>2015-01-02</FulfillmentDate>
+                        <ResourceReleaseReference>R4</ResourceReleaseReference>
+                    </ConsumerFulfillmentDate>
+                    <File>
+                        <URL>BLRtWXBO9_Cx3IVy</URL>
+                        <HashSum>
+                            <HashSum>U1Y9</HashSum>
+                            <HashSumAlgorithmType Namespace="m" UserDefinedValue="butGcAcQvt_C">SHA</HashSumAlgorithmType>
+                        </HashSum>
+                    </File>
+                    <Fingerprint>
+                        <Fingerprint>R</Fingerprint>
+                        <FingerprintAlgorithmType Namespace="IJSo8X7L-QqMtHBD-kJd5xD" UserDefinedValue="PI5pFfw.0MJhSiR9Ap-">UserDefined</FingerprintAlgorithmType>
+                        <FingerprintAlgorithmVersion>Csv6gJODQ-3.j</FingerprintAlgorithmVersion>
+                        <FingerprintAlgorithmParameter>_js5Y2E</FingerprintAlgorithmParameter>
+                    </Fingerprint>
+                </TechnicalTextDetails>
+            </TextDetailsByTerritory>
+        </Text>
+        <SheetMusic IsUpdated="true" LanguageAndScriptCode="en_US">
+            <SheetMusicType Namespace="y1e9iQ0Ws3qkid" UserDefinedValue="e24ioiqOSJqdG4E_mFjIDx">cYMsGzWjzxBAKah1S8hyRYYdPW9IYv</SheetMusicType>
+            <IsArtistRelated>true</IsArtistRelated>
+            <SheetMusicId IsReplaced="true">
+                <ISMN>kP_62Vc23GffETKmWLRM</ISMN>
+                <ProprietaryId Namespace="alo72OT1rgLf">wxj08.kLTHZmjkna0qCMa7yC9Hm.W</ProprietaryId>
+            </SheetMusicId>
+            <IndirectSheetMusicId IsReplaced="false">
+                <ISWC>BIkWe1Xofc7Zbr_Y5bP</ISWC>
+                <OpusNumber>ko2Tsj</OpusNumber>
+                <ComposerCatalogNumber>N6k6LuKUdkDNKHV5VhUQN-</ComposerCatalogNumber>
+                <ProprietaryId Namespace="bu_5BmpAgf.c3">oQ1eSzQlGiq_IPEY9_Y8R</ProprietaryId>
+            </IndirectSheetMusicId>
+            <ResourceReference>AZ</ResourceReference>
+            <LanguageOfLyrics>is</LanguageOfLyrics>
+            <RightsAgreementId>
+                <MWLI>crPoX7scQG9nGUiy4l</MWLI>
+                <ProprietaryId Namespace="F3LbwCop.ZsF">Olwc83rfnUNfYuE849Q5oCO8NUb48</ProprietaryId>
+            </RightsAgreementId>
+            <ResourceMusicalWorkReferenceList>
+                <ResourceMusicalWorkReference>
+                    <SequenceNumber>-1930928759</SequenceNumber>
+                    <DurationUsed>P0Y6M3DT1H10M0S</DurationUsed>
+                    <IsFragment>false</IsFragment>
+                    <ResourceMusicalWorkReference>W-</ResourceMusicalWorkReference>
+                </ResourceMusicalWorkReference>
+            </ResourceMusicalWorkReferenceList>
+            <ResourceContainedResourceReferenceList>
+                <ResourceContainedResourceReference>
+                    <ResourceContainedResourceReference>AZ</ResourceContainedResourceReference>
+                    <DurationUsed>P4Y3M8DT1H10M0S</DurationUsed>
+                    <StartPoint>119418913.242</StartPoint>
+                    <Purpose Namespace="Q9wqePPsR" UserDefinedValue="rvUHVWlT_AfAl6N">UserDefined</Purpose>
+                </ResourceContainedResourceReference>
+            </ResourceContainedResourceReferenceList>
+            <ReferenceTitle LanguageAndScriptCode="en_US">
+                <TitleText LanguageAndScriptCode="en_US">YEXhFfuHMNfUm</TitleText>
+                <SubTitle LanguageAndScriptCode="es_MX">fX3cp2</SubTitle>
+            </ReferenceTitle>
+            <CreationDate IsApproximate="false" IsBefore="true" IsAfter="false" TerritoryCode="MX" LocationDescription="ob" LanguageAndScriptCode="es_MX">2015-04-27</CreationDate>
+            <SheetMusicDetailsByTerritory LanguageAndScriptCode="es_MX">
+                <TerritoryCode>MX</TerritoryCode>
+                <Title LanguageAndScriptCode="es_MX" TitleType="FirstLineOfText">
+                    <TitleText LanguageAndScriptCode="en_US">zvopqnIuNdRHesoq90H</TitleText>
+                    <SubTitle LanguageAndScriptCode="es_MX" SubTitleType="Ngy">JFqHVd-zvmb</SubTitle>
+                </Title>
+                <ResourceContributor SequenceNumber="-269908650">
+                    <PartyId Namespace="vE1l4Y_zb7fOdBWreSV" IsDPID="false" IsISNI="false">Szhjs0xfZu8TA49UdcO_6M0l-U</PartyId>
+                    <ResourceContributorRole Namespace="h4Cj8QE.El.N" UserDefinedValue="PX7-etDsJC1Fz-jmLFdO">FilmEditor</ResourceContributorRole>
+                    <IsFeaturedArtist>false</IsFeaturedArtist>
+                    <IsContractedArtist>false</IsContractedArtist>
+                    <TerritoryOfPerformance>TL</TerritoryOfPerformance>
+                    <InstrumentType>F-UPhpmPV-22Xgq9xR5lq8_gRKH</InstrumentType>
+                    <ArtistDelegatedUsageRights>
+                        <UseType Namespace="yo" UserDefinedValue="GtKMN">AsPerContract</UseType>
+                        <UserInterfaceType Namespace="RlTqJ-ZpoQa3GJYxAEcQ" UserDefinedValue="yp_kqTHi9BbrVFb4i">Kiosk</UserInterfaceType>
+                        <PeriodOfRightsDelegation>
+                            <StartDate>2015-01-02</StartDate>
+                            <EndDate>2015-01-02</EndDate>
+                        </PeriodOfRightsDelegation>
+                        <TerritoryOfRightsDelegation>AT</TerritoryOfRightsDelegation>
+                        <MembershipType>WorldwideMember</MembershipType>
+                    </ArtistDelegatedUsageRights>
+                    <Sex>Male</Sex>
+                    <DateAndPlaceOfBirth IsApproximate="false" IsBefore="false" IsAfter="false" TerritoryCode="US" LocationDescription="_4Zh"
+                         LanguageAndScriptCode="es_MX">2015-01-06Z</DateAndPlaceOfBirth>
+                    <DateAndPlaceOfDeath IsApproximate="true" IsBefore="true" IsAfter="true" TerritoryCode="MX" LocationDescription="n" LanguageAndScriptCode="en_US">2015-04-13Z</DateAndPlaceOfDeath>
+                    <PrimaryRole Namespace="ZV-RfylniTi35XR7vhk" UserDefinedValue="zwNHGIKvUXMf-fye90OgRc">StudioMusician</PrimaryRole>
+                    <PrimaryInstrumentType>ssqsRypzbmMT4GGXaXLFu6DT</PrimaryInstrumentType>
+                    <GoverningAgreementType Namespace="gXMYEdAXQF9Ll7wDZ" UserDefinedValue="lQIjQkcxGLJaDlCRz">UserDefined</GoverningAgreementType>
+                    <ContactInformation>
+                        <EmailAddress>AGEXm8</EmailAddress>
+                        <PhoneNumber>pdVxNZEfsSg</PhoneNumber>
+                        <FaxNumber>d4</FaxNumber>
+                    </ContactInformation>
+                    <TerritoryOfResidency>RW</TerritoryOfResidency>
+                    <AdditionalRoles Namespace="iQYhMRk0J1SsmQxvcK" UserDefinedValue="tzTjHlZ1ZALqX_Foytb7G2j">Adapter</AdditionalRoles>
+                    <Genre LanguageAndScriptCode="en_US">
+                        <GenreText LanguageAndScriptCode="es_MX">WnMHa8Z</GenreText>
+                        <SubGenre LanguageAndScriptCode="es_MX">ULlhQQ4zcprldv_tPdHNb</SubGenre>
+                    </Genre>
+                    <Membership>
+                        <Organization>
+                            <PartyName LanguageAndScriptCode="en_US">
+                                <FullName LanguageAndScriptCode="es_MX">_7oW_zxkgYtVXs</FullName>
+                                <FullNameAsciiTranscribed>KlYBBlRr.Dg</FullNameAsciiTranscribed>
+                                <FullNameIndexed LanguageAndScriptCode="en_US">p0OuQChKXF</FullNameIndexed>
+                                <NamesBeforeKeyName LanguageAndScriptCode="es_MX">bVsNTN.iYyHTi1llTHmVCl</NamesBeforeKeyName>
+                                <KeyName LanguageAndScriptCode="en_US">XVH</KeyName>
+                                <NamesAfterKeyName LanguageAndScriptCode="en_US">CxPv-sQMpJjo0.tRrQ7</NamesAfterKeyName>
+                                <AbbreviatedName LanguageAndScriptCode="es_MX">i.G6_gKvKlw34Fziwg</AbbreviatedName>
+                            </PartyName>
+                            <PartyId Namespace="mZIJ.zzM9Je-CCvrYVD9" IsDPID="true" IsISNI="true">Re6W-J1QQcYL</PartyId>
+                        </Organization>
+                        <MembershipType>RegionalMember</MembershipType>
+                        <StartDate>2015-01-02</StartDate>
+                        <EndDate>2015-01-02</EndDate>
+                    </Membership>
+                </ResourceContributor>
+                <IndirectResourceContributor SequenceNumber="-1410727050">
+                    <PartyName LanguageAndScriptCode="en_US">
+                        <FullName LanguageAndScriptCode="es_MX">NytGZG</FullName>
+                        <FullNameAsciiTranscribed>zu4K2kIHGZrP</FullNameAsciiTranscribed>
+                        <FullNameIndexed LanguageAndScriptCode="en_US">pYxHglJFUb2HGXD</FullNameIndexed>
+                        <NamesBeforeKeyName LanguageAndScriptCode="en_US">sBSvr5xeeuvWid-Y4laar1</NamesBeforeKeyName>
+                        <KeyName LanguageAndScriptCode="en_US">YfsXfGQo.A3rIuCmZ</KeyName>
+                        <NamesAfterKeyName LanguageAndScriptCode="en_US">QzUuMugEHLn-</NamesAfterKeyName>
+                        <AbbreviatedName LanguageAndScriptCode="en_US">gmmDzQdzWQmFoO3FkGo</AbbreviatedName>
+                    </PartyName>
+                    <PartyId Namespace="q3ZvZXDH1M" IsDPID="true" IsISNI="false">OgJr8Ov</PartyId>
+                    <IndirectResourceContributorRole Namespace="qvF.OP" UserDefinedValue="PhD7LUMQnaOdyfOXH.zotfUdwA">ComposerLyricist</IndirectResourceContributorRole>
+                </IndirectResourceContributor>
+                <CLine LanguageAndScriptCode="en_US">
+                    <Year>2018</Year>
+                    <CLineCompany>H9m6qwR2zABq8BUPU</CLineCompany>
+                    <CLineText>xIK9bEJ3yfIy_ZPFvac1</CLineText>
+                </CLine>
+                <CourtesyLine LanguageAndScriptCode="es_MX">R7r4LdajX</CourtesyLine>
+                <OriginalResourceReleaseDate IsApproximate="false" IsBefore="false" IsAfter="true" TerritoryCode="MX" LocationDescription="brhr2Hq-.1fizCX78VtnUG4d19Vj"
+                     LanguageAndScriptCode="en_US">2015-11-01</OriginalResourceReleaseDate>
+                <FulfillmentDate>
+                    <FulfillmentDate>2011-11-21</FulfillmentDate>
+                </FulfillmentDate>
+                <Genre LanguageAndScriptCode="es_MX">
+                    <GenreText LanguageAndScriptCode="en_US">rw6PWaT81n5-xDSl3TzZL0gj</GenreText>
+                    <SubGenre LanguageAndScriptCode="en_US">ec-</SubGenre>
+                </Genre>
+                <ParentalWarningType Namespace="XBUmm" UserDefinedValue="P">UserDefined</ParentalWarningType>
+                <TechnicalSheetMusicDetails LanguageAndScriptCode="es_MX">
+                    <TechnicalResourceDetailsReference>T85</TechnicalResourceDetailsReference>
+                    <DrmPlatformType Version="BEId1DhzdUzjGBB3eUvlrS2J7mk1VI" Namespace="xGuOSvfo" UserDefinedValue="bdT">OMA</DrmPlatformType>
+                    <ContainerFormat Namespace="pajk" UserDefinedValue="ldIruuLJs">AIFF</ContainerFormat>
+                    <SheetMusicCodecType Version="ohoOL-adkrUNhhNmL9vcwswtV1_" Namespace="ed3.ncDhn2032_.DJg1e" UserDefinedValue="QCYuWVz2RWcQgL_-ZQ1Mjj4b1G">ADR.t-JnGQ1DUhrGZlEN3BNJ595cE</SheetMusicCodecType>
+                    <IsPreview>true</IsPreview>
+                    <PreviewDetails>
+                        <PartType LanguageAndScriptCode="en_US">Kg6JVlcr3Szxlom23j</PartType>
+                        <TopLeftCorner>486929962.005</TopLeftCorner>
+                        <BottomRightCorner>-2037088088.555</BottomRightCorner>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </PreviewDetails>
+                    <FulfillmentDate>
+                        <FulfillmentDate>2015-01-02</FulfillmentDate>
+                    </FulfillmentDate>
+                    <ConsumerFulfillmentDate>
+                        <FulfillmentDate>2015-01-02</FulfillmentDate>
+                        <ResourceReleaseReference>RL318</ResourceReleaseReference>
+                    </ConsumerFulfillmentDate>
+                    <File>
+                        <URL>G</URL>
+                        <HashSum>
+                            <HashSum>gAK.ndmO..35BBR</HashSum>
+                            <HashSumAlgorithmType Namespace="pAnRiIyEy" UserDefinedValue="pdrO_YP-fM6j3uz">MD5</HashSumAlgorithmType>
+                        </HashSum>
+                    </File>
+                    <Fingerprint>
+                        <Fingerprint>gSqHj</Fingerprint>
+                        <FingerprintAlgorithmType Namespace="kpuq3T.ubTf" UserDefinedValue="obHFp">UserDefined</FingerprintAlgorithmType>
+                        <FingerprintAlgorithmVersion>Q</FingerprintAlgorithmVersion>
+                        <FingerprintAlgorithmParameter>tLzfl.lVGxSHi</FingerprintAlgorithmParameter>
+                    </Fingerprint>
+                </TechnicalSheetMusicDetails>
+            </SheetMusicDetailsByTerritory>
+        </SheetMusic>
+        <Software IsUpdated="true" LanguageAndScriptCode="en_US">
+            <SoftwareType Namespace="B9DqaGhH" UserDefinedValue="BPF">InteractiveBooklet</SoftwareType>
+            <IsArtistRelated>false</IsArtistRelated>
+            <SoftwareId IsReplaced="false">
+                <ProprietaryId Namespace="Be6TnQEnTBdLm3uxRmiS">Q.yeNeNSieW</ProprietaryId>
+            </SoftwareId>
+            <IndirectSoftwareId IsReplaced="true">
+                <ISWC>haMsVigcL0w6_khD4fLfMU</ISWC>
+                <OpusNumber>Tk5jFMYEXZ3.a</OpusNumber>
+                <ComposerCatalogNumber>YswHzLxAfxmM901aqIDIWcuRo</ComposerCatalogNumber>
+                <ProprietaryId Namespace="Oivkk1m2xllX">U6.jmyN</ProprietaryId>
+            </IndirectSoftwareId>
+            <ResourceReference>A-q</ResourceReference>
+            <ResourceMusicalWorkReferenceList>
+                <ResourceMusicalWorkReference>
+                    <SequenceNumber>-1782504875</SequenceNumber>
+                    <DurationUsed>P6Y6M9DT1H10M0S</DurationUsed>
+                    <IsFragment>true</IsFragment>
+                    <ResourceMusicalWorkReference>We</ResourceMusicalWorkReference>
+                </ResourceMusicalWorkReference>
+            </ResourceMusicalWorkReferenceList>
+            <ResourceContainedResourceReferenceList>
+                <ResourceContainedResourceReference>
+                    <ResourceContainedResourceReference>A-</ResourceContainedResourceReference>
+                    <DurationUsed>P8Y0M2DT1H10M0S</DurationUsed>
+                    <StartPoint>556141103.556</StartPoint>
+                    <Purpose Namespace="CkfP_JCBNzS82.VjhI" UserDefinedValue="cXXByGnwNq_NV2-">ForegroundMusic</Purpose>
+                </ResourceContainedResourceReference>
+            </ResourceContainedResourceReferenceList>
+            <Title LanguageAndScriptCode="en_US" TitleType="IncorrectTitle">
+                <TitleText LanguageAndScriptCode="es_MX">yqrCtR.DBUQ0qt1Z6a10AFtsg</TitleText>
+                <SubTitle LanguageAndScriptCode="en_US" SubTitleType="G8XzQszzFlqed6nSwi58Sxa4Bv">eId3Tv65ZEp5ZGsDz7u</SubTitle>
+            </Title>
+            <CreationDate IsApproximate="true" IsBefore="true" IsAfter="false" TerritoryCode="MX" LocationDescription="qO1" LanguageAndScriptCode="es_MX">2016-01-30</CreationDate>
+            <SoftwareDetailsByTerritory LanguageAndScriptCode="en_US">
+                <TerritoryCode>MX</TerritoryCode>
+                <ResourceContributor SequenceNumber="1404847633">
+                    <PartyId Namespace="vEtw" IsDPID="true" IsISNI="true">ISbFUA6</PartyId>
+                    <ResourceContributorRole Namespace="wZ8yugZ3" UserDefinedValue="a26TX5iDIBlvUo8DJ7">Choir</ResourceContributorRole>
+                    <IsFeaturedArtist>false</IsFeaturedArtist>
+                    <IsContractedArtist>false</IsContractedArtist>
+                    <TerritoryOfPerformance>WF</TerritoryOfPerformance>
+                    <InstrumentType>Qg_fhoEE2EwHf8wyZr0OKtDxIkVtF</InstrumentType>
+                    <ArtistDelegatedUsageRights>
+                        <UseType Namespace="fx1fqQb5H0gIHt9MM-SF" UserDefinedValue="LzF2RPXpShkokN8">Stream</UseType>
+                        <UserInterfaceType Namespace="stTtU9Xu8WWbLyJeVBsO3EeqBx8" UserDefinedValue="kok">RemoteStorageJukebox</UserInterfaceType>
+                        <PeriodOfRightsDelegation>
+                            <StartDate>2015-01-02</StartDate>
+                            <EndDate>2015-01-02</EndDate>
+                        </PeriodOfRightsDelegation>
+                        <TerritoryOfRightsDelegation>IQ</TerritoryOfRightsDelegation>
+                        <MembershipType>NationalMember</MembershipType>
+                    </ArtistDelegatedUsageRights>
+                    <Sex>Female</Sex>
+                    <DateAndPlaceOfBirth IsApproximate="true" IsBefore="true" IsAfter="false" TerritoryCode="US" LocationDescription="M3Fl72SdGkhjd.CC2Pw4.Jy"
+                         LanguageAndScriptCode="es_MX">2014-07-29Z</DateAndPlaceOfBirth>
+                    <DateAndPlaceOfDeath IsApproximate="true" IsBefore="true" IsAfter="true" TerritoryCode="US" LocationDescription="_ahDhObdN4j65ZhMXOgByTTpeBFKqZ"
+                         LanguageAndScriptCode="en_US">2014-12-07</DateAndPlaceOfDeath>
+                    <PrimaryRole Namespace="kBETLY.9je5hudOxROj..P.Anr" UserDefinedValue="p5eEUNTVQdQdokr3guTl">Lyricist</PrimaryRole>
+                    <PrimaryInstrumentType>qLyBor-zY-CImmmATS7uK0VO</PrimaryInstrumentType>
+                    <GoverningAgreementType Namespace="cQxfWjBg" UserDefinedValue="ADsqyIcI3Zproye9iSTuWQm1acrYmF">UserDefined</GoverningAgreementType>
+                    <ContactInformation>
+                        <EmailAddress>Xi-sL</EmailAddress>
+                        <PhoneNumber>GQB</PhoneNumber>
+                        <FaxNumber>yT6K</FaxNumber>
+                    </ContactInformation>
+                    <TerritoryOfResidency>BE</TerritoryOfResidency>
+                    <AdditionalRoles Namespace="n9BZFKVQL.g470hp9_7cqJ" UserDefinedValue="aV0CIpLy2y">FeaturedArtist</AdditionalRoles>
+                    <Genre LanguageAndScriptCode="es_MX">
+                        <GenreText LanguageAndScriptCode="es_MX">YPo8._ia_KwIZm</GenreText>
+                        <SubGenre LanguageAndScriptCode="en_US">WPav_sapVk9.uVv3wY</SubGenre>
+                    </Genre>
+                    <Membership>
+                        <Organization>
+                            <PartyName LanguageAndScriptCode="es_MX">
+                                <FullName LanguageAndScriptCode="es_MX">JaVI5N6pDJvfX0-1</FullName>
+                                <FullNameAsciiTranscribed>u_Bhjebt</FullNameAsciiTranscribed>
+                                <FullNameIndexed LanguageAndScriptCode="en_US">IX_ZEeFaQ_eJZ14qEr6XOF</FullNameIndexed>
+                                <NamesBeforeKeyName LanguageAndScriptCode="en_US">Q6</NamesBeforeKeyName>
+                                <KeyName LanguageAndScriptCode="en_US">yE5TbeHXYYkgk0jeXkKf8TflazEz</KeyName>
+                                <NamesAfterKeyName LanguageAndScriptCode="en_US">gJGXB_hV-</NamesAfterKeyName>
+                                <AbbreviatedName LanguageAndScriptCode="en_US">hqZBcLZd4ugm.JCU0EsOR</AbbreviatedName>
+                            </PartyName>
+                            <PartyId Namespace="dLg4XlbnVW7p1MSCb.c" IsDPID="true" IsISNI="true">EjdjsXIXNl9</PartyId>
+                        </Organization>
+                        <MembershipType>RegionalMember</MembershipType>
+                        <StartDate>2011-11-21</StartDate>
+                        <EndDate>2011-11-21</EndDate>
+                    </Membership>
+                </ResourceContributor>
+                <IndirectResourceContributor SequenceNumber="897322672">
+                    <PartyName LanguageAndScriptCode="es_MX">
+                        <FullName LanguageAndScriptCode="es_MX">s</FullName>
+                        <FullNameAsciiTranscribed>oWW6Wq1F.D6H</FullNameAsciiTranscribed>
+                        <FullNameIndexed LanguageAndScriptCode="en_US">rZ8VZDmMBfW46qkG4</FullNameIndexed>
+                        <NamesBeforeKeyName LanguageAndScriptCode="en_US">wiuWAEf6QU</NamesBeforeKeyName>
+                        <KeyName LanguageAndScriptCode="es_MX">iVkoDLC1hRzysQ</KeyName>
+                        <NamesAfterKeyName LanguageAndScriptCode="es_MX">nLFS5QWuc.df-R.Mn8VtikmkD</NamesAfterKeyName>
+                        <AbbreviatedName LanguageAndScriptCode="es_MX">mHZwWPbLSx98GYi</AbbreviatedName>
+                    </PartyName>
+                    <PartyId Namespace="A0LEW0j0" IsDPID="false" IsISNI="false">LgNSPuLAIgDnJdhCB5JW6t4bN</PartyId>
+                    <IndirectResourceContributorRole Namespace="eNKVbD.EXtVl5.YNRf9KvCG" UserDefinedValue="u_Sed1">UserDefined</IndirectResourceContributorRole>
+                </IndirectResourceContributor>
+                <PLine LanguageAndScriptCode="es_MX" PLineType="RemasteringPLine">
+                    <Year>2018</Year>
+                    <PLineCompany>r-wFw68-</PLineCompany>
+                    <PLineText>gTaCP5ZuTUGoUVWR6Ej2VGTV</PLineText>
+                </PLine>
+                <CLine LanguageAndScriptCode="en_US">
+                    <Year>2018</Year>
+                    <CLineCompany>gJq7Kuq-rqm7xWWKepn2.xdgwfTE</CLineCompany>
+                    <CLineText>BiJPb5jSNo0gEU7NR</CLineText>
+                </CLine>
+                <CourtesyLine LanguageAndScriptCode="es_MX">Lml</CourtesyLine>
+                <OriginalResourceReleaseDate IsApproximate="true" IsBefore="true" IsAfter="true" TerritoryCode="MX" LocationDescription="A" LanguageAndScriptCode="es_MX">2015-12-04</OriginalResourceReleaseDate>
+                <FulfillmentDate>
+                    <FulfillmentDate>2015-01-02</FulfillmentDate>
+                </FulfillmentDate>
+                <Keywords LanguageAndScriptCode="es_MX">SasVi_JIx15k4-.kvzaUM</Keywords>
+                <Synopsis LanguageAndScriptCode="es_MX">xkqfls</Synopsis>
+                <Genre LanguageAndScriptCode="es_MX">
+                    <GenreText LanguageAndScriptCode="es_MX">SxN</GenreText>
+                    <SubGenre LanguageAndScriptCode="es_MX">k7QTni5BYMWon42iBnruQ8</SubGenre>
+                </Genre>
+                <ParentalWarningType Namespace="gx9dUBBlxZ" UserDefinedValue="O8">UserDefined</ParentalWarningType>
+                <TechnicalSoftwareDetails LanguageAndScriptCode="en_US">
+                    <TechnicalResourceDetailsReference>Td</TechnicalResourceDetailsReference>
+                    <DrmPlatformType Version="Ih8eOkZOqPaSTMnJhoCGSqUdgy" Namespace="RHUHtL" UserDefinedValue="ifKbO8M">Unknown</DrmPlatformType>
+                    <OperatingSystemType Version="QmMTsWoZ_S1fUTO" Namespace="B9" UserDefinedValue="ExS5MU4qktXyUAoRuSdDkk">MsWindows</OperatingSystemType>
+                    <IsPreview>false</IsPreview>
+                    <PreviewDetails>
+                        <PartType LanguageAndScriptCode="es_MX">e7IcjN6</PartType>
+                        <TopLeftCorner>1511909783.925</TopLeftCorner>
+                        <BottomRightCorner>760996235.893</BottomRightCorner>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </PreviewDetails>
+                    <FulfillmentDate>
+                        <FulfillmentDate>2015-01-02</FulfillmentDate>
+                    </FulfillmentDate>
+                    <ConsumerFulfillmentDate>
+                        <FulfillmentDate>2015-01-02</FulfillmentDate>
+                        <ResourceReleaseReference>R-</ResourceReleaseReference>
+                    </ConsumerFulfillmentDate>
+                    <File>
+                        <URL>sXE5o9Vv5Jb</URL>
+                        <HashSum>
+                            <HashSum>vVh9S</HashSum>
+                            <HashSumAlgorithmType Namespace="TPFnLEBvC8jsvT7k" UserDefinedValue="Ut7BUHkNG2IwDqJ3DA">UserDefined</HashSumAlgorithmType>
+                        </HashSum>
+                    </File>
+                    <Fingerprint>
+                        <Fingerprint>tMJXWz.Cf</Fingerprint>
+                        <FingerprintAlgorithmType Namespace="THqmUjR.yRN.5Olrl6AEmHVO" UserDefinedValue="BTFS9_sOL95aVZzz2gj">UserDefined</FingerprintAlgorithmType>
+                        <FingerprintAlgorithmVersion>XGWi</FingerprintAlgorithmVersion>
+                        <FingerprintAlgorithmParameter>S</FingerprintAlgorithmParameter>
+                    </Fingerprint>
+                </TechnicalSoftwareDetails>
+            </SoftwareDetailsByTerritory>
+        </Software>
+        <UserDefinedResource IsUpdated="false" LanguageAndScriptCode="en_US">
+            <UserDefinedResourceType Namespace="s-9Put">ezcjjH</UserDefinedResourceType>
+            <IsArtistRelated>true</IsArtistRelated>
+            <UserDefinedResourceId IsReplaced="false">
+                <ProprietaryId Namespace="bvRW_uWmZF3AQ31NFBreLXGdB3te">cn6OXJf5rGnGsa</ProprietaryId>
+            </UserDefinedResourceId>
+            <IndirectUserDefinedResourceId IsReplaced="false">
+                <ISWC>KWf0oV</ISWC>
+                <OpusNumber>eLQrbM9C</OpusNumber>
+                <ComposerCatalogNumber>NetQoNvI46W3F5xvBtIfiEBuduX</ComposerCatalogNumber>
+                <ProprietaryId Namespace="D3kJ6HS0c.S_yZ_">GrB</ProprietaryId>
+            </IndirectUserDefinedResourceId>
+            <ResourceReference>A-</ResourceReference>
+            <ResourceMusicalWorkReferenceList>
+                <ResourceMusicalWorkReference>
+                    <SequenceNumber>969637946</SequenceNumber>
+                    <DurationUsed>P0Y1M7DT1H10M0S</DurationUsed>
+                    <IsFragment>true</IsFragment>
+                    <ResourceMusicalWorkReference>W_4_B</ResourceMusicalWorkReference>
+                </ResourceMusicalWorkReference>
+            </ResourceMusicalWorkReferenceList>
+            <ResourceContainedResourceReferenceList>
+                <ResourceContainedResourceReference>
+                    <ResourceContainedResourceReference>A_</ResourceContainedResourceReference>
+                    <DurationUsed>P9Y1M6DT1H10M0S</DurationUsed>
+                    <StartPoint>-840958527.198</StartPoint>
+                    <Purpose Namespace="rlGGetVC6mcqEtZrx" UserDefinedValue="lLcm6DnqWvFmFguz">ChannelTrailerMusic</Purpose>
+                </ResourceContainedResourceReference>
+            </ResourceContainedResourceReferenceList>
+            <Title LanguageAndScriptCode="en_US" TitleType="TitleAsPart">
+                <TitleText LanguageAndScriptCode="en_US">wN4umrtH.fV2</TitleText>
+                <SubTitle LanguageAndScriptCode="en_US" SubTitleType="nTq.wP18tJPJawABVtwsAj9n">bb_Y51joTV3HyclVeMWIRZCAvq</SubTitle>
+            </Title>
+            <UserDefinedValue Namespace="LBgVSDCL" Description="CNH5wMSepQ" LanguageAndScriptCode="es_MX">wuV6x55P9I20FcvWN</UserDefinedValue>
+            <UserDefinedResourceDetailsByTerritory LanguageAndScriptCode="es_MX">
+                <ExcludedTerritoryCode>BI</ExcludedTerritoryCode>
+                <ResourceContributor SequenceNumber="-1192642640">
+                    <PartyId Namespace="dDcQgFhClCP.7bU" IsDPID="false" IsISNI="true">lqBHdzAyHjg_YoMR94Sns</PartyId>
+                    <ResourceContributorRole Namespace="y5HbG" UserDefinedValue="URV972wJQ">NewspaperPublisher</ResourceContributorRole>
+                    <IsFeaturedArtist>false</IsFeaturedArtist>
+                    <IsContractedArtist>false</IsContractedArtist>
+                    <TerritoryOfPerformance>PA</TerritoryOfPerformance>
+                    <InstrumentType>qTet</InstrumentType>
+                    <ArtistDelegatedUsageRights>
+                        <UseType Namespace="rd9vjFLYX0zY6f" UserDefinedValue="o7">NonInteractiveStream</UseType>
+                        <UserInterfaceType Namespace="kj9t-.y.suywfQxDXFBe2xvAD" UserDefinedValue="D5p8W.zLZsVQaut">ConnectedDevice</UserInterfaceType>
+                        <PeriodOfRightsDelegation>
+                            <StartDate>2015-01-02</StartDate>
+                            <EndDate>2015-01-02</EndDate>
+                        </PeriodOfRightsDelegation>
+                        <TerritoryOfRightsDelegation>Worldwide</TerritoryOfRightsDelegation>
+                        <MembershipType>WorldwideMember</MembershipType>
+                    </ArtistDelegatedUsageRights>
+                    <Sex>Female</Sex>
+                    <DateAndPlaceOfBirth IsApproximate="true" IsBefore="false" IsAfter="false" TerritoryCode="MX" LocationDescription="aup5Mu3-0Zi_Cg7F2I7g"
+                         LanguageAndScriptCode="en_US">2015-08-25</DateAndPlaceOfBirth>
+                    <DateAndPlaceOfDeath IsApproximate="false" IsBefore="true" IsAfter="true" TerritoryCode="MX" LocationDescription="jqXYCD3l"
+                         LanguageAndScriptCode="es_MX">2015-02-28Z</DateAndPlaceOfDeath>
+                    <PrimaryRole Namespace="N2mYA0ky5XwwEFG" UserDefinedValue="bJWpayGLn_X70N1J3B.8N6sWonXW0F">Unknown</PrimaryRole>
+                    <PrimaryInstrumentType>xZysZxWuUJYacb</PrimaryInstrumentType>
+                    <GoverningAgreementType Namespace="W_hkNt3YOy7" UserDefinedValue="XCoqX">UserDefined</GoverningAgreementType>
+                    <ContactInformation>
+                        <EmailAddress>QBsYqo4O</EmailAddress>
+                        <PhoneNumber>nZ8sOmwE0C</PhoneNumber>
+                        <FaxNumber>zXyGtJhILfbJn_CtzwAza1VQSb</FaxNumber>
+                    </ContactInformation>
+                    <TerritoryOfResidency>ST</TerritoryOfResidency>
+                    <AdditionalRoles Namespace="tsA7uCwF4" UserDefinedValue="VYG_2bMXCce">FilmDirector</AdditionalRoles>
+                    <Genre LanguageAndScriptCode="es_MX">
+                        <GenreText LanguageAndScriptCode="es_MX">WTR</GenreText>
+                        <SubGenre LanguageAndScriptCode="en_US">zZdi7myk</SubGenre>
+                    </Genre>
+                    <Membership>
+                        <Organization>
+                            <PartyId Namespace="v1yEAC" IsDPID="false" IsISNI="false">yWISCjHAajnYXWALmt7cP_rA.iL</PartyId>
+                        </Organization>
+                        <MembershipType>RegionalMember</MembershipType>
+                        <StartDate>2015-01-02</StartDate>
+                        <EndDate>2011-11-21</EndDate>
+                    </Membership>
+                </ResourceContributor>
+                <IndirectResourceContributor SequenceNumber="2142754972">
+                    <PartyName LanguageAndScriptCode="en_US">
+                        <FullName LanguageAndScriptCode="en_US">I3ThRdRCoPAW4SPLIlCwow8.4</FullName>
+                        <FullNameAsciiTranscribed>pZcSwwqHuwmbYGoTqTB</FullNameAsciiTranscribed>
+                        <FullNameIndexed LanguageAndScriptCode="es_MX">z4AC7J5</FullNameIndexed>
+                        <NamesBeforeKeyName LanguageAndScriptCode="es_MX">DfK-elO</NamesBeforeKeyName>
+                        <KeyName LanguageAndScriptCode="es_MX">k4Fklf7di.15q4FLuv2qF</KeyName>
+                        <NamesAfterKeyName LanguageAndScriptCode="es_MX">R8dqKGHc2104QaGuxyLaB2W3tO</NamesAfterKeyName>
+                        <AbbreviatedName LanguageAndScriptCode="en_US">spCd5FpGbORc1</AbbreviatedName>
+                    </PartyName>
+                    <PartyId Namespace="DxWwrK9iaF9oVMnCX-B" IsDPID="false" IsISNI="false">injU8RemZqXiecd</PartyId>
+                    <IndirectResourceContributorRole Namespace="yDw5lovE." UserDefinedValue="sBs">Adapter</IndirectResourceContributorRole>
+                </IndirectResourceContributor>
+                <UserDefinedValue Namespace="cd2IhSdxDYSqqlp" Description="tzV9nlkzJQ8D6xQOo" LanguageAndScriptCode="en_US">l7boXSd4FDXH</UserDefinedValue>
+                <PLine LanguageAndScriptCode="es_MX" PLineType="OriginalPLine">
+                    <Year>2018</Year>
+                    <PLineCompany>UyuVWd</PLineCompany>
+                    <PLineText>m</PLineText>
+                </PLine>
+                <CLine LanguageAndScriptCode="es_MX">
+                    <Year>2013</Year>
+                    <CLineCompany>WJHE</CLineCompany>
+                    <CLineText>DDWfh__4E-2FzupE</CLineText>
+                </CLine>
+                <OriginalResourceReleaseDate IsApproximate="true" IsBefore="true" IsAfter="false" TerritoryCode="US" LocationDescription="sCjIZ1KGACy"
+                     LanguageAndScriptCode="es_MX">2014-06-24</OriginalResourceReleaseDate>
+                <FulfillmentDate>
+                    <FulfillmentDate>2011-11-21</FulfillmentDate>
+                </FulfillmentDate>
+                <Keywords LanguageAndScriptCode="en_US">hX</Keywords>
+                <Synopsis LanguageAndScriptCode="en_US">wKPC</Synopsis>
+                <Genre LanguageAndScriptCode="es_MX">
+                    <GenreText LanguageAndScriptCode="en_US">QSSagZ8l8pS</GenreText>
+                    <SubGenre LanguageAndScriptCode="en_US">gmWk_4WD6</SubGenre>
+                </Genre>
+                <ParentalWarningType Namespace="q3kBflo5Ihc" UserDefinedValue="A4eOcA7B">UserDefined</ParentalWarningType>
+                <TechnicalUserDefinedResourceDetails LanguageAndScriptCode="en_US">
+                    <TechnicalResourceDetailsReference>Tea</TechnicalResourceDetailsReference>
+                    <UserDefinedValue Namespace="LZ8lQFW9cfcjW3WUcJ6UBtERJ7H" Description="Oy9" LanguageAndScriptCode="en_US">LpFK9E1VnPdvO</UserDefinedValue>
+                    <IsPreview>false</IsPreview>
+                    <PreviewDetails>
+                        <PartType LanguageAndScriptCode="en_US">y0FQIpD3kZHft8qcFN8MFObzi</PartType>
+                        <TopLeftCorner>-1198496279.453</TopLeftCorner>
+                        <BottomRightCorner>-718965568.208</BottomRightCorner>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </PreviewDetails>
+                    <FulfillmentDate>
+                        <FulfillmentDate>2011-11-21</FulfillmentDate>
+                    </FulfillmentDate>
+                    <ConsumerFulfillmentDate>
+                        <FulfillmentDate>2011-11-21</FulfillmentDate>
+                        <ResourceReleaseReference>RXV</ResourceReleaseReference>
+                    </ConsumerFulfillmentDate>
+                    <FileAvailabilityDescription LanguageAndScriptCode="en_US">tfLyhLkRNaNUx7pkNQsD</FileAvailabilityDescription>
+                    <Fingerprint>
+                        <Fingerprint>GUe2g644Ng9Lt6Px2G4U4biPgV</Fingerprint>
+                        <FingerprintAlgorithmType Namespace="teN67ol3xbkEDSfHeFm-jZ7PaNY" UserDefinedValue="BXIclV8FACioYSZ0PvB">UserDefined</FingerprintAlgorithmType>
+                        <FingerprintAlgorithmVersion>dFQPCgPT1jO</FingerprintAlgorithmVersion>
+                        <FingerprintAlgorithmParameter>FI.K42lXY32ugTFu6f1YTGFwEcW</FingerprintAlgorithmParameter>
+                    </Fingerprint>
+                </TechnicalUserDefinedResourceDetails>
+            </UserDefinedResourceDetailsByTerritory>
+        </UserDefinedResource>
+    </ResourceList>
+    <CollectionList LanguageAndScriptCode="es_MX">
+        <Collection LanguageAndScriptCode="es_MX">
+            <CollectionId IsReplaced="false">
+                <GRid>G</GRid>
+                <ISRC>_xg0GgVwdQlKRQn_R6Bm8Ac5MJeLRK</ISRC>
+                <ISAN>rNIeaaObxHSOBN9Pe9PYuVxrAd</ISAN>
+                <VISAN>kMleCU7HCH8h</VISAN>
+                <ICPN IsEan="false">ApM_iGbd_oRsYxhhSsz</ICPN>
+                <CatalogNumber Namespace="kwQHIbeQyhjB">ektGzjOm9a19fnWrGc0g.D</CatalogNumber>
+                <ProprietaryId Namespace="eYNOUriWCQodQWe-WMU-7e__ohbZo">puLK5C1s-HyoQbnOn_BL</ProprietaryId>
+            </CollectionId>
+            <CollectionType Namespace="Im" UserDefinedValue="Sin6O7WMAtq57.0hbLDRAaIWJ3">MedleySegment</CollectionType>
+            <CollectionReference>Xv</CollectionReference>
+            <Title LanguageAndScriptCode="en_US" TitleType="UserDefined">
+                <TitleText LanguageAndScriptCode="es_MX">WcTalcutDv5m.UoRpfUkyn_NjQjY</TitleText>
+                <SubTitle LanguageAndScriptCode="es_MX" SubTitleType="n7oaa_fk">GDJ.LuwE941EAt</SubTitle>
+            </Title>
+            <Contributor SequenceNumber="-825466798">
+                <PartyId Namespace="LRnDnPygkSRJBTNbaROI5" IsDPID="true" IsISNI="false">cTyAQblK</PartyId>
+                <ResourceContributorRole Namespace="i2g2Sf_LO9wyjSOMqqZPTqx2ec" UserDefinedValue="tj8k43L.hr">FilmDirector</ResourceContributorRole>
+                <IsFeaturedArtist>false</IsFeaturedArtist>
+                <IsContractedArtist>true</IsContractedArtist>
+                <TerritoryOfPerformance>BV</TerritoryOfPerformance>
+                <InstrumentType>SEuPRYkkoH</InstrumentType>
+                <ArtistDelegatedUsageRights>
+                    <UseType Namespace="u_LNUzYCL064IVaF7AkCd" UserDefinedValue="_PiyCANub7vXz9Z2V">PlayInPublic</UseType>
+                    <UserInterfaceType Namespace="v_5W2eojEKazWztRxo2rrfNesuKja" UserDefinedValue="pHYHM3UL">UserDefined</UserInterfaceType>
+                    <PeriodOfRightsDelegation>
+                        <StartDateTime IsApproximate="false" IsBefore="false" IsAfter="false" TerritoryCode="US" LocationDescription="ADIMkUtjJT_4eHMNBc8HjhpT"
+                             LanguageAndScriptCode="es_MX">2015-03-03T00:48:51</StartDateTime>
+                        <EndDateTime IsApproximate="true" IsBefore="false" IsAfter="true" TerritoryCode="MX" LocationDescription="LqwPHCasf2"
+                             LanguageAndScriptCode="es_MX">2014-10-25T00:48:51</EndDateTime>
+                    </PeriodOfRightsDelegation>
+                    <TerritoryOfRightsDelegation>BS</TerritoryOfRightsDelegation>
+                    <MembershipType>NationalMember</MembershipType>
+                </ArtistDelegatedUsageRights>
+                <Sex>Unknown</Sex>
+                <DateAndPlaceOfBirth IsApproximate="true" IsBefore="false" IsAfter="false" TerritoryCode="US" LocationDescription="dX" LanguageAndScriptCode="en_US">2015-09-07</DateAndPlaceOfBirth>
+                <DateAndPlaceOfDeath IsApproximate="true" IsBefore="true" IsAfter="false" TerritoryCode="US" LocationDescription="UJ1ygJb"
+                     LanguageAndScriptCode="en_US">2015-02-01</DateAndPlaceOfDeath>
+                <PrimaryRole Namespace="oSwA5aYHz7CeDQQu.f3U" UserDefinedValue="eMS3aP2CgjfXzT.cafsUjAuxw6piky">Band</PrimaryRole>
+                <PrimaryInstrumentType>l7AFaDHkF_ix8-hKWC</PrimaryInstrumentType>
+                <GoverningAgreementType Namespace="W" UserDefinedValue="Z">UserDefined</GoverningAgreementType>
+                <ContactInformation>
+                    <EmailAddress>chDzChE55MMekebz</EmailAddress>
+                    <PhoneNumber>TfJ2zL1am</PhoneNumber>
+                    <FaxNumber>f</FaxNumber>
+                </ContactInformation>
+                <TerritoryOfResidency>GH</TerritoryOfResidency>
+                <AdditionalRoles Namespace="ZzaiZhFGwOa" UserDefinedValue="UI-ScQd7LPiBs-2m_edG11L9DB849W">MusicPublisher</AdditionalRoles>
+                <Genre LanguageAndScriptCode="en_US">
+                    <GenreText LanguageAndScriptCode="es_MX">rvlpQW3P</GenreText>
+                    <SubGenre LanguageAndScriptCode="en_US">xyZaAM7sNSiATADwrPzx9nE9</SubGenre>
+                </Genre>
+                <Membership>
+                    <Organization>
+                        <PartyId Namespace="q8ciucfXpEWjwAuYl3" IsDPID="false" IsISNI="false">owfnAlVq8-</PartyId>
+                    </Organization>
+                    <MembershipType>WorldwideMember</MembershipType>
+                    <StartDate>2011-11-21</StartDate>
+                    <EndDate>2011-11-21</EndDate>
+                </Membership>
+            </Contributor>
+            <Character SequenceNumber="-2143205259">
+                <PartyId Namespace="N" IsDPID="false" IsISNI="false">e</PartyId>
+                <ResourceContributor SequenceNumber="1333994529">
+                    <PartyId Namespace="OYGWX" IsDPID="false" IsISNI="true">aYm.23yP-9phV.rNtTX</PartyId>
+                    <ResourceContributorRole Namespace="VWMQBmug" UserDefinedValue="haJC6h_W_XsULZo6V">Producer</ResourceContributorRole>
+                    <IsFeaturedArtist>true</IsFeaturedArtist>
+                    <IsContractedArtist>false</IsContractedArtist>
+                    <TerritoryOfPerformance>WF</TerritoryOfPerformance>
+                    <InstrumentType>Js8qisMkzFTFkEpGe1p</InstrumentType>
+                    <ArtistDelegatedUsageRights>
+                        <UseType Namespace="xyJN" UserDefinedValue="E.m">Rent</UseType>
+                        <UserInterfaceType Namespace="S" UserDefinedValue="osss6PKzu3Wl">PhysicalMediaWriter</UserInterfaceType>
+                        <PeriodOfRightsDelegation>
+                            <StartDate>2015-01-02</StartDate>
+                            <EndDate>2011-11-21</EndDate>
+                        </PeriodOfRightsDelegation>
+                        <TerritoryOfRightsDelegation>UA</TerritoryOfRightsDelegation>
+                        <MembershipType>WorldwideMember</MembershipType>
+                    </ArtistDelegatedUsageRights>
+                    <Sex>Unknown</Sex>
+                    <DateAndPlaceOfBirth IsApproximate="false" IsBefore="false" IsAfter="false" TerritoryCode="US" LocationDescription="_An0KiL4S4"
+                         LanguageAndScriptCode="en_US">2015-05-05</DateAndPlaceOfBirth>
+                    <DateAndPlaceOfDeath IsApproximate="false" IsBefore="false" IsAfter="false" TerritoryCode="US" LocationDescription="rGpL1TNMEUceMKuT5iSHsqsoXokdNF"
+                         LanguageAndScriptCode="en_US">2014-11-26</DateAndPlaceOfDeath>
+                    <PrimaryRole Namespace="AM7nMaIYohE1YUMDsj0d7.9NMad" UserDefinedValue="MU">MainArtist</PrimaryRole>
+                    <PrimaryInstrumentType>TwA</PrimaryInstrumentType>
+                    <GoverningAgreementType Namespace="FDBjz3mAMGprh1CMn9O5Z0l_J" UserDefinedValue="nF">UserDefined</GoverningAgreementType>
+                    <ContactInformation>
+                        <EmailAddress>Mb</EmailAddress>
+                        <PhoneNumber>G</PhoneNumber>
+                        <FaxNumber>G.BHr-i</FaxNumber>
+                    </ContactInformation>
+                    <TerritoryOfResidency>CZ</TerritoryOfResidency>
+                    <AdditionalRoles Namespace="LXWXhMpsV8lPP" UserDefinedValue="XjmL">ScreenplayAuthor</AdditionalRoles>
+                    <Genre LanguageAndScriptCode="en_US">
+                        <GenreText LanguageAndScriptCode="en_US">tfMG</GenreText>
+                        <SubGenre LanguageAndScriptCode="en_US">SmNt7FvWfC9_iql0nO_tTBkTBk</SubGenre>
+                    </Genre>
+                    <Membership>
+                        <Organization>
+                            <PartyName LanguageAndScriptCode="es_MX">
+                                <FullName LanguageAndScriptCode="es_MX">Dnk28TOTKnuxkoX9S8akLo</FullName>
+                                <FullNameAsciiTranscribed>cIyAo7VrZTRjiptGb87</FullNameAsciiTranscribed>
+                                <FullNameIndexed LanguageAndScriptCode="es_MX">Oi6gbTkc6EmI</FullNameIndexed>
+                                <NamesBeforeKeyName LanguageAndScriptCode="en_US">MutpBoVF9d9TEM-XTohb</NamesBeforeKeyName>
+                                <KeyName LanguageAndScriptCode="en_US">q2TyI8SDRl3h6lfPiBvPq7_I</KeyName>
+                                <NamesAfterKeyName LanguageAndScriptCode="en_US">FAkz8eeYVETnG5QA4lfr</NamesAfterKeyName>
+                                <AbbreviatedName LanguageAndScriptCode="en_US">BC2cpvbsxcAIYaw4x</AbbreviatedName>
+                            </PartyName>
+                            <PartyId Namespace="rSyc" IsDPID="false" IsISNI="true">pLe7qRsoJpB5MED</PartyId>
+                        </Organization>
+                        <MembershipType>RegionalMember</MembershipType>
+                        <StartDate>2011-11-21</StartDate>
+                        <EndDate>2011-11-21</EndDate>
+                    </Membership>
+                </ResourceContributor>
+            </Character>
+            <CollectionCollectionReferenceList>
+                <NumberOfCollections>-1788406764</NumberOfCollections>
+                <CollectionCollectionReference>
+                    <SequenceNumber>-1164243</SequenceNumber>
+                    <CollectionCollectionReference>X2</CollectionCollectionReference>
+                    <StartTime>P0Y9M0DT1H10M0S</StartTime>
+                    <Duration>P1Y1M4DT1H10M0S</Duration>
+                    <EndTime>P8Y5M4DT1H10M0S</EndTime>
+                    <InclusionDate>2011-11-21T07:45:02+00:00</InclusionDate>
+                </CollectionCollectionReference>
+            </CollectionCollectionReferenceList>
+            <IsComplete>true</IsComplete>
+            <Duration>P8Y2M3DT1H10M0S</Duration>
+            <DurationOfMusicalContent>P8Y6M1DT1H10M0S</DurationOfMusicalContent>
+            <CreationDate IsApproximate="false" IsBefore="false" IsAfter="true" TerritoryCode="US" LocationDescription="x8l.ULB4szo-pKLP5"
+                 LanguageAndScriptCode="en_US">2014-12-13Z</CreationDate>
+            <OriginalReleaseDate IsApproximate="true" IsBefore="true" IsAfter="true" TerritoryCode="US" LocationDescription="mwmBBXwE0bK-Z"
+                 LanguageAndScriptCode="es_MX">2014-11-01Z</OriginalReleaseDate>
+            <OriginalLanguage>ik</OriginalLanguage>
+            <CollectionDetailsByTerritory>
+                <TerritoryCode>US</TerritoryCode>
+                <Title LanguageAndScriptCode="es_MX" TitleType="FirstLineOfText">
+                    <TitleText LanguageAndScriptCode="es_MX">mentEyyX</TitleText>
+                    <SubTitle LanguageAndScriptCode="es_MX" SubTitleType="g1pwnfLQd1EgY3K">tR18tKSBGXpB0ChWDMS9YLydfS8qX</SubTitle>
+                </Title>
+                <Contributor SequenceNumber="330827790">
+                    <PartyId Namespace="KnCR_bj" IsDPID="true" IsISNI="false">we48z-a_OTxXSXqfWKTgz4</PartyId>
+                    <ResourceContributorRole Namespace="t6o88yYfKyYVj" UserDefinedValue="FnLW_sWQZw0e3nZ6.qnffpEwbY0BMf">SetDesigner</ResourceContributorRole>
+                    <IsFeaturedArtist>false</IsFeaturedArtist>
+                    <IsContractedArtist>false</IsContractedArtist>
+                    <TerritoryOfPerformance>RW</TerritoryOfPerformance>
+                    <InstrumentType>NGFxrmhDTfQ82</InstrumentType>
+                    <ArtistDelegatedUsageRights>
+                        <UseType Namespace="nhoCy5" UserDefinedValue="Rs">UserDefined</UseType>
+                        <UserInterfaceType Namespace="LnRRrV" UserDefinedValue="_-qpMzYmOoCi2Tg.Ynir37lEmgPV">RemoteStorageJukebox</UserInterfaceType>
+                        <PeriodOfRightsDelegation>
+                            <StartDateTime IsApproximate="true" IsBefore="true" IsAfter="true" TerritoryCode="MX" LocationDescription="kHV1Fh5fh6mGHrYPgKOf0a"
+                                 LanguageAndScriptCode="en_US">2015-04-27T00:48:51Z</StartDateTime>
+                            <EndDateTime IsApproximate="false" IsBefore="true" IsAfter="false" TerritoryCode="MX" LocationDescription="WB1UoEgpCW_PbW3"
+                                 LanguageAndScriptCode="es_MX">2015-10-06T00:48:51</EndDateTime>
+                        </PeriodOfRightsDelegation>
+                        <TerritoryOfRightsDelegation>AQ</TerritoryOfRightsDelegation>
+                        <MembershipType>NationalMember</MembershipType>
+                    </ArtistDelegatedUsageRights>
+                    <Sex>Female</Sex>
+                    <DateAndPlaceOfBirth IsApproximate="true" IsBefore="true" IsAfter="false" TerritoryCode="MX" LocationDescription="Wk9grf"
+                         LanguageAndScriptCode="es_MX">2015-08-25Z</DateAndPlaceOfBirth>
+                    <DateAndPlaceOfDeath IsApproximate="true" IsBefore="true" IsAfter="false" TerritoryCode="MX" LocationDescription="blWlVsuJpdUlWrTaaX_fk"
+                         LanguageAndScriptCode="es_MX">2015-10-14</DateAndPlaceOfDeath>
+                    <PrimaryRole Namespace="E1mjRMYslipJWqYRebg7QN-jyz" UserDefinedValue="_3hMEzg">MainArtist</PrimaryRole>
+                    <PrimaryInstrumentType>HtLy4rqJh5j</PrimaryInstrumentType>
+                    <GoverningAgreementType Namespace="id9tbG8wEwAyj53jGWp" UserDefinedValue="wHgj2ZQiu87zgKwfFM">UserDefined</GoverningAgreementType>
+                    <ContactInformation>
+                        <EmailAddress>U2NbwctI7eyvKp.</EmailAddress>
+                        <PhoneNumber>KJbWzzPXMtZmKydaW5N9zwTf2F</PhoneNumber>
+                        <FaxNumber>ToASchgaKyu1bmNkTsp0zug1PKca</FaxNumber>
+                    </ContactInformation>
+                    <TerritoryOfResidency>QA</TerritoryOfResidency>
+                    <AdditionalRoles Namespace="RP7_TYlnP18g3hhAgFcuHIvXeJdR" UserDefinedValue="nchl">Adapter</AdditionalRoles>
+                    <Genre LanguageAndScriptCode="en_US">
+                        <GenreText LanguageAndScriptCode="es_MX">NmQX0gVh</GenreText>
+                        <SubGenre LanguageAndScriptCode="es_MX">iQdzCO4</SubGenre>
+                    </Genre>
+                    <Membership>
+                        <Organization>
+                            <PartyId Namespace="tnU" IsDPID="true" IsISNI="true">gfZtn64Q</PartyId>
+                        </Organization>
+                        <MembershipType>RegionalMember</MembershipType>
+                        <StartDate>2015-01-02</StartDate>
+                        <EndDate>2015-01-02</EndDate>
+                    </Membership>
+                </Contributor>
+                <IsComplete>true</IsComplete>
+                <Character SequenceNumber="-548485657">
+                    <PartyName LanguageAndScriptCode="en_US">
+                        <FullName LanguageAndScriptCode="es_MX">PmMWlUeqfQnZrhFtfn6sJBp80R</FullName>
+                        <FullNameAsciiTranscribed>WNgXA7oNyt</FullNameAsciiTranscribed>
+                        <FullNameIndexed LanguageAndScriptCode="es_MX">em0JsRsV_xQt</FullNameIndexed>
+                        <NamesBeforeKeyName LanguageAndScriptCode="es_MX">M25</NamesBeforeKeyName>
+                        <KeyName LanguageAndScriptCode="en_US">iA7M</KeyName>
+                        <NamesAfterKeyName LanguageAndScriptCode="es_MX">WNKxs1kwMn7NEJnEedyI</NamesAfterKeyName>
+                        <AbbreviatedName LanguageAndScriptCode="es_MX">lkuJqz_aDKRvak9MQBy1KO</AbbreviatedName>
+                    </PartyName>
+                    <PartyId Namespace="U.IYhkj8ymlm" IsDPID="true" IsISNI="false">D7q3</PartyId>
+                    <ResourceContributor SequenceNumber="1923183438">
+                        <PartyName LanguageAndScriptCode="en_US">
+                            <FullName LanguageAndScriptCode="en_US">hR6XkZ8YVK8Dzrdbgi6</FullName>
+                            <FullNameAsciiTranscribed>ztLzMc5r5mQ5_jZkDEt8uj</FullNameAsciiTranscribed>
+                            <FullNameIndexed LanguageAndScriptCode="en_US">oN6umF1wYoqm</FullNameIndexed>
+                            <NamesBeforeKeyName LanguageAndScriptCode="en_US">ytWzx</NamesBeforeKeyName>
+                            <KeyName LanguageAndScriptCode="es_MX">yy</KeyName>
+                            <NamesAfterKeyName LanguageAndScriptCode="en_US">T</NamesAfterKeyName>
+                            <AbbreviatedName LanguageAndScriptCode="en_US">Q</AbbreviatedName>
+                        </PartyName>
+                        <PartyId Namespace="RgQ" IsDPID="true" IsISNI="true">vIZsxITF.ALeSyMVHDMs_vKsid8zN</PartyId>
+                        <ResourceContributorRole Namespace="KQKvNVwlV_K" UserDefinedValue="s_.4Nlic_x4lxludbxpQ5qjqDfG">NewspaperPublisher</ResourceContributorRole>
+                        <IsFeaturedArtist>true</IsFeaturedArtist>
+                        <IsContractedArtist>false</IsContractedArtist>
+                        <TerritoryOfPerformance>CH</TerritoryOfPerformance>
+                        <InstrumentType>cPLeBT8UI-ri</InstrumentType>
+                        <ArtistDelegatedUsageRights>
+                            <UseType Namespace="j3Szgtw9tEMKYHM0KxWJO3DRT" UserDefinedValue="WhlF2OBOhlmHST_Hk2">UserDefined</UseType>
+                            <UserInterfaceType Namespace="Dmev.2IS7a7x3C.m5ksfb.5J" UserDefinedValue="s6vaZnE">PortableDevice</UserInterfaceType>
+                            <PeriodOfRightsDelegation>
+                                <StartDateTime IsApproximate="true" IsBefore="false" IsAfter="true" TerritoryCode="MX" LocationDescription="FBGWTqTWHqfsjwpHJYmFAMFiH6yG"
+                                     LanguageAndScriptCode="es_MX">2014-06-27T00:48:51</StartDateTime>
+                                <EndDateTime IsApproximate="true" IsBefore="true" IsAfter="false" TerritoryCode="MX" LocationDescription="rMIIUAzJhPHW"
+                                     LanguageAndScriptCode="en_US">2014-08-09T00:48:51</EndDateTime>
+                            </PeriodOfRightsDelegation>
+                            <TerritoryOfRightsDelegation>NF</TerritoryOfRightsDelegation>
+                            <MembershipType>RegionalMember</MembershipType>
+                        </ArtistDelegatedUsageRights>
+                        <Sex>Unknown</Sex>
+                        <DateAndPlaceOfBirth IsApproximate="false" IsBefore="true" IsAfter="false" TerritoryCode="US" LocationDescription="gFTrUAm"
+                             LanguageAndScriptCode="es_MX">2015-06-18</DateAndPlaceOfBirth>
+                        <DateAndPlaceOfDeath IsApproximate="false" IsBefore="true" IsAfter="false" TerritoryCode="MX" LocationDescription="kRNF8s-UOWtdM3d-uzajLvP"
+                             LanguageAndScriptCode="en_US">2015-08-26</DateAndPlaceOfDeath>
+                        <PrimaryRole Namespace="B9lDG5Pw" UserDefinedValue="MfrmogWUTMWMHx7Xr-kZy0KTv">Architect</PrimaryRole>
+                        <PrimaryInstrumentType>qz.H.7ee</PrimaryInstrumentType>
+                        <GoverningAgreementType Namespace="JQ" UserDefinedValue="Xmq07X6-VN">UserDefined</GoverningAgreementType>
+                        <ContactInformation>
+                            <EmailAddress>JYy-s_</EmailAddress>
+                            <PhoneNumber>uOZ_OXwq6u8DLrOC56qd</PhoneNumber>
+                            <FaxNumber>D8</FaxNumber>
+                        </ContactInformation>
+                        <TerritoryOfResidency>AQ</TerritoryOfResidency>
+                        <AdditionalRoles Namespace="sTgX" UserDefinedValue="I5fWXzbD">Actor</AdditionalRoles>
+                        <Genre LanguageAndScriptCode="en_US">
+                            <GenreText LanguageAndScriptCode="en_US">ppuaPr3IJIH9xbg2iVSJ0o</GenreText>
+                            <SubGenre LanguageAndScriptCode="es_MX">iMyyPJZsWA</SubGenre>
+                        </Genre>
+                        <Membership>
+                            <Organization>
+                                <PartyName LanguageAndScriptCode="en_US">
+                                    <FullName LanguageAndScriptCode="en_US">Ve86B9rwTAyMCXRGwpSnuEnq.G</FullName>
+                                    <FullNameAsciiTranscribed>etxYAqL-6R2zJ3UG8ECy-Q0EBJ-E50</FullNameAsciiTranscribed>
+                                    <FullNameIndexed LanguageAndScriptCode="es_MX">l.mLhBrp6QJmgxjs4G92kP</FullNameIndexed>
+                                    <NamesBeforeKeyName LanguageAndScriptCode="es_MX">EiQZl0wF1WMT6-eFYVId30staac10</NamesBeforeKeyName>
+                                    <KeyName LanguageAndScriptCode="es_MX">pN</KeyName>
+                                    <NamesAfterKeyName LanguageAndScriptCode="en_US">WJ7s.ra</NamesAfterKeyName>
+                                    <AbbreviatedName LanguageAndScriptCode="es_MX">De.dA</AbbreviatedName>
+                                </PartyName>
+                                <PartyId Namespace="V6klxZBhK96wHa2BUnHz9Ryxf77P" IsDPID="true" IsISNI="true">xi2Yb9Adt.7Fc-04HxG</PartyId>
+                            </Organization>
+                            <MembershipType>WorldwideMember</MembershipType>
+                            <StartDate>2011-11-21</StartDate>
+                            <EndDate>2015-01-02</EndDate>
+                        </Membership>
+                    </ResourceContributor>
+                </Character>
+            </CollectionDetailsByTerritory>
+            <CollectionResourceReferenceList>
+                <CollectionResourceReference>
+                    <CollectionResourceReference>A9</CollectionResourceReference>
+                    <Duration>P7Y6M2DT1H10M0S</Duration>
+                </CollectionResourceReference>
+            </CollectionResourceReferenceList>
+            <CollectionWorkReferenceList>
+                <CollectionWorkReference>
+                    <CollectionWorkReference>W-_</CollectionWorkReference>
+                    <Duration>P1Y2M4DT1H10M0S</Duration>
+                </CollectionWorkReference>
+            </CollectionWorkReferenceList>
+            <RepresentativeImageReference>A-</RepresentativeImageReference>
+            <PLine LanguageAndScriptCode="es_MX" PLineType="OriginalPLine">
+                <Year>2018</Year>
+                <PLineCompany>or5zmcsL</PLineCompany>
+                <PLineText>KfvNS2Un1DC</PLineText>
+            </PLine>
+            <CLine LanguageAndScriptCode="es_MX">
+                <Year>2018</Year>
+                <CLineCompany>S3IR6NQkSGqJ0JoS</CLineCompany>
+                <CLineText>jwYddYZUfn9kx_Yw0</CLineText>
+            </CLine>
+        </Collection>
+    </CollectionList>
+    <ReleaseList LanguageAndScriptCode="en_US">
+        <Release LanguageAndScriptCode="en_US" IsMainRelease="false">
+            <ReleaseId IsReplaced="false">
+                <GRid>_D2ZXv1R2Co0j38F</GRid>
+                <ISRC>oNsrItd-</ISRC>
+                <ICPN IsEan="false">skvWGB</ICPN>
+                <CatalogNumber Namespace="yeOX6y_WGeJcHLNo.0cqgFSch7a">Z1oOH1oE</CatalogNumber>
+                <ProprietaryId Namespace="l1KWB3p1jBloPmX9">cleIAt_rHhhaM</ProprietaryId>
+            </ReleaseId>
+            <ReleaseReference>R_-</ReleaseReference>
+            <ExternalResourceLink>
+                <URL>yDNeUjyWCVPtLf6-62</URL>
+                <ValidityPeriod>
+                    <StartDateTime IsApproximate="false" IsBefore="true" IsAfter="false" TerritoryCode="US" LocationDescription="rCSUvNqCmaNlEF"
+                         LanguageAndScriptCode="es_MX">2014-05-18T00:48:51Z</StartDateTime>
+                    <EndDateTime IsApproximate="true" IsBefore="false" IsAfter="true" TerritoryCode="MX" LocationDescription="y" LanguageAndScriptCode="es_MX">2016-03-11T00:48:51Z</EndDateTime>
+                </ValidityPeriod>
+                <ExternalLink>Vc7WOIFWLl1AB</ExternalLink>
+                <ExternallyLinkedResourceType Namespace="tiu8JPD3J-mN5vHzh" UserDefinedValue="bZBqO5QyReIKCw4C1EobT5S">Logo</ExternallyLinkedResourceType>
+                <FileFormat>a</FileFormat>
+            </ExternalResourceLink>
+            <SalesReportingProxyReleaseId>
+                <ReleaseId IsReplaced="false">
+                    <GRid>mEoiiV2xcRvY4m</GRid>
+                    <ISRC>hD-Qwfvrjf2hPj1cWKx0YTk-lVux2</ISRC>
+                    <ICPN IsEan="true">DA3NDCXrz4R8f3</ICPN>
+                    <CatalogNumber Namespace="MQwzoIMOHb1ew1udb_-">A7VwvA3Mvsxhz</CatalogNumber>
+                    <ProprietaryId Namespace="fqpBua3pt21vlY2ZTeo-">IN</ProprietaryId>
+                </ReleaseId>
+                <Reason LanguageAndScriptCode="en_US">NHMuJJAQl1ubJYmFarlI1q4I</Reason>
+                <ReasonType Namespace="ueTx" UserDefinedValue="yz_dI1NJW">RoyaltyReporting</ReasonType>
+            </SalesReportingProxyReleaseId>
+            <ReferenceTitle LanguageAndScriptCode="es_MX">
+                <TitleText LanguageAndScriptCode="es_MX">rTc</TitleText>
+                <SubTitle LanguageAndScriptCode="en_US">dp.VKmYv5MBlENJs</SubTitle>
+            </ReferenceTitle>
+            <ReleaseResourceReferenceList>
+                <ReleaseResourceReference ReleaseResourceType="SecondaryResource">Aqy</ReleaseResourceReference>
+            </ReleaseResourceReferenceList>
+            <ReleaseCollectionReferenceList>
+                <NumberOfCollections>-1433564029</NumberOfCollections>
+                <ReleaseCollectionReference ReleaseResourceType="PrimaryResource">X1Hge</ReleaseCollectionReference>
+            </ReleaseCollectionReferenceList>
+            <ReleaseType Namespace="_0zn7hQ" UserDefinedValue="FD6DROFLKMSc7Q9pDypet">Animation</ReleaseType>
+            <ReleaseDetailsByTerritory LanguageAndScriptCode="en_US">
+                <ExcludedTerritoryCode>MH</ExcludedTerritoryCode>
+                <DisplayArtistName LanguageAndScriptCode="es_MX">kaSlPEU3EbgHvnzIoxofHwg-sLwvr</DisplayArtistName>
+                <LabelName LanguageAndScriptCode="es_MX" LabelNameType="L2a-q_NuZvfxipUVKfksG2gaURA">vAEB_m1laHraZpQ</LabelName>
+                <RightsAgreementId>
+                    <MWLI>ybFyI74</MWLI>
+                    <ProprietaryId Namespace="qK7OxuOMXBnNJ7WJ_IE2">kjElWXyH</ProprietaryId>
+                </RightsAgreementId>
+                <Title LanguageAndScriptCode="en_US" TitleType="FirstLineOfText">
+                    <TitleText LanguageAndScriptCode="es_MX">Cy</TitleText>
+                    <SubTitle LanguageAndScriptCode="es_MX" SubTitleType="Hqx-wH67FjM5grtF">HMMC</SubTitle>
+                </Title>
+                <DisplayArtist SequenceNumber="-1539222832">
+                    <PartyId Namespace="HBmax45johFcvaaDO4PuA08oT" IsDPID="false" IsISNI="false">iW1KxrV4YwUbEREH</PartyId>
+                    <ArtistRole Namespace="Whu.3Jhz8XW7SEpWnQniD" UserDefinedValue="zpFn_LoE.llefCIQ5">Band</ArtistRole>
+                </DisplayArtist>
+                <IsMultiArtistCompilation>true</IsMultiArtistCompilation>
+                <AdministratingRecordCompany Namespace="VMl4OBKxbdfNsH-cyjgVgjxSwu" UserDefinedValue="vg.Fs.DfZHab_3rsvLSl" Role="Unknown">
+                    <PartyId Namespace="FbZRK9Vka" IsDPID="false" IsISNI="true">mACg</PartyId>
+                </AdministratingRecordCompany>
+                <ReleaseType Namespace="VfYc8eB" UserDefinedValue="aEEFzGqXvDpzxE.opeQ54Ip0V_I">NonSerialAudioVisualRecording</ReleaseType>
+                <RelatedRelease LanguageAndScriptCode="es_MX">
+                    <ReleaseId IsReplaced="false">
+                        <GRid>v6KNTvkWlfwlo</GRid>
+                        <ISRC>dA8rLeb3Gs8POtIn9D</ISRC>
+                        <ICPN IsEan="true">BUgb</ICPN>
+                        <CatalogNumber Namespace="Pj5">gYrdvyQoxUgvW0ZsQ</CatalogNumber>
+                        <ProprietaryId Namespace="b3gaVh">chwMPCvLusr_</ProprietaryId>
+                    </ReleaseId>
+                    <ReferenceTitle LanguageAndScriptCode="en_US">
+                        <TitleText LanguageAndScriptCode="en_US">GnI</TitleText>
+                        <SubTitle LanguageAndScriptCode="en_US">xY8EKAtKT_dIxZDFUP6XB</SubTitle>
+                    </ReferenceTitle>
+                    <ReleaseSummaryDetailsByTerritory LanguageAndScriptCode="es_MX">
+                        <ExcludedTerritoryCode>IL</ExcludedTerritoryCode>
+                        <DisplayArtistName LanguageAndScriptCode="en_US">zSd2LJWYonzcw</DisplayArtistName>
+                        <LabelName LanguageAndScriptCode="es_MX" LabelNameType="ynJhdzATMCtj">qzwbxUFlgC_rxyKj.6tEznroH7ud</LabelName>
+                        <RightsAgreementId>
+                            <MWLI>IGbvG</MWLI>
+                            <ProprietaryId Namespace="owMTv1U8umvTWLAnErg3RmR5">Ihq14KhQU6tmuPcGsB9bn6D</ProprietaryId>
+                        </RightsAgreementId>
+                    </ReleaseSummaryDetailsByTerritory>
+                    <RightsAgreementId>
+                        <MWLI>yoGUzWCzDsaAXh8sUDnXCBP4V</MWLI>
+                        <ProprietaryId Namespace="obK_Rx3-vi0b3Co5mXeF">NNveOzt8Wp2</ProprietaryId>
+                    </RightsAgreementId>
+                    <ReleaseRelationshipType Namespace="z7k.PLDQFjw" UserDefinedValue="XEh6lCAGbc93IZKqqX.Qp-s3">HasSameRecordingProject</ReleaseRelationshipType>
+                    <ReleaseDate IsApproximate="true" IsBefore="true" IsAfter="false" TerritoryCode="US" LocationDescription="DqCCTh"
+                         LanguageAndScriptCode="en_US">2016-01-13</ReleaseDate>
+                    <OriginalReleaseDate IsApproximate="true" IsBefore="false" IsAfter="true" TerritoryCode="MX" LocationDescription="auHdmSiGncxN"
+                         LanguageAndScriptCode="en_US">2015-05-09Z</OriginalReleaseDate>
+                </RelatedRelease>
+                <ParentalWarningType Namespace="J628Duwwdehu" UserDefinedValue="EJ.XQhyXFfL-h_hZMgW3gAzY_XN-">Explicit</ParentalWarningType>
+                <AvRating>
+                    <RatingText>q-9c8GI5e</RatingText>
+                    <RatingAgency Namespace="ohP" UserDefinedValue="wgA5liR_ljlCwVVo_7.8">SBB</RatingAgency>
+                </AvRating>
+                <MarketingComment LanguageAndScriptCode="es_MX">xxkN8HyFOfTzkG-_KIsRH9M_</MarketingComment>
+                <ResourceGroup LanguageAndScriptCode="es_MX">
+                    <Title LanguageAndScriptCode="es_MX" TitleType="GroupingTitle">
+                        <TitleText LanguageAndScriptCode="en_US">OuD</TitleText>
+                        <SubTitle LanguageAndScriptCode="en_US" SubTitleType="PWH7fzA-aLYHypw">SA5IfeH</SubTitle>
+                    </Title>
+                    <SequenceNumber>1885465546</SequenceNumber>
+                    <DisplayArtist SequenceNumber="-1788022553">
+                        <PartyName LanguageAndScriptCode="es_MX">
+                            <FullName LanguageAndScriptCode="es_MX">FlEPCRmI</FullName>
+                            <FullNameAsciiTranscribed>zbXWAk4qz4Tkn</FullNameAsciiTranscribed>
+                            <FullNameIndexed LanguageAndScriptCode="es_MX">D4</FullNameIndexed>
+                            <NamesBeforeKeyName LanguageAndScriptCode="es_MX">QOKZJGF</NamesBeforeKeyName>
+                            <KeyName LanguageAndScriptCode="es_MX">UfSa.gmGcgU</KeyName>
+                            <NamesAfterKeyName LanguageAndScriptCode="en_US">k4v</NamesAfterKeyName>
+                            <AbbreviatedName LanguageAndScriptCode="en_US">VYNk1BSlkn_S7</AbbreviatedName>
+                        </PartyName>
+                        <PartyId Namespace="mSdY" IsDPID="true" IsISNI="false">GxpN8BWuwCYOO6l6N0Nyxd</PartyId>
+                        <ArtistRole Namespace="NtzyGjwv_GN2CqkR2Vj2irnR" UserDefinedValue="UTfyBU40qaOBzoD3sVvJYmy">SubPublisher</ArtistRole>
+                    </DisplayArtist>
+                    <DisplayConductor SequenceNumber="610195368">
+                        <PartyId Namespace="OkhslyMHY_19i" IsDPID="false" IsISNI="true">TMxeusRYUShpoxAhyV7tSF7r9</PartyId>
+                        <ArtistRole Namespace="dOA18cxMYboi41.qGWXOalgY-e2" UserDefinedValue="VPtqGSOJaxPCuQv8pB.kQn.RSi">GraphicDesigner</ArtistRole>
+                    </DisplayConductor>
+                    <DisplayComposer SequenceNumber="-1860731193">
+                        <PartyId Namespace="LpP69sw_BGh" IsDPID="true" IsISNI="false">FiimmEICXeZQmu</PartyId>
+                        <ArtistRole Namespace="a4csyMaW52zQLZuIQ8.9" UserDefinedValue="tUagmH.dRuKBnQSeKh.P5">MainArtist</ArtistRole>
+                    </DisplayComposer>
+                    <ResourceContributor SequenceNumber="1111285165">
+                        <PartyName LanguageAndScriptCode="es_MX">
+                            <FullName LanguageAndScriptCode="es_MX">NYSqCOttD</FullName>
+                            <FullNameAsciiTranscribed>gjosR6uA</FullNameAsciiTranscribed>
+                            <FullNameIndexed LanguageAndScriptCode="es_MX">KL</FullNameIndexed>
+                            <NamesBeforeKeyName LanguageAndScriptCode="en_US">AC-Kt0pL_XrLzwRD.OKZru</NamesBeforeKeyName>
+                            <KeyName LanguageAndScriptCode="es_MX">PUY35S67_Rd9Dm7VGVDLITIFGdxK</KeyName>
+                            <NamesAfterKeyName LanguageAndScriptCode="es_MX">Vh6AdnxFWelo9AWN9oKv9G9</NamesAfterKeyName>
+                            <AbbreviatedName LanguageAndScriptCode="es_MX">ul-tQeTtebUr</AbbreviatedName>
+                        </PartyName>
+                        <PartyId Namespace="OkA4HhS-fYey4cPMag3" IsDPID="true" IsISNI="false">T</PartyId>
+                        <ResourceContributorRole Namespace="BD" UserDefinedValue="zWi5R3oNZ__2anZJ0-eO">BookPublisher</ResourceContributorRole>
+                        <IsFeaturedArtist>false</IsFeaturedArtist>
+                        <IsContractedArtist>true</IsContractedArtist>
+                        <TerritoryOfPerformance>KI</TerritoryOfPerformance>
+                        <InstrumentType>MceNnA4whxKy0KUFw</InstrumentType>
+                        <ArtistDelegatedUsageRights>
+                            <UseType Namespace="ve7w8LJpgl7Q" UserDefinedValue="FkzRuF-qCyDAkQPXsBMqDcjiR">Download</UseType>
+                            <UserInterfaceType Namespace="QDG7-S5qD.jIyAT.8hIi" UserDefinedValue="okc0nyh-">KaraokeMachine</UserInterfaceType>
+                            <PeriodOfRightsDelegation>
+                                <StartDateTime IsApproximate="true" IsBefore="true" IsAfter="false" TerritoryCode="US" LocationDescription="A_URFo"
+                                     LanguageAndScriptCode="en_US">2015-10-01T00:48:51</StartDateTime>
+                                <EndDateTime IsApproximate="true" IsBefore="true" IsAfter="true" TerritoryCode="US" LocationDescription="Hnc" LanguageAndScriptCode="en_US">2014-11-29T00:48:51</EndDateTime>
+                            </PeriodOfRightsDelegation>
+                            <TerritoryOfRightsDelegation>YE</TerritoryOfRightsDelegation>
+                            <MembershipType>WorldwideMember</MembershipType>
+                        </ArtistDelegatedUsageRights>
+                        <Sex>Unknown</Sex>
+                        <DateAndPlaceOfBirth IsApproximate="false" IsBefore="false" IsAfter="false" TerritoryCode="MX" LocationDescription="RsYUg0hG6DNb8UgrD"
+                             LanguageAndScriptCode="es_MX">2016-01-24</DateAndPlaceOfBirth>
+                        <DateAndPlaceOfDeath IsApproximate="true" IsBefore="false" IsAfter="true" TerritoryCode="MX" LocationDescription="rl_bOnDO12k9IG_E69zoK"
+                             LanguageAndScriptCode="en_US">2014-11-05Z</DateAndPlaceOfDeath>
+                        <PrimaryRole Namespace="r03itueLVGbiW_iWYzu_Ll2QV" UserDefinedValue="HM7-PctxUAFWu0TaDNIwqQymy">OriginalPublisher</PrimaryRole>
+                        <PrimaryInstrumentType>VR2FpzEKv1gOlf4aH7ccCHJ9Tr</PrimaryInstrumentType>
+                        <GoverningAgreementType Namespace="H0wXpUSwE7gEoW4WyK" UserDefinedValue="b86ct7OineLNk">UserDefined</GoverningAgreementType>
+                        <ContactInformation>
+                            <EmailAddress>sgL.n8MdTN</EmailAddress>
+                            <PhoneNumber>BN8OvIRT9dGlU1DAcT0hxU6T</PhoneNumber>
+                            <FaxNumber>qWH5Clhms2bbhr3SisvDxehaM9Flk</FaxNumber>
+                        </ContactInformation>
+                        <TerritoryOfResidency>CU</TerritoryOfResidency>
+                        <AdditionalRoles Namespace="P" UserDefinedValue="I66">Designer</AdditionalRoles>
+                        <Genre LanguageAndScriptCode="es_MX">
+                            <GenreText LanguageAndScriptCode="es_MX">m.1E_OQAK.oguL</GenreText>
+                            <SubGenre LanguageAndScriptCode="en_US">Wl2g5nuEATxAyy5fgySZ4h</SubGenre>
+                        </Genre>
+                        <Membership>
+                            <Organization>
+                                <PartyId Namespace="O9gm5v0D61" IsDPID="true" IsISNI="false">w0BCFwy</PartyId>
+                            </Organization>
+                            <MembershipType>NationalMember</MembershipType>
+                            <StartDate>2011-11-21</StartDate>
+                            <EndDate>2011-11-21</EndDate>
+                        </Membership>
+                    </ResourceContributor>
+                    <IndirectResourceContributor SequenceNumber="-1495088837">
+                        <PartyName LanguageAndScriptCode="en_US">
+                            <FullName LanguageAndScriptCode="en_US">eKa</FullName>
+                            <FullNameAsciiTranscribed>Xa</FullNameAsciiTranscribed>
+                            <FullNameIndexed LanguageAndScriptCode="es_MX">kYozTGoCN.TQDOSN6wK</FullNameIndexed>
+                            <NamesBeforeKeyName LanguageAndScriptCode="es_MX">fZOAFe60am_khST3pn</NamesBeforeKeyName>
+                            <KeyName LanguageAndScriptCode="en_US">VrGTs1uthkRzCCUodqpasj4kC</KeyName>
+                            <NamesAfterKeyName LanguageAndScriptCode="es_MX">ABkeqKA9twzkj9YpDHW1wbP1</NamesAfterKeyName>
+                            <AbbreviatedName LanguageAndScriptCode="en_US">DP</AbbreviatedName>
+                        </PartyName>
+                        <PartyId Namespace="W92uG5MBQM110383e5." IsDPID="false" IsISNI="true">J095l98JCgnRWFOg-jOEyk6PA</PartyId>
+                        <IndirectResourceContributorRole Namespace="duE0" UserDefinedValue="aRQsLZA6lS7sX3HtkK">SubArranger</IndirectResourceContributorRole>
+                    </IndirectResourceContributor>
+                    <ResourceGroupResourceReferenceList>
+                        <ResourceGroupResourceReference>AD</ResourceGroupResourceReference>
+                    </ResourceGroupResourceReferenceList>
+                    <ReleaseId IsReplaced="false">
+                        <GRid>t1ryNcx_ZUOCUsGSo</GRid>
+                        <ISRC>KAqmPVLXEZ</ISRC>
+                        <ICPN IsEan="false">SfL7R9eyuZGB613.xwMOB6gVH</ICPN>
+                        <CatalogNumber Namespace="NQuL7abUZ28iufl0KpzblTevt2h0">XrLlXVA8tlDyX13Lnh46o7</CatalogNumber>
+                        <ProprietaryId Namespace="c7uUwBQKQFJ">f5DmVqDM4XNeQUCVVuH8</ProprietaryId>
+                    </ReleaseId>
+                </ResourceGroup>
+                <Genre LanguageAndScriptCode="es_MX">
+                    <GenreText LanguageAndScriptCode="es_MX">UY1IRhP</GenreText>
+                    <SubGenre LanguageAndScriptCode="en_US">JCDMvgbp.HgaeE</SubGenre>
+                </Genre>
+                <ReleaseDate IsApproximate="true" IsBefore="true" IsAfter="false" TerritoryCode="MX" LocationDescription="LN" LanguageAndScriptCode="en_US">2014-05-25Z</ReleaseDate>
+                <OriginalReleaseDate IsApproximate="true" IsBefore="true" IsAfter="false" TerritoryCode="MX" LocationDescription="NkKzEGII"
+                     LanguageAndScriptCode="es_MX">2014-12-29Z</OriginalReleaseDate>
+                <OriginalDigitalReleaseDate IsApproximate="false" IsBefore="false" IsAfter="true" TerritoryCode="US" LocationDescription="Wm." LanguageAndScriptCode="en_US">2014-08-17Z</OriginalDigitalReleaseDate>
+                <File>
+                    <URL>sxq21sb9zGH</URL>
+                    <HashSum>
+                        <HashSum>qE3q.xt1qJjxfX5</HashSum>
+                        <HashSumAlgorithmType Namespace="LIxzPq4I_e6HsSM4HQ_SE" UserDefinedValue="QfAn_">MD5</HashSumAlgorithmType>
+                    </HashSum>
+                </File>
+                <Keywords LanguageAndScriptCode="en_US">JqKAEOPupGohrKyVf</Keywords>
+                <Synopsis LanguageAndScriptCode="es_MX">uAt</Synopsis>
+                <Character SequenceNumber="-8130976">
+                    <PartyId Namespace="AAeT_hfz5dIB" IsDPID="false" IsISNI="false">Rm.vf_F3</PartyId>
+                    <ResourceContributor SequenceNumber="2091459856">
+                        <PartyId Namespace="Q0aejXkqAE" IsDPID="true" IsISNI="false">nH</PartyId>
+                        <ResourceContributorRole Namespace="W.Vk2zvsSj2zijnbc" UserDefinedValue="TJOSr-AALzI-">UserDefined</ResourceContributorRole>
+                        <IsFeaturedArtist>false</IsFeaturedArtist>
+                        <IsContractedArtist>true</IsContractedArtist>
+                        <TerritoryOfPerformance>TH</TerritoryOfPerformance>
+                        <InstrumentType>oA2eK1Yth0kDbcwtTYtJ</InstrumentType>
+                        <ArtistDelegatedUsageRights>
+                            <UseType Namespace="XX3sTP7J5" UserDefinedValue="kuQW9mkt">TetheredDownload</UseType>
+                            <UserInterfaceType Namespace="ad4bxkX" UserDefinedValue="ykCSOx">GameConsole</UserInterfaceType>
+                            <PeriodOfRightsDelegation>
+                                <StartDateTime IsApproximate="true" IsBefore="true" IsAfter="false" TerritoryCode="US" LocationDescription="lPSbhl"
+                                     LanguageAndScriptCode="en_US">2015-12-09T00:48:51Z</StartDateTime>
+                                <EndDateTime IsApproximate="true" IsBefore="false" IsAfter="false" TerritoryCode="MX" LocationDescription="T77tcslv6i_KJ3dwCRi-VCFvC4"
+                                     LanguageAndScriptCode="en_US">2014-12-04T00:48:51Z</EndDateTime>
+                            </PeriodOfRightsDelegation>
+                            <TerritoryOfRightsDelegation>LI</TerritoryOfRightsDelegation>
+                            <MembershipType>WorldwideMember</MembershipType>
+                        </ArtistDelegatedUsageRights>
+                        <Sex>Unknown</Sex>
+                        <DateAndPlaceOfBirth IsApproximate="true" IsBefore="true" IsAfter="false" TerritoryCode="US" LocationDescription="__VNg0_2A4"
+                             LanguageAndScriptCode="en_US">2015-02-19Z</DateAndPlaceOfBirth>
+                        <DateAndPlaceOfDeath IsApproximate="false" IsBefore="true" IsAfter="false" TerritoryCode="MX" LocationDescription="V8W9Bnd"
+                             LanguageAndScriptCode="en_US">2016-03-05</DateAndPlaceOfDeath>
+                        <PrimaryRole Namespace="xMoM9qnQ8IqJz_z-bT6U" UserDefinedValue="S">Journalist</PrimaryRole>
+                        <PrimaryInstrumentType>gz</PrimaryInstrumentType>
+                        <GoverningAgreementType Namespace="m6XOsO.4GyOTZxsvGT" UserDefinedValue="i.AE9">UserDefined</GoverningAgreementType>
+                        <ContactInformation>
+                            <EmailAddress>H19SHhLa.klUbLt6vqADmXY</EmailAddress>
+                            <PhoneNumber>pcI.MT5K6hxgtxFj2MaRw</PhoneNumber>
+                            <FaxNumber>lKVg1BmNdp1eHIxJ7</FaxNumber>
+                        </ContactInformation>
+                        <TerritoryOfResidency>NR</TerritoryOfResidency>
+                        <AdditionalRoles Namespace="r_" UserDefinedValue="pVdXFzg">Painter</AdditionalRoles>
+                        <Genre LanguageAndScriptCode="en_US">
+                            <GenreText LanguageAndScriptCode="en_US">YxcGO5bDS</GenreText>
+                            <SubGenre LanguageAndScriptCode="en_US">ctq</SubGenre>
+                        </Genre>
+                        <Membership>
+                            <Organization>
+                                <PartyName LanguageAndScriptCode="en_US">
+                                    <FullName LanguageAndScriptCode="en_US">xPuRLpyL6FsbZ</FullName>
+                                    <FullNameAsciiTranscribed>CVs3ziX3aop050LzIJc8IqlDr</FullNameAsciiTranscribed>
+                                    <FullNameIndexed LanguageAndScriptCode="en_US">vC</FullNameIndexed>
+                                    <NamesBeforeKeyName LanguageAndScriptCode="es_MX">QlW.BTmJZMLRyBLjlHz</NamesBeforeKeyName>
+                                    <KeyName LanguageAndScriptCode="en_US">bq9REeRqE9z7IR0iI1HTnGC9E9euz</KeyName>
+                                    <NamesAfterKeyName LanguageAndScriptCode="es_MX">QscX2Ybrx64gYjq5iW5Hlar_</NamesAfterKeyName>
+                                    <AbbreviatedName LanguageAndScriptCode="es_MX">J2X4NVKE.t</AbbreviatedName>
+                                </PartyName>
+                                <PartyId Namespace="pkF4qtbp" IsDPID="true" IsISNI="false">hr7W4kfCZC2OJS5qz9kweyhl</PartyId>
+                            </Organization>
+                            <MembershipType>NationalMember</MembershipType>
+                            <StartDate>2015-01-02</StartDate>
+                            <EndDate>2011-11-21</EndDate>
+                        </Membership>
+                    </ResourceContributor>
+                </Character>
+                <NumberOfUnitsPerPhysicalRelease>-1912276578</NumberOfUnitsPerPhysicalRelease>
+                <DisplayConductor SequenceNumber="-290674420">
+                    <PartyName LanguageAndScriptCode="en_US">
+                        <FullName LanguageAndScriptCode="en_US">w6bU_YyDlbSdvn19eyvDNx9</FullName>
+                        <FullNameAsciiTranscribed>Crb01rUh_-Ck</FullNameAsciiTranscribed>
+                        <FullNameIndexed LanguageAndScriptCode="es_MX">iWNb_-kj.aQRe</FullNameIndexed>
+                        <NamesBeforeKeyName LanguageAndScriptCode="es_MX">SoC8yP</NamesBeforeKeyName>
+                        <KeyName LanguageAndScriptCode="es_MX">I1</KeyName>
+                        <NamesAfterKeyName LanguageAndScriptCode="es_MX">y</NamesAfterKeyName>
+                        <AbbreviatedName LanguageAndScriptCode="es_MX">OzoLv_uIlKGzE</AbbreviatedName>
+                    </PartyName>
+                    <PartyId Namespace="yvz-R6emg_QD" IsDPID="false" IsISNI="false">MAid7gIa80yGQKMisZhWb2ugXBhsQ5</PartyId>
+                    <ArtistRole Namespace="Q-3BrirrNjYTk" UserDefinedValue="Pb7skp4F">Translator</ArtistRole>
+                </DisplayConductor>
+            </ReleaseDetailsByTerritory>
+            <Duration>P9Y8M1DT1H10M0S</Duration>
+            <RightsAgreementId>
+                <MWLI>cPfhzge4SKoVpusjA.YC.d5pMSzs</MWLI>
+                <ProprietaryId Namespace="M0ttQeKBH-EY-3">iWSRqvhUnTGCSy</ProprietaryId>
+            </RightsAgreementId>
+            <PLine LanguageAndScriptCode="es_MX" PLineType="RemasteringPLine">
+                <Year>2018</Year>
+                <PLineCompany>A6OCilwHqiRhX</PLineCompany>
+                <PLineText>W60zTx</PLineText>
+            </PLine>
+            <CLine LanguageAndScriptCode="es_MX">
+                <Year>2013</Year>
+                <CLineCompany>UHaN3fw3qkhDGpoT_9klMPC8wIh</CLineCompany>
+                <CLineText>KvU.I5.H-HWl</CLineText>
+            </CLine>
+            <ArtistProfilePage>
+                <PartyId Namespace="sI0DV4poiXuT" IsDPID="true" IsISNI="true">xbAkqPZia06NYzdfNNZSXNu1R6MC-q</PartyId>
+                <ReleaseId IsReplaced="true">
+                    <GRid>NWcTnH</GRid>
+                    <ISRC>F45_SZ1BfMbV8buzLoHTSLp0s33</ISRC>
+                    <ICPN IsEan="false">hMtzYtfS4C0Spgf-BOHtb0HwR</ICPN>
+                    <CatalogNumber Namespace="Z2o4muDOY6z6xoEjAltaaGcPGgc7A7">mz2L2aSQcvz7fKmGhGLp.sQmu2</CatalogNumber>
+                    <ProprietaryId Namespace="LeZso">cjzWtB48fAJ_7_x1OtO4On-qtvUidD</ProprietaryId>
+                </ReleaseId>
+                <PageName LanguageAndScriptCode="es_MX">HL.CdliS7H</PageName>
+                <URL>VJWH6af18.O_dLfUJe.soE</URL>
+                <UserName>kK_.mgI9nDuhfMlG.AlUs</UserName>
+                <Password>yYe-yyz</Password>
+            </ArtistProfilePage>
+            <GlobalReleaseDate IsApproximate="true" IsBefore="true" IsAfter="false" TerritoryCode="US" LocationDescription="JZVd5EnieBGe6VbOqECTst1uknRkB"
+                 LanguageAndScriptCode="en_US">2014-05-21Z</GlobalReleaseDate>
+            <GlobalOriginalReleaseDate IsApproximate="true" IsBefore="true" IsAfter="true" TerritoryCode="MX" LocationDescription="J77w8ldTTV61"
+                 LanguageAndScriptCode="es_MX">2015-12-27</GlobalOriginalReleaseDate>
+        </Release>
+    </ReleaseList>
+    <DealList LanguageAndScriptCode="en_US">
+        <ReleaseDeal LanguageAndScriptCode="en_US">
+            <DealReleaseReference>RB</DealReleaseReference>
+            <Deal LanguageAndScriptCode="en_US">
+                <DealReference LanguageAndScriptCode="en_US">ax0DJp1</DealReference>
+                <DealTerms LanguageAndScriptCode="es_MX">
+                    <CommercialModelType Namespace="XqseVq51LabyreOrA0axP1LW0iEv" UserDefinedValue="fORlx">DeviceFeeModel</CommercialModelType>
+                    <Usage>
+                        <UseType Namespace="GBDT6PSkXOu" UserDefinedValue="JrZ2cl">UseAsAlertTone</UseType>
+                        <UserInterfaceType Namespace="UW1eu1akSkDIb" UserDefinedValue="gKb0-Fpst6eqnq">GameConsole</UserInterfaceType>
+                        <DistributionChannelType Namespace="dSGUuMzopmUm69QqLyWdUc" UserDefinedValue="ezpws_b">OnDemandStream</DistributionChannelType>
+                        <CarrierType Namespace="bXEf5Xc5O0bgHzEgT4jn73CESdTYB" UserDefinedValue="xkAtAMyb7zmpoZ1qkc">33rpm7InchLP</CarrierType>
+                        <TechnicalInstantiation>
+                            <DrmEnforcementType>NotDrmEnforced</DrmEnforcementType>
+                            <VideoDefinitionType>StandardDefinition</VideoDefinitionType>
+                            <CodingType>Lossless</CodingType>
+                            <BitRate UnitOfMeasure="kbps">-206764702.464</BitRate>
+                        </TechnicalInstantiation>
+                        <NumberOfUsages>1971304098</NumberOfUsages>
+                    </Usage>
+                    <TerritoryCode>US</TerritoryCode>
+                    <DistributionChannel LanguageAndScriptCode="es_MX">
+                        <PartyId Namespace="LjueXohlgAC0W3" IsDPID="true" IsISNI="true">u5SUwLNqcb-YiDNXO4m-</PartyId>
+                        <TradingName LanguageAndScriptCode="es_MX">lj6AVWxE2Sv5QigK9lyr</TradingName>
+                        <URL>p</URL>
+                        <TerritoryCode>MX</TerritoryCode>
+                    </DistributionChannel>
+                    <PriceInformation>
+                        <Description LanguageAndScriptCode="en_US">fk-nOHTNBkf64fxF1k9p</Description>
+                        <PriceRangeType Namespace="Rl2_">I73k._laFC8tg1xM1W</PriceRangeType>
+                        <PriceType Namespace="sx">a1i</PriceType>
+                        <WholesalePricePerUnit CurrencyCode="HUF">-1248924003.054</WholesalePricePerUnit>
+                        <BulkOrderWholesalePricePerUnit CurrencyCode="GYD">-347387742.642</BulkOrderWholesalePricePerUnit>
+                        <SuggestedRetailPrice CurrencyCode="IDR">-821774069.397</SuggestedRetailPrice>
+                    </PriceInformation>
+                    <PromotionalCode Namespace="ZGQyaoK7qrTDSmaYKbk.YKQfhJf">WBw</PromotionalCode>
+                    <ValidityPeriod>
+                        <StartDateTime IsApproximate="false" IsBefore="false" IsAfter="true" TerritoryCode="US" LocationDescription="neb1EPEn2"
+                             LanguageAndScriptCode="en_US">2014-08-24T00:48:51</StartDateTime>
+                        <EndDateTime IsApproximate="false" IsBefore="true" IsAfter="true" TerritoryCode="US" LocationDescription="RlUI0SVxOGE3l2pIEH4EDjS6-mh"
+                             LanguageAndScriptCode="es_MX">2014-12-10T00:48:51Z</EndDateTime>
+                    </ValidityPeriod>
+                    <ConsumerRentalPeriod IsExtensible="true">P8Y3M3DT1H10M0S</ConsumerRentalPeriod>
+                    <PreOrderReleaseDate IsApproximate="false" IsBefore="false" IsAfter="false" TerritoryCode="US" LocationDescription="p4.MjA9gGL51kFMsk"
+                         LanguageAndScriptCode="es_MX">2015-07-13Z</PreOrderReleaseDate>
+                    <PreOrderPreviewDate IsApproximate="false" IsBefore="true" IsAfter="true" TerritoryCode="US" LocationDescription="ua8273RFaMbKLx1ian8rK"
+                         LanguageAndScriptCode="en_US">2014-10-30</PreOrderPreviewDate>
+                    <IsExclusive>false</IsExclusive>
+                    <RelatedReleaseOfferSet LanguageAndScriptCode="en_US">
+                        <ReleaseDescription LanguageAndScriptCode="es_MX">oAw_XkjUDIwf1-rQ9DP7Ph2T1SZ</ReleaseDescription>
+                    </RelatedReleaseOfferSet>
+                    <PhysicalReturns>
+                        <PhysicalReturnsAllowed>false</PhysicalReturnsAllowed>
+                        <LatestDateForPhysicalReturns>2011-11-21</LatestDateForPhysicalReturns>
+                    </PhysicalReturns>
+                    <NumberOfProductsPerCarton>-1862078212</NumberOfProductsPerCarton>
+                    <RightsClaimPolicy>
+                        <Condition>
+                            <Value>-2026644345.719</Value>
+                            <Unit>Percent</Unit>
+                            <RelationalRelator>MoreThan</RelationalRelator>
+                        </Condition>
+                        <RightsClaimPolicyType>Monetize</RightsClaimPolicyType>
+                    </RightsClaimPolicy>
+                    <WebPolicy>
+                        <Condition>
+                            <Value>-366925504.313</Value>
+                            <Unit>Percent</Unit>
+                            <RelationalRelator>LessThanOrEqualTo</RelationalRelator>
+                        </Condition>
+                    </WebPolicy>
+                </DealTerms>
+                <ResourceUsage>
+                    <DealResourceReference>AK</DealResourceReference>
+                    <Usage>
+                        <UseType Namespace="rNz5fQe_RKuX_Yxk1JV0" UserDefinedValue="POd8He7M">UseAsDevice</UseType>
+                        <UserInterfaceType Namespace="NoxtiKfvLnnduJF." UserDefinedValue="fz9P8KRoOQIV9nuXcQf4q">PersonalComputer</UserInterfaceType>
+                        <DistributionChannelType Namespace="D3Vr_DetiaWDop_" UserDefinedValue="IZmHx4CQQPj8WP">AsPerContract</DistributionChannelType>
+                        <CarrierType Namespace="KRY2LC5F" UserDefinedValue="VgtC">DvdVideoLpPAL</CarrierType>
+                        <TechnicalInstantiation>
+                            <DrmEnforcementType>NotDrmEnforced</DrmEnforcementType>
+                            <VideoDefinitionType>HighDefinition</VideoDefinitionType>
+                            <CodingType>Lossy</CodingType>
+                            <BitRate UnitOfMeasure="kbps">2083520548.509</BitRate>
+                        </TechnicalInstantiation>
+                        <NumberOfUsages>1652958670</NumberOfUsages>
+                    </Usage>
+                </ResourceUsage>
+                <DealTechnicalResourceDetailsReferenceList>
+                    <DealTechnicalResourceDetailsReference>T3lz</DealTechnicalResourceDetailsReference>
+                </DealTechnicalResourceDetailsReferenceList>
+                <DistributionChannelPage>
+                    <PartyId Namespace="y_CJfyJokJXcVioO" IsDPID="true" IsISNI="true">tUd9_tocn</PartyId>
+                    <ReleaseId IsReplaced="true">
+                        <GRid>FR5h6F35mVOx6pydoDpZ</GRid>
+                        <ISRC>Jtgo629hl-</ISRC>
+                        <ICPN IsEan="false">N0si.9DyX9n1JQHI8dgWXW4OfP</ICPN>
+                        <CatalogNumber Namespace="ZCzdd7nd">CQ</CatalogNumber>
+                        <ProprietaryId Namespace="QjHNw64BUmGNC1VCxOv">idrIymFuqb4aYzmzmxr3RZHMjm</ProprietaryId>
+                    </ReleaseId>
+                    <PageName LanguageAndScriptCode="es_MX">fVCdWSD23FGLFxd2L</PageName>
+                    <URL>xZ1cNjz9XOERPbJScwCBd</URL>
+                    <UserName>tgmNOuc7IdyH</UserName>
+                    <Password>zEo4V_iSUiEF6n73fwO</Password>
+                </DistributionChannelPage>
+            </Deal>
+            <EffectiveDate>2015-01-02</EffectiveDate>
+        </ReleaseDeal>
+    </DealList>
+</ern:NewReleaseMessage>

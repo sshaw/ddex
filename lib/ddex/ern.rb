@@ -4,8 +4,8 @@ require "nokogiri"
 module DDEX
   module ERN
 
-    ROOT_ELEMENT    = "NewReleaseMessage"
-    VERSION_ATTR    = "MessageSchemaVersionId"
+    ROOT_ELEMENT = "NewReleaseMessage"
+    VERSION_ATTR = "MessageSchemaVersionId"
 
     DEFAULT_CONFIG  = {
       "ern/36" => {
@@ -16,6 +16,11 @@ module DDEX
       "ern/351" => {
         :schema => "http://ddex.net/xml/ern/351/release-notification.xsd",
         :version => "3.5.1"
+      },
+
+      "ern/35" => {
+        :schema => "http://ddex.net/xml/ern/35/release-notification.xsd",
+        :version => "3.5"
       },
 
       "ern/341" => {
@@ -118,7 +123,7 @@ module DDEX
       klass = v.upcase
 
       ## 2.0 allows for one call
-      loader= lambda { DDEX::ERN.const_get(klass).const_get(ROOT_ELEMENT) }
+      loader = lambda { DDEX::ERN.const_get(klass).const_get(ROOT_ELEMENT) }
       return loader[] if DDEX::ERN.const_defined?(klass)
 
       root = File.dirname(File.expand_path(__FILE__))
