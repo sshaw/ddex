@@ -9,12 +9,13 @@ require "ddex/element"
 require "ddex/v20110630/ddexc/administrating_record_company"
 require "ddex/v20110630/ddexc/artist"
 require "ddex/v20110630/ddexc/related_release"
+require "ddex/v20110630/ddexc/release_summary_details_by_territory"
 require "ddex/v20110630/ddexc/release_type"
 require "ddex/v20110630/ddexc/title"
 
 module DDEX module V20110630 module DDEXC
 
-class ReleaseDetailsByTerritory < Element
+class ReleaseDetailsByTerritory < DDEX::V20110630::DDEXC::ReleaseSummaryDetailsByTerritory
   include ROXML
 
 

@@ -7,11 +7,12 @@ require "roxml"
 require "ddex/element"
 
 require "ddex/v20110630/ddexc/musical_work_contributor_role"
+require "ddex/v20110630/ddexc/party_descriptor"
 require "ddex/v20110630/ddexc/society_affiliation"
 
 module DDEX module V20110630 module DDEXC
 
-class MusicalWorkContributor < Element
+class MusicalWorkContributor < DDEX::V20110630::DDEXC::PartyDescriptor
   include ROXML
 
 

@@ -7,10 +7,11 @@ require "roxml"
 require "ddex/element"
 
 require "ddex/v20110630/ddexc/c_line"
+require "ddex/v20110630/ddexc/sound_recording_details_by_territory"
 
 module DDEX module V20110630 module DDEXC
 
-class VideoDetailsByTerritory < Element
+class VideoDetailsByTerritory < DDEX::V20110630::DDEXC::SoundRecordingDetailsByTerritory
   include ROXML
 
 

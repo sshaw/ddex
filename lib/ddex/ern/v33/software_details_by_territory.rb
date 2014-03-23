@@ -11,11 +11,12 @@ require "ddex/v20110630/ddexc/fulfillment_date"
 require "ddex/v20110630/ddexc/genre"
 require "ddex/v20110630/ddexc/keywords"
 require "ddex/v20110630/ddexc/parental_warning_type"
+require "ddex/v20110630/ddexc/software_details_by_territory"
 require "ddex/v20110630/ddexc/synopsis"
 
 module DDEX module ERN module V33
 
-class SoftwareDetailsByTerritory < Element
+class SoftwareDetailsByTerritory < DDEX::V20110630::DDEXC::SoftwareDetailsByTerritory
   include ROXML
 
 

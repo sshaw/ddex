@@ -33,10 +33,10 @@ module DDEX
         :version => "3.4"
       },
 
-      # "2011/ern-main/33" => {
-      #   :schema => "http://ddex.net/xml/2011/ern-main/33/ern-main.xsd",
-      #   :version => "3.3"
-      # }
+      "2011/ern-main/33" => {
+        :schema => "http://ddex.net/xml/2011/ern-main/33/ern-main.xsd",
+        :version => "3.3"
+      }
     }
 
     mattr_reader :config

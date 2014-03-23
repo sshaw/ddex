@@ -7,10 +7,11 @@ require "roxml"
 require "ddex/element"
 
 require "ddex/v20110630/ddexc/name"
+require "ddex/v20110630/ddexc/party_descriptor"
 
 module DDEX module V20110630 module DDEXC
 
-class DSP < Element
+class DSP < DDEX::V20110630::DDEXC::PartyDescriptor
   include ROXML
 
 

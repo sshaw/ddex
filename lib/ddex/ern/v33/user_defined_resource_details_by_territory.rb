@@ -12,10 +12,11 @@ require "ddex/v20110630/ddexc/genre"
 require "ddex/v20110630/ddexc/keywords"
 require "ddex/v20110630/ddexc/parental_warning_type"
 require "ddex/v20110630/ddexc/synopsis"
+require "ddex/v20110630/ddexc/user_defined_resource_details_by_territory"
 
 module DDEX module ERN module V33
 
-class UserDefinedResourceDetailsByTerritory < Element
+class UserDefinedResourceDetailsByTerritory < DDEX::V20110630::DDEXC::UserDefinedResourceDetailsByTerritory
   include ROXML
 
 

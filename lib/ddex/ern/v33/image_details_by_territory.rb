@@ -9,13 +9,14 @@ require "ddex/element"
 require "ddex/ern/v33/technical_image_details"
 require "ddex/v20110630/ddexc/fulfillment_date"
 require "ddex/v20110630/ddexc/genre"
+require "ddex/v20110630/ddexc/image_details_by_territory"
 require "ddex/v20110630/ddexc/keywords"
 require "ddex/v20110630/ddexc/parental_warning_type"
 require "ddex/v20110630/ddexc/synopsis"
 
 module DDEX module ERN module V33
 
-class ImageDetailsByTerritory < Element
+class ImageDetailsByTerritory < DDEX::V20110630::DDEXC::ImageDetailsByTerritory
   include ROXML
 
 

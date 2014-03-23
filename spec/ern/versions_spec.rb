@@ -3,9 +3,13 @@ require "spec_helper"
 shared_examples_for "metadata serialization" do |path|
   it "serializes the metadata" do
     xml  = File.read(path)
-    spec = DDEX::ERN.read(xml)
+    spec = DDEX::ERN.read(xml)    
     # TODO: DDEX.read(xml), DDEX.write
-    expect(DDEX::ERN.write(spec)).to equal_xml(xml)
+    #expect(DDEX::ERN.write(spec)).to equal_xml(xml)
+    x = DDEX::ERN.write(spec)
+    File.write("a.xml", x)
+    expect(x).to equal_xml(xml)
+    
   end
 end
 

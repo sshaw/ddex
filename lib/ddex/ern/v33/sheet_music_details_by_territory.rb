@@ -10,10 +10,11 @@ require "ddex/ern/v33/technical_sheet_music_details"
 require "ddex/v20110630/ddexc/fulfillment_date"
 require "ddex/v20110630/ddexc/genre"
 require "ddex/v20110630/ddexc/parental_warning_type"
+require "ddex/v20110630/ddexc/sheet_music_details_by_territory"
 
 module DDEX module ERN module V33
 
-class SheetMusicDetailsByTerritory < Element
+class SheetMusicDetailsByTerritory < DDEX::V20110630::DDEXC::SheetMusicDetailsByTerritory
   include ROXML
 
 

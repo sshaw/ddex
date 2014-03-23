@@ -6,11 +6,12 @@
 require "roxml"
 require "ddex/element"
 
+require "ddex/v20110630/ddexc/party_descriptor"
 require "ddex/v20110630/ddexc/resource_contributor"
 
 module DDEX module V20110630 module DDEXC
 
-class Character < Element
+class Character < DDEX::V20110630::DDEXC::PartyDescriptor
   include ROXML
 
 

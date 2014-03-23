@@ -6,10 +6,11 @@
 require "roxml"
 require "ddex/element"
 
+require "ddex/v20110630/ddexc/party_descriptor"
 
 module DDEX module V20110630 module DDEXC
 
-class RightsController < Element
+class RightsController < DDEX::V20110630::DDEXC::PartyDescriptor
   include ROXML
 
 

@@ -17,7 +17,7 @@ class PhysicalReturns < Element
 
       xml_accessor :physical_returns_allowed, :from => "PhysicalReturnsAllowed", :required => false
 
-      xml_accessor :latest_date_for_physical_returns, :as => DateTime, :from => "LatestDateForPhysicalReturns", :required => false
+      xml_accessor :latest_date_for_physical_returns, :as => Date, :from => "LatestDateForPhysicalReturns", :required => false
 
 
 

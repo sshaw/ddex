@@ -17,11 +17,12 @@ require "ddex/v20110630/ddexc/genre"
 require "ddex/v20110630/ddexc/host_sound_carrier"
 require "ddex/v20110630/ddexc/keywords"
 require "ddex/v20110630/ddexc/parental_warning_type"
+require "ddex/v20110630/ddexc/sound_recording_details_by_territory"
 require "ddex/v20110630/ddexc/synopsis"
 
 module DDEX module ERN module V33
 
-class VideoDetailsByTerritory < Element
+class VideoDetailsByTerritory < DDEX::V20110630::DDEXC::SoundRecordingDetailsByTerritory
   include ROXML
 
 
