@@ -136,7 +136,6 @@ module DDEX
 
       loader[]
     rescue LoadError, NameError => e
-      p e
       raise_unknown_version(version)
     end
   end
