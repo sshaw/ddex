@@ -133,11 +133,8 @@ module DDEX
       v = "v#{v}"
       klass = v.upcase
 
-      ## 2.0 allows for one call
-      loader = lambda { DDEX::ERN.const_get(klass).const_get(ROOT_ELEMENT) }
-      return loader[] if DDEX::ERN.const_defined?(klass)
-
-      loader[]
+      # >= 2.0 allows for one call
+      DDEX::ERN.const_get(klass).const_get(ROOT_ELEMENT)
     rescue LoadError, NameError => e
       raise_unknown_version(version)
     end
