@@ -31,7 +31,6 @@ shared_examples_for "PriceInformation/@PriceType mapping" do
 end
 
 describe DDEX::ERN do
-  # Again, maybe use a class method to retrieve this info
   DDEX::ERN.supported_versions.each do |version|
     describe "ERN #{version} metadata serialization" do
       each_fixture("ern/#{ version.tr(".", "") }").each do |path|
@@ -42,8 +41,6 @@ describe DDEX::ERN do
     end
   end
 end
-
-#require "ddex/ern/v36/price_information"
 
 # describe DDEX::ERN::V36::PriceInformation do
 #   it_should_behave_like "PriceInformation/@PriceType mapping"

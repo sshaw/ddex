@@ -3,6 +3,12 @@ require "nokogiri"
 
 module DDEX
   module ERN
+    autoload :V33,  "ddex/ern/v33"
+    autoload :V34,  "ddex/ern/v34"
+    autoload :V341, "ddex/ern/v341"
+    autoload :V35,  "ddex/ern/v35"
+    autoload :V351, "ddex/ern/v351"
+    autoload :V36,  "ddex/ern/v36"
 
     ROOT_ELEMENT = "NewReleaseMessage"
     VERSION_ATTR = "MessageSchemaVersionId"
@@ -123,16 +129,13 @@ module DDEX
     end
 
     def self.load_version(version)
-      version = $1 if version =~ %r{/(\d+)\z}
-      v = "v#{version}"
+      v = $1 if version =~ %r{/(\d+)\z}
+      v = "v#{v}"
       klass = v.upcase
 
       ## 2.0 allows for one call
       loader = lambda { DDEX::ERN.const_get(klass).const_get(ROOT_ELEMENT) }
       return loader[] if DDEX::ERN.const_defined?(klass)
-
-      root = File.dirname(File.expand_path(__FILE__))
-      Dir["#{root}/ern/#{v}/*.rb"].each { |path| require path }
 
       loader[]
     rescue LoadError, NameError => e
