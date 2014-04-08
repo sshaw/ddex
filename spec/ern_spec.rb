@@ -83,24 +83,24 @@ describe DDEX::ERN do
   describe ".read" do
     describe "the XML argument" do
       it "can be a string" do
-        obj = DDEX::ERN.read(File.read(fixture("ern36")))
+        obj = DDEX::ERN.read(File.read(fixture("ern/36/instance1")))
         expect(obj).to be_an_instance_of(DDEX::ERN::V36::NewReleaseMessage)
       end
 
       it "can be path to a file" do
-        obj = DDEX::ERN.read(fixture("ern36"))
+        obj = DDEX::ERN.read(fixture("ern/36/instance1"))
         expect(obj).to be_an_instance_of(DDEX::ERN::V36::NewReleaseMessage)
       end
 
       it "can be an IO object" do
-        File.open(fixture("ern36")) do |io|
+        File.open(fixture("ern/36/instance1")) do |io|
           obj = DDEX::ERN.read(io)
           expect(obj).to be_an_instance_of(DDEX::ERN::V36::NewReleaseMessage)
         end
       end
     end
 
-    context "when the XML in malformed" do
+    context "when the XML is malformed" do
       it "raises an XMLLoadError" do
         expect { DDEX::ERN.read("<a>123</b>") }.to raise_error(DDEX::XMLLoadError)
       end
@@ -114,10 +114,25 @@ describe DDEX::ERN do
 
     context "when the XML is for an unsupported version" do
       it "raises an UnknownVersionError" do
-        xml = File.read(fixture("ern36"))
+        xml = File.read(fixture("ern/36/instance1"))
         doc = Nokogiri::XML(xml)
         doc.root["MessageSchemaVersionId"] = "what_what_what"
         expect { DDEX::ERN.read(doc.to_s) }.to raise_error(DDEX::UnknownVersionError, /what_what_what/)
+      end
+    end
+
+    describe "the :version option" do
+      it "parses XML as the given version" do
+        obj = DDEX::ERN.read(fixture("ern/36/instance1"), :version => "ern/34")
+        expect(obj).to be_an_instance_of(DDEX::ERN::V34::NewReleaseMessage)
+      end
+
+      context "when the version is unsupported" do
+        it "raises an UnknownVersionError" do
+          expect {
+            DDEX::ERN.read(fixture("ern/36/instance1"), :version => "__DATA__")
+          }.to raise_error(DDEX::UnknownVersionError, /__DATA__/)
+        end
       end
     end
   end

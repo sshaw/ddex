@@ -63,7 +63,7 @@ module DDEX
       raise ArgumentError, "options must be a Hash" unless options.is_a?(Hash)
 
       doc = parse(xml, options)
-      ver = doc.root[VERSION_ATTR]
+      ver = options[:version] || doc.root[VERSION_ATTR]
       raise_unknown_version(ver) unless config.include?(ver)
 
       klass = load_version(ver)
