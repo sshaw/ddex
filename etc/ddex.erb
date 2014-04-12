@@ -50,14 +50,14 @@ class <%= @class.name %> < <%= @class.superclass || "Element" %>
     <% end %>
   <% end %>
 
-  <% if @class.element.root? && @class.element.name == "NewReleaseMessage" %>
+  <%- if @class.element.root? && @class.element.name == "NewReleaseMessage" -%>
     alias :_message_schema_version_id :message_schema_version_id
     private :_message_schema_version_id
 
     def message_schema_version_id
       _message_schema_version_id || <%= @class.module.to_a[0..-2].join("::") %>.config["<%= @class.module.to_a[-1] %>"][:message_schema_version_id]
     end
-  <% end %>
+  <%- end -%>
 end
 
 <%= @class.module.map { "end" }.join " " %>

@@ -107,6 +107,14 @@ These changes only affect the object model, the resulting XML will conform to th
 <code>ern:PriceInformation/@PriceType</code> has been renamed to <code>PriceInformation#type</code> to avoid conflicting with the
 element of the same name (<code>ern:PriceInformation/PriceType</code>).
 
+=== Version Detection
+
+...
+
+=== Validation
+
+...
+
 === More Info
 
 * {Source code}[https://github.com/sshaw/ddex]

@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ern="http://ddex.net/xml/ern/36"
-   xmlns:avs="http://ddex.net/xml/avs/avs" targetNamespace="http://ddex.net/xml/ern/36"
-   elementFormDefault="unqualified" attributeFormDefault="unqualified">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+   xmlns:ern="http://ddex.net/xml/ern/36"
+   xmlns:avs="http://ddex.net/xml/avs/avs"
+   xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+   jaxb:version="1.0"
+   targetNamespace="http://ddex.net/xml/ern/36"
+   elementFormDefault="unqualified" 
+   attributeFormDefault="unqualified">
    <xs:import namespace="http://ddex.net/xml/avs/avs" schemaLocation="avs.xsd"/>
    <xs:annotation>
       <xs:documentation>© 2006-2013 Digital Data Exchange, LLC (DDEX)</xs:documentation>
@@ -1443,12 +1448,11 @@
             </xs:annotation>
          </xs:element>
       </xs:sequence>
-      <!-- 
-	   Have to rename this from PriceType, otherwise we'll get a conflict as it's an error to 
-	   have a class with two methods of the same name.
-      -->
-      <xs:attribute name="Type" type="avs:PriceInformationType">
+      <xs:attribute name="PriceType" type="avs:PriceInformationType">
          <xs:annotation>
+            <xs:appinfo>
+               <jaxb:property name="Type"/>
+            </xs:appinfo>
             <xs:documentation source="ddex:Definition">A Type of the Price. This is represented in an XML schema as an XML Attribute. If no value is provided, a StandardRetailPrice is assumed.</xs:documentation>
          </xs:annotation>
       </xs:attribute>
