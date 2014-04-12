@@ -116,15 +116,18 @@ The specification version is determined by the <code>MessageSchemaVersionId</cod
 
 By default the <code>MessageSchemaVersionId</code> is assumed to be in <code>SPEC/VERSION</code> format, as this seems to be the
 convention used by most instance docs -though the DDEX specifications {are not strict about this}[http://www.ddex.net/content/format-messageschemaversionid]
-and variations {do exist in the wild}[https://github.com/sshaw/ddex/pull/2#issue-30059145].
+and variations {do exist in the wild}[https://github.com/sshaw/ddex/pull/2#issue-30059145]. If you're dealing with
+<code>MessageSchemaVersionId</code>s that vary from this format (TODO: note normalization?), and explicitly setting
+the version is not practical, you can set the global default(s):
 
-If you're dealing with files containing <code>MessageSchemaVersionId</code>s that vary from this format (TODO: note normalization?),
-and explicitly setting the version is not practical, you can set the global default for a particular version:
-
-  DDEX::ERN.config["V36"][:message_schema_version_id] = "ern tray_fever!@#"
-  DDEX.read(doc)
+  DDEX::ERN.config["V35"][:message_schema_version_id] = "ern tray_fever!"
+  DDEX::ERN.config["V351"][:message_schema_version_id] = "ern/35punto1"
+  # ...
 
 Note that the version key must match the version's module name.
+
+Feel free to {open an issue}[https://github.com/sshaw/ddex/issues] if you feel this arrangement is problematic or should
+be modified to accommodate something other than <code>SPEC/VERSION</code> out of the box.
 
 === Validation
 
@@ -142,3 +145,11 @@ Note that the version key must match the version's module name.
 Many things... but: <code>ROXML.from_xml</code> does not check the root element's name. Need to add something like:
 
   raise "unknown element #{xml.name}" unless xml.name == tag_name
+
+=== Author
+
+Skye Shaw  [skye.shaw {AT} gmail.com]
+
+=== License
+
+Copyright (c) 2013 Skye Shaw. Released under the {MIT License}[www.opensource.org/licenses/MIT].
