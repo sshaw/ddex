@@ -100,7 +100,7 @@ TODO: See Types
 
 ==== Version specific changes
 
-Changes only affect the object model, the resulting XML will conform to the appropriate DDEX schema.
+These changes only affect the object model, the resulting XML will conform to the appropriate DDEX schema.
 
 ===== ERN v3.6
 
