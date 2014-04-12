@@ -11,40 +11,52 @@ module DDEX
     autoload :V36,  "ddex/ern/v36"
     autoload :V37,  "ddex/ern/v37"
 
-    ROOT_ELEMENT = "NewReleaseMessage"
-    VERSION_ATTR = "MessageSchemaVersionId"
+    ROOT_ELEMENT = "NewReleaseMessage".freeze
+    VERSION_ATTR = "MessageSchemaVersionId".freeze
 
     DEFAULT_CONFIG  = {
-      "ern/36" => {
+      "V37" => {
+        :schema => "http://ddex.net/xml/ern/37/release-notification.xsd",
+        :version => "3.7",
+        :message_schema_version_id => "ern/37"
+      },
+
+      "V36" => {
         :schema => "http://ddex.net/xml/ern/36/release-notification.xsd",
-        :version => "3.6"
+        :version => "3.6",
+        :message_schema_version_id => "ern/36"
       },
 
-      "ern/351" => {
+      "V351" => {
         :schema => "http://ddex.net/xml/ern/351/release-notification.xsd",
-        :version => "3.5.1"
+        :version => "3.5.1",
+        :message_schema_version_id => "ern/351"
       },
 
-      "ern/35" => {
+      "V35" => {
         :schema => "http://ddex.net/xml/ern/35/release-notification.xsd",
-        :version => "3.5"
+        :version => "3.5",
+        :message_schema_version_id => "ern/35"
       },
 
-      "ern/341" => {
+      "V341" => {
         :schema => "http://ddex.net/xml/ern/341/release-notification.xsd",
-        :version => "3.4.1"
+        :version => "3.4.1",
+        :message_schema_version_id => "ern/341"
       },
 
-      "ern/34" => {
+      "V34" => {
         :schema => "http://ddex.net/xml/ern/34/release-notification.xsd",
-        :version => "3.4"
+        :version => "3.4",
+        :message_schema_version_id => "ern/34"
       },
 
-      "2011/ern-main/33" => {
+      "V33" => {
         :schema => "http://ddex.net/xml/2011/ern-main/33/ern-main.xsd",
-        :version => "3.3"
+        :version => "3.3",
+        :message_schema_version_id => "2011/ern-main/33"
       }
-    }
+    }.freeze
 
     mattr_reader :config
     @@config = DEFAULT_CONFIG
@@ -55,7 +67,7 @@ module DDEX
 
     def self.supports?(version)
       version = version.downcase.strip
-      config.any? { |name,cfg| name == version || cfg[:version] == version }
+      config.any? { |name,cfg| name == version || cfg[:version] == version || cfg[:message_schema_version_id] == version }
     end
 
     # options[:validate] ???
@@ -63,10 +75,8 @@ module DDEX
       options ||= {}
       raise ArgumentError, "options must be a Hash" unless options.is_a?(Hash)
 
-      doc = parse(xml, options)
-      ver = options[:version] || doc.root[VERSION_ATTR]
-      raise_unknown_version(ver) unless config.include?(ver)
-
+      doc   = parse(xml, options)
+      ver   = options[:version] || doc.root[VERSION_ATTR]
       klass = load_version(ver)
 
       begin
@@ -104,13 +114,15 @@ module DDEX
 
     private
     def self.schema_location(object, schema)
-      return unless schema or config.include?(object.message_schema_version_id)
+      # extract version from namespace e.g., DDEX::ERN::V36::NewReleaseMessage
+      ver = object.class.name.split("::")[-2]
+      return unless schema or config.include?(ver)
 
       # Check if it's "NS schema"
       if schema && schema.strip.include?(" ")
         schema
       else
-        sprintf "%s %s", object.class.ns[1], schema || config[object.message_schema_version_id][:schema]
+        sprintf "%s %s", object.class.ns[1], schema || config[ver][:schema]
       end
     end
 
@@ -130,9 +142,8 @@ module DDEX
     end
 
     def self.load_version(version)
-      v = $1 if version =~ %r{/(\d+)\z}
-      v = "v#{v}"
-      klass = v.upcase
+      klass, _ = config.find { |name, cfg| cfg[:message_schema_version_id] == version.strip }
+      raise_unknown_version(version) unless klass
 
       # >= 2.0 allows for one call
       DDEX::ERN.const_get(klass).const_get(ROOT_ELEMENT)

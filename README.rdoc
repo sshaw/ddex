@@ -8,7 +8,7 @@
 
  require "ddex"
 
- message = DDEX.read("path/to/metadata.xml")
+ message = DDEX.read("path/to/metadata.xml")  # ERN
  puts message.update_indicator
  message.resource_list.each do |resource|
    puts resource.title
@@ -102,14 +102,29 @@ TODO: See Types
 
 These changes only affect the object model, the resulting XML will conform to the appropriate DDEX schema.
 
-===== ERN v3.6
+===== ERN >= v3.6
 
-<code>ern:PriceInformation/@PriceType</code> has been renamed to <code>PriceInformation#type</code> to avoid conflicting with the
-element of the same name (<code>ern:PriceInformation/PriceType</code>).
+<code>PriceInformation/@PriceType</code> has been renamed to <code>PriceInformation#type</code> to avoid conflicting with the
+element of the same name: <code>PriceInformation/PriceType</code>.
 
-=== Version Detection
+=== Specification Version Detection
 
-...
+The specification version is determined by the <code>MessageSchemaVersionId</code>, which can be:
+
+1. Detected based on the root element's value i.e., <code>/node()/@MessageSchemaVersionId</code> (the root element varies by specification)
+2. Explicitly given to DDEX.read via the <code>:version</code> option
+
+By default the <code>MessageSchemaVersionId</code> is assumed to be in <code>SPEC/VERSION</code> format, as this seems to be the
+convention used by most instance docs -though the DDEX specifications {are not strict about this}[http://www.ddex.net/content/format-messageschemaversionid]
+and variations {do exist in the wild}[https://github.com/sshaw/ddex/pull/2#issue-30059145].
+
+If you're dealing with files containing <code>MessageSchemaVersionId</code>s that vary from this format (TODO: note normalization?),
+and explicitly setting the version is not practical, you can set the global default for a particular version:
+
+  DDEX::ERN.config["V36"][:message_schema_version_id] = "ern tray_fever!@#"
+  DDEX.read(doc)
+
+Note that the version key must match the version's module name.
 
 === Validation
 

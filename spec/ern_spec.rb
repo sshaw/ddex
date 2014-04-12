@@ -29,7 +29,7 @@ describe DDEX::ERN do
       ern = DDEX::ERN::V36::NewReleaseMessage.new(:message_schema_version_id => "ern/36")
       xml = DDEX::ERN.write(ern)
       doc = Nokogiri::XML(xml)
-      expect(doc.root[DDEX::XML_SCHEMA_INSTANCE_ATTR]).to eq [ern.class.ns[1], DDEX::ERN::DEFAULT_CONFIG["ern/36"][:schema]].join(" ")
+      expect(doc.root[DDEX::XML_SCHEMA_INSTANCE_ATTR]).to eq [ern.class.ns[1], DDEX::ERN::config["V36"][:schema]].join(" ")
     end
 
     describe "the :schema option" do
@@ -75,7 +75,7 @@ describe DDEX::ERN do
         ern = DDEX::ERN::V36::NewReleaseMessage.new(:message_schema_version_id => "ern/36")
         xml = DDEX::ERN.write(ern)
         doc = Nokogiri::XML(xml)
-        expect(doc.root[DDEX::XML_SCHEMA_INSTANCE_ATTR]).to eq [ern.class.ns[1], DDEX::ERN::DEFAULT_CONFIG["ern/36"][:schema]].join(" ")
+        expect(doc.root[DDEX::XML_SCHEMA_INSTANCE_ATTR]).to eq [ern.class.ns[1], DDEX::ERN.config["V36"][:schema]].join(" ")
       end
     end
   end
@@ -112,7 +112,7 @@ describe DDEX::ERN do
       end
     end
 
-    context "when the XML is for an unsupported version" do
+    context "when the XML is for an unknown MessageSchemaVersionId" do
       it "raises an UnknownVersionError" do
         xml = File.read(fixture("ern/36/instance1"))
         doc = Nokogiri::XML(xml)
@@ -121,13 +121,28 @@ describe DDEX::ERN do
       end
     end
 
+    context "with a user-defined MessageSchemaVersionId" do
+      it "parses the XML for the version associated with the user-defined version" do
+        user_default = "ern/tray_sic!@#"
+        DDEX::ERN.config["V36"][:message_schema_version_id] = user_default
+
+        # Load a 3.5.1 schema
+        xml = File.read(fixture("ern/351/instance1"))
+        doc = Nokogiri::XML(xml)
+        doc.root["MessageSchemaVersionId"] = user_default
+
+        obj = DDEX::ERN.read(doc.to_s)
+        expect(obj).to be_an_instance_of(DDEX::ERN::V36::NewReleaseMessage)
+      end
+    end
+
     describe "the :version option" do
-      it "parses XML as the given version" do
+      it "parses XML as the given MessageSchemaVersionId" do
         obj = DDEX::ERN.read(fixture("ern/36/instance1"), :version => "ern/34")
         expect(obj).to be_an_instance_of(DDEX::ERN::V34::NewReleaseMessage)
       end
 
-      context "when the version is unsupported" do
+      context "when the MessageSchemaVersionId is unsupported" do
         it "raises an UnknownVersionError" do
           expect {
             DDEX::ERN.read(fixture("ern/36/instance1"), :version => "__DATA__")

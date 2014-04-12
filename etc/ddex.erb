@@ -10,7 +10,7 @@ require "ddex/element"
 require "<%= mod %>"
 <%- end -%>
 
-<%= @class.module.map { |mod| "module #{mod}" }.join " " %>
+<%= @class.module.map { |mod| "module #{mod}" }.join " " %>  # :nodoc: all
 
 class <%= @class.name %> < <%= @class.superclass || "Element" %>
   include ROXML
