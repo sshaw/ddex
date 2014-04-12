@@ -59,6 +59,7 @@ task :versions do
 end
 
 namespace :generate do
+  desc "Create a 'main' file to load the given spec and version"
   task :main, :name, :version do |t, args|
     name = args[:name]
     ver  = args[:version]

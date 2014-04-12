@@ -9,6 +9,7 @@ module DDEX
     autoload :V35,  "ddex/ern/v35"
     autoload :V351, "ddex/ern/v351"
     autoload :V36,  "ddex/ern/v36"
+    autoload :V37,  "ddex/ern/v37"
 
     ROOT_ELEMENT = "NewReleaseMessage"
     VERSION_ATTR = "MessageSchemaVersionId"
