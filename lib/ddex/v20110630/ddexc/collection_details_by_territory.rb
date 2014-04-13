@@ -9,7 +9,7 @@ require "ddex/element"
 require "ddex/v20110630/ddexc/resource_contributor"
 require "ddex/v20110630/ddexc/title"
 
-module DDEX module V20110630 module DDEXC
+module DDEX module V20110630 module DDEXC # :nodoc: all
 
 class CollectionDetailsByTerritory < Element
   include ROXML

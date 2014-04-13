@@ -12,7 +12,7 @@ require "ddex/ern/v351/resource_usage"
 require "ddex/v20121219/ddexc/deal_reference"
 require "ddex/v20121219/ddexc/web_page"
 
-module DDEX module ERN module V351
+module DDEX module ERN module V351 # :nodoc: all
 
 class Deal < Element
   include ROXML

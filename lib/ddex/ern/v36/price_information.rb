@@ -13,8 +13,8 @@ require "ddex/ern/v36/price"
 require "ddex/ern/v36/price_range_type"
 require "ddex/ern/v36/price_type"
 
-module DDEX module ERN module V36
-
+module DDEX module ERN module V36 # :nodoc: all
+ 
 class PriceInformation < Element
   include ROXML
 

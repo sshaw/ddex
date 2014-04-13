@@ -26,8 +26,8 @@ require "ddex/ern/v36/technical_midi_details"
 require "ddex/ern/v36/title"
 require "ddex/ern/v36/typed_rights_controller"
 
-module DDEX module ERN module V36
-
+module DDEX module ERN module V36 # :nodoc: all
+ 
 class MidiDetailsByTerritory < Element
   include ROXML
 

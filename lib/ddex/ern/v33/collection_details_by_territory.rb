@@ -9,7 +9,7 @@ require "ddex/element"
 require "ddex/v20110630/ddexc/character"
 require "ddex/v20110630/ddexc/collection_details_by_territory"
 
-module DDEX module ERN module V33
+module DDEX module ERN module V33 # :nodoc: all
 
 class CollectionDetailsByTerritory < DDEX::V20110630::DDEXC::CollectionDetailsByTerritory
   include ROXML

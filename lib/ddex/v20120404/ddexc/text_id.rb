@@ -8,7 +8,7 @@ require "ddex/element"
 
 require "ddex/v20120404/ddexc/proprietary_id"
 
-module DDEX module V20120404 module DDEXC
+module DDEX module V20120404 module DDEXC # :nodoc: all
 
 class TextId < Element
   include ROXML

@@ -16,7 +16,7 @@ require "ddex/v20121219/ddexc/fulfillment_date"
 require "ddex/v20121219/ddexc/fulfillment_date"
 require "ddex/v20121219/ddexc/text_codec_type"
 
-module DDEX module ERN module V351
+module DDEX module ERN module V351 # :nodoc: all
 
 class TechnicalTextDetails < Element
   include ROXML

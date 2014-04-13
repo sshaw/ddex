@@ -8,7 +8,7 @@ require "ddex/element"
 
 require "ddex/v20120214/ddexc/purpose"
 
-module DDEX module V20120214 module DDEXC
+module DDEX module V20120214 module DDEXC # :nodoc: all
 
 class ResourceContainedResourceReference < Element
   include ROXML

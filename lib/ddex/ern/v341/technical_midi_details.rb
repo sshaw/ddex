@@ -14,7 +14,7 @@ require "ddex/v20120404/ddexc/fulfillment_date"
 require "ddex/v20120404/ddexc/fulfillment_date"
 require "ddex/v20120404/ddexc/sound_processor_type"
 
-module DDEX module ERN module V341
+module DDEX module ERN module V341 # :nodoc: all
 
 class TechnicalMidiDetails < Element
   include ROXML

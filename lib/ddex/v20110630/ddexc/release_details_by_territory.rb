@@ -13,7 +13,7 @@ require "ddex/v20110630/ddexc/release_summary_details_by_territory"
 require "ddex/v20110630/ddexc/release_type"
 require "ddex/v20110630/ddexc/title"
 
-module DDEX module V20110630 module DDEXC
+module DDEX module V20110630 module DDEXC # :nodoc: all
 
 class ReleaseDetailsByTerritory < DDEX::V20110630::DDEXC::ReleaseSummaryDetailsByTerritory
   include ROXML

@@ -8,7 +8,7 @@ require "ddex/element"
 
 require "ddex/v20120404/ddexc/bit_rate"
 
-module DDEX module V20120404 module DDEXC
+module DDEX module V20120404 module DDEXC # :nodoc: all
 
 class TechnicalInstantiation < Element
   include ROXML

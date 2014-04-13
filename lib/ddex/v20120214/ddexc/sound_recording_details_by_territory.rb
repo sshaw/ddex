@@ -17,7 +17,7 @@ require "ddex/v20120214/ddexc/rights_agreement_id"
 require "ddex/v20120214/ddexc/rights_controller"
 require "ddex/v20120214/ddexc/title"
 
-module DDEX module V20120214 module DDEXC
+module DDEX module V20120214 module DDEXC # :nodoc: all
 
 class SoundRecordingDetailsByTerritory < Element
   include ROXML

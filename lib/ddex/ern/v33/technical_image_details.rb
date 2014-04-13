@@ -18,7 +18,7 @@ require "ddex/v20110630/ddexc/fulfillment_date"
 require "ddex/v20110630/ddexc/fulfillment_date"
 require "ddex/v20110630/ddexc/image_codec_type"
 
-module DDEX module ERN module V33
+module DDEX module ERN module V33 # :nodoc: all
 
 class TechnicalImageDetails < Element
   include ROXML

@@ -21,8 +21,8 @@ require "ddex/ern/v36/rights_claim_policy"
 require "ddex/ern/v36/usage"
 require "ddex/ern/v36/web_policy"
 
-module DDEX module ERN module V36
-
+module DDEX module ERN module V36 # :nodoc: all
+ 
 class DealTerms < Element
   include ROXML
 

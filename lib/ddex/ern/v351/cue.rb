@@ -19,7 +19,7 @@ require "ddex/v20121219/ddexc/cue_vocal_type"
 require "ddex/v20121219/ddexc/p_line"
 require "ddex/v20121219/ddexc/title"
 
-module DDEX module ERN module V351
+module DDEX module ERN module V351 # :nodoc: all
 
 class Cue < Element
   include ROXML

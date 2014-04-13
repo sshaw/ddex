@@ -15,8 +15,8 @@ require "ddex/ern/v36/release_list"
 require "ddex/ern/v36/resource_list"
 require "ddex/ern/v36/work_list"
 
-module DDEX module ERN module V36
-
+module DDEX module ERN module V36 # :nodoc: all
+ 
 class NewReleaseMessage < Element
   include ROXML
 

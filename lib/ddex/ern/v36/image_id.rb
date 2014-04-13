@@ -8,8 +8,8 @@ require "ddex/element"
 
 require "ddex/ern/v36/proprietary_id"
 
-module DDEX module ERN module V36
-
+module DDEX module ERN module V36 # :nodoc: all
+ 
 class ImageId < Element
   include ROXML
 

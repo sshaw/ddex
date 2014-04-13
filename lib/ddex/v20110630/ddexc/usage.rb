@@ -12,7 +12,7 @@ require "ddex/v20110630/ddexc/technical_instantiation"
 require "ddex/v20110630/ddexc/use_type"
 require "ddex/v20110630/ddexc/user_interface_type"
 
-module DDEX module V20110630 module DDEXC
+module DDEX module V20110630 module DDEXC # :nodoc: all
 
 class Usage < Element
   include ROXML

@@ -10,7 +10,7 @@ require "ddex/v20120404/ddexc/release_type"
 require "ddex/v20120404/ddexc/rights_type"
 require "ddex/v20120404/ddexc/royalty_amount"
 
-module DDEX module V20120404 module DDEXC
+module DDEX module V20120404 module DDEXC # :nodoc: all
 
 class TotalRoyaltyAmount < Element
   include ROXML

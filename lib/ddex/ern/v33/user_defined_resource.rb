@@ -15,7 +15,7 @@ require "ddex/v20110630/ddexc/user_defined_resource_id"
 require "ddex/v20110630/ddexc/user_defined_resource_type"
 require "ddex/v20110630/ddexc/user_defined_value"
 
-module DDEX module ERN module V33
+module DDEX module ERN module V33 # :nodoc: all
 
 class UserDefinedResource < Element
   include ROXML

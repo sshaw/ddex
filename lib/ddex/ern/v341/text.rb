@@ -15,7 +15,7 @@ require "ddex/v20120404/ddexc/text_id"
 require "ddex/v20120404/ddexc/text_type"
 require "ddex/v20120404/ddexc/title"
 
-module DDEX module ERN module V341
+module DDEX module ERN module V341 # :nodoc: all
 
 class Text < Element
   include ROXML

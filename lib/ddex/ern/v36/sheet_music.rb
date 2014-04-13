@@ -16,8 +16,8 @@ require "ddex/ern/v36/sheet_music_details_by_territory"
 require "ddex/ern/v36/sheet_music_id"
 require "ddex/ern/v36/sheet_music_type"
 
-module DDEX module ERN module V36
-
+module DDEX module ERN module V36 # :nodoc: all
+ 
 class SheetMusic < Element
   include ROXML
 

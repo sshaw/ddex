@@ -9,7 +9,7 @@ require "ddex/element"
 require "ddex/v20121219/ddexc/description"
 require "ddex/v20121219/ddexc/description"
 
-module DDEX module V20121219 module DDEXC
+module DDEX module V20121219 module DDEXC # :nodoc: all
 
 class Genre < Element
   include ROXML

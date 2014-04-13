@@ -12,7 +12,7 @@ require "ddex/v20120404/ddexc/event_date"
 require "ddex/v20120404/ddexc/indirect_resource_contributor"
 require "ddex/v20120404/ddexc/resource_contributor"
 
-module DDEX module V20120404 module DDEXC
+module DDEX module V20120404 module DDEXC # :nodoc: all
 
 class TextDetailsByTerritory < Element
   include ROXML

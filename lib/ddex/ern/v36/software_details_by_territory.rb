@@ -19,8 +19,8 @@ require "ddex/ern/v36/resource_contributor"
 require "ddex/ern/v36/synopsis"
 require "ddex/ern/v36/technical_software_details"
 
-module DDEX module ERN module V36
-
+module DDEX module ERN module V36 # :nodoc: all
+ 
 class SoftwareDetailsByTerritory < Element
   include ROXML
 

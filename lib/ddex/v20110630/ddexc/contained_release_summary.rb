@@ -9,7 +9,7 @@ require "ddex/element"
 require "ddex/v20110630/ddexc/related_release"
 require "ddex/v20110630/ddexc/release_summary"
 
-module DDEX module V20110630 module DDEXC
+module DDEX module V20110630 module DDEXC # :nodoc: all
 
 class ContainedReleaseSummary < DDEX::V20110630::DDEXC::ReleaseSummary
   include ROXML

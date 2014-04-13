@@ -14,8 +14,8 @@ require "ddex/ern/v36/release_relationship_type"
 require "ddex/ern/v36/release_summary_details_by_territory"
 require "ddex/ern/v36/rights_agreement_id"
 
-module DDEX module ERN module V36
-
+module DDEX module ERN module V36 # :nodoc: all
+ 
 class RelatedRelease < Element
   include ROXML
 

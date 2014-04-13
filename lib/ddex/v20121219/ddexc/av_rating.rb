@@ -8,7 +8,7 @@ require "ddex/element"
 
 require "ddex/v20121219/ddexc/rating_agency"
 
-module DDEX module V20121219 module DDEXC
+module DDEX module V20121219 module DDEXC # :nodoc: all
 
 class AvRating < Element
   include ROXML

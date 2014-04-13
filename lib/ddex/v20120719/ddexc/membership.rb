@@ -8,7 +8,7 @@ require "ddex/element"
 
 require "ddex/v20120719/ddexc/party_descriptor"
 
-module DDEX module V20120719 module DDEXC
+module DDEX module V20120719 module DDEXC # :nodoc: all
 
 class Membership < Element
   include ROXML

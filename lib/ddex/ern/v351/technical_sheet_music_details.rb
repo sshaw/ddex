@@ -16,7 +16,7 @@ require "ddex/v20121219/ddexc/fulfillment_date"
 require "ddex/v20121219/ddexc/fulfillment_date"
 require "ddex/v20121219/ddexc/sheet_music_codec_type"
 
-module DDEX module ERN module V351
+module DDEX module ERN module V351 # :nodoc: all
 
 class TechnicalSheetMusicDetails < Element
   include ROXML

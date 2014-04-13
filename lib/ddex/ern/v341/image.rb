@@ -12,7 +12,7 @@ require "ddex/v20120404/ddexc/image_id"
 require "ddex/v20120404/ddexc/image_type"
 require "ddex/v20120404/ddexc/title"
 
-module DDEX module ERN module V341
+module DDEX module ERN module V341 # :nodoc: all
 
 class Image < Element
   include ROXML

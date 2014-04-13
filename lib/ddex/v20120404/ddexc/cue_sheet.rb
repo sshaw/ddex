@@ -10,7 +10,7 @@ require "ddex/v20120404/ddexc/cue"
 require "ddex/v20120404/ddexc/cue_sheet_type"
 require "ddex/v20120404/ddexc/proprietary_id"
 
-module DDEX module V20120404 module DDEXC
+module DDEX module V20120404 module DDEXC # :nodoc: all
 
 class CueSheet < Element
   include ROXML

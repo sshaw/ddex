@@ -10,7 +10,7 @@ require "ddex/ern/v351/resource_contributor"
 require "ddex/v20121219/ddexc/party_id"
 require "ddex/v20121219/ddexc/party_name"
 
-module DDEX module ERN module V351
+module DDEX module ERN module V351 # :nodoc: all
 
 class Character < Element
   include ROXML

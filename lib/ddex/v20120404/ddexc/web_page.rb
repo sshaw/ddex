@@ -10,7 +10,7 @@ require "ddex/v20120404/ddexc/name"
 require "ddex/v20120404/ddexc/party_id"
 require "ddex/v20120404/ddexc/release_id"
 
-module DDEX module V20120404 module DDEXC
+module DDEX module V20120404 module DDEXC # :nodoc: all
 
 class WebPage < Element
   include ROXML

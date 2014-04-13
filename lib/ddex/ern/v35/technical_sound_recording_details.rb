@@ -18,7 +18,7 @@ require "ddex/v20120719/ddexc/fulfillment_date"
 require "ddex/v20120719/ddexc/fulfillment_date"
 require "ddex/v20120719/ddexc/sampling_rate"
 
-module DDEX module ERN module V35
+module DDEX module ERN module V35 # :nodoc: all
 
 class TechnicalSoundRecordingDetails < Element
   include ROXML

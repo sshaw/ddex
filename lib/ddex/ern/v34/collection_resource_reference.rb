@@ -7,7 +7,7 @@ require "roxml"
 require "ddex/element"
 
 
-module DDEX module ERN module V34
+module DDEX module ERN module V34 # :nodoc: all
 
 class CollectionResourceReference < Element
   include ROXML

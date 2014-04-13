@@ -13,7 +13,7 @@ require "ddex/v20110630/ddexc/price"
 require "ddex/v20110630/ddexc/price_range_type"
 require "ddex/v20110630/ddexc/price_type"
 
-module DDEX module V20110630 module DDEXC
+module DDEX module V20110630 module DDEXC # :nodoc: all
 
 class PriceInformation < Element
   include ROXML

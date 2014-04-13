@@ -8,8 +8,8 @@ require "ddex/element"
 
 require "ddex/ern/v36/hash_sum"
 
-module DDEX module ERN module V36
-
+module DDEX module ERN module V36 # :nodoc: all
+ 
 class File < Element
   include ROXML
 

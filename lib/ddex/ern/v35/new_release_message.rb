@@ -15,7 +15,7 @@ require "ddex/ern/v35/resource_list"
 require "ddex/v20120719/ddexc/message_header"
 require "ddex/v20120719/ddexc/work_list"
 
-module DDEX module ERN module V35
+module DDEX module ERN module V35 # :nodoc: all
 
 class NewReleaseMessage < Element
   include ROXML

@@ -9,8 +9,8 @@ require "ddex/element"
 require "ddex/ern/v36/description"
 require "ddex/ern/v36/rating_agency"
 
-module DDEX module ERN module V36
-
+module DDEX module ERN module V36 # :nodoc: all
+ 
 class AvRating < Element
   include ROXML
 

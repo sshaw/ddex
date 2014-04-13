@@ -14,7 +14,7 @@ require "ddex/v20121219/ddexc/reference_title"
 require "ddex/v20121219/ddexc/right_share"
 require "ddex/v20121219/ddexc/rights_agreement_id"
 
-module DDEX module V20121219 module DDEXC
+module DDEX module V20121219 module DDEXC # :nodoc: all
 
 class MusicalWork < Element
   include ROXML

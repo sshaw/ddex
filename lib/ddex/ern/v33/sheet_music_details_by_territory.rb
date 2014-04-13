@@ -12,7 +12,7 @@ require "ddex/v20110630/ddexc/genre"
 require "ddex/v20110630/ddexc/parental_warning_type"
 require "ddex/v20110630/ddexc/sheet_music_details_by_territory"
 
-module DDEX module ERN module V33
+module DDEX module ERN module V33 # :nodoc: all
 
 class SheetMusicDetailsByTerritory < DDEX::V20110630::DDEXC::SheetMusicDetailsByTerritory
   include ROXML

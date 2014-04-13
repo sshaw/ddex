@@ -10,7 +10,7 @@ require "ddex/v20110630/ddexc/label_name"
 require "ddex/v20110630/ddexc/name"
 require "ddex/v20110630/ddexc/rights_agreement_id"
 
-module DDEX module V20110630 module DDEXC
+module DDEX module V20110630 module DDEXC # :nodoc: all
 
 class ReleaseSummaryDetailsByTerritory < Element
   include ROXML

@@ -16,7 +16,7 @@ require "ddex/v20110630/ddexc/release_resource_reference_list"
 require "ddex/v20110630/ddexc/release_type"
 require "ddex/v20110630/ddexc/rights_agreement_id"
 
-module DDEX module V20110630 module DDEXC
+module DDEX module V20110630 module DDEXC # :nodoc: all
 
 class Release < Element
   include ROXML

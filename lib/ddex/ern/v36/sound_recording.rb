@@ -19,8 +19,8 @@ require "ddex/ern/v36/sound_recording_details_by_territory"
 require "ddex/ern/v36/sound_recording_id"
 require "ddex/ern/v36/sound_recording_type"
 
-module DDEX module ERN module V36
-
+module DDEX module ERN module V36 # :nodoc: all
+ 
 class SoundRecording < Element
   include ROXML
 

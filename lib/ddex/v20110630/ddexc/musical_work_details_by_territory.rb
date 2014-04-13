@@ -8,7 +8,7 @@ require "ddex/element"
 
 require "ddex/v20110630/ddexc/musical_work_contributor"
 
-module DDEX module V20110630 module DDEXC
+module DDEX module V20110630 module DDEXC # :nodoc: all
 
 class MusicalWorkDetailsByTerritory < Element
   include ROXML

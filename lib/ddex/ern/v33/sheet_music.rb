@@ -16,7 +16,7 @@ require "ddex/v20110630/ddexc/rights_agreement_id"
 require "ddex/v20110630/ddexc/sheet_music_id"
 require "ddex/v20110630/ddexc/sheet_music_type"
 
-module DDEX module ERN module V33
+module DDEX module ERN module V33 # :nodoc: all
 
 class SheetMusic < Element
   include ROXML

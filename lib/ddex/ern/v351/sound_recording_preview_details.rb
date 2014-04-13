@@ -8,7 +8,7 @@ require "ddex/element"
 
 require "ddex/v20121219/ddexc/description"
 
-module DDEX module ERN module V351
+module DDEX module ERN module V351 # :nodoc: all
 
 class SoundRecordingPreviewDetails < Element
   include ROXML

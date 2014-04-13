@@ -22,8 +22,8 @@ require "ddex/ern/v36/video_details_by_territory"
 require "ddex/ern/v36/video_id"
 require "ddex/ern/v36/video_type"
 
-module DDEX module ERN module V36
-
+module DDEX module ERN module V36 # :nodoc: all
+ 
 class Video < Element
   include ROXML
 

@@ -8,7 +8,7 @@ require "ddex/element"
 
 require "ddex/v20121219/ddexc/usage"
 
-module DDEX module ERN module V351
+module DDEX module ERN module V351 # :nodoc: all
 
 class ResourceUsage < Element
   include ROXML

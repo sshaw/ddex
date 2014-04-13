@@ -16,7 +16,7 @@ require "ddex/v20120214/ddexc/cue_vocal_type"
 require "ddex/v20120214/ddexc/resource_contributor"
 require "ddex/v20120214/ddexc/title"
 
-module DDEX module V20120214 module DDEXC
+module DDEX module V20120214 module DDEXC # :nodoc: all
 
 class Cue < Element
   include ROXML

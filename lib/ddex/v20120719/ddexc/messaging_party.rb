@@ -10,7 +10,7 @@ require "ddex/v20120719/ddexc/name"
 require "ddex/v20120719/ddexc/party_id"
 require "ddex/v20120719/ddexc/party_name"
 
-module DDEX module V20120719 module DDEXC
+module DDEX module V20120719 module DDEXC # :nodoc: all
 
 class MessagingParty < Element
   include ROXML

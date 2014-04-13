@@ -11,8 +11,8 @@ require "ddex/ern/v36/event_date"
 require "ddex/ern/v36/party_descriptor"
 require "ddex/ern/v36/party_descriptor"
 
-module DDEX module ERN module V36
-
+module DDEX module ERN module V36 # :nodoc: all
+ 
 class CatalogTransfer < Element
   include ROXML
 

@@ -17,7 +17,7 @@ require "ddex/v20120719/ddexc/indirect_resource_contributor"
 require "ddex/v20120719/ddexc/parental_warning_type"
 require "ddex/v20120719/ddexc/title"
 
-module DDEX module ERN module V35
+module DDEX module ERN module V35 # :nodoc: all
 
 class SheetMusicDetailsByTerritory < Element
   include ROXML

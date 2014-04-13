@@ -12,8 +12,8 @@ require "ddex/ern/v36/release_id"
 require "ddex/ern/v36/rights_agreement_id"
 require "ddex/ern/v36/title"
 
-module DDEX module ERN module V36
-
+module DDEX module ERN module V36 # :nodoc: all
+ 
 class HostSoundCarrier < Element
   include ROXML
 

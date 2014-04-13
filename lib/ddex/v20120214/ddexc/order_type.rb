@@ -7,7 +7,7 @@ require "roxml"
 require "ddex/element"
 
 
-module DDEX module V20120214 module DDEXC
+module DDEX module V20120214 module DDEXC # :nodoc: all
 
 class OrderType < Element
   include ROXML

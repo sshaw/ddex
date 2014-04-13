@@ -10,8 +10,8 @@ require "ddex/ern/v36/reason"
 require "ddex/ern/v36/reason_type"
 require "ddex/ern/v36/release_id"
 
-module DDEX module ERN module V36
-
+module DDEX module ERN module V36 # :nodoc: all
+ 
 class SalesReportingProxyReleaseId < Element
   include ROXML
 

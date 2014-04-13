@@ -14,7 +14,7 @@ require "ddex/v20121219/ddexc/release_relationship_type"
 require "ddex/v20121219/ddexc/release_summary_details_by_territory"
 require "ddex/v20121219/ddexc/rights_agreement_id"
 
-module DDEX module V20121219 module DDEXC
+module DDEX module V20121219 module DDEXC # :nodoc: all
 
 class RelatedRelease < Element
   include ROXML

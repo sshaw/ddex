@@ -13,7 +13,7 @@ require "ddex/v20120214/ddexc/indirect_resource_contributor"
 require "ddex/v20120214/ddexc/p_line"
 require "ddex/v20120214/ddexc/resource_contributor"
 
-module DDEX module V20120214 module DDEXC
+module DDEX module V20120214 module DDEXC # :nodoc: all
 
 class SoftwareDetailsByTerritory < Element
   include ROXML

@@ -14,7 +14,7 @@ require "ddex/v20120214/ddexc/fulfillment_date"
 require "ddex/v20120214/ddexc/fulfillment_date"
 require "ddex/v20120214/ddexc/user_defined_value"
 
-module DDEX module ERN module V34
+module DDEX module ERN module V34 # :nodoc: all
 
 class TechnicalUserDefinedResourceDetails < Element
   include ROXML

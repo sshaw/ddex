@@ -9,7 +9,7 @@ require "ddex/element"
 require "ddex/v20121219/ddexc/license_or_claim_update_reason"
 require "ddex/v20121219/ddexc/rights_agreement_id"
 
-module DDEX module V20121219 module DDEXC
+module DDEX module V20121219 module DDEXC # :nodoc: all
 
 class RelatedLicenseOrClaimId < Element
   include ROXML

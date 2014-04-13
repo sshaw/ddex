@@ -8,8 +8,8 @@ require "ddex/element"
 
 require "ddex/ern/v36/sound_recording_collection_reference"
 
-module DDEX module ERN module V36
-
+module DDEX module ERN module V36 # :nodoc: all
+ 
 class SoundRecordingCollectionReferenceList < Element
   include ROXML
 

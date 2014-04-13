@@ -8,8 +8,8 @@ require "ddex/element"
 
 require "ddex/ern/v36/party_descriptor"
 
-module DDEX module ERN module V36
-
+module DDEX module ERN module V36 # :nodoc: all
+ 
 class SocietyAffiliation < Element
   include ROXML
 

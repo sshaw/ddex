@@ -7,7 +7,7 @@ require "roxml"
 require "ddex/element"
 
 
-module DDEX module V20120404 module DDEXC
+module DDEX module V20120404 module DDEXC # :nodoc: all
 
 class TypedSubTitle < Element
   include ROXML

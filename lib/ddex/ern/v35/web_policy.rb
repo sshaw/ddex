@@ -8,7 +8,7 @@ require "ddex/element"
 
 require "ddex/ern/v35/condition"
 
-module DDEX module ERN module V35
+module DDEX module ERN module V35 # :nodoc: all
 
 class WebPolicy < Element
   include ROXML

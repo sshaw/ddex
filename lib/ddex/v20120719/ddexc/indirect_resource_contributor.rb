@@ -10,7 +10,7 @@ require "ddex/v20120719/ddexc/musical_work_contributor_role"
 require "ddex/v20120719/ddexc/party_id"
 require "ddex/v20120719/ddexc/party_name"
 
-module DDEX module V20120719 module DDEXC
+module DDEX module V20120719 module DDEXC # :nodoc: all
 
 class IndirectResourceContributor < Element
   include ROXML

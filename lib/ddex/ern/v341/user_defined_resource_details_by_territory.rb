@@ -19,7 +19,7 @@ require "ddex/v20120404/ddexc/resource_contributor"
 require "ddex/v20120404/ddexc/synopsis"
 require "ddex/v20120404/ddexc/user_defined_value"
 
-module DDEX module ERN module V341
+module DDEX module ERN module V341 # :nodoc: all
 
 class UserDefinedResourceDetailsByTerritory < Element
   include ROXML

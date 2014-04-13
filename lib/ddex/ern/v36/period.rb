@@ -11,8 +11,8 @@ require "ddex/ern/v36/event_date"
 require "ddex/ern/v36/event_date_time"
 require "ddex/ern/v36/event_date_time"
 
-module DDEX module ERN module V36
-
+module DDEX module ERN module V36 # :nodoc: all
+ 
 class Period < Element
   include ROXML
 

@@ -11,7 +11,7 @@ require "ddex/v20121219/ddexc/release_id"
 require "ddex/v20121219/ddexc/release_resource_reference"
 require "ddex/v20121219/ddexc/resource_type"
 
-module DDEX module V20121219 module DDEXC
+module DDEX module V20121219 module DDEXC # :nodoc: all
 
 class ResourceGroupContentItem < Element
   include ROXML

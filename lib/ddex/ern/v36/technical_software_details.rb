@@ -15,8 +15,8 @@ require "ddex/ern/v36/fulfillment_date"
 require "ddex/ern/v36/operating_system_type"
 require "ddex/ern/v36/preview_details"
 
-module DDEX module ERN module V36
-
+module DDEX module ERN module V36 # :nodoc: all
+ 
 class TechnicalSoftwareDetails < Element
   include ROXML
 

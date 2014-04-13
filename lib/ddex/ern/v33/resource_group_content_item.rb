@@ -10,7 +10,7 @@ require "ddex/v20110630/ddexc/linked_release_resource_reference"
 require "ddex/v20110630/ddexc/release_resource_reference"
 require "ddex/v20110630/ddexc/resource_type"
 
-module DDEX module ERN module V33
+module DDEX module ERN module V33 # :nodoc: all
 
 class ResourceGroupContentItem < Element
   include ROXML

@@ -17,7 +17,7 @@ require "ddex/v20121219/ddexc/resource_group_content_item"
 require "ddex/v20121219/ddexc/resource_group_resource_reference_list"
 require "ddex/v20121219/ddexc/title"
 
-module DDEX module V20121219 module DDEXC
+module DDEX module V20121219 module DDEXC # :nodoc: all
 
 class ResourceGroup < Element
   include ROXML

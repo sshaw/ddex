@@ -49,11 +49,11 @@ Bundler:
 
   gem "ddex"
 
-=== How this differs from the spec
+=== How This Differs From the Spec
 
 Every DDEX version handled by this module is fully supported, but there are some things you'll need to know.
 
-==== Naming conventions
+==== Naming Conventions
 
 DDEX elements and attributes use the {CamelCase naming convention}[https://en.wikipedia.org/wiki/CamelCase], this module uses Ruby naming conversions:
 CamelCase for classes, and {snake_case}[https://en.wikipedia.org/wiki/Snake_case] for class attributes. For example, this DDEX XML:
@@ -93,7 +93,7 @@ Would be manipulated via:
   release.p_lines.each { |line| puts line.p_line_text }
   release.p_lines << PLine.new(:year => 1999)
 
-==== Boolean elements and attributes
+==== Boolean Elements and Attributes
 
 The following are applied to accessors derived from DDEX elements and attributes with an XML schema type of +boolean+:
 
@@ -108,7 +108,7 @@ For example, <code>SoundRecording/IsArtistRelated</code>:
 
 TODO: See Types
 
-==== Version specific changes
+==== Version Specific Changes
 
 These changes only affect the object model, the resulting XML will conform to the appropriate DDEX schema.
 
@@ -131,13 +131,13 @@ and variations {do exist in the wild}[https://github.com/sshaw/ddex/pull/2#issue
 the version is not practical, you can set the global default(s):
 
   DDEX::ERN.config["V35"][:message_schema_version_id] = "ern tray_fever!"
-  DDEX::ERN.config["V351"][:message_schema_version_id] = "ern/35punto1"
+  DDEX::ERN.config["V351"][:message_schema_version_id] = "ern/35-punto-1"
   # ...
 
 Note that the version key must match the version's module name.
 
 Feel free to {open an issue}[https://github.com/sshaw/ddex/issues] if you feel this arrangement is problematic or should
-be modified to accommodate something other than <code>SPEC/VERSION</code> out of the box.
+be modified to accommodate something more than <code>SPEC/VERSION</code> out of the box.
 
 === Validation
 

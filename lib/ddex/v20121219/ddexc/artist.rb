@@ -10,7 +10,7 @@ require "ddex/v20121219/ddexc/artist_role"
 require "ddex/v20121219/ddexc/party_id"
 require "ddex/v20121219/ddexc/party_name"
 
-module DDEX module V20121219 module DDEXC
+module DDEX module V20121219 module DDEXC # :nodoc: all
 
 class Artist < Element
   include ROXML

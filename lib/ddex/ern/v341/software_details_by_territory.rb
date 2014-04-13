@@ -19,7 +19,7 @@ require "ddex/v20120404/ddexc/parental_warning_type"
 require "ddex/v20120404/ddexc/resource_contributor"
 require "ddex/v20120404/ddexc/synopsis"
 
-module DDEX module ERN module V341
+module DDEX module ERN module V341 # :nodoc: all
 
 class SoftwareDetailsByTerritory < Element
   include ROXML

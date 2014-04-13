@@ -11,7 +11,7 @@ require "ddex/v20110630/ddexc/distribution_channel_type"
 require "ddex/v20110630/ddexc/use_type"
 require "ddex/v20110630/ddexc/user_interface_type"
 
-module DDEX module V20110630 module DDEXC
+module DDEX module V20110630 module DDEXC # :nodoc: all
 
 class DurationByUseType < Element
   include ROXML

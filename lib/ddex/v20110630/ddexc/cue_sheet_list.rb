@@ -8,7 +8,7 @@ require "ddex/element"
 
 require "ddex/v20110630/ddexc/cue_sheet"
 
-module DDEX module V20110630 module DDEXC
+module DDEX module V20110630 module DDEXC # :nodoc: all
 
 class CueSheetList < Element
   include ROXML

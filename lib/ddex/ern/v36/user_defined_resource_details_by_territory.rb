@@ -19,8 +19,8 @@ require "ddex/ern/v36/synopsis"
 require "ddex/ern/v36/technical_user_defined_resource_details"
 require "ddex/ern/v36/user_defined_value"
 
-module DDEX module ERN module V36
-
+module DDEX module ERN module V36 # :nodoc: all
+ 
 class UserDefinedResourceDetailsByTerritory < Element
   include ROXML
 

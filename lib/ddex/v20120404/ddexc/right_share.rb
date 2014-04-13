@@ -18,7 +18,7 @@ require "ddex/v20120404/ddexc/tariff_reference"
 require "ddex/v20120404/ddexc/use_type"
 require "ddex/v20120404/ddexc/user_interface_type"
 
-module DDEX module V20120404 module DDEXC
+module DDEX module V20120404 module DDEXC # :nodoc: all
 
 class RightShare < Element
   include ROXML

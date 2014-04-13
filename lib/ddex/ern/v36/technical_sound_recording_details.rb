@@ -18,8 +18,8 @@ require "ddex/ern/v36/fulfillment_date"
 require "ddex/ern/v36/sampling_rate"
 require "ddex/ern/v36/sound_recording_preview_details"
 
-module DDEX module ERN module V36
-
+module DDEX module ERN module V36 # :nodoc: all
+ 
 class TechnicalSoundRecordingDetails < Element
   include ROXML
 

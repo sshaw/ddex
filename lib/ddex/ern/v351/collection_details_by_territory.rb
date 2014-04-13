@@ -10,7 +10,7 @@ require "ddex/ern/v351/character"
 require "ddex/ern/v351/resource_contributor"
 require "ddex/v20121219/ddexc/title"
 
-module DDEX module ERN module V351
+module DDEX module ERN module V351 # :nodoc: all
 
 class CollectionDetailsByTerritory < Element
   include ROXML

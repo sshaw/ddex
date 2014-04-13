@@ -20,8 +20,8 @@ require "ddex/ern/v36/p_line"
 require "ddex/ern/v36/resource_contributor"
 require "ddex/ern/v36/title"
 
-module DDEX module ERN module V36
-
+module DDEX module ERN module V36 # :nodoc: all
+ 
 class Collection < Element
   include ROXML
 

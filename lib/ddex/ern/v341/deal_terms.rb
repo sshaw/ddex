@@ -21,7 +21,7 @@ require "ddex/v20120404/ddexc/price_information"
 require "ddex/v20120404/ddexc/promotional_code"
 require "ddex/v20120404/ddexc/usage"
 
-module DDEX module ERN module V341
+module DDEX module ERN module V341 # :nodoc: all
 
 class DealTerms < Element
   include ROXML

@@ -9,7 +9,7 @@ require "ddex/element"
 require "ddex/v20110630/ddexc/description"
 require "ddex/v20110630/ddexc/release_id"
 
-module DDEX module ERN module V33
+module DDEX module ERN module V33 # :nodoc: all
 
 class Deal < Element; include ROXML end
 

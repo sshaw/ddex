@@ -8,8 +8,8 @@ require "ddex/element"
 
 require "ddex/ern/v36/musical_work"
 
-module DDEX module ERN module V36
-
+module DDEX module ERN module V36 # :nodoc: all
+ 
 class WorkList < Element
   include ROXML
 

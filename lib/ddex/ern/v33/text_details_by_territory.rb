@@ -14,7 +14,7 @@ require "ddex/v20110630/ddexc/parental_warning_type"
 require "ddex/v20110630/ddexc/synopsis"
 require "ddex/v20110630/ddexc/text_details_by_territory"
 
-module DDEX module ERN module V33
+module DDEX module ERN module V33 # :nodoc: all
 
 class TextDetailsByTerritory < DDEX::V20110630::DDEXC::TextDetailsByTerritory
   include ROXML

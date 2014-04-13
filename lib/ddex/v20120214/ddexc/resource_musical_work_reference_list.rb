@@ -8,7 +8,7 @@ require "ddex/element"
 
 require "ddex/v20120214/ddexc/resource_musical_work_reference"
 
-module DDEX module V20120214 module DDEXC
+module DDEX module V20120214 module DDEXC # :nodoc: all
 
 class ResourceMusicalWorkReferenceList < Element
   include ROXML

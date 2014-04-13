@@ -10,8 +10,8 @@ require "ddex/ern/v36/catalog_number"
 require "ddex/ern/v36/icpn"
 require "ddex/ern/v36/proprietary_id"
 
-module DDEX module ERN module V36
-
+module DDEX module ERN module V36 # :nodoc: all
+ 
 class CollectionId < Element
   include ROXML
 

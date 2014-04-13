@@ -18,7 +18,7 @@ require "ddex/v20110630/ddexc/resource_contained_resource_reference_list"
 require "ddex/v20110630/ddexc/resource_musical_work_reference_list"
 require "ddex/v20110630/ddexc/rights_agreement_id"
 
-module DDEX module ERN module V33
+module DDEX module ERN module V33 # :nodoc: all
 
 class MIDI < Element
   include ROXML

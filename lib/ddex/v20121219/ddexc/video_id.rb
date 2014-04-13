@@ -9,7 +9,7 @@ require "ddex/element"
 require "ddex/v20121219/ddexc/catalog_number"
 require "ddex/v20121219/ddexc/proprietary_id"
 
-module DDEX module V20121219 module DDEXC
+module DDEX module V20121219 module DDEXC # :nodoc: all
 
 class VideoId < Element
   include ROXML

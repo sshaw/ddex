@@ -27,7 +27,7 @@ require "ddex/v20120214/ddexc/rights_agreement_id"
 require "ddex/v20120214/ddexc/synopsis"
 require "ddex/v20120214/ddexc/title"
 
-module DDEX module ERN module V34
+module DDEX module ERN module V34 # :nodoc: all
 
 class ReleaseDetailsByTerritory < Element
   include ROXML

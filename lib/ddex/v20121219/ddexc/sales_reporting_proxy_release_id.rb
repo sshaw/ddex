@@ -10,7 +10,7 @@ require "ddex/v20121219/ddexc/reason"
 require "ddex/v20121219/ddexc/reason_type"
 require "ddex/v20121219/ddexc/release_id"
 
-module DDEX module V20121219 module DDEXC
+module DDEX module V20121219 module DDEXC # :nodoc: all
 
 class SalesReportingProxyReleaseId < Element
   include ROXML

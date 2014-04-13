@@ -18,8 +18,8 @@ require "ddex/ern/v36/resource_group_content_item"
 require "ddex/ern/v36/resource_group_resource_reference_list"
 require "ddex/ern/v36/title"
 
-module DDEX module ERN module V36
-
+module DDEX module ERN module V36 # :nodoc: all
+ 
 class ResourceGroup < Element
   include ROXML
 

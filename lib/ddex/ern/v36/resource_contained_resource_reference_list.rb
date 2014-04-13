@@ -8,8 +8,8 @@ require "ddex/element"
 
 require "ddex/ern/v36/resource_contained_resource_reference"
 
-module DDEX module ERN module V36
-
+module DDEX module ERN module V36 # :nodoc: all
+ 
 class ResourceContainedResourceReferenceList < Element
   include ROXML
 

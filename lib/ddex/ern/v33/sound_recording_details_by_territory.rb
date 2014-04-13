@@ -18,7 +18,7 @@ require "ddex/v20110630/ddexc/parental_warning_type"
 require "ddex/v20110630/ddexc/sound_recording_details_by_territory"
 require "ddex/v20110630/ddexc/synopsis"
 
-module DDEX module ERN module V33
+module DDEX module ERN module V33 # :nodoc: all
 
 class SoundRecordingDetailsByTerritory < DDEX::V20110630::DDEXC::SoundRecordingDetailsByTerritory
   include ROXML

@@ -9,7 +9,7 @@ require "ddex/element"
 require "ddex/ern/v34/condition"
 require "ddex/ern/v34/web_policy"
 
-module DDEX module ERN module V34
+module DDEX module ERN module V34 # :nodoc: all
 
 class RightsClaimPolicy < Element
   include ROXML

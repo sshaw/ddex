@@ -19,7 +19,7 @@ require "ddex/v20110630/ddexc/p_line"
 require "ddex/v20110630/ddexc/resource_contributor"
 require "ddex/v20110630/ddexc/title"
 
-module DDEX module ERN module V33
+module DDEX module ERN module V33 # :nodoc: all
 
 class Cue < Element
   include ROXML

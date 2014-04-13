@@ -10,7 +10,7 @@ require "ddex/v20120719/ddexc/party_id"
 require "ddex/v20120719/ddexc/party_name"
 require "ddex/v20120719/ddexc/resource_contributor_role"
 
-module DDEX module V20120719 module DDEXC
+module DDEX module V20120719 module DDEXC # :nodoc: all
 
 class ResourceContributor < Element
   include ROXML

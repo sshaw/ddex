@@ -8,7 +8,7 @@ require "ddex/element"
 
 require "ddex/v20120719/ddexc/hash_sum"
 
-module DDEX module V20120719 module DDEXC
+module DDEX module V20120719 module DDEXC # :nodoc: all
 
 class File < Element
   include ROXML

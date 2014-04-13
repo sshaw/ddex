@@ -13,7 +13,7 @@ require "ddex/v20120719/ddexc/event_date"
 require "ddex/v20120719/ddexc/indirect_resource_contributor"
 require "ddex/v20120719/ddexc/resource_contributor"
 
-module DDEX module V20120719 module DDEXC
+module DDEX module V20120719 module DDEXC # :nodoc: all
 
 class ImageDetailsByTerritory < Element
   include ROXML

@@ -8,8 +8,8 @@ require "ddex/element"
 
 require "ddex/ern/v36/message_audit_trail_event"
 
-module DDEX module ERN module V36
-
+module DDEX module ERN module V36 # :nodoc: all
+ 
 class MessageAuditTrail < Element
   include ROXML
 

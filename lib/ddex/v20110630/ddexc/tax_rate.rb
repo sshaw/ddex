@@ -9,7 +9,7 @@ require "ddex/element"
 require "ddex/v20110630/ddexc/tax_scope"
 require "ddex/v20110630/ddexc/tax_type"
 
-module DDEX module V20110630 module DDEXC
+module DDEX module V20110630 module DDEXC # :nodoc: all
 
 class TaxRate < Element
   include ROXML

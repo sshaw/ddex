@@ -9,7 +9,7 @@ require "ddex/element"
 require "ddex/v20110630/ddexc/catalog_number"
 require "ddex/v20110630/ddexc/proprietary_id"
 
-module DDEX module V20110630 module DDEXC
+module DDEX module V20110630 module DDEXC # :nodoc: all
 
 class ResourceId < Element
   include ROXML

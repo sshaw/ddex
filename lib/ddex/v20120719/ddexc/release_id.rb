@@ -10,7 +10,7 @@ require "ddex/v20120719/ddexc/catalog_number"
 require "ddex/v20120719/ddexc/icpn"
 require "ddex/v20120719/ddexc/proprietary_id"
 
-module DDEX module V20120719 module DDEXC
+module DDEX module V20120719 module DDEXC # :nodoc: all
 
 class ReleaseId < Element
   include ROXML

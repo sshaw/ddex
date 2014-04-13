@@ -9,7 +9,7 @@ require "ddex/element"
 require "ddex/v20120214/ddexc/externally_linked_resource_type"
 require "ddex/v20120214/ddexc/period"
 
-module DDEX module V20120214 module DDEXC
+module DDEX module V20120214 module DDEXC # :nodoc: all
 
 class ExternalResourceLink < Element
   include ROXML

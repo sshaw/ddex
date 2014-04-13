@@ -25,8 +25,8 @@ require "ddex/ern/v36/sampling_rate"
 require "ddex/ern/v36/sound_recording_preview_details"
 require "ddex/ern/v36/video_codec_type"
 
-module DDEX module ERN module V36
-
+module DDEX module ERN module V36 # :nodoc: all
+ 
 class TechnicalVideoDetails < Element
   include ROXML
 

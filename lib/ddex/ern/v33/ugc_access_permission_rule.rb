@@ -8,7 +8,7 @@ require "ddex/element"
 
 require "ddex/ern/v33/condition"
 
-module DDEX module ERN module V33
+module DDEX module ERN module V33 # :nodoc: all
 
 class UgcAccessPermissionRule < Element
   include ROXML

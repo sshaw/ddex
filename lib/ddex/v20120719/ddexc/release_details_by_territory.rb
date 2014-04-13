@@ -15,7 +15,7 @@ require "ddex/v20120719/ddexc/release_type"
 require "ddex/v20120719/ddexc/rights_agreement_id"
 require "ddex/v20120719/ddexc/title"
 
-module DDEX module V20120719 module DDEXC
+module DDEX module V20120719 module DDEXC # :nodoc: all
 
 class ReleaseDetailsByTerritory < Element
   include ROXML

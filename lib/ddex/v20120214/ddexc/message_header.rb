@@ -12,7 +12,7 @@ require "ddex/v20120214/ddexc/messaging_party"
 require "ddex/v20120214/ddexc/messaging_party"
 require "ddex/v20120214/ddexc/messaging_party"
 
-module DDEX module V20120214 module DDEXC
+module DDEX module V20120214 module DDEXC # :nodoc: all
 
 class MessageHeader < Element
   include ROXML

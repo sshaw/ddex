@@ -8,8 +8,8 @@ require "ddex/element"
 
 require "ddex/ern/v36/bit_rate"
 
-module DDEX module ERN module V36
-
+module DDEX module ERN module V36 # :nodoc: all
+ 
 class TechnicalInstantiation < Element
   include ROXML
 

@@ -13,7 +13,7 @@ require "ddex/v20120719/ddexc/p_line"
 require "ddex/v20120719/ddexc/resource_contributor"
 require "ddex/v20120719/ddexc/user_defined_value"
 
-module DDEX module V20120719 module DDEXC
+module DDEX module V20120719 module DDEXC # :nodoc: all
 
 class UserDefinedResourceDetailsByTerritory < Element
   include ROXML

@@ -22,7 +22,7 @@ require "ddex/v20120719/ddexc/video_cue_sheet_reference"
 require "ddex/v20120719/ddexc/video_id"
 require "ddex/v20120719/ddexc/video_type"
 
-module DDEX module ERN module V35
+module DDEX module ERN module V35 # :nodoc: all
 
 class Video < Element
   include ROXML

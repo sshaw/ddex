@@ -19,7 +19,7 @@ require "ddex/v20120719/ddexc/party_id"
 require "ddex/v20120719/ddexc/party_name"
 require "ddex/v20120719/ddexc/resource_contributor_role"
 
-module DDEX module ERN module V35
+module DDEX module ERN module V35 # :nodoc: all
 
 class ResourceContributor < Element
   include ROXML

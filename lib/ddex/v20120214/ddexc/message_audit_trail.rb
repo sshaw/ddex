@@ -8,7 +8,7 @@ require "ddex/element"
 
 require "ddex/v20120214/ddexc/message_audit_trail_event"
 
-module DDEX module V20120214 module DDEXC
+module DDEX module V20120214 module DDEXC # :nodoc: all
 
 class MessageAuditTrail < Element
   include ROXML

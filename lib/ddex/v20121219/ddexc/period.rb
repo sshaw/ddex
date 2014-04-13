@@ -11,7 +11,7 @@ require "ddex/v20121219/ddexc/event_date"
 require "ddex/v20121219/ddexc/event_date_time"
 require "ddex/v20121219/ddexc/event_date_time"
 
-module DDEX module V20121219 module DDEXC
+module DDEX module V20121219 module DDEXC # :nodoc: all
 
 class Period < Element
   include ROXML

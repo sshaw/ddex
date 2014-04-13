@@ -10,8 +10,8 @@ require "ddex/ern/v36/label_name"
 require "ddex/ern/v36/name"
 require "ddex/ern/v36/rights_agreement_id"
 
-module DDEX module ERN module V36
-
+module DDEX module ERN module V36 # :nodoc: all
+ 
 class ReleaseSummaryDetailsByTerritory < Element
   include ROXML
 

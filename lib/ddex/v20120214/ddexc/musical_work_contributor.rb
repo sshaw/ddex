@@ -11,7 +11,7 @@ require "ddex/v20120214/ddexc/party_id"
 require "ddex/v20120214/ddexc/party_name"
 require "ddex/v20120214/ddexc/society_affiliation"
 
-module DDEX module V20120214 module DDEXC
+module DDEX module V20120214 module DDEXC # :nodoc: all
 
 class MusicalWorkContributor < Element
   include ROXML

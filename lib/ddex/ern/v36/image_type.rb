@@ -7,8 +7,8 @@ require "roxml"
 require "ddex/element"
 
 
-module DDEX module ERN module V36
-
+module DDEX module ERN module V36 # :nodoc: all
+ 
 class ImageType < Element
   include ROXML
 

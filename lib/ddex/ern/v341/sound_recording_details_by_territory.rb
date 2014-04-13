@@ -27,7 +27,7 @@ require "ddex/v20120404/ddexc/rights_controller"
 require "ddex/v20120404/ddexc/synopsis"
 require "ddex/v20120404/ddexc/title"
 
-module DDEX module ERN module V341
+module DDEX module ERN module V341 # :nodoc: all
 
 class SoundRecordingDetailsByTerritory < Element
   include ROXML

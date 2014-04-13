@@ -9,7 +9,7 @@ require "ddex/element"
 require "ddex/ern/v34/catalog_item"
 require "ddex/v20120214/ddexc/message_header"
 
-module DDEX module ERN module V34
+module DDEX module ERN module V34 # :nodoc: all
 
 class CatalogListMessage < Element
   include ROXML

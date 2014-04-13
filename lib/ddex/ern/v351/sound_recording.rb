@@ -19,7 +19,7 @@ require "ddex/v20121219/ddexc/sound_recording_collection_reference_list"
 require "ddex/v20121219/ddexc/sound_recording_id"
 require "ddex/v20121219/ddexc/sound_recording_type"
 
-module DDEX module ERN module V351
+module DDEX module ERN module V351 # :nodoc: all
 
 class SoundRecording < Element
   include ROXML

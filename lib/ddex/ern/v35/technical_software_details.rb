@@ -15,7 +15,7 @@ require "ddex/v20120719/ddexc/fulfillment_date"
 require "ddex/v20120719/ddexc/fulfillment_date"
 require "ddex/v20120719/ddexc/operating_system_type"
 
-module DDEX module ERN module V35
+module DDEX module ERN module V35 # :nodoc: all
 
 class TechnicalSoftwareDetails < Element
   include ROXML

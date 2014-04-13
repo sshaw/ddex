@@ -19,7 +19,7 @@ require "ddex/v20120719/ddexc/parental_warning_type"
 require "ddex/v20120719/ddexc/synopsis"
 require "ddex/v20120719/ddexc/user_defined_value"
 
-module DDEX module ERN module V35
+module DDEX module ERN module V35 # :nodoc: all
 
 class UserDefinedResourceDetailsByTerritory < Element
   include ROXML

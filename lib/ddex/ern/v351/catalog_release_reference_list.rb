@@ -7,7 +7,7 @@ require "roxml"
 require "ddex/element"
 
 
-module DDEX module ERN module V351
+module DDEX module ERN module V351 # :nodoc: all
 
 class CatalogReleaseReferenceList < Element
   include ROXML

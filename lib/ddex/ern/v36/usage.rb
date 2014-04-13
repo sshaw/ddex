@@ -12,8 +12,8 @@ require "ddex/ern/v36/technical_instantiation"
 require "ddex/ern/v36/use_type"
 require "ddex/ern/v36/user_interface_type"
 
-module DDEX module ERN module V36
-
+module DDEX module ERN module V36 # :nodoc: all
+ 
 class Usage < Element
   include ROXML
 

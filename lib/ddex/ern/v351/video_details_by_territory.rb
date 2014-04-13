@@ -30,7 +30,7 @@ require "ddex/v20121219/ddexc/rights_agreement_id"
 require "ddex/v20121219/ddexc/synopsis"
 require "ddex/v20121219/ddexc/title"
 
-module DDEX module ERN module V351
+module DDEX module ERN module V351 # :nodoc: all
 
 class VideoDetailsByTerritory < Element
   include ROXML

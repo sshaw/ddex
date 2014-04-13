@@ -15,7 +15,7 @@ require "ddex/v20110630/ddexc/text_id"
 require "ddex/v20110630/ddexc/text_type"
 require "ddex/v20110630/ddexc/title"
 
-module DDEX module V20110630 module DDEXC
+module DDEX module V20110630 module DDEXC # :nodoc: all
 
 class Text < Element
   include ROXML

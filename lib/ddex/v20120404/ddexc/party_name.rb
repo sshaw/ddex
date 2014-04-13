@@ -13,7 +13,7 @@ require "ddex/v20120404/ddexc/name"
 require "ddex/v20120404/ddexc/name"
 require "ddex/v20120404/ddexc/name"
 
-module DDEX module V20120404 module DDEXC
+module DDEX module V20120404 module DDEXC # :nodoc: all
 
 class PartyName < Element
   include ROXML

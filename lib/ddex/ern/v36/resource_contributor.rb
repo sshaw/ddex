@@ -19,8 +19,8 @@ require "ddex/ern/v36/party_id"
 require "ddex/ern/v36/party_name"
 require "ddex/ern/v36/resource_contributor_role"
 
-module DDEX module ERN module V36
-
+module DDEX module ERN module V36 # :nodoc: all
+ 
 class ResourceContributor < Element
   include ROXML
 

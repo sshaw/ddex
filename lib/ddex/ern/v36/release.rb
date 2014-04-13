@@ -22,8 +22,8 @@ require "ddex/ern/v36/rights_agreement_id"
 require "ddex/ern/v36/sales_reporting_proxy_release_id"
 require "ddex/ern/v36/web_page"
 
-module DDEX module ERN module V36
-
+module DDEX module ERN module V36 # :nodoc: all
+ 
 class Release < Element
   include ROXML
 

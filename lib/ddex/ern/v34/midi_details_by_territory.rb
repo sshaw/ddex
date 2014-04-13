@@ -26,7 +26,7 @@ require "ddex/v20120214/ddexc/rights_controller"
 require "ddex/v20120214/ddexc/synopsis"
 require "ddex/v20120214/ddexc/title"
 
-module DDEX module ERN module V34
+module DDEX module ERN module V34 # :nodoc: all
 
 class MidiDetailsByTerritory < Element
   include ROXML

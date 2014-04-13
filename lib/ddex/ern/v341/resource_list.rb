@@ -15,7 +15,7 @@ require "ddex/ern/v341/text"
 require "ddex/ern/v341/user_defined_resource"
 require "ddex/ern/v341/video"
 
-module DDEX module ERN module V341
+module DDEX module ERN module V341 # :nodoc: all
 
 class ResourceList < Element
   include ROXML

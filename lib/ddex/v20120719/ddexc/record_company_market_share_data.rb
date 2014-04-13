@@ -12,7 +12,7 @@ require "ddex/v20120719/ddexc/release_type"
 require "ddex/v20120719/ddexc/use_type"
 require "ddex/v20120719/ddexc/user_interface_type"
 
-module DDEX module V20120719 module DDEXC
+module DDEX module V20120719 module DDEXC # :nodoc: all
 
 class RecordCompanyMarketShareData < Element
   include ROXML

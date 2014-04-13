@@ -11,7 +11,7 @@ require "ddex/v20120404/ddexc/message_action_type"
 require "ddex/v20120404/ddexc/product_type"
 require "ddex/v20120404/ddexc/release_id"
 
-module DDEX module V20120404 module DDEXC
+module DDEX module V20120404 module DDEXC # :nodoc: all
 
 class ErnMessageInBatch < Element
   include ROXML

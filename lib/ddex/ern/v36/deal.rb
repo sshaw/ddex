@@ -12,8 +12,8 @@ require "ddex/ern/v36/deal_terms"
 require "ddex/ern/v36/resource_usage"
 require "ddex/ern/v36/web_page"
 
-module DDEX module ERN module V36
-
+module DDEX module ERN module V36 # :nodoc: all
+ 
 class Deal < Element
   include ROXML
 

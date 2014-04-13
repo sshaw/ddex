@@ -19,7 +19,7 @@ require "ddex/v20120719/ddexc/keywords"
 require "ddex/v20120719/ddexc/parental_warning_type"
 require "ddex/v20120719/ddexc/synopsis"
 
-module DDEX module ERN module V35
+module DDEX module ERN module V35 # :nodoc: all
 
 class ImageDetailsByTerritory < Element
   include ROXML

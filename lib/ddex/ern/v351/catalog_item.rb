@@ -17,7 +17,7 @@ require "ddex/v20121219/ddexc/reference_title"
 require "ddex/v20121219/ddexc/release_id"
 require "ddex/v20121219/ddexc/title"
 
-module DDEX module ERN module V351
+module DDEX module ERN module V351 # :nodoc: all
 
 class CatalogItem < Element
   include ROXML

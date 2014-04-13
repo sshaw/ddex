@@ -18,8 +18,8 @@ require "ddex/ern/v36/resource_contributor"
 require "ddex/ern/v36/synopsis"
 require "ddex/ern/v36/technical_text_details"
 
-module DDEX module ERN module V36
-
+module DDEX module ERN module V36 # :nodoc: all
+ 
 class TextDetailsByTerritory < Element
   include ROXML
 

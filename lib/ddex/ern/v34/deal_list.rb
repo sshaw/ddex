@@ -8,7 +8,7 @@ require "ddex/element"
 
 require "ddex/ern/v34/release_deal"
 
-module DDEX module ERN module V34
+module DDEX module ERN module V34 # :nodoc: all
 
 class DealList < Element
   include ROXML

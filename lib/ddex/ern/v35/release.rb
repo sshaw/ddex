@@ -22,7 +22,7 @@ require "ddex/v20120719/ddexc/rights_agreement_id"
 require "ddex/v20120719/ddexc/sales_reporting_proxy_release_id"
 require "ddex/v20120719/ddexc/web_page"
 
-module DDEX module ERN module V35
+module DDEX module ERN module V35 # :nodoc: all
 
 class Release < Element
   include ROXML

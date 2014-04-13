@@ -24,7 +24,7 @@ require "ddex/v20120214/ddexc/fulfillment_date"
 require "ddex/v20120214/ddexc/sampling_rate"
 require "ddex/v20120214/ddexc/video_codec_type"
 
-module DDEX module ERN module V34
+module DDEX module ERN module V34 # :nodoc: all
 
 class TechnicalVideoDetails < Element
   include ROXML

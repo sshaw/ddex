@@ -10,8 +10,8 @@ require "ddex/ern/v36/musical_work_contributor_role"
 require "ddex/ern/v36/party_id"
 require "ddex/ern/v36/party_name"
 
-module DDEX module ERN module V36
-
+module DDEX module ERN module V36 # :nodoc: all
+ 
 class IndirectResourceContributor < Element
   include ROXML
 

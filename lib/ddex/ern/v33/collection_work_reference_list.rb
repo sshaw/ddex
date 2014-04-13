@@ -8,7 +8,7 @@ require "ddex/element"
 
 require "ddex/ern/v33/collection_work_reference"
 
-module DDEX module ERN module V33
+module DDEX module ERN module V33 # :nodoc: all
 
 class CollectionWorkReferenceList < Element
   include ROXML

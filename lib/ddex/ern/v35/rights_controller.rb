@@ -9,7 +9,7 @@ require "ddex/element"
 require "ddex/v20120719/ddexc/party_id"
 require "ddex/v20120719/ddexc/party_name"
 
-module DDEX module ERN module V35
+module DDEX module ERN module V35 # :nodoc: all
 
 class RightsController < Element
   include ROXML

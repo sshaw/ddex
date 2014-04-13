@@ -15,7 +15,7 @@ require "ddex/v20110630/ddexc/software_id"
 require "ddex/v20110630/ddexc/software_type"
 require "ddex/v20110630/ddexc/title"
 
-module DDEX module V20110630 module DDEXC
+module DDEX module V20110630 module DDEXC # :nodoc: all
 
 class Software < Element
   include ROXML

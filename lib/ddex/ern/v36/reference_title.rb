@@ -9,8 +9,8 @@ require "ddex/element"
 require "ddex/ern/v36/sub_title"
 require "ddex/ern/v36/title_text"
 
-module DDEX module ERN module V36
-
+module DDEX module ERN module V36 # :nodoc: all
+ 
 class ReferenceTitle < Element
   include ROXML
 

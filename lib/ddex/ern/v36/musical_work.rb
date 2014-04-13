@@ -14,8 +14,8 @@ require "ddex/ern/v36/reference_title"
 require "ddex/ern/v36/right_share"
 require "ddex/ern/v36/rights_agreement_id"
 
-module DDEX module ERN module V36
-
+module DDEX module ERN module V36 # :nodoc: all
+ 
 class MusicalWork < Element
   include ROXML
 
