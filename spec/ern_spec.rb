@@ -70,6 +70,7 @@ describe DDEX::ERN do
       it "returns the XML representation for the object"
     end
 
+    # TODO: this seems a little off
     context "when the object has no version information" do
       it "uses the configured default" do
         ern = DDEX::ERN::V36::NewReleaseMessage.new(:message_schema_version_id => "ern/36")
@@ -122,7 +123,7 @@ describe DDEX::ERN do
     end
 
     context "with a user-defined MessageSchemaVersionId" do
-      it "parses the XML for the version associated with the user-defined version" do
+      it "parses the XML for the version set by the user-defined version" do
         user_default = "ern/tray_sic!@#"
         DDEX::ERN.config["V36"][:message_schema_version_id] = user_default
 
