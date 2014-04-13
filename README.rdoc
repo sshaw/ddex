@@ -39,6 +39,16 @@
  xml = DDEX.write(message)
  File.open("bloat.xml", "w") { |io| io.puts(xml) }
 
+=== Installation
+
+Rubygems:
+  # Not live yet!
+  gem install ddex
+
+Bundler:
+
+  gem "ddex"
+
 === How this differs from the spec
 
 Every DDEX version handled by this module is fully supported, but there are some things you'll need to know.

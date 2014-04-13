@@ -29,7 +29,7 @@ class <%= @class.name %> < <%= @class.superclass || "Element" %>
     <%- elsif e.hash? -%>
       xml_accessor :<%= e.accessor %>, :as => {}, :from => "<%= e.name %>", :required => <%= e.required? %>
 
-    <%- elsif [:ID, :IDREF, :boolean, "String"].include?(e.type) -%>
+    <%- elsif [:ID, :IDREF, :boolean, "String", "Object"].include?(e.type) -%>
       xml_accessor :<%= e.accessor %>, :from => "<%= e.name %>", :required => <%= e.required? %>
 
     <%- else -%>
@@ -43,7 +43,7 @@ class <%= @class.name %> < <%= @class.superclass || "Element" %>
   <%- end -%>
 
   <% @class.element.attributes.each do |attr| %>
-    <%- if attr.type == :boolean || attr.type == "String" -%>
+    <%- if [:boolean, "String", "Object"].include?(attr.type) -%>
       xml_accessor :<%= attr.accessor %>, :from => "@<%= attr.name %>", :required => <%= attr.required? %>
     <% else %>
       xml_accessor :<%= attr.accessor %>, :as => <%= attr.type %>, :from => "@<%= attr.name %>", :required => <%= attr.required? %>

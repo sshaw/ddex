@@ -56,7 +56,12 @@ class NewReleaseMessage < Element
   
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
-  
+    alias :_message_schema_version_id :message_schema_version_id
+    private :_message_schema_version_id
+
+    def message_schema_version_id
+      _message_schema_version_id || DDEX::ERN.config["V341"][:message_schema_version_id]
+    end  
 end
 
 end end end
