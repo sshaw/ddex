@@ -142,7 +142,14 @@ module DDEX
     end
 
     def self.load_version(version)
-      klass, _ = config.find { |name, cfg| cfg[:message_schema_version_id] == version.strip }
+      raise_unknown_version(version) if version.nil?
+
+      # Some normalization
+      version.strip!
+      version.gsub!(%r{\A/|/\Z}, "")
+      version.gsub!(%r{//+}, "/")
+
+      klass, _ = config.find { |name, cfg| cfg[:message_schema_version_id] == version }
       raise_unknown_version(version) unless klass
 
       # >= 2.0 allows for one call
