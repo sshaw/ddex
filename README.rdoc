@@ -124,11 +124,10 @@ The specification version is determined by the <code>MessageSchemaVersionId</cod
 1. Detected based on the root element's value i.e., <code>/node()/@MessageSchemaVersionId</code> (the root element varies by specification)
 2. Explicitly given to DDEX.read via the <code>:version</code> option
 
-By default the <code>MessageSchemaVersionId</code> is assumed to be in <code>SPEC/VERSION</code> format, as this seems to be the
-convention used by most instance docs -though the DDEX specifications {are not strict about this}[http://www.ddex.net/content/format-messageschemaversionid]
-and variations {do exist in the wild}[https://github.com/sshaw/ddex/pull/2#issue-30059145]. If you're dealing with
-<code>MessageSchemaVersionId</code>s that vary from this format (TODO: note normalization?), and explicitly setting
-the version is not practical, you can set the global default(s):
+By default the <code>MessageSchemaVersionId</code> is assumed to be in <code>SPEC/VERSION</code> format (any leading, trailing, or duplicate slashes will be stripped),
+as this seems to be the convention used by most instance docs -though the DDEX specifications
+{are not strict about this}[http://www.ddex.net/content/format-messageschemaversionid]. If you're dealing with <code>MessageSchemaVersionId</code>s
+that vary from this format, and explicitly setting the version is not practical, you can set the global default(s):
 
   DDEX::ERN.config["V35"][:message_schema_version_id] = "ern tray_fever!"
   DDEX::ERN.config["V351"][:message_schema_version_id] = "ern/35-punto-1"
