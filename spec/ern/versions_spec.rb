@@ -1,4 +1,5 @@
 require "spec_helper"
+require "active_support/core_ext/string"
 
 shared_examples_for "metadata serialization" do |path|
   it "serializes the metadata" do
@@ -10,22 +11,17 @@ shared_examples_for "metadata serialization" do |path|
 end
 
 shared_examples_for "PriceInformation/@PriceType mapping" do
-  let(:doc) do
-    x = described_class.new(:price_type => "a", :type => "b")
-    p x
-    xml = DDEX::ERN.write(described_class.new(:price_type => "a", :type => "b"))
-    Nokogiri::XML(xml)
-  end
+  let(:doc) { Nokogiri::XML(DDEX::ERN.write(instance)) }
 
   describe "#type" do
     it "is serialized to the PriceType attribute" do
-      expect(doc["PriceType"]).to eq "a"
+      expect(doc.root["PriceType"]).to eq instance.type
     end
   end
 
   describe "#price_type" do
     it "is serialized to the PriceType element" do
-      expect(doc.at("PriceType").text).to eq "b"
+      expect(doc.at("PriceType").text).to eq instance.price_type.value
     end
   end
 end
@@ -42,6 +38,11 @@ describe DDEX::ERN do
   end
 end
 
-# describe DDEX::ERN::V36::PriceInformation do
-#   it_should_behave_like "PriceInformation/@PriceType mapping"
-# end
+%w[36 37].each do |v|
+  describe "DDEX::ERN::V#{v}::PriceInformation".constantize do
+    let(:instance) { described_class.new(:type => "a",
+                                         :price_type => "DDEX::ERN::V#{v}::PriceType".constantize.new(:value => "b")) }
+
+    it_should_behave_like "PriceInformation/@PriceType mapping"
+  end
+end

@@ -115,7 +115,7 @@ These changes only affect the object model, the resulting XML will conform to th
 ===== ERN >= v3.6
 
 <code>PriceInformation/@PriceType</code> has been renamed to <code>PriceInformation#type</code> to avoid conflicting with the
-element of the same name: <code>PriceInformation/PriceType</code>.
+element of the same name (<code>PriceInformation/PriceType</code>).
 
 === Specification Version Detection
 
@@ -149,11 +149,22 @@ be modified to accommodate something more than <code>SPEC/VERSION</code> out of 
 * {jaxb2ruby}[https://github.com/sshaw/jaxb2ruby] (Generate Ruby objects from an XML schema)
 * {DDEX Schemas}[http://ddex.net/xml]
 
-=== TODO
+=== TODO/Known Problems
 
-Many things... but: <code>ROXML.from_xml</code> does not check the root element's name. Need to add something like:
+* <code>ROXML.from_xml</code> does not check the root element's name. Need to add something like:
 
-  raise "unknown element #{xml.name}" unless xml.name == tag_name
+    raise "unknown element #{xml.name}" unless xml.name == tag_name
+
+* When an ROXML accessor expects an ROXML class, and one is not provided, <code>to_xml</code> will result in a <code>NoMethodError</code>:
+
+    # in SomeClass
+    xml_accessor :x, :as => AnotherClass
+
+    # Then
+    x = SomeClass.new(:x => "123") 
+    x.to_xml  # undefined method `to_xml' for "123":String
+
+  Raised here: https://github.com/Empact/roxml/blob/v2.5.1/lib/roxml/xml/references.rb#L262
 
 === Author
 

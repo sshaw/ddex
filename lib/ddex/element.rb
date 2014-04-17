@@ -38,7 +38,7 @@ module DDEX
       ns  = self.class.ns
 
       if ns and ns.size == 2 # prefix and name
-        doc.add_namespace_definition(*ns) 
+        doc.add_namespace_definition(*ns)
         doc.name = "#{ns.first}:#{doc.name}"
       end
 
