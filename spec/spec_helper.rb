@@ -14,6 +14,10 @@ module SpecHelper
   def each_fixture(name)
     Dir[File.join(FIXTURES, name, "*.xml")]
   end
+
+  def load_fixture(name)
+    Nokogiri::XML(File.read(fixture(name)))
+  end
 end
 
 RSpec.configure do |cfg|
