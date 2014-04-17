@@ -1,6 +1,6 @@
 = DDEX
 
-{<img src="https://secure.travis-ci.org/sshaw/ddex.png"/>}[http://travis-ci.org/sshaw/ddex]
+{<img src="https://secure.travis-ci.org/sshaw/ddex.svg"/>}[http://travis-ci.org/sshaw/ddex]
 
 {DDEX}[http://ddex.net] metadata serialization for Ruby
 
