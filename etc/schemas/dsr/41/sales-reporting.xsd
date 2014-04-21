@@ -1,0 +1,2599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:dsr="http://ddex.net/xml/dsr/41"
+           xmlns:ddexC="http://ddex.net/xml/20120719/ddexC"
+           xmlns:ddex="http://ddex.net/xml/20120719/ddex"
+           xmlns:iso639a2="http://ddex.net/xml/20120719/iso639a2"
+           xmlns:iso4217a="http://ddex.net/xml/20120719/iso4217a"
+           xmlns:iso3166a2="http://ddex.net/xml/20120719/iso3166a2"
+           targetNamespace="http://ddex.net/xml/dsr/41"
+           elementFormDefault="unqualified"
+           attributeFormDefault="unqualified">
+   <xs:import namespace="http://ddex.net/xml/20120719/ddexC"  schemaLocation="http://ddex.net/xml/20120719/ddexC.xsd"/>
+   <xs:import namespace="http://ddex.net/xml/20120719/ddex"  schemaLocation="http://ddex.net/xml/20120719/ddex.xsd"/>
+   <xs:import namespace="http://ddex.net/xml/20120719/iso639a2"  schemaLocation="http://ddex.net/xml/20120719/iso639a2.xsd"/>
+   <xs:import namespace="http://ddex.net/xml/20120719/iso4217a"  schemaLocation="http://ddex.net/xml/20120719/iso4217a.xsd"/>
+ <xs:import namespace="http://ddex.net/xml/20120719/iso3166a2"  schemaLocation="http://ddex.net/xml/20120719/iso3166a2.xsd"/> 
+   <xs:annotation>
+      <xs:documentation>© 2006-2012 Digital Data Exchange, LLC (DDEX)</xs:documentation>
+   </xs:annotation>
+   <xs:element name="SalesReportToRecordCompanyMessage">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A sales reporting ddex:Message in the Sales Reporting Message Suite Standard, sent to a record company.</xs:documentation>
+      </xs:annotation>
+      <xs:complexType>
+         <xs:sequence>
+            <xs:element name="MessageHeader" type="ddexC:MessageHeader">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">The MessageHeader for the dsr:SalesReportToRecordCompanyMessage.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="MessageNotificationPeriod" type="ddexC:MessageNotificationPeriod">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the reporting ddex:Period covered by the dsr:SalesReportToRecordCompanyMessage.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="RemittanceAdvice" minOccurs="0" type="ddexC:RemittanceAdvice">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A textual commentary about the method for settlement of payments between ddex:MessageSender and ddex:MessageRecipient (e.g. 'international bank transfer initiated on 2006-09-18').</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="MessageContentRevenueType" minOccurs="0"
+                        type="ddex:MessageContentRevenueType">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A ddex:Type of revenue to which the content of the ddex:Message relates.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="RightsCoverage" minOccurs="0" maxOccurs="unbounded"
+                        type="ddex:RightsCoverage">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A ddex:Type of ddex:Right which is covered in the dsr:SalesReportToRecordCompanyMessage.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="ContainedReleaseSummary" minOccurs="0" maxOccurs="unbounded"
+                        type="dsr:ContainedReleaseSummary">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A ddex:Composite containing summary details of a ddex:Release for which sales data is provided in the dsr:SalesReportToRecordCompanyMessage. If a ddex:Release is reported in a dsr:SalesReportToRecordCompanyMessage, then exactly one ddex:ContainedReleaseSummary ddex:Composite shall be provided.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="SalesReport" minOccurs="0" maxOccurs="unbounded"
+                        type="dsr:SalesReportToRecordCompany">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A ddex:Composite containing details of ddex:SalesTransactions by a distribution partner reported to a record company.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="TotalSalesByReleaseType" maxOccurs="unbounded"
+                        type="dsr:TotalSalesByReleaseType">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A ddex:Composite containing details of total sales of ddex:Releases of a specific ddex:Type.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="RoyaltyAmount" minOccurs="0" type="ddexC:RoyaltyAmount">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the ddex:RoyaltyAmount due. This is an estimate based on best knowledge on the side of the ddex:MessageSender with respect to the intellectual property Rights controlled by the ddex:MessageRecipient (The default is that 100% ownership is assumed).</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="NumberOfSalesTransactionRecords" minOccurs="0" type="xs:integer">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">The check number which identifies the number of ddex:SalesTransaction records contained in the dsr:SalesReportToRecordCompanyMessage. ddex:SalesTransaction records are SalesToRecordCompanyByTerritory ddex:Composites.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+         </xs:sequence>
+         <xs:attribute name="MessageSchemaVersionId" type="xs:string" use="required">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Identifier of the ddex:Version of the XML schema used for the ddex:Message. This is represented in an XML schema as an XML ddex:Attribute.</xs:documentation>
+            </xs:annotation>
+         </xs:attribute>
+         <xs:attribute name="BusinessProfileVersionId" type="xs:string">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Identifier of the ddex:Version of the business profile used for the ddex:Message. This is represented in an XML schema as an XML ddex:Attribute.</xs:documentation>
+            </xs:annotation>
+         </xs:attribute>
+         <xs:attribute name="ReleaseProfileVersionId" type="xs:string">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Identifier of the ddex:Version of the release profile used for the ddex:Message. This is represented in an XML schema as an XML ddex:Attribute.</xs:documentation>
+            </xs:annotation>
+         </xs:attribute>
+         <xs:attribute name="LanguageAndScriptCode" type="xs:string">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Language and script for the ddex:Elements of the dsr:SalesReportToRecordCompanyMessage as defined in IETF RfC 4646. ddex:Language and Script are provided as lang[-scipt][-region][-variant].  This is represented in an XML schema as an XML ddex:Attribute.</xs:documentation>
+            </xs:annotation>
+         </xs:attribute>
+      </xs:complexType>
+   </xs:element>
+   <xs:element name="SalesReportToSocietyMessage">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A sales reporting ddex:Message in the Sales Reporting Message Suite Standard, sent to a ddex:MusicalWork ddex:Licensor.</xs:documentation>
+      </xs:annotation>
+      <xs:complexType>
+         <xs:sequence>
+            <xs:element name="MessageHeader" type="ddexC:MessageHeader">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">The MessageHeader for the dsr:SalesReportToSocietyMessage.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="MessageNotificationPeriod" type="ddexC:MessageNotificationPeriod">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the ddex:Period covered by the dsr:SalesReportToSocietyMessage.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="RemittanceAdvice" minOccurs="0" type="ddexC:RemittanceAdvice">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A textual commentary about the method for settlement of payments between ddex:MessageSender and ddex:MessageRecipient (e.g. 'international bank transfer initiated on 2006-09-18').</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="MessageContentRevenueType" minOccurs="0"
+                        type="ddex:MessageContentRevenueType">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A ddex:Type of revenue to which the content of the ddex:Message relates.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="RightsCoverage" minOccurs="0" maxOccurs="unbounded"
+                        type="ddex:RightsCoverage">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A ddex:Type of ddex:Right which is covered in the dsr:SalesReportToSocietyMessage.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="ContainedReleaseSummary" minOccurs="0" maxOccurs="unbounded"
+                        type="dsr:ContainedReleaseSummary">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A ddex:Composite containing summary details of a ddex:Release for which sales data is provided in the dsr:SalesReportToSocietyMessage.  Either this ddex:Element or at least one of ddex:ContainedMusicalWorkList, ddex:ContainedResourceList and ddex:ContainedReleaseList is required. Typically a dsr:SalesReportToSocietyMessage only contains either this ddex:Element or a set of ddex:ContainedMusicalWorkList, ddex:ContainedResourceList and ddex:ContainedReleaseList are used.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="ContainedWorkList" minOccurs="0" type="ddexC:WorkList">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A ddex:Composite containing details of one or more ddex:MusicalWorks contained in ddex:Releases for which sales data is provided in the dsr:SalesReportToSocietyMessage. If this ddex:Element is used, the ddex:ContainedReleaseSummary ddex:Element shall not be used.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="ContainedCueSheetList" minOccurs="0" type="ddexC:CueSheetList">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A ddex:Composite containing details of one or more ddex:CueSheets contained in ddex:Releases for which sales data is provided in the dsr:SalesReportToSocietyMessage. If this ddex:Element is used, the ddex:ContainedReleaseSummary ddex:Element shall not be used.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="ContainedResourceList" minOccurs="0" type="dsr:ResourceList">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A ddex:Composite containing details of one or more ddex:Resources contained in ddex:Releases for which sales data is provided in the dsr:SalesReportToSocietyMessage. If this ddex:Element is used, the ddex:ContainedReleaseSummary ddex:Element shall not be used.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="ContainedCollectionList" minOccurs="0" type="ddexC:CollectionList">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A ddex:Composite containing details of one or more ddex:Collections contained in ddex:Releases for which sales data is provided in the dsr:SalesReportToSocietyMessage. If this ddex:Element is used, the ddex:ContainedReleaseSummary ddex:Element shall not be used.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="ContainedReleaseList" minOccurs="0" type="dsr:ReleaseList">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A ddex:Composite containing details of one or more ddex:Releases for which sales data is provided in the dsr:SalesReportToSocietyMessage. If this ddex:Element is used, the ddex:ContainedReleaseSummary ddex:Element shall not be used.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="SalesReport" minOccurs="0" maxOccurs="unbounded"
+                        type="dsr:SalesReportToSociety">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A ddex:Composite containing details of ddex:SalesTransactions by a ddex:DSP reported to a ddex:MusicalWork ddex:Licensor.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="RoyaltyAmount" minOccurs="0" type="ddexC:RoyaltyAmount">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the ddex:RoyaltyAmount due. This is an estimate based on best knowledge on the side of the ddex:MessageSender with respect to the intellectual property Rights controlled by the ddex:MessageRecipient (The default is that 100% ownership is assumed).</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="NumberOfSalesTransactionRecords" minOccurs="0" type="xs:integer">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">The check number which identifies the number of ddex:SalesTransaction records contained in the dsr:SalesReportToSocietyMessage. ddex:SalesTransaction records are SalesToSocietyByTerritory ddex:Composites.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+         </xs:sequence>
+         <xs:attribute name="MessageSchemaVersionId" type="xs:string" use="required">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Identifier of the ddex:Version of the XML schema used for the ddex:Message. This is represented in an XML schema as an XML ddex:Attribute.</xs:documentation>
+            </xs:annotation>
+         </xs:attribute>
+         <xs:attribute name="BusinessProfileVersionId" type="xs:string">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Identifier of the ddex:Version of the business profile used for the ddex:Message. This is represented in an XML schema as an XML ddex:Attribute.</xs:documentation>
+            </xs:annotation>
+         </xs:attribute>
+         <xs:attribute name="ReleaseProfileVersionId" type="xs:string">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Identifier of the ddex:Version of the release profile used for the ddex:Message. This is represented in an XML schema as an XML ddex:Attribute.</xs:documentation>
+            </xs:annotation>
+         </xs:attribute>
+         <xs:attribute name="LanguageAndScriptCode" type="xs:string">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Language and script for the ddex:Elements of the dsr:SalesReportToSocietyMessage as defined in IETF RfC 4646. ddex:Language and Script are provided as lang[-scipt][-region][-variant].  This is represented in an XML schema as an XML ddex:Attribute.</xs:documentation>
+            </xs:annotation>
+         </xs:attribute>
+      </xs:complexType>
+   </xs:element>
+   <xs:element name="InvoiceMessage">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">An invoice ddex:Message in the Sales Reporting Message Suite Standard.</xs:documentation>
+      </xs:annotation>
+      <xs:complexType>
+         <xs:sequence>
+            <xs:element name="MessageHeader" type="ddexC:MessageHeader">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">The MessageHeader for the dsr:InvoiceMessage.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="InvoiceId" type="ddexC:ProprietaryId">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A ddex:Composite containing details of an ddex:Identifier of the Invoice.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="ContainedReleaseSummary" minOccurs="0" maxOccurs="unbounded"
+                        type="dsr:ContainedReleaseSummary">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A ddex:Composite containing summary details of a ddex:Release for which sales data is provided in the dsrs:InvoiceMessage.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="Currency" type="ddexC:CurrencyCode">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">The ddex:Currency of the Invoice (represented by an ISO 4217 iso4217a:CurrencyCode).</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="InvoiceItem" maxOccurs="unbounded" type="dsr:InvoiceItem">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A ddex:Composite containing details of an InvoiceItem.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="TotalRoyaltyAmount" minOccurs="0" maxOccurs="unbounded"
+                        type="dsr:TotalRoyaltyAmount">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a total ddex:RoyaltyAmount.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+         </xs:sequence>
+         <xs:attribute name="MessageSchemaVersionId" type="xs:string" use="required">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Identifier of the ddex:Version of the XML schema used for the ddex:Message. This is represented in an XML schema as an XML ddex:Attribute.</xs:documentation>
+            </xs:annotation>
+         </xs:attribute>
+         <xs:attribute name="BusinessProfileVersionId" type="xs:string">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Identifier of the ddex:Version of the business profile used for the ddex:Message. This is represented in an XML schema as an XML ddex:Attribute.</xs:documentation>
+            </xs:annotation>
+         </xs:attribute>
+         <xs:attribute name="ReleaseProfileVersionId" type="xs:string">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Identifier of the ddex:Version of the release profile used for the ddex:Message. This is represented in an XML schema as an XML ddex:Attribute.</xs:documentation>
+            </xs:annotation>
+         </xs:attribute>
+         <xs:attribute name="LanguageAndScriptCode" type="xs:string">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Language and script for the ddex:Elements of the dsr:SalesReportToRecordCompanyMessage as defined in IETF RfC 4646. ddex:Language and Script are provided as lang[-scipt][-region][-variant].  This is represented in an XML schema as an XML ddex:Attribute.</xs:documentation>
+            </xs:annotation>
+         </xs:attribute>
+      </xs:complexType>
+   </xs:element>
+   <xs:complexType name="ContainedReleaseSummary">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A ddex:Composite containing summary details of a ddex:Release for which data is provided in a ddex:Message.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="ReleaseId" maxOccurs="unbounded" type="ddexC:ReleaseId">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of ddex:ReleaseIds. If available, a ddex:GRid shall always to be used. If the ddex:Release contains only one ddex:SoundRecording, the ddex:ISRC of the ddex:SoundRecording may be used instead. If the ddex:Release is an abstraction of a complete ddex:PhysicalProduct (such as a CD ddex:Album), the ddex:ICPN of the ddex:PhysicalProduct may be used instead. More than one of these identifiers may be provided.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ReleaseReference">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Identifier (specific to the ddex:Message) of the dsr:Release. This is a ddex:LocalReleaseAnchor starting with the letter R.</xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+               <xs:restriction base="xs:ID">
+                  <xs:pattern value="R[\d\-_a-zA-Z]+"/>
+               </xs:restriction>
+            </xs:simpleType>
+         </xs:element>
+         <xs:element name="ReferenceTitle" type="ddexC:ReferenceTitle">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the ddex:ReferenceTitle of the ddex:Release.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ReleaseSummaryDetailsByTerritory" minOccurs="0" maxOccurs="unbounded"
+                     type="ddexC:ReleaseSummaryDetailsByTerritory">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing summary details of ddex:Descriptors and other attributes of the ddex:Release which may vary according to ddex:Territory of ddex:Release. ddex:Territory of ddex:Release may be the world.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="RightsAgreementId" minOccurs="0" type="ddexC:RightsAgreementId">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of ddex:Identifiers of a ddex:License, ddex:Claim, ddex:RightShare or contract for the MusicalWork(s) used in the ddex:Release.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="RelatedRelease" minOccurs="0" maxOccurs="unbounded"
+                     type="ddexC:RelatedRelease">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a ddex:Release (or a ddex:PhysicalProduct or a ddex:DigitalProduct derived from such a ddex:Release) which is related to the ddex:Release.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+      <xs:attribute name="LanguageAndScriptCode" type="xs:string">
+         <xs:annotation>
+            <xs:documentation source="ddex:Definition">The ddex:Language and script for the ddex:Elements of the ddexC:ReleaseSummary as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. ddex:Language and Script are provided as lang[-scipt][-region][-variant].  This is represented in an XML schema as an XML ddex:Attribute.</xs:documentation>
+         </xs:annotation>
+      </xs:attribute>
+   </xs:complexType>
+   <xs:complexType name="DealForRecordCompanies">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the terms and conditions of a ddex:Deal made between a ddex:DSP (as ddex:Licensee) and a ddex:Licensor of ddex:Works or ddex:Releases.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="DetailedDeal" type="dsr:DetailedDeal">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the terms and conditions of the ddex:Deal.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="DealForSocieties">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A ddex:Composite containing details (in full or in summary) of a ddex:Deal made between a ddex:DSP (as ddex:Licensee) and a ddex:Licensor of ddex:Works or ddex:Releases.</xs:documentation>
+      </xs:annotation>
+      <xs:choice>
+         <xs:element name="DetailedDeal" minOccurs="0" type="dsr:DetailedDeal">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the terms and conditions of the ddex:Deal. Either this ddex:Element or the SummaryDeal are required, but not both.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="SummaryDeal" minOccurs="0" type="dsr:SummaryDeal">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing a summary of the terms and conditions of the ddex:Deal. Either this ddex:Element or the DetailedDeal are required, but not both.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:choice>
+   </xs:complexType>
+   <xs:complexType name="DetailedDeal">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the terms and conditions of a ddex:Deal made between a ddex:DSP (as ddex:Licensee) and a ddex:Licensor of ddex:Works or ddex:Releases.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="CurrencyCode" minOccurs="0" type="ddexC:CurrencyCode">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Currency in which the ddex:SalesTransactions are made (represented by an ISO 4217 iso4217a:CurrencyCode) if different from the ddex:CurrencyOfAccounting.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="PriceInformation" minOccurs="0" type="dsr:PriceInformation">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the ddex:Price applicable to the ddex:SalesTransaction.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:choice minOccurs="0">
+            <xs:element name="IsPromotional" type="xs:boolean">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">The ddex:Flag indicating whether a special ddex:Deal is made between the ddex:Licensor and the ddex:Licensee (=True) or not (=False) regarding the royalties or payments due to be paid for Releases distributed under this ddex:Deal.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="PromotionalCode" type="ddexC:PromotionalCode">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a ddex:PromotionalCode.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+         </xs:choice>
+         <xs:element name="DealReference" minOccurs="0" type="ddexC:DealReference">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing the ddex:Reference (in the form of an ddex:Identifier, ddex:Name or ddex:Description) to a ddex:TextDocument containing details of the ddex:Deal governing the ddex:SalesTransaction.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="CampaignName" minOccurs="0" maxOccurs="unbounded" type="xs:string">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Name of an advertising campaign if the ddex:CommercialModelType is ddex:AdvertisementSupportedModel.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="TaxRate" minOccurs="0" maxOccurs="unbounded" type="ddexC:TaxRate">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a ddex:TaxRate applicable to the total ddex:Amount to be paid. Within the DSR ddex:Message, only one of the two ddex:TaxRate ddex:Elements (here and in the SalesByTerritory or in the SalesByTerritory ddex:Composite) may be filled.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="PriceConsumerPaidExcSalesTax" minOccurs="0" type="xs:decimal">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:RetailPrice excluding value-added tax.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="PriceConsumerPaidExcSalesTaxInCurrencyOfAccounting" minOccurs="0"
+                     type="xs:decimal">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:RetailPrice excluding value-added tax, using the ddex:CurrencyOfAccounting.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="PrimaryResourcePriceConsumerPaidExcSalesTax" minOccurs="0"
+                     type="xs:decimal">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:RetailPrice excluding value-added tax that is applicable to each primary ddex:Resource that is part of the currently reported ddex:Release. This field may only be used when the reported ddex:Release contains more than one primary ddex:Resource and when the ddex:MessageSender is confident that it knows the distribution of the total amount to the individual ddex:Resources (e.g. when such a distribution is stated in a contract).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="PrimaryResourcePriceConsumerPaidExcSalesTaxInCurrencyOfAccounting"
+                     minOccurs="0"
+                     type="xs:decimal">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:RetailPrice (excluding value-added tax and using the ddex:CurrencyOfAccounting) that is applicable to each primary ddex:Resource that is part of the currently reported ddex:Release. This field may only be used when the reported ddex:Release contains more than one primary ddex:Resource and when the ddex:MessageSender is confident that it knows the distribution of the total amount to the individual ddex:Resources (e.g. when such a distribution is stated in a contract).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="CalculationType" minOccurs="0" maxOccurs="unbounded"
+                     type="ddexC:CalculationType">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a ddex:Type of ddex:Calculation method used by which the royalties are to be determined. This is a text string with no prescribed allowed values.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="RoyaltyRateType" minOccurs="0" type="ddex:RoyaltyRateType">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Type of ddex:RoyaltyRate upon which the per unit royalty is calculated. </xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="RoyaltyRate" minOccurs="0" type="xs:decimal">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Rate of royalty to be used when calculating the royalty payment. Note that when this ddex:Composite is used in a sales reporting ddex:Message for a record company, the ddex:RoyaltyRate refers to the rate due to the record company, not the royalties due to individual ddex:Artists.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="RoyaltyRateInCurrencyOfAccounting" minOccurs="0" type="xs:decimal">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Rate of royalty to be used when calculating the royalty payment, using the ddex:CurrencyOfAccounting. Note that when this ddex:Composite is used in a sales reporting ddex:Message for a record company, the ddex:RoyaltyRate refers to the rate due to the record company, not the royalties due to individual ddex:Artists.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="AgreedUnitPriceExcSalesTax" minOccurs="0" type="xs:decimal">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Price per unit (excluding value-added tax) agreed between ddex:DSP and the record company as representing the notional unit price for ddex:Subscription sales, as a basis for royalty and other calculations.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="AgreedUnitPriceExcSalesTaxInCurrencyOfAccounting" minOccurs="0"
+                     type="xs:decimal">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Price per unit (excluding value-added tax and using the ddex:CurrencyOfAccounting) agreed between ddex:DSP and the record company as representing the notional unit price for ddex:Subscription sales, as a basis for royalty and other calculations.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="PrimaryResourceAgreedUnitPriceExcSalesTax" minOccurs="0"
+                     type="xs:decimal">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Price per unit (excluding value-added tax), which is applicable to each primary ddex:Resource that is part of the currently reported ddex:Release and which is agreed between ddex:DSP and the record company as representing the notional unit price for ddex:Subscription sales, as a basis for royalty and other calculations. This field may only be used when the reported ddex:Release contains more than one primary ddex:Resource and when the ddex:MessageSender is confident that it knows the distribution of the total amount to the individual ddex:Resources (e.g. when such a distribution is stated in a contract).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="PrimaryResourceAgreedUnitPriceExcSalesTaxInCurrencyOfAccounting"
+                     minOccurs="0"
+                     type="xs:decimal">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Price per unit (excluding value-added tax and using the ddex:CurrencyOfAccounting), which is applicable to each primary ddex:Resource that is part of the currently reported ddex:Release and which is agreed between ddex:DSP and the record company as representing the notional unit price for ddex:Subscription sales, as a basis for royalty and other calculations. This field may only be used when the reported ddex:Release contains more than one primary ddex:Resource and when the ddex:MessageSender is confident that it knows the distribution of the total amount to the individual ddex:Resources (e.g. when such a distribution is stated in a contract).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="DeductionRate" minOccurs="0" maxOccurs="unbounded"
+                     type="ddexC:DeductionRate">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of an applicable ddex:DeductionRate (if any).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="DeductionRateInCurrencyOfAccounting" minOccurs="0" maxOccurs="unbounded"
+                     type="ddexC:DeductionRate">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of an applicable ddex:DeductionRate, using the ddex:CurrencyOfAccounting (if any).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="EffectiveUnitRoyaltyRateNet" minOccurs="0" type="xs:decimal">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:RoyaltyRate which applies after all calculations and deductions have been applied.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="EffectiveUnitRoyaltyRateNetInCurrencyOfAccounting" minOccurs="0"
+                     type="xs:decimal">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:RoyaltyRate which applies after all calculations and deductions have been applied, using the ddex:CurrencyOfAccounting.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ProprietaryFinancialData" minOccurs="0" maxOccurs="unbounded"
+                     type="dsr:ProprietaryFinancialData">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing proprietary financial ddex:Elements.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ProprietaryFinancialDataInCurrencyOfAccounting" minOccurs="0"
+                     maxOccurs="unbounded"
+                     type="dsr:ProprietaryFinancialData">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing proprietary financial ddex:Elements, using the ddex:CurrencyOfAccounting.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="AmountPayable" minOccurs="0" type="xs:decimal">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The extended ddex:Amount due to the ddex:Licensor of ddex:Works or ddex:Releases for the sales (The ddex:Amount reported in this ddex:Element is an estimate based on best knowledge on the side of the ddex:MessageSender with respect to the intellectual property rights controlled by the ddex:MessageRecipient. The default is that 100% ownership is assumed).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="AmountPayableInCurrencyOfAccounting" minOccurs="0" type="xs:decimal">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:AmountPayable, measured in the ddex:Currency in which it has been accounted.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="CurrencyExchangeRate" minOccurs="0" type="xs:decimal">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The conversion ddex:Rate applicable to the ddex:AmountPayableInCurrencyOfAccounting.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="IsReplacementPurchase" minOccurs="0" type="xs:boolean">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Flag indicating whether a sale reported in a ddex:SalesTransaction is a sale where a ddex:Release was returned and a related ddex:Release is acquired by the ddex:Consumer (=True) or not (=False). Examples include upgrades from a DRMed to a not-DRMed ddex:Release. If this ddex:Element is not provided, it is assumed that this is False.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="TechnicalInstantiation" minOccurs="0" type="ddexC:TechnicalInstantiation">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing technical details of the ddex:Release.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="DspDetailsForSociety">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A ddex:Composite (for use by ddex:WorkLicensors) containing details of a ddex:DSP acting as a ddex:Licensee in a commercial relationship.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:choice>
+            <xs:element name="DistributionChannelDescriptor" minOccurs="0"
+                        type="ddexC:DistributionChannelDescriptor">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A ddex:Composite containing the ddex:Name and/or ddex:Description of the channel through which the ddex:DSP distributes ddex:Releases.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="RightsAgreementId" minOccurs="0" type="ddexC:RightsAgreementId">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A ddex:Composite containing details of ddex:Identifiers of a ddex:License, ddex:Claim, ddex:RightShare or contract existing between the ddex:Licensor and the ddex:DSP.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="PartyId" type="ddexC:PartyId">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the ddex:PartyId for the ddex:Party. If no ddex:Namespace is given, the ddex:Identifier is a ddex:DdexPartyId (DPID). Note that DPIDs are not normally used to identify ddex:Artists, ddex:Producers or other ddex:Creators.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:sequence>
+               <xs:element name="PartyName" maxOccurs="unbounded" type="ddexC:PartyName">
+                  <xs:annotation>
+                     <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the PartyName(s).</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="PartyId" minOccurs="0" type="ddexC:PartyId">
+                  <xs:annotation>
+                     <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the ddex:PartyId for the ddex:Party. If no ddex:Namespace is given, the ddex:Identifier is a ddex:DdexPartyId (DPID). Note that DPIDs are not normally used to identify ddex:Artists, ddex:Producers or other ddex:Creators.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+            </xs:sequence>
+         </xs:choice>
+         <xs:element name="TradingName" minOccurs="0" type="ddexC:Name">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing a ddex:TradingName of the ddexC:DSP.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="URL" minOccurs="0" maxOccurs="unbounded" type="xs:string">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:URL for the DSP's web site.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="TerritoryCode" minOccurs="0" type="ddexC:TerritoryCode">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Territory from which the ddexC:DSP operates (represented by an ISO 3166-1 iso3166a2:TerritoryCode). This ddex:Territory may differ from the one in which ddex:SalesTransactions occur.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+      <xs:attribute name="LanguageAndScriptCode" type="xs:string">
+         <xs:annotation>
+            <xs:documentation source="ddex:Definition">The ddex:Language and script for the ddex:Elements of the ddexC:DSP as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. ddex:Language and Script are provided as lang[-scipt][-region][-variant].  This is represented in an XML schema as an XML ddex:Attribute.</xs:documentation>
+         </xs:annotation>
+      </xs:attribute>
+   </xs:complexType>
+   <xs:complexType name="Image">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A ddex:Composite containing details of an ddex:Image.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="ImageType" minOccurs="0" type="ddexC:ImageType">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the ddex:Type of the ddexC:Image.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="IsArtistRelated" minOccurs="0" type="xs:boolean">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Flag indicating whether the ddexC:Image is related to an ddex:Artist (=True) or not (=False).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ImageId" maxOccurs="unbounded" type="ddexC:ImageId">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of ddex:Identifiers of the ddexC:Image.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ResourceReference">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Identifier (specific to the ddex:Message) of the ddexC:Image within the ddex:Release which contains it. This is a ddex:LocalResourceAnchor starting with the letter A.</xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+               <xs:restriction base="xs:ID">
+                  <xs:pattern value="A[\d\-_a-zA-Z]+"/>
+               </xs:restriction>
+            </xs:simpleType>
+         </xs:element>
+         <xs:element name="Title" minOccurs="0" maxOccurs="unbounded" type="ddexC:Title">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a ddex:Title of the ddexC:Image.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="CreationDate" minOccurs="0" type="ddexC:EventDate">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the Date and ddex:Place of the ddex:Event in which the ddexC:Image was created.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ImageDetailsByTerritory" maxOccurs="unbounded"
+                     type="ddexC:ImageDetailsByTerritory">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the ddexC:Image which may vary according to ddex:Territory of release.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="URL" minOccurs="0" type="xs:string">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:URL from which the dsr:Image was sold.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+      <xs:attribute name="LanguageAndScriptCode" type="xs:string">
+         <xs:annotation>
+            <xs:documentation source="ddex:Definition">The ddex:Language and script for the ddex:Elements of the ddexC:Image as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. ddex:Language and Script are provided as lang[-scipt][-region][-variant].  This is represented in an XML schema as an XML ddex:Attribute.</xs:documentation>
+         </xs:annotation>
+      </xs:attribute>
+   </xs:complexType>
+   <xs:complexType name="InvoiceItem">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A ddex:Composite containing details of an InvoiceItem.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="InvoiceItemId" type="ddexC:ProprietaryId">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of an ddex:Identifier of the dsr:InvoiceItem.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="LicenseOrClaimId" minOccurs="0" maxOccurs="unbounded"
+                     type="ddexC:RightsAgreementId">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of an ddex:Identifier of the ddex:License or ddex:Claim.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="InvoicePeriod" type="ddexC:Period">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details about the ddex:Period of ddex:Time covered by the Invoice.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="SalesReportMessageReference" minOccurs="0" maxOccurs="unbounded"
+                     type="dsr:SalesReportMessageReference">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing a reference to the sales report ddex:Message containing usage reports for which an invoice is provided.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:choice minOccurs="0">
+            <xs:element name="ReleaseId" maxOccurs="unbounded" type="ddexC:ReleaseId">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A ddex:Composite containing details of ddex:ReleaseIds. If available, a ddex:GRid should always be used.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="InvoiceReleaseReference" maxOccurs="unbounded">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A ddex:Reference for a ddex:Release (specific to this ddex:Message). This is a ddex:LocalReleaseAnchorReference starting with the letter R.</xs:documentation>
+               </xs:annotation>
+               <xs:simpleType>
+                  <xs:restriction base="xs:IDREF">
+                     <xs:pattern value="R[\d\-_a-zA-Z]+"/>
+                  </xs:restriction>
+               </xs:simpleType>
+            </xs:element>
+         </xs:choice>
+         <xs:element name="NumberOfUsages" type="xs:integer">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The number of times a ddex:Release has been used under the terms and conditions reported in the ddex:Message.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ReleaseUsagePrice" type="ddexC:Price">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the ddex:Price for each of the Usages of a ddex:Release.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="AppliedTariff" minOccurs="0" type="ddexC:TariffReference">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a ddex:Reference to a ddex:TextDocument containing details of a ddex:Tariff (in the form of an ddex:Identifier, ddex:Name or ddex:Description).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="AppliedRoyaltyRate" type="ddexC:AppliedRoyaltyRate">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing the details of the ddex:RoyaltyRate that has been applied when issuing the invoice.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="CalculatedRoyaltyAmountPerUse" type="ddexC:RoyaltyAmount">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the ddex:RoyaltyAmount that has been calculated to be due for the given Usage and ReleaseUsagePrice, based on the applied ddex:Tariff when issuing the invoice.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="CalculatedTax" minOccurs="0" maxOccurs="unbounded" type="ddexC:Tax">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the ddex:Tax applicable to the CalculatedRoyaltyAmountPerUse.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="CalculatedRoyaltyAmountPerInvoice" type="ddexC:RoyaltyAmount">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the ddex:RoyaltyAmount that has been calculated for a given Invoice item.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="RightsType" minOccurs="0" maxOccurs="unbounded" type="ddexC:RightsType">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the RightsType for a given Invoice item.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ReleaseType" minOccurs="0" maxOccurs="unbounded" type="ddex:ReleaseType">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The Type of the Release according to its content, Duration and/or number of components.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="UseType" minOccurs="0" maxOccurs="unbounded" type="ddexC:UseType">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a nature of a ddex:Service, or a ddex:Release, as used by a ddex:Consumer.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="MIDI">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a ddex:MIDI.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="MidiType" minOccurs="0" type="ddexC:MidiType">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the ddex:Type of the ddexC:MIDI.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="IsArtistRelated" minOccurs="0" type="xs:boolean">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Flag indicating whether the ddexC:MIDI is related to an ddex:Artist (=True) or not (=False).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="MidiId" maxOccurs="unbounded" type="ddexC:MidiId">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of ddex:Identifiers of the Midi.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="IndirectMidiId" minOccurs="0" maxOccurs="unbounded"
+                     type="ddexC:MusicalWorkId">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a ddex:MusicalWorkId of a ddex:MusicalWork used in the ddexC:MIDI.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ResourceReference">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Identifier (specific to the ddex:Message) of the ddexC:MIDI within the ddex:Release which contains it. This is a ddex:LocalResourceAnchor starting with the letter A.</xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+               <xs:restriction base="xs:ID">
+                  <xs:pattern value="A[\d\-_a-zA-Z]+"/>
+               </xs:restriction>
+            </xs:simpleType>
+         </xs:element>
+         <xs:element name="ReferenceTitle" type="ddexC:ReferenceTitle">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the ddex:ReferenceTitle of the ddexC:MIDI.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="InstrumentationDescription" minOccurs="0" type="ddexC:Description">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing a ddex:Description of the ddex:Type of instrumentation of the MusicalWork(s) in the ddexC:MIDI.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="IsMedley" minOccurs="0" type="xs:boolean">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Flag indicating whether the ddexC:MIDI is a ddex:Medley (=True) or not (=False).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="IsPotpourri" minOccurs="0" type="xs:boolean">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Flag indicating whether the ddexC:MIDI is a ddex:Potpourri (=True) or not (=False).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="IsInstrumental" minOccurs="0" type="xs:boolean">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Flag indicating whether the ddexC:MIDI is instrumental (=True) or not (=False).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="IsBackground" minOccurs="0" type="xs:boolean">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Flag indicating whether the ddexC:MIDI is used as background to other audio or audiovisual material (=True) or not (=False).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="IsHiddenResource" minOccurs="0" type="xs:boolean">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Flag indicating whether the ddexC:MIDI is hidden in some way from the ddex:Consumer (=True) or not (=False).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="IsBonusResource" minOccurs="0" type="xs:boolean">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Flag indicating whether the ddexC:MIDI is additional to those on the original ddex:Release of which this is a ddex:Version (=True) or not (=False).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="IsComputerGenerated" minOccurs="0" type="xs:boolean">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Flag indicating whether the ddexC:MIDI is generated by a computer (=True) or not (=False).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="PerformerInformationRequired" minOccurs="0" type="xs:boolean">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Flag indicating whether performer information is required (=True) or not (=False) when communicating details of the ddexC:MIDI.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="LanguageOfPerformance" minOccurs="0" type="iso639a2:LanguageCode">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Language of the ddex:Performance recorded in the ddexC:MIDI (represented by an ISO 639-2 iso639a2:LanguageCode).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Duration" type="xs:duration">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Duration of the ddexC:MIDI (using the ISO 8601:2004 PT[[hhH]mmM]ssS format, where lower case characters indicate variables, upper case characters are part of the xs:string, e.g. one hour, two minutes and three seconds would be PT1H2M3S).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="RightsAgreementId" minOccurs="0" type="ddexC:RightsAgreementId">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of ddex:Identifiers of a ddex:License, ddex:Claim, ddex:RightShare or contract for the MusicalWork(s) used in the ddexC:MIDI.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ResourceMusicalWorkReferenceList" minOccurs="0"
+                     type="ddexC:ResourceMusicalWorkReferenceList">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of one or more ddex:MusicalWorks contained in the ddexC:MIDI.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ResourceContainedResourceReferenceList" minOccurs="0"
+                     type="ddexC:ResourceContainedResourceReferenceList">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of ddex:ResourceContainedResourceReferences referring to a ddex:Resource that is contained in the current ddexC:MIDI.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="CreationDate" minOccurs="0" type="ddexC:EventDate">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the Date and ddex:Place of the ddex:Event in which the ddexC:MIDI was created.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="MasteredDate" minOccurs="0" type="ddexC:EventDate">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the Date and ddex:Place of the ddex:Event in which the ddexC:MIDI was originally mastered (either in analogue or digital form).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="MidiDetailsByTerritory" maxOccurs="unbounded"
+                     type="ddexC:MidiDetailsByTerritory">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of ddex:Descriptors and other attributes of the ddexC:MIDI which may vary according to ddex:Territory of release. </xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="URL" minOccurs="0" type="xs:string">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:URL from which the dsr:MIDI was sold.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+      <xs:attribute name="LanguageAndScriptCode" type="xs:string">
+         <xs:annotation>
+            <xs:documentation source="ddex:Definition">The ddex:Language and script for the ddex:Elements of the ddexC:MIDI as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. ddex:Language and Script are provided as lang[-scipt][-region][-variant].  This is represented in an XML schema as an XML ddex:Attribute.</xs:documentation>
+         </xs:annotation>
+      </xs:attribute>
+   </xs:complexType>
+   <xs:complexType name="PriceInformation">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a ddex:Price.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="Description" minOccurs="0" type="ddexC:Description">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing a ddex:Description of the differences between multiple dsr:PriceInformation ddex:Composites.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="PriceRangeType" minOccurs="0" type="ddexC:PriceRangeType">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing a ddex:Type of ddex:Price according to its value range. Typical examples include 'budget' and 'front line'.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="PriceType" minOccurs="0" type="ddexC:PriceType">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing further details of the ddex:Price. Often used to refine the ddex:PriceRangeType.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="WholesalePricePerUnit" minOccurs="0" type="ddexC:Price">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a wholesale ddex:Price for a single unit of Usage. Note that this ddex:Price applies to all ddex:UseTypes referenced in a DealTerm ddex:Composite.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="WholesalePricePerUnitInCurrencyOfAccounting" minOccurs="0"
+                     type="ddexC:Price">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a wholesale ddex:Price for a single unit of Usage, using the ddex:CurrencyOfAccounting. Note that this ddex:Price applies to all ddex:UseTypes referenced in a DealTerm ddex:Composite.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="BulkOrderWholesalePricePerUnit" minOccurs="0" type="ddexC:Price">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a wholesale ddex:Price for a single unit. Note that the size of a bulk order is defined in the contract between ddex:MessageSender and the ddex:MessageRecipient.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="BulkOrderWholesalePricePerUnitInCurrencyOfAccounting" minOccurs="0"
+                     type="ddexC:Price">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a wholesale ddex:Price for a single unit, using the ddex:CurrencyOfAccounting. Note that the size of a bulk order is defined in the contract between ddex:MessageSender and the ddex:MessageRecipient.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="SuggestedRetailPrice" minOccurs="0" type="ddexC:Price">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a suggested retail ddex:Price.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="SuggestedRetailPriceInCurrencyOfAccounting" minOccurs="0"
+                     type="ddexC:Price">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a suggested retail ddex:Price, using the ddex:CurrencyOfAccounting.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ECPM" minOccurs="0" type="xs:decimal">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The effective cost per mille (eCPM) for an advertisement at transaction level.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="ProprietaryFinancialData">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A ddex:Composite containing an element of proprietary financial data.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="Value" type="xs:decimal">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The value of the proprietary financial data.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Description" minOccurs="0" type="ddexC:Description">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing a ddex:Description of the proprietary financial data.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="Release">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a ddex:DDEX ddex:Release.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="ReleaseId" maxOccurs="unbounded" type="ddexC:ReleaseId">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of ddex:ReleaseIds. If available, a ddex:GRid shall always to be used. If the dsr:Release contains only one ddex:SoundRecording, the ddex:ISRC of the ddex:SoundRecording may be used instead. If the dsr:Release is an abstraction of a complete ddex:PhysicalProduct (such as a CD ddex:Album), the ddex:ICPN of the ddex:PhysicalProduct may be used instead. More than one of these identifiers may be provided.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ReleaseReference" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Identifier (specific to the ddex:Message) of the dsr:Release. This is a ddex:LocalReleaseAnchor starting with the letter R.</xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+               <xs:restriction base="xs:ID">
+                  <xs:pattern value="R[\d\-_a-zA-Z]+"/>
+               </xs:restriction>
+            </xs:simpleType>
+         </xs:element>
+         <xs:element name="ReferenceTitle" type="ddexC:ReferenceTitle">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the ddex:ReferenceTitle of the dsr:Release.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ReleaseResourceReferenceList" minOccurs="0"
+                     type="ddexC:ReleaseResourceReferenceList">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of one or more ddex:Resources contained in the dsr:Release.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ReleaseCollectionReference" minOccurs="0" maxOccurs="unbounded"
+                     type="ddexC:ReleaseCollectionReference">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing a ddex:Reference for a ddex:Collection (specific to this ddex:Message). The ddex:LocalAnchorReference in this ddex:Composite is a xs:string starting with the letter X.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ReleaseType" minOccurs="0" maxOccurs="unbounded" type="ddexC:ReleaseType">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the form in which a ddex:ReleaseCreator anticipates offering the dsr:Release to ddex:Consumers. This may be overridden by the ddex:ReleaseType for specific Territories as specified in the ReleaseDetailsByTerritory ddex:Composite.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ReleaseDetailsByTerritory" maxOccurs="unbounded"
+                     type="ddexC:ReleaseDetailsByTerritory">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of ddex:Descriptors and other attributes of the dsr:Release which may vary according to ddex:Territory of release.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Duration" minOccurs="0" type="xs:duration">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The sum of the ddex:Durations of all ddex:Resources contained in the dsr:Release (using the ISO 8601:2004 PT[[hhH]mmM]ssS format, where lower case characters indicate variables, upper case characters are part of the xs:string, e.g. one hour, two minutes and three seconds would be PT1H2M3S).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="DurationOfMusicalContent" minOccurs="0" type="xs:duration">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Duration of the musical content (using the ISO 8601:2004 PT[[hhH]mmM]ssS format, where lower case characters indicate variables, upper case characters are part of the xs:string, e.g. one hour, two minutes and three seconds would be PT1H2M3S).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="RightsAgreementId" minOccurs="0" type="ddexC:RightsAgreementId">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of ddex:Identifiers of a ddex:License, ddex:Claim, ddex:RightShare or contract for the MusicalWork(s) used in the dsr:Release.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="PLine" minOccurs="0" maxOccurs="unbounded" type="ddexC:PLine">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the ddex:PLine for the dsr:Release.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="CLine" minOccurs="0" maxOccurs="unbounded" type="ddexC:CLine">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the ddex:CLine for the dsr:Release.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="URL" minOccurs="0" type="xs:string">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:URL from which the dsr:Release was sold.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="CreationDate" minOccurs="0" type="ddexC:EventDate">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the Date and ddex:Place of the ddex:Event in which the dsr:Release was created.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="OriginalReleaseDate" minOccurs="0" type="ddexC:EventDate">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the Date and ddex:Place of the ddex:Event in which the dsr:Release was or will be first made available for Usage, whether for physical or electronic/online distribution (in ISO 8601:2004 format: YYYY-MM-DD).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="OriginalLanguage" minOccurs="0" type="iso639a2:LanguageCode">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The orignal ddex:Language of the dsr:Release (represented by an ISO 639-2 iso639a2:LanguageCode).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+      <xs:attribute name="LanguageAndScriptCode" type="xs:string">
+         <xs:annotation>
+            <xs:documentation source="ddex:Definition">The ddex:Language and script for the ddex:Elements of the dsr:Release as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. ddex:Language and Script are provided as lang[-scipt][-region][-variant].  This is represented in an XML schema as an XML ddex:Attribute.</xs:documentation>
+         </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="IsMainRelease" type="xs:boolean">
+         <xs:annotation>
+            <xs:documentation source="ddex:Definition">The ddex:Flag indicating whether the ddex:Release is a main one as defined in the relevant Profile Standard (=True) or not (=False). This is represented in an XML schema as an XML ddex:Attribute.</xs:documentation>
+         </xs:annotation>
+      </xs:attribute>
+   </xs:complexType>
+   <xs:complexType name="ReleaseList">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A ddex:Composite containing details of one or more ddex:Releases.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="Release" maxOccurs="unbounded" type="dsr:Release">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a ddex:DDEX ddex:Release.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+      <xs:attribute name="LanguageAndScriptCode" type="xs:string">
+         <xs:annotation>
+            <xs:documentation source="ddex:Definition">The ddex:Language and script for the ddex:Elements of the dsr:ReleaseList as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. ddex:Language and Script are provided as lang[-scipt][-region][-variant].  This is represented in an XML schema as an XML ddex:Attribute.</xs:documentation>
+         </xs:annotation>
+      </xs:attribute>
+   </xs:complexType>
+   <xs:complexType name="ReleaseTransactionsToRecordCompany">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A ddex:Composite containing details of ddex:SalesTransactions for a ddex:Release or a ddex:Resource, reported by a ddex:DSP to a record company.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:choice>
+            <xs:element name="TransactionReleaseReference" maxOccurs="unbounded">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A ddex:Reference for a ddex:Release (specific to this ddex:Message). This is a ddex:LocalReleaseAnchorReference starting with the letter R.</xs:documentation>
+               </xs:annotation>
+               <xs:simpleType>
+                  <xs:restriction base="xs:IDREF">
+                     <xs:pattern value="R[\d\-_a-zA-Z]+"/>
+                  </xs:restriction>
+               </xs:simpleType>
+            </xs:element>
+            <xs:sequence maxOccurs="unbounded">
+               <xs:element name="TransactionResourceReference" maxOccurs="unbounded">
+                  <xs:annotation>
+                     <xs:documentation source="ddex:Definition">A ddex:Reference for a ddex:Resource (specific to this ddex:Message). This is a ddex:LocalResourceAnchorReference starting with the letter A.</xs:documentation>
+                  </xs:annotation>
+                  <xs:simpleType>
+                     <xs:restriction base="xs:IDREF">
+                        <xs:pattern value="A[\d\-_a-zA-Z]+"/>
+                     </xs:restriction>
+                  </xs:simpleType>
+               </xs:element>
+               <xs:element name="ResourceType" minOccurs="0" type="ddexC:ResourceType">
+                  <xs:annotation>
+                     <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the ddex:Type of the ddex:Resource.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+            </xs:sequence>
+         </xs:choice>
+         <xs:element name="Deal" minOccurs="0" type="dsr:DealForRecordCompanies">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the terms and conditions of the ddex:Deal under which sales were transacted. (Note: The ddex:Amount reported in this ddex:Composite is an estimate based on best knowledge on the side of the ddex:MessageSender with respect to the intellectual property rights controlled by the ddex:MessageRecipient. The default is that 100% ownership is assumed).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="SalesTransaction" maxOccurs="unbounded"
+                     type="dsr:SalesTransactionToRecordCompany">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a ddex:SalesTransaction for specified Usages of the ddex:Release or ddex:Resource.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Comment" minOccurs="0" type="ddexC:Comment">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing the ddex:Comment about the ddex:ReleaseTransactions ddex:Composite.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="DurationUsed" minOccurs="0" maxOccurs="unbounded"
+                     type="ddexC:DurationByUseType">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the total ddex:Duration of the ddex:Release or ddex:Resource that has been used (this may be less than the total ddex:Duration), specified for a ddex:UseType (using the ISO 8601:2004 PT[[hhH]mmM]ssS format, where lower case characters indicate variables, upper case characters are part of the xs:string, e.g. one hour, two minutes and three seconds would be PT1H2M3S). This applies only to single-Resource ddex:Releases.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+      <xs:attribute name="LanguageAndScriptCode" type="xs:string">
+         <xs:annotation>
+            <xs:documentation source="ddex:Definition">The ddex:Language and script for the ddex:Elements of the ddex:ReleaseTransactions as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. ddex:Language and Script are provided as lang[-scipt][-region][-variant].  This is represented in an XML schema as an XML ddex:Attribute.</xs:documentation>
+         </xs:annotation>
+      </xs:attribute>
+   </xs:complexType>
+   <xs:complexType name="ReleaseTransactionsToSociety">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A ddex:Composite containing details of ddex:SalesTransactions for a ddex:Release or a ddex:Resource, reported by a ddex:DSP to a ddex:WorkLicensor.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:choice>
+            <xs:element name="TransactionReleaseReference" maxOccurs="unbounded">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A ddex:Reference for a ddex:Release (specific to this ddex:Message). This is a ddex:LocalReleaseAnchorReference starting with the letter R.</xs:documentation>
+               </xs:annotation>
+               <xs:simpleType>
+                  <xs:restriction base="xs:IDREF">
+                     <xs:pattern value="R[\d\-_a-zA-Z]+"/>
+                  </xs:restriction>
+               </xs:simpleType>
+            </xs:element>
+            <xs:sequence maxOccurs="unbounded">
+               <xs:element name="TransactionResourceReference" maxOccurs="unbounded">
+                  <xs:annotation>
+                     <xs:documentation source="ddex:Definition">A ddex:Reference for a ddex:Resource (specific to this ddex:Message). This is a ddex:LocalResourceAnchorReference starting with the letter A.</xs:documentation>
+                  </xs:annotation>
+                  <xs:simpleType>
+                     <xs:restriction base="xs:IDREF">
+                        <xs:pattern value="A[\d\-_a-zA-Z]+"/>
+                     </xs:restriction>
+                  </xs:simpleType>
+               </xs:element>
+               <xs:element name="ResourceType" minOccurs="0" type="ddexC:ResourceType">
+                  <xs:annotation>
+                     <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the ddex:Type of the ddex:Resource.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+            </xs:sequence>
+         </xs:choice>
+         <xs:element name="Deal" minOccurs="0" type="dsr:DetailedDeal">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the terms and conditions of the ddex:Deal under which sales were transacted. (Note: The ddex:Amount reported in this ddex:Composite is an estimate based on best knowledge on the side of the ddex:MessageSender with respect to the intellectual property rights controlled by the ddex:MessageRecipient. The default is that 100% ownership is assumed).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="SalesTransaction" maxOccurs="unbounded"
+                     type="dsr:SalesTransactionToSociety">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a ddex:SalesTransaction for specified Usages of the ddex:Release or ddex:Resource.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="RightsAgreementId" minOccurs="0" type="ddexC:RightsAgreementId">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of ddex:Identifiers of a ddex:License, ddex:Claim, ddex:RightShare or contract for the MusicalWork(s) used in the ddex:Release or ddex:Resource.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Comment" minOccurs="0" type="ddexC:Comment">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing the ddex:Comment about the ddex:ReleaseTransactions ddex:Composite.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="DurationUsed" minOccurs="0" maxOccurs="unbounded"
+                     type="ddexC:DurationByUseType">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the total ddex:Duration of the ddex:Release or ddex:Resource that has been used (this may be less than the total ddex:Duration), specified for a ddex:UseType (using the ISO 8601:2004 PT[[hhH]mmM]ssS format, where lower case characters indicate variables, upper case characters are part of the xs:string, e.g. one hour, two minutes and three seconds would be PT1H2M3S). This applies only to ddex:Release which are single-Resource ddex:Creations.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+      <xs:attribute name="LanguageAndScriptCode" type="xs:string">
+         <xs:annotation>
+            <xs:documentation source="ddex:Definition">The ddex:Language and script for the ddex:Elements of the ddex:ReleaseTransactions as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. ddex:Language and Script are provided as lang[-scipt][-region][-variant].  This is represented in an XML schema as an XML ddex:Attribute.</xs:documentation>
+         </xs:annotation>
+      </xs:attribute>
+   </xs:complexType>
+   <xs:complexType name="ResourceList">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A ddex:Composite containing details of one or more ddex:Resources. ResourceList provides a simple means of aggregating ddex:Resources without any explicit sequencing or grouping: if it is needed, that is provided by the ddex:ResourceGroup ddex:Composite. </xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="SoundRecording" minOccurs="0" maxOccurs="unbounded"
+                     type="dsr:SoundRecording">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a ddex:SoundRecording.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="MIDI" minOccurs="0" maxOccurs="unbounded" type="dsr:MIDI">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a ddex:MIDI.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Video" minOccurs="0" maxOccurs="unbounded" type="dsr:Video">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a ddex:Video.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Image" minOccurs="0" maxOccurs="unbounded" type="dsr:Image">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of an ddex:Image.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Text" minOccurs="0" maxOccurs="unbounded" type="dsr:Text">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a ddex:Text.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="SheetMusic" minOccurs="0" maxOccurs="unbounded" type="dsr:SheetMusic">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a ddex:SheetMusic.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Software" minOccurs="0" maxOccurs="unbounded" type="dsr:Software">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of an item of ddex:Software.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="UserDefinedResource" minOccurs="0" maxOccurs="unbounded"
+                     type="dsr:UserDefinedResource">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a ddex:UserDefinedResource.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+      <xs:attribute name="LanguageAndScriptCode" type="xs:string">
+         <xs:annotation>
+            <xs:documentation source="ddex:Definition">The ddex:Language and script for the ddex:Elements of the dsr:ResourceList as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. ddex:Language and Script are provided as lang[-scipt][-region][-variant].  This is represented in an XML schema as an XML ddex:Attribute.</xs:documentation>
+         </xs:annotation>
+      </xs:attribute>
+   </xs:complexType>
+   <xs:complexType name="SalesDataGroupingToRecordCompany">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the criteria by which sales reports to record companies are grouped.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="StartDate" minOccurs="0" type="xs:date">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:StartDate or actual Date of the sales transaction.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="EndDate" minOccurs="0" type="xs:date">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:EndDate of the sales report if different from ddex:EndDate of the transaction ddex:Period which is given in the MessageHeader.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="PostCode" minOccurs="0" maxOccurs="unbounded" type="xs:string">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:PostCode or zip code of a ddex:Consumer of the ddex:Releases.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="MinimumDuration" minOccurs="0" type="xs:duration">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:MinimumDuration of the ddex:Release contained in the SalesDataGrouping (applicable only to ddex:Release containing a single ddex:SoundRecording or ddex:MusicalWorkVideo) (using the ISO 8601:2004 PT[[hhH]mmM]ssS format, where lower case characters indicate variables, upper case characters are part of the xs:string, e.g. one hour, two minutes and three seconds would be PT1H2M3S).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="MaximumDuration" minOccurs="0" type="xs:duration">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:MaximumDuration of the ddex:Release contained in the SalesDataGrouping (applicable only to ddex:Release containing a single ddex:SoundRecording or ddex:MusicalWorkVideo) (using the ISO 8601:2004 PT[[hhH]mmM]ssS format, where lower case characters indicate variables, upper case characters are part of the xs:string, e.g. one hour, two minutes and three seconds would be PT1H2M3S).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="DistributionChannelType" minOccurs="0" maxOccurs="unbounded"
+                     type="ddex:DistributionChannelType">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Type of telecommunication technology used by a ddex:Consumer to receive the ddex:Release.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="CustomerId" minOccurs="0" maxOccurs="unbounded" type="xs:string">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A DSP's ddex:Identifier for a ddex:Consumer of the ddex:Releases sold.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="TransactionId" minOccurs="0" type="xs:string">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The DSP's ddex:Identifier for the ddex:SalesTransaction by the ddex:Consumer in relation to the ddex:Release.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="StoreLocationDescriptor" minOccurs="0"
+                     type="ddexC:StoreLocationDescriptor">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing the ddex:Descriptor (typically an xs:ID assigned by the ddex:DSP) of the store in which the ddex:Kiosk is located.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="PromotionalActivityDescription" minOccurs="0" type="ddexC:Description">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing the freetext ddex:Description of a promotional activity.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Deal" minOccurs="0" type="dsr:DealForRecordCompanies">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the terms and conditions of the ddex:Deal under which sales were transacted. (Note: The ddex:Amount reported in this ddex:Composite is an estimate based on best knowledge on the side of the ddex:MessageSender with respect to the intellectual property rights controlled by the ddex:MessageRecipient. The default is that 100% ownership is assumed).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+      <xs:attribute name="LanguageAndScriptCode" type="xs:string">
+         <xs:annotation>
+            <xs:documentation source="ddex:Definition">The ddex:Language and script for the ddex:Elements of the SalesDataGrouping as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. ddex:Language and Script are provided as lang[-scipt][-region][-variant].  This is represented in an XML schema as an XML ddex:Attribute.</xs:documentation>
+         </xs:annotation>
+      </xs:attribute>
+   </xs:complexType>
+   <xs:complexType name="SalesDataGroupingToSociety">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the criteria by which sales reports to societies are grouped.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="StartDate" minOccurs="0" type="xs:date">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:StartDate or actual Date of the sales report.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="EndDate" minOccurs="0" type="xs:date">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:EndDate of the sales report if different from ddex:EndDate of the transaction ddex:Period which is given in the MessageHeader.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="PostCode" minOccurs="0" maxOccurs="unbounded" type="xs:string">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:PostCode or zip code of a ddex:Consumer of the ddex:Releases.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="MinimumDuration" minOccurs="0" type="xs:duration">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:MinimumDuration of the ddex:Release contained in the SalesDataGrouping (applicable only to ddex:Release containing a single ddex:SoundRecording or ddex:MusicalWorkVideo) (using the ISO 8601:2004 PT[[hhH]mmM]ssS format, where lower case characters indicate variables, upper case characters are part of the xs:string, e.g. one hour, two minutes and three seconds would be PT1H2M3S).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="MaximumDuration" minOccurs="0" type="xs:duration">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:MaximumDuration of the ddex:Release contained in the SalesDataGrouping (applicable only to ddex:Release containing a single ddex:SoundRecording or ddex:MusicalWorkVideo) (using the ISO 8601:2004 PT[[hhH]mmM]ssS format, where lower case characters indicate variables, upper case characters are part of the xs:string, e.g. one hour, two minutes and three seconds would be PT1H2M3S).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="DistributionChannelType" minOccurs="0" maxOccurs="unbounded"
+                     type="ddex:DistributionChannelType">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Type of telecommunication technology used by a ddex:Consumer to receive the ddex:Release.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="CustomerId" minOccurs="0" maxOccurs="unbounded" type="xs:string">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A DSP's ddex:Identifier for a ddex:Consumer of the ddex:Releases sold.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="TransactionId" minOccurs="0" type="xs:string">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The DSP's ddex:Identifier for the ddex:SalesTransaction by the ddex:Consumer in relation to the ddex:Release.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="StoreLocationDescriptor" minOccurs="0"
+                     type="ddexC:StoreLocationDescriptor">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing the ddex:Descriptor (typically an xs:ID assigned by the ddex:DSP) of the store in which the ddex:Kiosk is located.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="PromotionalActivityDescription" minOccurs="0" type="ddexC:Description">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing the freetext ddex:Description of a promotional activity.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Deal" minOccurs="0" type="dsr:DealForSocieties">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the ddex:Deal under which sales were transacted. The reported figures are based on best knowledge on the side of the ddex:MessageSender with respect to the intellectual property rights controlled by the ddex:MessageRecipient (the default is that 100% ownership is assumed).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+      <xs:attribute name="LanguageAndScriptCode" type="xs:string">
+         <xs:annotation>
+            <xs:documentation source="ddex:Definition">The ddex:Language and script for the ddex:Elements of the SalesDataGrouping as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. ddex:Language and Script are provided as lang[-scipt][-region][-variant].  This is represented in an XML schema as an XML ddex:Attribute.</xs:documentation>
+         </xs:annotation>
+      </xs:attribute>
+   </xs:complexType>
+   <xs:complexType name="SalesDataToRecordCompany">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A ddex:Composite containing details of ddex:SalesTransactions of a ddex:Release. </xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="SalesDataGrouping" minOccurs="0"
+                     type="dsr:SalesDataGroupingToRecordCompany">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the criteria by which sales reports to record companies are grouped.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="NumberOfConsumerSalesGross" type="xs:integer">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The number of unit sales of the ddex:Release from the ddex:DSP to ddex:Consumers, including any sales adjustments but not including units made available free of charge. Sales adjustments include e.g. file failures.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="NumberOfUnitAdjustments" minOccurs="0" type="xs:integer">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The number of sold units of a ddex:Release returned (with refund) to the ddex:DSP as a result of a reversal of a ddex:SalesTransaction or because of an earlier error in sales reporting.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="NumberOfFreeUnitsToConsumers" type="xs:integer">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The number of units of a ddex:Release provided free to ddex:Consumers. </xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="NumberOfUnitAdjustmentsToFreeUnits" minOccurs="0" type="xs:integer">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The number of free units of a ddex:Release returned to the ddex:DSP.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="SalesDataToSociety">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A ddex:Composite containing details of ddex:SalesTransactions of a ddex:Release. </xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="SalesDataGrouping" minOccurs="0" type="dsr:SalesDataGroupingToSociety">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the criteria by which sales reports to societies are grouped.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="NumberOfConsumerSalesGross" type="xs:integer">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The number of unit sales of the ddex:Release from the ddex:DSP to ddex:Consumers, including any sales adjustments but not including units made available free of charge. Sales adjustments include e.g. file failures.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="NumberOfUnitAdjustments" minOccurs="0" type="xs:integer">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The number of sold units of a ddex:Release returned (with refund) to the ddex:DSP as a result of a reversal of a ddex:SalesTransaction or because of an earlier error in sales reporting.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="NumberOfFreeUnitsToConsumers" type="xs:integer">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The number of units of a ddex:Release provided free to ddex:Consumers. </xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="NumberOfUnitAdjustmentsToFreeUnits" minOccurs="0" type="xs:integer">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The number of free units of a ddex:Release returned to the ddex:DSP.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="PriceConsumerPaidExcSalesTax" minOccurs="0"
+                     type="ddexC:PriceConsumerPaidExcSalesTax">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a ddex:PriceConsumerPaidExcSalesTax. This ddex:Element is to be used only when no ddex:Deal ddex:Composite is available which applies to the sales. </xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ConsumerPriceGross" minOccurs="0" type="xs:decimal">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The gross ddex:Price (that is, including value-added tax) paid by the ddex:Consumer. This ddex:Element is to be used only when no ddex:Deal ddex:Composite is available which applies to the sales. </xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="SalesReportMessageReference">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A ddex:Composite containing details of ddex:Identifiers of a sales reporting ddex:DdexMessage.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="MessageId" type="xs:string">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">An ddex:Identifier of the sales reporting ddex:Message.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="MessageThreadId" type="xs:string">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">An ddex:Identifier of the ddex:Message thread. Typically used to track the progress and history (from ddex:Party to ddex:Party) of the sales reporting ddex:Message.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="SalesReportToRecordCompany">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A ddex:Composite containing details of ddex:SalesTransactions reported to a record company.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="DSP" type="ddexC:DSP">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the ddex:DSP whose ddex:SalesTransactions are being reported.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="SalesByCommercialModel" maxOccurs="unbounded"
+                     type="dsr:SalesToRecordCompanyByCommercialModel">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of ddex:SalesTransactions reported by the ddex:DSP to the record company for a specific ddex:CommercialModelType.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+      <xs:attribute name="LanguageAndScriptCode" type="xs:string">
+         <xs:annotation>
+            <xs:documentation source="ddex:Definition">The ddex:Language and script for the ddex:Elements of the SalesReport as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. ddex:Language and Script are provided as lang[-scipt][-region][-variant].  This is represented in an XML schema as an XML ddex:Attribute.</xs:documentation>
+         </xs:annotation>
+      </xs:attribute>
+   </xs:complexType>
+   <xs:complexType name="SalesReportToSociety">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A ddex:Composite containing details of ddex:SalesTransactions reported to a ddex:MusicalWork ddex:Licensor.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="DSP" type="dsr:DspDetailsForSociety">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the ddex:DSP (as ddex:Licensee) whose ddex:SalesTransactions are being reported.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Licensor" minOccurs="0" type="ddexC:PartyDescriptor">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the ddex:Party granting the permission for Usage.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="SalesByCommercialModel" maxOccurs="unbounded"
+                     type="dsr:SalesToSocietyByCommercialModel">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of ddex:SalesTransactions reported by the ddex:DSP to the ddex:MusicalWork ddex:Licensor for a specific ddex:CommercialModelType.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+      <xs:attribute name="LanguageAndScriptCode" type="xs:string">
+         <xs:annotation>
+            <xs:documentation source="ddex:Definition">The ddex:Language and script for the ddex:Elements of the SalesReport as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. ddex:Language and Script are provided as lang[-scipt][-region][-variant].  This is represented in an XML schema as an XML ddex:Attribute.</xs:documentation>
+         </xs:annotation>
+      </xs:attribute>
+   </xs:complexType>
+   <xs:complexType name="SalesToRecordCompanyByCommercialModel">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A ddex:Composite containing details of ddex:SalesTransactions reported by a ddex:DSP to a record company for a specific ddex:CommercialModelType.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="CommercialModelType" minOccurs="0" maxOccurs="unbounded"
+                     type="ddexC:CommercialModelType">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the fundamental business model of the commercial offering made to the ddex:Consumer for which ddex:SalesTransactions are reported (e.g. ddex:SubscriptionModel or ddex:PayAsYouGoModel). The ddex:CommercialModelType indicates how the ddex:Consumer pays for the service or ddex:Release.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="CurrencyOfAccounting" type="ddexC:CurrencyCode">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Currency in which the ddex:SalesTransactions are accounted (represented by an ISO 4217 iso4217a:CurrencyCode).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="SalesByTerritory" maxOccurs="unbounded"
+                     type="dsr:SalesToRecordCompanyByTerritory">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of ddex:SalesTransactions reported by the ddex:DSP to the record company for a specific ddex:Territory.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+      <xs:attribute name="LanguageAndScriptCode" type="xs:string">
+         <xs:annotation>
+            <xs:documentation source="ddex:Definition">The ddex:Language and script for the ddex:Elements of the SalesByCommercialModel as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. ddex:Language and Script are provided as lang[-scipt][-region][-variant].  This is represented in an XML schema as an XML ddex:Attribute.</xs:documentation>
+         </xs:annotation>
+      </xs:attribute>
+   </xs:complexType>
+   <xs:complexType name="SalesToRecordCompanyByTerritory">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A ddex:Composite containing details of ddex:SalesTransactions reported by a ddex:DSP to a record company for a specific ddex:Territory.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="TerritoryCode" maxOccurs="unbounded" type="ddexC:TerritoryCode">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Territory for which ddex:SalesTransactions are reported (represented by an ISO 3166-1 iso3166a2:TerritoryCode).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="TaxRate" minOccurs="0" maxOccurs="unbounded" type="ddexC:TaxRate">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a ddex:TaxRate applicable to the total ddex:Amount to be paid. Within the DSR ddex:Message, only one of the two ddex:TaxRate ddex:Elements (here and in dsr:DetailedDeal) may be filled.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Deal" minOccurs="0" type="dsr:DealForRecordCompanies">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the terms and conditions of the ddex:Deal under which sales were transacted. (Note: The ddex:Amount reported in this ddex:Composite is an estimate based on best knowledge on the side of the ddex:MessageSender with respect to the intellectual property rights controlled by the ddex:MessageRecipient. The default is that 100% ownership is assumed).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ReleaseTransactions" maxOccurs="unbounded"
+                     type="dsr:ReleaseTransactionsToRecordCompany">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the ddex:SalesTransactions for a ddex:Release, reported by the ddex:DSP to the record company. </xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="RecordCompanyMarketShareData" minOccurs="0" maxOccurs="unbounded"
+                     type="ddexC:RecordCompanyMarketShareData">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing information to support the calculation of the record company's market share of all ddex:Releases provided by a ddex:DSP to ddex:Consumers for a specified ddex:UseType.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="NumberOfSubscribers" minOccurs="0" maxOccurs="unbounded"
+                     type="ddexC:NumberOfSubscribers">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing a ddex:NumberOfSubscribers for the ddex:UseType for the ddex:DSP (applicable only where a ddex:Subscription ddex:Service is employed).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="DspGrossRevenue" minOccurs="0" maxOccurs="unbounded"
+                     type="ddexC:AmountByUseAndDistributionChannelType">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the gross ddex:Revenue of the ddex:DSP for the ddex:Territory, specified for a ddex:UseType and a ddex:DistributionChannelType.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="DspNetRevenue" minOccurs="0" maxOccurs="unbounded"
+                     type="ddexC:AmountByUseAndDistributionChannelType">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the net ddex:Revenue of the ddex:DSP for the ddex:Territory, specified for a ddex:UseType and a ddex:DistributionChannelType.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="DspDeductionsAmount" minOccurs="0" maxOccurs="unbounded"
+                     type="ddexC:AmountByUseAndDistributionChannelType">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the ddex:Amount deducted by the ddex:DSP from gross ddex:Revenue, specified for a ddex:UseType and a ddex:DistributionChannelType.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="PercentageNetRevenueShare" minOccurs="0" maxOccurs="unbounded"
+                     type="ddexC:AmountByUseAndDistributionChannelType">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the percentage which represents a share of a net ddex:Revenue generated by the ddex:DSP which is due to the record company, specified for a ddex:UseType and a ddex:DistributionChannelType.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="MinimumAmountPerCustomer" minOccurs="0" type="xs:decimal">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The minimum ddex:Amount that has to be paid by each ddex:Customer to the ddex:DSP for a ddex:Subscription for the ddex:UseType.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="WholesaleAmountTotal" minOccurs="0" type="xs:decimal">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Amount representing the total wholesale revenue.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="WholesaleAmountTotalInCurrencyOfAccounting" minOccurs="0"
+                     type="xs:decimal">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Amount representing the total wholesale revenue reported in the ddex:CurrencyOfAccounting.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="TotalAmountPayableInCurrencyOfAccounting" minOccurs="0" type="xs:decimal">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The calculated ddex:Total of ddex:AmountPayables in the ddex:CurrencyOfAccounting.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="CurrencyExchangeRate" minOccurs="0" type="xs:decimal">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The conversion ddex:Rate applicable to the ddex:TotalAmountPayableInCurrencyOfAccounting.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="AlternativeConversionRate" minOccurs="0" maxOccurs="unbounded"
+                     type="ddexC:ConversionRate">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a ddex:ConversionRate between the ddex:CurrencyOfAccounting and an alternative ddex:Currency.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+      <xs:attribute name="LanguageAndScriptCode" type="xs:string">
+         <xs:annotation>
+            <xs:documentation source="ddex:Definition">The ddex:Language and script for the ddex:Elements of the SalesByTerritory as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. ddex:Language and Script are provided as lang[-scipt][-region][-variant].  This is represented in an XML schema as an XML ddex:Attribute.</xs:documentation>
+         </xs:annotation>
+      </xs:attribute>
+   </xs:complexType>
+   <xs:complexType name="SalesToSocietyByCommercialModel">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A ddex:Composite containing details of ddex:SalesTransactions reported by a ddex:DSP to a ddex:WorkLicensor for a specific ddex:CommercialModelType.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="CommercialModelType" minOccurs="0" maxOccurs="unbounded"
+                     type="ddexC:CommercialModelType">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the fundamental business model of the commercial offering made to the ddex:Consumer for which ddex:SalesTransactions are reported (e.g. ddex:SubscriptionModel or ddex:PayAsYouGoModel). The ddex:CommercialModelType indicates how the ddex:Consumer pays for the service or ddex:Release.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="CurrencyOfAccounting" type="ddexC:CurrencyCode">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Currency in which the ddex:SalesTransactions are accounted (represented by an ISO 4217 iso4217a:CurrencyCode).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="SalesByTerritory" maxOccurs="unbounded"
+                     type="dsr:SalesToSocietyByTerritory">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of ddex:SalesTransactions reported by the ddex:DSP to the ddex:MusicalWork ddex:Licensor for a specific ddex:Territory.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+      <xs:attribute name="LanguageAndScriptCode" type="xs:string">
+         <xs:annotation>
+            <xs:documentation source="ddex:Definition">The ddex:Language and script for the ddex:Elements of the SalesByCommercialModel as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. ddex:Language and Script are provided as lang[-scipt][-region][-variant].  This is represented in an XML schema as an XML ddex:Attribute.</xs:documentation>
+         </xs:annotation>
+      </xs:attribute>
+   </xs:complexType>
+   <xs:complexType name="SalesToSocietyByTerritory">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A ddex:Composite containing details of ddex:SalesTransactions reported by a ddex:DSP to a ddex:MusicalWork ddex:Licensor for a specific ddex:Territory.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="TerritoryCode" maxOccurs="unbounded" type="ddexC:TerritoryCode">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Territory for which ddex:SalesTransactions are reported (represented by an ISO 3166-1 iso3166a2:TerritoryCode).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="TaxRate" minOccurs="0" maxOccurs="unbounded" type="ddexC:TaxRate">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a ddex:TaxRate applicable to the total ddex:Amount to be paid as value added tax. Within the DSR ddex:Message, only one of the two ddex:TaxRate ddex:Elements (here and in the DetailedDeal ddex:Composite) may be filled.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Deal" minOccurs="0" type="dsr:DealForSocieties">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the ddex:Deal under which sales were transacted. The reported figures are based on best knowledge on the side of the ddex:MessageSender with respect to the intellectual property rights controlled by the ddex:MessageRecipient (the default is that 100% ownership is assumed).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ReleaseTransactions" maxOccurs="unbounded"
+                     type="dsr:ReleaseTransactionsToSociety">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the ddex:SalesTransactions for a ddex:Release, reported by the ddex:DSP to the society. </xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="NumberOfSubscribers" minOccurs="0" type="ddexC:NumberOfSubscribers">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing a NumberOfSubscribers for the ddex:UseType for the ddex:DSP (applicable only where a ddex:Subscription ddex:Service is employed).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="DspGrossRevenue" minOccurs="0"
+                     type="ddexC:AmountByUseAndDistributionChannelType">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the gross ddex:Revenue of the ddex:DSP for the ddex:Territory, specified for a ddex:UseType and a ddex:DistributionChannelType.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="DspNetRevenue" minOccurs="0"
+                     type="ddexC:AmountByUseAndDistributionChannelType">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the net ddex:Revenue of the ddex:DSP for the ddex:Territory, specified for a ddex:UseType and a ddex:DistributionChannelType.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="DspDeductionsAmount" minOccurs="0"
+                     type="ddexC:AmountByUseAndDistributionChannelType">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the ddex:Amount deducted by the ddex:DSP from net ddex:Revenue, specified for a ddex:UseType and a ddex:DistributionChannelType.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="PercentageNetRevenueShare" minOccurs="0"
+                     type="ddexC:AmountByUseAndDistributionChannelType">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the percentage which represents a share of a net ddex:Revenue generated by the ddex:DSP which is due to the record company, specified for a ddex:UseType and a ddex:DistributionChannelType.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="MinimumAmountPerCustomer" minOccurs="0" type="xs:decimal">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The minimum ddex:Amount that has to be paid by each ddex:Customer to the ddex:DSP for a ddex:Subscription for the ddex:UseType.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="MinimumAmountPerCollection" minOccurs="0" maxOccurs="unbounded"
+                     type="ddexC:AmountPerCollection">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a minimum ddex:Amount due to the ddex:WorkLicensor that has to be paid per ddex:Collection.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="MaximumAmountPerCollection" minOccurs="0" maxOccurs="unbounded"
+                     type="ddexC:AmountPerCollection">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a maximum ddex:Amount due to the ddex:WorkLicensor that has to be paid per ddex:Collection.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="TotalWholesalePricePerUnit" minOccurs="0" type="xs:decimal">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The calculated ddex:Total of ddex:WholesalePricePerUnits (based on 100% of the shares of the ddex:Works or ddex:Releases involved).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="TotalWholesalePricePerUnitInCurrencyOfAccounting" minOccurs="0"
+                     type="xs:decimal">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:TotalWholesalePricePerUnit measured in the ddex:Currency in which they have been accounted (based on 100% of the shares of the ddex:Works or ddex:Releases involved).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="TotalAmountPayableInCurrencyOfAccounting" minOccurs="0" type="xs:decimal">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The calculated ddex:Total of ddex:AmountPayables in the ddex:CurrencyOfAccounting (based on 100% of the shares of the ddex:Works or ddex:Releases involved).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="CurrencyExchangeRate" minOccurs="0" type="xs:decimal">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The conversion ddex:Rate applicable to the ddex:TotalAmountPayableInCurrencyOfAccounting.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="AlternativeConversionRate" minOccurs="0" maxOccurs="unbounded"
+                     type="ddexC:ConversionRate">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a ddex:ConversionRate between the ddex:CurrencyOfAccounting and an alternative ddex:Currency.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+      <xs:attribute name="LanguageAndScriptCode" type="xs:string">
+         <xs:annotation>
+            <xs:documentation source="ddex:Definition">The ddex:Language and script for the ddex:Elements of the SalesByTerritory as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. ddex:Language and Script are provided as lang[-scipt][-region][-variant].  This is represented in an XML schema as an XML ddex:Attribute.</xs:documentation>
+         </xs:annotation>
+      </xs:attribute>
+   </xs:complexType>
+   <xs:complexType name="SalesTransactionToRecordCompany">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a ddex:SalesTransaction for specified Usages of a ddex:Release.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="UseType" maxOccurs="unbounded" type="ddexC:UseType">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a nature of a ddex:Service, or a ddex:Release, as used by a ddex:Consumer.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="UserInterfaceType" minOccurs="0" maxOccurs="unbounded"
+                     type="ddexC:UserInterfaceType">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a physical interface by which a ddex:Consumer uses a ddex:Service or ddex:Release.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="DistributionChannelType" minOccurs="0" maxOccurs="unbounded"
+                     type="ddexC:DistributionChannelType">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a distribution channel used to disseminate a ddex:Service or ddex:Release to a ddex:Consumer.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="CarrierType" minOccurs="0" maxOccurs="unbounded" type="ddexC:CarrierType">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a ddex:Carrier.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Deal" minOccurs="0" type="dsr:DealForRecordCompanies">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the terms and conditions of the ddex:Deal under which sales were transacted. (Note: The ddex:Amount reported in this ddex:Composite is an estimate based on best knowledge on the side of the ddex:MessageSender with respect to the intellectual property rights controlled by the ddex:MessageRecipient. The default is that 100% ownership is assumed).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="SalesData" maxOccurs="unbounded" type="dsr:SalesDataToRecordCompany">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of ddex:SalesTransactions of the ddex:Release governed by the ddex:Deal.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="IsUpgrade" minOccurs="0" type="xs:boolean">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Flag indicating whether the ddex:SalesTransaction applies to an upgraded ddex:Release (=True) or not (=False).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="DataToBeForwarded" type="xs:boolean">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Flag indicating whether sales data will be forwarded by the ddex:DSP (or any ddex:Organization reporting on behalf of the ddex:DSP) to the appropriate ddex:MusicalWork ddex:Licensor (=False) or if this has to be done by the ddex:MessageRecipient (=True).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+      <xs:attribute name="LanguageAndScriptCode" type="xs:string">
+         <xs:annotation>
+            <xs:documentation source="ddex:Definition">The ddex:Language and script for the ddex:Elements of the ddex:SalesTransaction as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. ddex:Language and Script are provided as lang[-scipt][-region][-variant].  This is represented in an XML schema as an XML ddex:Attribute.</xs:documentation>
+         </xs:annotation>
+      </xs:attribute>
+   </xs:complexType>
+   <xs:complexType name="SalesTransactionToSociety">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a ddex:SalesTransactions for specified Usages of a ddex:Release.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="UseType" maxOccurs="unbounded" type="ddexC:UseType">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a nature of a ddex:Service, or a ddex:Release, as used by a ddex:Consumer.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="UserInterfaceType" minOccurs="0" maxOccurs="unbounded"
+                     type="ddexC:UserInterfaceType">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a physical interface by which a ddex:Consumer uses a ddex:Service or ddex:Release.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="DistributionChannelType" minOccurs="0" maxOccurs="unbounded"
+                     type="ddexC:DistributionChannelType">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a distribution channel used to disseminate a ddex:Service or ddex:Release to a ddex:Consumer.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="CarrierType" minOccurs="0" maxOccurs="unbounded" type="ddexC:CarrierType">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a ddex:Carrier.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Deal" minOccurs="0" type="dsr:DealForSocieties">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the ddex:Deal under which sales were transacted. The reported figures are based on best knowledge on the side of the ddex:MessageSender with respect to the intellectual property rights controlled by the ddex:MessageRecipient (the default is that 100% ownership is assumed).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="SalesData" maxOccurs="unbounded" type="dsr:SalesDataToSociety">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of ddex:SalesTransactions of the ddex:Release governed by the ddex:Deal.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="IsUpgrade" minOccurs="0" type="xs:boolean">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Flag indicating whether the ddex:SalesTransaction applies to an upgraded ddex:Release (=True) or not (=False).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="TariffReference" minOccurs="0" type="ddexC:TariffReference">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a ddex:Reference (in the form of an ddex:Identifier, ddex:Name or ddex:Description) to a ddex:TextDocument containing details of the ddex:Tariff.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+      <xs:attribute name="LanguageAndScriptCode" type="xs:string">
+         <xs:annotation>
+            <xs:documentation source="ddex:Definition">The ddex:Language and script for the ddex:Elements of the ddex:SalesTransaction as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. ddex:Language and Script are provided as lang[-scipt][-region][-variant].  This is represented in an XML schema as an XML ddex:Attribute.</xs:documentation>
+         </xs:annotation>
+      </xs:attribute>
+   </xs:complexType>
+   <xs:complexType name="SheetMusic">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a ddex:SheetMusic.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="SheetMusicType" minOccurs="0" type="ddexC:SheetMusicType">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the ddex:Type of the ddexC:SheetMusic.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="IsArtistRelated" minOccurs="0" type="xs:boolean">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Flag indicating whether the ddexC:SheetMusic is related to an ddex:Artist (=True) or not (=False).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="SheetMusicId" maxOccurs="unbounded" type="ddexC:SheetMusicId">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of ddex:Identifiers of the ddexC:SheetMusic.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="IndirectSheetMusicId" minOccurs="0" maxOccurs="unbounded"
+                     type="ddexC:MusicalWorkId">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a ddex:MusicalWorkId of a ddex:MusicalWork used in the ddexC:SheetMusic.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ResourceReference">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Identifier (specific to the ddex:Message) of the ddexC:SheetMusic within the ddex:Release which contains it. This is a ddex:LocalResourceAnchor starting with the letter A.</xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+               <xs:restriction base="xs:ID">
+                  <xs:pattern value="A[\d\-_a-zA-Z]+"/>
+               </xs:restriction>
+            </xs:simpleType>
+         </xs:element>
+         <xs:element name="LanguageOfLyrics" minOccurs="0" type="iso639a2:LanguageCode">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Language of the lyrics of the ddexC:SheetMusic (represented by an ISO 639-2 iso639a2:LanguageCode).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="RightsAgreementId" minOccurs="0" type="ddexC:RightsAgreementId">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of ddex:Identifiers of a ddex:License, ddex:Claim, ddex:RightShare or contract for the MusicalWork(s) related to the ddexC:SheetMusic.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ResourceMusicalWorkReferenceList" minOccurs="0"
+                     type="ddexC:ResourceMusicalWorkReferenceList">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of one or more ddex:MusicalWorks contained in the ddexC:SheetMusic.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ResourceContainedResourceReferenceList" minOccurs="0"
+                     type="ddexC:ResourceContainedResourceReferenceList">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of ddex:ResourceContainedResourceReferences referring to a ddex:Resource that is contained in the current ddexC:SheetMusic.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ReferenceTitle" type="ddexC:ReferenceTitle">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the ddex:ReferenceTitle of the ddexC:SheetMusic.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="CreationDate" minOccurs="0" type="ddexC:EventDate">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the Date and ddex:Place of the ddex:Event in which the ddexC:SheetMusic was created.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="SheetMusicDetailsByTerritory" maxOccurs="unbounded"
+                     type="ddexC:SheetMusicDetailsByTerritory">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the ddexC:SheetMusic which may vary according to ddex:Territory of release.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="URL" minOccurs="0" type="xs:string">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:URL from which the dsr:SheetMusic was sold.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+      <xs:attribute name="LanguageAndScriptCode" type="xs:string">
+         <xs:annotation>
+            <xs:documentation source="ddex:Definition">The ddex:Language and script for the ddex:Elements of the ddexC:SheetMusic as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. ddex:Language and Script are provided as lang[-scipt][-region][-variant].  This is represented in an XML schema as an XML ddex:Attribute.</xs:documentation>
+         </xs:annotation>
+      </xs:attribute>
+   </xs:complexType>
+   <xs:complexType name="Software">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a ddex:Software.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="SoftwareType" minOccurs="0" type="ddexC:SoftwareType">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the ddex:Type of the ddexC:Software.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="IsArtistRelated" minOccurs="0" type="xs:boolean">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Flag indicating whether the ddexC:Software is related to an ddex:Artist (=True) or not (=False).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="SoftwareId" maxOccurs="unbounded" type="ddexC:SoftwareId">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of ddex:Identifiers of the ddexC:Software.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="IndirectSoftwareId" minOccurs="0" maxOccurs="unbounded"
+                     type="ddexC:MusicalWorkId">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a ddex:MusicalWorkId of a ddex:MusicalWork used in the ddexC:Software.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ResourceReference">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Identifier (specific to the ddex:Message) of the ddexC:Software within the ddex:Release which contains it. This is a ddex:LocalResourceAnchor starting with the letter A.</xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+               <xs:restriction base="xs:ID">
+                  <xs:pattern value="A[\d\-_a-zA-Z]+"/>
+               </xs:restriction>
+            </xs:simpleType>
+         </xs:element>
+         <xs:element name="ResourceMusicalWorkReferenceList" minOccurs="0"
+                     type="ddexC:ResourceMusicalWorkReferenceList">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of one or more ddex:MusicalWorks contained in the ddexC:Software.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ResourceContainedResourceReferenceList" minOccurs="0"
+                     type="ddexC:ResourceContainedResourceReferenceList">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of ddex:ResourceContainedResourceReferences referring to a ddex:Resource that is contained in the current ddexC:Software.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Title" minOccurs="0" maxOccurs="unbounded" type="ddexC:Title">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a ddex:Title of the ddexC:Software.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="CreationDate" minOccurs="0" type="ddexC:EventDate">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the Date and ddex:Place of the ddex:Event in which the ddexC:Software was created.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="SoftwareDetailsByTerritory" maxOccurs="unbounded"
+                     type="ddexC:SoftwareDetailsByTerritory">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the ddexC:Software which may vary according to ddex:Territory of release.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="URL" minOccurs="0" type="xs:string">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:URL from which the dsr:Software was sold.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+      <xs:attribute name="LanguageAndScriptCode" type="xs:string">
+         <xs:annotation>
+            <xs:documentation source="ddex:Definition">The ddex:Language and script for the ddex:Elements of the ddexC:Software as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. ddex:Language and Script are provided as lang[-scipt][-region][-variant].  This is represented in an XML schema as an XML ddex:Attribute.</xs:documentation>
+         </xs:annotation>
+      </xs:attribute>
+   </xs:complexType>
+   <xs:complexType name="SoundRecording">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a ddex:SoundRecording.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="SoundRecordingType" minOccurs="0" type="ddexC:SoundRecordingType">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the ddex:Type of the ddexC:SoundRecording.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="IsArtistRelated" minOccurs="0" type="xs:boolean">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Flag indicating whether the ddexC:SoundRecording is related to an ddex:Artist (=True) or not (=False).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="SoundRecordingId" maxOccurs="unbounded" type="ddexC:SoundRecordingId">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of ddex:SoundRecordingIds.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="IndirectSoundRecordingId" minOccurs="0" maxOccurs="unbounded"
+                     type="ddexC:MusicalWorkId">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a ddex:MusicalWorkId of a ddex:MusicalWork used in the ddexC:SoundRecording.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ResourceReference">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Identifier (specific to the ddex:Message) of the ddexC:SoundRecording within the ddex:Release which contains it. This is a ddex:LocalResourceAnchor starting with the letter A.</xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+               <xs:restriction base="xs:ID">
+                  <xs:pattern value="A[\d\-_a-zA-Z]+"/>
+               </xs:restriction>
+            </xs:simpleType>
+         </xs:element>
+         <xs:element name="ReferenceTitle" type="ddexC:ReferenceTitle">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the ddex:ReferenceTitle of the ddexC:SoundRecording.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="InstrumentationDescription" minOccurs="0" type="ddexC:Description">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing a ddex:Description of the ddex:Type of instrumentation of the MusicalWork(s) in the ddexC:SoundRecording.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="IsMedley" minOccurs="0" type="xs:boolean">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Flag indicating whether the ddexC:SoundRecording is a ddex:Medley (=True) or not (=False).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="IsPotpourri" minOccurs="0" type="xs:boolean">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Flag indicating whether the ddexC:SoundRecording is a ddex:Potpourri (=True) or not (=False).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="IsInstrumental" minOccurs="0" type="xs:boolean">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Flag indicating whether the ddexC:SoundRecording is instrumental (=True) or not (=False).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="IsBackground" minOccurs="0" type="xs:boolean">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Flag indicating whether the ddexC:SoundRecording is used as background to other audio or audiovisual material (=True) or not (=False).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="IsHiddenResource" minOccurs="0" type="xs:boolean">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Flag indicating whether the ddexC:SoundRecording is hidden in some way from the ddex:Consumer (=True) or not (=False).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="IsBonusResource" minOccurs="0" type="xs:boolean">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Flag indicating whether the ddexC:SoundRecording is additional to those on the original ddex:Release of which this is a ddex:Version (=True) or not (=False).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="IsComputerGenerated" minOccurs="0" type="xs:boolean">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Flag indicating whether the ddexC:SoundRecording is generated by a computer (=True) or not (=False).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="PerformerInformationRequired" minOccurs="0" type="xs:boolean">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Flag indicating whether performer information is required (=True) or not (=False) when communicating details of the ddexC:SoundRecording.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="LanguageOfPerformance" minOccurs="0" type="iso639a2:LanguageCode">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Language of the ddex:Performance recorded in the ddexC:SoundRecording (represented by an ISO 639-2 iso639a2:LanguageCode).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Duration" type="xs:duration">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Duration of the ddexC:SoundRecording (using the ISO 8601:2004 PT[[hhH]mmM]ssS format, where lower case characters indicate variables, upper case characters are part of the xs:string, e.g. one hour, two minutes and three seconds would be PT1H2M3S).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="RightsAgreementId" minOccurs="0" type="ddexC:RightsAgreementId">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of ddex:Identifiers of a ddex:License, ddex:Claim, ddex:RightShare or contract for the MusicalWork(s) used in the ddexC:SoundRecording.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ResourceMusicalWorkReferenceList" minOccurs="0"
+                     type="ddexC:ResourceMusicalWorkReferenceList">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of one or more ddex:MusicalWorks contained in the ddexC:SoundRecording.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ResourceContainedResourceReferenceList" minOccurs="0"
+                     type="ddexC:ResourceContainedResourceReferenceList">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of ddex:ResourceContainedResourceReferences referring to a ddex:Resource that is contained in the current ddexC:SoundRecording.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="CreationDate" minOccurs="0" type="ddexC:EventDate">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the Date and ddex:Place of the ddex:Event in which the ddexC:SoundRecording was created.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="MasteredDate" minOccurs="0" type="ddexC:EventDate">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the Date and ddex:Place of the ddex:Event in which the ddexC:SoundRecording was originally mastered (either in analogue or digital form).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="SoundRecordingDetailsByTerritory" maxOccurs="unbounded"
+                     type="ddexC:SoundRecordingDetailsByTerritory">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of ddex:Descriptors and other attributes of the ddexC:SoundRecording which may vary according to ddex:Territory of release. </xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="URL" minOccurs="0" type="xs:string">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:URL from which the dsr:SoundRecording was sold.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+      <xs:attribute name="LanguageAndScriptCode" type="xs:string">
+         <xs:annotation>
+            <xs:documentation source="ddex:Definition">The ddex:Language and script for the ddex:Elements of the ddexC:SoundRecording as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. ddex:Language and Script are provided as lang[-scipt][-region][-variant].  This is represented in an XML schema as an XML ddex:Attribute.</xs:documentation>
+         </xs:annotation>
+      </xs:attribute>
+   </xs:complexType>
+   <xs:complexType name="SummaryDeal">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A ddex:Composite containing a summary of the terms and conditions of a ddex:Deal made between a ddex:DSP (as ddex:Licensee) and a ddex:Licensor of ddex:Works or ddex:Releases.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="CurrencyCode" minOccurs="0" type="ddexC:CurrencyCode">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Currency in which the ddex:SalesTransactions are made (represented by an ISO 4217 iso4217a:CurrencyCode), if different from the ddex:CurrencyOfAccounting.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="PriceConsumerPaidExcSalesTax" minOccurs="0" type="xs:decimal">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Price paid by ddex:Consumers, excluding value-added tax.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ConsumerPriceGross" minOccurs="0" type="xs:decimal">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Price paid by ddex:Consumers, including value-added tax.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="Text">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a ddex:Text.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="TextType" minOccurs="0" type="ddexC:TextType">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the ddex:Type of the ddexC:Text.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="IsArtistRelated" minOccurs="0" type="xs:boolean">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Flag indicating whether the ddexC:Text is related to an ddex:Artist (=True) or not (=False).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="TextId" minOccurs="0" maxOccurs="unbounded" type="ddexC:TextId">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of an ddex:Identifier of the ddexC:Text.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="IndirectTextId" minOccurs="0" maxOccurs="unbounded"
+                     type="ddexC:MusicalWorkId">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a ddex:MusicalWorkId of a ddex:MusicalWork used in the ddexC:Text.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ResourceReference">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Identifier (specific to the ddex:Message) of the ddexC:Text within the ddex:Release which contains it. This is a ddex:LocalResourceAnchor starting with the letter A.</xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+               <xs:restriction base="xs:ID">
+                  <xs:pattern value="A[\d\-_a-zA-Z]+"/>
+               </xs:restriction>
+            </xs:simpleType>
+         </xs:element>
+         <xs:element name="ResourceMusicalWorkReferenceList" minOccurs="0"
+                     type="ddexC:ResourceMusicalWorkReferenceList">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of one or more ddex:MusicalWorks contained in the ddexC:Text.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ResourceContainedResourceReferenceList" minOccurs="0"
+                     type="ddexC:ResourceContainedResourceReferenceList">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of ddex:ResourceContainedResourceReferences referring to a ddex:Resource that is contained in the current ddexC:Text.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Title" minOccurs="0" maxOccurs="unbounded" type="ddexC:Title">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a ddex:Title of the ddexC:Text.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="CreationDate" minOccurs="0" type="ddexC:EventDate">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the Date and ddex:Place of the ddex:Event in which the ddexC:Text was created.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="TextDetailsByTerritory" maxOccurs="unbounded"
+                     type="ddexC:TextDetailsByTerritory">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the ddexC:Text which may vary according to ddex:Territory of release.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="URL" minOccurs="0" type="xs:string">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:URL from which the dsr:Text was sold.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+      <xs:attribute name="LanguageAndScriptCode" type="xs:string">
+         <xs:annotation>
+            <xs:documentation source="ddex:Definition">The ddex:Language and script for the ddex:Elements of the ddexC:Text as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. ddex:Language and Script are provided as lang[-scipt][-region][-variant].  This is represented in an XML schema as an XML ddex:Attribute.</xs:documentation>
+         </xs:annotation>
+      </xs:attribute>
+   </xs:complexType>
+   <xs:complexType name="TotalRoyaltyAmount">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a total ddex:RoyaltyAmount.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="ReleaseType" minOccurs="0" maxOccurs="unbounded" type="ddexC:ReleaseType">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the ddex:ReleaseType for which the ddex:RoyaltyAmount is calculated.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="RightsType" minOccurs="0" maxOccurs="unbounded" type="ddexC:RightsType">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the RightsType for which the ddex:RoyaltyAmount is calculated.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="RoyaltyAmount" type="ddexC:RoyaltyAmount">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the ddex:RoyaltyAmount due.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="UseType" minOccurs="0" maxOccurs="unbounded" type="ddexC:UseType">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a nature of a ddex:Service, or a ddex:Release, as used by a ddex:Consumer.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="TotalSalesByReleaseType">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A ddex:Composite containing details of total sales of ddex:Releases of a specific ddex:Type.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="ReleaseType" minOccurs="0" maxOccurs="unbounded" type="ddexC:ReleaseType">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the form in which a ddex:ReleaseCreator anticipates offering the ddex:Release to ddex:Consumers.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="UnitsSoldTotal" type="xs:integer">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The total number of ddex:Releases sold of the ddex:ReleaseType.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="UserDefinedResource">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a ddex:UserDefinedResource.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="UserDefinedResourceType" minOccurs="0"
+                     type="ddexC:UserDefinedResourceType">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the ddex:Type of the ddexC:UserDefinedResource.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="IsArtistRelated" minOccurs="0" type="xs:boolean">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Flag indicating whether the ddexC:UserDefinedResource is related to an ddex:Artist (=True) or not (=False).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="UserDefinedResourceId" maxOccurs="unbounded"
+                     type="ddexC:UserDefinedResourceId">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of ddex:Identifiers of the ddexC:UserDefinedResource.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="IndirectUserDefinedResourceId" minOccurs="0" maxOccurs="unbounded"
+                     type="ddexC:MusicalWorkId">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a ddex:MusicalWorkId of a ddex:MusicalWork used in the ddexC:UserDefinedResource.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ResourceReference">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Identifier (specific to the ddex:Message) of the ddexC:UserDefinedResource within the ddex:Release which contains it. This is a ddex:LocalResourceAnchor starting with the letter A.</xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+               <xs:restriction base="xs:ID">
+                  <xs:pattern value="A[\d\-_a-zA-Z]+"/>
+               </xs:restriction>
+            </xs:simpleType>
+         </xs:element>
+         <xs:element name="ResourceMusicalWorkReferenceList" minOccurs="0"
+                     type="ddexC:ResourceMusicalWorkReferenceList">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of one or more ddex:MusicalWorks contained in the ddexC:UserDefinedResource.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ResourceContainedResourceReferenceList" minOccurs="0"
+                     type="ddexC:ResourceContainedResourceReferenceList">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of ddex:ResourceContainedResourceReferences referring to a ddex:Resource that is contained in the current ddexC:UserDefinedResource.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Title" minOccurs="0" maxOccurs="unbounded" type="ddexC:Title">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a ddex:Title of the ddexC:UserDefinedResource.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="UserDefinedValue" minOccurs="0" maxOccurs="unbounded"
+                     type="ddexC:UserDefinedValue">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a ddex:UserDefinedValue.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="UserDefinedResourceDetailsByTerritory" maxOccurs="unbounded"
+                     type="ddexC:UserDefinedResourceDetailsByTerritory">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the ddexC:UserDefinedResource which may vary according to ddex:Territory of release.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="URL" minOccurs="0" type="xs:string">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:URL from which the dsr:UserDefinedResource was sold.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+      <xs:attribute name="LanguageAndScriptCode" type="xs:string">
+         <xs:annotation>
+            <xs:documentation source="ddex:Definition">The ddex:Language and script for the ddex:Elements of the ddexC:UserDefinedResource as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. ddex:Language and Script are provided as lang[-scipt][-region][-variant].  This is represented in an XML schema as an XML ddex:Attribute.</xs:documentation>
+         </xs:annotation>
+      </xs:attribute>
+   </xs:complexType>
+   <xs:complexType name="Video">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a ddex:Video.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="VideoType" minOccurs="0" type="ddexC:VideoType">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the ddex:Type of the dsr:Video.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="IsArtistRelated" minOccurs="0" type="xs:boolean">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Flag indicating whether the dsr:Video is related to an ddex:Artist (=True) or not (=False).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="VideoId" minOccurs="0" maxOccurs="unbounded" type="ddexC:VideoId">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of an ddex:Identifier of the dsr:Video.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="IndirectVideoId" minOccurs="0" maxOccurs="unbounded"
+                     type="ddexC:MusicalWorkId">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a ddex:MusicalWorkId of a ddex:MusicalWork used in the dsr:Video.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ResourceReference">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Identifier (specific to the ddex:Message) of the dsr:Video within the ddex:Release which contains it. This is a ddex:LocalResourceAnchor starting with the letter A.</xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+               <xs:restriction base="xs:ID">
+                  <xs:pattern value="A[\d\-_a-zA-Z]+"/>
+               </xs:restriction>
+            </xs:simpleType>
+         </xs:element>
+         <xs:choice minOccurs="0">
+            <xs:element name="VideoCueSheetReference" maxOccurs="unbounded"
+                        type="ddexC:VideoCueSheetReference">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A ddex:Composite containing a ddex:VideoCueSheetReference for a ddex:CueSheet (specific to this ddex:Message).</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="ReasonForCueSheetAbsence" type="ddexC:Reason">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A ddex:Composite containing the textual ddex:Description of the reason for the ddex:Identifier being used as a proxy.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+         </xs:choice>
+         <xs:element name="ReferenceTitle" type="ddexC:ReferenceTitle">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the ddex:ReferenceTitle of the dsr:Video.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Title" minOccurs="0" maxOccurs="unbounded" type="ddexC:Title">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of a ddex:Title of the dsr:Video.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="InstrumentationDescription" minOccurs="0" type="ddexC:Description">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing a ddex:Description of the ddex:Type of instrumentation of the MusicalWork(s) in the dsr:Video.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="IsMedley" minOccurs="0" type="xs:boolean">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Flag indicating whether the dsr:Video is a ddex:Medley (=True) or not (=False).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="IsPotpourri" minOccurs="0" type="xs:boolean">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Flag indicating whether the dsr:Video is a ddex:Potpourri (=True) or not (=False).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="IsInstrumental" minOccurs="0" type="xs:boolean">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Flag indicating whether the dsr:Video is instrumental (=True) or not (=False).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="IsBackground" minOccurs="0" type="xs:boolean">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Flag indicating whether the dsr:Video is used as background to other audio or audiovisual material (=True) or not (=False).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="IsHiddenResource" minOccurs="0" type="xs:boolean">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Flag indicating whether the dsr:Video is hidden in some way from the ddex:Consumer (=True) or not (=False).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="IsBonusResource" minOccurs="0" type="xs:boolean">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Flag indicating whether the dsr:Video is additional to those on the original ddex:Release of which this is a ddex:Version (=True) or not (=False).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="LanguageOfPerformance" minOccurs="0" maxOccurs="unbounded"
+                     type="iso639a2:LanguageCode">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Language of the ddex:Performance recorded in the dsr:Video (represented by an ISO 639-2 iso639a2:LanguageCode).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Duration" type="xs:duration">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Duration of the dsr:Video (using the ISO 8601:2004 PT[[hhH]mmM]ssS format, where lower case characters indicate variables, upper case characters are part of the xs:string, e.g. one hour, two minutes and three seconds would be PT1H2M3S).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="DurationOfMusicalContent" minOccurs="0" type="xs:duration">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ddex:Duration of the musical content (using the ISO 8601:2004 PT[[hhH]mmM]ssS format, where lower case characters indicate variables, upper case characters are part of the xs:string, e.g. one hour, two minutes and three seconds would be PT1H2M3S).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="RightsAgreementId" minOccurs="0" type="ddexC:RightsAgreementId">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of ddex:Identifiers of a ddex:License, ddex:Claim, ddex:RightShare or contract for the MusicalWork(s) used in the dsr:Video.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ResourceMusicalWorkReferenceList" minOccurs="0"
+                     type="ddexC:ResourceMusicalWorkReferenceList">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of one or more ddex:MusicalWorks contained in the dsr:Video.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ResourceContainedResourceReferenceList" minOccurs="0"
+                     type="ddexC:ResourceContainedResourceReferenceList">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of ddex:ResourceContainedResourceReferences referring to a ddex:Resource that is contained in the current dsr:Video.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="CreationDate" minOccurs="0" type="ddexC:EventDate">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the Date and ddex:Place of the ddex:Event in which the dsr:Video was created.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="MasteredDate" minOccurs="0" type="ddexC:EventDate">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the Date and ddex:Place of the ddex:Event in which the dsr:Video was originally mastered (either in analogue or digital form).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="VideoDetailsByTerritory" maxOccurs="unbounded"
+                     type="ddexC:VideoDetailsByTerritory">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of ddex:Descriptors and other attributes of the dsr:Video which may vary according to ddex:Territory of release. </xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="URL" minOccurs="0" type="xs:string">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:URL from which the dsr:Video was sold.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="OriginalResourceReleaseDate" minOccurs="0" type="ddexC:EventDate">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A ddex:Composite containing details of the Date and ddex:Place of the ddex:Event in which the ddex:Resource was or will be first made available for Usage, whether for physical or electronic/online distribution (in ISO 8601:2004 format: YYYY-MM-DD).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="OriginalLanguage" minOccurs="0" type="iso639a2:LanguageCode">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The orignal ddex:Language of the dsr:Video (represented by an ISO 639-2 iso639a2:LanguageCode).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+      <xs:attribute name="LanguageAndScriptCode" type="xs:string">
+         <xs:annotation>
+            <xs:documentation source="ddex:Definition">The ddex:Language and script for the ddex:Elements of the dsr:Video as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. ddex:Language and Script are provided as lang[-scipt][-region][-variant].  This is represented in an XML schema as an XML ddex:Attribute.</xs:documentation>
+         </xs:annotation>
+      </xs:attribute>
+   </xs:complexType>
+</xs:schema>

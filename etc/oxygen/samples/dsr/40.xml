@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+    <schemaSystemId>http://ddex.net/xml/dsr/40/sales-reporting.xsd</schemaSystemId>
+    <documentRoot>InvoiceMessage</documentRoot>
+    <outputFolder>/tmp</outputFolder>
+    <filenamePrefix>instance</filenamePrefix>
+    <filenameExtension>xml</filenameExtension>
+    <noOfInstances>1</noOfInstances>
+    <openFirstInstance>true</openFirstInstance>
+    <defaultNamespace>&lt;NO_NAMESPACE></defaultNamespace>
+    <valuesMaxLength>30</valuesMaxLength>
+    <isUseIncrementalNamesForValues>true</isUseIncrementalNamesForValues>
+    <discardOptionalElementsAfterNestedLevel>6</discardOptionalElementsAfterNestedLevel>
+    <namespaceMapping ns="http://ddex.net/xml/20120214/ddex" proxy="ddex"/>
+    <namespaceMapping ns="http://ddex.net/xml/20120214/ddexC" proxy="ddexC"/>
+    <namespaceMapping ns="http://ddex.net/xml/dsr/40" proxy="dsr"/>
+    <namespaceMapping ns="http://ddex.net/xml/20120214/iso4217a" proxy="iso4217a"/>
+    <namespaceMapping ns="http://ddex.net/xml/20120214/iso639a2" proxy="iso639a2"/>
+    <namespaceMapping ns="http://ddex.net/xml/20120214/iso3166a2" proxy="iso3166a2"/>
+    <element namespace="&lt;ANY>" name="&lt;ANY>">
+        <generateOptionalElements>true</generateOptionalElements>
+        <generateOptionalAttributes>true</generateOptionalAttributes>
+        <valuesForContentType>RANDOM</valuesForContentType>
+        <preferredNumberOfRepetitions>2</preferredNumberOfRepetitions>
+        <maximumRecursivityLevel>1</maximumRecursivityLevel>
+        <alternativeStrategy>FIRST</alternativeStrategy>
+        <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
+        <attribute namespace="&lt;NO_NAMESPACE>" name="MessageSchemaVersionId">
+            <attributeValue>dsr/40</attributeValue>
+        </attribute>
+    </element>
+</settings>
