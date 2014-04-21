@@ -76,6 +76,18 @@
             <attributeValue>true</attributeValue>
             <attributeValue>false</attributeValue>
         </attribute>
+        <attribute namespace="&lt;NO_NAMESPACE>" name="IsPreOrderDeal">
+            <attributeValue>true</attributeValue>
+            <attributeValue>false</attributeValue>
+        </attribute>
+        <attribute namespace="&lt;NO_NAMESPACE>" name="IsPreOrderIncentiveResource">
+            <attributeValue>true</attributeValue>
+            <attributeValue>false</attributeValue>
+        </attribute>
+        <attribute namespace="&lt;NO_NAMESPACE>" name="IsInstantGratificationResource">
+            <attributeValue>true</attributeValue>
+            <attributeValue>false</attributeValue>
+        </attribute>
         <attribute namespace="&lt;NO_NAMESPACE>" name="TerritoryCode">
             <attributeValue>US</attributeValue>
             <attributeValue>MX</attributeValue>
