@@ -14,7 +14,7 @@ task :generate do
   abort "code generation requires JRuby" unless RUBY_PLATFORM == "java"
   abort "usage: rake generate SCHEMA=schema.xsd" unless schema
 
-  sh "jaxb2ruby -o #{output} -t etc/ddex.erb -n etc/namespaces.yml #{schema}" do |ok, rv|
+  sh "jaxb2ruby -o #{output} -I etc -t etc/ddex.erb -n etc/namespaces.yml #{schema}" do |ok, rv|
     abort "code generation failed (#{rv.exitstatus})" unless ok
   end
 
