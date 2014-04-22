@@ -10,9 +10,11 @@
 
  message = DDEX.read("path/to/metadata.xml")  # ERN
  puts message.update_indicator
- message.resource_list.each do |resource|
-   puts resource.title
-   puts resource.details.size
+ message.resource_list.sound_recordings.each do |sr|
+   title = sr.reference_title.title_text
+   puts title.value
+   puts title.language_and_script_code
+   puts sr.remastered?
  end
 
  puts "Supported!" if DDEX.supports?("ern/341")
