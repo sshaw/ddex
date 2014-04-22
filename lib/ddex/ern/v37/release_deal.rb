@@ -16,14 +16,9 @@ class ReleaseDeal < Element
 
   xml_name "ReleaseDeal"
 
-      
       xml_accessor :deal_release_references, :as => [], :from => "DealReleaseReference", :required => false
-
-      
       xml_accessor :deals, :as => [DDEX::ERN::V37::Deal], :from => "Deal", :required => true
-
       xml_accessor :effective_date, :from => "EffectiveDate", :required => false
-
 
 
   

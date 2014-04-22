@@ -17,9 +17,7 @@ class MessageAuditTrailEvent < Element
   xml_name "MessageAuditTrailEvent"
 
       xml_accessor :messaging_party_descriptor, :as => DDEX::ERN::V37::MessagingParty, :from => "MessagingPartyDescriptor", :required => true
-
       xml_accessor :date_time, :as => DateTime, :from => "DateTime", :required => true
-
 
 
   

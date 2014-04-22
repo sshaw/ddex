@@ -8,7 +8,7 @@ require "ddex/element"
 
 require "ddex/v20121219/ddexc/resource_musical_work_reference"
 
-module DDEX module V20121219 module DDEXC # :nodoc: all
+module DDEX module V20121219 module DDEXC  # :nodoc: all
 
 class ResourceMusicalWorkReferenceList < Element
   include ROXML
@@ -16,12 +16,11 @@ class ResourceMusicalWorkReferenceList < Element
 
   xml_name "ResourceMusicalWorkReferenceList"
 
-      
       xml_accessor :resource_musical_work_references, :as => [DDEX::V20121219::DDEXC::ResourceMusicalWorkReference], :from => "ResourceMusicalWorkReference", :required => true
 
 
-
   
+
 end
 
 end end end

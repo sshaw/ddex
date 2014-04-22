@@ -18,13 +18,9 @@ class Period < Element
   xml_name "Period"
 
       xml_accessor :start_date_time, :as => DDEX::ERN::V37::EventDateTime, :from => "StartDateTime", :required => false
-
       xml_accessor :end_date_time, :as => DDEX::ERN::V37::EventDateTime, :from => "EndDateTime", :required => false
-
       xml_accessor :start_date, :as => DDEX::ERN::V37::EventDate, :from => "StartDate", :required => false
-
       xml_accessor :end_date, :as => DDEX::ERN::V37::EventDate, :from => "EndDate", :required => false
-
 
 
   

@@ -30,62 +30,32 @@ class TechnicalVideoDetails < Element
   xml_name "TechnicalVideoDetails"
 
       xml_accessor :technical_resource_details_reference, :from => "TechnicalResourceDetailsReference", :required => true
-
       xml_accessor :drm_platform_type, :as => DDEX::ERN::V37::DrmPlatformType, :from => "DrmPlatformType", :required => false
-
       xml_accessor :overall_bit_rate, :as => DDEX::ERN::V37::BitRate, :from => "OverallBitRate", :required => false
-
       xml_accessor :container_format, :as => DDEX::ERN::V37::ContainerFormat, :from => "ContainerFormat", :required => false
-
       xml_accessor :video_codec_type, :as => DDEX::ERN::V37::VideoCodecType, :from => "VideoCodecType", :required => false
-
       xml_accessor :video_bit_rate, :as => DDEX::ERN::V37::BitRate, :from => "VideoBitRate", :required => false
-
       xml_accessor :frame_rate, :as => DDEX::ERN::V37::FrameRate, :from => "FrameRate", :required => false
-
       xml_accessor :image_height, :as => DDEX::ERN::V37::Extent, :from => "ImageHeight", :required => false
-
       xml_accessor :image_width, :as => DDEX::ERN::V37::Extent, :from => "ImageWidth", :required => false
-
       xml_accessor :aspect_ratio, :as => DDEX::ERN::V37::AspectRatio, :from => "AspectRatio", :required => false
-
-      xml_accessor :color_depth, :as => Fixnum, :from => "ColorDepth", :required => false
-
+      xml_accessor :color_depth, :as => Integer, :from => "ColorDepth", :required => false
       xml_accessor :video_definition_type, :from => "VideoDefinitionType", :required => false
-
       xml_accessor :audio_codec_type, :as => DDEX::ERN::V37::AudioCodecType, :from => "AudioCodecType", :required => false
-
       xml_accessor :audio_bit_rate, :as => DDEX::ERN::V37::BitRate, :from => "AudioBitRate", :required => false
-
-      xml_accessor :number_of_audio_channels, :as => Fixnum, :from => "NumberOfAudioChannels", :required => false
-
+      xml_accessor :number_of_audio_channels, :as => Integer, :from => "NumberOfAudioChannels", :required => false
       xml_accessor :audio_sampling_rate, :as => DDEX::ERN::V37::SamplingRate, :from => "AudioSamplingRate", :required => false
-
-      xml_accessor :audio_bits_per_sample, :as => Fixnum, :from => "AudioBitsPerSample", :required => false
-
+      xml_accessor :audio_bits_per_sample, :as => Integer, :from => "AudioBitsPerSample", :required => false
       xml_accessor :duration, :from => "Duration", :required => false
-
-      xml_accessor :resource_processing_required, :from => "ResourceProcessingRequired", :required => false
-
+      xml_accessor :resource_processing_required?, :from => "ResourceProcessingRequired", :required => false
       xml_accessor :usable_resource_duration, :from => "UsableResourceDuration", :required => false
-
       xml_accessor :preview?, :from => "IsPreview", :required => false
-
       xml_accessor :preview_details, :as => DDEX::ERN::V37::SoundRecordingPreviewDetails, :from => "PreviewDetails", :required => false
-
       xml_accessor :fulfillment_date, :as => DDEX::ERN::V37::FulfillmentDate, :from => "FulfillmentDate", :required => false
-
       xml_accessor :consumer_fulfillment_date, :as => DDEX::ERN::V37::FulfillmentDate, :from => "ConsumerFulfillmentDate", :required => false
-
-      
       xml_accessor :files, :as => [DDEX::ERN::V37::File], :from => "File", :required => false
-
-      
       xml_accessor :file_availability_descriptions, :as => [DDEX::ERN::V37::Description], :from => "FileAvailabilityDescription", :required => false
-
-      
       xml_accessor :fingerprints, :as => [DDEX::ERN::V37::Fingerprint], :from => "Fingerprint", :required => false
-
 
 
   

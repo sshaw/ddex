@@ -17,13 +17,9 @@ class File < Element
   xml_name "File"
 
       xml_accessor :url, :from => "URL", :required => false
-
       xml_accessor :file_name, :from => "FileName", :required => false
-
       xml_accessor :file_path, :from => "FilePath", :required => false
-
       xml_accessor :hash_sum, :as => DDEX::ERN::V37::HashSum, :from => "HashSum", :required => false
-
 
 
   

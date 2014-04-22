@@ -7,7 +7,7 @@ require "roxml"
 require "ddex/element"
 
 
-module DDEX module V20120719 module DDEXC # :nodoc: all
+module DDEX module V20120719 module DDEXC  # :nodoc: all
 
 class ReleaseCollectionReference < Element
   include ROXML
@@ -22,6 +22,7 @@ class ReleaseCollectionReference < Element
       xml_accessor :release_resource_type, :from => "@ReleaseResourceType", :required => false
     
   
+
 end
 
 end end end

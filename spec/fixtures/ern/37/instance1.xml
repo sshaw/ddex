@@ -154,7 +154,7 @@
                     </PartyName>
                     <PartyId Namespace="JGcK" IsDPID="false" IsISNI="false">s8</PartyId>
                     <RightsControllerRole>RoyaltyAdministrator</RightsControllerRole>
-                    <RightShareUnknown>1</RightShareUnknown>
+                    <RightShareUnknown>true</RightShareUnknown>
                     <RightsControllerType>OriginalOwner</RightsControllerType>
                 </RightsController>
                 <ValidityPeriod>
@@ -353,7 +353,7 @@
                         </Membership>
                     </ResourceContributor>
                 </ReferencedCreationCharacter>
-                <HasMusicalContent>0</HasMusicalContent>
+                <HasMusicalContent>false</HasMusicalContent>
                 <StartTime>P4Y9M5DT1H10M0S</StartTime>
                 <Duration>P5Y1M4DT1H10M0S</Duration>
                 <EndTime>P0Y4M1DT1H10M0S</EndTime>
@@ -397,12 +397,12 @@
             <IsBackground>false</IsBackground>
             <IsHiddenResource>false</IsHiddenResource>
             <IsBonusResource>true</IsBonusResource>
-            <HasPreOrderFulfillment>1</HasPreOrderFulfillment>
+            <HasPreOrderFulfillment>true</HasPreOrderFulfillment>
             <IsComputerGenerated>true</IsComputerGenerated>
             <IsRemastered>false</IsRemastered>
-            <NoSilenceBefore>0</NoSilenceBefore>
+            <NoSilenceBefore>false</NoSilenceBefore>
             <NoSilenceAfter>false</NoSilenceAfter>
-            <PerformerInformationRequired>1</PerformerInformationRequired>
+            <PerformerInformationRequired>true</PerformerInformationRequired>
             <LanguageOfPerformance>ff</LanguageOfPerformance>
             <Duration>P1Y6M4DT1H10M0S</Duration>
             <RightsAgreementId>
@@ -788,7 +788,7 @@
                     </PartyName>
                     <PartyId Namespace="OvJk" IsDPID="true" IsISNI="false">N_HcDq7k5bZL95dE3Z3Yu0</PartyId>
                     <RightsControllerRole>Unknown</RightsControllerRole>
-                    <RightShareUnknown>0</RightShareUnknown>
+                    <RightShareUnknown>false</RightShareUnknown>
                     <RightsControllerType>OriginalOwner</RightsControllerType>
                     <TerritoryOfRegistration IdentifierType="DeprecatedISO">780</TerritoryOfRegistration>
                     <StartDate>2011-11-21</StartDate>
@@ -847,7 +847,7 @@
                 <TechnicalMidiDetails LanguageAndScriptCode="en_US">
                     <TechnicalResourceDetailsReference>Tf</TechnicalResourceDetailsReference>
                     <Duration>P4Y0M2DT1H10M0S</Duration>
-                    <ResourceProcessingRequired>0</ResourceProcessingRequired>
+                    <ResourceProcessingRequired>false</ResourceProcessingRequired>
                     <UsableResourceDuration>P0Y7M1DT1H10M0S</UsableResourceDuration>
                     <IsPreview>false</IsPreview>
                     <PreviewDetails>
@@ -925,8 +925,8 @@
             <HasPreOrderFulfillment>true</HasPreOrderFulfillment>
             <IsRemastered>true</IsRemastered>
             <NoSilenceBefore>false</NoSilenceBefore>
-            <NoSilenceAfter>0</NoSilenceAfter>
-            <PerformerInformationRequired>0</PerformerInformationRequired>
+            <NoSilenceAfter>false</NoSilenceAfter>
+            <PerformerInformationRequired>false</PerformerInformationRequired>
             <LanguageOfPerformance>fj</LanguageOfPerformance>
             <LanguageOfDubbing>cr</LanguageOfDubbing>
             <SubTitleLanguage>ar</SubTitleLanguage>
@@ -1153,7 +1153,7 @@
                     <AudioSamplingRate UnitOfMeasure="MHz">919644971.99</AudioSamplingRate>
                     <AudioBitsPerSample>-580876546</AudioBitsPerSample>
                     <Duration>P5Y9M3DT1H10M0S</Duration>
-                    <ResourceProcessingRequired>0</ResourceProcessingRequired>
+                    <ResourceProcessingRequired>false</ResourceProcessingRequired>
                     <UsableResourceDuration>P5Y0M1DT1H10M0S</UsableResourceDuration>
                     <IsPreview>true</IsPreview>
                     <PreviewDetails>
@@ -2699,7 +2699,7 @@
                 <DealTerms LanguageAndScriptCode="en_US">
                     <IsPreOrderDeal>false</IsPreOrderDeal>
                     <CommercialModelType Namespace="WcUigj0L6n_Ao2qPNXA.H.V-4l" UserDefinedValue="Avoe44nZ-rMX">AdvertisementSupportedModel</CommercialModelType>
-                    <TakeDown>1</TakeDown>
+                    <TakeDown>true</TakeDown>
                     <ExcludedTerritoryCode IdentifierType="TIS">191</ExcludedTerritoryCode>
                     <ExcludedDistributionChannel LanguageAndScriptCode="es_MX">
                         <PartyName LanguageAndScriptCode="es_MX">
@@ -2763,7 +2763,7 @@
                         </ReleaseId>
                     </RelatedReleaseOfferSet>
                     <PhysicalReturns>
-                        <PhysicalReturnsAllowed>1</PhysicalReturnsAllowed>
+                        <PhysicalReturnsAllowed>true</PhysicalReturnsAllowed>
                         <LatestDateForPhysicalReturns>2011-11-21</LatestDateForPhysicalReturns>
                     </PhysicalReturns>
                     <NumberOfProductsPerCarton>-396869733</NumberOfProductsPerCarton>
@@ -2781,7 +2781,7 @@
                             <Unit>Percent</Unit>
                             <RelationalRelator>NotEqualTo</RelationalRelator>
                         </Condition>
-                        <AccessBlockingRequested>1</AccessBlockingRequested>
+                        <AccessBlockingRequested>true</AccessBlockingRequested>
                     </WebPolicy>
                 </DealTerms>
                 <ResourceUsage>

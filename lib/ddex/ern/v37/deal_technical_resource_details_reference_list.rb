@@ -15,9 +15,7 @@ class DealTechnicalResourceDetailsReferenceList < Element
 
   xml_name "DealTechnicalResourceDetailsReferenceList"
 
-      
       xml_accessor :deal_technical_resource_details_references, :as => [], :from => "DealTechnicalResourceDetailsReference", :required => false
-
 
 
   

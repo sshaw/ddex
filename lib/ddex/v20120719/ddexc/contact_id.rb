@@ -7,7 +7,7 @@ require "roxml"
 require "ddex/element"
 
 
-module DDEX module V20120719 module DDEXC # :nodoc: all
+module DDEX module V20120719 module DDEXC  # :nodoc: all
 
 class ContactId < Element
   include ROXML
@@ -15,18 +15,13 @@ class ContactId < Element
 
   xml_name "ContactId"
 
-      
       xml_accessor :email_addresses, :as => [], :from => "EmailAddress", :required => false
-
-      
       xml_accessor :phone_numbers, :as => [], :from => "PhoneNumber", :required => false
-
-      
       xml_accessor :fax_numbers, :as => [], :from => "FaxNumber", :required => false
 
 
-
   
+
 end
 
 end end end

@@ -18,32 +18,20 @@ class TypedRightsController < Element
 
   xml_name "TypedRightsController"
 
-      
       xml_accessor :party_names, :as => [DDEX::ERN::V37::PartyName], :from => "PartyName", :required => false
-
-      
       xml_accessor :party_ids, :as => [DDEX::ERN::V37::PartyId], :from => "PartyId", :required => false
-
-      
       xml_accessor :rights_controller_roles, :as => [], :from => "RightsControllerRole", :required => false
-
       xml_accessor :right_share_percentage, :as => Float, :from => "RightSharePercentage", :required => false
-
-      xml_accessor :right_share_unknown, :from => "RightShareUnknown", :required => false
-
+      xml_accessor :right_share_unknown?, :from => "RightShareUnknown", :required => false
       xml_accessor :rights_controller_type, :from => "RightsControllerType", :required => false
-
       xml_accessor :territory_of_registration, :as => DDEX::ERN::V37::AllTerritoryCode, :from => "TerritoryOfRegistration", :required => false
-
       xml_accessor :start_date, :from => "StartDate", :required => false
-
       xml_accessor :end_date, :from => "EndDate", :required => false
-
 
 
   
 
-      xml_accessor :sequence_number, :as => Fixnum, :from => "@SequenceNumber", :required => false
+      xml_accessor :sequence_number, :as => Integer, :from => "@SequenceNumber", :required => false
     
   
 

@@ -16,9 +16,7 @@ class CollectionWorkReference < Element
   xml_name "CollectionWorkReference"
 
       xml_accessor :collection_work_reference, :from => "CollectionWorkReference", :required => true
-
       xml_accessor :duration, :from => "Duration", :required => false
-
 
 
   

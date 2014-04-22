@@ -7,7 +7,7 @@ require "roxml"
 require "ddex/element"
 
 
-module DDEX module V20121219 module DDEXC # :nodoc: all
+module DDEX module V20121219 module DDEXC  # :nodoc: all
 
 class CueCreationReference < Element
   include ROXML
@@ -16,12 +16,11 @@ class CueCreationReference < Element
   xml_name "CueCreationReference"
 
       xml_accessor :cue_resource_reference, :from => "CueResourceReference", :required => false
-
       xml_accessor :cue_work_reference, :from => "CueWorkReference", :required => false
 
 
-
   
+
 end
 
 end end end

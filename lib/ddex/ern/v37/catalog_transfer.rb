@@ -19,22 +19,13 @@ class CatalogTransfer < Element
 
   xml_name "CatalogTransfer"
 
-      xml_accessor :catalog_transfer_completed, :from => "CatalogTransferCompleted", :required => false
-
+      xml_accessor :catalog_transfer_completed?, :from => "CatalogTransferCompleted", :required => false
       xml_accessor :effective_transfer_date, :as => DDEX::ERN::V37::EventDate, :from => "EffectiveTransferDate", :required => false
-
       xml_accessor :catalog_release_reference_list, :as => DDEX::ERN::V37::CatalogReleaseReferenceList, :from => "CatalogReleaseReferenceList", :required => true
-
-      
       xml_accessor :excluded_territory_codes, :as => [DDEX::ERN::V37::AllTerritoryCode], :from => "ExcludedTerritoryCode", :required => false
-
-      
       xml_accessor :territory_codes, :as => [DDEX::ERN::V37::AllTerritoryCode], :from => "TerritoryCode", :required => false
-
       xml_accessor :transferring_from, :as => DDEX::ERN::V37::PartyDescriptor, :from => "TransferringFrom", :required => true
-
       xml_accessor :transferring_to, :as => DDEX::ERN::V37::PartyDescriptor, :from => "TransferringTo", :required => true
-
 
 
   

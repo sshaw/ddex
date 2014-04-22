@@ -20,24 +20,13 @@ class HostSoundCarrier < Element
 
   xml_name "HostSoundCarrier"
 
-      
       xml_accessor :release_ids, :as => [DDEX::ERN::V37::ReleaseId], :from => "ReleaseId", :required => false
-
       xml_accessor :rights_agreement_id, :as => DDEX::ERN::V37::RightsAgreementId, :from => "RightsAgreementId", :required => false
-
-      
       xml_accessor :titles, :as => [DDEX::ERN::V37::Title], :from => "Title", :required => false
-
-      
       xml_accessor :display_artists, :as => [DDEX::ERN::V37::Artist], :from => "DisplayArtist", :required => false
-
-      
       xml_accessor :administrating_record_companies, :as => [DDEX::ERN::V37::AdministratingRecordCompany], :from => "AdministratingRecordCompany", :required => false
-
       xml_accessor :track_number, :from => "TrackNumber", :required => false
-
       xml_accessor :volume_number_in_set, :from => "VolumeNumberInSet", :required => false
-
 
 
   

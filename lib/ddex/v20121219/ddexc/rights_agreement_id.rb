@@ -8,7 +8,7 @@ require "ddex/element"
 
 require "ddex/v20121219/ddexc/proprietary_id"
 
-module DDEX module V20121219 module DDEXC # :nodoc: all
+module DDEX module V20121219 module DDEXC  # :nodoc: all
 
 class RightsAgreementId < Element
   include ROXML
@@ -16,15 +16,12 @@ class RightsAgreementId < Element
 
   xml_name "RightsAgreementId"
 
-      
       xml_accessor :mwlis, :as => [], :from => "MWLI", :required => false
-
-      
       xml_accessor :proprietary_ids, :as => [DDEX::V20121219::DDEXC::ProprietaryId], :from => "ProprietaryId", :required => false
 
 
-
   
+
 end
 
 end end end

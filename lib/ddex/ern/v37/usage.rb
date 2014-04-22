@@ -20,22 +20,12 @@ class Usage < Element
 
   xml_name "Usage"
 
-      
       xml_accessor :use_types, :as => [DDEX::ERN::V37::UseType], :from => "UseType", :required => true
-
-      
       xml_accessor :user_interface_types, :as => [DDEX::ERN::V37::UserInterfaceType], :from => "UserInterfaceType", :required => false
-
-      
       xml_accessor :distribution_channel_types, :as => [DDEX::ERN::V37::DistributionChannelType], :from => "DistributionChannelType", :required => false
-
-      
       xml_accessor :carrier_types, :as => [DDEX::ERN::V37::CarrierType], :from => "CarrierType", :required => false
-
       xml_accessor :technical_instantiation, :as => DDEX::ERN::V37::TechnicalInstantiation, :from => "TechnicalInstantiation", :required => false
-
-      xml_accessor :number_of_usages, :as => Fixnum, :from => "NumberOfUsages", :required => false
-
+      xml_accessor :number_of_usages, :as => Integer, :from => "NumberOfUsages", :required => false
 
 
   

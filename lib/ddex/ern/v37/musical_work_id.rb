@@ -17,15 +17,9 @@ class MusicalWorkId < Element
   xml_name "MusicalWorkId"
 
       xml_accessor :iswc, :from => "ISWC", :required => false
-
       xml_accessor :opus_number, :from => "OpusNumber", :required => false
-
-      
       xml_accessor :composer_catalog_numbers, :as => [], :from => "ComposerCatalogNumber", :required => false
-
-      
       xml_accessor :proprietary_ids, :as => [DDEX::ERN::V37::ProprietaryId], :from => "ProprietaryId", :required => false
-
 
 
   

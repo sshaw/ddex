@@ -16,9 +16,7 @@ class ReleaseList < Element
 
   xml_name "ReleaseList"
 
-      
       xml_accessor :releases, :as => [DDEX::ERN::V37::Release], :from => "Release", :required => false
-
 
 
   

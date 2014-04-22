@@ -15,9 +15,7 @@ class ResourceGroupResourceReferenceList < Element
 
   xml_name "ResourceGroupResourceReferenceList"
 
-      
       xml_accessor :resource_group_resource_references, :as => [], :from => "ResourceGroupResourceReference", :required => false
-
 
 
   

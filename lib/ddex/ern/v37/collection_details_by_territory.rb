@@ -19,23 +19,12 @@ class CollectionDetailsByTerritory < Element
 
   xml_name "CollectionDetailsByTerritory"
 
-      
       xml_accessor :excluded_territory_codes, :as => [DDEX::ERN::V37::CurrentTerritoryCode], :from => "ExcludedTerritoryCode", :required => false
-
-      
       xml_accessor :territory_codes, :as => [DDEX::ERN::V37::CurrentTerritoryCode], :from => "TerritoryCode", :required => false
-
-      
       xml_accessor :titles, :as => [DDEX::ERN::V37::Title], :from => "Title", :required => false
-
-      
       xml_accessor :contributors, :as => [DDEX::ERN::V37::DetailedResourceContributor], :from => "Contributor", :required => false
-
       xml_accessor :complete?, :from => "IsComplete", :required => false
-
-      
       xml_accessor :characters, :as => [DDEX::ERN::V37::Character], :from => "Character", :required => false
-
 
 
   

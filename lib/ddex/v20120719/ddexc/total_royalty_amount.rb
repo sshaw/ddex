@@ -10,7 +10,7 @@ require "ddex/v20120719/ddexc/release_type"
 require "ddex/v20120719/ddexc/rights_type"
 require "ddex/v20120719/ddexc/royalty_amount"
 
-module DDEX module V20120719 module DDEXC # :nodoc: all
+module DDEX module V20120719 module DDEXC  # :nodoc: all
 
 class TotalRoyaltyAmount < Element
   include ROXML
@@ -18,17 +18,13 @@ class TotalRoyaltyAmount < Element
 
   xml_name "TotalRoyaltyAmount"
 
-      
       xml_accessor :release_types, :as => [DDEX::V20120719::DDEXC::ReleaseType], :from => "ReleaseType", :required => false
-
-      
       xml_accessor :rights_types, :as => [DDEX::V20120719::DDEXC::RightsType], :from => "RightsType", :required => false
-
       xml_accessor :royalty_amount, :as => DDEX::V20120719::DDEXC::RoyaltyAmount, :from => "RoyaltyAmount", :required => true
 
 
-
   
+
 end
 
 end end end

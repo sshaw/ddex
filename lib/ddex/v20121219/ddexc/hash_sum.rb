@@ -8,7 +8,7 @@ require "ddex/element"
 
 require "ddex/v20121219/ddexc/hash_sum_algorithm_type"
 
-module DDEX module V20121219 module DDEXC # :nodoc: all
+module DDEX module V20121219 module DDEXC  # :nodoc: all
 
 class HashSum < Element
   include ROXML
@@ -17,12 +17,11 @@ class HashSum < Element
   xml_name "HashSum"
 
       xml_accessor :hash_sum, :from => "HashSum", :required => true
-
       xml_accessor :hash_sum_algorithm_type, :as => DDEX::V20121219::DDEXC::HashSumAlgorithmType, :from => "HashSumAlgorithmType", :required => true
 
 
-
   
+
 end
 
 end end end

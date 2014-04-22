@@ -17,10 +17,7 @@ class SheetMusicId < Element
   xml_name "SheetMusicId"
 
       xml_accessor :ismn, :from => "ISMN", :required => false
-
-      
       xml_accessor :proprietary_ids, :as => [DDEX::ERN::V37::ProprietaryId], :from => "ProprietaryId", :required => false
-
 
 
   

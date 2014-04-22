@@ -9,7 +9,7 @@ require "ddex/element"
 require "ddex/v20120719/ddexc/catalog_number"
 require "ddex/v20120719/ddexc/proprietary_id"
 
-module DDEX module V20120719 module DDEXC # :nodoc: all
+module DDEX module V20120719 module DDEXC  # :nodoc: all
 
 class ResourceId < Element
   include ROXML
@@ -18,30 +18,21 @@ class ResourceId < Element
   xml_name "ResourceId"
 
       xml_accessor :isrc, :from => "ISRC", :required => false
-
       xml_accessor :ismn, :from => "ISMN", :required => false
-
       xml_accessor :isan, :from => "ISAN", :required => false
-
       xml_accessor :visan, :from => "VISAN", :required => false
-
       xml_accessor :isbn, :from => "ISBN", :required => false
-
       xml_accessor :issn, :from => "ISSN", :required => false
-
       xml_accessor :sici, :from => "SICI", :required => false
-
       xml_accessor :catalog_number, :as => DDEX::V20120719::DDEXC::CatalogNumber, :from => "CatalogNumber", :required => false
-
-      
       xml_accessor :proprietary_ids, :as => [DDEX::V20120719::DDEXC::ProprietaryId], :from => "ProprietaryId", :required => false
-
 
 
   
       xml_accessor :replaced?, :from => "@IsReplaced", :required => false
     
   
+
 end
 
 end end end

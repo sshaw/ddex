@@ -17,12 +17,8 @@ class PartyDescriptor < Element
 
   xml_name "PartyDescriptor"
 
-      
       xml_accessor :party_names, :as => [DDEX::ERN::V37::PartyName], :from => "PartyName", :required => false
-
-      
       xml_accessor :party_ids, :as => [DDEX::ERN::V37::PartyId], :from => "PartyId", :required => false
-
 
 
   

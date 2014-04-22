@@ -15,7 +15,7 @@ require "ddex/v20120719/ddexc/text_id"
 require "ddex/v20120719/ddexc/text_type"
 require "ddex/v20120719/ddexc/title"
 
-module DDEX module ERN module V35 # :nodoc: all
+module DDEX module ERN module V35  # :nodoc: all
 
 class Text < Element
   include ROXML
@@ -24,29 +24,15 @@ class Text < Element
   xml_name "Text"
 
       xml_accessor :text_type, :as => DDEX::V20120719::DDEXC::TextType, :from => "TextType", :required => false
-
       xml_accessor :artist_related?, :from => "IsArtistRelated", :required => false
-
-      
       xml_accessor :text_ids, :as => [DDEX::V20120719::DDEXC::TextId], :from => "TextId", :required => false
-
-      
       xml_accessor :indirect_text_ids, :as => [DDEX::V20120719::DDEXC::MusicalWorkId], :from => "IndirectTextId", :required => false
-
       xml_accessor :resource_reference, :from => "ResourceReference", :required => true
-
       xml_accessor :resource_musical_work_reference_list, :as => DDEX::V20120719::DDEXC::ResourceMusicalWorkReferenceList, :from => "ResourceMusicalWorkReferenceList", :required => false
-
       xml_accessor :resource_contained_resource_reference_list, :as => DDEX::V20120719::DDEXC::ResourceContainedResourceReferenceList, :from => "ResourceContainedResourceReferenceList", :required => false
-
-      
       xml_accessor :titles, :as => [DDEX::V20120719::DDEXC::Title], :from => "Title", :required => false
-
       xml_accessor :creation_date, :as => DDEX::V20120719::DDEXC::EventDate, :from => "CreationDate", :required => false
-
-      
       xml_accessor :text_details_by_territories, :as => [DDEX::ERN::V35::TextDetailsByTerritory], :from => "TextDetailsByTerritory", :required => true
-
 
 
   
@@ -56,6 +42,7 @@ class Text < Element
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
+
 end
 
 end end end

@@ -7,7 +7,7 @@ require "roxml"
 require "ddex/element"
 
 
-module DDEX module ERN module V351 # :nodoc: all
+module DDEX module ERN module V351  # :nodoc: all
 
 class PhysicalReturns < Element
   include ROXML
@@ -15,13 +15,12 @@ class PhysicalReturns < Element
 
   xml_name "PhysicalReturns"
 
-      xml_accessor :physical_returns_allowed, :from => "PhysicalReturnsAllowed", :required => false
-
+      xml_accessor :physical_returns_allowed?, :from => "PhysicalReturnsAllowed", :required => false
       xml_accessor :latest_date_for_physical_returns, :as => Date, :from => "LatestDateForPhysicalReturns", :required => false
 
 
-
   
+
 end
 
 end end end

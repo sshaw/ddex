@@ -8,7 +8,7 @@ require "ddex/element"
 
 require "ddex/v20120719/ddexc/proprietary_id"
 
-module DDEX module V20120719 module DDEXC # :nodoc: all
+module DDEX module V20120719 module DDEXC  # :nodoc: all
 
 class SoftwareId < Element
   include ROXML
@@ -16,15 +16,14 @@ class SoftwareId < Element
 
   xml_name "SoftwareId"
 
-      
       xml_accessor :proprietary_ids, :as => [DDEX::V20120719::DDEXC::ProprietaryId], :from => "ProprietaryId", :required => true
-
 
 
   
       xml_accessor :replaced?, :from => "@IsReplaced", :required => false
     
   
+
 end
 
 end end end

@@ -30,72 +30,33 @@ class DealTerms < Element
   xml_name "DealTerms"
 
       xml_accessor :pre_order_deal?, :from => "IsPreOrderDeal", :required => false
-
-      
       xml_accessor :commercial_model_types, :as => [DDEX::ERN::V37::CommercialModelType], :from => "CommercialModelType", :required => false
-
-      xml_accessor :take_down, :from => "TakeDown", :required => false
-
-      xml_accessor :all_deals_cancelled, :from => "AllDealsCancelled", :required => false
-
-      
+      xml_accessor :take_down?, :from => "TakeDown", :required => false
+      xml_accessor :all_deals_cancelled?, :from => "AllDealsCancelled", :required => false
       xml_accessor :usages, :as => [DDEX::ERN::V37::Usage], :from => "Usage", :required => false
-
-      
       xml_accessor :excluded_territory_codes, :as => [DDEX::ERN::V37::CurrentTerritoryCode], :from => "ExcludedTerritoryCode", :required => false
-
-      
       xml_accessor :territory_codes, :as => [DDEX::ERN::V37::CurrentTerritoryCode], :from => "TerritoryCode", :required => false
-
-      
       xml_accessor :excluded_distribution_channels, :as => [DDEX::ERN::V37::DSP], :from => "ExcludedDistributionChannel", :required => false
-
-      
       xml_accessor :distribution_channels, :as => [DDEX::ERN::V37::DSP], :from => "DistributionChannel", :required => false
-
-      
       xml_accessor :price_informations, :as => [DDEX::ERN::V37::PriceInformation], :from => "PriceInformation", :required => false
-
       xml_accessor :promotional_code, :as => DDEX::ERN::V37::PromotionalCode, :from => "PromotionalCode", :required => false
-
       xml_accessor :promotional?, :from => "IsPromotional", :required => false
-
-      
       xml_accessor :validity_periods, :as => [DDEX::ERN::V37::Period], :from => "ValidityPeriod", :required => true
-
       xml_accessor :consumer_rental_period, :as => DDEX::ERN::V37::ConsumerRentalPeriod, :from => "ConsumerRentalPeriod", :required => false
-
       xml_accessor :pre_order_release_date, :as => DDEX::ERN::V37::EventDate, :from => "PreOrderReleaseDate", :required => false
-
       xml_accessor :pre_order_preview_date, :as => DDEX::ERN::V37::EventDate, :from => "PreOrderPreviewDate", :required => false
-
       xml_accessor :release_display_start_date, :from => "ReleaseDisplayStartDate", :required => false
-
       xml_accessor :track_listing_preview_start_date, :from => "TrackListingPreviewStartDate", :required => false
-
       xml_accessor :cover_art_preview_start_date, :from => "CoverArtPreviewStartDate", :required => false
-
       xml_accessor :clip_preview_start_date, :from => "ClipPreviewStartDate", :required => false
-
       xml_accessor :pre_order_incentive_resource_list, :as => DDEX::ERN::V37::DealResourceReferenceList, :from => "PreOrderIncentiveResourceList", :required => false
-
       xml_accessor :instant_gratification_resource_list, :as => DDEX::ERN::V37::DealResourceReferenceList, :from => "InstantGratificationResourceList", :required => false
-
       xml_accessor :exclusive?, :from => "IsExclusive", :required => false
-
-      
       xml_accessor :related_release_offer_sets, :as => [DDEX::ERN::V37::RelatedReleaseOfferSet], :from => "RelatedReleaseOfferSet", :required => false
-
       xml_accessor :physical_returns, :as => DDEX::ERN::V37::PhysicalReturns, :from => "PhysicalReturns", :required => false
-
-      xml_accessor :number_of_products_per_carton, :as => Fixnum, :from => "NumberOfProductsPerCarton", :required => false
-
-      
+      xml_accessor :number_of_products_per_carton, :as => Integer, :from => "NumberOfProductsPerCarton", :required => false
       xml_accessor :rights_claim_policies, :as => [DDEX::ERN::V37::RightsClaimPolicy], :from => "RightsClaimPolicy", :required => false
-
-      
       xml_accessor :web_policies, :as => [DDEX::ERN::V37::WebPolicy], :from => "WebPolicy", :required => false
-
 
 
   

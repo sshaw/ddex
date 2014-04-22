@@ -7,7 +7,7 @@ require "roxml"
 require "ddex/element"
 
 
-module DDEX module V20120719 module DDEXC # :nodoc: all
+module DDEX module V20120719 module DDEXC  # :nodoc: all
 
 class TariffReference < Element
   include ROXML
@@ -25,6 +25,7 @@ class TariffReference < Element
       xml_accessor :tariff_sub_reference, :from => "@TariffSubReference", :required => false
     
   
+
 end
 
 end end end

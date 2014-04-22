@@ -18,12 +18,8 @@ class AvRating < Element
   xml_name "AvRating"
 
       xml_accessor :rating_text, :from => "RatingText", :required => true
-
       xml_accessor :rating_agency, :as => DDEX::ERN::V37::RatingAgency, :from => "RatingAgency", :required => true
-
-      
       xml_accessor :rating_scheme_descriptions, :as => [DDEX::ERN::V37::Description], :from => "RatingSchemeDescription", :required => false
-
 
 
   

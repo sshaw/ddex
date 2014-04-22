@@ -7,7 +7,7 @@ require "roxml"
 require "ddex/element"
 
 
-module DDEX module V20121219 module DDEXC # :nodoc: all
+module DDEX module V20121219 module DDEXC  # :nodoc: all
 
 class EventDateTime < Element
   include ROXML
@@ -37,6 +37,7 @@ class EventDateTime < Element
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
+
 end
 
 end end end

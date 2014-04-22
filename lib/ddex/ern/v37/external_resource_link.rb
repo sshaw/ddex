@@ -17,18 +17,11 @@ class ExternalResourceLink < Element
 
   xml_name "ExternalResourceLink"
 
-      
       xml_accessor :urls, :as => [], :from => "URL", :required => true
-
       xml_accessor :validity_period, :as => DDEX::ERN::V37::Period, :from => "ValidityPeriod", :required => false
-
       xml_accessor :external_link, :from => "ExternalLink", :required => false
-
-      
       xml_accessor :externally_linked_resource_types, :as => [DDEX::ERN::V37::ExternallyLinkedResourceType], :from => "ExternallyLinkedResourceType", :required => false
-
       xml_accessor :file_format, :from => "FileFormat", :required => false
-
 
 
   

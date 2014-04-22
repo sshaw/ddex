@@ -23,30 +23,14 @@ class ResourceList < Element
 
   xml_name "ResourceList"
 
-      
       xml_accessor :sound_recordings, :as => [DDEX::ERN::V37::SoundRecording], :from => "SoundRecording", :required => false
-
-      
       xml_accessor :midis, :as => [DDEX::ERN::V37::MIDI], :from => "MIDI", :required => false
-
-      
       xml_accessor :videos, :as => [DDEX::ERN::V37::Video], :from => "Video", :required => false
-
-      
       xml_accessor :images, :as => [DDEX::ERN::V37::Image], :from => "Image", :required => false
-
-      
       xml_accessor :texts, :as => [DDEX::ERN::V37::Text], :from => "Text", :required => false
-
-      
       xml_accessor :sheet_musics, :as => [DDEX::ERN::V37::SheetMusic], :from => "SheetMusic", :required => false
-
-      
       xml_accessor :softwares, :as => [DDEX::ERN::V37::Software], :from => "Software", :required => false
-
-      
       xml_accessor :user_defined_resources, :as => [DDEX::ERN::V37::UserDefinedResource], :from => "UserDefinedResource", :required => false
-
 
 
   

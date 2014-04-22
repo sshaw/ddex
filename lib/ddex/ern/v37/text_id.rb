@@ -17,14 +17,9 @@ class TextId < Element
   xml_name "TextId"
 
       xml_accessor :isbn, :from => "ISBN", :required => false
-
       xml_accessor :issn, :from => "ISSN", :required => false
-
       xml_accessor :sici, :from => "SICI", :required => false
-
-      
       xml_accessor :proprietary_ids, :as => [DDEX::ERN::V37::ProprietaryId], :from => "ProprietaryId", :required => false
-
 
 
   

@@ -7,7 +7,7 @@ require "roxml"
 require "ddex/element"
 
 
-module DDEX module ERN module V35 # :nodoc: all
+module DDEX module ERN module V35  # :nodoc: all
 
 class CatalogReleaseReferenceList < Element
   include ROXML
@@ -15,12 +15,11 @@ class CatalogReleaseReferenceList < Element
 
   xml_name "CatalogReleaseReferenceList"
 
-      
       xml_accessor :catalog_release_references, :as => [], :from => "CatalogReleaseReference", :required => false
 
 
-
   
+
 end
 
 end end end

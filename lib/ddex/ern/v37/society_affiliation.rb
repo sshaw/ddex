@@ -17,14 +17,9 @@ class SocietyAffiliation < Element
 
   xml_name "SocietyAffiliation"
 
-      
       xml_accessor :excluded_territory_codes, :as => [DDEX::ERN::V37::CurrentTerritoryCode], :from => "ExcludedTerritoryCode", :required => false
-
-      
       xml_accessor :territory_codes, :as => [DDEX::ERN::V37::CurrentTerritoryCode], :from => "TerritoryCode", :required => false
-
       xml_accessor :music_rights_society, :as => DDEX::ERN::V37::PartyDescriptor, :from => "MusicRightsSociety", :required => true
-
 
 
   

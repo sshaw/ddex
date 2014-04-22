@@ -7,7 +7,7 @@ require "roxml"
 require "ddex/element"
 
 
-module DDEX module V20120719 module DDEXC # :nodoc: all
+module DDEX module V20120719 module DDEXC  # :nodoc: all
 
 class TypedSubTitle < Element
   include ROXML
@@ -25,6 +25,7 @@ class TypedSubTitle < Element
       xml_accessor :sub_title_type, :from => "@SubTitleType", :required => false
     
   
+
 end
 
 end end end

@@ -226,7 +226,7 @@
                 <CueCreationReference>
                     <CueResourceReference>A5</CueResourceReference>
                 </CueCreationReference>
-                <HasMusicalContent>1</HasMusicalContent>
+                <HasMusicalContent>true</HasMusicalContent>
                 <StartTime>P9Y0M2DT1H10M0S</StartTime>
                 <Duration>P6Y5M4DT1H10M0S</Duration>
                 <EndTime>P8Y6M6DT1H10M0S</EndTime>
@@ -273,8 +273,8 @@
             <IsComputerGenerated>false</IsComputerGenerated>
             <IsRemastered>true</IsRemastered>
             <NoSilenceBefore>true</NoSilenceBefore>
-            <NoSilenceAfter>1</NoSilenceAfter>
-            <PerformerInformationRequired>1</PerformerInformationRequired>
+            <NoSilenceAfter>true</NoSilenceAfter>
+            <PerformerInformationRequired>true</PerformerInformationRequired>
             <LanguageOfPerformance>tk</LanguageOfPerformance>
             <Duration>P9Y7M7DT1H10M0S</Duration>
             <RightsAgreementId>
@@ -491,7 +491,7 @@
                     <SamplingRate UnitOfMeasure="GHz">1982500815.592</SamplingRate>
                     <BitsPerSample>-1238509914</BitsPerSample>
                     <Duration>P1Y3M7DT1H10M0S</Duration>
-                    <ResourceProcessingRequired>0</ResourceProcessingRequired>
+                    <ResourceProcessingRequired>false</ResourceProcessingRequired>
                     <UsableResourceDuration>P4Y4M1DT1H10M0S</UsableResourceDuration>
                     <IsPreview>false</IsPreview>
                     <PreviewDetails>
@@ -555,9 +555,9 @@
             <IsHiddenResource>false</IsHiddenResource>
             <IsBonusResource>true</IsBonusResource>
             <IsComputerGenerated>false</IsComputerGenerated>
-            <NoSilenceBefore>0</NoSilenceBefore>
+            <NoSilenceBefore>false</NoSilenceBefore>
             <NoSilenceAfter>true</NoSilenceAfter>
-            <PerformerInformationRequired>1</PerformerInformationRequired>
+            <PerformerInformationRequired>true</PerformerInformationRequired>
             <LanguageOfPerformance>hu</LanguageOfPerformance>
             <Duration>P1Y4M4DT1H10M0S</Duration>
             <RightsAgreementId>
@@ -818,9 +818,9 @@
             <IsHiddenResource>false</IsHiddenResource>
             <IsBonusResource>true</IsBonusResource>
             <IsRemastered>true</IsRemastered>
-            <NoSilenceBefore>1</NoSilenceBefore>
-            <NoSilenceAfter>1</NoSilenceAfter>
-            <PerformerInformationRequired>0</PerformerInformationRequired>
+            <NoSilenceBefore>true</NoSilenceBefore>
+            <NoSilenceAfter>true</NoSilenceAfter>
+            <PerformerInformationRequired>false</PerformerInformationRequired>
             <LanguageOfPerformance>bo</LanguageOfPerformance>
             <Duration>P0Y3M5DT1H10M0S</Duration>
             <RightsAgreementId>
@@ -2591,10 +2591,10 @@
                     <WebPolicy>
                         <AccessLimitation>NoLimitation</AccessLimitation>
                         <EmbeddingAllowed>true</EmbeddingAllowed>
-                        <UserRatingAllowed>0</UserRatingAllowed>
-                        <UserCommentAllowed>1</UserCommentAllowed>
-                        <UserResponsesAllowed>0</UserResponsesAllowed>
-                        <SyndicationAllowed>1</SyndicationAllowed>
+                        <UserRatingAllowed>false</UserRatingAllowed>
+                        <UserCommentAllowed>true</UserCommentAllowed>
+                        <UserResponsesAllowed>false</UserResponsesAllowed>
+                        <SyndicationAllowed>true</SyndicationAllowed>
                     </WebPolicy>
                 </DealTerms>
                 <ResourceUsage>

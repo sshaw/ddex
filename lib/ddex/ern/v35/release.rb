@@ -9,7 +9,6 @@ require "ddex/element"
 require "ddex/ern/v35/release_details_by_territory"
 require "ddex/v20120719/ddexc/c_line"
 require "ddex/v20120719/ddexc/event_date"
-require "ddex/v20120719/ddexc/event_date"
 require "ddex/v20120719/ddexc/external_resource_link"
 require "ddex/v20120719/ddexc/p_line"
 require "ddex/v20120719/ddexc/reference_title"
@@ -22,7 +21,7 @@ require "ddex/v20120719/ddexc/rights_agreement_id"
 require "ddex/v20120719/ddexc/sales_reporting_proxy_release_id"
 require "ddex/v20120719/ddexc/web_page"
 
-module DDEX module ERN module V35 # :nodoc: all
+module DDEX module ERN module V35  # :nodoc: all
 
 class Release < Element
   include ROXML
@@ -30,49 +29,23 @@ class Release < Element
 
   xml_name "Release"
 
-      
       xml_accessor :release_ids, :as => [DDEX::V20120719::DDEXC::ReleaseId], :from => "ReleaseId", :required => true
-
-      
       xml_accessor :release_references, :as => [], :from => "ReleaseReference", :required => false
-
-      
       xml_accessor :external_resource_links, :as => [DDEX::V20120719::DDEXC::ExternalResourceLink], :from => "ExternalResourceLink", :required => false
-
-      
       xml_accessor :sales_reporting_proxy_release_ids, :as => [DDEX::V20120719::DDEXC::SalesReportingProxyReleaseId], :from => "SalesReportingProxyReleaseId", :required => false
-
       xml_accessor :reference_title, :as => DDEX::V20120719::DDEXC::ReferenceTitle, :from => "ReferenceTitle", :required => true
-
       xml_accessor :resource_omission_reason, :as => DDEX::V20120719::DDEXC::ResourceOmissionReason, :from => "ResourceOmissionReason", :required => false
-
       xml_accessor :release_resource_reference_list, :as => DDEX::V20120719::DDEXC::ReleaseResourceReferenceList, :from => "ReleaseResourceReferenceList", :required => false
-
       xml_accessor :release_collection_reference_list, :as => DDEX::V20120719::DDEXC::ReleaseCollectionReferenceList, :from => "ReleaseCollectionReferenceList", :required => false
-
-      
       xml_accessor :release_types, :as => [DDEX::V20120719::DDEXC::ReleaseType], :from => "ReleaseType", :required => false
-
-      
       xml_accessor :release_details_by_territories, :as => [DDEX::ERN::V35::ReleaseDetailsByTerritory], :from => "ReleaseDetailsByTerritory", :required => true
-
       xml_accessor :duration, :from => "Duration", :required => false
-
       xml_accessor :rights_agreement_id, :as => DDEX::V20120719::DDEXC::RightsAgreementId, :from => "RightsAgreementId", :required => false
-
-      
       xml_accessor :p_lines, :as => [DDEX::V20120719::DDEXC::PLine], :from => "PLine", :required => false
-
-      
       xml_accessor :c_lines, :as => [DDEX::V20120719::DDEXC::CLine], :from => "CLine", :required => false
-
-      
       xml_accessor :artist_profile_pages, :as => [DDEX::V20120719::DDEXC::WebPage], :from => "ArtistProfilePage", :required => false
-
       xml_accessor :global_release_date, :as => DDEX::V20120719::DDEXC::EventDate, :from => "GlobalReleaseDate", :required => false
-
       xml_accessor :global_original_release_date, :as => DDEX::V20120719::DDEXC::EventDate, :from => "GlobalOriginalReleaseDate", :required => false
-
 
 
   
@@ -82,6 +55,7 @@ class Release < Element
       xml_accessor :main_release?, :from => "@IsMainRelease", :required => false
     
   
+
 end
 
 end end end

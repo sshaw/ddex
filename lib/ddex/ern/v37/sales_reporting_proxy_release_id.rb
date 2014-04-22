@@ -19,11 +19,8 @@ class SalesReportingProxyReleaseId < Element
   xml_name "SalesReportingProxyReleaseId"
 
       xml_accessor :release_id, :as => DDEX::ERN::V37::ReleaseId, :from => "ReleaseId", :required => true
-
       xml_accessor :reason, :as => DDEX::ERN::V37::Reason, :from => "Reason", :required => false
-
       xml_accessor :reason_type, :as => DDEX::ERN::V37::ReasonType, :from => "ReasonType", :required => true
-
 
 
   

@@ -18,16 +18,10 @@ class CueSheet < Element
 
   xml_name "CueSheet"
 
-      
       xml_accessor :cue_sheet_ids, :as => [DDEX::ERN::V37::ProprietaryId], :from => "CueSheetId", :required => false
-
       xml_accessor :cue_sheet_reference, :from => "CueSheetReference", :required => true
-
       xml_accessor :cue_sheet_type, :as => DDEX::ERN::V37::CueSheetType, :from => "CueSheetType", :required => true
-
-      
       xml_accessor :cues, :as => [DDEX::ERN::V37::Cue], :from => "Cue", :required => true
-
 
 
   

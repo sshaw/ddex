@@ -17,13 +17,9 @@ class ResourceContainedResourceReference < Element
   xml_name "ResourceContainedResourceReference"
 
       xml_accessor :resource_contained_resource_reference, :from => "ResourceContainedResourceReference", :required => true
-
       xml_accessor :duration_used, :from => "DurationUsed", :required => false
-
       xml_accessor :start_point, :as => Float, :from => "StartPoint", :required => false
-
       xml_accessor :purpose, :as => DDEX::ERN::V37::Purpose, :from => "Purpose", :required => false
-
 
 
   

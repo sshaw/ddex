@@ -29,50 +29,24 @@ class Cue < Element
   xml_name "Cue"
 
       xml_accessor :cue_use_type, :as => DDEX::ERN::V37::CueUseType, :from => "CueUseType", :required => false
-
       xml_accessor :cue_theme_type, :as => DDEX::ERN::V37::CueThemeType, :from => "CueThemeType", :required => false
-
       xml_accessor :cue_vocal_type, :as => DDEX::ERN::V37::CueVocalType, :from => "CueVocalType", :required => false
-
       xml_accessor :dance?, :from => "IsDance", :required => false
-
       xml_accessor :cue_visual_perception_type, :as => DDEX::ERN::V37::CueVisualPerceptionType, :from => "CueVisualPerceptionType", :required => false
-
       xml_accessor :cue_origin, :as => DDEX::ERN::V37::CueOrigin, :from => "CueOrigin", :required => false
-
       xml_accessor :referenced_creation_type, :from => "ReferencedCreationType", :required => false
-
       xml_accessor :referenced_creation_id, :as => DDEX::ERN::V37::CreationId, :from => "ReferencedCreationId", :required => false
-
-      
       xml_accessor :referenced_creation_titles, :as => [DDEX::ERN::V37::Title], :from => "ReferencedCreationTitle", :required => false
-
-      
       xml_accessor :referenced_creation_contributors, :as => [DDEX::ERN::V37::DetailedResourceContributor], :from => "ReferencedCreationContributor", :required => false
-
-      
       xml_accessor :referenced_indirect_creation_contributors, :as => [DDEX::ERN::V37::MusicalWorkContributor], :from => "ReferencedIndirectCreationContributor", :required => false
-
-      
       xml_accessor :referenced_creation_characters, :as => [DDEX::ERN::V37::Character], :from => "ReferencedCreationCharacter", :required => false
-
-      
       xml_accessor :cue_creation_references, :as => [DDEX::ERN::V37::CueCreationReference], :from => "CueCreationReference", :required => false
-
-      xml_accessor :has_musical_content, :from => "HasMusicalContent", :required => false
-
+      xml_accessor :has_musical_content?, :from => "HasMusicalContent", :required => false
       xml_accessor :start_time, :from => "StartTime", :required => false
-
       xml_accessor :duration, :from => "Duration", :required => false
-
       xml_accessor :end_time, :from => "EndTime", :required => false
-
-      
       xml_accessor :p_lines, :as => [DDEX::ERN::V37::PLine], :from => "PLine", :required => false
-
-      
       xml_accessor :c_lines, :as => [DDEX::ERN::V37::CLine], :from => "CLine", :required => false
-
 
 
   

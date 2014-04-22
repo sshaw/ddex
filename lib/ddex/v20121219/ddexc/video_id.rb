@@ -9,7 +9,7 @@ require "ddex/element"
 require "ddex/v20121219/ddexc/catalog_number"
 require "ddex/v20121219/ddexc/proprietary_id"
 
-module DDEX module V20121219 module DDEXC # :nodoc: all
+module DDEX module V20121219 module DDEXC  # :nodoc: all
 
 class VideoId < Element
   include ROXML
@@ -18,22 +18,17 @@ class VideoId < Element
   xml_name "VideoId"
 
       xml_accessor :isrc, :from => "ISRC", :required => false
-
       xml_accessor :isan, :from => "ISAN", :required => false
-
       xml_accessor :visan, :from => "VISAN", :required => false
-
       xml_accessor :catalog_number, :as => DDEX::V20121219::DDEXC::CatalogNumber, :from => "CatalogNumber", :required => false
-
-      
       xml_accessor :proprietary_ids, :as => [DDEX::V20121219::DDEXC::ProprietaryId], :from => "ProprietaryId", :required => false
-
 
 
   
       xml_accessor :replaced?, :from => "@IsReplaced", :required => false
     
   
+
 end
 
 end end end

@@ -20,17 +20,11 @@ class PriceInformation < Element
   xml_name "PriceInformation"
 
       xml_accessor :description, :as => DDEX::ERN::V37::Description, :from => "Description", :required => false
-
       xml_accessor :price_range_type, :as => DDEX::ERN::V37::PriceRangeType, :from => "PriceRangeType", :required => false
-
       xml_accessor :price_type, :as => DDEX::ERN::V37::PriceType, :from => "PriceType", :required => false
-
       xml_accessor :wholesale_price_per_unit, :as => DDEX::ERN::V37::Price, :from => "WholesalePricePerUnit", :required => false
-
       xml_accessor :bulk_order_wholesale_price_per_unit, :as => DDEX::ERN::V37::Price, :from => "BulkOrderWholesalePricePerUnit", :required => false
-
       xml_accessor :suggested_retail_price, :as => DDEX::ERN::V37::Price, :from => "SuggestedRetailPrice", :required => false
-
 
 
   

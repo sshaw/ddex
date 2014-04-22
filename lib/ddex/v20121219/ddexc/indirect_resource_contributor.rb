@@ -10,7 +10,7 @@ require "ddex/v20121219/ddexc/musical_work_contributor_role"
 require "ddex/v20121219/ddexc/party_id"
 require "ddex/v20121219/ddexc/party_name"
 
-module DDEX module V20121219 module DDEXC # :nodoc: all
+module DDEX module V20121219 module DDEXC  # :nodoc: all
 
 class IndirectResourceContributor < Element
   include ROXML
@@ -18,21 +18,17 @@ class IndirectResourceContributor < Element
 
   xml_name "IndirectResourceContributor"
 
-      
       xml_accessor :party_names, :as => [DDEX::V20121219::DDEXC::PartyName], :from => "PartyName", :required => false
-
       xml_accessor :party_id, :as => DDEX::V20121219::DDEXC::PartyId, :from => "PartyId", :required => false
-
-      
       xml_accessor :indirect_resource_contributor_roles, :as => [DDEX::V20121219::DDEXC::MusicalWorkContributorRole], :from => "IndirectResourceContributorRole", :required => false
 
 
-
   
 
-      xml_accessor :sequence_number, :as => Fixnum, :from => "@SequenceNumber", :required => false
+      xml_accessor :sequence_number, :as => Integer, :from => "@SequenceNumber", :required => false
     
   
+
 end
 
 end end end

@@ -7,7 +7,7 @@ require "roxml"
 require "ddex/element"
 
 
-module DDEX module V20121219 module DDEXC # :nodoc: all
+module DDEX module V20121219 module DDEXC  # :nodoc: all
 
 class SamplingRate < Element
   include ROXML
@@ -22,6 +22,7 @@ class SamplingRate < Element
       xml_accessor :unit_of_measure, :from => "@UnitOfMeasure", :required => false
     
   
+
 end
 
 end end end

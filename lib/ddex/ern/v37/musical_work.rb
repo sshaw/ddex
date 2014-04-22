@@ -22,28 +22,14 @@ class MusicalWork < Element
 
   xml_name "MusicalWork"
 
-      
       xml_accessor :musical_work_ids, :as => [DDEX::ERN::V37::MusicalWorkId], :from => "MusicalWorkId", :required => true
-
       xml_accessor :musical_work_reference, :from => "MusicalWorkReference", :required => true
-
-      
       xml_accessor :reference_titles, :as => [DDEX::ERN::V37::ReferenceTitle], :from => "ReferenceTitle", :required => true
-
       xml_accessor :rights_agreement_id, :as => DDEX::ERN::V37::RightsAgreementId, :from => "RightsAgreementId", :required => false
-
-      
       xml_accessor :musical_work_contributors, :as => [DDEX::ERN::V37::MusicalWorkContributor], :from => "MusicalWorkContributor", :required => true
-
-      
       xml_accessor :musical_work_types, :as => [DDEX::ERN::V37::MusicalWorkType], :from => "MusicalWorkType", :required => false
-
-      
       xml_accessor :right_shares, :as => [DDEX::ERN::V37::RightShare], :from => "RightShare", :required => false
-
-      
       xml_accessor :musical_work_details_by_territories, :as => [DDEX::ERN::V37::MusicalWorkDetailsByTerritory], :from => "MusicalWorkDetailsByTerritory", :required => false
-
 
 
   

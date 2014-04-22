@@ -18,20 +18,12 @@ class WebPage < Element
 
   xml_name "WebPage"
 
-      
       xml_accessor :party_ids, :as => [DDEX::ERN::V37::PartyId], :from => "PartyId", :required => false
-
-      
       xml_accessor :release_ids, :as => [DDEX::ERN::V37::ReleaseId], :from => "ReleaseId", :required => false
-
       xml_accessor :page_name, :as => DDEX::ERN::V37::Name, :from => "PageName", :required => false
-
       xml_accessor :url, :from => "URL", :required => false
-
       xml_accessor :user_name, :from => "UserName", :required => false
-
       xml_accessor :password, :from => "Password", :required => false
-
 
 
   

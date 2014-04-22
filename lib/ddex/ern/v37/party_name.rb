@@ -17,19 +17,12 @@ class PartyName < Element
   xml_name "PartyName"
 
       xml_accessor :full_name, :as => DDEX::ERN::V37::Name, :from => "FullName", :required => true
-
       xml_accessor :full_name_ascii_transcribed, :from => "FullNameAsciiTranscribed", :required => false
-
       xml_accessor :full_name_indexed, :as => DDEX::ERN::V37::Name, :from => "FullNameIndexed", :required => false
-
       xml_accessor :names_before_key_name, :as => DDEX::ERN::V37::Name, :from => "NamesBeforeKeyName", :required => false
-
       xml_accessor :key_name, :as => DDEX::ERN::V37::Name, :from => "KeyName", :required => false
-
       xml_accessor :names_after_key_name, :as => DDEX::ERN::V37::Name, :from => "NamesAfterKeyName", :required => false
-
       xml_accessor :abbreviated_name, :as => DDEX::ERN::V37::Name, :from => "AbbreviatedName", :required => false
-
 
 
   

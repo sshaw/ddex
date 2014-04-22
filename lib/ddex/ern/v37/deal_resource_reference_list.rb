@@ -16,11 +16,8 @@ class DealResourceReferenceList < Element
 
   xml_name "DealResourceReferenceList"
 
-      
       xml_accessor :deal_resource_references, :as => [], :from => "DealResourceReference", :required => false
-
       xml_accessor :period, :as => DDEX::ERN::V37::Period, :from => "Period", :required => true
-
 
 
   

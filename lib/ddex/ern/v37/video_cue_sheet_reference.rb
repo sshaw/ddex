@@ -18,7 +18,6 @@ class VideoCueSheetReference < Element
       xml_accessor :video_cue_sheet_reference, :from => "VideoCueSheetReference", :required => true
 
 
-
   
 
 end

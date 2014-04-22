@@ -25,35 +25,17 @@ class CatalogItem < Element
 
   xml_name "CatalogItem"
 
-      
       xml_accessor :territory_codes, :as => [DDEX::ERN::V37::AllTerritoryCode], :from => "TerritoryCode", :required => true
-
-      
       xml_accessor :release_ids, :as => [DDEX::ERN::V37::ReleaseId], :from => "ReleaseId", :required => true
-
       xml_accessor :title, :as => DDEX::ERN::V37::Title, :from => "Title", :required => true
-
       xml_accessor :display_artist_name, :as => DDEX::ERN::V37::Name, :from => "DisplayArtistName", :required => true
-
-      
       xml_accessor :contributor_names, :as => [DDEX::ERN::V37::Name], :from => "ContributorName", :required => true
-
       xml_accessor :display_title, :as => DDEX::ERN::V37::ReferenceTitle, :from => "DisplayTitle", :required => true
-
-      
       xml_accessor :label_names, :as => [DDEX::ERN::V37::LabelName], :from => "LabelName", :required => true
-
-      
       xml_accessor :genres, :as => [DDEX::ERN::V37::Genre], :from => "Genre", :required => false
-
-      
       xml_accessor :p_lines, :as => [DDEX::ERN::V37::PLine], :from => "PLine", :required => false
-
-      
       xml_accessor :c_lines, :as => [DDEX::ERN::V37::CLine], :from => "CLine", :required => false
-
       xml_accessor :release_date, :as => DDEX::ERN::V37::EventDate, :from => "ReleaseDate", :required => true
-
 
 
   

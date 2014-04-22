@@ -18,13 +18,9 @@ class MessagingParty < Element
 
   xml_name "MessagingParty"
 
-      
       xml_accessor :party_ids, :as => [DDEX::ERN::V37::PartyId], :from => "PartyId", :required => true
-
       xml_accessor :party_name, :as => DDEX::ERN::V37::PartyName, :from => "PartyName", :required => false
-
       xml_accessor :trading_name, :as => DDEX::ERN::V37::Name, :from => "TradingName", :required => false
-
 
 
   

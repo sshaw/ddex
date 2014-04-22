@@ -152,10 +152,10 @@
                     <StartDateTime IsApproximate="true" IsBefore="false" IsAfter="false" TerritoryCode="US" LocationDescription="pJnzXkzUZ" LanguageAndScriptCode="es_MX">2015-06-08T16:38:18</StartDateTime>
                     <EndDateTime IsApproximate="false" IsBefore="false" IsAfter="true" TerritoryCode="MX" LocationDescription="cdg" LanguageAndScriptCode="es_MX">2016-02-12T16:38:18</EndDateTime>
                 </ValidityPeriod>
-                <RightShareUnknown>1</RightShareUnknown>
+                <RightShareUnknown>true</RightShareUnknown>
                 <TariffReference LanguageAndScriptCode="es_MX" TariffSubReference="jT">py</TariffReference>
                 <LicenseStatus>Pending</LicenseStatus>
-                <HasFirstLicenseRefusal>1</HasFirstLicenseRefusal>
+                <HasFirstLicenseRefusal>true</HasFirstLicenseRefusal>
             </RightShare>
             <MusicalWorkDetailsByTerritory LanguageAndScriptCode="es_MX">
                 <ExcludedTerritoryCode IdentifierType="TIS">US</ExcludedTerritoryCode>
@@ -241,7 +241,7 @@
             <IsRemastered>true</IsRemastered>
             <NoSilenceBefore>true</NoSilenceBefore>
             <NoSilenceAfter>false</NoSilenceAfter>
-            <PerformerInformationRequired>0</PerformerInformationRequired>
+            <PerformerInformationRequired>false</PerformerInformationRequired>
             <LanguageOfPerformance>ne</LanguageOfPerformance>
             <Duration>P3Y2M5DT1H10M0S</Duration>
             <RightsAgreementId>
@@ -511,8 +511,8 @@
             <IsBonusResource>false</IsBonusResource>
             <IsComputerGenerated>false</IsComputerGenerated>
             <NoSilenceBefore>false</NoSilenceBefore>
-            <NoSilenceAfter>0</NoSilenceAfter>
-            <PerformerInformationRequired>1</PerformerInformationRequired>
+            <NoSilenceAfter>false</NoSilenceAfter>
+            <PerformerInformationRequired>true</PerformerInformationRequired>
             <LanguageOfPerformance>ts</LanguageOfPerformance>
             <Duration>P9Y1M6DT1H10M0S</Duration>
             <RightsAgreementId>
@@ -714,7 +714,7 @@
                 <TechnicalMidiDetails LanguageAndScriptCode="en_US">
                     <TechnicalResourceDetailsReference>Tj-R2</TechnicalResourceDetailsReference>
                     <Duration>P1Y4M2DT1H10M0S</Duration>
-                    <ResourceProcessingRequired>0</ResourceProcessingRequired>
+                    <ResourceProcessingRequired>false</ResourceProcessingRequired>
                     <UsableResourceDuration>P4Y2M7DT1H10M0S</UsableResourceDuration>
                     <IsPreview>false</IsPreview>
                     <PreviewDetails>
@@ -788,7 +788,7 @@
             <IsBonusResource>false</IsBonusResource>
             <HasPreOrderFulfillment>true</HasPreOrderFulfillment>
             <IsRemastered>true</IsRemastered>
-            <NoSilenceBefore>1</NoSilenceBefore>
+            <NoSilenceBefore>true</NoSilenceBefore>
             <NoSilenceAfter>false</NoSilenceAfter>
             <PerformerInformationRequired>false</PerformerInformationRequired>
             <LanguageOfPerformance>id</LanguageOfPerformance>
@@ -934,7 +934,7 @@
                     </PartyName>
                     <PartyId Namespace="vRHHhYEJumqRMhBVtHAxI.X-xH" IsDPID="true" IsISNI="true">HyqgSkA.7o65L4IYikH</PartyId>
                     <RightsControllerRole>AdministratingRecordCompany</RightsControllerRole>
-                    <RightShareUnknown>1</RightShareUnknown>
+                    <RightShareUnknown>true</RightShareUnknown>
 
                     <RightsControllerType>ExclusiveLicensee</RightsControllerType>
                     <TerritoryOfRegistration IdentifierType="TIS">616</TerritoryOfRegistration>
@@ -2684,7 +2684,7 @@
                         <ReleaseDescription LanguageAndScriptCode="es_MX">aAMiQ4fHSCH_</ReleaseDescription>
                     </RelatedReleaseOfferSet>
                     <PhysicalReturns>
-                        <PhysicalReturnsAllowed>1</PhysicalReturnsAllowed>
+                        <PhysicalReturnsAllowed>true</PhysicalReturnsAllowed>
                         <LatestDateForPhysicalReturns>2015-01-02</LatestDateForPhysicalReturns>
                     </PhysicalReturns>
                     <NumberOfProductsPerCarton>1483250626</NumberOfProductsPerCarton>
@@ -2705,8 +2705,8 @@
                         <AccessLimitation>PrivateAccessOnly</AccessLimitation>
                         <EmbeddingAllowed>false</EmbeddingAllowed>
                         <UserRatingAllowed>true</UserRatingAllowed>
-                        <UserCommentAllowed>0</UserCommentAllowed>
-                        <UserResponsesAllowed>1</UserResponsesAllowed>
+                        <UserCommentAllowed>false</UserCommentAllowed>
+                        <UserResponsesAllowed>true</UserResponsesAllowed>
                         <SyndicationAllowed>true</SyndicationAllowed>
                     </WebPolicy>
                 </DealTerms>

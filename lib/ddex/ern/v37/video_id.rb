@@ -18,16 +18,10 @@ class VideoId < Element
   xml_name "VideoId"
 
       xml_accessor :isrc, :from => "ISRC", :required => false
-
       xml_accessor :isan, :from => "ISAN", :required => false
-
       xml_accessor :visan, :from => "VISAN", :required => false
-
       xml_accessor :catalog_number, :as => DDEX::ERN::V37::CatalogNumber, :from => "CatalogNumber", :required => false
-
-      
       xml_accessor :proprietary_ids, :as => [DDEX::ERN::V37::ProprietaryId], :from => "ProprietaryId", :required => false
-
 
 
   

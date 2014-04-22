@@ -7,7 +7,7 @@ require "roxml"
 require "ddex/element"
 
 
-module DDEX module V20121219 module DDEXC # :nodoc: all
+module DDEX module V20121219 module DDEXC  # :nodoc: all
 
 class ConsumerRentalPeriod < Element
   include ROXML
@@ -22,6 +22,7 @@ class ConsumerRentalPeriod < Element
       xml_accessor :extensible?, :from => "@IsExtensible", :required => false
     
   
+
 end
 
 end end end

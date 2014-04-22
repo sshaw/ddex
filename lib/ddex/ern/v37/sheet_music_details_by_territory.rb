@@ -27,44 +27,20 @@ class SheetMusicDetailsByTerritory < Element
 
   xml_name "SheetMusicDetailsByTerritory"
 
-      
       xml_accessor :excluded_territory_codes, :as => [DDEX::ERN::V37::CurrentTerritoryCode], :from => "ExcludedTerritoryCode", :required => false
-
-      
       xml_accessor :territory_codes, :as => [DDEX::ERN::V37::CurrentTerritoryCode], :from => "TerritoryCode", :required => false
-
-      
       xml_accessor :titles, :as => [DDEX::ERN::V37::Title], :from => "Title", :required => false
-
-      
       xml_accessor :resource_contributors, :as => [DDEX::ERN::V37::DetailedResourceContributor], :from => "ResourceContributor", :required => false
-
-      
       xml_accessor :indirect_resource_contributors, :as => [DDEX::ERN::V37::IndirectResourceContributor], :from => "IndirectResourceContributor", :required => false
-
-      
       xml_accessor :display_artist_names, :as => [DDEX::ERN::V37::Name], :from => "DisplayArtistName", :required => false
-
-      
       xml_accessor :c_lines, :as => [DDEX::ERN::V37::CLine], :from => "CLine", :required => false
-
       xml_accessor :courtesy_line, :as => DDEX::ERN::V37::CourtesyLine, :from => "CourtesyLine", :required => false
-
       xml_accessor :resource_release_date, :as => DDEX::ERN::V37::EventDate, :from => "ResourceReleaseDate", :required => false
-
       xml_accessor :original_resource_release_date, :as => DDEX::ERN::V37::EventDate, :from => "OriginalResourceReleaseDate", :required => false
-
       xml_accessor :fulfillment_date, :as => DDEX::ERN::V37::FulfillmentDate, :from => "FulfillmentDate", :required => false
-
-      
       xml_accessor :genres, :as => [DDEX::ERN::V37::Genre], :from => "Genre", :required => false
-
-      
       xml_accessor :parental_warning_types, :as => [DDEX::ERN::V37::ParentalWarningType], :from => "ParentalWarningType", :required => false
-
-      
       xml_accessor :technical_sheet_music_details, :as => [DDEX::ERN::V37::TechnicalSheetMusicDetails], :from => "TechnicalSheetMusicDetails", :required => false
-
 
 
   

@@ -7,7 +7,7 @@ require "roxml"
 require "ddex/element"
 
 
-module DDEX module V20121219 module DDEXC # :nodoc: all
+module DDEX module V20121219 module DDEXC  # :nodoc: all
 
 class ProprietaryId < Element
   include ROXML
@@ -22,6 +22,7 @@ class ProprietaryId < Element
       xml_accessor :namespace, :from => "@Namespace", :required => true
     
   
+
 end
 
 end end end

@@ -16,9 +16,7 @@ class MessageAuditTrail < Element
 
   xml_name "MessageAuditTrail"
 
-      
       xml_accessor :message_audit_trail_events, :as => [DDEX::ERN::V37::MessageAuditTrailEvent], :from => "MessageAuditTrailEvent", :required => true
-
 
 
   

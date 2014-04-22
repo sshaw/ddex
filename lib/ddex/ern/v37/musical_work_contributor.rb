@@ -19,23 +19,15 @@ class MusicalWorkContributor < Element
 
   xml_name "MusicalWorkContributor"
 
-      
       xml_accessor :party_names, :as => [DDEX::ERN::V37::PartyName], :from => "PartyName", :required => false
-
-      
       xml_accessor :party_ids, :as => [DDEX::ERN::V37::PartyId], :from => "PartyId", :required => false
-
-      
       xml_accessor :musical_work_contributor_roles, :as => [DDEX::ERN::V37::MusicalWorkContributorRole], :from => "MusicalWorkContributorRole", :required => false
-
-      
       xml_accessor :society_affiliations, :as => [DDEX::ERN::V37::SocietyAffiliation], :from => "SocietyAffiliation", :required => false
-
 
 
   
 
-      xml_accessor :sequence_number, :as => Fixnum, :from => "@SequenceNumber", :required => false
+      xml_accessor :sequence_number, :as => Integer, :from => "@SequenceNumber", :required => false
     
   
 

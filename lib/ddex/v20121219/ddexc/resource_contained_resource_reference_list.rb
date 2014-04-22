@@ -8,7 +8,7 @@ require "ddex/element"
 
 require "ddex/v20121219/ddexc/resource_contained_resource_reference"
 
-module DDEX module V20121219 module DDEXC # :nodoc: all
+module DDEX module V20121219 module DDEXC  # :nodoc: all
 
 class ResourceContainedResourceReferenceList < Element
   include ROXML
@@ -16,12 +16,11 @@ class ResourceContainedResourceReferenceList < Element
 
   xml_name "ResourceContainedResourceReferenceList"
 
-      
       xml_accessor :resource_contained_resource_references, :as => [DDEX::V20121219::DDEXC::ResourceContainedResourceReference], :from => "ResourceContainedResourceReference", :required => true
 
 
-
   
+
 end
 
 end end end

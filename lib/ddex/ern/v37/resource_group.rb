@@ -24,41 +24,19 @@ class ResourceGroup < Element
 
   xml_name "ResourceGroup"
 
-      
       xml_accessor :titles, :as => [DDEX::ERN::V37::Title], :from => "Title", :required => false
-
-      xml_accessor :sequence_number, :as => Fixnum, :from => "SequenceNumber", :required => false
-
-      
+      xml_accessor :sequence_number, :as => Integer, :from => "SequenceNumber", :required => false
       xml_accessor :display_artists, :as => [DDEX::ERN::V37::Artist], :from => "DisplayArtist", :required => false
-
-      
       xml_accessor :display_conductors, :as => [DDEX::ERN::V37::Artist], :from => "DisplayConductor", :required => false
-
-      
       xml_accessor :display_composers, :as => [DDEX::ERN::V37::Artist], :from => "DisplayComposer", :required => false
-
-      
       xml_accessor :resource_contributors, :as => [DDEX::ERN::V37::DetailedResourceContributor], :from => "ResourceContributor", :required => false
-
-      
       xml_accessor :indirect_resource_contributors, :as => [DDEX::ERN::V37::IndirectResourceContributor], :from => "IndirectResourceContributor", :required => false
-
-      
       xml_accessor :carrier_types, :as => [DDEX::ERN::V37::CarrierType], :from => "CarrierType", :required => false
-
-      
       xml_accessor :resource_groups, :as => [DDEX::ERN::V37::ResourceGroup], :from => "ResourceGroup", :required => false
-
       xml_accessor :resource_group_resource_reference_list, :as => DDEX::ERN::V37::ResourceGroupResourceReferenceList, :from => "ResourceGroupResourceReferenceList", :required => false
-
-      
       xml_accessor :resource_group_content_items, :as => [DDEX::ERN::V37::ExtendedResourceGroupContentItem], :from => "ResourceGroupContentItem", :required => false
-
       xml_accessor :release_id, :as => DDEX::ERN::V37::ReleaseId, :from => "ReleaseId", :required => false
-
       xml_accessor :resource_group_release_reference, :from => "ResourceGroupReleaseReference", :required => false
-
 
 
   

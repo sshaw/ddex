@@ -22,27 +22,14 @@ class TechnicalUserDefinedResourceDetails < Element
   xml_name "TechnicalUserDefinedResourceDetails"
 
       xml_accessor :technical_resource_details_reference, :from => "TechnicalResourceDetailsReference", :required => true
-
-      
       xml_accessor :user_defined_values, :as => [DDEX::ERN::V37::UserDefinedValue], :from => "UserDefinedValue", :required => false
-
       xml_accessor :preview?, :from => "IsPreview", :required => false
-
       xml_accessor :preview_details, :as => DDEX::ERN::V37::PreviewDetails, :from => "PreviewDetails", :required => false
-
       xml_accessor :fulfillment_date, :as => DDEX::ERN::V37::FulfillmentDate, :from => "FulfillmentDate", :required => false
-
       xml_accessor :consumer_fulfillment_date, :as => DDEX::ERN::V37::FulfillmentDate, :from => "ConsumerFulfillmentDate", :required => false
-
-      
       xml_accessor :files, :as => [DDEX::ERN::V37::File], :from => "File", :required => false
-
-      
       xml_accessor :file_availability_descriptions, :as => [DDEX::ERN::V37::Description], :from => "FileAvailabilityDescription", :required => false
-
-      
       xml_accessor :fingerprints, :as => [DDEX::ERN::V37::Fingerprint], :from => "Fingerprint", :required => false
-
 
 
   

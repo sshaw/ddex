@@ -7,14 +7,13 @@ require "roxml"
 require "ddex/element"
 
 require "ddex/v20121219/ddexc/event_date"
-require "ddex/v20121219/ddexc/event_date"
 require "ddex/v20121219/ddexc/reference_title"
 require "ddex/v20121219/ddexc/release_id"
 require "ddex/v20121219/ddexc/release_relationship_type"
 require "ddex/v20121219/ddexc/release_summary_details_by_territory"
 require "ddex/v20121219/ddexc/rights_agreement_id"
 
-module DDEX module V20121219 module DDEXC # :nodoc: all
+module DDEX module V20121219 module DDEXC  # :nodoc: all
 
 class RelatedRelease < Element
   include ROXML
@@ -22,28 +21,20 @@ class RelatedRelease < Element
 
   xml_name "RelatedRelease"
 
-      
       xml_accessor :release_ids, :as => [DDEX::V20121219::DDEXC::ReleaseId], :from => "ReleaseId", :required => true
-
       xml_accessor :reference_title, :as => DDEX::V20121219::DDEXC::ReferenceTitle, :from => "ReferenceTitle", :required => false
-
-      
       xml_accessor :release_summary_details_by_territories, :as => [DDEX::V20121219::DDEXC::ReleaseSummaryDetailsByTerritory], :from => "ReleaseSummaryDetailsByTerritory", :required => false
-
       xml_accessor :rights_agreement_id, :as => DDEX::V20121219::DDEXC::RightsAgreementId, :from => "RightsAgreementId", :required => false
-
       xml_accessor :release_relationship_type, :as => DDEX::V20121219::DDEXC::ReleaseRelationshipType, :from => "ReleaseRelationshipType", :required => true
-
       xml_accessor :release_date, :as => DDEX::V20121219::DDEXC::EventDate, :from => "ReleaseDate", :required => false
-
       xml_accessor :original_release_date, :as => DDEX::V20121219::DDEXC::EventDate, :from => "OriginalReleaseDate", :required => false
-
 
 
   
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
+
 end
 
 end end end

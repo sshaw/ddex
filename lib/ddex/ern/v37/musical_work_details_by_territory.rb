@@ -18,18 +18,10 @@ class MusicalWorkDetailsByTerritory < Element
 
   xml_name "MusicalWorkDetailsByTerritory"
 
-      
       xml_accessor :excluded_territory_codes, :as => [DDEX::ERN::V37::CurrentTerritoryCode], :from => "ExcludedTerritoryCode", :required => false
-
-      
       xml_accessor :territory_codes, :as => [DDEX::ERN::V37::CurrentTerritoryCode], :from => "TerritoryCode", :required => false
-
-      
       xml_accessor :musical_work_contributors, :as => [DDEX::ERN::V37::MusicalWorkContributor], :from => "MusicalWorkContributor", :required => true
-
-      
       xml_accessor :display_artist_names, :as => [DDEX::ERN::V37::Name], :from => "DisplayArtistName", :required => false
-
 
 
   

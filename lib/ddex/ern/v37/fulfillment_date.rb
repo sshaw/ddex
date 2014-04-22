@@ -16,10 +16,7 @@ class FulfillmentDate < Element
   xml_name "FulfillmentDate"
 
       xml_accessor :fulfillment_date, :from => "FulfillmentDate", :required => true
-
-      
       xml_accessor :resource_release_references, :as => [], :from => "ResourceReleaseReference", :required => false
-
 
 
   

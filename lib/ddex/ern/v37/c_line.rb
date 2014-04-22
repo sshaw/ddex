@@ -15,12 +15,9 @@ class CLine < Element
 
   xml_name "CLine"
 
-      xml_accessor :year, :as => Fixnum, :from => "Year", :required => false
-
+      xml_accessor :year, :as => Integer, :from => "Year", :required => false
       xml_accessor :c_line_company, :from => "CLineCompany", :required => false
-
       xml_accessor :c_line_text, :from => "CLineText", :required => true
-
 
 
   

@@ -19,12 +19,8 @@ class CatalogListMessage < Element
   xml_name "CatalogListMessage"
 
       xml_accessor :message_header, :as => DDEX::ERN::V37::MessageHeader, :from => "MessageHeader", :required => true
-
       xml_accessor :publication_date, :as => DateTime, :from => "PublicationDate", :required => true
-
-      
       xml_accessor :catalog_items, :as => [DDEX::ERN::V37::CatalogItem], :from => "CatalogItem", :required => true
-
 
 
   

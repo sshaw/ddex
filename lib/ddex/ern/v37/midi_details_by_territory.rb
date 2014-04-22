@@ -35,69 +35,30 @@ class MidiDetailsByTerritory < Element
 
   xml_name "MidiDetailsByTerritory"
 
-      
       xml_accessor :excluded_territory_codes, :as => [DDEX::ERN::V37::CurrentTerritoryCode], :from => "ExcludedTerritoryCode", :required => false
-
-      
       xml_accessor :territory_codes, :as => [DDEX::ERN::V37::CurrentTerritoryCode], :from => "TerritoryCode", :required => false
-
-      
       xml_accessor :titles, :as => [DDEX::ERN::V37::Title], :from => "Title", :required => false
-
-      
       xml_accessor :display_artists, :as => [DDEX::ERN::V37::Artist], :from => "DisplayArtist", :required => false
-
-      
       xml_accessor :resource_contributors, :as => [DDEX::ERN::V37::DetailedResourceContributor], :from => "ResourceContributor", :required => false
-
-      
       xml_accessor :indirect_resource_contributors, :as => [DDEX::ERN::V37::IndirectResourceContributor], :from => "IndirectResourceContributor", :required => false
-
       xml_accessor :rights_agreement_id, :as => DDEX::ERN::V37::RightsAgreementId, :from => "RightsAgreementId", :required => false
-
-      
       xml_accessor :display_artist_names, :as => [DDEX::ERN::V37::Name], :from => "DisplayArtistName", :required => false
-
-      
       xml_accessor :label_names, :as => [DDEX::ERN::V37::LabelName], :from => "LabelName", :required => false
-
-      
       xml_accessor :rights_controllers, :as => [DDEX::ERN::V37::TypedRightsController], :from => "RightsController", :required => false
-
       xml_accessor :remastered_date, :as => DDEX::ERN::V37::EventDate, :from => "RemasteredDate", :required => false
-
       xml_accessor :resource_release_date, :as => DDEX::ERN::V37::EventDate, :from => "ResourceReleaseDate", :required => false
-
       xml_accessor :original_resource_release_date, :as => DDEX::ERN::V37::EventDate, :from => "OriginalResourceReleaseDate", :required => false
-
-      
       xml_accessor :c_lines, :as => [DDEX::ERN::V37::CLine], :from => "CLine", :required => false
-
       xml_accessor :courtesy_line, :as => DDEX::ERN::V37::CourtesyLine, :from => "CourtesyLine", :required => false
-
       xml_accessor :sequence_number, :from => "SequenceNumber", :required => false
-
-      
       xml_accessor :host_sound_carriers, :as => [DDEX::ERN::V37::HostSoundCarrier], :from => "HostSoundCarrier", :required => false
-
       xml_accessor :marketing_comment, :as => DDEX::ERN::V37::Comment, :from => "MarketingComment", :required => false
-
-      
       xml_accessor :genres, :as => [DDEX::ERN::V37::Genre], :from => "Genre", :required => false
-
-      
       xml_accessor :parental_warning_types, :as => [DDEX::ERN::V37::ParentalWarningType], :from => "ParentalWarningType", :required => false
-
       xml_accessor :fulfillment_date, :as => DDEX::ERN::V37::FulfillmentDate, :from => "FulfillmentDate", :required => false
-
-      
       xml_accessor :keywords, :as => [DDEX::ERN::V37::Keywords], :from => "Keywords", :required => false
-
       xml_accessor :synopsis, :as => DDEX::ERN::V37::Synopsis, :from => "Synopsis", :required => false
-
-      
       xml_accessor :technical_midi_details, :as => [DDEX::ERN::V37::TechnicalMidiDetails], :from => "TechnicalMidiDetails", :required => false
-
 
 
   

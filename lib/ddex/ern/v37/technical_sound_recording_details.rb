@@ -26,44 +26,23 @@ class TechnicalSoundRecordingDetails < Element
   xml_name "TechnicalSoundRecordingDetails"
 
       xml_accessor :technical_resource_details_reference, :from => "TechnicalResourceDetailsReference", :required => true
-
       xml_accessor :drm_platform_type, :as => DDEX::ERN::V37::DrmPlatformType, :from => "DrmPlatformType", :required => false
-
       xml_accessor :container_format, :as => DDEX::ERN::V37::ContainerFormat, :from => "ContainerFormat", :required => false
-
       xml_accessor :audio_codec_type, :as => DDEX::ERN::V37::AudioCodecType, :from => "AudioCodecType", :required => false
-
       xml_accessor :bit_rate, :as => DDEX::ERN::V37::BitRate, :from => "BitRate", :required => false
-
-      xml_accessor :number_of_channels, :as => Fixnum, :from => "NumberOfChannels", :required => false
-
+      xml_accessor :number_of_channels, :as => Integer, :from => "NumberOfChannels", :required => false
       xml_accessor :sampling_rate, :as => DDEX::ERN::V37::SamplingRate, :from => "SamplingRate", :required => false
-
-      xml_accessor :bits_per_sample, :as => Fixnum, :from => "BitsPerSample", :required => false
-
+      xml_accessor :bits_per_sample, :as => Integer, :from => "BitsPerSample", :required => false
       xml_accessor :duration, :from => "Duration", :required => false
-
-      xml_accessor :resource_processing_required, :from => "ResourceProcessingRequired", :required => false
-
+      xml_accessor :resource_processing_required?, :from => "ResourceProcessingRequired", :required => false
       xml_accessor :usable_resource_duration, :from => "UsableResourceDuration", :required => false
-
       xml_accessor :preview?, :from => "IsPreview", :required => false
-
       xml_accessor :preview_details, :as => DDEX::ERN::V37::SoundRecordingPreviewDetails, :from => "PreviewDetails", :required => false
-
       xml_accessor :fulfillment_date, :as => DDEX::ERN::V37::FulfillmentDate, :from => "FulfillmentDate", :required => false
-
       xml_accessor :consumer_fulfillment_date, :as => DDEX::ERN::V37::FulfillmentDate, :from => "ConsumerFulfillmentDate", :required => false
-
-      
       xml_accessor :files, :as => [DDEX::ERN::V37::File], :from => "File", :required => false
-
-      
       xml_accessor :file_availability_descriptions, :as => [DDEX::ERN::V37::Description], :from => "FileAvailabilityDescription", :required => false
-
-      
       xml_accessor :fingerprints, :as => [DDEX::ERN::V37::Fingerprint], :from => "Fingerprint", :required => false
-
 
 
   

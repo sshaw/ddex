@@ -18,10 +18,7 @@ class Title < Element
   xml_name "Title"
 
       xml_accessor :title_text, :as => DDEX::ERN::V37::TitleText, :from => "TitleText", :required => true
-
-      
       xml_accessor :sub_titles, :as => [DDEX::ERN::V37::TypedSubTitle], :from => "SubTitle", :required => false
-
 
 
   

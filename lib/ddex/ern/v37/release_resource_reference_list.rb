@@ -16,9 +16,7 @@ class ReleaseResourceReferenceList < Element
 
   xml_name "ReleaseResourceReferenceList"
 
-      
       xml_accessor :release_resource_references, :as => [DDEX::ERN::V37::ReleaseResourceReference], :from => "ReleaseResourceReference", :required => true
-
 
 
   

@@ -12,7 +12,7 @@ require "ddex/ern/v35/resource_usage"
 require "ddex/v20120719/ddexc/deal_reference"
 require "ddex/v20120719/ddexc/web_page"
 
-module DDEX module ERN module V35 # :nodoc: all
+module DDEX module ERN module V35  # :nodoc: all
 
 class Deal < Element
   include ROXML
@@ -20,24 +20,18 @@ class Deal < Element
 
   xml_name "Deal"
 
-      
       xml_accessor :deal_references, :as => [DDEX::V20120719::DDEXC::DealReference], :from => "DealReference", :required => false
-
       xml_accessor :deal_terms, :as => DDEX::ERN::V35::DealTerms, :from => "DealTerms", :required => false
-
       xml_accessor :resource_usage, :as => DDEX::ERN::V35::ResourceUsage, :from => "ResourceUsage", :required => false
-
       xml_accessor :deal_technical_resource_details_reference_list, :as => DDEX::ERN::V35::DealTechnicalResourceDetailsReferenceList, :from => "DealTechnicalResourceDetailsReferenceList", :required => false
-
-      
       xml_accessor :distribution_channel_pages, :as => [DDEX::V20120719::DDEXC::WebPage], :from => "DistributionChannelPage", :required => false
-
 
 
   
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
+
 end
 
 end end end

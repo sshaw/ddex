@@ -19,20 +19,11 @@ class ReleaseSummaryDetailsByTerritory < Element
 
   xml_name "ReleaseSummaryDetailsByTerritory"
 
-      
       xml_accessor :excluded_territory_codes, :as => [DDEX::ERN::V37::CurrentTerritoryCode], :from => "ExcludedTerritoryCode", :required => false
-
-      
       xml_accessor :territory_codes, :as => [DDEX::ERN::V37::CurrentTerritoryCode], :from => "TerritoryCode", :required => false
-
-      
       xml_accessor :display_artist_names, :as => [DDEX::ERN::V37::Name], :from => "DisplayArtistName", :required => false
-
-      
       xml_accessor :label_names, :as => [DDEX::ERN::V37::LabelName], :from => "LabelName", :required => false
-
       xml_accessor :rights_agreement_id, :as => DDEX::ERN::V37::RightsAgreementId, :from => "RightsAgreementId", :required => false
-
 
 
   

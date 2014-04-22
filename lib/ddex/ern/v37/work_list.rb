@@ -16,9 +16,7 @@ class WorkList < Element
 
   xml_name "WorkList"
 
-      
       xml_accessor :musical_works, :as => [DDEX::ERN::V37::MusicalWork], :from => "MusicalWork", :required => true
-
 
 
   

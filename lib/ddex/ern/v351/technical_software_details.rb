@@ -12,10 +12,9 @@ require "ddex/v20121219/ddexc/drm_platform_type"
 require "ddex/v20121219/ddexc/file"
 require "ddex/v20121219/ddexc/fingerprint"
 require "ddex/v20121219/ddexc/fulfillment_date"
-require "ddex/v20121219/ddexc/fulfillment_date"
 require "ddex/v20121219/ddexc/operating_system_type"
 
-module DDEX module ERN module V351 # :nodoc: all
+module DDEX module ERN module V351  # :nodoc: all
 
 class TechnicalSoftwareDetails < Element
   include ROXML
@@ -24,34 +23,22 @@ class TechnicalSoftwareDetails < Element
   xml_name "TechnicalSoftwareDetails"
 
       xml_accessor :technical_resource_details_reference, :from => "TechnicalResourceDetailsReference", :required => true
-
       xml_accessor :drm_platform_type, :as => DDEX::V20121219::DDEXC::DrmPlatformType, :from => "DrmPlatformType", :required => false
-
       xml_accessor :operating_system_type, :as => DDEX::V20121219::DDEXC::OperatingSystemType, :from => "OperatingSystemType", :required => false
-
       xml_accessor :preview?, :from => "IsPreview", :required => false
-
       xml_accessor :preview_details, :as => DDEX::ERN::V351::PreviewDetails, :from => "PreviewDetails", :required => false
-
       xml_accessor :fulfillment_date, :as => DDEX::V20121219::DDEXC::FulfillmentDate, :from => "FulfillmentDate", :required => false
-
       xml_accessor :consumer_fulfillment_date, :as => DDEX::V20121219::DDEXC::FulfillmentDate, :from => "ConsumerFulfillmentDate", :required => false
-
-      
       xml_accessor :files, :as => [DDEX::V20121219::DDEXC::File], :from => "File", :required => false
-
-      
       xml_accessor :file_availability_descriptions, :as => [DDEX::V20121219::DDEXC::Description], :from => "FileAvailabilityDescription", :required => false
-
-      
       xml_accessor :fingerprints, :as => [DDEX::V20121219::DDEXC::Fingerprint], :from => "Fingerprint", :required => false
-
 
 
   
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
+
 end
 
 end end end

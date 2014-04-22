@@ -24,29 +24,15 @@ class Software < Element
   xml_name "Software"
 
       xml_accessor :software_type, :as => DDEX::ERN::V37::SoftwareType, :from => "SoftwareType", :required => false
-
       xml_accessor :artist_related?, :from => "IsArtistRelated", :required => false
-
-      
       xml_accessor :software_ids, :as => [DDEX::ERN::V37::ResourceProprietaryId], :from => "SoftwareId", :required => true
-
-      
       xml_accessor :indirect_software_ids, :as => [DDEX::ERN::V37::MusicalWorkId], :from => "IndirectSoftwareId", :required => false
-
       xml_accessor :resource_reference, :from => "ResourceReference", :required => true
-
       xml_accessor :resource_musical_work_reference_list, :as => DDEX::ERN::V37::ResourceMusicalWorkReferenceList, :from => "ResourceMusicalWorkReferenceList", :required => false
-
       xml_accessor :resource_contained_resource_reference_list, :as => DDEX::ERN::V37::ResourceContainedResourceReferenceList, :from => "ResourceContainedResourceReferenceList", :required => false
-
-      
       xml_accessor :titles, :as => [DDEX::ERN::V37::Title], :from => "Title", :required => false
-
       xml_accessor :creation_date, :as => DDEX::ERN::V37::EventDate, :from => "CreationDate", :required => false
-
-      
       xml_accessor :software_details_by_territories, :as => [DDEX::ERN::V37::SoftwareDetailsByTerritory], :from => "SoftwareDetailsByTerritory", :required => true
-
 
 
   

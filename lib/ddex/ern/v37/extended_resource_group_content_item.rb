@@ -19,32 +19,18 @@ class ExtendedResourceGroupContentItem < Element
 
   xml_name "ExtendedResourceGroupContentItem"
 
-      xml_accessor :sequence_number, :as => Fixnum, :from => "SequenceNumber", :required => false
-
-      xml_accessor :sequence_sub_number, :as => Fixnum, :from => "SequenceSubNumber", :required => false
-
-      
+      xml_accessor :sequence_number, :as => Integer, :from => "SequenceNumber", :required => false
+      xml_accessor :sequence_sub_number, :as => Integer, :from => "SequenceSubNumber", :required => false
       xml_accessor :resource_types, :as => [DDEX::ERN::V37::ResourceType], :from => "ResourceType", :required => false
-
       xml_accessor :release_resource_reference, :as => DDEX::ERN::V37::ReleaseResourceReference, :from => "ReleaseResourceReference", :required => true
-
-      
       xml_accessor :linked_release_resource_references, :as => [DDEX::ERN::V37::LinkedReleaseResourceReference], :from => "LinkedReleaseResourceReference", :required => false
-
       xml_accessor :release_id, :as => DDEX::ERN::V37::ReleaseId, :from => "ReleaseId", :required => false
-
       xml_accessor :resource_group_content_item_release_reference, :from => "ResourceGroupContentItemReleaseReference", :required => false
-
       xml_accessor :duration, :from => "Duration", :required => false
-
       xml_accessor :hidden_resource?, :from => "IsHiddenResource", :required => false
-
       xml_accessor :bonus_resource?, :from => "IsBonusResource", :required => false
-
       xml_accessor :instant_gratification_resource?, :from => "IsInstantGratificationResource", :required => false
-
       xml_accessor :pre_order_incentive_resource?, :from => "IsPreOrderIncentiveResource", :required => false
-
 
 
   

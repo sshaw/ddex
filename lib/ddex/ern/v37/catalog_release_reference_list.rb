@@ -15,9 +15,7 @@ class CatalogReleaseReferenceList < Element
 
   xml_name "CatalogReleaseReferenceList"
 
-      
       xml_accessor :catalog_release_references, :as => [], :from => "CatalogReleaseReference", :required => false
-
 
 
   

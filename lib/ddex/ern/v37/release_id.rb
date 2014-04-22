@@ -19,16 +19,10 @@ class ReleaseId < Element
   xml_name "ReleaseId"
 
       xml_accessor :g_rid, :from => "GRid", :required => false
-
       xml_accessor :isrc, :from => "ISRC", :required => false
-
       xml_accessor :icpn, :as => DDEX::ERN::V37::ICPN, :from => "ICPN", :required => false
-
       xml_accessor :catalog_number, :as => DDEX::ERN::V37::CatalogNumber, :from => "CatalogNumber", :required => false
-
-      
       xml_accessor :proprietary_ids, :as => [DDEX::ERN::V37::ProprietaryId], :from => "ProprietaryId", :required => false
-
 
 
   

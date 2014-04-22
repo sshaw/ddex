@@ -145,7 +145,7 @@
                     <StartDate>2011-11-21</StartDate>
                     <EndDate>2011-11-21</EndDate>
                 </ValidityPeriod>
-                <RightShareUnknown>0</RightShareUnknown>
+                <RightShareUnknown>false</RightShareUnknown>
                 <TariffReference LanguageAndScriptCode="es_MX" TariffSubReference="ulyyFgNq">UmKaWBUhJhWvgmQL96BEePR1-V6O</TariffReference>
                 <LicenseStatus>Revoked</LicenseStatus>
                 <HasFirstLicenseRefusal>false</HasFirstLicenseRefusal>
@@ -236,8 +236,8 @@
             <IsComputerGenerated>true</IsComputerGenerated>
             <IsRemastered>false</IsRemastered>
             <NoSilenceBefore>false</NoSilenceBefore>
-            <NoSilenceAfter>0</NoSilenceAfter>
-            <PerformerInformationRequired>0</PerformerInformationRequired>
+            <NoSilenceAfter>false</NoSilenceAfter>
+            <PerformerInformationRequired>false</PerformerInformationRequired>
             <LanguageOfPerformance>sg</LanguageOfPerformance>
             <Duration>P6Y6M3DT1H10M0S</Duration>
             <RightsAgreementId>
@@ -508,9 +508,9 @@
             <IsHiddenResource>false</IsHiddenResource>
             <IsBonusResource>true</IsBonusResource>
             <IsComputerGenerated>true</IsComputerGenerated>
-            <NoSilenceBefore>0</NoSilenceBefore>
-            <NoSilenceAfter>1</NoSilenceAfter>
-            <PerformerInformationRequired>0</PerformerInformationRequired>
+            <NoSilenceBefore>false</NoSilenceBefore>
+            <NoSilenceAfter>true</NoSilenceAfter>
+            <PerformerInformationRequired>false</PerformerInformationRequired>
             <LanguageOfPerformance>mt</LanguageOfPerformance>
             <Duration>P0Y6M8DT1H10M0S</Duration>
             <RightsAgreementId>
@@ -771,9 +771,9 @@
             <IsHiddenResource>true</IsHiddenResource>
             <IsBonusResource>false</IsBonusResource>
             <IsRemastered>true</IsRemastered>
-            <NoSilenceBefore>0</NoSilenceBefore>
+            <NoSilenceBefore>false</NoSilenceBefore>
             <NoSilenceAfter>false</NoSilenceAfter>
-            <PerformerInformationRequired>1</PerformerInformationRequired>
+            <PerformerInformationRequired>true</PerformerInformationRequired>
             <LanguageOfPerformance>ms</LanguageOfPerformance>
             <Duration>P7Y9M2DT1H10M0S</Duration>
             <RightsAgreementId>

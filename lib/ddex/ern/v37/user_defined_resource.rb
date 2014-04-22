@@ -25,32 +25,16 @@ class UserDefinedResource < Element
   xml_name "UserDefinedResource"
 
       xml_accessor :user_defined_resource_type, :as => DDEX::ERN::V37::UserDefinedResourceType, :from => "UserDefinedResourceType", :required => false
-
       xml_accessor :artist_related?, :from => "IsArtistRelated", :required => false
-
-      
       xml_accessor :user_defined_resource_ids, :as => [DDEX::ERN::V37::ResourceProprietaryId], :from => "UserDefinedResourceId", :required => true
-
-      
       xml_accessor :indirect_user_defined_resource_ids, :as => [DDEX::ERN::V37::MusicalWorkId], :from => "IndirectUserDefinedResourceId", :required => false
-
       xml_accessor :resource_reference, :from => "ResourceReference", :required => true
-
       xml_accessor :resource_musical_work_reference_list, :as => DDEX::ERN::V37::ResourceMusicalWorkReferenceList, :from => "ResourceMusicalWorkReferenceList", :required => false
-
       xml_accessor :resource_contained_resource_reference_list, :as => DDEX::ERN::V37::ResourceContainedResourceReferenceList, :from => "ResourceContainedResourceReferenceList", :required => false
-
-      
       xml_accessor :titles, :as => [DDEX::ERN::V37::Title], :from => "Title", :required => false
-
-      
       xml_accessor :user_defined_values, :as => [DDEX::ERN::V37::UserDefinedValue], :from => "UserDefinedValue", :required => false
-
       xml_accessor :creation_date, :as => DDEX::ERN::V37::EventDate, :from => "CreationDate", :required => false
-
-      
       xml_accessor :user_defined_resource_details_by_territories, :as => [DDEX::ERN::V37::UserDefinedResourceDetailsByTerritory], :from => "UserDefinedResourceDetailsByTerritory", :required => true
-
 
 
   

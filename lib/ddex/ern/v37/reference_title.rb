@@ -18,9 +18,7 @@ class ReferenceTitle < Element
   xml_name "ReferenceTitle"
 
       xml_accessor :title_text, :as => DDEX::ERN::V37::TitleText, :from => "TitleText", :required => true
-
       xml_accessor :sub_title, :as => DDEX::ERN::V37::SubTitle, :from => "SubTitle", :required => false
-
 
 
   

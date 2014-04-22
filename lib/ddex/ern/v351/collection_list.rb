@@ -8,7 +8,7 @@ require "ddex/element"
 
 require "ddex/ern/v351/collection"
 
-module DDEX module ERN module V351 # :nodoc: all
+module DDEX module ERN module V351  # :nodoc: all
 
 class CollectionList < Element
   include ROXML
@@ -16,15 +16,14 @@ class CollectionList < Element
 
   xml_name "CollectionList"
 
-      
       xml_accessor :collections, :as => [DDEX::ERN::V351::Collection], :from => "Collection", :required => true
-
 
 
   
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
+
 end
 
 end end end

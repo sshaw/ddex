@@ -17,9 +17,7 @@ class Genre < Element
   xml_name "Genre"
 
       xml_accessor :genre_text, :as => DDEX::ERN::V37::Description, :from => "GenreText", :required => true
-
       xml_accessor :sub_genre, :as => DDEX::ERN::V37::Description, :from => "SubGenre", :required => false
-
 
 
   

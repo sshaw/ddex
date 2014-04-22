@@ -27,56 +27,30 @@ class DetailedResourceContributor < Element
 
   xml_name "DetailedResourceContributor"
 
-      
       xml_accessor :party_names, :as => [DDEX::ERN::V37::PartyName], :from => "PartyName", :required => false
-
-      
       xml_accessor :party_ids, :as => [DDEX::ERN::V37::PartyId], :from => "PartyId", :required => false
-
-      
       xml_accessor :resource_contributor_roles, :as => [DDEX::ERN::V37::ResourceContributorRole], :from => "ResourceContributorRole", :required => false
-
       xml_accessor :featured_artist?, :from => "IsFeaturedArtist", :required => false
-
       xml_accessor :contracted_artist?, :from => "IsContractedArtist", :required => false
-
-      
       xml_accessor :instrument_types, :as => [], :from => "InstrumentType", :required => false
-
       xml_accessor :artist_delegated_usage_rights, :as => DDEX::ERN::V37::ArtistDelegatedUsageRights, :from => "ArtistDelegatedUsageRights", :required => false
-
       xml_accessor :sex, :from => "Sex", :required => false
-
       xml_accessor :date_and_place_of_birth, :as => DDEX::ERN::V37::EventDate, :from => "DateAndPlaceOfBirth", :required => false
-
       xml_accessor :date_and_place_of_death, :as => DDEX::ERN::V37::EventDate, :from => "DateAndPlaceOfDeath", :required => false
-
       xml_accessor :primary_role, :as => DDEX::ERN::V37::ArtistRole, :from => "PrimaryRole", :required => false
-
       xml_accessor :primary_instrument_type, :from => "PrimaryInstrumentType", :required => false
-
       xml_accessor :governing_agreement_type, :as => DDEX::ERN::V37::GoverningAgreementType, :from => "GoverningAgreementType", :required => false
-
       xml_accessor :contact_information, :as => DDEX::ERN::V37::ContactId, :from => "ContactInformation", :required => false
-
       xml_accessor :territory_of_residency, :as => DDEX::ERN::V37::AllTerritoryCode, :from => "TerritoryOfResidency", :required => false
-
       xml_accessor :citizenship, :as => DDEX::ERN::V37::CurrentTerritoryCode, :from => "Citizenship", :required => false
-
-      
       xml_accessor :additional_roles, :as => [DDEX::ERN::V37::ArtistRole], :from => "AdditionalRoles", :required => false
-
-      
       xml_accessor :genres, :as => [DDEX::ERN::V37::Genre], :from => "Genre", :required => false
-
-      
       xml_accessor :memberships, :as => [DDEX::ERN::V37::Membership], :from => "Membership", :required => false
-
 
 
   
 
-      xml_accessor :sequence_number, :as => Fixnum, :from => "@SequenceNumber", :required => false
+      xml_accessor :sequence_number, :as => Integer, :from => "@SequenceNumber", :required => false
     
   
 

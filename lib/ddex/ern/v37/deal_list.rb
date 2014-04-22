@@ -16,9 +16,7 @@ class DealList < Element
 
   xml_name "DealList"
 
-      
       xml_accessor :release_deals, :as => [DDEX::ERN::V37::ReleaseDeal], :from => "ReleaseDeal", :required => false
-
 
 
   

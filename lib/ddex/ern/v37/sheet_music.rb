@@ -25,32 +25,17 @@ class SheetMusic < Element
   xml_name "SheetMusic"
 
       xml_accessor :sheet_music_type, :as => DDEX::ERN::V37::SheetMusicType, :from => "SheetMusicType", :required => false
-
       xml_accessor :artist_related?, :from => "IsArtistRelated", :required => false
-
-      
       xml_accessor :sheet_music_ids, :as => [DDEX::ERN::V37::SheetMusicId], :from => "SheetMusicId", :required => true
-
-      
       xml_accessor :indirect_sheet_music_ids, :as => [DDEX::ERN::V37::MusicalWorkId], :from => "IndirectSheetMusicId", :required => false
-
       xml_accessor :resource_reference, :from => "ResourceReference", :required => true
-
       xml_accessor :language_of_lyrics, :from => "LanguageOfLyrics", :required => false
-
       xml_accessor :rights_agreement_id, :as => DDEX::ERN::V37::RightsAgreementId, :from => "RightsAgreementId", :required => false
-
       xml_accessor :resource_musical_work_reference_list, :as => DDEX::ERN::V37::ResourceMusicalWorkReferenceList, :from => "ResourceMusicalWorkReferenceList", :required => false
-
       xml_accessor :resource_contained_resource_reference_list, :as => DDEX::ERN::V37::ResourceContainedResourceReferenceList, :from => "ResourceContainedResourceReferenceList", :required => false
-
       xml_accessor :reference_title, :as => DDEX::ERN::V37::ReferenceTitle, :from => "ReferenceTitle", :required => true
-
       xml_accessor :creation_date, :as => DDEX::ERN::V37::EventDate, :from => "CreationDate", :required => false
-
-      
       xml_accessor :sheet_music_details_by_territories, :as => [DDEX::ERN::V37::SheetMusicDetailsByTerritory], :from => "SheetMusicDetailsByTerritory", :required => true
-
 
 
   

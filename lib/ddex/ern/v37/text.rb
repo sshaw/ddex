@@ -24,29 +24,15 @@ class Text < Element
   xml_name "Text"
 
       xml_accessor :text_type, :as => DDEX::ERN::V37::TextType, :from => "TextType", :required => false
-
       xml_accessor :artist_related?, :from => "IsArtistRelated", :required => false
-
-      
       xml_accessor :text_ids, :as => [DDEX::ERN::V37::TextId], :from => "TextId", :required => false
-
-      
       xml_accessor :indirect_text_ids, :as => [DDEX::ERN::V37::MusicalWorkId], :from => "IndirectTextId", :required => false
-
       xml_accessor :resource_reference, :from => "ResourceReference", :required => true
-
       xml_accessor :resource_musical_work_reference_list, :as => DDEX::ERN::V37::ResourceMusicalWorkReferenceList, :from => "ResourceMusicalWorkReferenceList", :required => false
-
       xml_accessor :resource_contained_resource_reference_list, :as => DDEX::ERN::V37::ResourceContainedResourceReferenceList, :from => "ResourceContainedResourceReferenceList", :required => false
-
-      
       xml_accessor :titles, :as => [DDEX::ERN::V37::Title], :from => "Title", :required => false
-
       xml_accessor :creation_date, :as => DDEX::ERN::V37::EventDate, :from => "CreationDate", :required => false
-
-      
       xml_accessor :text_details_by_territories, :as => [DDEX::ERN::V37::TextDetailsByTerritory], :from => "TextDetailsByTerritory", :required => true
-
 
 
   

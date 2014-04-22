@@ -16,11 +16,8 @@ class CollectionCollectionReferenceList < Element
 
   xml_name "CollectionCollectionReferenceList"
 
-      xml_accessor :number_of_collections, :as => Fixnum, :from => "NumberOfCollections", :required => false
-
-      
+      xml_accessor :number_of_collections, :as => Integer, :from => "NumberOfCollections", :required => false
       xml_accessor :collection_collection_references, :as => [DDEX::ERN::V37::CollectionCollectionReference], :from => "CollectionCollectionReference", :required => true
-
 
 
   

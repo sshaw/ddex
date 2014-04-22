@@ -17,13 +17,9 @@ class TechnicalInstantiation < Element
   xml_name "TechnicalInstantiation"
 
       xml_accessor :drm_enforcement_type, :from => "DrmEnforcementType", :required => false
-
       xml_accessor :video_definition_type, :from => "VideoDefinitionType", :required => false
-
       xml_accessor :coding_type, :from => "CodingType", :required => false
-
       xml_accessor :bit_rate, :as => DDEX::ERN::V37::BitRate, :from => "BitRate", :required => false
-
 
 
   

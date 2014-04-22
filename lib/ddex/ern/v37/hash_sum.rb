@@ -17,11 +17,8 @@ class HashSum < Element
   xml_name "HashSum"
 
       xml_accessor :hash_sum, :from => "HashSum", :required => true
-
       xml_accessor :hash_sum_algorithm_type, :as => DDEX::ERN::V37::HashSumAlgorithmType, :from => "HashSumAlgorithmType", :required => true
-
       xml_accessor :hash_sum_data_type, :from => "HashSumDataType", :required => false
-
 
 
   

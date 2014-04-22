@@ -10,7 +10,7 @@ require "ddex/v20120719/ddexc/label_name"
 require "ddex/v20120719/ddexc/name"
 require "ddex/v20120719/ddexc/rights_agreement_id"
 
-module DDEX module V20120719 module DDEXC # :nodoc: all
+module DDEX module V20120719 module DDEXC  # :nodoc: all
 
 class ReleaseSummaryDetailsByTerritory < Element
   include ROXML
@@ -18,26 +18,18 @@ class ReleaseSummaryDetailsByTerritory < Element
 
   xml_name "ReleaseSummaryDetailsByTerritory"
 
-      
       xml_accessor :excluded_territory_codes, :as => [], :from => "ExcludedTerritoryCode", :required => false
-
-      
       xml_accessor :territory_codes, :as => [], :from => "TerritoryCode", :required => false
-
-      
       xml_accessor :display_artist_names, :as => [DDEX::V20120719::DDEXC::Name], :from => "DisplayArtistName", :required => false
-
-      
       xml_accessor :label_names, :as => [DDEX::V20120719::DDEXC::LabelName], :from => "LabelName", :required => false
-
       xml_accessor :rights_agreement_id, :as => DDEX::V20120719::DDEXC::RightsAgreementId, :from => "RightsAgreementId", :required => false
-
 
 
   
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
+
 end
 
 end end end

@@ -17,13 +17,9 @@ class Membership < Element
   xml_name "Membership"
 
       xml_accessor :organization, :as => DDEX::ERN::V37::PartyDescriptor, :from => "Organization", :required => true
-
       xml_accessor :membership_type, :from => "MembershipType", :required => true
-
       xml_accessor :start_date, :from => "StartDate", :required => false
-
       xml_accessor :end_date, :from => "EndDate", :required => false
-
 
 
   

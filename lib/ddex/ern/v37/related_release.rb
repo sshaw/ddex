@@ -21,22 +21,13 @@ class RelatedRelease < Element
 
   xml_name "RelatedRelease"
 
-      
       xml_accessor :release_ids, :as => [DDEX::ERN::V37::ReleaseId], :from => "ReleaseId", :required => true
-
       xml_accessor :reference_title, :as => DDEX::ERN::V37::ReferenceTitle, :from => "ReferenceTitle", :required => false
-
-      
       xml_accessor :release_summary_details_by_territories, :as => [DDEX::ERN::V37::ReleaseSummaryDetailsByTerritory], :from => "ReleaseSummaryDetailsByTerritory", :required => false
-
       xml_accessor :rights_agreement_id, :as => DDEX::ERN::V37::RightsAgreementId, :from => "RightsAgreementId", :required => false
-
       xml_accessor :release_relationship_type, :as => DDEX::ERN::V37::ReleaseRelationshipType, :from => "ReleaseRelationshipType", :required => true
-
       xml_accessor :release_date, :as => DDEX::ERN::V37::EventDate, :from => "ReleaseDate", :required => false
-
       xml_accessor :original_release_date, :as => DDEX::ERN::V37::EventDate, :from => "OriginalReleaseDate", :required => false
-
 
 
   

@@ -25,25 +25,15 @@ class NewReleaseMessage < Element
   xml_name "NewReleaseMessage"
 
       xml_accessor :message_header, :as => DDEX::ERN::V37::MessageHeader, :from => "MessageHeader", :required => true
-
       xml_accessor :update_indicator, :from => "UpdateIndicator", :required => false
-
       xml_accessor :backfill?, :from => "IsBackfill", :required => false
-
       xml_accessor :catalog_transfer, :as => DDEX::ERN::V37::CatalogTransfer, :from => "CatalogTransfer", :required => false
-
       xml_accessor :work_list, :as => DDEX::ERN::V37::WorkList, :from => "WorkList", :required => false
-
       xml_accessor :cue_sheet_list, :as => DDEX::ERN::V37::CueSheetList, :from => "CueSheetList", :required => false
-
       xml_accessor :resource_list, :as => DDEX::ERN::V37::ResourceList, :from => "ResourceList", :required => true
-
       xml_accessor :collection_list, :as => DDEX::ERN::V37::CollectionList, :from => "CollectionList", :required => false
-
       xml_accessor :release_list, :as => DDEX::ERN::V37::ReleaseList, :from => "ReleaseList", :required => true
-
       xml_accessor :deal_list, :as => DDEX::ERN::V37::DealList, :from => "DealList", :required => false
-
 
 
   

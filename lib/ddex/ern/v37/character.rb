@@ -18,19 +18,14 @@ class Character < Element
 
   xml_name "Character"
 
-      
       xml_accessor :party_names, :as => [DDEX::ERN::V37::PartyName], :from => "PartyName", :required => false
-
-      
       xml_accessor :party_ids, :as => [DDEX::ERN::V37::PartyId], :from => "PartyId", :required => false
-
       xml_accessor :resource_contributor, :as => DDEX::ERN::V37::DetailedResourceContributor, :from => "ResourceContributor", :required => false
-
 
 
   
 
-      xml_accessor :sequence_number, :as => Fixnum, :from => "@SequenceNumber", :required => false
+      xml_accessor :sequence_number, :as => Integer, :from => "@SequenceNumber", :required => false
     
   
 

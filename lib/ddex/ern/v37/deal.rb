@@ -20,18 +20,11 @@ class Deal < Element
 
   xml_name "Deal"
 
-      
       xml_accessor :deal_references, :as => [DDEX::ERN::V37::DealReference], :from => "DealReference", :required => false
-
       xml_accessor :deal_terms, :as => DDEX::ERN::V37::DealTerms, :from => "DealTerms", :required => false
-
       xml_accessor :resource_usage, :as => DDEX::ERN::V37::ResourceUsage, :from => "ResourceUsage", :required => false
-
       xml_accessor :deal_technical_resource_details_reference_list, :as => DDEX::ERN::V37::DealTechnicalResourceDetailsReferenceList, :from => "DealTechnicalResourceDetailsReferenceList", :required => false
-
-      
       xml_accessor :distribution_channel_pages, :as => [DDEX::ERN::V37::WebPage], :from => "DistributionChannelPage", :required => false
-
 
 
   

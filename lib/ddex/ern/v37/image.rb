@@ -21,22 +21,12 @@ class Image < Element
   xml_name "Image"
 
       xml_accessor :image_type, :as => DDEX::ERN::V37::ImageType, :from => "ImageType", :required => false
-
       xml_accessor :artist_related?, :from => "IsArtistRelated", :required => false
-
-      
       xml_accessor :image_ids, :as => [DDEX::ERN::V37::ResourceProprietaryId], :from => "ImageId", :required => true
-
       xml_accessor :resource_reference, :from => "ResourceReference", :required => true
-
-      
       xml_accessor :titles, :as => [DDEX::ERN::V37::Title], :from => "Title", :required => false
-
       xml_accessor :creation_date, :as => DDEX::ERN::V37::EventDate, :from => "CreationDate", :required => false
-
-      
       xml_accessor :image_details_by_territories, :as => [DDEX::ERN::V37::ImageDetailsByTerritory], :from => "ImageDetailsByTerritory", :required => true
-
 
 
   

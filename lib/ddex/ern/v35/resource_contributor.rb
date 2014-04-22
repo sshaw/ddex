@@ -8,9 +8,7 @@ require "ddex/element"
 
 require "ddex/v20120719/ddexc/artist_delegated_usage_rights"
 require "ddex/v20120719/ddexc/artist_role"
-require "ddex/v20120719/ddexc/artist_role"
 require "ddex/v20120719/ddexc/contact_id"
-require "ddex/v20120719/ddexc/event_date"
 require "ddex/v20120719/ddexc/event_date"
 require "ddex/v20120719/ddexc/genre"
 require "ddex/v20120719/ddexc/governing_agreement_type"
@@ -19,7 +17,7 @@ require "ddex/v20120719/ddexc/party_id"
 require "ddex/v20120719/ddexc/party_name"
 require "ddex/v20120719/ddexc/resource_contributor_role"
 
-module DDEX module ERN module V35 # :nodoc: all
+module DDEX module ERN module V35  # :nodoc: all
 
 class ResourceContributor < Element
   include ROXML
@@ -27,58 +25,33 @@ class ResourceContributor < Element
 
   xml_name "ResourceContributor"
 
-      
       xml_accessor :party_names, :as => [DDEX::V20120719::DDEXC::PartyName], :from => "PartyName", :required => false
-
       xml_accessor :party_id, :as => DDEX::V20120719::DDEXC::PartyId, :from => "PartyId", :required => false
-
-      
       xml_accessor :resource_contributor_roles, :as => [DDEX::V20120719::DDEXC::ResourceContributorRole], :from => "ResourceContributorRole", :required => false
-
       xml_accessor :featured_artist?, :from => "IsFeaturedArtist", :required => false
-
       xml_accessor :contracted_artist?, :from => "IsContractedArtist", :required => false
-
-      
       xml_accessor :territory_of_performances, :as => [], :from => "TerritoryOfPerformance", :required => false
-
-      
       xml_accessor :instrument_types, :as => [], :from => "InstrumentType", :required => false
-
       xml_accessor :artist_delegated_usage_rights, :as => DDEX::V20120719::DDEXC::ArtistDelegatedUsageRights, :from => "ArtistDelegatedUsageRights", :required => false
-
       xml_accessor :sex, :from => "Sex", :required => false
-
       xml_accessor :date_and_place_of_birth, :as => DDEX::V20120719::DDEXC::EventDate, :from => "DateAndPlaceOfBirth", :required => false
-
       xml_accessor :date_and_place_of_death, :as => DDEX::V20120719::DDEXC::EventDate, :from => "DateAndPlaceOfDeath", :required => false
-
       xml_accessor :primary_role, :as => DDEX::V20120719::DDEXC::ArtistRole, :from => "PrimaryRole", :required => false
-
       xml_accessor :primary_instrument_type, :from => "PrimaryInstrumentType", :required => false
-
       xml_accessor :governing_agreement_type, :as => DDEX::V20120719::DDEXC::GoverningAgreementType, :from => "GoverningAgreementType", :required => false
-
       xml_accessor :contact_information, :as => DDEX::V20120719::DDEXC::ContactId, :from => "ContactInformation", :required => false
-
       xml_accessor :territory_of_residency, :from => "TerritoryOfResidency", :required => false
-
-      
       xml_accessor :additional_roles, :as => [DDEX::V20120719::DDEXC::ArtistRole], :from => "AdditionalRoles", :required => false
-
-      
       xml_accessor :genres, :as => [DDEX::V20120719::DDEXC::Genre], :from => "Genre", :required => false
-
-      
       xml_accessor :memberships, :as => [DDEX::V20120719::DDEXC::Membership], :from => "Membership", :required => false
 
 
-
   
 
-      xml_accessor :sequence_number, :as => Fixnum, :from => "@SequenceNumber", :required => false
+      xml_accessor :sequence_number, :as => Integer, :from => "@SequenceNumber", :required => false
     
   
+
 end
 
 end end end

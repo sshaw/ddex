@@ -9,7 +9,7 @@ require "ddex/element"
 require "ddex/v20121219/ddexc/license_or_claim_request_update_reason"
 require "ddex/v20121219/ddexc/proprietary_id"
 
-module DDEX module V20121219 module DDEXC # :nodoc: all
+module DDEX module V20121219 module DDEXC  # :nodoc: all
 
 class RelatedLicenseOrClaimRequestId < Element
   include ROXML
@@ -18,12 +18,11 @@ class RelatedLicenseOrClaimRequestId < Element
   xml_name "RelatedLicenseOrClaimRequestId"
 
       xml_accessor :license_or_claim_request_id, :as => DDEX::V20121219::DDEXC::ProprietaryId, :from => "LicenseOrClaimRequestId", :required => false
-
       xml_accessor :license_or_claim_request_update_reason, :as => DDEX::V20121219::DDEXC::LicenseOrClaimRequestUpdateReason, :from => "LicenseOrClaimRequestUpdateReason", :required => false
 
 
-
   
+
 end
 
 end end end

@@ -16,9 +16,7 @@ class ResourceProprietaryId < Element
 
   xml_name "ResourceProprietaryId"
 
-      
       xml_accessor :proprietary_ids, :as => [DDEX::ERN::V37::ProprietaryId], :from => "ProprietaryId", :required => true
-
 
 
   

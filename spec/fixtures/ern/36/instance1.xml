@@ -68,7 +68,7 @@
     <UpdateIndicator>UpdateMessage</UpdateIndicator>
     <IsBackfill>true</IsBackfill>
     <CatalogTransfer>
-        <CatalogTransferCompleted>0</CatalogTransferCompleted>
+        <CatalogTransferCompleted>false</CatalogTransferCompleted>
         <EffectiveTransferDate IsAfter="true" IsApproximate="false" IsBefore="true" LanguageAndScriptCode="es_MX" LocationDescription="Di" TerritoryCode="MX">2015-11-13</EffectiveTransferDate>
         <CatalogReleaseReferenceList>
             <CatalogReleaseReference>Rz_</CatalogReleaseReference>
@@ -149,7 +149,7 @@
                 <RightSharePercentage>GqsK</RightSharePercentage>
                 <TariffReference LanguageAndScriptCode="es_MX" TariffSubReference="TPH8">JEymHiXETh3</TariffReference>
                 <LicenseStatus>Active</LicenseStatus>
-                <HasFirstLicenseRefusal>0</HasFirstLicenseRefusal>
+                <HasFirstLicenseRefusal>false</HasFirstLicenseRefusal>
             </RightShare>
             <MusicalWorkDetailsByTerritory LanguageAndScriptCode="en_US">
                 <ExcludedTerritoryCode>LI</ExcludedTerritoryCode>
@@ -304,7 +304,7 @@
                         </Membership>
                     </ResourceContributor>
                 </ReferencedCreationCharacter>
-                <HasMusicalContent>1</HasMusicalContent>
+                <HasMusicalContent>true</HasMusicalContent>
                 <StartTime>P0Y5M6DT1H10M0S</StartTime>
                 <Duration>P8Y1M4DT1H10M0S</Duration>
                 <EndTime>P7Y6M3DT1H10M0S</EndTime>
@@ -348,11 +348,11 @@
             <IsBackground>false</IsBackground>
             <IsHiddenResource>true</IsHiddenResource>
             <IsBonusResource>false</IsBonusResource>
-            <HasPreOrderFulfillment>0</HasPreOrderFulfillment>
+            <HasPreOrderFulfillment>false</HasPreOrderFulfillment>
             <IsComputerGenerated>false</IsComputerGenerated>
             <IsRemastered>false</IsRemastered>
-            <NoSilenceBefore>0</NoSilenceBefore>
-            <NoSilenceAfter>0</NoSilenceAfter>
+            <NoSilenceBefore>false</NoSilenceBefore>
+            <NoSilenceAfter>false</NoSilenceAfter>
             <PerformerInformationRequired>false</PerformerInformationRequired>
             <LanguageOfPerformance>de</LanguageOfPerformance>
             <Duration>P3Y2M4DT1H10M0S</Duration>
@@ -476,7 +476,7 @@
                 <RightsController SequenceNumber="659288881">
                     <PartyId IsDPID="false" IsISNI="true" Namespace="u.eXcBHWP0fm3wicMDHWTuaCtk2kXd">r</PartyId>
                     <RightsControllerRole>AdministratingRecordCompany</RightsControllerRole>
-                    <RightShareUnknown>0</RightShareUnknown>
+                    <RightShareUnknown>false</RightShareUnknown>
                     <RightsControllerType>ExclusiveLicensee</RightsControllerType>
                     <TerritoryOfRegistration>MT</TerritoryOfRegistration>
                     <StartDate>2014-09-19</StartDate>
@@ -547,7 +547,7 @@
                     <SamplingRate UnitOfMeasure="GHz">1153673802.554</SamplingRate>
                     <BitsPerSample>-84019435</BitsPerSample>
                     <Duration>P5Y8M6DT1H10M0S</Duration>
-                    <ResourceProcessingRequired>1</ResourceProcessingRequired>
+                    <ResourceProcessingRequired>true</ResourceProcessingRequired>
                     <UsableResourceDuration>P8Y3M3DT1H10M0S</UsableResourceDuration>
                     <IsPreview>false</IsPreview>
                     <PreviewDetails>
@@ -613,9 +613,9 @@
             <IsHiddenResource>false</IsHiddenResource>
             <IsBonusResource>true</IsBonusResource>
             <IsComputerGenerated>false</IsComputerGenerated>
-            <NoSilenceBefore>1</NoSilenceBefore>
-            <NoSilenceAfter>0</NoSilenceAfter>
-            <PerformerInformationRequired>0</PerformerInformationRequired>
+            <NoSilenceBefore>true</NoSilenceBefore>
+            <NoSilenceAfter>false</NoSilenceAfter>
+            <PerformerInformationRequired>false</PerformerInformationRequired>
             <LanguageOfPerformance>li</LanguageOfPerformance>
             <Duration>P7Y7M0DT1H10M0S</Duration>
             <RightsAgreementId>
@@ -723,7 +723,7 @@
                     </PartyName>
                     <PartyId IsDPID="false" IsISNI="false" Namespace="Xit">wtxSJyD4Lhr8Ey0fTjkrL3u1AvdZ</PartyId>
                     <RightsControllerRole>RightsAdministrator</RightsControllerRole>
-                    <RightShareUnknown>0</RightShareUnknown>
+                    <RightShareUnknown>false</RightShareUnknown>
                     <RightsControllerType>SuccessorInTitle</RightsControllerType>
                     <TerritoryOfRegistration>GE</TerritoryOfRegistration>
                     <StartDate>2015-03-14</StartDate>
@@ -861,9 +861,9 @@
             <IsBonusResource>true</IsBonusResource>
             <HasPreOrderFulfillment>false</HasPreOrderFulfillment>
             <IsRemastered>false</IsRemastered>
-            <NoSilenceBefore>0</NoSilenceBefore>
-            <NoSilenceAfter>1</NoSilenceAfter>
-            <PerformerInformationRequired>1</PerformerInformationRequired>
+            <NoSilenceBefore>false</NoSilenceBefore>
+            <NoSilenceAfter>true</NoSilenceAfter>
+            <PerformerInformationRequired>true</PerformerInformationRequired>
             <LanguageOfPerformance>bs</LanguageOfPerformance>
             <LanguageOfDubbing>eo</LanguageOfDubbing>
             <SubTitleLanguage>ba</SubTitleLanguage>
@@ -1088,7 +1088,7 @@
                     <AudioSamplingRate UnitOfMeasure="MHz">96844293.844</AudioSamplingRate>
                     <AudioBitsPerSample>1461242035</AudioBitsPerSample>
                     <Duration>P8Y2M2DT1H10M0S</Duration>
-                    <ResourceProcessingRequired>1</ResourceProcessingRequired>
+                    <ResourceProcessingRequired>true</ResourceProcessingRequired>
                     <UsableResourceDuration>P7Y4M0DT1H10M0S</UsableResourceDuration>
                     <IsPreview>false</IsPreview>
                     <PreviewDetails>
@@ -2599,7 +2599,7 @@
                         <ReleaseDescription LanguageAndScriptCode="en_US">c-G_jQ</ReleaseDescription>
                     </RelatedReleaseOfferSet>
                     <PhysicalReturns>
-                        <PhysicalReturnsAllowed>1</PhysicalReturnsAllowed>
+                        <PhysicalReturnsAllowed>true</PhysicalReturnsAllowed>
                         <LatestDateForPhysicalReturns>2015-08-23</LatestDateForPhysicalReturns>
                     </PhysicalReturns>
                     <NumberOfProductsPerCarton>-1969156580</NumberOfProductsPerCarton>
@@ -2618,10 +2618,10 @@
                             <RelationalRelator>NotEqualTo</RelationalRelator>
                         </Condition>
                         <AccessLimitation>PrivateAccessOnly</AccessLimitation>
-                        <EmbeddingAllowed>1</EmbeddingAllowed>
+                        <EmbeddingAllowed>true</EmbeddingAllowed>
                         <UserRatingAllowed>false</UserRatingAllowed>
-                        <UserCommentAllowed>1</UserCommentAllowed>
-                        <UserResponsesAllowed>1</UserResponsesAllowed>
+                        <UserCommentAllowed>true</UserCommentAllowed>
+                        <UserResponsesAllowed>true</UserResponsesAllowed>
                         <SyndicationAllowed>true</SyndicationAllowed>
                     </WebPolicy>
                 </DealTerms>

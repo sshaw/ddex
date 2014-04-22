@@ -7,7 +7,7 @@ require "roxml"
 require "ddex/element"
 
 
-module DDEX module V20120719 module DDEXC # :nodoc: all
+module DDEX module V20120719 module DDEXC  # :nodoc: all
 
 class PriceConsumerPaidExcSalesTax < Element
   include ROXML
@@ -22,6 +22,7 @@ class PriceConsumerPaidExcSalesTax < Element
       xml_accessor :currency_code, :from => "@CurrencyCode", :required => false
     
   
+
 end
 
 end end end

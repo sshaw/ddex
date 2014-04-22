@@ -16,9 +16,7 @@ class CollectionList < Element
 
   xml_name "CollectionList"
 
-      
       xml_accessor :collections, :as => [DDEX::ERN::V37::Collection], :from => "Collection", :required => true
-
 
 
   

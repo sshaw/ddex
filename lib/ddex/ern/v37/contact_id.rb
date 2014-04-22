@@ -15,15 +15,9 @@ class ContactId < Element
 
   xml_name "ContactId"
 
-      
       xml_accessor :email_addresses, :as => [], :from => "EmailAddress", :required => false
-
-      
       xml_accessor :phone_numbers, :as => [], :from => "PhoneNumber", :required => false
-
-      
       xml_accessor :fax_numbers, :as => [], :from => "FaxNumber", :required => false
-
 
 
   

@@ -16,12 +16,8 @@ class ResourceUsage < Element
 
   xml_name "ResourceUsage"
 
-      
       xml_accessor :deal_resource_references, :as => [], :from => "DealResourceReference", :required => false
-
-      
       xml_accessor :usages, :as => [DDEX::ERN::V37::Usage], :from => "Usage", :required => true
-
 
 
   

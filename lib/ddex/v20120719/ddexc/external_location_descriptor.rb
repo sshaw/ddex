@@ -7,7 +7,7 @@ require "roxml"
 require "ddex/element"
 
 
-module DDEX module V20120719 module DDEXC # :nodoc: all
+module DDEX module V20120719 module DDEXC  # :nodoc: all
 
 class ExternalLocationDescriptor < Element
   include ROXML
@@ -22,6 +22,7 @@ class ExternalLocationDescriptor < Element
       xml_accessor :descriptor_syntax, :from => "@DescriptorSyntax", :required => false
     
   
+
 end
 
 end end end

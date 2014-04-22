@@ -14,7 +14,7 @@ require "ddex/v20120719/ddexc/reference_title"
 require "ddex/v20120719/ddexc/right_share"
 require "ddex/v20120719/ddexc/rights_agreement_id"
 
-module DDEX module V20120719 module DDEXC # :nodoc: all
+module DDEX module V20120719 module DDEXC  # :nodoc: all
 
 class MusicalWork < Element
   include ROXML
@@ -22,28 +22,14 @@ class MusicalWork < Element
 
   xml_name "MusicalWork"
 
-      
       xml_accessor :musical_work_ids, :as => [DDEX::V20120719::DDEXC::MusicalWorkId], :from => "MusicalWorkId", :required => true
-
       xml_accessor :musical_work_reference, :from => "MusicalWorkReference", :required => true
-
-      
       xml_accessor :reference_titles, :as => [DDEX::V20120719::DDEXC::ReferenceTitle], :from => "ReferenceTitle", :required => true
-
       xml_accessor :rights_agreement_id, :as => DDEX::V20120719::DDEXC::RightsAgreementId, :from => "RightsAgreementId", :required => false
-
-      
       xml_accessor :musical_work_contributors, :as => [DDEX::V20120719::DDEXC::MusicalWorkContributor], :from => "MusicalWorkContributor", :required => true
-
-      
       xml_accessor :musical_work_types, :as => [DDEX::V20120719::DDEXC::MusicalWorkType], :from => "MusicalWorkType", :required => false
-
-      
       xml_accessor :right_shares, :as => [DDEX::V20120719::DDEXC::RightShare], :from => "RightShare", :required => false
-
-      
       xml_accessor :musical_work_details_by_territories, :as => [DDEX::V20120719::DDEXC::MusicalWorkDetailsByTerritory], :from => "MusicalWorkDetailsByTerritory", :required => false
-
 
 
   
@@ -53,6 +39,7 @@ class MusicalWork < Element
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
+
 end
 
 end end end

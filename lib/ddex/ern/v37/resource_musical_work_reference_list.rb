@@ -16,9 +16,7 @@ class ResourceMusicalWorkReferenceList < Element
 
   xml_name "ResourceMusicalWorkReferenceList"
 
-      
       xml_accessor :resource_musical_work_references, :as => [DDEX::ERN::V37::ResourceMusicalWorkReference], :from => "ResourceMusicalWorkReference", :required => true
-
 
 
   

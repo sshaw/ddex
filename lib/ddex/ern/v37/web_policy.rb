@@ -17,21 +17,13 @@ class WebPolicy < Element
   xml_name "WebPolicy"
 
       xml_accessor :condition, :as => DDEX::ERN::V37::Condition, :from => "Condition", :required => true
-
       xml_accessor :access_limitation, :from => "AccessLimitation", :required => false
-
-      xml_accessor :embedding_allowed, :from => "EmbeddingAllowed", :required => false
-
-      xml_accessor :user_rating_allowed, :from => "UserRatingAllowed", :required => false
-
-      xml_accessor :user_comment_allowed, :from => "UserCommentAllowed", :required => false
-
-      xml_accessor :user_responses_allowed, :from => "UserResponsesAllowed", :required => false
-
-      xml_accessor :syndication_allowed, :from => "SyndicationAllowed", :required => false
-
-      xml_accessor :access_blocking_requested, :from => "AccessBlockingRequested", :required => false
-
+      xml_accessor :embedding_allowed?, :from => "EmbeddingAllowed", :required => false
+      xml_accessor :user_rating_allowed?, :from => "UserRatingAllowed", :required => false
+      xml_accessor :user_comment_allowed?, :from => "UserCommentAllowed", :required => false
+      xml_accessor :user_responses_allowed?, :from => "UserResponsesAllowed", :required => false
+      xml_accessor :syndication_allowed?, :from => "SyndicationAllowed", :required => false
+      xml_accessor :access_blocking_requested?, :from => "AccessBlockingRequested", :required => false
 
 
   

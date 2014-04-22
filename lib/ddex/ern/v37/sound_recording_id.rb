@@ -18,12 +18,8 @@ class SoundRecordingId < Element
   xml_name "SoundRecordingId"
 
       xml_accessor :isrc, :from => "ISRC", :required => false
-
       xml_accessor :catalog_number, :as => DDEX::ERN::V37::CatalogNumber, :from => "CatalogNumber", :required => false
-
-      
       xml_accessor :proprietary_ids, :as => [DDEX::ERN::V37::ProprietaryId], :from => "ProprietaryId", :required => false
-
 
 
   

@@ -16,11 +16,8 @@ class ReleaseCollectionReferenceList < Element
 
   xml_name "ReleaseCollectionReferenceList"
 
-      xml_accessor :number_of_collections, :as => Fixnum, :from => "NumberOfCollections", :required => false
-
-      
+      xml_accessor :number_of_collections, :as => Integer, :from => "NumberOfCollections", :required => false
       xml_accessor :release_collection_references, :as => [DDEX::ERN::V37::ReleaseCollectionReference], :from => "ReleaseCollectionReference", :required => true
-
 
 
   
