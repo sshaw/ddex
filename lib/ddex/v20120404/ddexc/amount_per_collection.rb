@@ -8,7 +8,7 @@ require "ddex/element"
 
 require "ddex/v20120404/ddexc/collection_type"
 
-module DDEX module V20120404 module DDEXC # :nodoc: all
+module DDEX module V20120404 module DDEXC  # :nodoc: all
 
 class AmountPerCollection < Element
   include ROXML
@@ -17,12 +17,11 @@ class AmountPerCollection < Element
   xml_name "AmountPerCollection"
 
       xml_accessor :amount, :as => Float, :from => "Amount", :required => true
-
       xml_accessor :collection_type, :as => DDEX::V20120404::DDEXC::CollectionType, :from => "CollectionType", :required => true
 
 
-
   
+
 end
 
 end end end

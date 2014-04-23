@@ -8,7 +8,7 @@ require "ddex/element"
 
 require "ddex/v20120404/ddexc/proprietary_id"
 
-module DDEX module V20120404 module DDEXC # :nodoc: all
+module DDEX module V20120404 module DDEXC  # :nodoc: all
 
 class UserDefinedResourceId < Element
   include ROXML
@@ -16,15 +16,14 @@ class UserDefinedResourceId < Element
 
   xml_name "UserDefinedResourceId"
 
-      
       xml_accessor :proprietary_ids, :as => [DDEX::V20120404::DDEXC::ProprietaryId], :from => "ProprietaryId", :required => true
-
 
 
   
       xml_accessor :replaced?, :from => "@IsReplaced", :required => false
     
   
+
 end
 
 end end end

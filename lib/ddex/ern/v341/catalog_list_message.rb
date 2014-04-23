@@ -9,7 +9,7 @@ require "ddex/element"
 require "ddex/ern/v341/catalog_item"
 require "ddex/v20120404/ddexc/message_header"
 
-module DDEX module ERN module V341 # :nodoc: all
+module DDEX module ERN module V341  # :nodoc: all
 
 class CatalogListMessage < Element
   include ROXML
@@ -19,12 +19,8 @@ class CatalogListMessage < Element
   xml_name "CatalogListMessage"
 
       xml_accessor :message_header, :as => DDEX::V20120404::DDEXC::MessageHeader, :from => "MessageHeader", :required => true
-
       xml_accessor :publication_date, :as => DateTime, :from => "PublicationDate", :required => true
-
-      
       xml_accessor :catalog_items, :as => [DDEX::ERN::V341::CatalogItem], :from => "CatalogItem", :required => true
-
 
 
   
@@ -40,6 +36,7 @@ class CatalogListMessage < Element
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
+
 end
 
 end end end

@@ -8,7 +8,7 @@ require "ddex/element"
 
 require "ddex/v20110630/ddexc/usage"
 
-module DDEX module ERN module V33 # :nodoc: all
+module DDEX module ERN module V33  # :nodoc: all
 
 class ResourceUsage < Element
   include ROXML
@@ -16,15 +16,12 @@ class ResourceUsage < Element
 
   xml_name "ResourceUsage"
 
-      
       xml_accessor :deal_resource_references, :as => [], :from => "DealResourceReference", :required => false
-
-      
       xml_accessor :usages, :as => [DDEX::V20110630::DDEXC::Usage], :from => "Usage", :required => true
 
 
-
   
+
 end
 
 end end end

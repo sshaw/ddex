@@ -8,7 +8,7 @@ require "ddex/element"
 
 require "ddex/v20110630/ddexc/party_descriptor"
 
-module DDEX module V20110630 module DDEXC # :nodoc: all
+module DDEX module V20110630 module DDEXC  # :nodoc: all
 
 class SocietyAffiliation < Element
   include ROXML
@@ -16,17 +16,13 @@ class SocietyAffiliation < Element
 
   xml_name "SocietyAffiliation"
 
-      
       xml_accessor :excluded_territory_codes, :as => [], :from => "ExcludedTerritoryCode", :required => false
-
-      
       xml_accessor :territory_codes, :as => [], :from => "TerritoryCode", :required => false
-
       xml_accessor :music_rights_society, :as => DDEX::V20110630::DDEXC::PartyDescriptor, :from => "MusicRightsSociety", :required => true
 
 
-
   
+
 end
 
 end end end

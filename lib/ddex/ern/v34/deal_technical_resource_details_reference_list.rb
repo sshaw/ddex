@@ -7,7 +7,7 @@ require "roxml"
 require "ddex/element"
 
 
-module DDEX module ERN module V34 # :nodoc: all
+module DDEX module ERN module V34  # :nodoc: all
 
 class DealTechnicalResourceDetailsReferenceList < Element
   include ROXML
@@ -15,12 +15,11 @@ class DealTechnicalResourceDetailsReferenceList < Element
 
   xml_name "DealTechnicalResourceDetailsReferenceList"
 
-      
       xml_accessor :deal_technical_resource_details_references, :as => [], :from => "DealTechnicalResourceDetailsReference", :required => false
 
 
-
   
+
 end
 
 end end end

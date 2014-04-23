@@ -7,7 +7,7 @@ require "roxml"
 require "ddex/element"
 
 
-module DDEX module V20110630 module DDEXC # :nodoc: all
+module DDEX module V20110630 module DDEXC  # :nodoc: all
 
 class VideoCueSheetReferenceList < Element
   include ROXML
@@ -15,12 +15,11 @@ class VideoCueSheetReferenceList < Element
 
   xml_name "VideoCueSheetReferenceList"
 
-      
       xml_accessor :video_cue_sheet_references, :as => [], :from => "VideoCueSheetReference", :required => false
 
 
-
   
+
 end
 
 end end end

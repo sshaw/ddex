@@ -9,7 +9,7 @@ require "ddex/element"
 require "ddex/v20110630/ddexc/related_release"
 require "ddex/v20110630/ddexc/release_summary"
 
-module DDEX module V20110630 module DDEXC # :nodoc: all
+module DDEX module V20110630 module DDEXC  # :nodoc: all
 
 class ContainedReleaseSummary < DDEX::V20110630::DDEXC::ReleaseSummary
   include ROXML
@@ -17,12 +17,11 @@ class ContainedReleaseSummary < DDEX::V20110630::DDEXC::ReleaseSummary
 
   xml_name "ContainedReleaseSummary"
 
-      
       xml_accessor :related_releases, :as => [DDEX::V20110630::DDEXC::RelatedRelease], :from => "RelatedRelease", :required => false
 
 
-
   
+
 end
 
 end end end

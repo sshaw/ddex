@@ -15,7 +15,7 @@ require "ddex/ern/v34/text"
 require "ddex/ern/v34/user_defined_resource"
 require "ddex/ern/v34/video"
 
-module DDEX module ERN module V34 # :nodoc: all
+module DDEX module ERN module V34  # :nodoc: all
 
 class ResourceList < Element
   include ROXML
@@ -23,36 +23,21 @@ class ResourceList < Element
 
   xml_name "ResourceList"
 
-      
       xml_accessor :sound_recordings, :as => [DDEX::ERN::V34::SoundRecording], :from => "SoundRecording", :required => false
-
-      
       xml_accessor :midis, :as => [DDEX::ERN::V34::MIDI], :from => "MIDI", :required => false
-
-      
       xml_accessor :videos, :as => [DDEX::ERN::V34::Video], :from => "Video", :required => false
-
-      
       xml_accessor :images, :as => [DDEX::ERN::V34::Image], :from => "Image", :required => false
-
-      
       xml_accessor :texts, :as => [DDEX::ERN::V34::Text], :from => "Text", :required => false
-
-      
       xml_accessor :sheet_musics, :as => [DDEX::ERN::V34::SheetMusic], :from => "SheetMusic", :required => false
-
-      
       xml_accessor :softwares, :as => [DDEX::ERN::V34::Software], :from => "Software", :required => false
-
-      
       xml_accessor :user_defined_resources, :as => [DDEX::ERN::V34::UserDefinedResource], :from => "UserDefinedResource", :required => false
-
 
 
   
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
+
 end
 
 end end end

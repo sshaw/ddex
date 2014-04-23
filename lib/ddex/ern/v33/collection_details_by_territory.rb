@@ -9,7 +9,7 @@ require "ddex/element"
 require "ddex/v20110630/ddexc/character"
 require "ddex/v20110630/ddexc/collection_details_by_territory"
 
-module DDEX module ERN module V33 # :nodoc: all
+module DDEX module ERN module V33  # :nodoc: all
 
 class CollectionDetailsByTerritory < DDEX::V20110630::DDEXC::CollectionDetailsByTerritory
   include ROXML
@@ -17,12 +17,11 @@ class CollectionDetailsByTerritory < DDEX::V20110630::DDEXC::CollectionDetailsBy
 
   xml_name "CollectionDetailsByTerritory"
 
-      
       xml_accessor :characters, :as => [DDEX::V20110630::DDEXC::Character], :from => "Character", :required => false
 
 
-
   
+
 end
 
 end end end

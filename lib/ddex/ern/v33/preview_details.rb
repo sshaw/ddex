@@ -8,7 +8,7 @@ require "ddex/element"
 
 require "ddex/v20110630/ddexc/description"
 
-module DDEX module ERN module V33 # :nodoc: all
+module DDEX module ERN module V33  # :nodoc: all
 
 class PreviewDetails < Element
   include ROXML
@@ -17,16 +17,13 @@ class PreviewDetails < Element
   xml_name "PreviewDetails"
 
       xml_accessor :part_type, :as => DDEX::V20110630::DDEXC::Description, :from => "PartType", :required => false
-
       xml_accessor :top_left_corner, :as => Float, :from => "TopLeftCorner", :required => false
-
       xml_accessor :bottom_right_corner, :as => Float, :from => "BottomRightCorner", :required => false
-
       xml_accessor :expression_type, :from => "ExpressionType", :required => true
 
 
-
   
+
 end
 
 end end end

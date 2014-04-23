@@ -7,7 +7,7 @@ require "roxml"
 require "ddex/element"
 
 
-module DDEX module V20110630 module DDEXC # :nodoc: all
+module DDEX module V20110630 module DDEXC  # :nodoc: all
 
 class UserDefinedValue < Element
   include ROXML
@@ -28,6 +28,7 @@ class UserDefinedValue < Element
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
+
 end
 
 end end end

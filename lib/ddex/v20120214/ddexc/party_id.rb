@@ -7,7 +7,7 @@ require "roxml"
 require "ddex/element"
 
 
-module DDEX module V20120214 module DDEXC # :nodoc: all
+module DDEX module V20120214 module DDEXC  # :nodoc: all
 
 class PartyId < Element
   include ROXML
@@ -28,6 +28,7 @@ class PartyId < Element
       xml_accessor :isni?, :from => "@IsISNI", :required => false
     
   
+
 end
 
 end end end

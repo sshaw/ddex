@@ -8,7 +8,7 @@ require "ddex/element"
 
 require "ddex/v20120404/ddexc/purpose"
 
-module DDEX module V20120404 module DDEXC # :nodoc: all
+module DDEX module V20120404 module DDEXC  # :nodoc: all
 
 class ResourceContainedResourceReference < Element
   include ROXML
@@ -17,16 +17,13 @@ class ResourceContainedResourceReference < Element
   xml_name "ResourceContainedResourceReference"
 
       xml_accessor :resource_contained_resource_reference, :from => "ResourceContainedResourceReference", :required => true
-
       xml_accessor :duration_used, :from => "DurationUsed", :required => false
-
       xml_accessor :start_point, :as => Float, :from => "StartPoint", :required => false
-
       xml_accessor :purpose, :as => DDEX::V20120404::DDEXC::Purpose, :from => "Purpose", :required => false
 
 
-
   
+
 end
 
 end end end

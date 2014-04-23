@@ -7,7 +7,7 @@ require "roxml"
 require "ddex/element"
 
 
-module DDEX module V20120214 module DDEXC # :nodoc: all
+module DDEX module V20120214 module DDEXC  # :nodoc: all
 
 class CommercialModelType < Element
   include ROXML
@@ -25,6 +25,7 @@ class CommercialModelType < Element
       xml_accessor :user_defined_value, :from => "@UserDefinedValue", :required => false
     
   
+
 end
 
 end end end

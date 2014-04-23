@@ -9,7 +9,7 @@ require "ddex/element"
 require "ddex/v20110630/ddexc/resource_contributor"
 require "ddex/v20110630/ddexc/title"
 
-module DDEX module V20110630 module DDEXC # :nodoc: all
+module DDEX module V20110630 module DDEXC  # :nodoc: all
 
 class CollectionDetailsByTerritory < Element
   include ROXML
@@ -17,23 +17,15 @@ class CollectionDetailsByTerritory < Element
 
   xml_name "CollectionDetailsByTerritory"
 
-      
       xml_accessor :excluded_territory_codes, :as => [], :from => "ExcludedTerritoryCode", :required => false
-
-      
       xml_accessor :territory_codes, :as => [], :from => "TerritoryCode", :required => false
-
-      
       xml_accessor :titles, :as => [DDEX::V20110630::DDEXC::Title], :from => "Title", :required => false
-
-      
       xml_accessor :contributors, :as => [DDEX::V20110630::DDEXC::ResourceContributor], :from => "Contributor", :required => false
-
       xml_accessor :complete?, :from => "IsComplete", :required => false
 
 
-
   
+
 end
 
 end end end

@@ -10,7 +10,7 @@ require "ddex/v20120214/ddexc/party_id"
 require "ddex/v20120214/ddexc/party_name"
 require "ddex/v20120214/ddexc/resource_contributor"
 
-module DDEX module V20120214 module DDEXC # :nodoc: all
+module DDEX module V20120214 module DDEXC  # :nodoc: all
 
 class Character < Element
   include ROXML
@@ -18,20 +18,17 @@ class Character < Element
 
   xml_name "Character"
 
-      
       xml_accessor :party_names, :as => [DDEX::V20120214::DDEXC::PartyName], :from => "PartyName", :required => false
-
       xml_accessor :party_id, :as => DDEX::V20120214::DDEXC::PartyId, :from => "PartyId", :required => false
-
       xml_accessor :resource_contributor, :as => DDEX::V20120214::DDEXC::ResourceContributor, :from => "ResourceContributor", :required => false
 
 
-
   
 
-      xml_accessor :sequence_number, :as => Fixnum, :from => "@SequenceNumber", :required => false
+      xml_accessor :sequence_number, :as => Integer, :from => "@SequenceNumber", :required => false
     
   
+
 end
 
 end end end

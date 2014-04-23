@@ -8,7 +8,7 @@ require "ddex/element"
 
 require "ddex/v20110630/ddexc/release_resource_reference"
 
-module DDEX module V20110630 module DDEXC # :nodoc: all
+module DDEX module V20110630 module DDEXC  # :nodoc: all
 
 class ReleaseResourceReferenceList < Element
   include ROXML
@@ -16,12 +16,11 @@ class ReleaseResourceReferenceList < Element
 
   xml_name "ReleaseResourceReferenceList"
 
-      
       xml_accessor :release_resource_references, :as => [DDEX::V20110630::DDEXC::ReleaseResourceReference], :from => "ReleaseResourceReference", :required => true
 
 
-
   
+
 end
 
 end end end

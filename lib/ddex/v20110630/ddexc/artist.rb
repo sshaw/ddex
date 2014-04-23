@@ -9,7 +9,7 @@ require "ddex/element"
 require "ddex/v20110630/ddexc/artist_role"
 require "ddex/v20110630/ddexc/party_descriptor"
 
-module DDEX module V20110630 module DDEXC # :nodoc: all
+module DDEX module V20110630 module DDEXC  # :nodoc: all
 
 class Artist < DDEX::V20110630::DDEXC::PartyDescriptor
   include ROXML
@@ -17,16 +17,15 @@ class Artist < DDEX::V20110630::DDEXC::PartyDescriptor
 
   xml_name "Artist"
 
-      
       xml_accessor :artist_roles, :as => [DDEX::V20110630::DDEXC::ArtistRole], :from => "ArtistRole", :required => false
 
 
-
   
 
-      xml_accessor :sequence_number, :as => Fixnum, :from => "@SequenceNumber", :required => false
+      xml_accessor :sequence_number, :as => Integer, :from => "@SequenceNumber", :required => false
     
   
+
 end
 
 end end end

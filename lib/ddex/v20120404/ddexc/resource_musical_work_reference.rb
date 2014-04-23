@@ -7,7 +7,7 @@ require "roxml"
 require "ddex/element"
 
 
-module DDEX module V20120404 module DDEXC # :nodoc: all
+module DDEX module V20120404 module DDEXC  # :nodoc: all
 
 class ResourceMusicalWorkReference < Element
   include ROXML
@@ -15,17 +15,14 @@ class ResourceMusicalWorkReference < Element
 
   xml_name "ResourceMusicalWorkReference"
 
-      xml_accessor :sequence_number, :as => Fixnum, :from => "SequenceNumber", :required => false
-
+      xml_accessor :sequence_number, :as => Integer, :from => "SequenceNumber", :required => false
       xml_accessor :duration_used, :from => "DurationUsed", :required => false
-
       xml_accessor :fragment?, :from => "IsFragment", :required => false
-
       xml_accessor :resource_musical_work_reference, :from => "ResourceMusicalWorkReference", :required => true
 
 
-
   
+
 end
 
 end end end

@@ -8,7 +8,7 @@ require "ddex/element"
 
 require "ddex/ern/v34/release_deal"
 
-module DDEX module ERN module V34 # :nodoc: all
+module DDEX module ERN module V34  # :nodoc: all
 
 class DealList < Element
   include ROXML
@@ -16,15 +16,14 @@ class DealList < Element
 
   xml_name "DealList"
 
-      
       xml_accessor :release_deals, :as => [DDEX::ERN::V34::ReleaseDeal], :from => "ReleaseDeal", :required => false
-
 
 
   
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
+
 end
 
 end end end

@@ -9,7 +9,7 @@ require "ddex/element"
 require "ddex/v20120214/ddexc/catalog_number"
 require "ddex/v20120214/ddexc/proprietary_id"
 
-module DDEX module V20120214 module DDEXC # :nodoc: all
+module DDEX module V20120214 module DDEXC  # :nodoc: all
 
 class SoundRecordingId < Element
   include ROXML
@@ -18,18 +18,15 @@ class SoundRecordingId < Element
   xml_name "SoundRecordingId"
 
       xml_accessor :isrc, :from => "ISRC", :required => false
-
       xml_accessor :catalog_number, :as => DDEX::V20120214::DDEXC::CatalogNumber, :from => "CatalogNumber", :required => false
-
-      
       xml_accessor :proprietary_ids, :as => [DDEX::V20120214::DDEXC::ProprietaryId], :from => "ProprietaryId", :required => false
-
 
 
   
       xml_accessor :replaced?, :from => "@IsReplaced", :required => false
     
   
+
 end
 
 end end end

@@ -7,7 +7,7 @@ require "roxml"
 require "ddex/element"
 
 
-module DDEX module V20110630 module DDEXC # :nodoc: all
+module DDEX module V20110630 module DDEXC  # :nodoc: all
 
 class AppliedRoyaltyRate < Element
   include ROXML
@@ -31,6 +31,7 @@ class AppliedRoyaltyRate < Element
       xml_accessor :user_defined_value, :from => "@UserDefinedValue", :required => false
     
   
+
 end
 
 end end end

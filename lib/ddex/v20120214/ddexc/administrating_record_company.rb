@@ -9,7 +9,7 @@ require "ddex/element"
 require "ddex/v20120214/ddexc/party_id"
 require "ddex/v20120214/ddexc/party_name"
 
-module DDEX module V20120214 module DDEXC # :nodoc: all
+module DDEX module V20120214 module DDEXC  # :nodoc: all
 
 class AdministratingRecordCompany < Element
   include ROXML
@@ -17,11 +17,8 @@ class AdministratingRecordCompany < Element
 
   xml_name "AdministratingRecordCompany"
 
-      
       xml_accessor :party_names, :as => [DDEX::V20120214::DDEXC::PartyName], :from => "PartyName", :required => false
-
       xml_accessor :party_id, :as => DDEX::V20120214::DDEXC::PartyId, :from => "PartyId", :required => false
-
 
 
   
@@ -34,6 +31,7 @@ class AdministratingRecordCompany < Element
       xml_accessor :role, :from => "@Role", :required => true
     
   
+
 end
 
 end end end

@@ -8,7 +8,7 @@ require "ddex/element"
 
 require "ddex/v20120214/ddexc/proprietary_id"
 
-module DDEX module V20120214 module DDEXC # :nodoc: all
+module DDEX module V20120214 module DDEXC  # :nodoc: all
 
 class TextId < Element
   include ROXML
@@ -17,20 +17,16 @@ class TextId < Element
   xml_name "TextId"
 
       xml_accessor :isbn, :from => "ISBN", :required => false
-
       xml_accessor :issn, :from => "ISSN", :required => false
-
       xml_accessor :sici, :from => "SICI", :required => false
-
-      
       xml_accessor :proprietary_ids, :as => [DDEX::V20120214::DDEXC::ProprietaryId], :from => "ProprietaryId", :required => false
-
 
 
   
       xml_accessor :replaced?, :from => "@IsReplaced", :required => false
     
   
+
 end
 
 end end end

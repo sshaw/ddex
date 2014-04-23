@@ -13,7 +13,7 @@ require "ddex/v20110630/ddexc/release_summary_details_by_territory"
 require "ddex/v20110630/ddexc/release_type"
 require "ddex/v20110630/ddexc/title"
 
-module DDEX module V20110630 module DDEXC # :nodoc: all
+module DDEX module V20110630 module DDEXC  # :nodoc: all
 
 class ReleaseDetailsByTerritory < DDEX::V20110630::DDEXC::ReleaseSummaryDetailsByTerritory
   include ROXML
@@ -21,26 +21,16 @@ class ReleaseDetailsByTerritory < DDEX::V20110630::DDEXC::ReleaseSummaryDetailsB
 
   xml_name "ReleaseDetailsByTerritory"
 
-      
       xml_accessor :titles, :as => [DDEX::V20110630::DDEXC::Title], :from => "Title", :required => false
-
-      
       xml_accessor :display_artists, :as => [DDEX::V20110630::DDEXC::Artist], :from => "DisplayArtist", :required => true
-
       xml_accessor :multi_artist_compilation?, :from => "IsMultiArtistCompilation", :required => false
-
-      
       xml_accessor :administrating_record_companies, :as => [DDEX::V20110630::DDEXC::AdministratingRecordCompany], :from => "AdministratingRecordCompany", :required => false
-
-      
       xml_accessor :release_types, :as => [DDEX::V20110630::DDEXC::ReleaseType], :from => "ReleaseType", :required => false
-
-      
       xml_accessor :related_releases, :as => [DDEX::V20110630::DDEXC::RelatedRelease], :from => "RelatedRelease", :required => false
 
 
-
   
+
 end
 
 end end end

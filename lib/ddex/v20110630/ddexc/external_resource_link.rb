@@ -9,7 +9,7 @@ require "ddex/element"
 require "ddex/v20110630/ddexc/externally_linked_resource_type"
 require "ddex/v20110630/ddexc/period"
 
-module DDEX module V20110630 module DDEXC # :nodoc: all
+module DDEX module V20110630 module DDEXC  # :nodoc: all
 
 class ExternalResourceLink < Element
   include ROXML
@@ -17,21 +17,15 @@ class ExternalResourceLink < Element
 
   xml_name "ExternalResourceLink"
 
-      
       xml_accessor :urls, :as => [], :from => "URL", :required => true
-
       xml_accessor :validity_period, :as => DDEX::V20110630::DDEXC::Period, :from => "ValidityPeriod", :required => false
-
       xml_accessor :external_link, :from => "ExternalLink", :required => false
-
-      
       xml_accessor :externally_linked_resource_types, :as => [DDEX::V20110630::DDEXC::ExternallyLinkedResourceType], :from => "ExternallyLinkedResourceType", :required => false
-
       xml_accessor :file_format, :from => "FileFormat", :required => false
 
 
-
   
+
 end
 
 end end end

@@ -8,7 +8,7 @@ require "ddex/element"
 
 require "ddex/v20110630/ddexc/sound_recording_collection_reference"
 
-module DDEX module V20110630 module DDEXC # :nodoc: all
+module DDEX module V20110630 module DDEXC  # :nodoc: all
 
 class SoundRecordingCollectionReferenceList < Element
   include ROXML
@@ -16,14 +16,12 @@ class SoundRecordingCollectionReferenceList < Element
 
   xml_name "SoundRecordingCollectionReferenceList"
 
-      xml_accessor :number_of_collections, :as => Fixnum, :from => "NumberOfCollections", :required => false
-
-      
+      xml_accessor :number_of_collections, :as => Integer, :from => "NumberOfCollections", :required => false
       xml_accessor :sound_recording_collection_references, :as => [DDEX::V20110630::DDEXC::SoundRecordingCollectionReference], :from => "SoundRecordingCollectionReference", :required => true
 
 
-
   
+
 end
 
 end end end

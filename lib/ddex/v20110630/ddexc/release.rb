@@ -16,7 +16,7 @@ require "ddex/v20110630/ddexc/release_resource_reference_list"
 require "ddex/v20110630/ddexc/release_type"
 require "ddex/v20110630/ddexc/rights_agreement_id"
 
-module DDEX module V20110630 module DDEXC # :nodoc: all
+module DDEX module V20110630 module DDEXC  # :nodoc: all
 
 class Release < Element
   include ROXML
@@ -24,39 +24,24 @@ class Release < Element
 
   xml_name "Release"
 
-      
       xml_accessor :release_ids, :as => [DDEX::V20110630::DDEXC::ReleaseId], :from => "ReleaseId", :required => true
-
       xml_accessor :reference_title, :as => DDEX::V20110630::DDEXC::ReferenceTitle, :from => "ReferenceTitle", :required => true
-
       xml_accessor :release_resource_reference_list, :as => DDEX::V20110630::DDEXC::ReleaseResourceReferenceList, :from => "ReleaseResourceReferenceList", :required => false
-
       xml_accessor :release_collection_reference_list, :as => DDEX::V20110630::DDEXC::ReleaseCollectionReferenceList, :from => "ReleaseCollectionReferenceList", :required => false
-
-      
       xml_accessor :release_types, :as => [DDEX::V20110630::DDEXC::ReleaseType], :from => "ReleaseType", :required => false
-
-      
       xml_accessor :release_details_by_territories, :as => [DDEX::V20110630::DDEXC::ReleaseDetailsByTerritory], :from => "ReleaseDetailsByTerritory", :required => true
-
       xml_accessor :duration, :from => "Duration", :required => false
-
       xml_accessor :duration_of_musical_content, :from => "DurationOfMusicalContent", :required => false
-
       xml_accessor :rights_agreement_id, :as => DDEX::V20110630::DDEXC::RightsAgreementId, :from => "RightsAgreementId", :required => false
-
-      
       xml_accessor :p_lines, :as => [DDEX::V20110630::DDEXC::PLine], :from => "PLine", :required => false
-
-      
       xml_accessor :c_lines, :as => [DDEX::V20110630::DDEXC::CLine], :from => "CLine", :required => false
-
 
 
   
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
+
 end
 
 end end end

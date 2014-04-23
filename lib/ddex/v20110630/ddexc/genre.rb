@@ -7,9 +7,8 @@ require "roxml"
 require "ddex/element"
 
 require "ddex/v20110630/ddexc/description"
-require "ddex/v20110630/ddexc/description"
 
-module DDEX module V20110630 module DDEXC # :nodoc: all
+module DDEX module V20110630 module DDEXC  # :nodoc: all
 
 class Genre < Element
   include ROXML
@@ -18,15 +17,14 @@ class Genre < Element
   xml_name "Genre"
 
       xml_accessor :genre_text, :as => DDEX::V20110630::DDEXC::Description, :from => "GenreText", :required => true
-
       xml_accessor :sub_genre, :as => DDEX::V20110630::DDEXC::Description, :from => "SubGenre", :required => false
-
 
 
   
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
+
 end
 
 end end end

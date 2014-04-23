@@ -9,7 +9,7 @@ require "ddex/element"
 require "ddex/v20120404/ddexc/title_text"
 require "ddex/v20120404/ddexc/typed_sub_title"
 
-module DDEX module V20120404 module DDEXC # :nodoc: all
+module DDEX module V20120404 module DDEXC  # :nodoc: all
 
 class Title < Element
   include ROXML
@@ -18,10 +18,7 @@ class Title < Element
   xml_name "Title"
 
       xml_accessor :title_text, :as => DDEX::V20120404::DDEXC::TitleText, :from => "TitleText", :required => true
-
-      
       xml_accessor :sub_titles, :as => [DDEX::V20120404::DDEXC::TypedSubTitle], :from => "SubTitle", :required => false
-
 
 
   
@@ -31,6 +28,7 @@ class Title < Element
       xml_accessor :title_type, :from => "@TitleType", :required => false
     
   
+
 end
 
 end end end

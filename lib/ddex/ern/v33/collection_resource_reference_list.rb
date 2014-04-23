@@ -8,7 +8,7 @@ require "ddex/element"
 
 require "ddex/ern/v33/collection_resource_reference"
 
-module DDEX module ERN module V33 # :nodoc: all
+module DDEX module ERN module V33  # :nodoc: all
 
 class CollectionResourceReferenceList < Element
   include ROXML
@@ -16,12 +16,11 @@ class CollectionResourceReferenceList < Element
 
   xml_name "CollectionResourceReferenceList"
 
-      
       xml_accessor :collection_resource_references, :as => [DDEX::ERN::V33::CollectionResourceReference], :from => "CollectionResourceReference", :required => true
 
 
-
   
+
 end
 
 end end end

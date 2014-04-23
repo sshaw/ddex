@@ -7,7 +7,7 @@ require "roxml"
 require "ddex/element"
 
 
-module DDEX module V20120404 module DDEXC # :nodoc: all
+module DDEX module V20120404 module DDEXC  # :nodoc: all
 
 class MessageNotificationPeriod < Element
   include ROXML
@@ -16,12 +16,11 @@ class MessageNotificationPeriod < Element
   xml_name "MessageNotificationPeriod"
 
       xml_accessor :start_date, :as => Date, :from => "StartDate", :required => true
-
       xml_accessor :end_date, :as => Date, :from => "EndDate", :required => true
 
 
-
   
+
 end
 
 end end end

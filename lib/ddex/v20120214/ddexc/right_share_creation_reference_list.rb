@@ -7,7 +7,7 @@ require "roxml"
 require "ddex/element"
 
 
-module DDEX module V20120214 module DDEXC # :nodoc: all
+module DDEX module V20120214 module DDEXC  # :nodoc: all
 
 class RightShareCreationReferenceList < Element
   include ROXML
@@ -15,18 +15,13 @@ class RightShareCreationReferenceList < Element
 
   xml_name "RightShareCreationReferenceList"
 
-      
       xml_accessor :right_share_work_references, :as => [], :from => "RightShareWorkReference", :required => false
-
-      
       xml_accessor :right_share_resource_references, :as => [], :from => "RightShareResourceReference", :required => false
-
-      
       xml_accessor :right_share_release_references, :as => [], :from => "RightShareReleaseReference", :required => false
 
 
-
   
+
 end
 
 end end end

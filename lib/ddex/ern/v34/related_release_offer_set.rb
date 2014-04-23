@@ -9,7 +9,7 @@ require "ddex/element"
 require "ddex/v20120214/ddexc/description"
 require "ddex/v20120214/ddexc/release_id"
 
-module DDEX module ERN module V34 # :nodoc: all
+module DDEX module ERN module V34  # :nodoc: all
 
 class Deal < Element; include ROXML end
 
@@ -20,19 +20,15 @@ class RelatedReleaseOfferSet < Element
   xml_name "RelatedReleaseOfferSet"
 
       xml_accessor :release_description, :as => DDEX::V20120214::DDEXC::Description, :from => "ReleaseDescription", :required => false
-
-      
       xml_accessor :release_ids, :as => [DDEX::V20120214::DDEXC::ReleaseId], :from => "ReleaseId", :required => false
-
-      
       xml_accessor :deals, :as => [DDEX::ERN::V34::Deal], :from => "Deal", :required => false
-
 
 
   
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
+
 end
 
 end end end

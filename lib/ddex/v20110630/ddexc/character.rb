@@ -9,7 +9,7 @@ require "ddex/element"
 require "ddex/v20110630/ddexc/party_descriptor"
 require "ddex/v20110630/ddexc/resource_contributor"
 
-module DDEX module V20110630 module DDEXC # :nodoc: all
+module DDEX module V20110630 module DDEXC  # :nodoc: all
 
 class Character < DDEX::V20110630::DDEXC::PartyDescriptor
   include ROXML
@@ -20,12 +20,12 @@ class Character < DDEX::V20110630::DDEXC::PartyDescriptor
       xml_accessor :resource_contributor, :as => DDEX::V20110630::DDEXC::ResourceContributor, :from => "ResourceContributor", :required => false
 
 
-
   
 
-      xml_accessor :sequence_number, :as => Fixnum, :from => "@SequenceNumber", :required => false
+      xml_accessor :sequence_number, :as => Integer, :from => "@SequenceNumber", :required => false
     
   
+
 end
 
 end end end

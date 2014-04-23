@@ -7,7 +7,7 @@ require "roxml"
 require "ddex/element"
 
 
-module DDEX module V20120214 module DDEXC # :nodoc: all
+module DDEX module V20120214 module DDEXC  # :nodoc: all
 
 class LabelName < Element
   include ROXML
@@ -25,6 +25,7 @@ class LabelName < Element
       xml_accessor :label_name_type, :from => "@LabelNameType", :required => false
     
   
+
 end
 
 end end end

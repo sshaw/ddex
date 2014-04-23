@@ -8,7 +8,7 @@ require "ddex/element"
 
 require "ddex/v20110630/ddexc/party_descriptor"
 
-module DDEX module V20110630 module DDEXC # :nodoc: all
+module DDEX module V20110630 module DDEXC  # :nodoc: all
 
 class RightsController < DDEX::V20110630::DDEXC::PartyDescriptor
   include ROXML
@@ -16,20 +16,17 @@ class RightsController < DDEX::V20110630::DDEXC::PartyDescriptor
 
   xml_name "RightsController"
 
-      
       xml_accessor :rights_controller_roles, :as => [], :from => "RightsControllerRole", :required => false
-
       xml_accessor :right_share_percentage, :from => "RightSharePercentage", :required => false
-
-      xml_accessor :right_share_unknown, :from => "RightShareUnknown", :required => false
-
+      xml_accessor :right_share_unknown?, :from => "RightShareUnknown", :required => false
 
 
   
 
-      xml_accessor :sequence_number, :as => Fixnum, :from => "@SequenceNumber", :required => false
+      xml_accessor :sequence_number, :as => Integer, :from => "@SequenceNumber", :required => false
     
   
+
 end
 
 end end end

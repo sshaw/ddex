@@ -8,7 +8,7 @@ require "ddex/element"
 
 require "ddex/v20120214/ddexc/musical_work_contributor"
 
-module DDEX module V20120214 module DDEXC # :nodoc: all
+module DDEX module V20120214 module DDEXC  # :nodoc: all
 
 class MusicalWorkDetailsByTerritory < Element
   include ROXML
@@ -16,21 +16,16 @@ class MusicalWorkDetailsByTerritory < Element
 
   xml_name "MusicalWorkDetailsByTerritory"
 
-      
       xml_accessor :excluded_territory_codes, :as => [], :from => "ExcludedTerritoryCode", :required => false
-
-      
       xml_accessor :territory_codes, :as => [], :from => "TerritoryCode", :required => false
-
-      
       xml_accessor :musical_work_contributors, :as => [DDEX::V20120214::DDEXC::MusicalWorkContributor], :from => "MusicalWorkContributor", :required => true
-
 
 
   
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
+
 end
 
 end end end

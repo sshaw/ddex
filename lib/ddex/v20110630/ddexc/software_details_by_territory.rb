@@ -13,7 +13,7 @@ require "ddex/v20110630/ddexc/indirect_resource_contributor"
 require "ddex/v20110630/ddexc/p_line"
 require "ddex/v20110630/ddexc/resource_contributor"
 
-module DDEX module V20110630 module DDEXC # :nodoc: all
+module DDEX module V20110630 module DDEXC  # :nodoc: all
 
 class SoftwareDetailsByTerritory < Element
   include ROXML
@@ -21,34 +21,21 @@ class SoftwareDetailsByTerritory < Element
 
   xml_name "SoftwareDetailsByTerritory"
 
-      
       xml_accessor :excluded_territory_codes, :as => [], :from => "ExcludedTerritoryCode", :required => false
-
-      
       xml_accessor :territory_codes, :as => [], :from => "TerritoryCode", :required => false
-
-      
       xml_accessor :resource_contributors, :as => [DDEX::V20110630::DDEXC::ResourceContributor], :from => "ResourceContributor", :required => false
-
-      
       xml_accessor :indirect_resource_contributors, :as => [DDEX::V20110630::DDEXC::IndirectResourceContributor], :from => "IndirectResourceContributor", :required => false
-
-      
       xml_accessor :p_lines, :as => [DDEX::V20110630::DDEXC::PLine], :from => "PLine", :required => false
-
-      
       xml_accessor :c_lines, :as => [DDEX::V20110630::DDEXC::CLine], :from => "CLine", :required => false
-
       xml_accessor :courtesy_line, :as => DDEX::V20110630::DDEXC::CourtesyLine, :from => "CourtesyLine", :required => false
-
       xml_accessor :original_resource_release_date, :as => DDEX::V20110630::DDEXC::EventDate, :from => "OriginalResourceReleaseDate", :required => false
-
 
 
   
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
+
 end
 
 end end end

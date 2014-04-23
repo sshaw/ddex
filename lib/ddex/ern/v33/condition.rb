@@ -7,7 +7,7 @@ require "roxml"
 require "ddex/element"
 
 
-module DDEX module ERN module V33 # :nodoc: all
+module DDEX module ERN module V33  # :nodoc: all
 
 class Condition < Element
   include ROXML
@@ -16,14 +16,12 @@ class Condition < Element
   xml_name "Condition"
 
       xml_accessor :value, :as => Float, :from => "Value", :required => true
-
       xml_accessor :unit, :from => "Unit", :required => true
-
       xml_accessor :relational_relator, :from => "RelationalRelator", :required => true
 
 
-
   
+
 end
 
 end end end

@@ -7,7 +7,7 @@ require "roxml"
 require "ddex/element"
 
 
-module DDEX module V20120404 module DDEXC # :nodoc: all
+module DDEX module V20120404 module DDEXC  # :nodoc: all
 
 class GuaranteedAmount < Element
   include ROXML
@@ -25,6 +25,7 @@ class GuaranteedAmount < Element
       xml_accessor :reference_unit, :from => "@ReferenceUnit", :required => true
     
   
+
 end
 
 end end end

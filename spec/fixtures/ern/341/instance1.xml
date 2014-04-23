@@ -272,8 +272,8 @@
             <IsBonusResource>true</IsBonusResource>
             <IsComputerGenerated>false</IsComputerGenerated>
             <NoSilenceBefore>true</NoSilenceBefore>
-            <NoSilenceAfter>0</NoSilenceAfter>
-            <PerformerInformationRequired>0</PerformerInformationRequired>
+            <NoSilenceAfter>false</NoSilenceAfter>
+            <PerformerInformationRequired>false</PerformerInformationRequired>
             <LanguageOfPerformance>kn</LanguageOfPerformance>
             <Duration>P6Y8M5DT1H10M0S</Duration>
             <RightsAgreementId>
@@ -441,7 +441,7 @@
                     <SamplingRate UnitOfMeasure="GHz">-1243080367.928</SamplingRate>
                     <BitsPerSample>225030464</BitsPerSample>
                     <Duration>P9Y9M9DT1H10M0S</Duration>
-                    <ResourceProcessingRequired>0</ResourceProcessingRequired>
+                    <ResourceProcessingRequired>false</ResourceProcessingRequired>
                     <UsableResourceDuration>P1Y2M2DT1H10M0S</UsableResourceDuration>
                     <IsPreview>false</IsPreview>
                     <PreviewDetails>
@@ -507,7 +507,7 @@
             <IsHiddenResource>true</IsHiddenResource>
             <IsBonusResource>true</IsBonusResource>
             <IsComputerGenerated>false</IsComputerGenerated>
-            <NoSilenceBefore>1</NoSilenceBefore>
+            <NoSilenceBefore>true</NoSilenceBefore>
             <NoSilenceAfter>true</NoSilenceAfter>
             <PerformerInformationRequired>true</PerformerInformationRequired>
             <LanguageOfPerformance>be</LanguageOfPerformance>
@@ -580,7 +580,7 @@
                 <RightsController SequenceNumber="-599085639">
                     <PartyId Namespace="fd.vLDW3-7.WJK0dS" IsDPID="false" IsISNI="true">b8kPjr84K0</PartyId>
                     <RightsControllerRole>RoyaltyAdministrator</RightsControllerRole>
-                    <RightShareUnknown>1</RightShareUnknown>
+                    <RightShareUnknown>true</RightShareUnknown>
                 </RightsController>
                 <RemasteredDate IsApproximate="true" IsBefore="true" IsAfter="true" TerritoryCode="US" LocationDescription="tyM" LanguageAndScriptCode="en_US">2014-06-03</RemasteredDate>
                 <OriginalResourceReleaseDate IsApproximate="true" IsBefore="true" IsAfter="false" TerritoryCode="US" LocationDescription="BFTUUki7YGcH3LpZ3KrCANCgk"
@@ -707,7 +707,7 @@
             <IsBonusResource>false</IsBonusResource>
             <NoSilenceBefore>false</NoSilenceBefore>
             <NoSilenceAfter>false</NoSilenceAfter>
-            <PerformerInformationRequired>1</PerformerInformationRequired>
+            <PerformerInformationRequired>true</PerformerInformationRequired>
             <LanguageOfPerformance>fo</LanguageOfPerformance>
             <Duration>P7Y6M6DT1H10M0S</Duration>
             <RightsAgreementId>
@@ -876,7 +876,7 @@
                     <AudioSamplingRate UnitOfMeasure="MHz">810762682.205</AudioSamplingRate>
                     <AudioBitsPerSample>-1601787521</AudioBitsPerSample>
                     <Duration>P3Y2M6DT1H10M0S</Duration>
-                    <ResourceProcessingRequired>0</ResourceProcessingRequired>
+                    <ResourceProcessingRequired>false</ResourceProcessingRequired>
                     <UsableResourceDuration>P0Y4M9DT1H10M0S</UsableResourceDuration>
                     <IsPreview>true</IsPreview>
                     <PreviewDetails>
@@ -1796,7 +1796,7 @@
                 <DealReference LanguageAndScriptCode="en_US">aNnEr4BfwoZ8c</DealReference>
                 <DealTerms LanguageAndScriptCode="en_US">
                     <CommercialModelType Namespace="tC3xYrIXA_r.GE9xkE_OY9" UserDefinedValue="Rp676XI1rv1HT">PerformanceRoyaltiesModel</CommercialModelType>
-                    <TakeDown>0</TakeDown>
+                    <TakeDown>false</TakeDown>
                     <ExcludedTerritoryCode>MM</ExcludedTerritoryCode>
                     <DistributionChannel LanguageAndScriptCode="es_MX">
                         <PartyName LanguageAndScriptCode="en_US">
@@ -1851,7 +1851,7 @@
                         <RightsClaimPolicyType>ReportUsage</RightsClaimPolicyType>
                     </RightsClaimPolicy>
                     <WebPolicy>
-                        <AccessBlockingRequested>1</AccessBlockingRequested>                        
+                        <AccessBlockingRequested>true</AccessBlockingRequested>                        
                     </WebPolicy>                    
                     <WebPolicy>
                         <Condition>

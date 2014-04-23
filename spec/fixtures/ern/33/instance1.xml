@@ -155,7 +155,7 @@
                     <EndDateTime IsApproximate="true" IsBefore="false" IsAfter="false" TerritoryCode="US" LocationDescription="YgYN"
                          LanguageAndScriptCode="en_US">2015-07-22T16:38:18</EndDateTime>
                 </ValidityPeriod>
-                <PercentageUnknown>1</PercentageUnknown>
+                <PercentageUnknown>true</PercentageUnknown>
                 <TariffReference LanguageAndScriptCode="en_US" TariffSubReference="T5U">HP3ysZxQw4S6pg</TariffReference>
                 <LicenseStatus>Pending</LicenseStatus>
                 <HasFirstLicenseRefusal>false</HasFirstLicenseRefusal>
@@ -245,8 +245,8 @@
             <IsBonusResource>true</IsBonusResource>
             <IsComputerGenerated>true</IsComputerGenerated>
             <NoSilenceBefore>false</NoSilenceBefore>
-            <NoSilenceAfter>1</NoSilenceAfter>
-            <PerformerInformationRequired>0</PerformerInformationRequired>
+            <NoSilenceAfter>true</NoSilenceAfter>
+            <PerformerInformationRequired>false</PerformerInformationRequired>
             <LanguageOfPerformance>sd</LanguageOfPerformance>
             <Duration>P5Y0M4DT1H10M0S</Duration>
             <RightsAgreementId>
@@ -376,7 +376,7 @@
                     <SamplingRate UnitOfMeasure="GHz">855205007.537</SamplingRate>
                     <BitsPerSample>1439809263</BitsPerSample>
                     <Duration>-1298644101</Duration>
-                    <ResourceProcessingRequired>0</ResourceProcessingRequired>
+                    <ResourceProcessingRequired>false</ResourceProcessingRequired>
                     <UsableResourceDuration>-1566849409</UsableResourceDuration>
                     <IsPreview>false</IsPreview>
                     <PreviewDetails>
@@ -587,9 +587,9 @@
                 <Synopsis LanguageAndScriptCode="es_MX">dppevbHDdU5xicT</Synopsis>
                 <TechnicalMidiDetails LanguageAndScriptCode="es_MX">
                     <TechnicalResourceDetailsReference>Td</TechnicalResourceDetailsReference>
-                    <Duration>1</Duration>
+                    <Duration>true</Duration>
                     <ResourceProcessingRequired>false</ResourceProcessingRequired>
-                    <UsableResourceDuration>1</UsableResourceDuration>
+                    <UsableResourceDuration>true</UsableResourceDuration>
                     <IsPreview>false</IsPreview>
                     <PreviewDetails>
                         <PartType LanguageAndScriptCode="es_MX">HvWc8PtMTG</PartType>
@@ -654,9 +654,9 @@
             <IsBackground>false</IsBackground>
             <IsHiddenResource>false</IsHiddenResource>
             <IsBonusResource>false</IsBonusResource>
-            <NoSilenceBefore>1</NoSilenceBefore>
-            <NoSilenceAfter>0</NoSilenceAfter>
-            <PerformerInformationRequired>1</PerformerInformationRequired>
+            <NoSilenceBefore>true</NoSilenceBefore>
+            <NoSilenceAfter>false</NoSilenceAfter>
+            <PerformerInformationRequired>true</PerformerInformationRequired>
             <LanguageOfPerformance>ie</LanguageOfPerformance>
             <Duration>P4Y3M7DT1H10M0S</Duration>
             <RightsAgreementId>
@@ -746,7 +746,7 @@
                 <RightsController SequenceNumber="-1021570658">
                     <PartyId Namespace="dGvvelxHvUYcJ.aAfDmc">Ij_sj6vuClE8obx</PartyId>
                     <RightsControllerRole>RoyaltyAdministrator</RightsControllerRole>
-                    <RightShareUnknown>0</RightShareUnknown>
+                    <RightShareUnknown>false</RightShareUnknown>
                 </RightsController>
                 <RemasteredDate IsApproximate="true" IsBefore="false" IsAfter="true" TerritoryCode="US" LocationDescription="oAkqD"
                      LanguageAndScriptCode="en_US">2015-09-18Z</RemasteredDate>
@@ -833,7 +833,7 @@
                     <AudioSamplingRate UnitOfMeasure="Hz">989320235.653</AudioSamplingRate>
                     <AudioBitsPerSample>1313873303</AudioBitsPerSample>
                     <Duration>-1264476466</Duration>
-                    <ResourceProcessingRequired>1</ResourceProcessingRequired>
+                    <ResourceProcessingRequired>true</ResourceProcessingRequired>
                     <UsableResourceDuration>870587088</UsableResourceDuration>
                     <IsPreview>true</IsPreview>
                     <PreviewDetails>

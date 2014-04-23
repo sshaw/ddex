@@ -9,7 +9,7 @@ require "ddex/element"
 require "ddex/v20110630/ddexc/c_line"
 require "ddex/v20110630/ddexc/sound_recording_details_by_territory"
 
-module DDEX module V20110630 module DDEXC # :nodoc: all
+module DDEX module V20110630 module DDEXC  # :nodoc: all
 
 class VideoDetailsByTerritory < DDEX::V20110630::DDEXC::SoundRecordingDetailsByTerritory
   include ROXML
@@ -17,12 +17,11 @@ class VideoDetailsByTerritory < DDEX::V20110630::DDEXC::SoundRecordingDetailsByT
 
   xml_name "VideoDetailsByTerritory"
 
-      
       xml_accessor :c_lines, :as => [DDEX::V20110630::DDEXC::CLine], :from => "CLine", :required => false
 
 
-
   
+
 end
 
 end end end

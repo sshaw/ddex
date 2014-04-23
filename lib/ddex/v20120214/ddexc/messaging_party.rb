@@ -10,7 +10,7 @@ require "ddex/v20120214/ddexc/name"
 require "ddex/v20120214/ddexc/party_id"
 require "ddex/v20120214/ddexc/party_name"
 
-module DDEX module V20120214 module DDEXC # :nodoc: all
+module DDEX module V20120214 module DDEXC  # :nodoc: all
 
 class MessagingParty < Element
   include ROXML
@@ -19,17 +19,15 @@ class MessagingParty < Element
   xml_name "MessagingParty"
 
       xml_accessor :party_id, :as => DDEX::V20120214::DDEXC::PartyId, :from => "PartyId", :required => true
-
       xml_accessor :party_name, :as => DDEX::V20120214::DDEXC::PartyName, :from => "PartyName", :required => false
-
       xml_accessor :trading_name, :as => DDEX::V20120214::DDEXC::Name, :from => "TradingName", :required => false
-
 
 
   
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
+
 end
 
 end end end

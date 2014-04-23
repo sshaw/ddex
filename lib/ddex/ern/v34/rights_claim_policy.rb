@@ -9,7 +9,7 @@ require "ddex/element"
 require "ddex/ern/v34/condition"
 require "ddex/ern/v34/web_policy"
 
-module DDEX module ERN module V34 # :nodoc: all
+module DDEX module ERN module V34  # :nodoc: all
 
 class RightsClaimPolicy < Element
   include ROXML
@@ -18,14 +18,12 @@ class RightsClaimPolicy < Element
   xml_name "RightsClaimPolicy"
 
       xml_accessor :condition, :as => DDEX::ERN::V34::Condition, :from => "Condition", :required => true
-
       xml_accessor :rights_claim_policy_type, :from => "RightsClaimPolicyType", :required => true
-
       xml_accessor :web_policy, :as => DDEX::ERN::V34::WebPolicy, :from => "WebPolicy", :required => false
 
 
-
   
+
 end
 
 end end end

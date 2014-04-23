@@ -10,7 +10,7 @@ require "ddex/v20120214/ddexc/reason"
 require "ddex/v20120214/ddexc/reason_type"
 require "ddex/v20120214/ddexc/release_id"
 
-module DDEX module V20120214 module DDEXC # :nodoc: all
+module DDEX module V20120214 module DDEXC  # :nodoc: all
 
 class SalesReportingProxyReleaseId < Element
   include ROXML
@@ -19,14 +19,12 @@ class SalesReportingProxyReleaseId < Element
   xml_name "SalesReportingProxyReleaseId"
 
       xml_accessor :release_id, :as => DDEX::V20120214::DDEXC::ReleaseId, :from => "ReleaseId", :required => true
-
       xml_accessor :reason, :as => DDEX::V20120214::DDEXC::Reason, :from => "Reason", :required => false
-
       xml_accessor :reason_type, :as => DDEX::V20120214::DDEXC::ReasonType, :from => "ReasonType", :required => true
 
 
-
   
+
 end
 
 end end end

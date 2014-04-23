@@ -7,7 +7,7 @@ require "roxml"
 require "ddex/element"
 
 
-module DDEX module ERN module V33 # :nodoc: all
+module DDEX module ERN module V33  # :nodoc: all
 
 class CollectionResourceReference < Element
   include ROXML
@@ -16,12 +16,11 @@ class CollectionResourceReference < Element
   xml_name "CollectionResourceReference"
 
       xml_accessor :collection_resource_reference, :from => "CollectionResourceReference", :required => true
-
       xml_accessor :duration, :from => "Duration", :required => false
 
 
-
   
+
 end
 
 end end end

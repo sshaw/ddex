@@ -8,7 +8,7 @@ require "ddex/element"
 
 require "ddex/v20120214/ddexc/hash_sum"
 
-module DDEX module V20120214 module DDEXC # :nodoc: all
+module DDEX module V20120214 module DDEXC  # :nodoc: all
 
 class File < Element
   include ROXML
@@ -17,16 +17,13 @@ class File < Element
   xml_name "File"
 
       xml_accessor :url, :from => "URL", :required => false
-
       xml_accessor :file_name, :from => "FileName", :required => false
-
       xml_accessor :file_path, :from => "FilePath", :required => false
-
       xml_accessor :hash_sum, :as => DDEX::V20120214::DDEXC::HashSum, :from => "HashSum", :required => false
 
 
-
   
+
 end
 
 end end end

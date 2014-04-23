@@ -8,7 +8,7 @@ require "ddex/element"
 
 require "ddex/v20110630/ddexc/message_audit_trail_event"
 
-module DDEX module V20110630 module DDEXC # :nodoc: all
+module DDEX module V20110630 module DDEXC  # :nodoc: all
 
 class MessageAuditTrail < Element
   include ROXML
@@ -16,15 +16,14 @@ class MessageAuditTrail < Element
 
   xml_name "MessageAuditTrail"
 
-      
       xml_accessor :message_audit_trail_events, :as => [DDEX::V20110630::DDEXC::MessageAuditTrailEvent], :from => "MessageAuditTrailEvent", :required => true
-
 
 
   
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
+
 end
 
 end end end

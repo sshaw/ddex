@@ -7,7 +7,7 @@ require "roxml"
 require "ddex/element"
 
 
-module DDEX module V20120404 module DDEXC # :nodoc: all
+module DDEX module V20120404 module DDEXC  # :nodoc: all
 
 class NumberOfDataMismatchItems < Element
   include ROXML
@@ -22,6 +22,7 @@ class NumberOfDataMismatchItems < Element
       xml_accessor :data_mismatch_status, :from => "@DataMismatchStatus", :required => false
     
   
+
 end
 
 end end end

@@ -8,7 +8,7 @@ require "ddex/element"
 
 require "ddex/v20110630/ddexc/musical_work"
 
-module DDEX module V20110630 module DDEXC # :nodoc: all
+module DDEX module V20110630 module DDEXC  # :nodoc: all
 
 class WorkList < Element
   include ROXML
@@ -16,15 +16,14 @@ class WorkList < Element
 
   xml_name "WorkList"
 
-      
       xml_accessor :musical_works, :as => [DDEX::V20110630::DDEXC::MusicalWork], :from => "MusicalWork", :required => true
-
 
 
   
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
     
   
+
 end
 
 end end end

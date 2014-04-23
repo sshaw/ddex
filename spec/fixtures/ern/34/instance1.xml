@@ -254,7 +254,7 @@
                         <ResourceContributorRole Namespace="lum2GdEtw" UserDefinedValue="j-_8Ur3jEgRx1vubo82">ComputerGraphicCreator</ResourceContributorRole>
                     </ResourceContributor>
                 </ReferencedCreationCharacter>
-                <HasMusicalContent>0</HasMusicalContent>
+                <HasMusicalContent>false</HasMusicalContent>
                 <StartTime>P1Y7M2DT1H10M0S</StartTime>
                 <Duration>P3Y9M6DT1H10M0S</Duration>
                 <EndTime>P2Y0M8DT1H10M0S</EndTime>
@@ -300,8 +300,8 @@
             <IsBonusResource>true</IsBonusResource>
             <IsComputerGenerated>false</IsComputerGenerated>
             <NoSilenceBefore>false</NoSilenceBefore>
-            <NoSilenceAfter>1</NoSilenceAfter>
-            <PerformerInformationRequired>1</PerformerInformationRequired>
+            <NoSilenceAfter>true</NoSilenceAfter>
+            <PerformerInformationRequired>true</PerformerInformationRequired>
             <LanguageOfPerformance>ia</LanguageOfPerformance>
             <Duration>P3Y6M0DT1H10M0S</Duration>
             <RightsAgreementId>
@@ -451,7 +451,7 @@
                     <SamplingRate UnitOfMeasure="kHz">-517053371.87</SamplingRate>
                     <BitsPerSample>-640593591</BitsPerSample>
                     <Duration>P7Y7M5DT1H10M0S</Duration>
-                    <ResourceProcessingRequired>0</ResourceProcessingRequired>
+                    <ResourceProcessingRequired>false</ResourceProcessingRequired>
                     <UsableResourceDuration>P0Y7M1DT1H10M0S</UsableResourceDuration>
                     <IsPreview>false</IsPreview>
                     <PreviewDetails>
@@ -511,8 +511,8 @@
             <IsBonusResource>true</IsBonusResource>
             <IsComputerGenerated>false</IsComputerGenerated>
             <NoSilenceBefore>false</NoSilenceBefore>
-            <NoSilenceAfter>0</NoSilenceAfter>
-            <PerformerInformationRequired>1</PerformerInformationRequired>
+            <NoSilenceAfter>false</NoSilenceAfter>
+            <PerformerInformationRequired>true</PerformerInformationRequired>
             <LanguageOfPerformance>om</LanguageOfPerformance>
             <Duration>P5Y7M7DT1H10M0S</Duration>
             <RightsAgreementId>
@@ -713,7 +713,7 @@
             <IsBonusResource>false</IsBonusResource>
             <NoSilenceBefore>false</NoSilenceBefore>
             <NoSilenceAfter>false</NoSilenceAfter>
-            <PerformerInformationRequired>0</PerformerInformationRequired>
+            <PerformerInformationRequired>false</PerformerInformationRequired>
             <LanguageOfPerformance>bh</LanguageOfPerformance>
             <Duration>P1Y2M7DT1H10M0S</Duration>
             <RightsAgreementId>
@@ -1833,7 +1833,7 @@
                         <ReleaseDescription LanguageAndScriptCode="es_MX">GrY0ph</ReleaseDescription>
                     </RelatedReleaseOfferSet>
                     <PhysicalReturns>
-                        <PhysicalReturnsAllowed>1</PhysicalReturnsAllowed>
+                        <PhysicalReturnsAllowed>true</PhysicalReturnsAllowed>
                         <LatestDateForPhysicalReturns>2015-01-02</LatestDateForPhysicalReturns>
                     </PhysicalReturns>
                     <NumberOfProductsPerCarton>481928766</NumberOfProductsPerCarton>
@@ -1845,7 +1845,7 @@
                         </Condition>
                         <RightsClaimPolicyType>BlockAccess</RightsClaimPolicyType>
                         <WebPolicy>
-                            <AccessBlockingRequested>0</AccessBlockingRequested>
+                            <AccessBlockingRequested>false</AccessBlockingRequested>
                         </WebPolicy>                      
                     </RightsClaimPolicy>
                 </DealTerms>

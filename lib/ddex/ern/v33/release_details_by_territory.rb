@@ -12,7 +12,6 @@ require "ddex/v20110630/ddexc/character"
 require "ddex/v20110630/ddexc/comment"
 require "ddex/v20110630/ddexc/description"
 require "ddex/v20110630/ddexc/event_date"
-require "ddex/v20110630/ddexc/event_date"
 require "ddex/v20110630/ddexc/file"
 require "ddex/v20110630/ddexc/genre"
 require "ddex/v20110630/ddexc/keywords"
@@ -20,7 +19,7 @@ require "ddex/v20110630/ddexc/parental_warning_type"
 require "ddex/v20110630/ddexc/release_details_by_territory"
 require "ddex/v20110630/ddexc/synopsis"
 
-module DDEX module ERN module V33 # :nodoc: all
+module DDEX module ERN module V33  # :nodoc: all
 
 class ReleaseDetailsByTerritory < DDEX::V20110630::DDEXC::ReleaseDetailsByTerritory
   include ROXML
@@ -28,43 +27,23 @@ class ReleaseDetailsByTerritory < DDEX::V20110630::DDEXC::ReleaseDetailsByTerrit
 
   xml_name "ReleaseDetailsByTerritory"
 
-      
       xml_accessor :parental_warning_types, :as => [DDEX::V20110630::DDEXC::ParentalWarningType], :from => "ParentalWarningType", :required => false
-
-      
       xml_accessor :av_ratings, :as => [DDEX::V20110630::DDEXC::AvRating], :from => "AvRating", :required => false
-
       xml_accessor :marketing_comment, :as => DDEX::V20110630::DDEXC::Comment, :from => "MarketingComment", :required => false
-
-      
       xml_accessor :resource_groups, :as => [DDEX::ERN::V33::ResourceGroup], :from => "ResourceGroup", :required => false
-
-      
       xml_accessor :genres, :as => [DDEX::V20110630::DDEXC::Genre], :from => "Genre", :required => false
-
       xml_accessor :original_release_date, :as => DDEX::V20110630::DDEXC::EventDate, :from => "OriginalReleaseDate", :required => false
-
       xml_accessor :original_digital_release_date, :as => DDEX::V20110630::DDEXC::EventDate, :from => "OriginalDigitalReleaseDate", :required => false
-
-      
       xml_accessor :files, :as => [DDEX::V20110630::DDEXC::File], :from => "File", :required => false
-
-      
       xml_accessor :file_availability_descriptions, :as => [DDEX::V20110630::DDEXC::Description], :from => "FileAvailabilityDescription", :required => false
-
-      
       xml_accessor :keywords, :as => [DDEX::V20110630::DDEXC::Keywords], :from => "Keywords", :required => false
-
       xml_accessor :synopsis, :as => DDEX::V20110630::DDEXC::Synopsis, :from => "Synopsis", :required => false
-
-      
       xml_accessor :characters, :as => [DDEX::V20110630::DDEXC::Character], :from => "Character", :required => false
-
-      xml_accessor :number_of_units_per_physical_release, :as => Fixnum, :from => "NumberOfUnitsPerPhysicalRelease", :required => false
-
+      xml_accessor :number_of_units_per_physical_release, :as => Integer, :from => "NumberOfUnitsPerPhysicalRelease", :required => false
 
 
   
+
 end
 
 end end end

@@ -12,7 +12,7 @@ require "ddex/v20120404/ddexc/technical_instantiation"
 require "ddex/v20120404/ddexc/use_type"
 require "ddex/v20120404/ddexc/user_interface_type"
 
-module DDEX module V20120404 module DDEXC # :nodoc: all
+module DDEX module V20120404 module DDEXC  # :nodoc: all
 
 class Usage < Element
   include ROXML
@@ -20,25 +20,16 @@ class Usage < Element
 
   xml_name "Usage"
 
-      
       xml_accessor :use_types, :as => [DDEX::V20120404::DDEXC::UseType], :from => "UseType", :required => true
-
-      
       xml_accessor :user_interface_types, :as => [DDEX::V20120404::DDEXC::UserInterfaceType], :from => "UserInterfaceType", :required => false
-
-      
       xml_accessor :distribution_channel_types, :as => [DDEX::V20120404::DDEXC::DistributionChannelType], :from => "DistributionChannelType", :required => false
-
-      
       xml_accessor :carrier_types, :as => [DDEX::V20120404::DDEXC::CarrierType], :from => "CarrierType", :required => false
-
       xml_accessor :technical_instantiation, :as => DDEX::V20120404::DDEXC::TechnicalInstantiation, :from => "TechnicalInstantiation", :required => false
-
-      xml_accessor :number_of_usages, :as => Fixnum, :from => "NumberOfUsages", :required => false
-
+      xml_accessor :number_of_usages, :as => Integer, :from => "NumberOfUsages", :required => false
 
 
   
+
 end
 
 end end end

@@ -8,7 +8,7 @@ require "ddex/element"
 
 require "ddex/v20120214/ddexc/proprietary_id"
 
-module DDEX module V20120214 module DDEXC # :nodoc: all
+module DDEX module V20120214 module DDEXC  # :nodoc: all
 
 class MidiId < Element
   include ROXML
@@ -16,15 +16,14 @@ class MidiId < Element
 
   xml_name "MidiId"
 
-      
       xml_accessor :proprietary_ids, :as => [DDEX::V20120214::DDEXC::ProprietaryId], :from => "ProprietaryId", :required => true
-
 
 
   
       xml_accessor :replaced?, :from => "@IsReplaced", :required => false
     
   
+
 end
 
 end end end

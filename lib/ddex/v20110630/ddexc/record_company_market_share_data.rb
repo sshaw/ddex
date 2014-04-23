@@ -12,7 +12,7 @@ require "ddex/v20110630/ddexc/release_type"
 require "ddex/v20110630/ddexc/use_type"
 require "ddex/v20110630/ddexc/user_interface_type"
 
-module DDEX module V20110630 module DDEXC # :nodoc: all
+module DDEX module V20110630 module DDEXC  # :nodoc: all
 
 class RecordCompanyMarketShareData < Element
   include ROXML
@@ -20,26 +20,16 @@ class RecordCompanyMarketShareData < Element
 
   xml_name "RecordCompanyMarketShareData"
 
-      
       xml_accessor :release_types, :as => [DDEX::V20110630::DDEXC::ReleaseType], :from => "ReleaseType", :required => false
-
-      xml_accessor :units_sold_total, :as => Fixnum, :from => "UnitsSoldTotal", :required => true
-
-      
+      xml_accessor :units_sold_total, :as => Integer, :from => "UnitsSoldTotal", :required => true
       xml_accessor :use_types, :as => [DDEX::V20110630::DDEXC::UseType], :from => "UseType", :required => true
-
-      
       xml_accessor :user_interface_types, :as => [DDEX::V20110630::DDEXC::UserInterfaceType], :from => "UserInterfaceType", :required => false
-
-      
       xml_accessor :distribution_channel_types, :as => [DDEX::V20110630::DDEXC::DistributionChannelType], :from => "DistributionChannelType", :required => false
-
-      
       xml_accessor :carrier_types, :as => [DDEX::V20110630::DDEXC::CarrierType], :from => "CarrierType", :required => false
 
 
-
   
+
 end
 
 end end end

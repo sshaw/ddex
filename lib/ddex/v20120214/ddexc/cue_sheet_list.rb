@@ -8,7 +8,7 @@ require "ddex/element"
 
 require "ddex/v20120214/ddexc/cue_sheet"
 
-module DDEX module V20120214 module DDEXC # :nodoc: all
+module DDEX module V20120214 module DDEXC  # :nodoc: all
 
 class CueSheetList < Element
   include ROXML
@@ -16,12 +16,11 @@ class CueSheetList < Element
 
   xml_name "CueSheetList"
 
-      
       xml_accessor :cue_sheets, :as => [DDEX::V20120214::DDEXC::CueSheet], :from => "CueSheet", :required => true
 
 
-
   
+
 end
 
 end end end

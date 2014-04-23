@@ -7,7 +7,7 @@ require "roxml"
 require "ddex/element"
 
 
-module DDEX module V20120214 module DDEXC # :nodoc: all
+module DDEX module V20120214 module DDEXC  # :nodoc: all
 
 class FrameRate < Element
   include ROXML
@@ -22,6 +22,7 @@ class FrameRate < Element
       xml_accessor :unit_of_measure, :from => "@UnitOfMeasure", :required => false
     
   
+
 end
 
 end end end

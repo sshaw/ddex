@@ -11,7 +11,7 @@ require "ddex/v20110630/ddexc/message_action_type"
 require "ddex/v20110630/ddexc/product_type"
 require "ddex/v20110630/ddexc/release_id"
 
-module DDEX module V20110630 module DDEXC # :nodoc: all
+module DDEX module V20110630 module DDEXC  # :nodoc: all
 
 class ErnMessageInBatch < Element
   include ROXML
@@ -20,25 +20,17 @@ class ErnMessageInBatch < Element
   xml_name "ErnMessageInBatch"
 
       xml_accessor :message_type, :from => "MessageType", :required => true
-
       xml_accessor :message_id, :from => "MessageId", :required => true
-
       xml_accessor :url, :from => "URL", :required => true
-
-      
       xml_accessor :included_release_ids, :as => [DDEX::V20110630::DDEXC::ReleaseId], :from => "IncludedReleaseId", :required => true
-
       xml_accessor :delivery_type, :as => DDEX::V20110630::DDEXC::MessageActionType, :from => "DeliveryType", :required => true
-
       xml_accessor :product_type, :as => DDEX::V20110630::DDEXC::ProductType, :from => "ProductType", :required => true
-
       xml_accessor :signature, :from => "Signature", :required => false
-
       xml_accessor :hash_sum, :as => DDEX::V20110630::DDEXC::HashSum, :from => "HashSum", :required => false
 
 
-
   
+
 end
 
 end end end

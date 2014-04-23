@@ -7,7 +7,7 @@ require "roxml"
 require "ddex/element"
 
 
-module DDEX module V20120214 module DDEXC # :nodoc: all
+module DDEX module V20120214 module DDEXC  # :nodoc: all
 
 class ResourceGroupResourceReferenceList < Element
   include ROXML
@@ -15,12 +15,11 @@ class ResourceGroupResourceReferenceList < Element
 
   xml_name "ResourceGroupResourceReferenceList"
 
-      
       xml_accessor :resource_group_resource_references, :as => [], :from => "ResourceGroupResourceReference", :required => false
 
 
-
   
+
 end
 
 end end end

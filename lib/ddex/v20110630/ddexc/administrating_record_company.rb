@@ -8,7 +8,7 @@ require "ddex/element"
 
 require "ddex/v20110630/ddexc/party_descriptor"
 
-module DDEX module V20110630 module DDEXC # :nodoc: all
+module DDEX module V20110630 module DDEXC  # :nodoc: all
 
 class AdministratingRecordCompany < DDEX::V20110630::DDEXC::PartyDescriptor
   include ROXML
@@ -22,6 +22,7 @@ class AdministratingRecordCompany < DDEX::V20110630::DDEXC::PartyDescriptor
       xml_accessor :role, :from => "@Role", :required => true
     
   
+
 end
 
 end end end

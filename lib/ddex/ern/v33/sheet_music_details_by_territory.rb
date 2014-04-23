@@ -12,7 +12,7 @@ require "ddex/v20110630/ddexc/genre"
 require "ddex/v20110630/ddexc/parental_warning_type"
 require "ddex/v20110630/ddexc/sheet_music_details_by_territory"
 
-module DDEX module ERN module V33 # :nodoc: all
+module DDEX module ERN module V33  # :nodoc: all
 
 class SheetMusicDetailsByTerritory < DDEX::V20110630::DDEXC::SheetMusicDetailsByTerritory
   include ROXML
@@ -21,19 +21,13 @@ class SheetMusicDetailsByTerritory < DDEX::V20110630::DDEXC::SheetMusicDetailsBy
   xml_name "SheetMusicDetailsByTerritory"
 
       xml_accessor :fulfillment_date, :as => DDEX::V20110630::DDEXC::FulfillmentDate, :from => "FulfillmentDate", :required => false
-
-      
       xml_accessor :genres, :as => [DDEX::V20110630::DDEXC::Genre], :from => "Genre", :required => false
-
-      
       xml_accessor :parental_warning_types, :as => [DDEX::V20110630::DDEXC::ParentalWarningType], :from => "ParentalWarningType", :required => false
-
-      
       xml_accessor :technical_sheet_music_details, :as => [DDEX::ERN::V33::TechnicalSheetMusicDetails], :from => "TechnicalSheetMusicDetails", :required => false
 
 
-
   
+
 end
 
 end end end

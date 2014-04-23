@@ -8,7 +8,7 @@ require "ddex/element"
 
 require "ddex/v20120214/ddexc/proprietary_id"
 
-module DDEX module V20120214 module DDEXC # :nodoc: all
+module DDEX module V20120214 module DDEXC  # :nodoc: all
 
 class SheetMusicId < Element
   include ROXML
@@ -17,16 +17,14 @@ class SheetMusicId < Element
   xml_name "SheetMusicId"
 
       xml_accessor :ismn, :from => "ISMN", :required => false
-
-      
       xml_accessor :proprietary_ids, :as => [DDEX::V20120214::DDEXC::ProprietaryId], :from => "ProprietaryId", :required => false
-
 
 
   
       xml_accessor :replaced?, :from => "@IsReplaced", :required => false
     
   
+
 end
 
 end end end
