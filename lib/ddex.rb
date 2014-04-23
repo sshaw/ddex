@@ -54,7 +54,7 @@ module DDEX
   end
 
   ##
-  # Turn a DDEX object into XML
+  # Turn a DDEX object into an XML string. You can also turn the object into a +Hash+ via #to_hash.
   #
   # === Parameters
   #
@@ -63,8 +63,12 @@ module DDEX
   #
   # === Options
   #
-  # [:schema] Schema URI to use in the schemaLocation attribute, defaults to <code>DDEX::NAME.config["VER"][:schema]</code>
-  #           where +NAME+ is the spec name and +VER+ is the version
+  # [:schema] Schema URI to use in the XSI schemaLocation attribute, defaults to <code>DDEX::NAME.config["VER"][:schema]</code>
+  #           where +NAME+ is the spec name and +VER+ is the version. This is only used if +xml+ is a the root node of a spec.
+  #
+  # === Returns
+  #
+  # [String] The XML
   #
   # === Errors
   #

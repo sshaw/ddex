@@ -21,22 +21,13 @@
 
  message = DDEX.read(string)
  message = DDEX.read(io)
- # ...
-
+ p message.to_hash
 
  include DDEX::ERN::V341   # v3.4.1
- message = NewReleaseMessage.new(hash)
- record  = SoundRecording.new
- record.language_and_script_code = "en-US"
+ message = NewReleaseMessage.new(:resource_list => ResourceList.new)
+ record  = SoundRecording.new(:language_and_script_code => "en-US")
  # ...
-
- image = Image.new
- image.type = "FrontCoverImage"
- # ...
-
- message.resource_list << image
- message.resource_list << record
- p message.to_hash
+ message.resource_list.sound_recordings = [record]
 
  xml = DDEX.write(message)
  File.open("bloat.xml", "w") { |io| io.puts(xml) }
@@ -44,12 +35,16 @@
 === Installation
 
 Rubygems:
-  # Not live yet!
+
   gem install ddex
 
 Bundler:
 
   gem "ddex"
+
+=== Supported Versions
+
+Currently just ERN 3.3 - 3.7, DSR soon!
 
 === How This Differs From the Spec
 
@@ -71,7 +66,7 @@ Would be manipulated via:
   party.full_name = "gwozdzie"
 
 
-See also {Boolean elements and attributes}[rdoc-ref:README@Boolean+elements+and+attributes]
+See also {Boolean elements and attributes}[rdoc-ref:README@Boolean+Elements+and+Attributes]
 
 ==== Cardinally
 
@@ -108,8 +103,6 @@ For example, <code>SoundRecording/IsArtistRelated</code>:
   p recording.artist_related?  # true
   recording.artist_related = false
 
-TODO: See Types
-
 ==== Version Specific Changes
 
 These changes only affect the object model, the resulting XML will conform to the appropriate DDEX schema.
@@ -142,7 +135,7 @@ be modified to accommodate something more than <code>SPEC/VERSION</code> out of 
 
 === Validation
 
-...
+Not yet!
 
 === More Info
 

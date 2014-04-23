@@ -20,7 +20,19 @@ module DDEX
       end
     end
 
-    def initialize(attributes = {})
+    ##
+    # Create an new instance
+    #
+    # === Arguments
+    #
+    # [attributes (Hash)] Values to set on the instance's attributes, a nested +Hash+ *will not* result in instantiation of child objects.
+    #
+    # === Errors
+    #
+    # [ArgumentError] If +attributes+ is not a +Hash+ or +nil+
+
+    def initialize(attributes = nil)
+      attributes ||= {}
       raise ArgumentError, "attributes must be a Hash" unless Hash === attributes
 
       attributes.each do |name, value|
@@ -33,6 +45,10 @@ module DDEX
       end
     end
 
+    ##
+    # Creates an XML representation of this instance and its descendants. Use DDEX.write instead, it's more flexable.
+    #
+
     def to_xml(options = {})
       doc = super
       ns  = self.class.ns
@@ -44,6 +60,10 @@ module DDEX
 
       doc
     end
+
+    ##
+    # Create a +Hash+ representation of this instance and its descendants
+    #
 
     def to_hash
       hash = {}
@@ -61,7 +81,6 @@ module DDEX
       hash
     end
 
-    # TODO: hash()
     def eql?(other)
       instance_of?(other.class) && roxml_attributes.values.all? { |attr| other.respond_to?(attr.accessor) && other.send(attr.accessor) == send(attr.accessor) }
     end
@@ -69,6 +88,8 @@ module DDEX
     def ==(other)
       eql?(other)
     end
+
+    # TODO: hash()
 
     private
     def roxml_attributes
