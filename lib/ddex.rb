@@ -46,7 +46,7 @@ module DDEX
   #
   # [DDEX::XMLLoadError] Problem parsing the XML or a required element is missing
   # [DDEX::UnknownVersionError] The given or detected spec version is not known or supported
-  # [ArgumentError] +options+ is not a +Hash+
+  # [ArgumentError] +options+ is not a +Hash+ or is not +nil+
 
   def self.read(xml, options = nil)
     # TODO: figure out what top level spec...
@@ -72,7 +72,7 @@ module DDEX
   #
   # === Errors
   #
-  # [ArgumentError] +options+ is not a +Hash+ or +xml+ is not a subclass of <code>DDEX::Element</code>
+  # [ArgumentError] +options+ is not a +Hash+ or is not +nil+, or +xml+ is not a subclass of <code>DDEX::Element</code>
 
   def self.write(xml, options = nil)
     DDEX::ERN.write(xml, options)

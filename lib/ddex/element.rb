@@ -25,11 +25,11 @@ module DDEX
     #
     # === Arguments
     #
-    # [attributes (Hash)] Values to set on the instance's attributes, a nested +Hash+ *will not* result in instantiation of child objects.
+    # [attributes (Hash)] Values to set on the instance's attributes, a nested +Hash+ <b>will not</b> result in instantiation of child objects.
     #
     # === Errors
     #
-    # [ArgumentError] If +attributes+ is not a +Hash+ or +nil+
+    # [ArgumentError] If +attributes+ is not a +Hash+ or is not +nil+
 
     def initialize(attributes = nil)
       attributes ||= {}
