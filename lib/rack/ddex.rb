@@ -14,7 +14,7 @@ module Rack
         [200, HEADERS, [json]]
       rescue => e
         code = e.is_a?(::DDEX::DDEXError) ? 400 : 500        
-        json = JSON.dump(:error => e.message) rescue sprintf('{"error":"JSON parsing failed (original error: %s)"}', e.class.name)
+        json = JSON.dump(:error => e.message)
 
         [code, HEADERS, [json]]
       end
