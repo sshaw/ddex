@@ -137,6 +137,33 @@ be modified to accommodate something more than <code>SPEC/VERSION</code> out of 
 
 Not yet!
 
+=== DDEX Parsing Service (Rack Endpoint)
+
+If you want to parse DDEX metadata but don't want to use Ruby to process the results you can setup a parsing service
+using <code>Rack::DDEX</code>. <code>Rack::DDEX</code> is a {Rack endpoint}[http://rack.github.io] that parses a DDEX file
+and returns JSON.
+
+For example, from the repository's root:
+
+  ~/code/ruby/ddex >cat etc/config.ru
+  require "rack/ddex"
+
+  run Rack::DDEX.new
+
+  ~/code/ruby/ddex >rackup -I lib etc/config.ru  # Note that -D has problems with autoloading
+  [2014-12-15 20:35:40] INFO  WEBrick 1.3.1
+  [2014-12-15 20:35:40] INFO  ruby 2.1.2 (2014-05-08) [x86_64-darwin13.0]
+  [2014-12-15 20:35:40] INFO  WEBrick::HTTPServer#start: pid=76385 port=9292
+
+Then, from another terminal
+
+  ~/code/ruby/ddex >curl -d @spec/fixtures/ern/36/instance1.xml http://localhost:9292
+  {"message_header":{"message_thread_id":"Bu._UcZLsNbTVitjYnci","message_id":"DbVn-iuUB-SiHl05B2IqW3_","message_file_name":"wz9RHX_Eu1d"
+  ...
+
+  ~/code/ruby/ddex >curl http://localhost:9292  # HTTP 400
+  {"error":"XML parsing error: Start tag expected, '<' not found"}
+
 === More Info
 
 * {Source code}[https://github.com/sshaw/ddex]
@@ -156,7 +183,7 @@ Not yet!
     xml_accessor :x, :as => AnotherClass
 
     # Then
-    x = SomeClass.new(:x => "123") 
+    x = SomeClass.new(:x => "123")
     x.to_xml  # undefined method `to_xml' for "123":String
 
   Raised here: https://github.com/Empact/roxml/blob/v2.5.1/lib/roxml/xml/references.rb#L262
