@@ -1,9 +1,9 @@
 # Contributing
 
 Most all of the code is generated automatically by [jaxb2ruby](https://github.com/sshaw/jaxb2ruby).
-This project's +Rakefile+ contains several tasks that use `jaxb2ruby` to facaliate code generation.
+This project's `Rakefile` contains several tasks that use `jaxb2ruby` to facaliate code generation.
 
-Once you've generated your code you'll need to integrate it into the main +DDEX+ module.
+Once you've generated your code you'll need to integrate it into the main `DDEX` module.
 
 You also need to write tests, which means you'll have to create XML test fixtures for the given spec and/or version you're adding.
 DDEX is bloated -<i>very bloated</i>, so this repository provides you with a way to generate XML fixtures too.
