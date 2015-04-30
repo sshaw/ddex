@@ -167,7 +167,7 @@ Then, from another terminal
 === Contributing
 
 Most all of the code is generated automatically by {jaxb2ruby}[https://github.com/sshaw/jaxb2ruby].
-This project's Rakefile contains several tasks that use +jaxb2ruby+ to facaliate code generation.
+This project's +Rakefile+ contains several tasks that use +jaxb2ruby+ to facaliate code generation.
 
 Once you've generated your code you'll need to integrate it into the main +DDEX+ module.
 
@@ -195,7 +195,7 @@ To generate the code:
 Note that this may result in circular dependencies, which cause problems for Ruby. You likely wont know about these until you
 execute the code and receive an error like this:
 
-  uninitialized constant DDEX::ERN::v33::Deal (NameError)
+  uninitialized constant DDEX::ERN::V33::Deal (NameError)
 
 To resolve this you must remove the line that requires +Deal+ and replace it with a {forward declaration}[https://en.wikipedia.org/wiki/Forward_declaration]
 of +Deal+. See {this}[https://github.com/sshaw/ddex/blob/v0.0.1/lib/ddex/ern/v33/related_release_offer_set.rb#L14] for an example.
@@ -215,7 +215,7 @@ via the main DDEX module. {Take a look at the file}[https://github.com/sshaw/dde
 ==== Testing
 
 Testing requires generating XML instance documents for the spec/version you're adding. This can be tedious.
-It is recommended that you let {Oxygen XML Editor}[http://www.oxygenxml.com/download.html] do this for you. While it is not free
+It is recommended that you let the {Oxygen XML Editor}[http://www.oxygenxml.com/download.html] do this for you. While it is not free
 they do allow a 30 day trial. This should give you enough time to generate the necessary files.
 
 Note that I have tried generating XMLs from schemas using Visual Studio and Eclipse and they are not as good as Oxygen as
@@ -223,11 +223,11 @@ they generate instance documents that have many validation errors. Oxygen has th
 schema types.
 
 Oxygen schema generation should be done by creating a configuration file suitable for the spec/version you're adding.
-This repository contains one for every spec/version that's supported, they can be found {here}[https://github.com/sshaw/ddex/tree/v0.0.1/etc/oxygen/samples].
-Please add yours.
+This repository contains {one for every spec/version that's supported}[https://github.com/sshaw/ddex/tree/v0.0.1/etc/oxygen/samples],
+please add yours.
 
 All fixtures must be tested against the {shared example for metadata serialization}[https://github.com/sshaw/ddex/tree/v0.0.1/spec/ern/versions_spec.rb#L4].
-This is in addition to any spec/version specific tests. See the existing ERN specs for examples of this.
+This is in addition to any spec/version specific tests. See the existing ERN specs for examples.
 
 === More Info
 
