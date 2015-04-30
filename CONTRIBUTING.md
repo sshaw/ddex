@@ -1,7 +1,7 @@
 # Contributing
 
 Most all of the code is generated automatically by [jaxb2ruby](https://github.com/sshaw/jaxb2ruby).
-This project's `Rakefile` contains several tasks that use `jaxb2ruby` to facaliate code generation.
+This project's `Rakefile` contains several tasks that use `jaxb2ruby` to facilitate code generation.
 
 Once you've generated your code you'll need to integrate it into the main `DDEX` module.
 
