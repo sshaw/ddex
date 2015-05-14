@@ -121,7 +121,7 @@ The specification version is determined by the <code>MessageSchemaVersionId</cod
 
 By default the <code>MessageSchemaVersionId</code> is assumed to be in <code>SPEC/VERSION</code> format (any leading, trailing, or duplicate slashes will be stripped),
 as this seems to be the convention used by most instance docs -though the DDEX specifications
-{are not strict about this}[http://www.ddex.net/content/format-messageschemaversionid]. If you're dealing with <code>MessageSchemaVersionId</code>s
+{are not strict about this}[http://www.ddex.net/format-messageschemaversionid]. If you're dealing with <code>MessageSchemaVersionId</code>s
 that vary from this format, and explicitly setting the version is not practical, you can set the global default(s):
 
   DDEX::ERN.config["V35"][:message_schema_version_id] = "ern tray_fever!"
