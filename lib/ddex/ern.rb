@@ -146,7 +146,9 @@ module DDEX
 
       # Some normalization
       v = version.strip.gsub(%r{//+}, "/").gsub(%r{\A/|/\Z}, "")
-      klass, _ = config.find { |name, cfg| cfg[:message_schema_version_id] == v }
+      klass, _ = config.find do |name, cfg|
+        cfg[:message_schema_version_id] == v || cfg[:version] == v
+      end
       raise_unknown_version(version) unless klass
 
       # >= 2.0 allows for one call

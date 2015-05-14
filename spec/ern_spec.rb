@@ -83,7 +83,7 @@ describe DDEX::ERN do
 
   describe ".read" do
     describe "MessageSchemaVersionId detection" do
-      %w[/ern/35 ern/35/ //ern/35//].each do |v|
+      %w[/ern/35 ern/35/ //ern/35// 3.5].each do |v|
         it "parses #{v} as ERN 3.5" do
           doc = load_fixture("ern/35/instance1")
           doc.root["MessageSchemaVersionId"] = v
