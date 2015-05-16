@@ -119,8 +119,8 @@ The specification version is determined by the <code>MessageSchemaVersionId</cod
 1. Detected based on the root element's value i.e., <code>/node()/@MessageSchemaVersionId</code> (the root element varies by specification)
 2. Explicitly given to DDEX.read via the <code>:version</code> option
 
-By default the <code>MessageSchemaVersionId</code> is assumed to be in <code>SPEC/VERSION</code> format (any leading, trailing, or duplicate slashes will be stripped),
-as this seems to be the convention used by most instance docs -though the DDEX specifications
+By default the <code>MessageSchemaVersionId</code> is assumed to be in <code>SPEC/VERSION</code> or <code>VERSION</code> format
+(any leading, trailing, or duplicate slashes will be stripped), as this seems to be the convention used by most instance docs -though the DDEX specifications
 {are not strict about this}[http://www.ddex.net/format-messageschemaversionid]. If you're dealing with <code>MessageSchemaVersionId</code>s
 that vary from this format, and explicitly setting the version is not practical, you can set the global default(s):
 
@@ -131,7 +131,7 @@ that vary from this format, and explicitly setting the version is not practical,
 Note that the version key must match the version's module name.
 
 Feel free to {open an issue}[https://github.com/sshaw/ddex/issues] if you feel this arrangement is problematic or should
-be modified to accommodate something more than <code>SPEC/VERSION</code> out of the box.
+be modified to accommodate something else.
 
 === Validation
 
