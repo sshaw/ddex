@@ -34,14 +34,14 @@ end
   Dir.entries(root).each do |dir|
     next if dir == "." or dir == ".."
     # Ignore patch version
-    schema = dir[0..2].to_i < 34 ? "ern-main.xsd" : "release-notification.xsd"
+    schema = (dir[0..2].to_i < 34 || dir == "312") ? "ern-main.xsd" : "release-notification.xsd"
     schema = File.join(root, dir, schema)
 
     desc "Validate the instance doc given by FILE against #{spec} v#{dir}"
     task "validate:#{spec}#{dir}" do
       abort "missing FILE argument" unless ENV["FILE"]
       # Empty block to silence the stack trace, that aside, we do want verboseness
-      sh "xmllint --noout --schema #{schema} #{ENV["FILE"]}" do end
+      sh "xmllint --noout --schema #{schema} '#{ENV["FILE"]}'" do end
     end
   end
 end

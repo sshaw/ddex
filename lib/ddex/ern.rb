@@ -3,6 +3,7 @@ require "nokogiri"
 
 module DDEX
   module ERN
+    autoload :V312, "ddex/ern/v312"
     autoload :V33,  "ddex/ern/v33"
     autoload :V34,  "ddex/ern/v34"
     autoload :V341, "ddex/ern/v341"
@@ -55,6 +56,12 @@ module DDEX
         :schema => "http://ddex.net/xml/2011/ern-main/33/ern-main.xsd",
         :version => "3.3",
         :message_schema_version_id => "2011/ern-main/33"
+      },
+
+      "V312" => {
+        :schema => "http://ddex.net/xml/2010/ern-main/312/ern-main.xsd",
+        :version => "3.1.2",
+        :message_schema_version_id => "2010/ern-main/312"
       }
     }.freeze
 
