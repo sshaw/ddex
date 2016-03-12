@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE settings [
+    <!ENTITY date1 "2011-11-21">
+    <!ENTITY date2 "2015-01-02">
+    <!ENTITY datetime1 "&date1;T07:45:02+00:00">
+    <!ENTITY datetime2 "&date2;T11:00:01+00:00">
+]>
+<settings>
+    <schemaSystemId>http://ddex.net/xml/ern/381/release-notification.xsd</schemaSystemId>
+    <documentRoot>NewReleaseMessage</documentRoot>
+    <outputFolder>/tmp</outputFolder>
+    <filenamePrefix>instance</filenamePrefix>
+    <filenameExtension>xml</filenameExtension>
+    <noOfInstances>1</noOfInstances>
+    <openFirstInstance>true</openFirstInstance>
+    <defaultNamespace>&lt;NO_NAMESPACE></defaultNamespace>
+    <valuesMaxLength>30</valuesMaxLength>
+    <isUseIncrementalNamesForValues>true</isUseIncrementalNamesForValues>
+    <discardOptionalElementsAfterNestedLevel>30</discardOptionalElementsAfterNestedLevel>
+    <namespaceMapping ns="http://ddex.net/xml/ern/381" proxy="ern"/>
+    <namespaceMapping ns="http://ddex.net/xml/20121219/ddex" proxy="ddex"/>
+    <namespaceMapping ns="http://ddex.net/xml/20121219/ddexC" proxy="ddexC"/>
+    <namespaceMapping ns="http://ddex.net/xml/20121219/iso4217a" proxy="iso4217a"/>
+    <namespaceMapping ns="http://ddex.net/xml/20121219/iso639a2" proxy="iso639a2"/>
+    <namespaceMapping ns="http://ddex.net/xml/20121219/iso3166a2" proxy="iso3166a2"/>
+    <element namespace="&lt;ANY>" name="&lt;ANY>">
+        <generateOptionalElements>true</generateOptionalElements>
+        <generateOptionalAttributes>true</generateOptionalAttributes>
+        <valuesForContentType>RANDOM</valuesForContentType>
+        <preferredNumberOfRepetitions>1</preferredNumberOfRepetitions>
+        <maximumRecursivityLevel>1</maximumRecursivityLevel>
+        <alternativeStrategy>FIRST</alternativeStrategy>
+        <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="true"/>
+        <attribute namespace="&lt;ANY>" name="&lt;ANY>">
+        </attribute>
+        <attribute namespace="&lt;NO_NAMESPACE>" name="IsUpdated">
+            <attributeValue>true</attributeValue>
+            <attributeValue>false</attributeValue>
+        </attribute>
+        <attribute namespace="&lt;NO_NAMESPACE>" name="MessageSchemaVersionId">
+            <attributeValue>ern/381</attributeValue>
+        </attribute>
+        <attribute namespace="&lt;NO_NAMESPACE>" name="IsISNI">
+            <attributeValue>true</attributeValue>
+            <attributeValue>false</attributeValue>
+        </attribute>
+        <attribute namespace="&lt;NO_NAMESPACE>" name="IsEan">
+            <attributeValue>true</attributeValue>
+            <attributeValue>false</attributeValue>
+        </attribute>
+        <attribute namespace="&lt;NO_NAMESPACE>" name="IsApproximate">
+            <attributeValue>true</attributeValue>
+            <attributeValue>false</attributeValue>
+        </attribute>
+        <attribute namespace="&lt;NO_NAMESPACE>" name="IsAfter">
+            <attributeValue>true</attributeValue>
+            <attributeValue>false</attributeValue>
+        </attribute>
+        <attribute namespace="&lt;NO_NAMESPACE>" name="IsReplaced">
+            <attributeValue>true</attributeValue>
+            <attributeValue>false</attributeValue>
+        </attribute>
+        <attribute namespace="&lt;NO_NAMESPACE>" name="LanguageAndScriptCode">
+            <attributeValue>en_US</attributeValue>
+            <attributeValue>es_MX</attributeValue>
+        </attribute>
+        <attribute namespace="&lt;NO_NAMESPACE>" name="IsBefore">
+            <attributeValue>true</attributeValue>
+            <attributeValue>false</attributeValue>
+        </attribute>
+        <attribute namespace="&lt;NO_NAMESPACE>" name="IsExtensible">
+            <attributeValue>true</attributeValue>
+            <attributeValue>false</attributeValue>
+        </attribute>
+        <attribute namespace="&lt;NO_NAMESPACE>" name="IsDPID">
+            <attributeValue>true</attributeValue>
+            <attributeValue>false</attributeValue>
+        </attribute>
+        <attribute namespace="&lt;NO_NAMESPACE>" name="IsMainRelease">
+            <attributeValue>true</attributeValue>
+            <attributeValue>false</attributeValue>
+        </attribute>
+        <attribute namespace="&lt;NO_NAMESPACE>" name="TerritoryCode">
+            <attributeValue>US</attributeValue>
+            <attributeValue>MX</attributeValue>
+        </attribute>
+    </element>
+    <element namespace="&lt;NO_NAMESPACE>" name="TerritoryCode">
+        <generateOptionalElements>false</generateOptionalElements>
+        <generateOptionalAttributes>false</generateOptionalAttributes>
+        <valuesForContentType>DEFAULT</valuesForContentType>
+        <preferredNumberOfRepetitions>1</preferredNumberOfRepetitions>
+        <maximumRecursivityLevel>1</maximumRecursivityLevel>
+        <alternativeStrategy>FIRST</alternativeStrategy>
+        <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
+        <elementValue>US</elementValue>
+        <elementValue>MX</elementValue>
+        <attribute namespace="&lt;ANY>" name="&lt;ANY>">
+        </attribute>
+    </element>
+    <element namespace="&lt;ANY>" name="IsArtistRelated">
+        <generateOptionalElements>false</generateOptionalElements>
+        <generateOptionalAttributes>false</generateOptionalAttributes>
+        <valuesForContentType>DEFAULT</valuesForContentType>
+        <preferredNumberOfRepetitions>1</preferredNumberOfRepetitions>
+        <maximumRecursivityLevel>1</maximumRecursivityLevel>
+        <alternativeStrategy>FIRST</alternativeStrategy>
+        <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
+        <elementValue>true</elementValue>
+        <elementValue>false</elementValue>
+        <attribute namespace="&lt;ANY>" name="&lt;ANY>">
+        </attribute>
+    </element>
+    <element namespace="&lt;ANY>" name="IsBackground">
+        <generateOptionalElements>false</generateOptionalElements>
+        <generateOptionalAttributes>false</generateOptionalAttributes>
+        <valuesForContentType>DEFAULT</valuesForContentType>
+        <preferredNumberOfRepetitions>1</preferredNumberOfRepetitions>
+        <maximumRecursivityLevel>1</maximumRecursivityLevel>
+        <alternativeStrategy>FIRST</alternativeStrategy>
+        <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
+        <elementValue>true</elementValue>
+        <elementValue>false</elementValue>
+        <attribute namespace="&lt;ANY>" name="&lt;ANY>">
+        </attribute>
+    </element>
+    <element namespace="&lt;ANY>" name="IsBonusResource">
+        <generateOptionalElements>false</generateOptionalElements>
+        <generateOptionalAttributes>false</generateOptionalAttributes>
+        <valuesForContentType>DEFAULT</valuesForContentType>
+        <preferredNumberOfRepetitions>1</preferredNumberOfRepetitions>
+        <maximumRecursivityLevel>1</maximumRecursivityLevel>
+        <alternativeStrategy>FIRST</alternativeStrategy>
+        <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
+        <elementValue>true</elementValue>
+        <elementValue>false</elementValue>
+        <attribute namespace="&lt;ANY>" name="&lt;ANY>">
+        </attribute>
+    </element>
+    <element namespace="&lt;ANY>" name="IsComplete">
+        <generateOptionalElements>false</generateOptionalElements>
+        <generateOptionalAttributes>false</generateOptionalAttributes>
+        <valuesForContentType>DEFAULT</valuesForContentType>
+        <preferredNumberOfRepetitions>1</preferredNumberOfRepetitions>
+        <maximumRecursivityLevel>1</maximumRecursivityLevel>
+        <alternativeStrategy>FIRST</alternativeStrategy>
+        <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
+        <elementValue>true</elementValue>
+        <elementValue>false</elementValue>
+        <attribute namespace="&lt;ANY>" name="&lt;ANY>">
+        </attribute>
+    </element>
+    <element namespace="&lt;ANY>" name="IsComputerGenerated">
+        <generateOptionalElements>false</generateOptionalElements>
+        <generateOptionalAttributes>false</generateOptionalAttributes>
+        <valuesForContentType>DEFAULT</valuesForContentType>
+        <preferredNumberOfRepetitions>1</preferredNumberOfRepetitions>
+        <maximumRecursivityLevel>1</maximumRecursivityLevel>
+        <alternativeStrategy>FIRST</alternativeStrategy>
+        <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
+        <elementValue>true</elementValue>
+        <elementValue>false</elementValue>
+        <attribute namespace="&lt;ANY>" name="&lt;ANY>">
+        </attribute>
+    </element>
+    <element namespace="&lt;ANY>" name="IsDance">
+        <generateOptionalElements>false</generateOptionalElements>
+        <generateOptionalAttributes>false</generateOptionalAttributes>
+        <valuesForContentType>DEFAULT</valuesForContentType>
+        <preferredNumberOfRepetitions>1</preferredNumberOfRepetitions>
+        <maximumRecursivityLevel>1</maximumRecursivityLevel>
+        <alternativeStrategy>FIRST</alternativeStrategy>
+        <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
+        <elementValue>true</elementValue>
+        <elementValue>false</elementValue>
+        <attribute namespace="&lt;ANY>" name="&lt;ANY>">
+        </attribute>
+    </element>
+    <element namespace="&lt;ANY>" name="IsExclusive">
+        <generateOptionalElements>false</generateOptionalElements>
+        <generateOptionalAttributes>false</generateOptionalAttributes>
+        <valuesForContentType>DEFAULT</valuesForContentType>
+        <preferredNumberOfRepetitions>1</preferredNumberOfRepetitions>
+        <maximumRecursivityLevel>1</maximumRecursivityLevel>
+        <alternativeStrategy>FIRST</alternativeStrategy>
+        <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
+        <elementValue>true</elementValue>
+        <elementValue>false</elementValue>
+        <attribute namespace="&lt;ANY>" name="&lt;ANY>">
+        </attribute>
+    </element>
+    <element namespace="&lt;ANY>" name="IsFragment">
+        <generateOptionalElements>false</generateOptionalElements>
+        <generateOptionalAttributes>false</generateOptionalAttributes>
+        <valuesForContentType>DEFAULT</valuesForContentType>
+        <preferredNumberOfRepetitions>1</preferredNumberOfRepetitions>
+        <maximumRecursivityLevel>1</maximumRecursivityLevel>
+        <alternativeStrategy>FIRST</alternativeStrategy>
+        <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
+        <elementValue>true</elementValue>
+        <elementValue>false</elementValue>
+        <attribute namespace="&lt;ANY>" name="&lt;ANY>">
+        </attribute>
+    </element>
+    <element namespace="&lt;ANY>" name="IsHiddenResource">
+        <generateOptionalElements>false</generateOptionalElements>
+        <generateOptionalAttributes>false</generateOptionalAttributes>
+        <valuesForContentType>DEFAULT</valuesForContentType>
+        <preferredNumberOfRepetitions>1</preferredNumberOfRepetitions>
+        <maximumRecursivityLevel>1</maximumRecursivityLevel>
+        <alternativeStrategy>FIRST</alternativeStrategy>
+        <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
+        <elementValue>true</elementValue>
+        <elementValue>false</elementValue>
+        <attribute namespace="&lt;ANY>" name="&lt;ANY>">
+        </attribute>
+    </element>
+    <element namespace="&lt;ANY>" name="IsInstrumental">
+        <generateOptionalElements>false</generateOptionalElements>
+        <generateOptionalAttributes>false</generateOptionalAttributes>
+        <valuesForContentType>DEFAULT</valuesForContentType>
+        <preferredNumberOfRepetitions>1</preferredNumberOfRepetitions>
+        <maximumRecursivityLevel>1</maximumRecursivityLevel>
+        <alternativeStrategy>FIRST</alternativeStrategy>
+        <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
+        <elementValue>true</elementValue>
+        <elementValue>false</elementValue>
+        <attribute namespace="&lt;ANY>" name="&lt;ANY>">
+        </attribute>
+    </element>
+    <element namespace="&lt;ANY>" name="IsMedley">
+        <generateOptionalElements>false</generateOptionalElements>
+        <generateOptionalAttributes>false</generateOptionalAttributes>
+        <valuesForContentType>DEFAULT</valuesForContentType>
+        <preferredNumberOfRepetitions>1</preferredNumberOfRepetitions>
+        <maximumRecursivityLevel>1</maximumRecursivityLevel>
+        <alternativeStrategy>FIRST</alternativeStrategy>
+        <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
+        <elementValue>true</elementValue>
+        <elementValue>false</elementValue>
+        <attribute namespace="&lt;ANY>" name="&lt;ANY>">
+        </attribute>
+    </element>
+    <element namespace="&lt;ANY>" name="IsMultiArtistCompilation">
+        <generateOptionalElements>false</generateOptionalElements>
+        <generateOptionalAttributes>false</generateOptionalAttributes>
+        <valuesForContentType>DEFAULT</valuesForContentType>
+        <preferredNumberOfRepetitions>1</preferredNumberOfRepetitions>
+        <maximumRecursivityLevel>1</maximumRecursivityLevel>
+        <alternativeStrategy>FIRST</alternativeStrategy>
+        <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
+        <elementValue>true</elementValue>
+        <elementValue>false</elementValue>
+        <attribute namespace="&lt;ANY>" name="&lt;ANY>">
+        </attribute>
+    </element>
+    <element namespace="&lt;ANY>" name="IsPotpourri">
+        <generateOptionalElements>false</generateOptionalElements>
+        <generateOptionalAttributes>false</generateOptionalAttributes>
+        <valuesForContentType>DEFAULT</valuesForContentType>
+        <preferredNumberOfRepetitions>1</preferredNumberOfRepetitions>
+        <maximumRecursivityLevel>1</maximumRecursivityLevel>
+        <alternativeStrategy>FIRST</alternativeStrategy>
+        <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
+        <elementValue>true</elementValue>
+        <elementValue>false</elementValue>
+        <attribute namespace="&lt;ANY>" name="&lt;ANY>">
+        </attribute>
+    </element>
+    <element namespace="&lt;ANY>" name="IsPreview">
+        <generateOptionalElements>false</generateOptionalElements>
+        <generateOptionalAttributes>false</generateOptionalAttributes>
+        <valuesForContentType>DEFAULT</valuesForContentType>
+        <preferredNumberOfRepetitions>1</preferredNumberOfRepetitions>
+        <maximumRecursivityLevel>1</maximumRecursivityLevel>
+        <alternativeStrategy>FIRST</alternativeStrategy>
+        <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
+        <elementValue>true</elementValue>
+        <elementValue>false</elementValue>
+        <attribute namespace="&lt;ANY>" name="&lt;ANY>">
+        </attribute>
+    </element>
+    <element namespace="&lt;ANY>" name="IsPromotional">
+        <generateOptionalElements>false</generateOptionalElements>
+        <generateOptionalAttributes>false</generateOptionalAttributes>
+        <valuesForContentType>DEFAULT</valuesForContentType>
+        <preferredNumberOfRepetitions>1</preferredNumberOfRepetitions>
+        <maximumRecursivityLevel>1</maximumRecursivityLevel>
+        <alternativeStrategy>FIRST</alternativeStrategy>
+        <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
+        <elementValue>true</elementValue>
+        <elementValue>false</elementValue>
+        <attribute namespace="&lt;ANY>" name="&lt;ANY>">
+        </attribute>
+    </element>
+    <element namespace="&lt;ANY>" name="IsBackfill">
+      <generateOptionalElements>false</generateOptionalElements>
+      <generateOptionalAttributes>false</generateOptionalAttributes>
+      <valuesForContentType>DEFAULT</valuesForContentType>
+      <preferredNumberOfRepetitions>1</preferredNumberOfRepetitions>
+      <maximumRecursivityLevel>1</maximumRecursivityLevel>
+      <alternativeStrategy>FIRST</alternativeStrategy>
+      <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
+      <elementValue>true</elementValue>
+      <elementValue>false</elementValue>
+      <attribute namespace="&lt;ANY>" name="&lt;ANY>">
+      </attribute>
+    </element>
+    <element namespace="&lt;ANY>" name="IsContractedArtist">
+      <generateOptionalElements>false</generateOptionalElements>
+      <generateOptionalAttributes>false</generateOptionalAttributes>
+      <valuesForContentType>DEFAULT</valuesForContentType>
+      <preferredNumberOfRepetitions>1</preferredNumberOfRepetitions>
+      <maximumRecursivityLevel>1</maximumRecursivityLevel>
+      <alternativeStrategy>FIRST</alternativeStrategy>
+      <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
+      <elementValue>true</elementValue>
+      <elementValue>false</elementValue>
+      <attribute namespace="&lt;ANY>" name="&lt;ANY>">
+      </attribute>
+    </element>
+    <element namespace="&lt;ANY>" name="IsFeaturedArtist">
+      <generateOptionalElements>false</generateOptionalElements>
+      <generateOptionalAttributes>false</generateOptionalAttributes>
+      <valuesForContentType>DEFAULT</valuesForContentType>
+      <preferredNumberOfRepetitions>1</preferredNumberOfRepetitions>
+      <maximumRecursivityLevel>1</maximumRecursivityLevel>
+      <alternativeStrategy>FIRST</alternativeStrategy>
+      <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
+      <elementValue>true</elementValue>
+      <elementValue>false</elementValue>
+      <attribute namespace="&lt;ANY>" name="&lt;ANY>">
+      </attribute>
+    </element>
+    <element namespace="&lt;ANY>" name="IsRemastered">
+      <generateOptionalElements>false</generateOptionalElements>
+      <generateOptionalAttributes>false</generateOptionalAttributes>
+      <valuesForContentType>DEFAULT</valuesForContentType>
+      <preferredNumberOfRepetitions>1</preferredNumberOfRepetitions>
+      <maximumRecursivityLevel>1</maximumRecursivityLevel>
+      <alternativeStrategy>FIRST</alternativeStrategy>
+      <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
+      <elementValue>true</elementValue>
+      <elementValue>false</elementValue>
+      <attribute namespace="&lt;ANY>" name="&lt;ANY>">
+      </attribute>
+    </element>
+    <element namespace="&lt;ANY>" name="MessageCreatedDateTime">
+        <generateOptionalElements>false</generateOptionalElements>
+        <generateOptionalAttributes>false</generateOptionalAttributes>
+        <valuesForContentType>DEFAULT</valuesForContentType>
+        <preferredNumberOfRepetitions>1</preferredNumberOfRepetitions>
+        <maximumRecursivityLevel>1</maximumRecursivityLevel>
+        <alternativeStrategy>FIRST</alternativeStrategy>
+        <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
+        <elementValue>&datetime1;</elementValue>
+        <elementValue>&datetime2;</elementValue>
+        <attribute namespace="&lt;ANY>" name="&lt;ANY>">
+        </attribute>
+    </element>
+    <element namespace="&lt;ANY>" name="Year">
+        <generateOptionalElements>false</generateOptionalElements>
+        <generateOptionalAttributes>false</generateOptionalAttributes>
+        <valuesForContentType>DEFAULT</valuesForContentType>
+        <preferredNumberOfRepetitions>1</preferredNumberOfRepetitions>
+        <maximumRecursivityLevel>1</maximumRecursivityLevel>
+        <alternativeStrategy>FIRST</alternativeStrategy>
+        <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
+        <elementValue>2013</elementValue>
+        <elementValue>2018</elementValue>
+        <attribute namespace="&lt;ANY>" name="&lt;ANY>">
+        </attribute>
+    </element>
+    <element namespace="&lt;ANY>" name="InclusionDate">
+        <generateOptionalElements>false</generateOptionalElements>
+        <generateOptionalAttributes>false</generateOptionalAttributes>
+        <valuesForContentType>DEFAULT</valuesForContentType>
+        <preferredNumberOfRepetitions>1</preferredNumberOfRepetitions>
+        <maximumRecursivityLevel>1</maximumRecursivityLevel>
+        <alternativeStrategy>FIRST</alternativeStrategy>
+        <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
+        <elementValue>&datetime1;</elementValue>
+        <elementValue>&datetime2;</elementValue>
+        <attribute namespace="&lt;ANY>" name="&lt;ANY>">
+        </attribute>
+    </element>
+    <element namespace="&lt;ANY>" name="LatestDateForPhysicalReturns">
+        <generateOptionalElements>false</generateOptionalElements>
+        <generateOptionalAttributes>false</generateOptionalAttributes>
+        <valuesForContentType>DEFAULT</valuesForContentType>
+        <preferredNumberOfRepetitions>1</preferredNumberOfRepetitions>
+        <maximumRecursivityLevel>1</maximumRecursivityLevel>
+        <alternativeStrategy>FIRST</alternativeStrategy>
+        <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
+        <elementValue>&date1;</elementValue>
+        <elementValue>&date2;</elementValue>
+        <attribute namespace="&lt;ANY>" name="&lt;ANY>">
+        </attribute>
+    </element>
+    <element namespace="&lt;ANY>" name="EffectiveDate">
+        <generateOptionalElements>false</generateOptionalElements>
+        <generateOptionalAttributes>false</generateOptionalAttributes>
+        <valuesForContentType>DEFAULT</valuesForContentType>
+        <preferredNumberOfRepetitions>1</preferredNumberOfRepetitions>
+        <maximumRecursivityLevel>1</maximumRecursivityLevel>
+        <alternativeStrategy>FIRST</alternativeStrategy>
+        <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
+        <elementValue>&date1;</elementValue>
+        <elementValue>&date2;</elementValue>
+        <attribute namespace="&lt;ANY>" name="&lt;ANY>">
+        </attribute>
+    </element>
+    <element namespace="&lt;ANY>" name="InclusionDate">
+        <generateOptionalElements>false</generateOptionalElements>
+        <generateOptionalAttributes>false</generateOptionalAttributes>
+        <valuesForContentType>DEFAULT</valuesForContentType>
+        <preferredNumberOfRepetitions>1</preferredNumberOfRepetitions>
+        <maximumRecursivityLevel>1</maximumRecursivityLevel>
+        <alternativeStrategy>FIRST</alternativeStrategy>
+        <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
+        <elementValue>&datetime1;</elementValue>
+        <elementValue>&datetime2;</elementValue>
+        <attribute namespace="&lt;ANY>" name="&lt;ANY>">
+        </attribute>
+    </element>
+    <element namespace="&lt;ANY>" name="FulfillmentDate">
+        <generateOptionalElements>false</generateOptionalElements>
+        <generateOptionalAttributes>false</generateOptionalAttributes>
+        <valuesForContentType>DEFAULT</valuesForContentType>
+        <preferredNumberOfRepetitions>1</preferredNumberOfRepetitions>
+        <maximumRecursivityLevel>1</maximumRecursivityLevel>
+        <alternativeStrategy>FIRST</alternativeStrategy>
+        <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
+        <elementValue>&date1;</elementValue>
+        <elementValue>&date2;</elementValue>
+        <attribute namespace="&lt;ANY>" name="&lt;ANY>">
+        </attribute>
+    </element>
+    <element namespace="&lt;ANY>" name="DateTime">
+        <generateOptionalElements>false</generateOptionalElements>
+        <generateOptionalAttributes>false</generateOptionalAttributes>
+        <valuesForContentType>DEFAULT</valuesForContentType>
+        <preferredNumberOfRepetitions>1</preferredNumberOfRepetitions>
+        <maximumRecursivityLevel>1</maximumRecursivityLevel>
+        <alternativeStrategy>FIRST</alternativeStrategy>
+        <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
+        <elementValue>&datetime1;</elementValue>
+        <elementValue>&datetime2;</elementValue>
+        <attribute namespace="&lt;ANY>" name="&lt;ANY>">
+        </attribute>
+    </element>
+    <element namespace="&lt;ANY>" name="StartDate">
+        <generateOptionalElements>false</generateOptionalElements>
+        <generateOptionalAttributes>false</generateOptionalAttributes>
+        <valuesForContentType>DEFAULT</valuesForContentType>
+        <preferredNumberOfRepetitions>1</preferredNumberOfRepetitions>
+        <maximumRecursivityLevel>1</maximumRecursivityLevel>
+        <alternativeStrategy>FIRST</alternativeStrategy>
+        <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
+        <elementValue>&date1;</elementValue>
+        <elementValue>&date2;</elementValue>
+        <attribute namespace="&lt;ANY>" name="&lt;ANY>">
+        </attribute>
+    </element>
+    <element namespace="&lt;ANY>" name="EndDate">
+        <generateOptionalElements>false</generateOptionalElements>
+        <generateOptionalAttributes>false</generateOptionalAttributes>
+        <valuesForContentType>DEFAULT</valuesForContentType>
+        <preferredNumberOfRepetitions>1</preferredNumberOfRepetitions>
+        <maximumRecursivityLevel>1</maximumRecursivityLevel>
+        <alternativeStrategy>FIRST</alternativeStrategy>
+        <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
+        <elementValue>&date1;</elementValue>
+        <elementValue>&date2;</elementValue>
+        <attribute namespace="&lt;ANY>" name="&lt;ANY>">
+        </attribute>
+    </element>
+</settings>
