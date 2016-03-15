@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:ern="http://ddex.net/xml/ern/381" xmlns:avs="http://ddex.net/xml/avs/avs"
-   xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xs="http://www.w3.org/2001/XMLSchema"
-   xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
-   jaxb:version="1.0"
-   targetNamespace="http://ddex.net/xml/ern/381" elementFormDefault="unqualified"
-   attributeFormDefault="unqualified">
+<xs:schema xmlns:ern="http://ddex.net/xml/ern/381"
+  xmlns:avs="http://ddex.net/xml/avs/avs"
+  xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+  jaxb:version="1.0"
+  targetNamespace="http://ddex.net/xml/ern/381"
+  elementFormDefault="unqualified"
+  attributeFormDefault="unqualified">
    <xs:import namespace="http://ddex.net/xml/avs/avs"
       schemaLocation="http://ddex.net/xml/avs/avs.xsd"/>
    <xs:annotation>
