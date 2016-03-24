@@ -19,7 +19,7 @@ class DDEX::ERN::V38::Period < Element
   include ROXML
 
 
-  xml_name "ns1:Period"
+  xml_name "Period"
 
       xml_accessor :start_date_time, :as => DDEX::ERN::V38::EventDateTime, :from => "StartDateTime", :required => false
       xml_accessor :end_date_time, :as => DDEX::ERN::V38::EventDateTime, :from => "EndDateTime", :required => false

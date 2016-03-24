@@ -17,7 +17,7 @@ class DDEX::ERN::V381::UseType < Element
   include ROXML
 
 
-  xml_name "ns1:UseType"
+  xml_name "UseType"
 
 
     xml_accessor :value, :from => ".", :required => false

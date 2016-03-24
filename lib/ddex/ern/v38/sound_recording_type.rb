@@ -17,7 +17,7 @@ class DDEX::ERN::V38::SoundRecordingType < Element
   include ROXML
 
 
-  xml_name "ns1:SoundRecordingType"
+  xml_name "SoundRecordingType"
 
 
     xml_accessor :value, :from => ".", :required => false

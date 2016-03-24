@@ -31,7 +31,7 @@ class DDEX::ERN::V381::Release < Element
   include ROXML
 
 
-  xml_name "ns1:Release"
+  xml_name "Release"
 
       xml_accessor :release_ids, :as => [DDEX::ERN::V381::ReleaseId], :from => "ReleaseId", :required => true
       xml_accessor :release_references, :as => [], :from => "ReleaseReference", :required => false

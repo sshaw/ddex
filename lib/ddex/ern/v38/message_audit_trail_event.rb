@@ -18,7 +18,7 @@ class DDEX::ERN::V38::MessageAuditTrailEvent < Element
   include ROXML
 
 
-  xml_name "ns1:MessageAuditTrailEvent"
+  xml_name "MessageAuditTrailEvent"
 
       xml_accessor :messaging_party_descriptor, :as => DDEX::ERN::V38::MessagingParty, :from => "MessagingPartyDescriptor", :required => true
       xml_accessor :date_time, :as => DateTime, :from => "DateTime", :required => true

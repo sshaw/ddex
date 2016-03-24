@@ -18,7 +18,7 @@ class DDEX::ERN::V38::ResourceProprietaryId < Element
   include ROXML
 
 
-  xml_name "ns1:ResourceProprietaryId"
+  xml_name "ResourceProprietaryId"
 
       xml_accessor :proprietary_ids, :as => [DDEX::ERN::V38::ProprietaryId], :from => "ProprietaryId", :required => true
 

@@ -30,7 +30,7 @@ class DDEX::ERN::V38::Cue < Element
   include ROXML
 
 
-  xml_name "ns1:Cue"
+  xml_name "Cue"
 
       xml_accessor :cue_use_type, :as => DDEX::ERN::V38::CueUseType, :from => "CueUseType", :required => false
       xml_accessor :cue_theme_type, :as => DDEX::ERN::V38::CueThemeType, :from => "CueThemeType", :required => false

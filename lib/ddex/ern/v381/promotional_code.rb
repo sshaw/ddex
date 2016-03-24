@@ -17,7 +17,7 @@ class DDEX::ERN::V381::PromotionalCode < Element
   include ROXML
 
 
-  xml_name "ns1:PromotionalCode"
+  xml_name "PromotionalCode"
 
 
     xml_accessor :value, :from => ".", :required => false

@@ -18,7 +18,7 @@ class DDEX::ERN::V381::DealResourceReferenceList < Element
   include ROXML
 
 
-  xml_name "ns1:DealResourceReferenceList"
+  xml_name "DealResourceReferenceList"
 
       xml_accessor :deal_resource_references, :as => [], :from => "DealResourceReference", :required => true
       xml_accessor :period, :as => DDEX::ERN::V381::Period, :from => "Period", :required => false

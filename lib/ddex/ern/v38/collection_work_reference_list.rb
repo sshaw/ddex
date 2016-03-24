@@ -18,7 +18,7 @@ class DDEX::ERN::V38::CollectionWorkReferenceList < Element
   include ROXML
 
 
-  xml_name "ns1:CollectionWorkReferenceList"
+  xml_name "CollectionWorkReferenceList"
 
       xml_accessor :collection_work_references, :as => [DDEX::ERN::V38::CollectionWorkReference], :from => "CollectionWorkReference", :required => true
 

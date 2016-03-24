@@ -17,7 +17,7 @@ class DDEX::ERN::V381::ResourceGroupResourceReferenceList < Element
   include ROXML
 
 
-  xml_name "ns1:ResourceGroupResourceReferenceList"
+  xml_name "ResourceGroupResourceReferenceList"
 
       xml_accessor :resource_group_resource_references, :as => [], :from => "ResourceGroupResourceReference", :required => true
 

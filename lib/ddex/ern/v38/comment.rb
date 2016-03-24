@@ -17,7 +17,7 @@ class DDEX::ERN::V38::Comment < Element
   include ROXML
 
 
-  xml_name "ns1:Comment"
+  xml_name "Comment"
 
 
     xml_accessor :value, :from => ".", :required => false

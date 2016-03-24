@@ -17,7 +17,7 @@ class DDEX::ERN::V38::SheetMusicType < Element
   include ROXML
 
 
-  xml_name "ns1:SheetMusicType"
+  xml_name "SheetMusicType"
 
 
     xml_accessor :value, :from => ".", :required => false

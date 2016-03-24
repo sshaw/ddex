@@ -31,7 +31,7 @@ class DDEX::ERN::V381::DealTerms < Element
   include ROXML
 
 
-  xml_name "ns1:DealTerms"
+  xml_name "DealTerms"
 
       xml_accessor :pre_order_deal?, :from => "IsPreOrderDeal", :required => false
       xml_accessor :commercial_model_types, :as => [DDEX::ERN::V381::CommercialModelType], :from => "CommercialModelType", :required => false

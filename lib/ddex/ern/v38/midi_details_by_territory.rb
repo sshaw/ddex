@@ -37,7 +37,7 @@ class DDEX::ERN::V38::MidiDetailsByTerritory < Element
   include ROXML
 
 
-  xml_name "ns1:MidiDetailsByTerritory"
+  xml_name "MidiDetailsByTerritory"
 
       xml_accessor :excluded_territory_codes, :as => [DDEX::ERN::V38::CurrentTerritoryCode], :from => "ExcludedTerritoryCode", :required => false
       xml_accessor :territory_codes, :as => [DDEX::ERN::V38::CurrentTerritoryCode], :from => "TerritoryCode", :required => false

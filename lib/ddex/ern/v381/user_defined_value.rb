@@ -17,7 +17,7 @@ class DDEX::ERN::V381::UserDefinedValue < Element
   include ROXML
 
 
-  xml_name "ns1:UserDefinedValue"
+  xml_name "UserDefinedValue"
 
 
     xml_accessor :value, :from => ".", :required => false

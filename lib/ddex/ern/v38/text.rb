@@ -25,7 +25,7 @@ class DDEX::ERN::V38::Text < Element
   include ROXML
 
 
-  xml_name "ns1:Text"
+  xml_name "Text"
 
       xml_accessor :text_type, :as => DDEX::ERN::V38::TextType, :from => "TextType", :required => false
       xml_accessor :artist_related?, :from => "IsArtistRelated", :required => false

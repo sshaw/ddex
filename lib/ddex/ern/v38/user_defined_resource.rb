@@ -26,7 +26,7 @@ class DDEX::ERN::V38::UserDefinedResource < Element
   include ROXML
 
 
-  xml_name "ns1:UserDefinedResource"
+  xml_name "UserDefinedResource"
 
       xml_accessor :user_defined_resource_type, :as => DDEX::ERN::V38::UserDefinedResourceType, :from => "UserDefinedResourceType", :required => false
       xml_accessor :artist_related?, :from => "IsArtistRelated", :required => false

@@ -18,7 +18,7 @@ class DDEX::ERN::V38::WebPolicy < Element
   include ROXML
 
 
-  xml_name "ns1:WebPolicy"
+  xml_name "WebPolicy"
 
       xml_accessor :condition, :as => DDEX::ERN::V38::Condition, :from => "Condition", :required => true
       xml_accessor :access_limitation, :from => "AccessLimitation", :required => false

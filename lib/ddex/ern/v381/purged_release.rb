@@ -20,7 +20,7 @@ class DDEX::ERN::V381::PurgedRelease < Element
   include ROXML
 
 
-  xml_name "ns1:PurgedRelease"
+  xml_name "PurgedRelease"
 
       xml_accessor :release_id, :as => DDEX::ERN::V381::ReleaseId, :from => "ReleaseId", :required => false
       xml_accessor :titles, :as => [DDEX::ERN::V381::Title], :from => "Title", :required => false

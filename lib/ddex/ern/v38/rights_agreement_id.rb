@@ -18,7 +18,7 @@ class DDEX::ERN::V38::RightsAgreementId < Element
   include ROXML
 
 
-  xml_name "ns1:RightsAgreementId"
+  xml_name "RightsAgreementId"
 
       xml_accessor :mwlis, :as => [], :from => "MWLI", :required => false
       xml_accessor :proprietary_ids, :as => [DDEX::ERN::V38::ProprietaryId], :from => "ProprietaryId", :required => false

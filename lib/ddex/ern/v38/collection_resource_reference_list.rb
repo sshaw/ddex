@@ -18,7 +18,7 @@ class DDEX::ERN::V38::CollectionResourceReferenceList < Element
   include ROXML
 
 
-  xml_name "ns1:CollectionResourceReferenceList"
+  xml_name "CollectionResourceReferenceList"
 
       xml_accessor :collection_resource_references, :as => [DDEX::ERN::V38::CollectionResourceReference], :from => "CollectionResourceReference", :required => true
 

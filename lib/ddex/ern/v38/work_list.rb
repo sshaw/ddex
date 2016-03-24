@@ -18,7 +18,7 @@ class DDEX::ERN::V38::WorkList < Element
   include ROXML
 
 
-  xml_name "ns1:WorkList"
+  xml_name "WorkList"
 
       xml_accessor :musical_works, :as => [DDEX::ERN::V38::MusicalWork], :from => "MusicalWork", :required => true
 

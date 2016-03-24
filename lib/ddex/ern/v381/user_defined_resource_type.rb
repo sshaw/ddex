@@ -17,7 +17,7 @@ class DDEX::ERN::V381::UserDefinedResourceType < Element
   include ROXML
 
 
-  xml_name "ns1:UserDefinedResourceType"
+  xml_name "UserDefinedResourceType"
 
 
     xml_accessor :value, :from => ".", :required => false

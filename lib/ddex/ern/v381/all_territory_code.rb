@@ -17,7 +17,7 @@ class DDEX::ERN::V381::AllTerritoryCode < Element
   include ROXML
 
 
-  xml_name "ns1:AllTerritoryCode"
+  xml_name "AllTerritoryCode"
 
 
     xml_accessor :value, :from => ".", :required => false

@@ -17,7 +17,7 @@ class DDEX::ERN::V381::TextType < Element
   include ROXML
 
 
-  xml_name "ns1:TextType"
+  xml_name "TextType"
 
 
     xml_accessor :value, :from => ".", :required => false

@@ -18,7 +18,7 @@ class DDEX::ERN::V38::CollectionList < Element
   include ROXML
 
 
-  xml_name "ns1:CollectionList"
+  xml_name "CollectionList"
 
       xml_accessor :collections, :as => [DDEX::ERN::V38::Collection], :from => "Collection", :required => true
 

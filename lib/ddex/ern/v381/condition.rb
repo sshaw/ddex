@@ -17,7 +17,7 @@ class DDEX::ERN::V381::Condition < Element
   include ROXML
 
 
-  xml_name "ns1:Condition"
+  xml_name "Condition"
 
       xml_accessor :value, :as => Float, :from => "Value", :required => true
       xml_accessor :unit, :from => "Unit", :required => true

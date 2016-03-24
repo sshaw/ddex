@@ -29,7 +29,7 @@ class DDEX::ERN::V38::Collection < Element
   include ROXML
 
 
-  xml_name "ns1:Collection"
+  xml_name "Collection"
 
       xml_accessor :collection_ids, :as => [DDEX::ERN::V38::CollectionId], :from => "CollectionId", :required => true
       xml_accessor :collection_types, :as => [DDEX::ERN::V38::CollectionType], :from => "CollectionType", :required => false

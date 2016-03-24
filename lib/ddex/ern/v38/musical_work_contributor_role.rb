@@ -17,7 +17,7 @@ class DDEX::ERN::V38::MusicalWorkContributorRole < Element
   include ROXML
 
 
-  xml_name "ns1:MusicalWorkContributorRole"
+  xml_name "MusicalWorkContributorRole"
 
 
     xml_accessor :value, :from => ".", :required => false

@@ -17,7 +17,7 @@ class DDEX::ERN::V38::UserInterfaceType < Element
   include ROXML
 
 
-  xml_name "ns1:UserInterfaceType"
+  xml_name "UserInterfaceType"
 
 
     xml_accessor :value, :from => ".", :required => false

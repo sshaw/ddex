@@ -17,7 +17,7 @@ class DDEX::ERN::V381::CueVisualPerceptionType < Element
   include ROXML
 
 
-  xml_name "ns1:CueVisualPerceptionType"
+  xml_name "CueVisualPerceptionType"
 
 
     xml_accessor :value, :from => ".", :required => false

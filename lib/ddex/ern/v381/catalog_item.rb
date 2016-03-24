@@ -27,7 +27,7 @@ class DDEX::ERN::V381::CatalogItem < Element
   include ROXML
 
 
-  xml_name "ns1:CatalogItem"
+  xml_name "CatalogItem"
 
       xml_accessor :territory_codes, :as => [DDEX::ERN::V381::AllTerritoryCode], :from => "TerritoryCode", :required => true
       xml_accessor :release_ids, :as => [DDEX::ERN::V381::ReleaseId], :from => "ReleaseId", :required => true

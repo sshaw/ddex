@@ -17,7 +17,7 @@ class DDEX::ERN::V38::Name < Element
   include ROXML
 
 
-  xml_name "ns1:Name"
+  xml_name "Name"
 
 
     xml_accessor :value, :from => ".", :required => false

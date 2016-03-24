@@ -17,7 +17,7 @@ class DDEX::ERN::V38::SubTitle < Element
   include ROXML
 
 
-  xml_name "ns1:SubTitle"
+  xml_name "SubTitle"
 
 
     xml_accessor :value, :from => ".", :required => false

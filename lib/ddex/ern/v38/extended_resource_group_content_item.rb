@@ -21,7 +21,7 @@ class DDEX::ERN::V38::ExtendedResourceGroupContentItem < Element
   include ROXML
 
 
-  xml_name "ns1:ExtendedResourceGroupContentItem"
+  xml_name "ExtendedResourceGroupContentItem"
 
       xml_accessor :sequence_number, :as => Integer, :from => "SequenceNumber", :required => false
       xml_accessor :sequence_sub_number, :as => Integer, :from => "SequenceSubNumber", :required => false

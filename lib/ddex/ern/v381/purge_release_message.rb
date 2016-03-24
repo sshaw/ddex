@@ -20,7 +20,7 @@ class DDEX::ERN::V381::PurgeReleaseMessage < Element
 
     setns "ns1", "http://ddex.net/xml/ern/381"
 
-  xml_name "ns1:PurgeReleaseMessage"
+  xml_name "PurgeReleaseMessage"
 
       xml_accessor :message_header, :as => DDEX::ERN::V381::MessageHeader, :from => "MessageHeader", :required => true
       xml_accessor :purged_release, :as => DDEX::ERN::V381::PurgedRelease, :from => "PurgedRelease", :required => true

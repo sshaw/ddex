@@ -17,7 +17,7 @@ class DDEX::ERN::V38::VideoCueSheetReference < Element
   include ROXML
 
 
-  xml_name "ns1:VideoCueSheetReference"
+  xml_name "VideoCueSheetReference"
 
       xml_accessor :video_cue_sheet_reference, :from => "VideoCueSheetReference", :required => true
 

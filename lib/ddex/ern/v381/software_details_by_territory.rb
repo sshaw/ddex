@@ -32,7 +32,7 @@ class DDEX::ERN::V381::SoftwareDetailsByTerritory < Element
   include ROXML
 
 
-  xml_name "ns1:SoftwareDetailsByTerritory"
+  xml_name "SoftwareDetailsByTerritory"
 
       xml_accessor :excluded_territory_codes, :as => [DDEX::ERN::V381::CurrentTerritoryCode], :from => "ExcludedTerritoryCode", :required => false
       xml_accessor :territory_codes, :as => [DDEX::ERN::V381::CurrentTerritoryCode], :from => "TerritoryCode", :required => false

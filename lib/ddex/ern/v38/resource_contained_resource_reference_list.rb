@@ -18,7 +18,7 @@ class DDEX::ERN::V38::ResourceContainedResourceReferenceList < Element
   include ROXML
 
 
-  xml_name "ns1:ResourceContainedResourceReferenceList"
+  xml_name "ResourceContainedResourceReferenceList"
 
       xml_accessor :resource_contained_resource_references, :as => [DDEX::ERN::V38::ResourceContainedResourceReference], :from => "ResourceContainedResourceReference", :required => true
 

@@ -18,7 +18,7 @@ class DDEX::ERN::V381::ResourceUsage < Element
   include ROXML
 
 
-  xml_name "ns1:ResourceUsage"
+  xml_name "ResourceUsage"
 
       xml_accessor :deal_resource_references, :as => [], :from => "DealResourceReference", :required => false
       xml_accessor :usages, :as => [DDEX::ERN::V381::Usage], :from => "Usage", :required => true

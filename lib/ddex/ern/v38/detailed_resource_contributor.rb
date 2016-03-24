@@ -30,7 +30,7 @@ class DDEX::ERN::V38::DetailedResourceContributor < Element
   include ROXML
 
 
-  xml_name "ns1:DetailedResourceContributor"
+  xml_name "DetailedResourceContributor"
 
       xml_accessor :party_names, :as => [DDEX::ERN::V38::PartyName], :from => "PartyName", :required => false
       xml_accessor :party_ids, :as => [DDEX::ERN::V38::PartyId], :from => "PartyId", :required => false

@@ -20,7 +20,7 @@ class DDEX::ERN::V381::Artist < Element
   include ROXML
 
 
-  xml_name "ns1:Artist"
+  xml_name "Artist"
 
       xml_accessor :party_names, :as => [DDEX::ERN::V381::PartyName], :from => "PartyName", :required => false
       xml_accessor :party_ids, :as => [DDEX::ERN::V381::PartyId], :from => "PartyId", :required => false

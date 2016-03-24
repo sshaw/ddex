@@ -17,7 +17,7 @@ class DDEX::ERN::V381::LabelName < Element
   include ROXML
 
 
-  xml_name "ns1:LabelName"
+  xml_name "LabelName"
 
 
     xml_accessor :value, :from => ".", :required => false

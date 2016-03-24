@@ -17,7 +17,7 @@ class DDEX::ERN::V381::TitleText < Element
   include ROXML
 
 
-  xml_name "ns1:TitleText"
+  xml_name "TitleText"
 
 
     xml_accessor :value, :from => ".", :required => false

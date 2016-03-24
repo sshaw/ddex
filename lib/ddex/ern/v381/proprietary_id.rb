@@ -17,7 +17,7 @@ class DDEX::ERN::V381::ProprietaryId < Element
   include ROXML
 
 
-  xml_name "ns1:ProprietaryId"
+  xml_name "ProprietaryId"
 
 
     xml_accessor :value, :from => ".", :required => false

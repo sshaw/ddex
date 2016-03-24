@@ -17,7 +17,7 @@ class DDEX::ERN::V381::ResourceOmissionReason < Element
   include ROXML
 
 
-  xml_name "ns1:ResourceOmissionReason"
+  xml_name "ResourceOmissionReason"
 
 
     xml_accessor :value, :from => ".", :required => false

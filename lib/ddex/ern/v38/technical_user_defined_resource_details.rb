@@ -23,7 +23,7 @@ class DDEX::ERN::V38::TechnicalUserDefinedResourceDetails < Element
   include ROXML
 
 
-  xml_name "ns1:TechnicalUserDefinedResourceDetails"
+  xml_name "TechnicalUserDefinedResourceDetails"
 
       xml_accessor :technical_resource_details_reference, :from => "TechnicalResourceDetailsReference", :required => true
       xml_accessor :user_defined_values, :as => [DDEX::ERN::V38::UserDefinedValue], :from => "UserDefinedValue", :required => false

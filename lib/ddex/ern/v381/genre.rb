@@ -18,7 +18,7 @@ class DDEX::ERN::V381::Genre < Element
   include ROXML
 
 
-  xml_name "ns1:Genre"
+  xml_name "Genre"
 
       xml_accessor :genre_text, :as => DDEX::ERN::V381::Description, :from => "GenreText", :required => true
       xml_accessor :sub_genre, :as => DDEX::ERN::V381::Description, :from => "SubGenre", :required => false
