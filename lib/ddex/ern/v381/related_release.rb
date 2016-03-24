@@ -23,7 +23,7 @@ class DDEX::ERN::V381::RelatedRelease < Element
   include ROXML
 
 
-  xml_name "ns1:RelatedRelease"
+  xml_name "RelatedRelease"
 
       xml_accessor :release_ids, :as => [DDEX::ERN::V381::ReleaseId], :from => "ReleaseId", :required => true
       xml_accessor :reference_title, :as => DDEX::ERN::V381::ReferenceTitle, :from => "ReferenceTitle", :required => false

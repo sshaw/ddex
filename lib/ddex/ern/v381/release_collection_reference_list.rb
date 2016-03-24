@@ -18,7 +18,7 @@ class DDEX::ERN::V381::ReleaseCollectionReferenceList < Element
   include ROXML
 
 
-  xml_name "ns1:ReleaseCollectionReferenceList"
+  xml_name "ReleaseCollectionReferenceList"
 
       xml_accessor :number_of_collections, :as => Integer, :from => "NumberOfCollections", :required => false
       xml_accessor :release_collection_references, :as => [DDEX::ERN::V381::ReleaseCollectionReference], :from => "ReleaseCollectionReference", :required => true

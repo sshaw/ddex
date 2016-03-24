@@ -17,7 +17,7 @@ class DDEX::ERN::V38::ArtistRole < Element
   include ROXML
 
 
-  xml_name "ns1:ArtistRole"
+  xml_name "ArtistRole"
 
 
     xml_accessor :value, :from => ".", :required => false

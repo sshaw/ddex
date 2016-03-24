@@ -20,7 +20,7 @@ class DDEX::ERN::V381::Character < Element
   include ROXML
 
 
-  xml_name "ns1:Character"
+  xml_name "Character"
 
       xml_accessor :party_names, :as => [DDEX::ERN::V381::PartyName], :from => "PartyName", :required => false
       xml_accessor :party_ids, :as => [DDEX::ERN::V381::PartyId], :from => "PartyId", :required => false

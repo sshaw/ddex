@@ -17,7 +17,7 @@ class DDEX::ERN::V381::ReasonType < Element
   include ROXML
 
 
-  xml_name "ns1:ReasonType"
+  xml_name "ReasonType"
 
 
     xml_accessor :value, :from => ".", :required => false

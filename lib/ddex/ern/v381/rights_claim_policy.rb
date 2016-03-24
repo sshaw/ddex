@@ -18,7 +18,7 @@ class DDEX::ERN::V381::RightsClaimPolicy < Element
   include ROXML
 
 
-  xml_name "ns1:RightsClaimPolicy"
+  xml_name "RightsClaimPolicy"
 
       xml_accessor :condition, :as => DDEX::ERN::V381::Condition, :from => "Condition", :required => true
       xml_accessor :rights_claim_policy_type, :from => "RightsClaimPolicyType", :required => true

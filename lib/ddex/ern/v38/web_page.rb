@@ -20,7 +20,7 @@ class DDEX::ERN::V38::WebPage < Element
   include ROXML
 
 
-  xml_name "ns1:WebPage"
+  xml_name "WebPage"
 
       xml_accessor :party_ids, :as => [DDEX::ERN::V38::PartyId], :from => "PartyId", :required => false
       xml_accessor :release_ids, :as => [DDEX::ERN::V38::ReleaseId], :from => "ReleaseId", :required => false

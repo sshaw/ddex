@@ -17,7 +17,7 @@ class DDEX::ERN::V381::ContainerFormat < Element
   include ROXML
 
 
-  xml_name "ns1:ContainerFormat"
+  xml_name "ContainerFormat"
 
 
     xml_accessor :value, :from => ".", :required => false

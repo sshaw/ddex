@@ -39,7 +39,7 @@ class DDEX::ERN::V381::ReleaseDetailsByTerritory < Element
   include ROXML
 
 
-  xml_name "ns1:ReleaseDetailsByTerritory"
+  xml_name "ReleaseDetailsByTerritory"
 
       xml_accessor :excluded_territory_codes, :as => [DDEX::ERN::V381::CurrentTerritoryCode], :from => "ExcludedTerritoryCode", :required => false
       xml_accessor :territory_codes, :as => [DDEX::ERN::V381::CurrentTerritoryCode], :from => "TerritoryCode", :required => false

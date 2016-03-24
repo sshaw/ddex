@@ -22,7 +22,7 @@ class DDEX::ERN::V38::HostSoundCarrier < Element
   include ROXML
 
 
-  xml_name "ns1:HostSoundCarrier"
+  xml_name "HostSoundCarrier"
 
       xml_accessor :release_ids, :as => [DDEX::ERN::V38::ReleaseId], :from => "ReleaseId", :required => false
       xml_accessor :rights_agreement_id, :as => DDEX::ERN::V38::RightsAgreementId, :from => "RightsAgreementId", :required => false

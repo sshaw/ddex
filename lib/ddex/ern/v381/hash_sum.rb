@@ -18,7 +18,7 @@ class DDEX::ERN::V381::HashSum < Element
   include ROXML
 
 
-  xml_name "ns1:HashSum"
+  xml_name "HashSum"
 
       xml_accessor :hash_sum, :from => "HashSum", :required => true
       xml_accessor :hash_sum_algorithm_type, :as => DDEX::ERN::V381::HashSumAlgorithmType, :from => "HashSumAlgorithmType", :required => true

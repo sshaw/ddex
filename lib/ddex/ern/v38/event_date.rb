@@ -17,7 +17,7 @@ class DDEX::ERN::V38::EventDate < Element
   include ROXML
 
 
-  xml_name "ns1:EventDate"
+  xml_name "EventDate"
 
 
     xml_accessor :value, :from => ".", :required => false

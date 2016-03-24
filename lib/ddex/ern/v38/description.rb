@@ -17,7 +17,7 @@ class DDEX::ERN::V38::Description < Element
   include ROXML
 
 
-  xml_name "ns1:Description"
+  xml_name "Description"
 
 
     xml_accessor :value, :from => ".", :required => false

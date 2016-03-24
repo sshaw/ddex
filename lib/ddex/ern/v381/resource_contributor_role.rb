@@ -17,7 +17,7 @@ class DDEX::ERN::V381::ResourceContributorRole < Element
   include ROXML
 
 
-  xml_name "ns1:ResourceContributorRole"
+  xml_name "ResourceContributorRole"
 
 
     xml_accessor :value, :from => ".", :required => false

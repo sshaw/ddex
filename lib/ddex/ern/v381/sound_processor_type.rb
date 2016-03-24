@@ -17,7 +17,7 @@ class DDEX::ERN::V381::SoundProcessorType < Element
   include ROXML
 
 
-  xml_name "ns1:SoundProcessorType"
+  xml_name "SoundProcessorType"
 
 
     xml_accessor :value, :from => ".", :required => false

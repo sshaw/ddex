@@ -19,7 +19,7 @@ class DDEX::ERN::V381::Performance < Element
   include ROXML
 
 
-  xml_name "ns1:Performance"
+  xml_name "Performance"
 
       xml_accessor :territory, :as => DDEX::ERN::V381::AllTerritoryCode, :from => "Territory", :required => false
       xml_accessor :date, :as => DDEX::ERN::V381::EventDate, :from => "Date", :required => false

@@ -19,7 +19,7 @@ class DDEX::ERN::V381::ReferenceTitle < Element
   include ROXML
 
 
-  xml_name "ns1:ReferenceTitle"
+  xml_name "ReferenceTitle"
 
       xml_accessor :title_text, :as => DDEX::ERN::V381::TitleText, :from => "TitleText", :required => true
       xml_accessor :sub_title, :as => DDEX::ERN::V381::SubTitle, :from => "SubTitle", :required => false

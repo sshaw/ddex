@@ -17,7 +17,7 @@ class DDEX::ERN::V38::ICPN < Element
   include ROXML
 
 
-  xml_name "ns1:ICPN"
+  xml_name "ICPN"
 
 
     xml_accessor :value, :from => ".", :required => false

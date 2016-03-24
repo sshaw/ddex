@@ -21,7 +21,7 @@ class DDEX::ERN::V38::PriceInformation < Element
   include ROXML
 
 
-  xml_name "ns1:PriceInformation"
+  xml_name "PriceInformation"
 
       xml_accessor :description, :as => DDEX::ERN::V38::Description, :from => "Description", :required => false
       xml_accessor :price_range_type, :as => DDEX::ERN::V38::PriceRangeType, :from => "PriceRangeType", :required => false

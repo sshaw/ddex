@@ -17,7 +17,7 @@ class DDEX::ERN::V381::FrameRate < Element
   include ROXML
 
 
-  xml_name "ns1:FrameRate"
+  xml_name "FrameRate"
 
 
     xml_accessor :value, :from => ".", :required => false

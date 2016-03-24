@@ -18,7 +18,7 @@ class DDEX::ERN::V381::Membership < Element
   include ROXML
 
 
-  xml_name "ns1:Membership"
+  xml_name "Membership"
 
       xml_accessor :organization, :as => DDEX::ERN::V381::PartyDescriptor, :from => "Organization", :required => true
       xml_accessor :membership_type, :from => "MembershipType", :required => true

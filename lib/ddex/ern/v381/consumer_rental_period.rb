@@ -17,7 +17,7 @@ class DDEX::ERN::V381::ConsumerRentalPeriod < Element
   include ROXML
 
 
-  xml_name "ns1:ConsumerRentalPeriod"
+  xml_name "ConsumerRentalPeriod"
 
 
     xml_accessor :value, :from => ".", :required => false

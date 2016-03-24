@@ -17,7 +17,7 @@ class DDEX::ERN::V381::Purpose < Element
   include ROXML
 
 
-  xml_name "ns1:Purpose"
+  xml_name "Purpose"
 
 
     xml_accessor :value, :from => ".", :required => false

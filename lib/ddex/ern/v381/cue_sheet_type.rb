@@ -17,7 +17,7 @@ class DDEX::ERN::V381::CueSheetType < Element
   include ROXML
 
 
-  xml_name "ns1:CueSheetType"
+  xml_name "CueSheetType"
 
 
     xml_accessor :value, :from => ".", :required => false

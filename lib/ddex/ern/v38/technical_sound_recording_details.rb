@@ -27,7 +27,7 @@ class DDEX::ERN::V38::TechnicalSoundRecordingDetails < Element
   include ROXML
 
 
-  xml_name "ns1:TechnicalSoundRecordingDetails"
+  xml_name "TechnicalSoundRecordingDetails"
 
       xml_accessor :technical_resource_details_reference, :from => "TechnicalResourceDetailsReference", :required => true
       xml_accessor :drm_platform_type, :as => DDEX::ERN::V38::DrmPlatformType, :from => "DrmPlatformType", :required => false

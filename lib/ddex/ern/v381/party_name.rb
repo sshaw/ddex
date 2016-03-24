@@ -18,7 +18,7 @@ class DDEX::ERN::V381::PartyName < Element
   include ROXML
 
 
-  xml_name "ns1:PartyName"
+  xml_name "PartyName"
 
       xml_accessor :full_name, :as => DDEX::ERN::V381::Name, :from => "FullName", :required => true
       xml_accessor :full_name_ascii_transcribed, :from => "FullNameAsciiTranscribed", :required => false

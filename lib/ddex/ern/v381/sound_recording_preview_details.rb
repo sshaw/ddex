@@ -18,7 +18,7 @@ class DDEX::ERN::V381::SoundRecordingPreviewDetails < Element
   include ROXML
 
 
-  xml_name "ns1:SoundRecordingPreviewDetails"
+  xml_name "SoundRecordingPreviewDetails"
 
       xml_accessor :part_type, :as => DDEX::ERN::V381::Description, :from => "PartType", :required => false
       xml_accessor :start_point, :as => Float, :from => "StartPoint", :required => false

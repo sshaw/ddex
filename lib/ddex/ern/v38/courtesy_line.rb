@@ -17,7 +17,7 @@ class DDEX::ERN::V38::CourtesyLine < Element
   include ROXML
 
 
-  xml_name "ns1:CourtesyLine"
+  xml_name "CourtesyLine"
 
 
     xml_accessor :value, :from => ".", :required => false

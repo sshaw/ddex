@@ -17,7 +17,7 @@ class DDEX::ERN::V381::PartyId < Element
   include ROXML
 
 
-  xml_name "ns1:PartyId"
+  xml_name "PartyId"
 
 
     xml_accessor :value, :from => ".", :required => false

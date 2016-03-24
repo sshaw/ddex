@@ -17,7 +17,7 @@ class DDEX::ERN::V38::Price < Element
   include ROXML
 
 
-  xml_name "ns1:Price"
+  xml_name "Price"
 
 
     xml_accessor :value, :from => ".", :required => false

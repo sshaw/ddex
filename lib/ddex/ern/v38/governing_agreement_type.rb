@@ -17,7 +17,7 @@ class DDEX::ERN::V38::GoverningAgreementType < Element
   include ROXML
 
 
-  xml_name "ns1:GoverningAgreementType"
+  xml_name "GoverningAgreementType"
 
 
     xml_accessor :value, :from => ".", :required => false

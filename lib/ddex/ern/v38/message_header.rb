@@ -20,7 +20,7 @@ class DDEX::ERN::V38::MessageHeader < Element
   include ROXML
 
 
-  xml_name "ns1:MessageHeader"
+  xml_name "MessageHeader"
 
       xml_accessor :message_thread_id, :from => "MessageThreadId", :required => false
       xml_accessor :message_id, :from => "MessageId", :required => true

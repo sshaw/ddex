@@ -19,7 +19,7 @@ class DDEX::ERN::V381::ExternalResourceLink < Element
   include ROXML
 
 
-  xml_name "ns1:ExternalResourceLink"
+  xml_name "ExternalResourceLink"
 
       xml_accessor :urls, :as => [], :from => "URL", :required => true
       xml_accessor :validity_period, :as => DDEX::ERN::V381::Period, :from => "ValidityPeriod", :required => false

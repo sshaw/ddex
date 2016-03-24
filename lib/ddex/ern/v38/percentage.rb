@@ -17,7 +17,7 @@ class DDEX::ERN::V38::Percentage < Element
   include ROXML
 
 
-  xml_name "ns1:Percentage"
+  xml_name "Percentage"
 
 
     xml_accessor :value, :from => ".", :required => false

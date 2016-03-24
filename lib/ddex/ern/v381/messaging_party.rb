@@ -20,7 +20,7 @@ class DDEX::ERN::V381::MessagingParty < Element
   include ROXML
 
 
-  xml_name "ns1:MessagingParty"
+  xml_name "MessagingParty"
 
       xml_accessor :party_ids, :as => [DDEX::ERN::V381::PartyId], :from => "PartyId", :required => true
       xml_accessor :party_name, :as => DDEX::ERN::V381::PartyName, :from => "PartyName", :required => false

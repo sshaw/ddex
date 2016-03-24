@@ -27,7 +27,7 @@ class DDEX::ERN::V381::MIDI < Element
   include ROXML
 
 
-  xml_name "ns1:MIDI"
+  xml_name "MIDI"
 
       xml_accessor :midi_type, :as => DDEX::ERN::V381::MidiType, :from => "MidiType", :required => false
       xml_accessor :artist_related?, :from => "IsArtistRelated", :required => false

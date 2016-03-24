@@ -17,7 +17,7 @@ class DDEX::ERN::V38::CatalogNumber < Element
   include ROXML
 
 
-  xml_name "ns1:CatalogNumber"
+  xml_name "CatalogNumber"
 
 
     xml_accessor :value, :from => ".", :required => false

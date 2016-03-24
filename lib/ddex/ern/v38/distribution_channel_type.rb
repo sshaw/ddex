@@ -17,7 +17,7 @@ class DDEX::ERN::V38::DistributionChannelType < Element
   include ROXML
 
 
-  xml_name "ns1:DistributionChannelType"
+  xml_name "DistributionChannelType"
 
 
     xml_accessor :value, :from => ".", :required => false

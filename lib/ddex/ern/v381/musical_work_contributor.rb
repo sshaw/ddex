@@ -21,7 +21,7 @@ class DDEX::ERN::V381::MusicalWorkContributor < Element
   include ROXML
 
 
-  xml_name "ns1:MusicalWorkContributor"
+  xml_name "MusicalWorkContributor"
 
       xml_accessor :party_names, :as => [DDEX::ERN::V381::PartyName], :from => "PartyName", :required => false
       xml_accessor :party_ids, :as => [DDEX::ERN::V381::PartyId], :from => "PartyId", :required => false

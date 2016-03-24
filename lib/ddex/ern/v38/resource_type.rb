@@ -17,7 +17,7 @@ class DDEX::ERN::V38::ResourceType < Element
   include ROXML
 
 
-  xml_name "ns1:ResourceType"
+  xml_name "ResourceType"
 
 
     xml_accessor :value, :from => ".", :required => false

@@ -18,7 +18,7 @@ class DDEX::ERN::V38::ReleaseResourceReferenceList < Element
   include ROXML
 
 
-  xml_name "ns1:ReleaseResourceReferenceList"
+  xml_name "ReleaseResourceReferenceList"
 
       xml_accessor :release_resource_references, :as => [DDEX::ERN::V38::ReleaseResourceReference], :from => "ReleaseResourceReference", :required => true
 

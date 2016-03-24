@@ -17,7 +17,7 @@ class DDEX::ERN::V38::CurrentTerritoryCode < Element
   include ROXML
 
 
-  xml_name "ns1:CurrentTerritoryCode"
+  xml_name "CurrentTerritoryCode"
 
 
     xml_accessor :value, :from => ".", :required => false

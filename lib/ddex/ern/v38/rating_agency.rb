@@ -17,7 +17,7 @@ class DDEX::ERN::V38::RatingAgency < Element
   include ROXML
 
 
-  xml_name "ns1:RatingAgency"
+  xml_name "RatingAgency"
 
 
     xml_accessor :value, :from => ".", :required => false

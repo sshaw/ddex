@@ -17,7 +17,7 @@ class DDEX::ERN::V38::TextCodecType < Element
   include ROXML
 
 
-  xml_name "ns1:TextCodecType"
+  xml_name "TextCodecType"
 
 
     xml_accessor :value, :from => ".", :required => false

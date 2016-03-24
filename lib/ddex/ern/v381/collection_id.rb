@@ -20,7 +20,7 @@ class DDEX::ERN::V381::CollectionId < Element
   include ROXML
 
 
-  xml_name "ns1:CollectionId"
+  xml_name "CollectionId"
 
       xml_accessor :g_rid, :from => "GRid", :required => false
       xml_accessor :isrc, :from => "ISRC", :required => false

@@ -17,7 +17,7 @@ class DDEX::ERN::V38::SoundRecordingCollectionReference < Element
   include ROXML
 
 
-  xml_name "ns1:SoundRecordingCollectionReference"
+  xml_name "SoundRecordingCollectionReference"
 
       xml_accessor :sequence_number, :as => Integer, :from => "SequenceNumber", :required => false
       xml_accessor :sound_recording_collection_reference, :from => "SoundRecordingCollectionReference", :required => true

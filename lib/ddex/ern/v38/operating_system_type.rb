@@ -17,7 +17,7 @@ class DDEX::ERN::V38::OperatingSystemType < Element
   include ROXML
 
 
-  xml_name "ns1:OperatingSystemType"
+  xml_name "OperatingSystemType"
 
 
     xml_accessor :value, :from => ".", :required => false

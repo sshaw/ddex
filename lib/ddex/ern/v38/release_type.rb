@@ -17,7 +17,7 @@ class DDEX::ERN::V38::ReleaseType < Element
   include ROXML
 
 
-  xml_name "ns1:ReleaseType"
+  xml_name "ReleaseType"
 
 
     xml_accessor :value, :from => ".", :required => false

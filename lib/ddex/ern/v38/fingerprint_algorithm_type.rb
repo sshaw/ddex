@@ -17,7 +17,7 @@ class DDEX::ERN::V38::FingerprintAlgorithmType < Element
   include ROXML
 
 
-  xml_name "ns1:FingerprintAlgorithmType"
+  xml_name "FingerprintAlgorithmType"
 
 
     xml_accessor :value, :from => ".", :required => false

@@ -17,7 +17,7 @@ class DDEX::ERN::V381::Keywords < Element
   include ROXML
 
 
-  xml_name "ns1:Keywords"
+  xml_name "Keywords"
 
 
     xml_accessor :value, :from => ".", :required => false

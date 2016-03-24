@@ -24,7 +24,7 @@ class DDEX::ERN::V381::TechnicalSoftwareDetails < Element
   include ROXML
 
 
-  xml_name "ns1:TechnicalSoftwareDetails"
+  xml_name "TechnicalSoftwareDetails"
 
       xml_accessor :technical_resource_details_reference, :from => "TechnicalResourceDetailsReference", :required => true
       xml_accessor :drm_platform_type, :as => DDEX::ERN::V381::DrmPlatformType, :from => "DrmPlatformType", :required => false

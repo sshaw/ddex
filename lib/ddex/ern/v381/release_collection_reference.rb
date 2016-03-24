@@ -17,7 +17,7 @@ class DDEX::ERN::V381::ReleaseCollectionReference < Element
   include ROXML
 
 
-  xml_name "ns1:ReleaseCollectionReference"
+  xml_name "ReleaseCollectionReference"
 
 
     xml_accessor :value, :from => ".", :required => false

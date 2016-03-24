@@ -20,7 +20,7 @@ class DDEX::ERN::V381::ReleaseId < Element
   include ROXML
 
 
-  xml_name "ns1:ReleaseId"
+  xml_name "ReleaseId"
 
       xml_accessor :g_rid, :from => "GRid", :required => false
       xml_accessor :isrc, :from => "ISRC", :required => false

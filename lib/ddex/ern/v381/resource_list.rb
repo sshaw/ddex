@@ -25,7 +25,7 @@ class DDEX::ERN::V381::ResourceList < Element
   include ROXML
 
 
-  xml_name "ns1:ResourceList"
+  xml_name "ResourceList"
 
       xml_accessor :sound_recordings, :as => [DDEX::ERN::V381::SoundRecording], :from => "SoundRecording", :required => false
       xml_accessor :midis, :as => [DDEX::ERN::V381::MIDI], :from => "MIDI", :required => false

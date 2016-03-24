@@ -19,7 +19,7 @@ class DDEX::ERN::V38::CreationId < Element
   include ROXML
 
 
-  xml_name "ns1:CreationId"
+  xml_name "CreationId"
 
       xml_accessor :iswc, :from => "ISWC", :required => false
       xml_accessor :opus_number, :from => "OpusNumber", :required => false

@@ -17,7 +17,7 @@ class DDEX::ERN::V381::CollectionType < Element
   include ROXML
 
 
-  xml_name "ns1:CollectionType"
+  xml_name "CollectionType"
 
 
     xml_accessor :value, :from => ".", :required => false

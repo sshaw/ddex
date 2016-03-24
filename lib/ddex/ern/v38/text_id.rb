@@ -18,7 +18,7 @@ class DDEX::ERN::V38::TextId < Element
   include ROXML
 
 
-  xml_name "ns1:TextId"
+  xml_name "TextId"
 
       xml_accessor :isbn, :from => "ISBN", :required => false
       xml_accessor :issn, :from => "ISSN", :required => false

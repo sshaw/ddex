@@ -23,7 +23,7 @@ class DDEX::ERN::V38::TechnicalMidiDetails < Element
   include ROXML
 
 
-  xml_name "ns1:TechnicalMidiDetails"
+  xml_name "TechnicalMidiDetails"
 
       xml_accessor :technical_resource_details_reference, :from => "TechnicalResourceDetailsReference", :required => true
       xml_accessor :duration, :from => "Duration", :required => false

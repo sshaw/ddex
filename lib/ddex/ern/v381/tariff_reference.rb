@@ -17,7 +17,7 @@ class DDEX::ERN::V381::TariffReference < Element
   include ROXML
 
 
-  xml_name "ns1:TariffReference"
+  xml_name "TariffReference"
 
 
     xml_accessor :value, :from => ".", :required => false

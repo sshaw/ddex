@@ -32,7 +32,7 @@ class DDEX::ERN::V38::Video < Element
   include ROXML
 
 
-  xml_name "ns1:Video"
+  xml_name "Video"
 
       xml_accessor :video_type, :as => DDEX::ERN::V38::VideoType, :from => "VideoType", :required => false
       xml_accessor :artist_related?, :from => "IsArtistRelated", :required => false

@@ -17,7 +17,7 @@ class DDEX::ERN::V381::VideoCodecType < Element
   include ROXML
 
 
-  xml_name "ns1:VideoCodecType"
+  xml_name "VideoCodecType"
 
 
     xml_accessor :value, :from => ".", :required => false

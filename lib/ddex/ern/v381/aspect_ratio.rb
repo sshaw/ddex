@@ -17,7 +17,7 @@ class DDEX::ERN::V381::AspectRatio < Element
   include ROXML
 
 
-  xml_name "ns1:AspectRatio"
+  xml_name "AspectRatio"
 
 
     xml_accessor :value, :from => ".", :required => false

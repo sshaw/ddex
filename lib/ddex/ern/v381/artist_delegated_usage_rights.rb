@@ -21,7 +21,7 @@ class DDEX::ERN::V381::ArtistDelegatedUsageRights < Element
   include ROXML
 
 
-  xml_name "ns1:ArtistDelegatedUsageRights"
+  xml_name "ArtistDelegatedUsageRights"
 
       xml_accessor :use_types, :as => [DDEX::ERN::V381::UseType], :from => "UseType", :required => true
       xml_accessor :user_interface_types, :as => [DDEX::ERN::V381::UserInterfaceType], :from => "UserInterfaceType", :required => false

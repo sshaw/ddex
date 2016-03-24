@@ -18,7 +18,7 @@ class DDEX::ERN::V381::DealList < Element
   include ROXML
 
 
-  xml_name "ns1:DealList"
+  xml_name "DealList"
 
       xml_accessor :release_deals, :as => [DDEX::ERN::V381::ReleaseDeal], :from => "ReleaseDeal", :required => false
 

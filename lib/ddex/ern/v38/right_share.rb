@@ -30,7 +30,7 @@ class DDEX::ERN::V38::RightShare < Element
   include ROXML
 
 
-  xml_name "ns1:RightShare"
+  xml_name "RightShare"
 
       xml_accessor :right_share_id, :as => DDEX::ERN::V38::RightsAgreementId, :from => "RightShareId", :required => false
       xml_accessor :right_share_reference, :from => "RightShareReference", :required => true

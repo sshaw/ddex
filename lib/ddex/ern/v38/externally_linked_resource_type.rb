@@ -17,7 +17,7 @@ class DDEX::ERN::V38::ExternallyLinkedResourceType < Element
   include ROXML
 
 
-  xml_name "ns1:ExternallyLinkedResourceType"
+  xml_name "ExternallyLinkedResourceType"
 
 
     xml_accessor :value, :from => ".", :required => false
