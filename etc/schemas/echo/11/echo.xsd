@@ -1,0 +1,1293 @@
+<?xml version="1.0"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="unqualified"
+    targetNamespace="http://ddex.net/xml/2011/echo/11" 
+    xmlns:amep="http://ddex.net/xml/2011/amep/11"
+    xmlns:ddex="http://ddex.net/xml/20110120/ddex" 
+    xmlns:ddexC="http://ddex.net/xml/20110120/ddexC"
+    xmlns:echo="http://ddex.net/xml/2011/echo/11"
+    xmlns:iso3166a2="http://ddex.net/xml/20110120/iso3166a2"
+    xmlns:iso4217a="http://ddex.net/xml/20110120/iso4217a"
+    xmlns:iso639a2="http://ddex.net/xml/20110120/iso639a2"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    xmlns:ernm="http://ddex.net/xml/2010/ern-main/32">
+    <xs:import namespace="http://ddex.net/xml/2010/ern-main/32" schemaLocation="http://ddex.net/xml/2010/ern-main/32/ern-main.xsd"/>
+    <xs:import namespace="http://ddex.net/xml/20110120/ddex" schemaLocation="http://ddex.net/xml/20110120/ddex.xsd"/>
+    <xs:import namespace="http://ddex.net/xml/20110120/ddexC" schemaLocation="http://ddex.net/xml/20110120/ddexC.xsd"/>
+    <xs:import namespace="http://ddex.net/xml/2011/amep/11" schemaLocation="http://ddex.net/xml/2011/amep/11/amep.xsd"/>
+    <xs:import namespace="http://ddex.net/xml/20110120/iso639a2" schemaLocation="http://ddex.net/xml/20110120/iso639a2.xsd"/>
+    <xs:import namespace="http://ddex.net/xml/20110120/iso4217a" schemaLocation="http://ddex.net/xml/20110120/iso4217a.xsd"/>
+    <xs:annotation>
+        <xs:documentation>(c) 2006-2010 DDEX, LLC</xs:documentation>
+    </xs:annotation>
+    <xs:complexType name="DeliveredRelease">
+        <xs:annotation>
+            <xs:documentation>A Composite containing a list of a Release that has been
+                delivered.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="ReleaseId" type="ddexC:ReleaseId" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of ReleaseIds. If available, a
+                        GRid shall always to be used. If the Release contains only one
+                        SoundRecording, the ISRC of the SoundRecording may be used instead. If the
+                        Release is an abstraction of a complete PhysicalProduct (such as a CD
+                        Album), the ICPN of the PhysicalProduct may be used instead. More than one
+                        of these identifiers may be provided.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ReleaseType" type="ddexC:ReleaseType">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the form in which a
+                        ReleaseCreator anticipates offering the Release to
+                        Consumers.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="DisplayArtistName" type="ddexC:Name" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing the Name to be used by a DSP when
+                        presenting Artist details of the Release to a Consumer.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ReferenceTitle" type="ddexC:ReferenceTitle">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the ReferenceTitle of the
+                        Release.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="DeliveryMessage" type="echo:DeliveryMessage" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a delivery Message, e.g. how
+                        and when the Release was delivered.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="DeliveredReleaseList">
+        <xs:annotation>
+            <xs:documentation>A Composite containing a list of Releases that have been
+                delivered.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="DeliveredRelease" type="echo:DeliveredRelease" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing a list of a Release that has been
+                        delivered.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="DeliveryFrequencyChangeResponseMessage">
+        <xs:annotation>
+            <xs:documentation>A response Message in a
+                DeliveryFrequencyRequestCall.</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="echo:WsAcknowledgement">
+                <xs:sequence>
+                    <xs:element name="IsSuccessful" type="xs:boolean">
+                        <xs:annotation>
+                            <xs:documentation>A Flag indicating whether a delivery frequency change
+                                was successful (=True) or not (=False).</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+                <xs:attribute name="MessageVersionId" type="xs:string" use="required">
+                    <xs:annotation>
+                        <xs:documentation>The Version of the Message.</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="DeliveryMessage">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a delivery
+                Message.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="MessageType" type="ddex:DeliveryMessageType">
+                <xs:annotation>
+                    <xs:documentation>The Type of Message.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="DeliveryDate" type="xs:dateTime" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The DateTime of the delivery (the only allowed format is ISO
+                        8601:2004: YYYY-MM-DDThh:mm:ssTZD).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="URL" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A URL of the Message.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MessageSize" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A size of the Message in bytes.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="NumberOfResourceFilesDelivered" type="xs:integer" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The number of Resource Files that have been
+                        delivered.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MessageId" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A string used to uniquely identify the delivery
+                        Message.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="InformationAboutAvailableReleaseResponseMessage">
+        <xs:annotation>
+            <xs:documentation>A response Message in a
+                InformationAboutAvailableReleaseCall.</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="echo:WsAcknowledgement">
+                <xs:sequence>
+                    <xs:element name="TicketId" type="xs:string">
+                        <xs:annotation>
+                            <xs:documentation>The Identifier of a ticket to link different web
+                                service calls to one another.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="EstimatedDateTimeOfDelivery" type="ddexC:EventDate">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of the Date and Place
+                                of the Event in which the delivery is scheduled to
+                                happen.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+                <xs:attribute name="MessageVersionId" type="xs:string" use="required">
+                    <xs:annotation>
+                        <xs:documentation>The Version of the Message.</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="MaximumDeliveriesPerDay">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a maximum digital volume (in
+                Megabytes) delivered per day.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="NumberOfMessages" type="xs:integer" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The number of NewReleaseMessages.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="NumberOfBytes" type="xs:integer" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The number of Bytes.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="MessageInBatch">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of an ERN Message in a
+                batch.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="MessageType" type="ddex:ErnMessageType">
+                <xs:annotation>
+                    <xs:documentation>The Type of Message.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MessageId" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>An Identifier of the Message.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="URL" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>A URL of the Message.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IncludedReleaseId" type="ddexC:ReleaseId" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of ReleaseIds. If available, a
+                        GRid should always be used.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:choice minOccurs="0">
+                <xs:element name="HashSum" type="ddexC:HashSum">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing a HashSum of the File and
+                            information about the algorithm with which it has been
+                            generated.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="Signature" type="xs:string">
+                    <xs:annotation>
+                        <xs:documentation>A digital signature in accordance with
+                            DDEX-DSIG.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:choice>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="OrderedReleaseInQueueResponseMessage">
+        <xs:annotation>
+            <xs:documentation>A response Message in a
+                OrderedReleasesInQueueRequestCall.</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="echo:WsAcknowledgement">
+                <xs:sequence>
+                    <xs:element name="TicketId" type="xs:string">
+                        <xs:annotation>
+                            <xs:documentation>The Identifier of a ticket to link different web
+                                service calls to one another.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="EstimatedDateTimeOfDelivery" type="ddexC:EventDate">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of the Date and Place
+                                of the Event in which the delivery is scheduled to
+                                happen.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+                <xs:attribute name="MessageVersionId" type="xs:string" use="required">
+                    <xs:annotation>
+                        <xs:documentation>The Version of the Message.</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="PlannedDeliveryMessage">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a planned delivery
+                Message.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="MessageType" type="ddex:DeliveryMessageType">
+                <xs:annotation>
+                    <xs:documentation>The Type of Message.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="AnticipatedDeliveryDate" type="xs:dateTime" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The DateTime of the expected delivery (the only allowed format
+                        is ISO 8601:2004: YYYY-MM-DDThh:mm:ssTZD).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="URL" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A URL of the Message.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MessageSize" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A size of the Message in bytes.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="NumberOfResourceFilesDelivered" type="xs:integer" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The number of Resource Files that are expected to be
+                        delivered.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MessageId" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A string used to uniquely identify the planned delivery
+                        Message.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="RedeliveryResponseMessage">
+        <xs:annotation>
+            <xs:documentation>A response Message in a RedeliveryRequestCall.</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="echo:WsAcknowledgement">
+                <xs:sequence>
+                    <xs:element name="IsSuccessful" type="xs:boolean">
+                        <xs:annotation>
+                            <xs:documentation>A Flag indicating whether a redelivery was successful
+                                (=True) or not (=False).</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+                <xs:attribute name="MessageVersionId" type="xs:string" use="required">
+                    <xs:annotation>
+                        <xs:documentation>The Version of the Message.</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="ReleaseAvailabilityRequestMessage">
+        <xs:annotation>
+            <xs:documentation>A request Message in a
+                ReleaseAvailabilityRequestCall.</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="echo:WsRequest">
+                <xs:attribute name="MessageVersionId" type="xs:string" use="required">
+                    <xs:annotation>
+                        <xs:documentation>The Version of the Message.</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="ReleaseAvailabilityResponseMessage">
+        <xs:annotation>
+            <xs:documentation>A response Message in a
+                ReleaseAvailabilityRequestCall.</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="echo:WsAcknowledgement">
+                <xs:sequence>
+                    <xs:element name="ReleaseAvailabilityStatus"
+                        type="ddexC:ReleaseAvailabilityStatus">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of whether a Release is
+                                available to be delivered to the
+                                ReleaseDistributor.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element ref="ernm:NewReleaseMessage" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Message in the ERN MessageSuite, Main Profile,
+                                containing details of a new Release.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+                <xs:attribute name="MessageVersionId" type="xs:string" use="required">
+                    <xs:annotation>
+                        <xs:documentation>The Version of the Message.</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="ReleaseInQueue">
+        <xs:annotation>
+            <xs:documentation>A Composite containing a list of a Release that is in queue for
+                delivery.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="ReleaseId" type="ddexC:ReleaseId" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of ReleaseIds. If available, a
+                        GRid shall always to be used. If the Release contains only one
+                        SoundRecording, the ISRC of the SoundRecording may be used instead. If the
+                        Release is an abstraction of a complete PhysicalProduct (such as a CD
+                        Album), the ICPN of the PhysicalProduct may be used instead. More than one
+                        of these identifiers may be provided.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ReleaseType" type="ddexC:ReleaseType">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the form in which a
+                        ReleaseCreator anticipates offering the Release to
+                        Consumers.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="DisplayArtistName" type="ddexC:Name" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing the Name to be used by a DSP when
+                        presenting Artist details of the Release to a Consumer.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ReferenceTitle" type="ddexC:ReferenceTitle">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the ReferenceTitle of the
+                        Release.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="PlannedDeliveryMessage" type="echo:PlannedDeliveryMessage"
+                minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a planned delivery Message,
+                        e.g. how and when the Release is expected to be
+                        delivered.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="ReleaseInQueueList">
+        <xs:annotation>
+            <xs:documentation>A Composite containing a list of Releases that are in queue for
+                delivery.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="ReleaseInQueue" type="echo:ReleaseInQueue" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing a list of a Release that is in queue
+                        for delivery.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="ReleaseStatusRequestMessage">
+        <xs:annotation>
+            <xs:documentation>A request Message in a ReleaseStatusRequestCall.</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="echo:WsRequest">
+                <xs:attribute name="MessageVersionId" type="xs:string" use="required">
+                    <xs:annotation>
+                        <xs:documentation>The Version of the Message.</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="ReleaseSummary">
+        <xs:annotation>
+            <xs:documentation>A Composite containing summary details of a
+                Release.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="ReleaseId" type="ddexC:ReleaseId" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of ReleaseIds. If available, a
+                        GRid shall always to be used. If the Release contains only one
+                        SoundRecording, the ISRC of the SoundRecording may be used instead. If the
+                        Release is an abstraction of a complete PhysicalProduct (such as a CD
+                        Album), the ICPN of the PhysicalProduct may be used instead. More than one
+                        of these identifiers may be provided.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ReferenceTitle" type="ddexC:ReferenceTitle" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the ReferenceTitle of the
+                        Release.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ReleaseSummaryDetailsByTerritory"
+                type="ddexC:ReleaseSummaryDetailsByTerritory" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing summary details of Descriptors and
+                        other attributes of the Release which may vary according to Territory of
+                        Release. Territory of Release may be the world.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="RightsAgreementId" type="ddexC:RightsAgreementId" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of Identifiers of a License,
+                        Claim, RightShare or contract for the MusicalWork(s) used in the
+                        Release.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Language and script for the Elements of the ReleaseSummary as
+                    defined in IETF RfC 4646. The default is the same as indicated for the
+                    containing composite. Language and Script are provided as
+                    lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML
+                    Attribute.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="ReleaseSupplyChainStatusRequestMessage">
+        <xs:annotation>
+            <xs:documentation>A request Message in a
+                ReleaseSupplyChainRequestCall.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="MessageHeader" type="amep:WsMessageHeader">
+                <xs:annotation>
+                    <xs:documentation>The MessageHeader for the Message.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="DSP" type="ddexC:PartyDescriptor">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the DSP who is requesting
+                        information, or on whose behalf information is requested. This DSP may be
+                        different from the MessageSender if that is an
+                        aggregator.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ReleaseId" type="ddexC:ReleaseId">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of ReleaseIds of the Release
+                        whose availability is requested. If available, a GRid should always be
+                        used.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="MessageVersionId" type="xs:string" use="required">
+            <xs:annotation>
+                <xs:documentation>The Version of the Message.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="ReleaseSupplyChainStatusResponseMessage">
+        <xs:annotation>
+            <xs:documentation>A response Message in a
+                ReleaseSupplyChainStatusCall.</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="echo:WsAcknowledgement">
+                <xs:sequence>
+                    <xs:element name="Status" type="ddexC:SupplyChainStatus">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of the status of the
+                                Release or ReleaseDeal in terms of processing in the supply
+                                chain.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="StatusChangeDate" type="ddexC:EventDate" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of the Date and Place
+                                of the Event in which the status of the Release or ReleaseDeal was
+                                changed.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+                <xs:attribute name="MessageVersionId" type="xs:string" use="required">
+                    <xs:annotation>
+                        <xs:documentation>The Version of the Message.</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="ReportMessageHeader">
+        <xs:annotation>
+            <xs:documentation>A Composite placed at the beginning of each reporting Message
+                providing information about the Message such as MessageSender, MessageRecipient and
+                a Message creation time stamp.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="MessageSender" type="ddexC:MessagingParty">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the
+                        MessageSender.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MessageRecipient" type="ddexC:MessagingParty">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the
+                        MessageRecipient.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsTestFlag" type="xs:boolean">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the Message is a TestMessage
+                        (=True) or a LiveMessage (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="TicketId" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>The Identifier of a ticket to link different web service calls
+                        to one another.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MessageCreatedDateTime" type="xs:dateTime">
+                <xs:annotation>
+                    <xs:documentation>The DateTime on which this reporting Message (not the
+                        WsMessage announcing the report) was created (the only allowed format is ISO
+                        8601:2004: YYYY-MM-DDThh:mm:ssTZD).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="PeriodCovered" type="ddexC:Period">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details about the Period
+                        covered.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="ReportResponseMessage">
+        <xs:annotation>
+            <xs:documentation>A response Message in a ReportRequestCall. This report has to be
+                formatted in a form usable by the MessageRecipient of the
+                WsMessage.</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="echo:WsAcknowledgement">
+                <xs:sequence>
+                    <xs:element name="TicketId" type="xs:string">
+                        <xs:annotation>
+                            <xs:documentation>The Identifier of a ticket to link different web
+                                service calls to one another.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="ReportType" type="ddexC:ReportType">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of a
+                                ReportType.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="ReportFormat" type="ddexC:ReportFormat">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of a
+                                ReportFormat.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="File" type="ddexC:File" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of a ReportFormat. The
+                                FileName and FilePath, concatenated shall constitute a valid
+                                URL.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+                <xs:attribute name="MessageVersionId" type="xs:string" use="required">
+                    <xs:annotation>
+                        <xs:documentation>The Version of the Message.</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="WsAcknowledgement">
+        <xs:annotation>
+            <xs:documentation>A Composite used in various WsMessages. This XML composite has no
+                independent meaning within the context of any DdexMessageSuite
+                standard.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="MessageHeader" type="amep:WsMessageHeader">
+                <xs:annotation>
+                    <xs:documentation>The MessageHeader for the Message.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="AcknowledgedWsMessageId" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>The Identifier of a WsMessage.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ReceivedWsMessageStatus" type="ddex:WsMessageStatus">
+                <xs:annotation>
+                    <xs:documentation>The Status of a received WsMessage.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ErrorText" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Comment about the Message. This is solely to aid the
+                        MessageRecipient of the Message to resolve the issues complained
+                        about.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="WsRequest">
+        <xs:annotation>
+            <xs:documentation>A Composite used in various request WsMessages. This XML composite has
+                no independent meaning within the context of any DdexMessageSuite
+                standard.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="MessageHeader" type="amep:WsMessageHeader">
+                <xs:annotation>
+                    <xs:documentation>The MessageHeader for the Message.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="DSP" type="ddexC:PartyDescriptor">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the DSP who is requesting
+                        information, or on whose behalf information is requested. This DSP may be
+                        different from the MessageSender if that is an
+                        aggregator.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ReleaseId" type="ddexC:ReleaseId" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of ReleaseIds of the Release
+                        whose availability is requested. If available, a GRid should always be
+                        used.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="DeliveryFrequencyChangeRequestMessage">
+        <xs:annotation>
+            <xs:documentation>A request Message in the
+                DeliveryFrequencyRequestCall.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MessageHeader" type="amep:WsMessageHeader">
+                    <xs:annotation>
+                        <xs:documentation>The MessageHeader for the Message.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="DSP" type="ddexC:PartyDescriptor">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of the DSP who is
+                            requesting information, or on whose behalf information is requested.
+                            This DSP may be different from the MessageSender if that is an
+                            aggregator.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="DeliveryActionType" type="ddex:DeliveryActionType">
+                    <xs:annotation>
+                        <xs:documentation>The Type of action requested of the MessageRecipient with
+                            respect to the delivery of further
+                            NewReleaseMessages.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="OrderType" type="ddexC:OrderType" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of the Type of an order. A
+                            specific OrderType typically infers a priority which, in turn, is
+                            defined in the contractual relationship between MessageSender and
+                            MessageRecipient. If this Element is not entered on the request, then
+                            the other parameters apply to the cumulative MaximumDeliveriesPerDay
+                            over all order types (= absolute maximum).</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="MaximumDeliveriesPerDay" type="echo:MaximumDeliveriesPerDay"
+                    minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of the maximum number of
+                            deliveries made per day. This Element applies to the OrderType (if
+                            given). One of the subelements has to be given. The MessageRecipient
+                            should stop sending web services once this limit is reached. If this
+                            Element is not entered on the request, then the recipient of the request
+                            can determine the MaximumDeliveriesPerDay.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="AffectedPeriod" type="ddexC:Period" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details about a Period of Time in
+                            which the deliveries happen.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="Comment" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Comment about the Message. This is solely to aid the
+                            MessageRecipient of the Message to resolve the issues complained
+                            about.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="MessageVersionId" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation>The Version of the Message.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="InformationAboutAvailableReleaseRequestMessage">
+        <xs:annotation>
+            <xs:documentation>A request Message in a
+                InformationAboutAvailableReleaseCall.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MessageHeader" type="amep:WsMessageHeader">
+                    <xs:annotation>
+                        <xs:documentation>The MessageHeader for the Message.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="DSP" type="ddexC:PartyDescriptor">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of the DSP who is
+                            requesting information, or on whose behalf information is requested.
+                            This DSP may be different from the MessageSender if that is an
+                            aggregator.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="Period" type="ddexC:Period" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details about a Period of Time in
+                            which the Release was originally delivered.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="MessageVersionId" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation>The Version of the Message.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="InformationAboutAvailableReleasesReportMessage">
+        <xs:annotation>
+            <xs:documentation>A Message in the ECH DdexMessageSuite that is sent to report about
+                available Releases.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MessageHeader" type="echo:ReportMessageHeader">
+                    <xs:annotation>
+                        <xs:documentation>The MessageHeader for the
+                            InformationAboutAvailableReleasesReportMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:choice>
+                    <xs:element name="NoReleaseAvailable" type="xs:boolean">
+                        <xs:annotation>
+                            <xs:documentation>A Flag indicating whether a Release is available
+                                (=True) or not (=False).</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="DeliveredReleaseList" type="echo:DeliveredReleaseList">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing a list of Releases that have
+                                been delivered.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:choice>
+            </xs:sequence>
+            <xs:attribute name="MessageVersionId" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation>The Version of the Message.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="ManifestMessage">
+        <xs:annotation>
+            <xs:documentation>A Message in the ECH DdexMessageSuite that is sent to document the FTP
+                transfer of a batch of ERN Messages, potentially accompanied by Resoure or Release
+                files.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MessageHeader" type="amep:FtpMessageHeader">
+                    <xs:annotation>
+                        <xs:documentation>The MessageHeader for the
+                            ManifestMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="IsTestFlag" type="xs:boolean">
+                    <xs:annotation>
+                        <xs:documentation>The Flag indicating whether the Message is a TestMessage
+                            (=True) or a LiveMessage (=False).</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="DeliveryType" type="ddexC:MessageActionType">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of the Type of action that
+                            the MessageSender applies to the Message.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="BatchProductType" type="ddexC:ProductType">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of the Type of a Product
+                            defining which kinds of Products are within the delivered batch. Each
+                            batch may only contain one type of Products.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="RootDirectory" type="xs:string">
+                    <xs:annotation>
+                        <xs:documentation>An Identifier of the root directory of all Messages in the
+                            batch communicated through the ManifestMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="NumberOfMessages" type="xs:integer">
+                    <xs:annotation>
+                        <xs:documentation>The number of Messages in the batch communicated through
+                            the ManifestMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="MessageInBatch" type="echo:MessageInBatch" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of an ERN Message in the
+                            batch.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="MessageVersionId" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation>The Version of the Message.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="OrderedReleaseInQueueRequestMessage">
+        <xs:annotation>
+            <xs:documentation>A request Message in a
+                OrderedReleasesInQueueRequestCall.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MessageHeader" type="amep:WsMessageHeader">
+                    <xs:annotation>
+                        <xs:documentation>The MessageHeader for the Message.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="DSP" type="ddexC:PartyDescriptor">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of the DSP who is
+                            requesting information, or on whose behalf information is requested.
+                            This DSP may be different from the MessageSender if that is an
+                            aggregator.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="OrderType" type="ddexC:OrderType" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of the Type of an order. A
+                            specific OrderType typically infers a priority which, in turn, is
+                            defined in the contractual relationship between MessageSender and
+                            MessageRecipient.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="Release" type="echo:ReleaseSummary" minOccurs="0"
+                    maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of a requested
+                            Release.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:choice minOccurs="0">
+                    <xs:element name="TerritoryCode" type="ddexC:TerritoryCode"
+                        maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Territory to which the request applies (represented
+                                by an ISO 3166-1 TerritoryCode). Either this Element or
+                                ExcludedTerritory shall be present, but not both.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="ExcludedTerritoryCode" type="ddexC:TerritoryCode"
+                        maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Territory to which the request applies (represented
+                                by an ISO 3166-1 TerritoryCode). Either this Element or Territory
+                                shall be present, but not both.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:choice>
+                <xs:element name="Period" type="ddexC:Period" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details about a Period of Time in
+                            which the Releases were ordered.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="MessageVersionId" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation>The Version of the Message.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="RedeliveryRequestMessage">
+        <xs:annotation>
+            <xs:documentation>A request Message in a RedeliveryRequestCall.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MessageHeader" type="amep:WsMessageHeader">
+                    <xs:annotation>
+                        <xs:documentation>The MessageHeader for the Message.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="DSP" type="ddexC:PartyDescriptor">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of the DSP who is
+                            requesting information, or on whose behalf information is requested.
+                            This DSP may be different from the MessageSender if that is an
+                            aggregator.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="OrderType" type="ddexC:OrderType" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of the Type of an order. A
+                            specific OrderType typically infers a priority which, in turn, is
+                            defined in the contractual relationship between MessageSender and
+                            MessageRecipient.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ReleaseId" type="ddexC:ReleaseId">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of ReleaseIds. If
+                            available, a GRid should always be used. When a ReleaseId with no
+                            ResourceId is provided in a grouping, the request is for the entire
+                            Release; when a ReleaseId and a ResourceId are provided in a grouping,
+                            the request is for the specified Resource.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ResourceId" type="ddexC:ResourceId" minOccurs="0"
+                    maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of ResourceIds. When a
+                            ReleaseId with no ResourceId is provided in a grouping, the request is
+                            for the entire Release; when a ReleaseId and a ResourceId are provided
+                            in a grouping, the request is for the specified
+                            Resource.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="RedeliveryReasonType" type="ddexC:RedeliveryReasonType"
+                    minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of a reason for the
+                            redelivery. This is solely to aid the MessageRecipient of the Message to
+                            resolve the issues complained about.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="Comment" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Comment that provides additional information to the
+                            RedeliveryReasonType and must be understood by the
+                            MessageRecipient.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="MessageVersionId" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation>The Version of the Message.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="ReleaseAvailabilityMessage">
+        <xs:annotation>
+            <xs:documentation>A Message that is sent to inform about an available
+                Release.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MessageHeader" type="amep:WsMessageHeader">
+                    <xs:annotation>
+                        <xs:documentation>The MessageHeader for the Message.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ReleaseId" type="ddexC:ReleaseId" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of ReleaseIds. If
+                            available, a GRid should always be used.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element ref="ernm:NewReleaseMessage">
+                    <xs:annotation>
+                        <xs:documentation>A Message in the ERN MessageSuite, Main Profile,
+                            containing details of a new Release.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="MessageVersionId" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation>The Version of the Message.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="ReleasesInQueueReportMessage">
+        <xs:annotation>
+            <xs:documentation>A Message in the ECH DdexMessageSuite that is sent to report about
+                Releases that are in queue for delivery.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MessageHeader" type="echo:ReportMessageHeader">
+                    <xs:annotation>
+                        <xs:documentation>The MessageHeader for the
+                            ReleasesInQueueReportMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:choice>
+                    <xs:element name="NoReleaseAvailable" type="xs:boolean">
+                        <xs:annotation>
+                            <xs:documentation>A Flag indicating whether a Release is available
+                                (=True) or not (=False).</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="ReleaseInQueueList" type="echo:ReleaseInQueueList">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing a list of Releases that are in
+                                queue for delivery.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:choice>
+            </xs:sequence>
+            <xs:attribute name="MessageVersionId" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation>The Version of the Message.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="ReleaseStatusInformationMessage">
+        <xs:annotation>
+            <xs:documentation>A response Message in a ReleaseStatusCall.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MessageHeader" type="amep:WsMessageHeader">
+                    <xs:annotation>
+                        <xs:documentation>The MessageHeader for the Message.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="DSP" type="ddexC:PartyDescriptor">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of the DSP who is
+                            requesting information, or on whose behalf information is requested.
+                            This DSP may be different from the MessageSender if that is an
+                            aggregator.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ReleaseId" type="ddexC:ReleaseId">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of ReleaseIds. If
+                            available, a GRid should always be used.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="NewReleaseMessageStatus" type="ddex:NewReleaseMessageStatus">
+                    <xs:annotation>
+                        <xs:documentation>The status of the NewReleaseMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element ref="ernm:NewReleaseMessage" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Message in the ERN MessageSuite, Main Profile,
+                            containing details of a new Release.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="MessageVersionId" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation>The Version of the Message.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="ReportDeliveryMessage">
+        <xs:annotation>
+            <xs:documentation>A request Message in a ReportDeliveryCall.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MessageHeader" type="amep:WsMessageHeader">
+                    <xs:annotation>
+                        <xs:documentation>The MessageHeader for the Message.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="TicketId" type="xs:string">
+                    <xs:annotation>
+                        <xs:documentation>The Identifier of a ticket to link different web service
+                            calls to one another.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ReportType" type="ddexC:ReportType">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of a
+                            ReportType.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ReportFormat" type="ddexC:ReportFormat">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of a
+                            ReportFormat.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="File" type="ddexC:File">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of a ReportFormat. The
+                            FileName and FilePath, concatenated shall constitute a valid
+                            URL.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="MessageVersionId" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation>The Version of the Message.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="ReportRequestMessage">
+        <xs:annotation>
+            <xs:documentation>A request Message in a ReportCall.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MessageHeader" type="amep:WsMessageHeader">
+                    <xs:annotation>
+                        <xs:documentation>The MessageHeader for the Message.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="DSP" type="ddexC:PartyDescriptor">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of the DSP who is
+                            requesting information, or on whose behalf information is requested.
+                            This DSP may be different from the MessageSender if that is an
+                            aggregator.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="TicketId" type="xs:string">
+                    <xs:annotation>
+                        <xs:documentation>The Identifier of a ticket to link different web service
+                            calls to one another.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="MessageVersionId" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation>The Version of the Message.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="SupplyChainStatusMessage">
+        <xs:annotation>
+            <xs:documentation>A request Message in a SupplyChainStatusCall.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MessageHeader" type="amep:WsMessageHeader">
+                    <xs:annotation>
+                        <xs:documentation>The MessageHeader for the Message.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="DSP" type="ddexC:PartyDescriptor">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of the DSP who is
+                            requesting information, or on whose behalf information is requested.
+                            This DSP may be different from the MessageSender if that is an
+                            aggregator.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ReleaseId" type="ddexC:ReleaseId">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of ReleaseIds. If
+                            available, a GRid should always be used.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="Status" type="ddexC:SupplyChainStatus">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of the status of the
+                            Release or ReleaseDeal in terms of processing in the supply
+                            chain.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="StatusChangeDateTime" type="ddexC:EventDateTime" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of the DateTime and Place
+                            of an Event that marks a change of status (in ISO 8601:2004 format:
+                            YYYY-DD-MMThh:mm:ss).</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="MessageVersionId" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation>The Version of the Message.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="ReleaseAvailabilityResponseMessage"
+        type="echo:ReleaseAvailabilityResponseMessage"/>
+    <xs:element name="OrderedReleaseInQueueResponseMessage"
+        type="echo:OrderedReleaseInQueueResponseMessage"/>
+    <xs:element name="RedeliveryResponseMessage" type="echo:RedeliveryResponseMessage"/>
+    <xs:element name="InformationAboutAvailableReleaseResponseMessage"
+        type="echo:InformationAboutAvailableReleaseResponseMessage"/>
+    <xs:element name="DeliveryFrequencyChangeResponseMessage"
+        type="echo:DeliveryFrequencyChangeResponseMessage"/>
+    <xs:element name="ReportResponseMessage" type="echo:ReportResponseMessage"/>
+    <xs:element name="ReleaseAvailabilityRequestMessage"
+        type="echo:ReleaseAvailabilityRequestMessage"/>
+    <xs:element name="ReleaseStatusRequestMessage" type="echo:ReleaseStatusRequestMessage"/>
+    <xs:element name="ReleaseSupplyChainStatusRequestMessage"
+        type="echo:ReleaseSupplyChainStatusRequestMessage"/>
+    <xs:element name="ReleaseSupplyChainStatusResponseMessage"
+        type="echo:ReleaseSupplyChainStatusResponseMessage"/>
+</xs:schema>
