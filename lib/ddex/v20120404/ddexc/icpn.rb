@@ -19,7 +19,7 @@ class ICPN < Element
     xml_accessor :value, :from => ".", :required => false
 
   
-      xml_accessor :ean?, :from => "@IsEan", :required => true
+      xml_accessor :isean, :from => "@IsEan", :required => true
     
   
 
