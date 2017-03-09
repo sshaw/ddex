@@ -19,16 +19,16 @@ class DDEX::V20100712::DDEXC::SimpleProfileMessagingParty < Element
   include ROXML
 
 
-  xml_name "ns2:SimpleProfileMessagingParty"
+  xml_name "SimpleProfileMessagingParty"
 
       xml_accessor :party_id, :as => DDEX::V20100712::DDEXC::PartyId, :from => "PartyId", :required => true
       xml_accessor :party_name, :as => DDEX::V20100712::DDEXC::SimpleProfilePartyName, :from => "PartyName", :required => false
 
 
-  
+
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
-    
-  
+
+
 
 end
 

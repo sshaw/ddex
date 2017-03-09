@@ -17,15 +17,15 @@ class DDEX::V20100712::DDEXC::PromotionalCode < Element
   include ROXML
 
 
-  xml_name "ns2:PromotionalCode"
+  xml_name "PromotionalCode"
 
 
     xml_accessor :value, :from => ".", :required => false
 
-  
+
       xml_accessor :namespace, :from => "@Namespace", :required => false
-    
-  
+
+
 
 end
 

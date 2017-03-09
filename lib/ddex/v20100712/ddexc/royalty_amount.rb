@@ -17,15 +17,15 @@ class DDEX::V20100712::DDEXC::RoyaltyAmount < Element
   include ROXML
 
 
-  xml_name "ns2:RoyaltyAmount"
+  xml_name "RoyaltyAmount"
 
 
     xml_accessor :value, :from => ".", :required => false
 
-  
+
       xml_accessor :currency_code, :from => "@CurrencyCode", :required => true
-    
-  
+
+
 
 end
 

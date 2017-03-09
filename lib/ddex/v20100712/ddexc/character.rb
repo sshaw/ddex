@@ -19,16 +19,16 @@ class DDEX::V20100712::DDEXC::Character < DDEX::V20100712::DDEXC::PartyDescripto
   include ROXML
 
 
-  xml_name "ns2:Character"
+  xml_name "Character"
 
       xml_accessor :resource_contributor, :as => DDEX::V20100712::DDEXC::ResourceContributor, :from => "ResourceContributor", :required => false
 
 
-  
+
 
       xml_accessor :sequence_number, :as => Integer, :from => "@SequenceNumber", :required => false
-    
-  
+
+
 
 end
 

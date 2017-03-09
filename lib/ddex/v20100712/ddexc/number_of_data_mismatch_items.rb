@@ -17,15 +17,15 @@ class DDEX::V20100712::DDEXC::NumberOfDataMismatchItems < Element
   include ROXML
 
 
-  xml_name "ns2:NumberOfDataMismatchItems"
+  xml_name "NumberOfDataMismatchItems"
 
 
     xml_accessor :value, :from => ".", :required => false
 
-  
+
       xml_accessor :data_mismatch_status, :from => "@DataMismatchStatus", :required => false
-    
-  
+
+
 
 end
 

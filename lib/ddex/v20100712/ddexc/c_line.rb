@@ -17,16 +17,16 @@ class DDEX::V20100712::DDEXC::CLine < Element
   include ROXML
 
 
-  xml_name "ns2:CLine"
+  xml_name "CLine"
 
       xml_accessor :year, :from => "Year", :required => true
       xml_accessor :c_line_text, :from => "CLineText", :required => true
 
 
-  
+
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
-    
-  
+
+
 
 end
 

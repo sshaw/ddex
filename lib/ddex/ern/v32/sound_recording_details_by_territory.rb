@@ -28,7 +28,7 @@ class DDEX::ERN::V32::SoundRecordingDetailsByTerritory < DDEX::V20100712::DDEXC:
   include ROXML
 
 
-  xml_name "ns1:SoundRecordingDetailsByTerritory"
+  xml_name "SoundRecordingDetailsByTerritory"
 
       xml_accessor :courtesy_line, :as => DDEX::V20100712::DDEXC::CourtesyLine, :from => "CourtesyLine", :required => false
       xml_accessor :sequence_number, :from => "SequenceNumber", :required => false
@@ -43,7 +43,7 @@ class DDEX::ERN::V32::SoundRecordingDetailsByTerritory < DDEX::V20100712::DDEXC:
       xml_accessor :synopsis, :as => DDEX::V20100712::DDEXC::Synopsis, :from => "Synopsis", :required => false
 
 
-  
+
 
 end
 

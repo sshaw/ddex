@@ -19,13 +19,13 @@ class DDEX::V20100712::DDEXC::PartyDescriptor < Element
   include ROXML
 
 
-  xml_name "ns2:PartyDescriptor"
+  xml_name "PartyDescriptor"
 
       xml_accessor :party_names, :as => [DDEX::V20100712::DDEXC::PartyName], :from => "PartyName", :required => false
       xml_accessor :party_id, :as => DDEX::V20100712::DDEXC::PartyId, :from => "PartyId", :required => false
 
 
-  
+
 
 end
 

@@ -17,15 +17,15 @@ class DDEX::V20100712::DDEXC::RoyaltyCode < Element
   include ROXML
 
 
-  xml_name "ns2:RoyaltyCode"
+  xml_name "RoyaltyCode"
 
 
     xml_accessor :value, :from => ".", :required => false
 
-  
+
       xml_accessor :namespace, :from => "@Namespace", :required => true
-    
-  
+
+
 
 end
 

@@ -17,7 +17,7 @@ class DDEX::V20100712::DDEXC::CollectionCollectionReference < Element
   include ROXML
 
 
-  xml_name "ns2:CollectionCollectionReference"
+  xml_name "CollectionCollectionReference"
 
       xml_accessor :sequence_number, :as => Integer, :from => "SequenceNumber", :required => false
       xml_accessor :collection_collection_reference, :from => "CollectionCollectionReference", :required => true
@@ -27,7 +27,7 @@ class DDEX::V20100712::DDEXC::CollectionCollectionReference < Element
       xml_accessor :inclusion_date, :as => DateTime, :from => "InclusionDate", :required => false
 
 
-  
+
 
 end
 

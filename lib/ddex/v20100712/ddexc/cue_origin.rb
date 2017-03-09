@@ -17,18 +17,18 @@ class DDEX::V20100712::DDEXC::CueOrigin < Element
   include ROXML
 
 
-  xml_name "ns2:CueOrigin"
+  xml_name "CueOrigin"
 
 
     xml_accessor :value, :from => ".", :required => false
 
-  
+
       xml_accessor :namespace, :from => "@Namespace", :required => false
-    
-  
+
+
       xml_accessor :user_defined_value, :from => "@UserDefinedValue", :required => false
-    
-  
+
+
 
 end
 

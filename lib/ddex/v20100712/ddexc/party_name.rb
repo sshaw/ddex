@@ -18,7 +18,7 @@ class DDEX::V20100712::DDEXC::PartyName < Element
   include ROXML
 
 
-  xml_name "ns2:PartyName"
+  xml_name "PartyName"
 
       xml_accessor :full_name, :as => DDEX::V20100712::DDEXC::Name, :from => "FullName", :required => true
       xml_accessor :full_name_ascii_transcribed, :from => "FullNameAsciiTranscribed", :required => false
@@ -29,10 +29,10 @@ class DDEX::V20100712::DDEXC::PartyName < Element
       xml_accessor :abbreviated_name, :as => DDEX::V20100712::DDEXC::Name, :from => "AbbreviatedName", :required => false
 
 
-  
+
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
-    
-  
+
+
 
 end
 

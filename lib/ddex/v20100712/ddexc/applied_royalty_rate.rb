@@ -17,24 +17,24 @@ class DDEX::V20100712::DDEXC::AppliedRoyaltyRate < Element
   include ROXML
 
 
-  xml_name "ns2:AppliedRoyaltyRate"
+  xml_name "AppliedRoyaltyRate"
 
 
     xml_accessor :value, :from => ".", :required => false
 
-  
+
       xml_accessor :value_type, :from => "@ValueType", :required => true
-    
-  
+
+
       xml_accessor :royalty_rate_type, :from => "@RoyaltyRateType", :required => true
-    
-  
+
+
       xml_accessor :namespace, :from => "@Namespace", :required => false
-    
-  
+
+
       xml_accessor :user_defined_value, :from => "@UserDefinedValue", :required => false
-    
-  
+
+
 
 end
 

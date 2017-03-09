@@ -18,15 +18,15 @@ class DDEX::ERN::V32::ReleaseList < Element
   include ROXML
 
 
-  xml_name "ns1:ReleaseList"
+  xml_name "ReleaseList"
 
       xml_accessor :releases, :as => [DDEX::ERN::V32::Release], :from => "Release", :required => true
 
 
-  
+
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
-    
-  
+
+
 
 end
 

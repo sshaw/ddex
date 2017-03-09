@@ -17,15 +17,15 @@ class DDEX::V20100712::DDEXC::ExternalLocationDescriptor < Element
   include ROXML
 
 
-  xml_name "ns2:ExternalLocationDescriptor"
+  xml_name "ExternalLocationDescriptor"
 
 
     xml_accessor :value, :from => ".", :required => false
 
-  
+
       xml_accessor :descriptor_syntax, :from => "@DescriptorSyntax", :required => false
-    
-  
+
+
 
 end
 

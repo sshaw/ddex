@@ -17,15 +17,15 @@ class DDEX::V20100712::DDEXC::Synopsis < Element
   include ROXML
 
 
-  xml_name "ns2:Synopsis"
+  xml_name "Synopsis"
 
 
     xml_accessor :value, :from => ".", :required => false
 
-  
+
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
-    
-  
+
+
 
 end
 

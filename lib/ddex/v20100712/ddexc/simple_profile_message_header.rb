@@ -19,7 +19,7 @@ class DDEX::V20100712::DDEXC::SimpleProfileMessageHeader < Element
   include ROXML
 
 
-  xml_name "ns2:SimpleProfileMessageHeader"
+  xml_name "SimpleProfileMessageHeader"
 
       xml_accessor :message_thread_id, :from => "MessageThreadId", :required => true
       xml_accessor :message_id, :from => "MessageId", :required => true
@@ -31,10 +31,10 @@ class DDEX::V20100712::DDEXC::SimpleProfileMessageHeader < Element
       xml_accessor :message_control_type, :from => "MessageControlType", :required => false
 
 
-  
+
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
-    
-  
+
+
 
 end
 

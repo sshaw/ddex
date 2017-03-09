@@ -18,12 +18,12 @@ class DDEX::V20100712::DDEXC::MidiId < Element
   include ROXML
 
 
-  xml_name "ns2:MidiId"
+  xml_name "MidiId"
 
       xml_accessor :proprietary_ids, :as => [DDEX::V20100712::DDEXC::ProprietaryId], :from => "ProprietaryId", :required => true
 
 
-  
+
 
 end
 

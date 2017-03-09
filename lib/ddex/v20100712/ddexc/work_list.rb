@@ -18,15 +18,15 @@ class DDEX::V20100712::DDEXC::WorkList < Element
   include ROXML
 
 
-  xml_name "ns2:WorkList"
+  xml_name "WorkList"
 
       xml_accessor :musical_works, :as => [DDEX::V20100712::DDEXC::MusicalWork], :from => "MusicalWork", :required => true
 
 
-  
+
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
-    
-  
+
+
 
 end
 

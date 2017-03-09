@@ -25,7 +25,7 @@ class DDEX::V20100712::DDEXC::Software < Element
   include ROXML
 
 
-  xml_name "ns2:Software"
+  xml_name "Software"
 
       xml_accessor :software_type, :as => DDEX::V20100712::DDEXC::SoftwareType, :from => "SoftwareType", :required => false
       xml_accessor :artist_related?, :from => "IsArtistRelated", :required => false
@@ -39,10 +39,10 @@ class DDEX::V20100712::DDEXC::Software < Element
       xml_accessor :software_details_by_territories, :as => [DDEX::V20100712::DDEXC::SoftwareDetailsByTerritory], :from => "SoftwareDetailsByTerritory", :required => true
 
 
-  
+
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
-    
-  
+
+
 
 end
 

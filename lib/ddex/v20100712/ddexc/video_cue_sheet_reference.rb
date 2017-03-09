@@ -17,12 +17,12 @@ class DDEX::V20100712::DDEXC::VideoCueSheetReference < Element
   include ROXML
 
 
-  xml_name "ns2:VideoCueSheetReference"
+  xml_name "VideoCueSheetReference"
 
       xml_accessor :video_cue_sheet_reference, :from => "VideoCueSheetReference", :required => true
 
 
-  
+
 
 end
 

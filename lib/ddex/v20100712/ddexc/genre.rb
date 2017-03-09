@@ -18,16 +18,16 @@ class DDEX::V20100712::DDEXC::Genre < Element
   include ROXML
 
 
-  xml_name "ns2:Genre"
+  xml_name "Genre"
 
       xml_accessor :genre_text, :as => DDEX::V20100712::DDEXC::Description, :from => "GenreText", :required => true
       xml_accessor :sub_genre, :as => DDEX::V20100712::DDEXC::Description, :from => "SubGenre", :required => false
 
 
-  
+
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
-    
-  
+
+
 
 end
 

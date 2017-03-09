@@ -28,7 +28,7 @@ class DDEX::ERN::V32::Cue < Element
   include ROXML
 
 
-  xml_name "ns1:Cue"
+  xml_name "Cue"
 
       xml_accessor :cue_use_type, :as => DDEX::V20100712::DDEXC::CueUseType, :from => "CueUseType", :required => false
       xml_accessor :cue_theme_type, :as => DDEX::V20100712::DDEXC::CueThemeType, :from => "CueThemeType", :required => false
@@ -49,7 +49,7 @@ class DDEX::ERN::V32::Cue < Element
       xml_accessor :c_lines, :as => [DDEX::V20100712::DDEXC::CLine], :from => "CLine", :required => false
 
 
-  
+
 
 end
 

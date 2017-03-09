@@ -19,7 +19,7 @@ class DDEX::V20100712::DDEXC::VideoId < Element
   include ROXML
 
 
-  xml_name "ns2:VideoId"
+  xml_name "VideoId"
 
       xml_accessor :isrc, :from => "ISRC", :required => false
       xml_accessor :isan, :from => "ISAN", :required => false
@@ -28,7 +28,7 @@ class DDEX::V20100712::DDEXC::VideoId < Element
       xml_accessor :proprietary_ids, :as => [DDEX::V20100712::DDEXC::ProprietaryId], :from => "ProprietaryId", :required => false
 
 
-  
+
 
 end
 

@@ -18,15 +18,15 @@ class DDEX::ERN::V32::DealList < Element
   include ROXML
 
 
-  xml_name "ns1:DealList"
+  xml_name "DealList"
 
       xml_accessor :release_deals, :as => [DDEX::ERN::V32::ReleaseDeal], :from => "ReleaseDeal", :required => true
 
 
-  
+
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
-    
-  
+
+
 
 end
 

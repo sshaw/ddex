@@ -18,13 +18,13 @@ class DDEX::V20100712::DDEXC::MessageAuditTrailEvent < Element
   include ROXML
 
 
-  xml_name "ns2:MessageAuditTrailEvent"
+  xml_name "MessageAuditTrailEvent"
 
       xml_accessor :messaging_party_descriptor, :as => DDEX::V20100712::DDEXC::MessagingParty, :from => "MessagingPartyDescriptor", :required => true
       xml_accessor :date_time, :as => DateTime, :from => "DateTime", :required => true
 
 
-  
+
 
 end
 

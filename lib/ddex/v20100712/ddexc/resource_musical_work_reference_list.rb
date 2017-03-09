@@ -18,12 +18,12 @@ class DDEX::V20100712::DDEXC::ResourceMusicalWorkReferenceList < Element
   include ROXML
 
 
-  xml_name "ns2:ResourceMusicalWorkReferenceList"
+  xml_name "ResourceMusicalWorkReferenceList"
 
       xml_accessor :resource_musical_work_references, :as => [DDEX::V20100712::DDEXC::ResourceMusicalWorkReference], :from => "ResourceMusicalWorkReference", :required => true
 
 
-  
+
 
 end
 

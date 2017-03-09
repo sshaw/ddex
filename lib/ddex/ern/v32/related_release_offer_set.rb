@@ -22,7 +22,7 @@ class DDEX::ERN::V32::RelatedReleaseOfferSet < Element
   include ROXML
 
 
-  xml_name "ns1:RelatedReleaseOfferSet"
+  xml_name "RelatedReleaseOfferSet"
 
       xml_accessor :release_description, :as => DDEX::V20100712::DDEXC::Description, :from => "ReleaseDescription", :required => false
       xml_accessor :release_ids, :as => [DDEX::V20100712::DDEXC::ReleaseId], :from => "ReleaseId", :required => false

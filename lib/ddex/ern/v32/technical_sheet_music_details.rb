@@ -23,7 +23,7 @@ class DDEX::ERN::V32::TechnicalSheetMusicDetails < Element
   include ROXML
 
 
-  xml_name "ns1:TechnicalSheetMusicDetails"
+  xml_name "TechnicalSheetMusicDetails"
 
       xml_accessor :technical_resource_details_reference, :from => "TechnicalResourceDetailsReference", :required => true
       xml_accessor :drm_platform_type, :as => DDEX::V20100712::DDEXC::DrmPlatformType, :from => "DrmPlatformType", :required => false
@@ -35,10 +35,10 @@ class DDEX::ERN::V32::TechnicalSheetMusicDetails < Element
       xml_accessor :file_availability_descriptions, :as => [DDEX::V20100712::DDEXC::Description], :from => "FileAvailabilityDescription", :required => false
 
 
-  
+
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
-    
-  
+
+
 
 end
 

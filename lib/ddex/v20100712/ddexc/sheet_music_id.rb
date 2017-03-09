@@ -18,13 +18,13 @@ class DDEX::V20100712::DDEXC::SheetMusicId < Element
   include ROXML
 
 
-  xml_name "ns2:SheetMusicId"
+  xml_name "SheetMusicId"
 
       xml_accessor :ismn, :from => "ISMN", :required => false
       xml_accessor :proprietary_ids, :as => [DDEX::V20100712::DDEXC::ProprietaryId], :from => "ProprietaryId", :required => false
 
 
-  
+
 
 end
 

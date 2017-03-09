@@ -24,7 +24,7 @@ class DDEX::ERN::V32::ImageDetailsByTerritory < DDEX::V20100712::DDEXC::ImageDet
   include ROXML
 
 
-  xml_name "ns1:ImageDetailsByTerritory"
+  xml_name "ImageDetailsByTerritory"
 
       xml_accessor :fulfillment_date, :as => DDEX::V20100712::DDEXC::FulfillmentDate, :from => "FulfillmentDate", :required => false
       xml_accessor :keywords, :as => DDEX::V20100712::DDEXC::Keywords, :from => "Keywords", :required => false
@@ -34,7 +34,7 @@ class DDEX::ERN::V32::ImageDetailsByTerritory < DDEX::V20100712::DDEXC::ImageDet
       xml_accessor :technical_image_details, :as => [DDEX::ERN::V32::TechnicalImageDetails], :from => "TechnicalImageDetails", :required => false
 
 
-  
+
 
 end
 

@@ -20,19 +20,19 @@ class DDEX::ERN::V32::MusicalWorkLicenseInformationMessage < Element
 
     setns "ns1", "http://ddex.net/xml/2010/ern-main/32"
 
-  xml_name "ns1:MusicalWorkLicenseInformationMessage"
+  xml_name "MusicalWorkLicenseInformationMessage"
 
       xml_accessor :message_header, :as => DDEX::V20100712::DDEXC::MessageHeader, :from => "MessageHeader", :required => true
       xml_accessor :licensed_releases, :as => [DDEX::ERN::V32::LicensedRelease], :from => "LicensedRelease", :required => true
 
 
-  
+
       xml_accessor :message_schema_version_id, :from => "@MessageSchemaVersionId", :required => true
-    
-  
+
+
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
-    
-  
+
+
 
 end
 

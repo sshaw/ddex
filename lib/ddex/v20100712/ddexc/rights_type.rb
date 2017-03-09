@@ -17,21 +17,21 @@ class DDEX::V20100712::DDEXC::RightsType < Element
   include ROXML
 
 
-  xml_name "ns2:RightsType"
+  xml_name "RightsType"
 
 
     xml_accessor :value, :from => ".", :required => false
 
-  
+
       xml_accessor :territory_code, :from => "@TerritoryCode", :required => true
-    
-  
+
+
       xml_accessor :namespace, :from => "@Namespace", :required => false
-    
-  
+
+
       xml_accessor :user_defined_value, :from => "@UserDefinedValue", :required => false
-    
-  
+
+
 
 end
 

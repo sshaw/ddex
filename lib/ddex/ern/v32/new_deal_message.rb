@@ -20,19 +20,19 @@ class DDEX::ERN::V32::NewDealMessage < Element
 
     setns "ns1", "http://ddex.net/xml/2010/ern-main/32"
 
-  xml_name "ns1:NewDealMessage"
+  xml_name "NewDealMessage"
 
       xml_accessor :message_header, :as => DDEX::V20100712::DDEXC::MessageHeader, :from => "MessageHeader", :required => true
       xml_accessor :release_deals, :as => [DDEX::ERN::V32::ReleaseDeal], :from => "ReleaseDeal", :required => true
 
 
-  
+
       xml_accessor :message_schema_version_id, :from => "@MessageSchemaVersionId", :required => true
-    
-  
+
+
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
-    
-  
+
+
 
 end
 

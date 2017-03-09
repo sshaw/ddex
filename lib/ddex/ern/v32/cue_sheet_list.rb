@@ -18,12 +18,12 @@ class DDEX::ERN::V32::CueSheetList < Element
   include ROXML
 
 
-  xml_name "ns1:CueSheetList"
+  xml_name "CueSheetList"
 
       xml_accessor :cue_sheets, :as => [DDEX::ERN::V32::CueSheet], :from => "CueSheet", :required => true
 
 
-  
+
 
 end
 

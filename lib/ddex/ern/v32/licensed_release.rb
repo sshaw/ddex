@@ -19,16 +19,16 @@ class DDEX::ERN::V32::LicensedRelease < Element
   include ROXML
 
 
-  xml_name "ns1:LicensedRelease"
+  xml_name "LicensedRelease"
 
       xml_accessor :release_id, :as => DDEX::V20100712::DDEXC::ReleaseId, :from => "ReleaseId", :required => true
       xml_accessor :licensed_sound_recordings, :as => [DDEX::ERN::V32::LicensedSoundRecording], :from => "LicensedSoundRecording", :required => true
 
 
-  
+
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
-    
-  
+
+
 
 end
 

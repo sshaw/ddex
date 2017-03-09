@@ -19,7 +19,7 @@ class DDEX::V20100712::DDEXC::ReleaseSummaryDetailsByTerritory < Element
   include ROXML
 
 
-  xml_name "ns2:ReleaseSummaryDetailsByTerritory"
+  xml_name "ReleaseSummaryDetailsByTerritory"
 
       xml_accessor :excluded_territory_codes, :as => [], :from => "ExcludedTerritoryCode", :required => false
       xml_accessor :territory_codes, :as => [], :from => "TerritoryCode", :required => false
@@ -28,10 +28,10 @@ class DDEX::V20100712::DDEXC::ReleaseSummaryDetailsByTerritory < Element
       xml_accessor :rights_agreement_id, :as => DDEX::V20100712::DDEXC::RightsAgreementId, :from => "RightsAgreementId", :required => false
 
 
-  
+
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
-    
-  
+
+
 
 end
 

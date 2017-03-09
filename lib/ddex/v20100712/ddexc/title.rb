@@ -19,19 +19,19 @@ class DDEX::V20100712::DDEXC::Title < Element
   include ROXML
 
 
-  xml_name "ns2:Title"
+  xml_name "Title"
 
       xml_accessor :title_text, :as => DDEX::V20100712::DDEXC::TitleText, :from => "TitleText", :required => true
       xml_accessor :sub_title, :as => DDEX::V20100712::DDEXC::SubTitle, :from => "SubTitle", :required => false
 
 
-  
+
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
-    
-  
+
+
       xml_accessor :title_type, :from => "@TitleType", :required => false
-    
-  
+
+
 
 end
 

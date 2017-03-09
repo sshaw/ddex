@@ -17,18 +17,18 @@ class DDEX::V20100712::DDEXC::GuaranteedAmount < Element
   include ROXML
 
 
-  xml_name "ns2:GuaranteedAmount"
+  xml_name "GuaranteedAmount"
 
 
     xml_accessor :value, :from => ".", :required => false
 
-  
+
       xml_accessor :currency_code, :from => "@CurrencyCode", :required => true
-    
-  
+
+
       xml_accessor :reference_unit, :from => "@ReferenceUnit", :required => true
-    
-  
+
+
 
 end
 

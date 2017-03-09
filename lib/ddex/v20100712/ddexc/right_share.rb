@@ -28,7 +28,7 @@ class DDEX::V20100712::DDEXC::RightShare < Element
   include ROXML
 
 
-  xml_name "ns2:RightShare"
+  xml_name "RightShare"
 
       xml_accessor :right_share_id, :as => DDEX::V20100712::DDEXC::RightsAgreementId, :from => "RightShareId", :required => false
       xml_accessor :right_share_reference, :from => "RightShareReference", :required => true
@@ -51,10 +51,10 @@ class DDEX::V20100712::DDEXC::RightShare < Element
       xml_accessor :has_first_license_refusal?, :from => "HasFirstLicenseRefusal", :required => false
 
 
-  
+
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
-    
-  
+
+
 
 end
 

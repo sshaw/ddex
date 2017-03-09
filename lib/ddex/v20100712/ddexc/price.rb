@@ -17,15 +17,15 @@ class DDEX::V20100712::DDEXC::Price < Element
   include ROXML
 
 
-  xml_name "ns2:Price"
+  xml_name "Price"
 
 
     xml_accessor :value, :from => ".", :required => false
 
-  
+
       xml_accessor :currency_code, :from => "@CurrencyCode", :required => true
-    
-  
+
+
 
 end
 

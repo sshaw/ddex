@@ -17,30 +17,30 @@ class DDEX::V20100712::DDEXC::EventDate < Element
   include ROXML
 
 
-  xml_name "ns2:EventDate"
+  xml_name "EventDate"
 
 
     xml_accessor :value, :from => ".", :required => false
 
-  
+
       xml_accessor :approximate?, :from => "@IsApproximate", :required => false
-    
-  
+
+
       xml_accessor :before?, :from => "@IsBefore", :required => false
-    
-  
+
+
       xml_accessor :after?, :from => "@IsAfter", :required => false
-    
-  
+
+
       xml_accessor :territory_code, :from => "@TerritoryCode", :required => false
-    
-  
+
+
       xml_accessor :location_description, :from => "@LocationDescription", :required => false
-    
-  
+
+
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
-    
-  
+
+
 
 end
 

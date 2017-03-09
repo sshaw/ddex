@@ -17,15 +17,15 @@ class DDEX::V20100712::DDEXC::SubTitle < Element
   include ROXML
 
 
-  xml_name "ns2:SubTitle"
+  xml_name "SubTitle"
 
 
     xml_accessor :value, :from => ".", :required => false
 
-  
+
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
-    
-  
+
+
 
 end
 

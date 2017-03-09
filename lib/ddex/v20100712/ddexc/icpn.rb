@@ -17,15 +17,15 @@ class DDEX::V20100712::DDEXC::ICPN < Element
   include ROXML
 
 
-  xml_name "ns2:ICPN"
+  xml_name "ICPN"
 
 
     xml_accessor :value, :from => ".", :required => false
 
-  
+
       xml_accessor :ean?, :from => "@IsEan", :required => true
-    
-  
+
+
 
 end
 

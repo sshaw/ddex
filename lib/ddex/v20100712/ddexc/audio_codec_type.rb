@@ -17,21 +17,21 @@ class DDEX::V20100712::DDEXC::AudioCodecType < Element
   include ROXML
 
 
-  xml_name "ns2:AudioCodecType"
+  xml_name "AudioCodecType"
 
 
     xml_accessor :value, :from => ".", :required => false
 
-  
+
       xml_accessor :version, :from => "@Version", :required => false
-    
-  
+
+
       xml_accessor :namespace, :from => "@Namespace", :required => false
-    
-  
+
+
       xml_accessor :user_defined_value, :from => "@UserDefinedValue", :required => false
-    
-  
+
+
 
 end
 

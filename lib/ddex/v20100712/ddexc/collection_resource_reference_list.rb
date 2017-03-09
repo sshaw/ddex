@@ -17,12 +17,12 @@ class DDEX::V20100712::DDEXC::CollectionResourceReferenceList < Element
   include ROXML
 
 
-  xml_name "ns2:CollectionResourceReferenceList"
+  xml_name "CollectionResourceReferenceList"
 
       xml_accessor :collection_resource_references, :as => [], :from => "CollectionResourceReference", :required => true
 
 
-  
+
 
 end
 

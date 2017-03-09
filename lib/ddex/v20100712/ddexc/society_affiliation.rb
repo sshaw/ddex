@@ -18,14 +18,14 @@ class DDEX::V20100712::DDEXC::SocietyAffiliation < Element
   include ROXML
 
 
-  xml_name "ns2:SocietyAffiliation"
+  xml_name "SocietyAffiliation"
 
       xml_accessor :excluded_territory_codes, :as => [], :from => "ExcludedTerritoryCode", :required => false
       xml_accessor :territory_codes, :as => [], :from => "TerritoryCode", :required => false
       xml_accessor :music_rights_society, :as => DDEX::V20100712::DDEXC::PartyDescriptor, :from => "MusicRightsSociety", :required => true
 
 
-  
+
 
 end
 

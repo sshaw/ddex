@@ -17,15 +17,15 @@ class DDEX::V20100712::DDEXC::Name < Element
   include ROXML
 
 
-  xml_name "ns2:Name"
+  xml_name "Name"
 
 
     xml_accessor :value, :from => ".", :required => false
 
-  
+
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
-    
-  
+
+
 
 end
 

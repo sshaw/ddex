@@ -17,13 +17,13 @@ class DDEX::V20100712::DDEXC::MessageNotificationPeriod < Element
   include ROXML
 
 
-  xml_name "ns2:MessageNotificationPeriod"
+  xml_name "MessageNotificationPeriod"
 
       xml_accessor :start_date, :as => Date, :from => "StartDate", :required => true
       xml_accessor :end_date, :as => Date, :from => "EndDate", :required => true
 
 
-  
+
 
 end
 

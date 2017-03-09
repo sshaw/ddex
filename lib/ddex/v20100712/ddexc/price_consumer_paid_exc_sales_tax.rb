@@ -17,15 +17,15 @@ class DDEX::V20100712::DDEXC::PriceConsumerPaidExcSalesTax < Element
   include ROXML
 
 
-  xml_name "ns2:PriceConsumerPaidExcSalesTax"
+  xml_name "PriceConsumerPaidExcSalesTax"
 
 
     xml_accessor :value, :from => ".", :required => false
 
-  
+
       xml_accessor :currency_code, :from => "@CurrencyCode", :required => false
-    
-  
+
+
 
 end
 

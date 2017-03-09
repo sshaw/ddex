@@ -20,17 +20,17 @@ class DDEX::V20100712::DDEXC::MessagingParty < Element
   include ROXML
 
 
-  xml_name "ns2:MessagingParty"
+  xml_name "MessagingParty"
 
       xml_accessor :party_id, :as => DDEX::V20100712::DDEXC::PartyId, :from => "PartyId", :required => true
       xml_accessor :party_name, :as => DDEX::V20100712::DDEXC::PartyName, :from => "PartyName", :required => false
       xml_accessor :trading_name, :as => DDEX::V20100712::DDEXC::Name, :from => "TradingName", :required => false
 
 
-  
+
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
-    
-  
+
+
 
 end
 

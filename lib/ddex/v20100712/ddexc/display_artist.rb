@@ -19,16 +19,16 @@ class DDEX::V20100712::DDEXC::DisplayArtist < DDEX::V20100712::DDEXC::PartyDescr
   include ROXML
 
 
-  xml_name "ns2:DisplayArtist"
+  xml_name "DisplayArtist"
 
       xml_accessor :artist_roles, :as => [DDEX::V20100712::DDEXC::ArtistRole], :from => "ArtistRole", :required => false
 
 
-  
+
 
       xml_accessor :sequence_number, :as => Integer, :from => "@SequenceNumber", :required => false
-    
-  
+
+
 
 end
 

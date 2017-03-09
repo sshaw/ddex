@@ -24,7 +24,7 @@ class DDEX::V20100712::DDEXC::Collection < Element
   include ROXML
 
 
-  xml_name "ns2:Collection"
+  xml_name "Collection"
 
       xml_accessor :collection_ids, :as => [DDEX::V20100712::DDEXC::CollectionId], :from => "CollectionId", :required => true
       xml_accessor :collection_types, :as => [DDEX::V20100712::DDEXC::CollectionType], :from => "CollectionType", :required => false
@@ -40,10 +40,10 @@ class DDEX::V20100712::DDEXC::Collection < Element
       xml_accessor :collection_details_by_territories, :as => [DDEX::V20100712::DDEXC::CollectionDetailsByTerritory], :from => "CollectionDetailsByTerritory", :required => false
 
 
-  
+
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
-    
-  
+
+
 
 end
 

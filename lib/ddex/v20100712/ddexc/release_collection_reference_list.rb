@@ -18,13 +18,13 @@ class DDEX::V20100712::DDEXC::ReleaseCollectionReferenceList < Element
   include ROXML
 
 
-  xml_name "ns2:ReleaseCollectionReferenceList"
+  xml_name "ReleaseCollectionReferenceList"
 
       xml_accessor :number_of_collections, :as => Integer, :from => "NumberOfCollections", :required => false
       xml_accessor :release_collection_references, :as => [DDEX::V20100712::DDEXC::ReleaseCollectionReference], :from => "ReleaseCollectionReference", :required => true
 
 
-  
+
 
 end
 

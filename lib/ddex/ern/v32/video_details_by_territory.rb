@@ -30,7 +30,7 @@ class DDEX::ERN::V32::VideoDetailsByTerritory < DDEX::V20100712::DDEXC::SoundRec
   include ROXML
 
 
-  xml_name "ns1:VideoDetailsByTerritory"
+  xml_name "VideoDetailsByTerritory"
 
       xml_accessor :courtesy_line, :as => DDEX::V20100712::DDEXC::CourtesyLine, :from => "CourtesyLine", :required => false
       xml_accessor :sequence_number, :from => "SequenceNumber", :required => false
@@ -47,7 +47,7 @@ class DDEX::ERN::V32::VideoDetailsByTerritory < DDEX::V20100712::DDEXC::SoundRec
       xml_accessor :characters, :as => [DDEX::V20100712::DDEXC::Character], :from => "Character", :required => false
 
 
-  
+
 
 end
 

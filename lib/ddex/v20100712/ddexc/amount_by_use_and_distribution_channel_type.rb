@@ -21,7 +21,7 @@ class DDEX::V20100712::DDEXC::AmountByUseAndDistributionChannelType < Element
   include ROXML
 
 
-  xml_name "ns2:AmountByUseAndDistributionChannelType"
+  xml_name "AmountByUseAndDistributionChannelType"
 
       xml_accessor :amount, :as => Float, :from => "Amount", :required => true
       xml_accessor :use_types, :as => [DDEX::V20100712::DDEXC::UseType], :from => "UseType", :required => true
@@ -30,7 +30,7 @@ class DDEX::V20100712::DDEXC::AmountByUseAndDistributionChannelType < Element
       xml_accessor :carrier_types, :as => [DDEX::V20100712::DDEXC::CarrierType], :from => "CarrierType", :required => false
 
 
-  
+
 
 end
 

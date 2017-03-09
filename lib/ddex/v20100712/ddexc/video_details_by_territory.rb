@@ -19,12 +19,12 @@ class DDEX::V20100712::DDEXC::VideoDetailsByTerritory < DDEX::V20100712::DDEXC::
   include ROXML
 
 
-  xml_name "ns2:VideoDetailsByTerritory"
+  xml_name "VideoDetailsByTerritory"
 
       xml_accessor :c_lines, :as => [DDEX::V20100712::DDEXC::CLine], :from => "CLine", :required => false
 
 
-  
+
 
 end
 

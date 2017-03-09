@@ -19,16 +19,16 @@ class DDEX::V20100712::DDEXC::SimpleProfileResourceContributor < DDEX::V20100712
   include ROXML
 
 
-  xml_name "ns2:SimpleProfileResourceContributor"
+  xml_name "SimpleProfileResourceContributor"
 
       xml_accessor :resource_contributor_roles, :as => [DDEX::V20100712::DDEXC::ResourceContributorRole], :from => "ResourceContributorRole", :required => false
 
 
-  
+
 
       xml_accessor :sequence_number, :as => Integer, :from => "@SequenceNumber", :required => false
-    
-  
+
+
 
 end
 

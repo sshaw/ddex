@@ -19,14 +19,14 @@ class DDEX::V20100712::DDEXC::SoundRecordingId < Element
   include ROXML
 
 
-  xml_name "ns2:SoundRecordingId"
+  xml_name "SoundRecordingId"
 
       xml_accessor :isrc, :from => "ISRC", :required => false
       xml_accessor :catalog_number, :as => DDEX::V20100712::DDEXC::CatalogNumber, :from => "CatalogNumber", :required => false
       xml_accessor :proprietary_ids, :as => [DDEX::V20100712::DDEXC::ProprietaryId], :from => "ProprietaryId", :required => false
 
 
-  
+
 
 end
 

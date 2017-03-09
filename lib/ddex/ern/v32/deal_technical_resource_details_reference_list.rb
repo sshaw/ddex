@@ -17,12 +17,12 @@ class DDEX::ERN::V32::DealTechnicalResourceDetailsReferenceList < Element
   include ROXML
 
 
-  xml_name "ns1:DealTechnicalResourceDetailsReferenceList"
+  xml_name "DealTechnicalResourceDetailsReferenceList"
 
       xml_accessor :deal_technical_resource_details_references, :as => [], :from => "DealTechnicalResourceDetailsReference", :required => true
 
 
-  
+
 
 end
 

@@ -25,7 +25,7 @@ class DDEX::ERN::V32::NewReleaseMessage < Element
 
     setns "ns1", "http://ddex.net/xml/2010/ern-main/32"
 
-  xml_name "ns1:NewReleaseMessage"
+  xml_name "NewReleaseMessage"
 
       xml_accessor :message_header, :as => DDEX::V20100712::DDEXC::MessageHeader, :from => "MessageHeader", :required => true
       xml_accessor :update_indicator, :from => "UpdateIndicator", :required => true
@@ -37,13 +37,13 @@ class DDEX::ERN::V32::NewReleaseMessage < Element
       xml_accessor :deal_list, :as => DDEX::ERN::V32::DealList, :from => "DealList", :required => false
 
 
-  
+
       xml_accessor :message_schema_version_id, :from => "@MessageSchemaVersionId", :required => true
-    
-  
+
+
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
-    
-  
+
+
 
 end
 

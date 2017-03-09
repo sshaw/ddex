@@ -29,7 +29,7 @@ class DDEX::ERN::V32::ReleaseDetailsByTerritory < DDEX::V20100712::DDEXC::Releas
   include ROXML
 
 
-  xml_name "ns1:ReleaseDetailsByTerritory"
+  xml_name "ReleaseDetailsByTerritory"
 
       xml_accessor :parental_warning_types, :as => [DDEX::V20100712::DDEXC::ParentalWarningType], :from => "ParentalWarningType", :required => false
       xml_accessor :av_ratings, :as => [DDEX::V20100712::DDEXC::AvRating], :from => "AvRating", :required => false
@@ -46,7 +46,7 @@ class DDEX::ERN::V32::ReleaseDetailsByTerritory < DDEX::V20100712::DDEXC::Releas
       xml_accessor :number_of_units_per_physical_release, :as => Integer, :from => "NumberOfUnitsPerPhysicalRelease", :required => false
 
 
-  
+
 
 end
 

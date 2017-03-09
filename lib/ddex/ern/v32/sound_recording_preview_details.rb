@@ -18,7 +18,7 @@ class DDEX::ERN::V32::SoundRecordingPreviewDetails < Element
   include ROXML
 
 
-  xml_name "ns1:SoundRecordingPreviewDetails"
+  xml_name "SoundRecordingPreviewDetails"
 
       xml_accessor :part_type, :as => DDEX::V20100712::DDEXC::Description, :from => "PartType", :required => false
       xml_accessor :start_point, :as => Float, :from => "StartPoint", :required => false
@@ -29,7 +29,7 @@ class DDEX::ERN::V32::SoundRecordingPreviewDetails < Element
       xml_accessor :expression_type, :from => "ExpressionType", :required => true
 
 
-  
+
 
 end
 

@@ -27,7 +27,7 @@ class DDEX::ERN::V32::DealTerms < Element
   include ROXML
 
 
-  xml_name "ns1:DealTerms"
+  xml_name "DealTerms"
 
       xml_accessor :commercial_model_types, :as => [DDEX::V20100712::DDEXC::CommercialModelType], :from => "CommercialModelType", :required => false
       xml_accessor :take_down?, :from => "TakeDown", :required => false
@@ -49,10 +49,10 @@ class DDEX::ERN::V32::DealTerms < Element
       xml_accessor :number_of_products_per_carton, :as => Integer, :from => "NumberOfProductsPerCarton", :required => false
 
 
-  
+
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
-    
-  
+
+
 
 end
 

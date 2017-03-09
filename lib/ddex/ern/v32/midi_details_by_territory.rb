@@ -27,7 +27,7 @@ class DDEX::ERN::V32::MidiDetailsByTerritory < DDEX::V20100712::DDEXC::MidiDetai
   include ROXML
 
 
-  xml_name "ns1:MidiDetailsByTerritory"
+  xml_name "MidiDetailsByTerritory"
 
       xml_accessor :courtesy_line, :as => DDEX::V20100712::DDEXC::CourtesyLine, :from => "CourtesyLine", :required => false
       xml_accessor :sequence_number, :from => "SequenceNumber", :required => false
@@ -41,7 +41,7 @@ class DDEX::ERN::V32::MidiDetailsByTerritory < DDEX::V20100712::DDEXC::MidiDetai
       xml_accessor :technical_midi_details, :as => [DDEX::ERN::V32::TechnicalMidiDetails], :from => "TechnicalMidiDetails", :required => false
 
 
-  
+
 
 end
 

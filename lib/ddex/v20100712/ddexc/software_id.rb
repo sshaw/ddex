@@ -18,12 +18,12 @@ class DDEX::V20100712::DDEXC::SoftwareId < Element
   include ROXML
 
 
-  xml_name "ns2:SoftwareId"
+  xml_name "SoftwareId"
 
       xml_accessor :proprietary_ids, :as => [DDEX::V20100712::DDEXC::ProprietaryId], :from => "ProprietaryId", :required => true
 
 
-  
+
 
 end
 

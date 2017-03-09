@@ -19,16 +19,16 @@ class DDEX::V20100712::DDEXC::IndirectResourceContributor < DDEX::V20100712::DDE
   include ROXML
 
 
-  xml_name "ns2:IndirectResourceContributor"
+  xml_name "IndirectResourceContributor"
 
       xml_accessor :indirect_resource_contributor_roles, :as => [DDEX::V20100712::DDEXC::MusicalWorkContributorRole], :from => "IndirectResourceContributorRole", :required => false
 
 
-  
+
 
       xml_accessor :sequence_number, :as => Integer, :from => "@SequenceNumber", :required => false
-    
-  
+
+
 
 end
 

@@ -22,7 +22,7 @@ class DDEX::ERN::V32::TechnicalUserDefinedResourceDetails < Element
   include ROXML
 
 
-  xml_name "ns1:TechnicalUserDefinedResourceDetails"
+  xml_name "TechnicalUserDefinedResourceDetails"
 
       xml_accessor :technical_resource_details_reference, :from => "TechnicalResourceDetailsReference", :required => true
       xml_accessor :user_defined_values, :as => [DDEX::V20100712::DDEXC::UserDefinedValue], :from => "UserDefinedValue", :required => false
@@ -33,10 +33,10 @@ class DDEX::ERN::V32::TechnicalUserDefinedResourceDetails < Element
       xml_accessor :file_availability_descriptions, :as => [DDEX::V20100712::DDEXC::Description], :from => "FileAvailabilityDescription", :required => false
 
 
-  
+
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
-    
-  
+
+
 
 end
 

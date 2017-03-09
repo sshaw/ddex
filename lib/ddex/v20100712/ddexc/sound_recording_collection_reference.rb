@@ -17,7 +17,7 @@ class DDEX::V20100712::DDEXC::SoundRecordingCollectionReference < Element
   include ROXML
 
 
-  xml_name "ns2:SoundRecordingCollectionReference"
+  xml_name "SoundRecordingCollectionReference"
 
       xml_accessor :sequence_number, :as => Integer, :from => "SequenceNumber", :required => false
       xml_accessor :sound_recording_collection_reference, :from => "SoundRecordingCollectionReference", :required => true
@@ -27,7 +27,7 @@ class DDEX::V20100712::DDEXC::SoundRecordingCollectionReference < Element
       xml_accessor :release_resource_type, :from => "ReleaseResourceType", :required => false
 
 
-  
+
 
 end
 

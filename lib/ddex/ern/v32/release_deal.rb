@@ -19,7 +19,7 @@ class DDEX::ERN::V32::ReleaseDeal < Element
   include ROXML
 
 
-  xml_name "ns1:ReleaseDeal"
+  xml_name "ReleaseDeal"
 
       xml_accessor :deal_release_references, :as => [], :from => "DealReleaseReference", :required => false
       xml_accessor :release_ids, :as => [DDEX::V20100712::DDEXC::ReleaseId], :from => "ReleaseId", :required => false
@@ -27,10 +27,10 @@ class DDEX::ERN::V32::ReleaseDeal < Element
       xml_accessor :effective_date, :as => Date, :from => "EffectiveDate", :required => true
 
 
-  
+
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
-    
-  
+
+
 
 end
 

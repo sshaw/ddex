@@ -24,7 +24,7 @@ class DDEX::ERN::V32::TextDetailsByTerritory < DDEX::V20100712::DDEXC::TextDetai
   include ROXML
 
 
-  xml_name "ns1:TextDetailsByTerritory"
+  xml_name "TextDetailsByTerritory"
 
       xml_accessor :fulfillment_date, :as => DDEX::V20100712::DDEXC::FulfillmentDate, :from => "FulfillmentDate", :required => false
       xml_accessor :keywords, :as => DDEX::V20100712::DDEXC::Keywords, :from => "Keywords", :required => false
@@ -34,7 +34,7 @@ class DDEX::ERN::V32::TextDetailsByTerritory < DDEX::V20100712::DDEXC::TextDetai
       xml_accessor :technical_text_details, :as => [DDEX::ERN::V32::TechnicalTextDetails], :from => "TechnicalTextDetails", :required => false
 
 
-  
+
 
 end
 

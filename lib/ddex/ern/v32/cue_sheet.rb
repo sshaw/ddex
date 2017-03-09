@@ -20,7 +20,7 @@ class DDEX::ERN::V32::CueSheet < Element
   include ROXML
 
 
-  xml_name "ns1:CueSheet"
+  xml_name "CueSheet"
 
       xml_accessor :cue_sheet_ids, :as => [DDEX::V20100712::DDEXC::ProprietaryId], :from => "CueSheetId", :required => false
       xml_accessor :cue_sheet_reference, :from => "CueSheetReference", :required => true
@@ -28,7 +28,7 @@ class DDEX::ERN::V32::CueSheet < Element
       xml_accessor :cues, :as => [DDEX::ERN::V32::Cue], :from => "Cue", :required => true
 
 
-  
+
 
 end
 

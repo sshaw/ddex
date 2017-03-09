@@ -25,7 +25,7 @@ class DDEX::ERN::V32::UserDefinedResource < Element
   include ROXML
 
 
-  xml_name "ns1:UserDefinedResource"
+  xml_name "UserDefinedResource"
 
       xml_accessor :user_defined_resource_type, :as => DDEX::V20100712::DDEXC::UserDefinedResourceType, :from => "UserDefinedResourceType", :required => false
       xml_accessor :artist_related?, :from => "IsArtistRelated", :required => false
@@ -39,13 +39,13 @@ class DDEX::ERN::V32::UserDefinedResource < Element
       xml_accessor :user_defined_resource_details_by_territories, :as => [DDEX::ERN::V32::UserDefinedResourceDetailsByTerritory], :from => "UserDefinedResourceDetailsByTerritory", :required => true
 
 
-  
+
       xml_accessor :updated?, :from => "@IsUpdated", :required => false
-    
-  
+
+
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
-    
-  
+
+
 
 end
 

@@ -17,15 +17,15 @@ class DDEX::V20100712::DDEXC::ConsumerRentalPeriod < Element
   include ROXML
 
 
-  xml_name "ns2:ConsumerRentalPeriod"
+  xml_name "ConsumerRentalPeriod"
 
 
     xml_accessor :value, :from => ".", :required => false
 
-  
+
       xml_accessor :extensible?, :from => "@IsExtensible", :required => false
-    
-  
+
+
 
 end
 

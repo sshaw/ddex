@@ -26,7 +26,7 @@ class DDEX::V20100712::DDEXC::MidiDetailsByTerritory < Element
   include ROXML
 
 
-  xml_name "ns2:MidiDetailsByTerritory"
+  xml_name "MidiDetailsByTerritory"
 
       xml_accessor :excluded_territory_codes, :as => [], :from => "ExcludedTerritoryCode", :required => false
       xml_accessor :territory_codes, :as => [], :from => "TerritoryCode", :required => false
@@ -42,10 +42,10 @@ class DDEX::V20100712::DDEXC::MidiDetailsByTerritory < Element
       xml_accessor :c_lines, :as => [DDEX::V20100712::DDEXC::CLine], :from => "CLine", :required => false
 
 
-  
+
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
-    
-  
+
+
 
 end
 

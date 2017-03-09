@@ -18,13 +18,13 @@ class DDEX::V20100712::DDEXC::SoundRecordingCollectionReferenceList < Element
   include ROXML
 
 
-  xml_name "ns2:SoundRecordingCollectionReferenceList"
+  xml_name "SoundRecordingCollectionReferenceList"
 
       xml_accessor :number_of_collections, :as => Integer, :from => "NumberOfCollections", :required => false
       xml_accessor :sound_recording_collection_references, :as => [DDEX::V20100712::DDEXC::SoundRecordingCollectionReference], :from => "SoundRecordingCollectionReference", :required => true
 
 
-  
+
 
 end
 

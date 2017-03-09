@@ -19,17 +19,17 @@ class DDEX::V20100712::DDEXC::DSP < DDEX::V20100712::DDEXC::PartyDescriptor
   include ROXML
 
 
-  xml_name "ns2:DSP"
+  xml_name "DSP"
 
       xml_accessor :trading_name, :as => DDEX::V20100712::DDEXC::Name, :from => "TradingName", :required => false
       xml_accessor :urls, :as => [], :from => "URL", :required => false
       xml_accessor :territory_code, :from => "TerritoryCode", :required => false
 
 
-  
+
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
-    
-  
+
+
 
 end
 

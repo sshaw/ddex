@@ -27,7 +27,7 @@ class DDEX::V20100712::DDEXC::MIDI < Element
   include ROXML
 
 
-  xml_name "ns2:MIDI"
+  xml_name "MIDI"
 
       xml_accessor :midi_type, :as => DDEX::V20100712::DDEXC::MidiType, :from => "MidiType", :required => false
       xml_accessor :artist_related?, :from => "IsArtistRelated", :required => false
@@ -53,10 +53,10 @@ class DDEX::V20100712::DDEXC::MIDI < Element
       xml_accessor :midi_details_by_territories, :as => [DDEX::V20100712::DDEXC::MidiDetailsByTerritory], :from => "MidiDetailsByTerritory", :required => true
 
 
-  
+
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
-    
-  
+
+
 
 end
 

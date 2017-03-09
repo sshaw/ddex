@@ -21,7 +21,7 @@ class DDEX::V20100712::DDEXC::DurationByUseType < Element
   include ROXML
 
 
-  xml_name "ns2:DurationByUseType"
+  xml_name "DurationByUseType"
 
       xml_accessor :duration, :from => "Duration", :required => true
       xml_accessor :use_types, :as => [DDEX::V20100712::DDEXC::UseType], :from => "UseType", :required => true
@@ -30,7 +30,7 @@ class DDEX::V20100712::DDEXC::DurationByUseType < Element
       xml_accessor :carrier_types, :as => [DDEX::V20100712::DDEXC::CarrierType], :from => "CarrierType", :required => false
 
 
-  
+
 
 end
 

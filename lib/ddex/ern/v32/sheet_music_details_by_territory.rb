@@ -22,7 +22,7 @@ class DDEX::ERN::V32::SheetMusicDetailsByTerritory < DDEX::V20100712::DDEXC::She
   include ROXML
 
 
-  xml_name "ns1:SheetMusicDetailsByTerritory"
+  xml_name "SheetMusicDetailsByTerritory"
 
       xml_accessor :fulfillment_date, :as => DDEX::V20100712::DDEXC::FulfillmentDate, :from => "FulfillmentDate", :required => false
       xml_accessor :genres, :as => [DDEX::V20100712::DDEXC::Genre], :from => "Genre", :required => false
@@ -30,7 +30,7 @@ class DDEX::ERN::V32::SheetMusicDetailsByTerritory < DDEX::V20100712::DDEXC::She
       xml_accessor :technical_sheet_music_details, :as => [DDEX::ERN::V32::TechnicalSheetMusicDetails], :from => "TechnicalSheetMusicDetails", :required => false
 
 
-  
+
 
 end
 

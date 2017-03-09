@@ -17,12 +17,12 @@ class DDEX::V20100712::DDEXC::ResourceGroupResourceReferenceList < Element
   include ROXML
 
 
-  xml_name "ns2:ResourceGroupResourceReferenceList"
+  xml_name "ResourceGroupResourceReferenceList"
 
       xml_accessor :resource_group_resource_references, :as => [], :from => "ResourceGroupResourceReference", :required => true
 
 
-  
+
 
 end
 

@@ -17,15 +17,15 @@ class DDEX::V20100712::DDEXC::CatalogNumber < Element
   include ROXML
 
 
-  xml_name "ns2:CatalogNumber"
+  xml_name "CatalogNumber"
 
 
     xml_accessor :value, :from => ".", :required => false
 
-  
+
       xml_accessor :namespace, :from => "@Namespace", :required => true
-    
-  
+
+
 
 end
 

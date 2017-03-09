@@ -17,15 +17,15 @@ class DDEX::V20100712::DDEXC::SamplingRate < Element
   include ROXML
 
 
-  xml_name "ns2:SamplingRate"
+  xml_name "SamplingRate"
 
 
     xml_accessor :value, :from => ".", :required => false
 
-  
+
       xml_accessor :unit_of_measure, :from => "@UnitOfMeasure", :required => false
-    
-  
+
+
 
 end
 

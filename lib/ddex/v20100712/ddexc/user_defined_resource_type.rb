@@ -17,15 +17,15 @@ class DDEX::V20100712::DDEXC::UserDefinedResourceType < Element
   include ROXML
 
 
-  xml_name "ns2:UserDefinedResourceType"
+  xml_name "UserDefinedResourceType"
 
 
     xml_accessor :value, :from => ".", :required => false
 
-  
+
       xml_accessor :namespace, :from => "@Namespace", :required => false
-    
-  
+
+
 
 end
 

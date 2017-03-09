@@ -20,7 +20,7 @@ class DDEX::V20100712::DDEXC::PriceInformation < Element
   include ROXML
 
 
-  xml_name "ns2:PriceInformation"
+  xml_name "PriceInformation"
 
       xml_accessor :price_range_type, :as => DDEX::V20100712::DDEXC::PriceRangeType, :from => "PriceRangeType", :required => false
       xml_accessor :price_type, :as => DDEX::V20100712::DDEXC::PriceType, :from => "PriceType", :required => false
@@ -29,7 +29,7 @@ class DDEX::V20100712::DDEXC::PriceInformation < Element
       xml_accessor :suggested_retail_price, :as => DDEX::V20100712::DDEXC::Price, :from => "SuggestedRetailPrice", :required => false
 
 
-  
+
 
 end
 

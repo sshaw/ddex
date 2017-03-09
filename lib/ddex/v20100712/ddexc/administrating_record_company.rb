@@ -18,14 +18,14 @@ class DDEX::V20100712::DDEXC::AdministratingRecordCompany < DDEX::V20100712::DDE
   include ROXML
 
 
-  xml_name "ns2:AdministratingRecordCompany"
+  xml_name "AdministratingRecordCompany"
 
 
 
-  
+
       xml_accessor :role, :from => "@Role", :required => true
-    
-  
+
+
 
 end
 

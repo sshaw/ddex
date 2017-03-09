@@ -18,13 +18,13 @@ class DDEX::V20100712::DDEXC::HashSum < Element
   include ROXML
 
 
-  xml_name "ns2:HashSum"
+  xml_name "HashSum"
 
       xml_accessor :hash_sum, :from => "HashSum", :required => true
       xml_accessor :hash_sum_algorithm_type, :as => DDEX::V20100712::DDEXC::HashSumAlgorithmType, :from => "HashSumAlgorithmType", :required => true
 
 
-  
+
 
 end
 

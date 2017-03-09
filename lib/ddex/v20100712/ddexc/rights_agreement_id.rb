@@ -18,13 +18,13 @@ class DDEX::V20100712::DDEXC::RightsAgreementId < Element
   include ROXML
 
 
-  xml_name "ns2:RightsAgreementId"
+  xml_name "RightsAgreementId"
 
       xml_accessor :mwlis, :as => [], :from => "MWLI", :required => false
       xml_accessor :proprietary_ids, :as => [DDEX::V20100712::DDEXC::ProprietaryId], :from => "ProprietaryId", :required => false
 
 
-  
+
 
 end
 

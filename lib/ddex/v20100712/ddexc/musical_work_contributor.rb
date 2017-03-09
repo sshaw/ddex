@@ -20,17 +20,17 @@ class DDEX::V20100712::DDEXC::MusicalWorkContributor < DDEX::V20100712::DDEXC::P
   include ROXML
 
 
-  xml_name "ns2:MusicalWorkContributor"
+  xml_name "MusicalWorkContributor"
 
       xml_accessor :musical_work_contributor_roles, :as => [DDEX::V20100712::DDEXC::MusicalWorkContributorRole], :from => "MusicalWorkContributorRole", :required => false
       xml_accessor :society_affiliations, :as => [DDEX::V20100712::DDEXC::SocietyAffiliation], :from => "SocietyAffiliation", :required => false
 
 
-  
+
 
       xml_accessor :sequence_number, :as => Integer, :from => "@SequenceNumber", :required => false
-    
-  
+
+
 
 end
 

@@ -18,12 +18,12 @@ class DDEX::V20100712::DDEXC::ReleaseResourceReferenceList < Element
   include ROXML
 
 
-  xml_name "ns2:ReleaseResourceReferenceList"
+  xml_name "ReleaseResourceReferenceList"
 
       xml_accessor :release_resource_references, :as => [DDEX::V20100712::DDEXC::ReleaseResourceReference], :from => "ReleaseResourceReference", :required => true
 
 
-  
+
 
 end
 

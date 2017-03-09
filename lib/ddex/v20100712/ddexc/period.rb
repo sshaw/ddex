@@ -18,13 +18,13 @@ class DDEX::V20100712::DDEXC::Period < Element
   include ROXML
 
 
-  xml_name "ns2:Period"
+  xml_name "Period"
 
       xml_accessor :start_date, :as => DDEX::V20100712::DDEXC::EventDate, :from => "StartDate", :required => false
       xml_accessor :end_date, :as => DDEX::V20100712::DDEXC::EventDate, :from => "EndDate", :required => false
 
 
-  
+
 
 end
 

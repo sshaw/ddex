@@ -17,18 +17,18 @@ class DDEX::V20100712::DDEXC::TariffReference < Element
   include ROXML
 
 
-  xml_name "ns2:TariffReference"
+  xml_name "TariffReference"
 
 
     xml_accessor :value, :from => ".", :required => false
 
-  
+
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
-    
-  
+
+
       xml_accessor :tariff_sub_reference, :from => "@TariffSubReference", :required => false
-    
-  
+
+
 
 end
 

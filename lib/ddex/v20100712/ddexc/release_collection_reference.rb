@@ -17,15 +17,15 @@ class DDEX::V20100712::DDEXC::ReleaseCollectionReference < Element
   include ROXML
 
 
-  xml_name "ns2:ReleaseCollectionReference"
+  xml_name "ReleaseCollectionReference"
 
 
     xml_accessor :value, :from => ".", :required => false
 
-  
+
       xml_accessor :release_resource_type, :from => "@ReleaseResourceType", :required => false
-    
-  
+
+
 
 end
 

@@ -21,7 +21,7 @@ class DDEX::V20100712::DDEXC::NumberOfSubscribers < Element
   include ROXML
 
 
-  xml_name "ns2:NumberOfSubscribers"
+  xml_name "NumberOfSubscribers"
 
       xml_accessor :quantity, :as => Integer, :from => "Quantity", :required => true
       xml_accessor :use_types, :as => [DDEX::V20100712::DDEXC::UseType], :from => "UseType", :required => true
@@ -30,7 +30,7 @@ class DDEX::V20100712::DDEXC::NumberOfSubscribers < Element
       xml_accessor :carrier_types, :as => [DDEX::V20100712::DDEXC::CarrierType], :from => "CarrierType", :required => false
 
 
-  
+
 
 end
 

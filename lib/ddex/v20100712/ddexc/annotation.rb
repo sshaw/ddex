@@ -17,15 +17,15 @@ class DDEX::V20100712::DDEXC::Annotation < Element
   include ROXML
 
 
-  xml_name "ns2:Annotation"
+  xml_name "Annotation"
 
 
     xml_accessor :value, :from => ".", :required => false
 
-  
+
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
-    
-  
+
+
 
 end
 

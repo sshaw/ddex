@@ -20,7 +20,7 @@ class DDEX::V20100712::DDEXC::MessageHeader < Element
   include ROXML
 
 
-  xml_name "ns2:MessageHeader"
+  xml_name "MessageHeader"
 
       xml_accessor :message_thread_id, :from => "MessageThreadId", :required => true
       xml_accessor :message_id, :from => "MessageId", :required => true
@@ -34,10 +34,10 @@ class DDEX::V20100712::DDEXC::MessageHeader < Element
       xml_accessor :message_control_type, :from => "MessageControlType", :required => false
 
 
-  
+
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
-    
-  
+
+
 
 end
 

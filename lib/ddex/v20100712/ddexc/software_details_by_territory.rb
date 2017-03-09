@@ -23,7 +23,7 @@ class DDEX::V20100712::DDEXC::SoftwareDetailsByTerritory < Element
   include ROXML
 
 
-  xml_name "ns2:SoftwareDetailsByTerritory"
+  xml_name "SoftwareDetailsByTerritory"
 
       xml_accessor :excluded_territory_codes, :as => [], :from => "ExcludedTerritoryCode", :required => false
       xml_accessor :territory_codes, :as => [], :from => "TerritoryCode", :required => false
@@ -35,10 +35,10 @@ class DDEX::V20100712::DDEXC::SoftwareDetailsByTerritory < Element
       xml_accessor :original_resource_release_date, :as => DDEX::V20100712::DDEXC::EventDate, :from => "OriginalResourceReleaseDate", :required => false
 
 
-  
+
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
-    
-  
+
+
 
 end
 

@@ -24,7 +24,7 @@ class DDEX::V20100712::DDEXC::MusicalWork < Element
   include ROXML
 
 
-  xml_name "ns2:MusicalWork"
+  xml_name "MusicalWork"
 
       xml_accessor :musical_work_ids, :as => [DDEX::V20100712::DDEXC::MusicalWorkId], :from => "MusicalWorkId", :required => true
       xml_accessor :musical_work_reference, :from => "MusicalWorkReference", :required => true
@@ -36,13 +36,13 @@ class DDEX::V20100712::DDEXC::MusicalWork < Element
       xml_accessor :musical_work_details_by_territories, :as => [DDEX::V20100712::DDEXC::MusicalWorkDetailsByTerritory], :from => "MusicalWorkDetailsByTerritory", :required => false
 
 
-  
+
       xml_accessor :updated?, :from => "@IsUpdated", :required => false
-    
-  
+
+
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
-    
-  
+
+
 
 end
 

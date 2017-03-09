@@ -18,17 +18,17 @@ class DDEX::V20100712::DDEXC::MusicalWorkDetailsByTerritory < Element
   include ROXML
 
 
-  xml_name "ns2:MusicalWorkDetailsByTerritory"
+  xml_name "MusicalWorkDetailsByTerritory"
 
       xml_accessor :excluded_territory_codes, :as => [], :from => "ExcludedTerritoryCode", :required => false
       xml_accessor :territory_codes, :as => [], :from => "TerritoryCode", :required => false
       xml_accessor :musical_work_contributors, :as => [DDEX::V20100712::DDEXC::MusicalWorkContributor], :from => "MusicalWorkContributor", :required => true
 
 
-  
+
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
-    
-  
+
+
 
 end
 

@@ -17,15 +17,15 @@ class DDEX::V20100712::DDEXC::Reason < Element
   include ROXML
 
 
-  xml_name "ns2:Reason"
+  xml_name "Reason"
 
 
     xml_accessor :value, :from => ".", :required => false
 
-  
+
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
-    
-  
+
+
 
 end
 

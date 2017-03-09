@@ -18,7 +18,7 @@ class DDEX::V20100712::DDEXC::TextId < Element
   include ROXML
 
 
-  xml_name "ns2:TextId"
+  xml_name "TextId"
 
       xml_accessor :isbn, :from => "ISBN", :required => false
       xml_accessor :issn, :from => "ISSN", :required => false
@@ -26,7 +26,7 @@ class DDEX::V20100712::DDEXC::TextId < Element
       xml_accessor :proprietary_ids, :as => [DDEX::V20100712::DDEXC::ProprietaryId], :from => "ProprietaryId", :required => false
 
 
-  
+
 
 end
 

@@ -18,18 +18,18 @@ class DDEX::V20100712::DDEXC::RightsController < DDEX::V20100712::DDEXC::PartyDe
   include ROXML
 
 
-  xml_name "ns2:RightsController"
+  xml_name "RightsController"
 
       xml_accessor :rights_controller_roles, :as => [], :from => "RightsControllerRole", :required => false
       xml_accessor :right_share_percentage, :from => "RightSharePercentage", :required => false
       xml_accessor :right_share_unknown?, :from => "RightShareUnknown", :required => false
 
 
-  
+
 
       xml_accessor :sequence_number, :as => Integer, :from => "@SequenceNumber", :required => false
-    
-  
+
+
 
 end
 

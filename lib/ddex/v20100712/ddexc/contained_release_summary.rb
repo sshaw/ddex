@@ -19,12 +19,12 @@ class DDEX::V20100712::DDEXC::ContainedReleaseSummary < DDEX::V20100712::DDEXC::
   include ROXML
 
 
-  xml_name "ns2:ContainedReleaseSummary"
+  xml_name "ContainedReleaseSummary"
 
       xml_accessor :related_releases, :as => [DDEX::V20100712::DDEXC::RelatedRelease], :from => "RelatedRelease", :required => false
 
 
-  
+
 
 end
 

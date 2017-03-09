@@ -22,7 +22,7 @@ class DDEX::V20100712::DDEXC::HostSoundCarrier < Element
   include ROXML
 
 
-  xml_name "ns2:HostSoundCarrier"
+  xml_name "HostSoundCarrier"
 
       xml_accessor :release_id, :as => DDEX::V20100712::DDEXC::ReleaseId, :from => "ReleaseId", :required => false
       xml_accessor :rights_agreement_id, :as => DDEX::V20100712::DDEXC::RightsAgreementId, :from => "RightsAgreementId", :required => false
@@ -33,7 +33,7 @@ class DDEX::V20100712::DDEXC::HostSoundCarrier < Element
       xml_accessor :volume_number_in_set, :from => "VolumeNumberInSet", :required => false
 
 
-  
+
 
 end
 

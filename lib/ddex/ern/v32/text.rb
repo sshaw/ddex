@@ -25,7 +25,7 @@ class DDEX::ERN::V32::Text < Element
   include ROXML
 
 
-  xml_name "ns1:Text"
+  xml_name "Text"
 
       xml_accessor :text_type, :as => DDEX::V20100712::DDEXC::TextType, :from => "TextType", :required => false
       xml_accessor :artist_related?, :from => "IsArtistRelated", :required => false
@@ -39,13 +39,13 @@ class DDEX::ERN::V32::Text < Element
       xml_accessor :text_details_by_territories, :as => [DDEX::ERN::V32::TextDetailsByTerritory], :from => "TextDetailsByTerritory", :required => true
 
 
-  
+
       xml_accessor :updated?, :from => "@IsUpdated", :required => false
-    
-  
+
+
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
-    
-  
+
+
 
 end
 

@@ -26,7 +26,7 @@ class DDEX::V20100712::DDEXC::SheetMusic < Element
   include ROXML
 
 
-  xml_name "ns2:SheetMusic"
+  xml_name "SheetMusic"
 
       xml_accessor :sheet_music_type, :as => DDEX::V20100712::DDEXC::SheetMusicType, :from => "SheetMusicType", :required => false
       xml_accessor :artist_related?, :from => "IsArtistRelated", :required => false
@@ -42,10 +42,10 @@ class DDEX::V20100712::DDEXC::SheetMusic < Element
       xml_accessor :sheet_music_details_by_territories, :as => [DDEX::V20100712::DDEXC::SheetMusicDetailsByTerritory], :from => "SheetMusicDetailsByTerritory", :required => true
 
 
-  
+
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
-    
-  
+
+
 
 end
 

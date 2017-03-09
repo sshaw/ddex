@@ -29,7 +29,7 @@ class DDEX::ERN::V32::Release < Element
   include ROXML
 
 
-  xml_name "ns1:Release"
+  xml_name "Release"
 
       xml_accessor :release_ids, :as => [DDEX::V20100712::DDEXC::ReleaseId], :from => "ReleaseId", :required => true
       xml_accessor :release_references, :as => [], :from => "ReleaseReference", :required => false
@@ -48,10 +48,10 @@ class DDEX::ERN::V32::Release < Element
       xml_accessor :artist_profile_page, :as => DDEX::V20100712::DDEXC::WebPage, :from => "ArtistProfilePage", :required => false
 
 
-  
+
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
-    
-  
+
+
 
 end
 

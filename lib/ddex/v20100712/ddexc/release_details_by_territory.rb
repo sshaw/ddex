@@ -23,7 +23,7 @@ class DDEX::V20100712::DDEXC::ReleaseDetailsByTerritory < DDEX::V20100712::DDEXC
   include ROXML
 
 
-  xml_name "ns2:ReleaseDetailsByTerritory"
+  xml_name "ReleaseDetailsByTerritory"
 
       xml_accessor :titles, :as => [DDEX::V20100712::DDEXC::Title], :from => "Title", :required => false
       xml_accessor :display_artists, :as => [DDEX::V20100712::DDEXC::DisplayArtist], :from => "DisplayArtist", :required => true
@@ -33,7 +33,7 @@ class DDEX::V20100712::DDEXC::ReleaseDetailsByTerritory < DDEX::V20100712::DDEXC
       xml_accessor :related_releases, :as => [DDEX::V20100712::DDEXC::RelatedRelease], :from => "RelatedRelease", :required => false
 
 
-  
+
 
 end
 

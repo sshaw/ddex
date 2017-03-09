@@ -24,7 +24,7 @@ class DDEX::ERN::V32::ResourceGroup < Element
   include ROXML
 
 
-  xml_name "ns1:ResourceGroup"
+  xml_name "ResourceGroup"
 
       xml_accessor :titles, :as => [DDEX::V20100712::DDEXC::Title], :from => "Title", :required => false
       xml_accessor :sequence_number, :as => Integer, :from => "SequenceNumber", :required => false
@@ -36,10 +36,10 @@ class DDEX::ERN::V32::ResourceGroup < Element
       xml_accessor :resource_group_content_items, :as => [DDEX::ERN::V32::ResourceGroupContentItem], :from => "ResourceGroupContentItem", :required => false
 
 
-  
+
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
-    
-  
+
+
 
 end
 

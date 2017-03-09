@@ -25,7 +25,7 @@ class DDEX::V20100712::DDEXC::Release < Element
   include ROXML
 
 
-  xml_name "ns2:Release"
+  xml_name "Release"
 
       xml_accessor :release_ids, :as => [DDEX::V20100712::DDEXC::ReleaseId], :from => "ReleaseId", :required => true
       xml_accessor :reference_title, :as => DDEX::V20100712::DDEXC::ReferenceTitle, :from => "ReferenceTitle", :required => true
@@ -38,10 +38,10 @@ class DDEX::V20100712::DDEXC::Release < Element
       xml_accessor :c_lines, :as => [DDEX::V20100712::DDEXC::CLine], :from => "CLine", :required => false
 
 
-  
+
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
-    
-  
+
+
 
 end
 

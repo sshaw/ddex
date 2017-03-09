@@ -17,7 +17,7 @@ class DDEX::V20100712::DDEXC::CueCreationReference < Element
   include ROXML
 
 
-  xml_name "ns2:CueCreationReference"
+  xml_name "CueCreationReference"
 
       xml_accessor :cue_resource_reference, :from => "CueResourceReference", :required => false
       xml_accessor :cue_work_reference, :from => "CueWorkReference", :required => false

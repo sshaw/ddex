@@ -18,7 +18,7 @@ class DDEX::V20100712::DDEXC::ResourceContainedResourceReference < Element
   include ROXML
 
 
-  xml_name "ns2:ResourceContainedResourceReference"
+  xml_name "ResourceContainedResourceReference"
 
       xml_accessor :resource_contained_resource_reference, :from => "ResourceContainedResourceReference", :required => true
       xml_accessor :duration_used, :from => "DurationUsed", :required => false
@@ -26,7 +26,7 @@ class DDEX::V20100712::DDEXC::ResourceContainedResourceReference < Element
       xml_accessor :purpose, :as => DDEX::V20100712::DDEXC::Purpose, :from => "Purpose", :required => false
 
 
-  
+
 
 end
 

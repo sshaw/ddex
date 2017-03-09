@@ -17,15 +17,15 @@ class DDEX::V20100712::DDEXC::PriceType < Element
   include ROXML
 
 
-  xml_name "ns2:PriceType"
+  xml_name "PriceType"
 
 
     xml_accessor :value, :from => ".", :required => false
 
-  
+
       xml_accessor :namespace, :from => "@Namespace", :required => true
-    
-  
+
+
 
 end
 

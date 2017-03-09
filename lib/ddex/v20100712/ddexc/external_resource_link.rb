@@ -19,7 +19,7 @@ class DDEX::V20100712::DDEXC::ExternalResourceLink < Element
   include ROXML
 
 
-  xml_name "ns2:ExternalResourceLink"
+  xml_name "ExternalResourceLink"
 
       xml_accessor :urls, :as => [], :from => "URL", :required => true
       xml_accessor :validity_period, :as => DDEX::V20100712::DDEXC::Period, :from => "ValidityPeriod", :required => false
@@ -28,7 +28,7 @@ class DDEX::V20100712::DDEXC::ExternalResourceLink < Element
       xml_accessor :file_format, :from => "FileFormat", :required => false
 
 
-  
+
 
 end
 

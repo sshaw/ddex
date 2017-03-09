@@ -19,14 +19,14 @@ class DDEX::V20100712::DDEXC::TaxRate < Element
   include ROXML
 
 
-  xml_name "ns2:TaxRate"
+  xml_name "TaxRate"
 
       xml_accessor :rate, :as => Float, :from => "Rate", :required => true
       xml_accessor :tax_types, :as => [DDEX::V20100712::DDEXC::TaxType], :from => "TaxType", :required => true
       xml_accessor :tax_scopes, :as => [DDEX::V20100712::DDEXC::TaxScope], :from => "TaxScope", :required => true
 
 
-  
+
 
 end
 

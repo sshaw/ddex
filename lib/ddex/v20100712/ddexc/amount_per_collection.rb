@@ -18,13 +18,13 @@ class DDEX::V20100712::DDEXC::AmountPerCollection < Element
   include ROXML
 
 
-  xml_name "ns2:AmountPerCollection"
+  xml_name "AmountPerCollection"
 
       xml_accessor :amount, :as => Float, :from => "Amount", :required => true
       xml_accessor :collection_type, :as => DDEX::V20100712::DDEXC::CollectionType, :from => "CollectionType", :required => true
 
 
-  
+
 
 end
 

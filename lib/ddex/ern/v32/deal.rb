@@ -21,7 +21,7 @@ class DDEX::ERN::V32::Deal < Element
   include ROXML
 
 
-  xml_name "ns1:Deal"
+  xml_name "Deal"
 
       xml_accessor :deal_references, :as => [DDEX::V20100712::DDEXC::DealReference], :from => "DealReference", :required => false
       xml_accessor :deal_terms, :as => DDEX::ERN::V32::DealTerms, :from => "DealTerms", :required => false
@@ -29,10 +29,10 @@ class DDEX::ERN::V32::Deal < Element
       xml_accessor :deal_technical_resource_details_reference_list, :as => DDEX::ERN::V32::DealTechnicalResourceDetailsReferenceList, :from => "DealTechnicalResourceDetailsReferenceList", :required => false
 
 
-  
+
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
-    
-  
+
+
 
 end
 

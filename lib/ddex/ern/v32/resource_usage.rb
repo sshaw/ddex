@@ -20,7 +20,7 @@ class DDEX::ERN::V32::ResourceUsage < Element
   include ROXML
 
 
-  xml_name "ns1:ResourceUsage"
+  xml_name "ResourceUsage"
 
       xml_accessor :deal_resource_references, :as => [], :from => "DealResourceReference", :required => false
       xml_accessor :release_ids, :as => [DDEX::V20100712::DDEXC::ReleaseId], :from => "ReleaseId", :required => false
@@ -28,7 +28,7 @@ class DDEX::ERN::V32::ResourceUsage < Element
       xml_accessor :usages, :as => [DDEX::V20100712::DDEXC::Usage], :from => "Usage", :required => true
 
 
-  
+
 
 end
 

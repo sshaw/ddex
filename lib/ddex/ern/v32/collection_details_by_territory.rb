@@ -19,12 +19,12 @@ class DDEX::ERN::V32::CollectionDetailsByTerritory < DDEX::V20100712::DDEXC::Col
   include ROXML
 
 
-  xml_name "ns1:CollectionDetailsByTerritory"
+  xml_name "CollectionDetailsByTerritory"
 
       xml_accessor :characters, :as => [DDEX::V20100712::DDEXC::Character], :from => "Character", :required => false
 
 
-  
+
 
 end
 

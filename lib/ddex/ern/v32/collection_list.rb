@@ -18,15 +18,15 @@ class DDEX::ERN::V32::CollectionList < Element
   include ROXML
 
 
-  xml_name "ns1:CollectionList"
+  xml_name "CollectionList"
 
       xml_accessor :collections, :as => [DDEX::ERN::V32::Collection], :from => "Collection", :required => true
 
 
-  
+
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
-    
-  
+
+
 
 end
 

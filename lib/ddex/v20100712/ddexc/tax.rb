@@ -17,15 +17,15 @@ class DDEX::V20100712::DDEXC::Tax < Element
   include ROXML
 
 
-  xml_name "ns2:Tax"
+  xml_name "Tax"
 
 
     xml_accessor :value, :from => ".", :required => false
 
-  
+
       xml_accessor :currency_code, :from => "@CurrencyCode", :required => true
-    
-  
+
+
 
 end
 

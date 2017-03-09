@@ -23,7 +23,7 @@ class DDEX::V20100712::DDEXC::RelatedRelease < Element
   include ROXML
 
 
-  xml_name "ns2:RelatedRelease"
+  xml_name "RelatedRelease"
 
       xml_accessor :release_ids, :as => [DDEX::V20100712::DDEXC::ReleaseId], :from => "ReleaseId", :required => true
       xml_accessor :reference_title, :as => DDEX::V20100712::DDEXC::ReferenceTitle, :from => "ReferenceTitle", :required => false
@@ -34,10 +34,10 @@ class DDEX::V20100712::DDEXC::RelatedRelease < Element
       xml_accessor :original_release_date, :as => DDEX::V20100712::DDEXC::EventDate, :from => "OriginalReleaseDate", :required => false
 
 
-  
+
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
-    
-  
+
+
 
 end
 

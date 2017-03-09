@@ -17,16 +17,16 @@ class DDEX::V20100712::DDEXC::PLine < Element
   include ROXML
 
 
-  xml_name "ns2:PLine"
+  xml_name "PLine"
 
       xml_accessor :year, :from => "Year", :required => true
       xml_accessor :p_line_text, :from => "PLineText", :required => true
 
 
-  
+
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
-    
-  
+
+
 
 end
 

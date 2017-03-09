@@ -18,7 +18,7 @@ class DDEX::V20100712::DDEXC::WebPage < Element
   include ROXML
 
 
-  xml_name "ns2:WebPage"
+  xml_name "WebPage"
 
       xml_accessor :page_name, :as => DDEX::V20100712::DDEXC::Name, :from => "PageName", :required => false
       xml_accessor :url, :from => "URL", :required => false
@@ -26,7 +26,7 @@ class DDEX::V20100712::DDEXC::WebPage < Element
       xml_accessor :password, :from => "Password", :required => false
 
 
-  
+
 
 end
 

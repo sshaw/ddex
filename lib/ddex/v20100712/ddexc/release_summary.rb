@@ -21,7 +21,7 @@ class DDEX::V20100712::DDEXC::ReleaseSummary < Element
   include ROXML
 
 
-  xml_name "ns2:ReleaseSummary"
+  xml_name "ReleaseSummary"
 
       xml_accessor :release_ids, :as => [DDEX::V20100712::DDEXC::ReleaseId], :from => "ReleaseId", :required => true
       xml_accessor :reference_title, :as => DDEX::V20100712::DDEXC::ReferenceTitle, :from => "ReferenceTitle", :required => true
@@ -29,10 +29,10 @@ class DDEX::V20100712::DDEXC::ReleaseSummary < Element
       xml_accessor :rights_agreement_id, :as => DDEX::V20100712::DDEXC::RightsAgreementId, :from => "RightsAgreementId", :required => false
 
 
-  
+
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
-    
-  
+
+
 
 end
 

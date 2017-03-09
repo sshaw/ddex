@@ -22,7 +22,7 @@ class DDEX::ERN::V32::TechnicalMidiDetails < Element
   include ROXML
 
 
-  xml_name "ns1:TechnicalMidiDetails"
+  xml_name "TechnicalMidiDetails"
 
       xml_accessor :technical_resource_details_reference, :from => "TechnicalResourceDetailsReference", :required => true
       xml_accessor :preview?, :from => "IsPreview", :required => false
@@ -34,10 +34,10 @@ class DDEX::ERN::V32::TechnicalMidiDetails < Element
       xml_accessor :sound_processor_type, :as => DDEX::V20100712::DDEXC::SoundProcessorType, :from => "SoundProcessorType", :required => false
 
 
-  
+
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
-    
-  
+
+
 
 end
 

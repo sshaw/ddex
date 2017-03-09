@@ -20,14 +20,14 @@ class DDEX::V20100712::DDEXC::TotalRoyaltyAmount < Element
   include ROXML
 
 
-  xml_name "ns2:TotalRoyaltyAmount"
+  xml_name "TotalRoyaltyAmount"
 
       xml_accessor :release_types, :as => [DDEX::V20100712::DDEXC::ReleaseType], :from => "ReleaseType", :required => false
       xml_accessor :rights_types, :as => [DDEX::V20100712::DDEXC::RightsType], :from => "RightsType", :required => false
       xml_accessor :royalty_amount, :as => DDEX::V20100712::DDEXC::RoyaltyAmount, :from => "RoyaltyAmount", :required => true
 
 
-  
+
 
 end
 

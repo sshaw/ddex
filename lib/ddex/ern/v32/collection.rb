@@ -29,7 +29,7 @@ class DDEX::ERN::V32::Collection < Element
   include ROXML
 
 
-  xml_name "ns1:Collection"
+  xml_name "Collection"
 
       xml_accessor :collection_ids, :as => [DDEX::V20100712::DDEXC::CollectionId], :from => "CollectionId", :required => true
       xml_accessor :collection_types, :as => [DDEX::V20100712::DDEXC::CollectionType], :from => "CollectionType", :required => false
@@ -52,10 +52,10 @@ class DDEX::ERN::V32::Collection < Element
       xml_accessor :c_lines, :as => [DDEX::V20100712::DDEXC::CLine], :from => "CLine", :required => false
 
 
-  
+
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
-    
-  
+
+
 
 end
 

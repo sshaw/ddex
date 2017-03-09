@@ -22,7 +22,7 @@ class DDEX::V20100712::DDEXC::Usage < Element
   include ROXML
 
 
-  xml_name "ns2:Usage"
+  xml_name "Usage"
 
       xml_accessor :use_types, :as => [DDEX::V20100712::DDEXC::UseType], :from => "UseType", :required => true
       xml_accessor :user_interface_types, :as => [DDEX::V20100712::DDEXC::UserInterfaceType], :from => "UserInterfaceType", :required => false
@@ -32,7 +32,7 @@ class DDEX::V20100712::DDEXC::Usage < Element
       xml_accessor :number_of_usages, :as => Integer, :from => "NumberOfUsages", :required => false
 
 
-  
+
 
 end
 

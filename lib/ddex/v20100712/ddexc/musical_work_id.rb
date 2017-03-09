@@ -18,7 +18,7 @@ class DDEX::V20100712::DDEXC::MusicalWorkId < Element
   include ROXML
 
 
-  xml_name "ns2:MusicalWorkId"
+  xml_name "MusicalWorkId"
 
       xml_accessor :iswc, :from => "ISWC", :required => false
       xml_accessor :opus_number, :from => "OpusNumber", :required => false
@@ -26,7 +26,7 @@ class DDEX::V20100712::DDEXC::MusicalWorkId < Element
       xml_accessor :proprietary_ids, :as => [DDEX::V20100712::DDEXC::ProprietaryId], :from => "ProprietaryId", :required => false
 
 
-  
+
 
 end
 

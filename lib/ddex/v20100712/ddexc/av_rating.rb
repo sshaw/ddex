@@ -18,13 +18,13 @@ class DDEX::V20100712::DDEXC::AvRating < Element
   include ROXML
 
 
-  xml_name "ns2:AvRating"
+  xml_name "AvRating"
 
       xml_accessor :rating_text, :from => "RatingText", :required => true
       xml_accessor :rating_agency, :as => DDEX::V20100712::DDEXC::RatingAgency, :from => "RatingAgency", :required => true
 
 
-  
+
 
 end
 

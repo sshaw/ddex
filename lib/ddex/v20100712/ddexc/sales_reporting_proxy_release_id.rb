@@ -20,14 +20,14 @@ class DDEX::V20100712::DDEXC::SalesReportingProxyReleaseId < Element
   include ROXML
 
 
-  xml_name "ns2:SalesReportingProxyReleaseId"
+  xml_name "SalesReportingProxyReleaseId"
 
       xml_accessor :release_id, :as => DDEX::V20100712::DDEXC::ReleaseId, :from => "ReleaseId", :required => true
       xml_accessor :reason, :as => DDEX::V20100712::DDEXC::Reason, :from => "Reason", :required => false
       xml_accessor :reason_type, :as => DDEX::V20100712::DDEXC::ReasonType, :from => "ReasonType", :required => true
 
 
-  
+
 
 end
 

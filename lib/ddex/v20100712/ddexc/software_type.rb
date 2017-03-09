@@ -17,18 +17,18 @@ class DDEX::V20100712::DDEXC::SoftwareType < Element
   include ROXML
 
 
-  xml_name "ns2:SoftwareType"
+  xml_name "SoftwareType"
 
 
     xml_accessor :value, :from => ".", :required => false
 
-  
+
       xml_accessor :namespace, :from => "@Namespace", :required => false
-    
-  
+
+
       xml_accessor :user_defined_value, :from => "@UserDefinedValue", :required => false
-    
-  
+
+
 
 end
 

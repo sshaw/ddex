@@ -19,16 +19,16 @@ class DDEX::V20100712::DDEXC::SimpleProfileDisplayArtist < DDEX::V20100712::DDEX
   include ROXML
 
 
-  xml_name "ns2:SimpleProfileDisplayArtist"
+  xml_name "SimpleProfileDisplayArtist"
 
       xml_accessor :artist_roles, :as => [DDEX::V20100712::DDEXC::ArtistRole], :from => "ArtistRole", :required => false
 
 
-  
+
 
       xml_accessor :sequence_number, :as => Integer, :from => "@SequenceNumber", :required => false
-    
-  
+
+
 
 end
 

@@ -19,16 +19,16 @@ class DDEX::ERN::V32::LicensedSoundRecording < Element
   include ROXML
 
 
-  xml_name "ns1:LicensedSoundRecording"
+  xml_name "LicensedSoundRecording"
 
       xml_accessor :sound_recording_id, :as => DDEX::V20100712::DDEXC::SoundRecordingId, :from => "SoundRecordingId", :required => true
       xml_accessor :musical_works, :as => [DDEX::V20100712::DDEXC::MusicalWork], :from => "MusicalWork", :required => true
 
 
-  
+
       xml_accessor :language_and_script_code, :from => "@LanguageAndScriptCode", :required => false
-    
-  
+
+
 
 end
 

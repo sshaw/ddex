@@ -17,7 +17,7 @@ class DDEX::V20100712::DDEXC::ResourceMusicalWorkReference < Element
   include ROXML
 
 
-  xml_name "ns2:ResourceMusicalWorkReference"
+  xml_name "ResourceMusicalWorkReference"
 
       xml_accessor :sequence_number, :as => Integer, :from => "SequenceNumber", :required => false
       xml_accessor :duration_used, :from => "DurationUsed", :required => false
@@ -25,7 +25,7 @@ class DDEX::V20100712::DDEXC::ResourceMusicalWorkReference < Element
       xml_accessor :resource_musical_work_reference, :from => "ResourceMusicalWorkReference", :required => true
 
 
-  
+
 
 end
 

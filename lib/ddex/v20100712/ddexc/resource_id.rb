@@ -19,7 +19,7 @@ class DDEX::V20100712::DDEXC::ResourceId < Element
   include ROXML
 
 
-  xml_name "ns2:ResourceId"
+  xml_name "ResourceId"
 
       xml_accessor :isrc, :from => "ISRC", :required => false
       xml_accessor :ismn, :from => "ISMN", :required => false
@@ -32,7 +32,7 @@ class DDEX::V20100712::DDEXC::ResourceId < Element
       xml_accessor :proprietary_ids, :as => [DDEX::V20100712::DDEXC::ProprietaryId], :from => "ProprietaryId", :required => false
 
 
-  
+
 
 end
 

@@ -17,7 +17,7 @@ class DDEX::V20100712::DDEXC::DealReference < Element
   include ROXML
 
 
-  xml_name "ns2:DealReference"
+  xml_name "DealReference"
 
 
     xml_accessor :value, :from => ".", :required => false

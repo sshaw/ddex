@@ -24,7 +24,7 @@ class DDEX::ERN::V32::UserDefinedResourceDetailsByTerritory < DDEX::V20100712::D
   include ROXML
 
 
-  xml_name "ns1:UserDefinedResourceDetailsByTerritory"
+  xml_name "UserDefinedResourceDetailsByTerritory"
 
       xml_accessor :fulfillment_date, :as => DDEX::V20100712::DDEXC::FulfillmentDate, :from => "FulfillmentDate", :required => false
       xml_accessor :keywords, :as => DDEX::V20100712::DDEXC::Keywords, :from => "Keywords", :required => false
@@ -34,7 +34,7 @@ class DDEX::ERN::V32::UserDefinedResourceDetailsByTerritory < DDEX::V20100712::D
       xml_accessor :technical_user_defined_resource_details, :as => [DDEX::ERN::V32::TechnicalUserDefinedResourceDetails], :from => "TechnicalUserDefinedResourceDetails", :required => false
 
 
-  
+
 
 end
 

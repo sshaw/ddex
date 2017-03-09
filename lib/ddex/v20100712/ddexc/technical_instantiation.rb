@@ -18,7 +18,7 @@ class DDEX::V20100712::DDEXC::TechnicalInstantiation < Element
   include ROXML
 
 
-  xml_name "ns2:TechnicalInstantiation"
+  xml_name "TechnicalInstantiation"
 
       xml_accessor :drm_enforcement_type, :from => "DrmEnforcementType", :required => false
       xml_accessor :video_definition_type, :from => "VideoDefinitionType", :required => false
@@ -26,7 +26,7 @@ class DDEX::V20100712::DDEXC::TechnicalInstantiation < Element
       xml_accessor :bit_rate, :as => DDEX::V20100712::DDEXC::BitRate, :from => "BitRate", :required => false
 
 
-  
+
 
 end
 

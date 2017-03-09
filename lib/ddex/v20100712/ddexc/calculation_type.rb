@@ -17,16 +17,16 @@ class DDEX::V20100712::DDEXC::CalculationType < Element
   include ROXML
 
 
-  xml_name "ns2:CalculationType"
+  xml_name "CalculationType"
 
 
     xml_accessor :value, :from => ".", :required => false
 
-  
+
 
       xml_accessor :sequence_number, :as => Integer, :from => "@SequenceNumber", :required => false
-    
-  
+
+
 
 end
 

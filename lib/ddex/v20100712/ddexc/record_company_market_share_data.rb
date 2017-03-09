@@ -22,7 +22,7 @@ class DDEX::V20100712::DDEXC::RecordCompanyMarketShareData < Element
   include ROXML
 
 
-  xml_name "ns2:RecordCompanyMarketShareData"
+  xml_name "RecordCompanyMarketShareData"
 
       xml_accessor :release_types, :as => [DDEX::V20100712::DDEXC::ReleaseType], :from => "ReleaseType", :required => false
       xml_accessor :units_sold_total, :as => Integer, :from => "UnitsSoldTotal", :required => true
@@ -32,7 +32,7 @@ class DDEX::V20100712::DDEXC::RecordCompanyMarketShareData < Element
       xml_accessor :carrier_types, :as => [DDEX::V20100712::DDEXC::CarrierType], :from => "CarrierType", :required => false
 
 
-  
+
 
 end
 
