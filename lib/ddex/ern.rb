@@ -10,6 +10,8 @@ module DDEX
     autoload :V35,  "ddex/ern/v35"
     autoload :V351, "ddex/ern/v351"
     autoload :V36,  "ddex/ern/v36"
+    autoload :V371,  "ddex/ern/v371"
+    autoload :V37D2,  "ddex/ern/v37_d2"
     autoload :V37,  "ddex/ern/v37"
     autoload :V38,  "ddex/ern/v38"
     autoload :V381,  "ddex/ern/v381"
@@ -35,6 +37,18 @@ module DDEX
         :schema => "http://ddex.net/xml/ern/38/release-notification.xsd",
         :version => "3.8",
         :message_schema_version_id => "ern/38"
+      },
+
+      "V371" => {
+        :schema => "http://ddex.net/xml/ern/371/release-notification.xsd",
+        :version => "3.7.1",
+        :message_schema_version_id => "ern/371"
+      },
+
+      "V37D2" => {
+        :schema => "http://ddex.net/xml/ern/37D2/release-notification.xsd",
+        :version => "3.7_D2",
+        :message_schema_version_id => "ern/37D2"
       },
 
       "V37" => {
