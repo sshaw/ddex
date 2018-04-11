@@ -192,6 +192,11 @@ See CONTRIBUTING.md
 
   Raised here: https://github.com/Empact/roxml/blob/v2.5.1/lib/roxml/xml/references.rb#L262
 
+=== See Also
+
+* {grid-number}[https://github.com/ScreenStaring/grid-number] - Class for managing Global Release Identifiers
+* {iTunes Store Transporter: GUI}[http://transportergui.com] - GUI and workflow automation for the iTunes Store’s Transporter (`iTMSTransporter`)
+
 === Author
 
 Skye Shaw  [skye.shaw {AT} gmail.com]
@@ -199,3 +204,7 @@ Skye Shaw  [skye.shaw {AT} gmail.com]
 === License
 
 Copyright (c) 2013 Skye Shaw. Released under the {MIT License}[www.opensource.org/licenses/MIT].
+
+---
+
+Made by {ScreenStaring}[http://screenstaring.com]
