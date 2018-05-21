@@ -1,0 +1,2777 @@
+<?xml version="1.0"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://ddex.net/xml/2010/ern-main/312" xmlns:ddex="http://ddex.net/xml/20100121/ddex" xmlns:ddexC="http://ddex.net/xml/20100121/ddexC" xmlns:ernm="http://ddex.net/xml/2010/ern-main/312" xmlns:iso3166a2="http://ddex.net/xml/20100121/iso3166a2" xmlns:iso4217a="http://ddex.net/xml/20100121/iso4217a" xmlns:iso639a2="http://ddex.net/xml/20100121/iso639a2" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:import namespace="http://ddex.net/xml/20100121/ddex" schemaLocation="http://ddex.net/xml/20100121/ddex.xsd" />
+    <xs:import namespace="http://ddex.net/xml/20100121/ddexC" schemaLocation="http://ddex.net/xml/20100121/ddexC.xsd" />
+    <xs:import namespace="http://ddex.net/xml/20100121/iso639a2" schemaLocation="http://ddex.net/xml/20100121/iso639a2.xsd" />
+    <xs:import namespace="http://ddex.net/xml/20100121/iso3166a2" schemaLocation="http://ddex.net/xml/20100121/iso3166a2.xsd" />
+    <xs:import namespace="http://ddex.net/xml/20100121/iso4217a" schemaLocation="http://ddex.net/xml/20100121/iso4217a.xsd" />
+    <xs:annotation>
+        <xs:documentation>(c) 2006-2010 DDEX, LLC</xs:documentation>
+    </xs:annotation>
+    <xs:complexType name="Collection">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a Collection. Collections referenced from Video Resources are of CollectionType VideoChapter . Collections referenced from a Release composite are of CollectionType Series, Season or Episode.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="CollectionId" type="ddexC:CollectionId" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of an Identifier of the Collection.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="CollectionType" type="ddexC:CollectionType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the Type of the Collection.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="CollectionReference" type="ddex:LocalCollectionAnchor">
+                <xs:annotation>
+                    <xs:documentation>The Identifier (specific to the Message) of the Collection within the Release which contains it. This LocalAnchor is a string starting with the letter X.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Title" type="ddexC:Title" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a Title of the Collection.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Contributor" type="ddexC:ResourceContributor" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details a Contributor to the Collection.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Character" type="ddexC:Character" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a Character in the Collection. A Character may be described through Name, Identifier and Roles.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="CollectionCollectionReferenceList" type="ddexC:CollectionCollectionReferenceList" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing a list of CollectionCollectionReferences for a Collection (specific to this Message).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsComplete" type="xs:boolean">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the Collection is complete (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Duration" type="xs:duration" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The sum of the Durations of all Resources contained in the Collection (using the ISO 8601:2004 PT[[hhH]mmM]ssS format, where lower case characters indicate variables, upper case characters are part of the string, e.g. one hour, two minutes and three seconds would be PT1H2M3S).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="DurationOfMusicalContent" type="xs:duration" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Duration of the musical content (using the ISO 8601:2004 PT[[hhH]mmM]ssS format, where lower case characters indicate variables, upper case characters are part of the string, e.g. one hour, two minutes and three seconds would be PT1H2M3S).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="CreationDate" type="ddexC:EventDate" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the Date and Place of the Event in which the Collection was created.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="OriginalReleaseDate" type="ddexC:EventDate" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the Date and Place of the Event in which the Collection was or will be first made available for Usage, whether for physical or electronic/online distribution (in ISO 8601:2004 format: YYYY-MM-DD).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="OriginalLanguage" type="iso639a2:LanguageCode" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The orignal Language of the Collection (represented by an ISO 639-2 LanguageCode).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="CollectionDetailsByTerritory" type="ernm:CollectionDetailsByTerritory" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of Descriptors and other attributes of the Collection which may vary according to Territory of release.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="CollectionResourceReferenceList" type="ernm:CollectionResourceReferenceList" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing a list of CollectionResourceReferences for a Resource (specific to this Message).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="CollectionWorkReferenceList" type="ernm:CollectionWorkReferenceList" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing a list of CollectionWorkReferences for a Work (specific to this Message).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="RepresentativeImageReference" type="ddex:LocalResourceAnchorReference" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Reference for an Image (specific to this Message). This LocalAnchorReference is a string starting with the letter A.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="PLine" type="ddexC:PLine" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the PLine for the Release.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="CLine" type="ddexC:CLine" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the CLine for the Release.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Language and script for the Elements of the Collection as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="CollectionDetailsByTerritory">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of Descriptors and other attributes of a Collection which may vary according to Territory of release.</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="ddexC:CollectionDetailsByTerritory">
+                <xs:sequence>
+                    <xs:element name="Character" type="ddexC:Character" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of a Character in the Collection. A Character may be described through Name, Identifier and Roles.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="CollectionList">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of one or more Collections.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="Collection" type="ernm:Collection" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a Collection contained in a Resource.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Language and script for the Elements of the CollectionList as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="CollectionResourceReferenceList">
+        <xs:annotation>
+            <xs:documentation>A Composite containing a list of CollectionResourceReferences.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="CollectionResourceReference" type="ddex:LocalResourceAnchorReference" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing a CollectionResourceReference for a Collection (specific to this Message).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="CollectionWorkReferenceList">
+        <xs:annotation>
+            <xs:documentation>A Composite containing a list of CollectionWorkReferences.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="CollectionWorkReference" type="ddex:LocalMusicalWorkAnchorReference" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing a CollectionWorkReference for a Collection (specific to this Message).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="Cue">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a Cue.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="CueUseType" type="ddexC:CueUseType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a UseType of the Cue. It can be expected that this element will be contractually mandatory in many communications of cue sheets to music rights societies.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="CueThemeType" type="ddexC:CueThemeType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a ThemeType for the Creation referenced in the Cue.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="CueVocalType" type="ddexC:CueVocalType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a VocalType for the Creation referenced in the Cue.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsDance" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Flag indicating whether a Creation contains dancing (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="CueVisualPerceptionType" type="ddexC:CueVisualPerceptionType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a VisualPerceptionType for the Creation referenced in the Cue.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="CueOrigin" type="ddexC:CueOrigin" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a CueOrigin for the Cue. It can be expected that this element will be contractually mandatory in many communications of cue sheets to music rights societies.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:choice>
+                <xs:element name="CueCreationReference" type="ddexC:CueCreationReference" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing a CueCreationReference for a Creation (specific to this Message).</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:sequence>
+                    <xs:element name="ReferencedCreationType" type="ddex:CreationType" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Type of the Creation referenced in the Cue.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="ReferencedCreationTitle" type="ddexC:Title" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of a Title of the Creation referenced in the Cue.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="ReferencedCreationContributor" type="ddexC:ResourceContributor" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details a Contributor of the Creation referenced in the Cue.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="ReferencedCreationCharacter" type="ddexC:Character" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of a Character in the Creation referenced in the Cue. A Character may be described through Name, Identifier and Roles.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+            </xs:choice>
+            <xs:element name="HasMusicalContent" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Flag indicating whether whether the Creation referenced in the Cue contains musical content such as a SoundRecording or a MusicalWork (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="StartTime" type="xs:duration" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The start time of the Creation, measured from the start of the Resource from which the CueSheet is referenced (using the ISO 8601:2004 PT[[hhH]mmM]ssS format, where lower case characters indicate variables, upper case characters are part of the string, e.g. one hour, two minutes and three seconds would be PT1H2M3S).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Duration" type="xs:duration" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Duration of the use of the Creation that is referenced in the CueCreationReference (using the ISO 8601:2004 PT[[hhH]mmM]ssS format, where lower case characters indicate variables, upper case characters are part of the string, e.g. one hour, two minutes and three seconds would be PT1H2M3S).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="EndTime" type="xs:duration" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The end time of the Creation, measured from the start of the Resource from which the CueSheet is referenced (using the ISO 8601:2004 PT[[hhH]mmM]ssS format, where lower case characters indicate variables, upper case characters are part of the string, e.g. one hour, two minutes and three seconds would be PT1H2M3S).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="PLine" type="ddexC:PLine" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the PLine for the Release.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="CLine" type="ddexC:CLine" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the CLine for the Release.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="CueSheet">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a CueSheet.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="CueSheetId" type="ddexC:ProprietaryId" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a CueSheetId of the CueSheet.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="CueSheetReference" type="ddex:LocalCueSheetAnchor">
+                <xs:annotation>
+                    <xs:documentation>The Identifier (specific to the Message) of the CueSheet within the Release which contains it. This LocalAnchor is a string starting with the letter Q.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="CueSheetType" type="ddexC:CueSheetType">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a Type of the CueSheet.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Cue" type="ernm:Cue" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a Cue.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="CueSheetList">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of one or more CueSheets.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="CueSheet" type="ernm:CueSheet" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a CueSheet contained in a Resource.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="Deal">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details (in full or in summary) of a Deal made between a DSP (as Licensee) and a Licensor of Works or Releases. When any new DealTerms are added or removed from an existing Deal (different UseTypes, Prices, Territories, DistributionChannels) then a new Deal is created, and (if appropriate) the ValidityPeriod of the existing Deal should be terminated. The only changes which should be made to the DealTerms of an existing Deal are corrections required because of an earlier error or omission, or the addition of an EndDate to the Deal's ValidityPeriod.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="DealReference" type="ddexC:DealReference" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing a Reference to a TextDocument containing details of the Deal (in the form of an Identifier, Name or Description).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="DealTerms" type="ernm:DealTerms" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the terms of the Deal.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ResourceUsage" type="ernm:ResourceUsage" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of one or more Usages that govern a Resource in the Deal where the Usage of the Resource differs from the Usage of the other Resources in the same Release.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="DealTechnicalResourceDetailsReferenceList" type="ernm:DealTechnicalResourceDetailsReferenceList" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing a list of DealTechnicalResourceDetailsReferences for the Deal.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Language and script for the Elements of the Deal as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="DealList">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of one or more Deals.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="ReleaseDeal" type="ernm:ReleaseDeal" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of one or more Deals pertaining to one or more Releases.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Language and script for the Elements of the DealList as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="DealTechnicalResourceDetailsReferenceList">
+        <xs:annotation>
+            <xs:documentation>A Composite containing a list of DealTechnicalResourceDetailsReferences.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="DealTechnicalResourceDetailsReference" type="ddex:LocalTechnicalResourceDetailsAnchorReference" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Reference for a Composite specifying technical details of a Resource (specific to this Message). This LocalAnchorReference is a string starting with the letter T.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="DealTerms">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of the terms of a Deal.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="CommercialModelType" type="ddexC:CommercialModelType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the fundamental business model which applies to the Deal (e.g. SubscriptionModel and PayAsYouGoModel). The CommercialModelType indicates how the Consumer pays for the Service or Release.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:choice>
+                <xs:element name="Usage" type="ddexC:Usage" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing the Types and number of Usages applicable to a Release to which the Deal applies.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="AllDealsCancelled" type="xs:boolean" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>The Flag indicating whether all Deals are cancelled for the given Territories (=True) or not (=False). This Flag can be used in conjunction with a StartDate of a ValidityPeriod to indicate the point in time from which all Deals are cancelled.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="TakeDown" type="xs:boolean" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>The Flag indicating whether all Releases referred to are to be taken down by the MessageRecipient. This includes that all Deals referred to in a specific Composite are cancelled and no information about the Releases should be displayed to the end user on the DSP's website (=True) or not (=False). This Flag can be used in conjunction with a StartDate of a ValidityPeriod to indicate the point in time from which all Deals are cancelled.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:choice>
+            <xs:choice>
+                <xs:element name="TerritoryCode" type="ddexC:TerritoryCode" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Territory in which the Deal applies (represented by an ISO 3166-1 TerritoryCode). Either this Element or ExcludedTerritory must be present, but not both.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ExcludedTerritoryCode" type="ddexC:TerritoryCode" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Territory in which the Deal does not apply (represented by an ISO 3166-1 TerritoryCode). Either this Element or Territory must be present, but not both.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:choice>
+            <xs:element name="DistributionChannel" type="ddexC:DSP" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the DSP through whose DistributionChannel the sales are permitted. If none are provided no limitations on the DistributionChannels are given.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="PriceInformation" type="ddexC:PriceInformation" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a Price. Note that this Price applies to all UseTypes referenced in this Composite.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:choice minOccurs="0">
+                <xs:element name="IsPromotional" type="xs:boolean">
+                    <xs:annotation>
+                        <xs:documentation>The Flag indicating whether a special Deal is made between the Licensor and the Licensee (=True) or not (=False) regarding the royalties or payments due to be paid for Releases distributed under this Deal.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="PromotionalCode" type="xs:boolean">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of a PromotionalCode.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:choice>
+            <xs:element name="ValidityPeriod" type="ddexC:Period" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details about a Period of Time during which the Deal is valid. No StartDate in this Composite means that the Deal is valid as per contractual relationship between MessageSender and MessageRecipient. No EndDate in this Composite means that the Deal is valid until further notice.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ConsumerRentalPeriod" type="ddexC:ConsumerRentalPeriod" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a Period the DSP may rent something to a Customer.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="PreOrderReleaseDate" type="ddexC:EventDate" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the Date and Place of the Event in which the related Release is made available for pre-ordering.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsExclusive" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the Deal is exclusive (=True) or not (=False) to the MessageRecipient with respect to the relevant Territory(ies), Time(s) and Release(s). For other Territory(ies), or Time(s), other DSPs might be able to sell the Release(s). The exclusivity is in accordance with the agreement between the MessageSender and MessageRecipient.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="RelatedReleaseOfferSet" type="ernm:RelatedReleaseOfferSet" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of one or more offers related to the Release.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Language and script for the Elements of the DealTerms as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="Image">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of an Image.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="ImageType" type="ddexC:ImageType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the Type of the Image.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsArtistRelated" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the Image is related to an Artist (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ImageId" type="ddexC:ImageId" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of Identifiers of the Image.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ResourceReference" type="ddex:LocalResourceAnchor">
+                <xs:annotation>
+                    <xs:documentation>The Identifier (specific to the Message) of the Image within the Release which contains it. This LocalAnchor is a string starting with the letter A.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Title" type="ddexC:Title" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a Title of the Image.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="CreationDate" type="ddexC:EventDate" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the Date and Place of the Event in which the Image was created.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ImageDetailsByTerritory" type="ernm:ImageDetailsByTerritory" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the Image which may vary according to Territory of release.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="IsUpdated" type="xs:boolean" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Flag indicating whether the Image Element was updated (=True) or not (=False). The Flag may only be used when the UpdateIndicator is set to UpdateMessage. When this Boolean Flag is set to true, the MessageRecipient is expected to replace any previously provided Image data with the now provided data.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Language and script for the Elements of the Image as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="ImageDetailsByTerritory">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of Descriptors, Dates and other attributes of an Image which may vary according to Territory of release.</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="ddexC:ImageDetailsByTerritory">
+                <xs:sequence>
+                    <xs:element name="FulfillmentDate" type="ddexC:FulfillmentDate" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of a FulfillmentDate.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Keywords" type="ddexC:Keywords" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of a Description of the Image containing Keywords.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Synopsis" type="ddexC:Synopsis" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of a Synopsis of the Image.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Genre" type="ddexC:Genre" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of a Genre to which the Image belongs.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="ParentalWarningType" type="ddexC:ParentalWarningType" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of the classification of the Image according to advice which it carries about the level of explicitness or offensiveness of its content.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="TechnicalImageDetails" type="ernm:TechnicalImageDetails" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing technical details of the Image.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="LicensedRelease">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a licensed Release.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="ReleaseId" type="ddexC:ReleaseId">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of ReleaseIds of the licensed Release. If available, a GRid has to be used. If the Release contains only one SoundRecording, the ISRC of the SoundRecording may be used instead. If the Release is an abstraction of a complete PhysicalProduct (such as a CD Album), the ICPN of the PhysicalProduct may be used instead.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="LicensedSoundRecording" type="ernm:LicensedSoundRecording" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a licensed SoundRecording or MusicalWorkVideo.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Language and script for the Elements of the LicensedRelease as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="LicensedSoundRecording">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a licensed SoundRecording or MusicalWorkVideo.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="SoundRecordingId" type="ddexC:SoundRecordingId">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of an SoundRecordingId of the licensed SoundRecording or MusicalWorkVideo.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MusicalWork" type="ddexC:MusicalWork" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the MusicalWork(s) contained in the licensed SoundRecording or MusicalWorkVideo.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Language and script for the Elements of the LicensedSoundRecording as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="MIDI">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a MIDI.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="MidiType" type="ddexC:MidiType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the Type of the MIDI.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsArtistRelated" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the MIDI is related to an Artist (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MidiId" type="ddexC:MidiId" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of Identifiers of the Midi.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ResourceReference" type="ddex:LocalResourceAnchor">
+                <xs:annotation>
+                    <xs:documentation>The Identifier (specific to the Message) of the MIDI within the Release which contains it. This LocalAnchor is a string starting with the letter A.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ReferenceTitle" type="ddexC:ReferenceTitle">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the ReferenceTitle of the MIDI.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="InstrumentationDescription" type="ddexC:Description" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing a Description of the Type of instrumentation of the MusicalWork(s) in the MIDI.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsMedley" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the MIDI is a Medley (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsPotpourri" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the MIDI is a Potpourri (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsInstrumental" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the MIDI is instrumental (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsBackground" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the MIDI is used as background to other audio or audiovisual material (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsHiddenResource" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the MIDI is hidden in some way from the Consumer (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsBonusResource" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the MIDI is additional to those on the original Release of which this is a Version (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsComputerGenerated" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the MIDI is generated by a computer (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="NoSilenceBefore" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the MIDI is preceded by a period of silence (=False) or not (=True).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="NoSilenceAfter" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the MIDI is followed by a period of silence (=False) or not (=True).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="LanguageOfPerformance" type="iso639a2:LanguageCode" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Language of the Performance recorded in the MIDI (represented by an ISO 639-2 LanguageCode).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Duration" type="xs:duration">
+                <xs:annotation>
+                    <xs:documentation>The Duration of the MIDI (using the ISO 8601:2004 PT[[hhH]mmM]ssS format, where lower case characters indicate variables, upper case characters are part of the string, e.g. one hour, two minutes and three seconds would be PT1H2M3S).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="RightsAgreementId" type="ddexC:RightsAgreementId" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of Identifiers of a License, Claim, RightShare or contract for the MusicalWork(s) used in the MIDI.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ResourceMusicalWorkReferenceList" type="ddexC:ResourceMusicalWorkReferenceList" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of one or more MusicalWorks contained in the MIDI.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ResourceContainedResourceReferenceList" type="ddexC:ResourceContainedResourceReferenceList" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of ResourceContainedResourceReferences referring to a Resource that is contained in the current MIDI.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="CreationDate" type="ddexC:EventDate" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the Date and Place of the Event in which the MIDI was created.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MasteredDate" type="ddexC:EventDate" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the Date and Place of the Event in which the MIDI was originally mastered (in either analogue or digital form).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MidiDetailsByTerritory" type="ernm:MidiDetailsByTerritory" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of Descriptors and other attributes of the MIDI which may vary according to Territory of release.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="IsUpdated" type="xs:boolean" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Flag indicating whether the MIDI Element was updated (=True) or not (=False). The Flag may only be used when the UpdateIndicator is set to UpdateMessage. When this Boolean Flag is set to true, the MessageRecipient is expected to replace any previously provided MIDI data with the now provided data.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Language and script for the Elements of the MIDI as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="MidiDetailsByTerritory">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of Descriptors and other attributes of a MIDI which may vary according to Territory of release.</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="ddexC:MidiDetailsByTerritory">
+                <xs:sequence>
+                    <xs:element name="CourtesyLine" type="ddexC:CourtesyLine" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing an Annotation which acknowledges record companies and/or other Parties giving permission for guests Artists or others featured on the MIDI.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="SequenceNumber" type="xs:string" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>The number indicating the order of the MIDI in a group of MIDIs in a Release.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="HostSoundCarrier" type="ddexC:HostSoundCarrier" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of a HostSoundCarrier on which the MIDI appears (e.g., the CD on which it was originally released). This Composite exists in the ERN DdexMessageSuite, Main Profile, to support the identification and matching of MIDI information.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="MarketingComment" type="ddexC:Comment" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing a Comment about the promotion and marketing of the MIDI.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Genre" type="ddexC:Genre" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of a Genre to which the MIDI belongs.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="ParentalWarningType" type="ddexC:ParentalWarningType" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of the classification of the MIDI according to advice which it carries about the level of explicitness or offensiveness of its content.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="FulfillmentDate" type="ddexC:FulfillmentDate" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of a FulfillmentDate.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Keywords" type="ddexC:Keywords" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of a Description of the MIDI containing Keywords.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Synopsis" type="ddexC:Synopsis" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of a Synopsis of the MIDI.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="TechnicalMidiDetails" type="ernm:TechnicalMidiDetails" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing technical details of the MIDI.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="PreviewDetails">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a preview.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="PartType" type="ddexC:Description" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing a Description of the Type of Part that the preview relates to, e.g. chorus or intro.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="TopLeftCorner" type="xs:decimal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The position of the preview measured in Pixels or millimetres from the top left corner of the Resource.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="BottomRightCorner" type="xs:decimal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The position of the preview measured in Pixels or millimetres from the bottom right corner of the Resource.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ExpressionType" type="ddex:ExpressionType">
+                <xs:annotation>
+                    <xs:documentation>A Type of expression indicating how this should be perceived, e.g. as instruction (meaning that this has to be done to create the preview) or as information (meaning that this has been done to craete the preview).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="RelatedReleaseOfferSet">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of one or more offers related to one or more Releases.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:choice>
+                <xs:element name="ReleaseId" type="ddexC:ReleaseId" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of ReleaseIds of the Release(s) for which the offer(s) are available.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ReleaseDescription" type="ddexC:Description">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing a Description of the Release(s) for which the offer(s) are available.This Element is designed to be used to describe entire collections or repertoires, and is not to be used to list individual Releases by ID or Title.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:choice>
+            <xs:element name="Deal" type="ernm:Deal" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a Deal that is available as an offer related to the Release(s). If no Deal is provided, the parent Release and the Releases listed in the RelatedReleaseOfferSet are bundled and offered under the ReleaseOffer associated with the parent Release.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Language and script for the Elements of the RelatedReleaseOfferSet as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="Release">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a DDEX Release.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="ReleaseId" type="ddexC:ReleaseId" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of ReleaseIds. If available, a GRid has to be used. If the Release contains only one SoundRecording, the ISRC of the SoundRecording may be used instead. If the Release is an abstraction of a complete PhysicalProduct (such as a CD Album), the ICPN of the PhysicalProduct may be used instead.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ReleaseReference" type="ddex:LocalReleaseAnchor" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>The Identifier (specific to the Message) of the Release. Used to link the Release to one or more Deal(s). This LocalAnchor is a string starting with the letter R.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ExternalResourceLink" type="ddexC:ExternalResourceLink" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of promotional or other material related to the Release.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="SalesReportingProxyReleaseId" type="ddexC:SalesReportingProxyReleaseId" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the A Composite containing details of the SalesReportingProxyReleaseId.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ReferenceTitle" type="ddexC:ReferenceTitle">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the ReferenceTitle of the Release.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ReleaseResourceReferenceList" type="ddexC:ReleaseResourceReferenceList">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of one or more Resources contained in the Release.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ReleaseCollectionReferenceList" type="ddexC:ReleaseCollectionReferenceList" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of one or more Collections contained in the Release.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ReleaseType" type="ddexC:ReleaseType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the form in which a ReleaseCreator anticipates offering the Release to Consumers. This may be overridden by the ReleaseType for specific Territories as specified in the ReleaseDetailsByTerritory Composite.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ReleaseDetailsByTerritory" type="ernm:ReleaseDetailsByTerritory" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of Descriptors and other attributes of the Release which may vary according to Territory of release.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Duration" type="xs:duration" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The sum of the Durations of all Resources contained in the Release (using the ISO 8601:2004 PT[[hhH]mmM]ssS format, where lower case characters indicate variables, upper case characters are part of the string, e.g. one hour, two minutes and three seconds would be PT1H2M3S).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="RightsAgreementId" type="ddexC:RightsAgreementId" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of Identifiers of a License, Claim, RightShare or contract for the MusicalWork(s) used in the Release.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="PLine" type="ddexC:PLine" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the PLine for the Release.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="CLine" type="ddexC:CLine" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the CLine for the Release.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="DistributionChannelPage" type="ddexC:WebPage" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the PLine for the Release.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ArtistProfilePage" type="ddexC:WebPage" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the CLine for the Release.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Language and script for the Elements of the Release as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="ReleaseDeal">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of one or more Deals pertaining to one or more Releases.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:choice>
+                <xs:element name="ReleaseId" type="ddexC:ReleaseId" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of ReleaseIds of a Release to which the Deal(s) apply. If available, a GRid has to be used. If the Release contains only one SoundRecording, the ISRC of the SoundRecording may be used instead. If the Release is an abstraction of a complete PhysicalProduct (such as a CD Album), the ICPN of the PhysicalProduct may be used instead.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="DealReleaseReference" type="ddex:LocalReleaseAnchorReference" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>The Identifier (specific to the Message) of a Release in the Deal. This LocalAnchorReference is a string starting with the letter R.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:choice>
+            <xs:element name="Deal" type="ernm:Deal" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a Deal governing the Usage of all Releases identified in the ReleaseDeal Composite.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="EffectiveDate" type="xs:date">
+                <xs:annotation>
+                    <xs:documentation>The Date at which the MessageRecipient is expected to cancel all Deals for the Release and replace them with the Deals provided within the current Message.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Language and script for the Elements of the ReleaseDeal as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="ReleaseDetailsByTerritory">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of Descriptors and other attributes of a Release which may vary according to Territory of release.</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="ddexC:ReleaseDetailsByTerritory">
+                <xs:sequence>
+                    <xs:element name="ParentalWarningType" type="ddexC:ParentalWarningType" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of the classification of the Release according to advice which it carries about the level of explicitness or offensiveness of its content.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="AvRating" type="ddexC:AvRating" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of a rating for the Release.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="MarketingComment" type="ddexC:Comment" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing a Comment about the promotion and marketing of the Release.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="ResourceGroup" type="ernm:ResourceGroup" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of a group of some or all of the Resources in the Release.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Genre" type="ddexC:Genre" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of a Genre to which the Release belongs.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="OriginalReleaseDate" type="ddexC:EventDate" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of the Date and Place of the Event in which the Release was or will be first made available for Usage, whether for physical or electronic/online distribution (in ISO 8601:2004 format: YYYY-MM-DD).</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="OriginalDigitalReleaseDate" type="ddexC:EventDate" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of the Date and Place of the Event in which the Release was or will be first made available in electronic/online format for Usage (in ISO 8601:2004 format: YYYY-MM-DD).</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:choice minOccurs="0">
+                        <xs:element name="FileAvailabilityDescription" type="ddexC:Description" maxOccurs="unbounded">
+                            <xs:annotation>
+                                <xs:documentation>A Composite containing a Description providing details of how a DSP can obtain any related Release File.</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                        <xs:element name="File" type="ddexC:File" maxOccurs="unbounded">
+                            <xs:annotation>
+                                <xs:documentation>A Composite containing details of a related Release File that a DSP can obtain.</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                    </xs:choice>
+                    <xs:element name="Keywords" type="ddexC:Keywords" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of a Description of the Release containing Keywords.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Synopsis" type="ddexC:Synopsis" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of a Synopsis of the Release.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Character" type="ddexC:Character" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of a Character in the Release. A Character may be described through Name, Identifier and Roles.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="ReleaseList">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of one or more Releases.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="Release" type="ernm:Release" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a DDEX Release.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Language and script for the Elements of the ReleaseList as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="ResourceGroup">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a ResourceGroup.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="Title" type="ddexC:Title" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a Title of the ResourceGroup. Typically this will apply to "sub" ResourceGroups within a hierarchy, e.g., different Albums in a Set.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="SequenceNumber" type="xs:integer" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The number indicating the order of the ResourceGroup within all ResourceGroups at this level. The default value is 1, and the value must be incremented by 1 for each ResourceGroup occurring at a particular level. The SequenceNumber is unique within its ResourceGroupLevelNumber.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="DisplayArtist" type="ddexC:DisplayArtist" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the DisplayArtist for the ResourceGroup. The DisplayArtist may be described through Name, Identifier and Roles.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ResourceContributor" type="ddexC:ResourceContributor" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a Contributor to this ResourceGroup. This includes roles such as the compiler of the ResourceGroup, and may summarize details of Contributors to individual SoundRecordings or other content.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IndirectResourceContributor" type="ddexC:IndirectResourceContributor" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of an indirect Contributor to this ResourceGroup.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ResourceGroup" type="ernm:ResourceGroup" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A ResourceGroup contained within this ResourceGroup.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:choice>
+                <xs:element name="ResourceGroupContentItem" type="ernm:ResourceGroupContentItem" minOccurs="0" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of a Resource contained in the ResourceGroup.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ResourceGroupResourceReferenceList" type="ddexC:ResourceGroupResourceReferenceList" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of a Resource contained in the ResourceGroup.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:choice>
+        </xs:sequence>
+        <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Language and script for the Elements of the ResourceGroup as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="ResourceGroupContentItem">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a Resource which is a ContentItem of a ResourceGroup.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="SequenceNumber" type="xs:integer" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The number indicating the order of the ContentItem among all Resources within this ResourceGroup. This is analogous to the Track number on a SoundCarrier. Not all ResourceGroups necessarily have SequenceNumbers (it is most applicable to SoundRecordings and MusicalWorkVideos). The SequenceNumber is unique within its ResourceGroupLevelNumber.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="SequenceSubNumber" type="xs:integer" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The SequenceNumber within the SequenceNumber. Example: if a Track is subdivided into several numbered sections, these are numbered with a SequenceSubNumber. The SequenceSubNumber is unique within its SequenceNumber.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ResourceType" type="ddexC:ResourceType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the Type of the ContentItem.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ReleaseResourceReference" type="ddexC:ReleaseResourceReference">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing a ReleaseResourceReference for the ContentItem (specific to this Message). The LocalAnchorReference in this Composite is a string starting with the letter A.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="LinkedReleaseResourceReference" type="ddexC:LinkedReleaseResourceReference" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a ReleaseResourceReference (specific to this Message) for a Resource which is linked to this ContentItem. Example: an Image, Text or NonMusicalWorkVideo associated with a SoundRecording. This LocalAnchorReference is a string starting with the letter A.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Duration" type="xs:duration" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Duration of the ContentItem featured, if it is a SoundRecording or Video (using the ISO 8601:2004 PT[[hhH]mmM]ssS format, where lower case characters indicate variables, upper case characters are part of the string, e.g. one hour, two minutes and three seconds would be PT1H2M3S). This Duration may be less than the normal Duration of the ContentItem, if only a part of it is included.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsHiddenResource" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether a Resource in a Release is hidden in some way from the Consumer (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsBonusResource" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether a Resource in a Release is additional to those on the original Release of which this is a Version (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="ResourceList">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of one or more Resources. ResourceList provides a simple means of aggregating Resources without any explicit sequencing or grouping: if that is needed it is provided by the ResourceGroup Composite.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="SoundRecording" type="ernm:SoundRecording" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a SoundRecording.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MIDI" type="ernm:MIDI" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a MIDI.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Video" type="ernm:Video" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a Video.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Image" type="ernm:Image" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of an Image.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Text" type="ernm:Text" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a Text.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="SheetMusic" type="ernm:SheetMusic" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a Text.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Software" type="ernm:Software" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of an item of Software.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="UserDefinedResource" type="ernm:UserDefinedResource" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a UserDefinedResource.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Language and script for the Elements of the ResourceList as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="ResourceUsage">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of one or more Usages that govern a Resource.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="DealResourceReference" type="ddex:LocalResourceAnchorReference" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Reference for a Resource (specific to this Message). This LocalAnchorReference is a string starting with the letter A.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ReleaseId" type="ddexC:ReleaseId" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of ReleaseIds of a Release where the deal differs from the deal that applies to the Resource. If available, a GRid should always to be used. If the Release contains only one SoundRecording, the ISRC of the SoundRecording may be used instead. If the Release is an abstraction of a complete PhysicalProduct (such as a CD Album), the ICPN of the PhysicalProduct may be used instead.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ResourceId" type="ddexC:ResourceId" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of ResourceIds of another Resource where the deal differs from the deal that applies to the Resource.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Usage" type="ddexC:Usage" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing the Types and number of Usages applicable to the Resource.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="SheetMusic">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a SheetMusic.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="SheetMusicType" type="ddexC:SheetMusicType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the Type of the SheetMusic.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsArtistRelated" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the SheetMusic is related to an Artist (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="SheetMusicId" type="ddexC:SheetMusicId">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of Identifiers of the SheetMusic.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ResourceReference" type="ddex:LocalResourceAnchor">
+                <xs:annotation>
+                    <xs:documentation>The Identifier (specific to the Message) of the SheetMusic within the Release which contains it. This LocalAnchor is a string starting with the letter A.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="LanguageOfLyrics" type="iso639a2:LanguageCode" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Language of the lyrics of the SheetMusic (represented by an ISO 639-2 LanguageCode).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="RightsAgreementId" type="ddexC:RightsAgreementId" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of Identifiers of a License, Claim, RightShare or contract for the MusicalWork(s) related to the SheetMusic.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ResourceMusicalWorkReferenceList" type="ddexC:ResourceMusicalWorkReferenceList" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of one or more MusicalWorks contained in the SheetMusic.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ResourceContainedResourceReferenceList" type="ddexC:ResourceContainedResourceReferenceList" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of ResourceContainedResourceReferences referring to a Resource that is contained in the current SheetMusic.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ReferenceTitle" type="ddexC:ReferenceTitle">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the ReferenceTitle of the SheetMusic.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="CreationDate" type="ddexC:EventDate" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the Date and Place of the Event in which the SheetMusic was created.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="SheetMusicDetailsByTerritory" type="ernm:SheetMusicDetailsByTerritory" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the SheetMusic which may vary according to Territory of release.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="IsUpdated" type="xs:boolean" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Flag indicating whether the SheetMusic Element was updated (=True) or not (=False). The Flag may only be used when the UpdateIndicator is set to UpdateMessage. When this Boolean Flag is set to true, the MessageRecipient is expected to replace any previously provided SheetMusic data with the now provided data.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Language and script for the Elements of the SheetMusic as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="SheetMusicDetailsByTerritory">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of Descriptors, Dates and other attributes of a SheetMusic which may vary according to Territory of release.</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="ddexC:SheetMusicDetailsByTerritory">
+                <xs:sequence>
+                    <xs:element name="FulfillmentDate" type="ddexC:FulfillmentDate" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of a FulfillmentDate.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Genre" type="ddexC:Genre" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of a Genre to which the SheetMusic belongs.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="ParentalWarningType" type="ddexC:ParentalWarningType" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of the classification of the SheetMusic according to advice which it carries about the level of explicitness or offensiveness of its content.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="TechnicalSheetMusicDetails" type="ernm:TechnicalSheetMusicDetails" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing technical details of the SheetMusic.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="Software">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of an item of Software.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="SoftwareType" type="ddexC:SoftwareType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the Type of the Software.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsArtistRelated" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the Software is related to an Artist (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="SoftwareId" type="ddexC:SoftwareId" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of Identifiers of the Software.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ResourceReference" type="ddex:LocalResourceAnchor">
+                <xs:annotation>
+                    <xs:documentation>The Identifier (specific to the Message) of the Software within the Release which contains it. This LocalAnchor is a string starting with the letter A.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ResourceMusicalWorkReferenceList" type="ddexC:ResourceMusicalWorkReferenceList" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of one or more MusicalWorks contained in the Software.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ResourceContainedResourceReferenceList" type="ddexC:ResourceContainedResourceReferenceList" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of ResourceContainedResourceReferences referring to a Resource that is contained in the current Software.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Title" type="ddexC:Title" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a Title of the Software.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="CreationDate" type="ddexC:EventDate" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the Date and Place of the Event in which the Software was created.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="SoftwareDetailsByTerritory" type="ernm:SoftwareDetailsByTerritory" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the Software which may vary according to Territory of release.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="IsUpdated" type="xs:boolean" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Flag indicating whether the Software Element was updated (=True) or not (=False). The Flag may only be used when the UpdateIndicator is set to UpdateMessage. When this Boolean Flag is set to true, the MessageRecipient is expected to replace any previously provided Software data with the now provided data.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Language and script for the Elements of the Software as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="SoftwareDetailsByTerritory">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of Descriptors, Dates and other attributes of a Software application which may vary according to Territory of release.</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="ddexC:SoftwareDetailsByTerritory">
+                <xs:sequence>
+                    <xs:element name="FulfillmentDate" type="ddexC:FulfillmentDate" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of a FulfillmentDate.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Keywords" type="ddexC:Keywords" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of a Description of the Software containing Keywords.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Synopsis" type="ddexC:Synopsis" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of a Synopsis of the Software.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Genre" type="ddexC:Genre" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of a Genre to which the Software belongs.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="ParentalWarningType" type="ddexC:ParentalWarningType" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of the classification of the Software according to advice which it carries about the level of explicitness or offensiveness of its content.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="TechnicalSoftwareDetails" type="ernm:TechnicalSoftwareDetails" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing technical details of the Software.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="SoundRecording">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a SoundRecording.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="SoundRecordingType" type="ddexC:SoundRecordingType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the Type of the SoundRecording.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsArtistRelated" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the SoundRecording is related to an Artist (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="SoundRecordingId" type="ddexC:SoundRecordingId" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a SoundRecordingId.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ResourceReference" type="ddex:LocalResourceAnchor">
+                <xs:annotation>
+                    <xs:documentation>The Identifier (specific to the Message) of the SoundRecording within the Release which contains it. This LocalAnchor is a string starting with the letter A.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ReferenceTitle" type="ddexC:ReferenceTitle">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the ReferenceTitle of the SoundRecording.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="InstrumentationDescription" type="ddexC:Description" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing a Description of the Type of instrumentation of the MusicalWork(s) in the SoundRecording.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsMedley" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the SoundRecording is a Medley (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsPotpourri" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the SoundRecording is a Potpourri (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsInstrumental" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the SoundRecording is instrumental (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsBackground" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the SoundRecording is used as background to other audio or audiovisual material (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsHiddenResource" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the SoundRecording is hidden in some way from the Consumer (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsBonusResource" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the SoundRecording is additional to those on the original Release of which this is a Version (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsComputerGenerated" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the SoundRecording is generated by a computer (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="NoSilenceBefore" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the SoundRecording is preceded by a period of silence (=False) or not (=True).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="NoSilenceAfter" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the SoundRecording is followed by a period of silence (=False) or not (=True).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="LanguageOfPerformance" type="iso639a2:LanguageCode" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Language of the Performance recorded in the SoundRecording (represented by an ISO 639-2 LanguageCode).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Duration" type="xs:duration">
+                <xs:annotation>
+                    <xs:documentation>The Duration of the SoundRecording (using the ISO 8601:2004 PT[[hhH]mmM]ssS format, where lower case characters indicate variables, upper case characters are part of the string, e.g. one hour, two minutes and three seconds would be PT1H2M3S).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="RightsAgreementId" type="ddexC:RightsAgreementId" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of Identifiers of a License, Claim, RightShare or contract for the MusicalWork(s) used in the SoundRecording.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="SoundRecordingCollectionReferenceList" type="ddexC:SoundRecordingCollectionReferenceList" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of one or more Collections. The referenced Collection has to be of CollectionType AudioChapter.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ResourceMusicalWorkReferenceList" type="ddexC:ResourceMusicalWorkReferenceList" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of one or more MusicalWorks contained in the SoundRecording.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ResourceContainedResourceReferenceList" type="ddexC:ResourceContainedResourceReferenceList" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of ResourceContainedResourceReferences referring to a Resource that is contained in the current SoundRecording.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="CreationDate" type="ddexC:EventDate" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the Date and Place of the Event in which the SoundRecording was created.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MasteredDate" type="ddexC:EventDate" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the Date and Place of the Event in which the SoundRecording was originally mastered (in either analogue or digital form).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="SoundRecordingDetailsByTerritory" type="ernm:SoundRecordingDetailsByTerritory" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of Descriptors and other attributes of the SoundRecording which may vary according to Territory.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="IsUpdated" type="xs:boolean" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Flag indicating whether the SoundRecording Element was updated (=True) or not (=False). The Flag may only be used when the UpdateIndicator is set to UpdateMessage. When this Boolean Flag is set to true, the MessageRecipient is expected to replace any previously provided SoundRecording data with the now provided data.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Language and script for the Elements of the SoundRecording as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="SoundRecordingDetailsByTerritory">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of Descriptors and other attributes of a SoundRecording which may vary according to Territory of release.</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="ddexC:SoundRecordingDetailsByTerritory">
+                <xs:sequence>
+                    <xs:element name="CourtesyLine" type="ddexC:CourtesyLine" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing an Annotation which acknowledges record companies and/or other Parties giving permission for guests Artists or others featured on the SoundRecording.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="SequenceNumber" type="xs:string" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>The number indicating the order of the SoundRecording in a group of SoundRecordings in a Release.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="HostSoundCarrier" type="ddexC:HostSoundCarrier" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of a HostSoundCarrier on which the SoundRecording appears (e.g., the CD on which it was originally released). This Composite exists in the ERN DdexMessageSuite, Main Profile, to support the identification and matching of SoundRecording information.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="MarketingComment" type="ddexC:Comment" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing a Comment about the promotion and marketing of the SoundRecording.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Genre" type="ddexC:Genre" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of a Genre to which the SoundRecording belongs.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="ParentalWarningType" type="ddexC:ParentalWarningType" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of the classification of the SoundRecording according to advice which it carries about the level of explicitness or offensiveness of its content.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="AvRating" type="ddexC:AvRating" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of a rating for the SoundRecording.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="TechnicalSoundRecordingDetails" type="ernm:TechnicalSoundRecordingDetails" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing technical details of the SoundRecording.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="FulfillmentDate" type="ddexC:FulfillmentDate" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of a FulfillmentDate.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Keywords" type="ddexC:Keywords" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of a Description of the SoundRecording containing Keywords.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Synopsis" type="ddexC:Synopsis" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of a Synopsis of the SoundRecording.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="SoundRecordingPreviewDetails">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a preview.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="PartType" type="ddexC:Description" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing a Description of the Type of Part that the preview relates to, e.g. chorus or intro.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="StartPoint" type="xs:decimal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The start point of the preview given in seconds from the start of the Resource.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="EndPoint" type="xs:decimal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The end point of the preview given in seconds from the start of the Resource.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Duration" type="xs:duration" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Duration of the preview, measured from the StartPoint.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="TopLeftCorner" type="xs:decimal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The position of the preview measured in Pixels or millimetres from the top left corner of the Resource.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="BottomRightCorner" type="xs:decimal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The position of the preview measured in Pixels or millimetres from the bottom right corner of the Resource.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ExpressionType" type="ddex:ExpressionType">
+                <xs:annotation>
+                    <xs:documentation>A Type of expression indicating how this should be perceived, e.g. as instruction (meaning that this has to be done to create the preview) or as information (meaning that this has been done to craete the preview).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="TechnicalImageDetails">
+        <xs:annotation>
+            <xs:documentation>A Composite containing technical details of a Image.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="TechnicalResourceDetailsReference" type="ddex:LocalTechnicalResourceDetailsAnchor">
+                <xs:annotation>
+                    <xs:documentation>The Identifier (specific to the Message) of the TechnicalImageDetails within the Release which contains it. This LocalAnchor is a string starting with the letter T.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="DrmPlatformType" type="ddexC:DrmPlatformType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a Type of DrmPlatform.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ImageCodecType" type="ddexC:ImageCodecType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a Type of ImageCodec.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ImageHeight" type="ddexC:Extent" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing the vertical Extent of an Image of the Image and a UnitOfMeasure (the default is pixels).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ImageWidth" type="ddexC:Extent" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing the horizontal Extent of an Image of the Image and a UnitOfMeasure (the default is pixels).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="AspectRatio" type="xs:decimal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The ratio formed by dividing the ImageHeight by the ImageWidth.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ColorDepth" type="xs:integer" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>An amount of data determining the color of a pixel of the Image (given in bits per pixel).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ImageResolution" type="xs:integer" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A number of pixels of the Image displayed in a specific spatial range (given in dpi).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsPreview" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the Image is technically a preview of the parent Resource (=True) or not (=False). Note that nothing can be implied from this element as to the conditions under which the preview can be made available.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="PreviewDetails" type="ernm:PreviewDetails" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a preview.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="FulfillmentDate" type="ddexC:FulfillmentDate" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a FulfillmentDate.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:choice minOccurs="0">
+                <xs:element name="FileAvailabilityDescription" type="ddexC:Description" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing a Description providing details of how a DSP can obtain a File that contains the Image.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="File" type="ddexC:File" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of a File containing the Image that a DSP can obtain.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:choice>
+        </xs:sequence>
+        <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Language and script for the Elements of the TechnicalImageDetails as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="TechnicalMidiDetails">
+        <xs:annotation>
+            <xs:documentation>A Composite containing technical details of a MIDI.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="TechnicalResourceDetailsReference" type="ddex:LocalTechnicalResourceDetailsAnchor">
+                <xs:annotation>
+                    <xs:documentation>The Identifier (specific to the Message) of the TechnicalMidiDetails within the Release which contains it. This LocalAnchor is a string starting with the letter T.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsPreview" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the MIDI is technically a preview of the parent Resource (=True) or not (=False). Note that nothing can be implied from this element as to the conditions under which the preview can be made available.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="PreviewDetails" type="ernm:PreviewDetails" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a preview.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="FulfillmentDate" type="ddexC:FulfillmentDate" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a FulfillmentDate.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:choice minOccurs="0">
+                <xs:element name="FileAvailabilityDescription" type="ddexC:Description" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing a Description providing details of how a DSP can obtain a File that contains the MIDI.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="File" type="ddexC:File" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of a File containing the MIDI that a DSP can obtain.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:choice>
+            <xs:element name="NumberOfVoices" type="xs:integer" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The number of voices.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="SoundProcessorType" type="ddexC:SoundProcessorType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Type of sound processor.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Language and script for the Elements of the TechnicalMidiDetails as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="TechnicalSheetMusicDetails">
+        <xs:annotation>
+            <xs:documentation>A Composite containing technical details of a SheetMusic.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="TechnicalResourceDetailsReference" type="ddex:LocalTechnicalResourceDetailsAnchor">
+                <xs:annotation>
+                    <xs:documentation>The Identifier (specific to the Message) of the TechnicalSheetMusicDetails within the Release which contains it. This LocalAnchor is a string starting with the letter T.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="DrmPlatformType" type="ddexC:DrmPlatformType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a Type of DrmPlatform.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="SheetMusicCodecType" type="ddexC:SheetMusicCodecType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a Type of SheetMusicCodec.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsPreview" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the SheetMusic is technically a preview of the parent Resource (=True) or not (=False). Note that nothing can be implied from this element as to the conditions under which the preview can be made available.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="PreviewDetails" type="ernm:PreviewDetails" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a preview.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="FulfillmentDate" type="ddexC:FulfillmentDate" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a FulfillmentDate.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:choice minOccurs="0">
+                <xs:element name="FileAvailabilityDescription" type="ddexC:Description" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing a Description providing details of how a DSP can obtain a File that contains the SheetMusic.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="File" type="ddexC:File" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of a File containing the SheetMusic that a DSP can obtain.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:choice>
+        </xs:sequence>
+        <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Language and script for the Elements of the TechnicalSheetMusicDetails as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="TechnicalSoftwareDetails">
+        <xs:annotation>
+            <xs:documentation>A Composite containing technical details of a Software.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="TechnicalResourceDetailsReference" type="ddex:LocalTechnicalResourceDetailsAnchor">
+                <xs:annotation>
+                    <xs:documentation>The Identifier (specific to the Message) of the TechnicalSoftwareDetails within the Release which contains it. This LocalAnchor is a string starting with the letter T.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="DrmPlatformType" type="ddexC:DrmPlatformType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a Type of DrmPlatform.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="OperatingSystemType" type="ddexC:OperatingSystemType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a Type of OperatingSystem.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsPreview" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the Software is technically a preview of the parent Resource (=True) or not (=False). Note that nothing can be implied from this element as to the conditions under which the preview can be made available.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="PreviewDetails" type="ernm:PreviewDetails" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a preview.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="FulfillmentDate" type="ddexC:FulfillmentDate" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a FulfillmentDate.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:choice minOccurs="0">
+                <xs:element name="FileAvailabilityDescription" type="ddexC:Description" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing a Description providing details of how a DSP can obtain a File that contains the Software.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="File" type="ddexC:File" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of a File containing the Software that a DSP can obtain.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:choice>
+        </xs:sequence>
+        <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Language and script for the Elements of the TechnicalSoftwareDetails as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="TechnicalSoundRecordingDetails">
+        <xs:annotation>
+            <xs:documentation>A Composite containing technical details of a SoundRecording.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="TechnicalResourceDetailsReference" type="ddex:LocalTechnicalResourceDetailsAnchor">
+                <xs:annotation>
+                    <xs:documentation>The Identifier (specific to the Message) of the TechnicalSoundRecordingDetails within the Release which contains it. This LocalAnchor is a string starting with the letter T.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="DrmPlatformType" type="ddexC:DrmPlatformType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a Type of DrmPlatform.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="AudioCodecType" type="ddexC:AudioCodecType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a Type of AudioCodec.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="BitRate" type="ddexC:BitRate" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing the BitRate for the audio data and a UnitOfMeasure (the default is kbps).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="NumberOfChannels" type="xs:integer" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A number of audio channels.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="SamplingRate" type="ddexC:SamplingRate" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing the sampling rate of the SoundRecording and a UnitOfMeasure (the default is Hz).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="BitsPerSample" type="xs:integer" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>An amount of audio data in a sample.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsPreview" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the SoundRecording is technically a preview of the parent Resource (=True) or not (=False). Note that nothing can be implied from this element as to the conditions under which the preview can be made available.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="PreviewDetails" type="ernm:SoundRecordingPreviewDetails" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a preview.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="FulfillmentDate" type="ddexC:FulfillmentDate" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a FulfillmentDate.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:choice minOccurs="0">
+                <xs:element name="FileAvailabilityDescription" type="ddexC:Description" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing a Description providing details of how a DSP can obtain a File that contains the SoundRecording.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="File" type="ddexC:File" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of a File containing the SoundRecording that a DSP can obtain.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:choice>
+        </xs:sequence>
+        <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Language and script for the Elements of the TechnicalSoundRecordingDetails as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="TechnicalTextDetails">
+        <xs:annotation>
+            <xs:documentation>A Composite containing technical details of a Text.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="TechnicalResourceDetailsReference" type="ddex:LocalTechnicalResourceDetailsAnchor">
+                <xs:annotation>
+                    <xs:documentation>The Identifier (specific to the Message) of the TechnicalTextDetails within the Release which contains it. This LocalAnchor is a string starting with the letter T.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="DrmPlatformType" type="ddexC:DrmPlatformType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a Type of DrmPlatform.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="TextCodecType" type="ddexC:TextCodecType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a Type of TextCodec.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsPreview" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the Text is technically a preview of the parent Resource (=True) or not (=False). Note that nothing can be implied from this element as to the conditions under which the preview can be made available.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="PreviewDetails" type="ernm:PreviewDetails" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a preview.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="FulfillmentDate" type="ddexC:FulfillmentDate" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a FulfillmentDate.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:choice minOccurs="0">
+                <xs:element name="FileAvailabilityDescription" type="ddexC:Description" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing a Description providing details of how a DSP can obtain a File that contains the Text.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="File" type="ddexC:File" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of a File containing the Text that a DSP can obtain.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:choice>
+        </xs:sequence>
+        <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Language and script for the Elements of the TechnicalTextDetails as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="TechnicalUserDefinedResourceDetails">
+        <xs:annotation>
+            <xs:documentation>A Composite containing technical details of a UserDefinedResource.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="TechnicalResourceDetailsReference" type="ddex:LocalTechnicalResourceDetailsAnchor">
+                <xs:annotation>
+                    <xs:documentation>The Identifier (specific to the Message) of the TechnicalUserDefinedResourceDetails within the Release which contains it. This LocalAnchor is a string starting with the letter T.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="UserDefinedValue" type="ddexC:UserDefinedValue" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a UserDefinedValue.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsPreview" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the UserDefinedResource is technically a preview of the parent Resource (=True) or not (=False). Note that nothing can be implied from this element as to the conditions under which the preview can be made available.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="PreviewDetails" type="ernm:PreviewDetails" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a preview.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="FulfillmentDate" type="ddexC:FulfillmentDate" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a FulfillmentDate.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:choice minOccurs="0">
+                <xs:element name="FileAvailabilityDescription" type="ddexC:Description" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing a Description providing details of how a DSP can obtain a File that contains the UserDefinedResource.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="File" type="ddexC:File" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of a File containing the UserDefinedResource that a DSP can obtain.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:choice>
+        </xs:sequence>
+        <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Language and script for the Elements of the TechnicalUserDefinedResourceDetails as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="TechnicalVideoDetails">
+        <xs:annotation>
+            <xs:documentation>A Composite containing technical details of a Video.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="TechnicalResourceDetailsReference" type="ddex:LocalTechnicalResourceDetailsAnchor">
+                <xs:annotation>
+                    <xs:documentation>The Identifier (specific to the Message) of the TechnicalVideoDetails within the Release which contains it. This LocalAnchor is a string starting with the letter T.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="DrmPlatformType" type="ddexC:DrmPlatformType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a Type of DrmPlatform.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="OverallBitRate" type="ddexC:BitRate" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing the overall BitRate and a UnitOfMeasure (the default is kbps).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="VideoCodecType" type="ddexC:VideoCodecType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a Type of VideoCodec.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="VideoBitRate" type="ddexC:BitRate" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing the BitRate for the video data and a UnitOfMeasure (the default is kbps).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="FrameRate" type="ddexC:FrameRate" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing the Rate for a number of frames shown in the Video in a specific Period of Time and a UnitOfMeasure (the default is Hz, interlaced).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ImageHeight" type="ddexC:Extent" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing the vertical Extent of an Image of the Video and a UnitOfMeasure (the default is pixels).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ImageWidth" type="ddexC:Extent" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing the horizontal Extent of an Image of the Video and a UnitOfMeasure (the default is pixels).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="AspectRatio" type="xs:decimal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The ratio formed by dividing the ImageHeight by the ImageWidth.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ColorDepth" type="xs:integer" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>An amount of data determining the color of a pixel of an Image of the Video (given in bits per pixel).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="VideoDefinitionType" type="ddex:VideoDefinitionType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Type of resolution (or definition) in which the Video is provided.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="AudioCodecType" type="ddexC:AudioCodecType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a Type of AudioCodec.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="AudioBitRate" type="ddexC:BitRate" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing the BitRate for the audio data and a UnitOfMeasure (the default is kbps).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="NumberOfAudioChannels" type="xs:integer" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A number of audio channels.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="AudioSamplingRate" type="ddexC:SamplingRate" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing the SamplingRate for the audio data and a UnitOfMeasure (the default is Hz).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="AudioBitsPerSample" type="xs:integer" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>An amount of audio data in a sample.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsPreview" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the Video is technically a preview of the parent Resource (=True) or not (=False). Note that nothing can be implied from this element as to the conditions under which the preview can be made available.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="PreviewDetails" type="ernm:SoundRecordingPreviewDetails" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a preview.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="FulfillmentDate" type="ddexC:FulfillmentDate" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a FulfillmentDate.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:choice minOccurs="0">
+                <xs:element name="FileAvailabilityDescription" type="ddexC:Description" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing a Description providing details of how a DSP can obtain a File that contains the Video.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="File" type="ddexC:File" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of a File containing the Video that a DSP can obtain.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:choice>
+        </xs:sequence>
+        <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Language and script for the Elements of the TechnicalSoundRecordingDetails as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="Text">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a Text.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="TextType" type="ddexC:TextType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the Type of the Text.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsArtistRelated" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the Text is related to an Artist (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="TextId" type="ddexC:TextId" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of an Identifier of the Text.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ResourceReference" type="ddex:LocalResourceAnchor">
+                <xs:annotation>
+                    <xs:documentation>The Identifier (specific to the Message) of the Text within the Release which contains it. This LocalAnchor is a string starting with the letter A.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ResourceMusicalWorkReferenceList" type="ddexC:ResourceMusicalWorkReferenceList" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of one or more MusicalWorks contained in the Text.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ResourceContainedResourceReferenceList" type="ddexC:ResourceContainedResourceReferenceList" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of ResourceContainedResourceReferences referring to a Resource that is contained in the current Text.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Title" type="ddexC:Title" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a Title of the Text.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="CreationDate" type="ddexC:EventDate" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the Date and Place of the Event in which the Text was created.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="TextDetailsByTerritory" type="ernm:TextDetailsByTerritory" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the Text which may vary according to Territory of release.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="IsUpdated" type="xs:boolean" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Flag indicating whether the Text Element was updated (=True) or not (=False). The Flag may only be used when the UpdateIndicator is set to UpdateMessage. When this Boolean Flag is set to true, the MessageRecipient is expected to replace any previously provided Text data with the now provided data.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Language and script for the Elements of the Text as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="TextDetailsByTerritory">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of Descriptors, Dates and other attributes of a Text which may vary according to Territory of release.</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="ddexC:TextDetailsByTerritory">
+                <xs:sequence>
+                    <xs:element name="FulfillmentDate" type="ddexC:FulfillmentDate" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of a FulfillmentDate.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Keywords" type="ddexC:Keywords" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of a Description of the Text containing Keywords.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Synopsis" type="ddexC:Synopsis" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of a Synopsis of the Text.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Genre" type="ddexC:Genre" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of a Genre to which the Text belongs.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="ParentalWarningType" type="ddexC:ParentalWarningType" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of the classification of the Text according to advice which it carries about the level of explicitness or offensiveness of its content.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="TechnicalTextDetails" type="ernm:TechnicalTextDetails" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing technical details of the Text.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="UserDefinedResource">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a UserDefinedResource.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="UserDefinedResourceType" type="ddexC:UserDefinedResourceType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the Type of the UserDefinedResource.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsArtistRelated" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the UserDefinedResource is related to an Artist (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="UserDefinedResourceId" type="ddexC:UserDefinedResourceId" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of Identifiers of the UserDefinedResource.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ResourceReference" type="ddex:LocalResourceAnchor">
+                <xs:annotation>
+                    <xs:documentation>The Identifier (specific to the Message) of the UserDefinedResource within the Release which contains it. This LocalAnchor is a string starting with the letter A.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ResourceMusicalWorkReferenceList" type="ddexC:ResourceMusicalWorkReferenceList" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of one or more MusicalWorks contained in the UserDefinedResource.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ResourceContainedResourceReferenceList" type="ddexC:ResourceContainedResourceReferenceList" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of ResourceContainedResourceReferences referring to a Resource that is contained in the current UserDefinedResource.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Title" type="ddexC:Title" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a Title of the UserDefinedResource.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="UserDefinedValue" type="ddexC:UserDefinedValue" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a UserDefinedValue.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="UserDefinedResourceDetailsByTerritory" type="ernm:UserDefinedResourceDetailsByTerritory" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the UserDefinedResource which may vary according to Territory of release.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="IsUpdated" type="xs:boolean" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Flag indicating whether the UserDefinedResource Element was updated (=True) or not (=False). The Flag may only be used when the UpdateIndicator is set to UpdateMessage. When this Boolean Flag is set to true, the MessageRecipient is expected to replace any previously provided UserDefinedResource data with the now provided data.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Language and script for the Elements of the UserDefinedResource as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="UserDefinedResourceDetailsByTerritory">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of Descriptors, Dates and other attributes of a UserDefinedResource application which may vary according to Territory of release.</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="ddexC:UserDefinedResourceDetailsByTerritory">
+                <xs:sequence>
+                    <xs:element name="FulfillmentDate" type="ddexC:FulfillmentDate" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of a FulfillmentDate.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Keywords" type="ddexC:Keywords" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of a Description of the UserDefinedResource containing Keywords.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Synopsis" type="ddexC:Synopsis" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of a Synopsis of the UserDefinedResource.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Genre" type="ddexC:Genre" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of a Genre to which the UserDefinedResource belongs.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="ParentalWarningType" type="ddexC:ParentalWarningType" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of the classification of the UserDefinedResource according to advice which it carries about the level of explicitness or offensiveness of its content.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="TechnicalUserDefinedResourceDetails" type="ernm:TechnicalUserDefinedResourceDetails" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing technical details of the UserDefinedResource.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="Video">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a Video.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="VideoType" type="ddexC:VideoType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the Type of the Video.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsArtistRelated" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the Video is related to an Artist (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="VideoId" type="ddexC:VideoId" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of an Identifier of the Video.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ResourceReference" type="ddex:LocalResourceAnchor">
+                <xs:annotation>
+                    <xs:documentation>The Identifier (specific to the Message) of the Video within the Release which contains it. This LocalAnchor is a string starting with the letter A.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:choice minOccurs="0">
+                <xs:element name="VideoCueSheetReference" type="ddexC:VideoCueSheetReference" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing a VideoCueSheetReference for a CueSheet (specific to this Message).</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ReasonForCueSheetAbsence" type="ddexC:Reason">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing the textual Description of the reason for the Identifier being used as a proxy.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:choice>
+            <xs:element name="ReferenceTitle" type="ddexC:ReferenceTitle" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the ReferenceTitle of the Video.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Title" type="ddexC:Title" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a Title of the Video.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="InstrumentationDescription" type="ddexC:Description" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing a Description of the Type of instrumentation of the MusicalWork(s) in the Video.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsMedley" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the Video is a Medley (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsPotpourri" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the Video is a Potpourri (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsInstrumental" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the Video is instrumental (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsBackground" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the Video is used as background to other audio or audiovisual material (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsHiddenResource" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the Video is hidden in some way from the Consumer (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsBonusResource" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the Video is additional to those on the original Release of which this is a Version (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="NoSilenceBefore" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the Video is preceded by a period of silence (=False) or not (=True).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="NoSilenceAfter" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the Video is followed by a period of silence (=False) or not (=True).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="LanguageOfPerformance" type="iso639a2:LanguageCode" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Language of the Performance recorded in the Video (represented by an ISO 639-2 LanguageCode).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Duration" type="xs:duration">
+                <xs:annotation>
+                    <xs:documentation>The Duration of the Video (using the ISO 8601:2004 PT[[hhH]mmM]ssS format, where lower case characters indicate variables, upper case characters are part of the string, e.g. one hour, two minutes and three seconds would be PT1H2M3S).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="RightsAgreementId" type="ddexC:RightsAgreementId" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of Identifiers of a License, Claim, RightShare or contract for the MusicalWork(s) used in the Video.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="VideoCollectionReferenceList" type="ddexC:SoundRecordingCollectionReferenceList" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of one or more Collections. The referenced Collection has to be of CollectionType VideoChapter.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ResourceMusicalWorkReferenceList" type="ddexC:ResourceMusicalWorkReferenceList" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of one or more MusicalWorks contained in the Video.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ResourceContainedResourceReferenceList" type="ddexC:ResourceContainedResourceReferenceList" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of ResourceContainedResourceReferences referring to a Resource that is contained in the current Video.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="CreationDate" type="ddexC:EventDate" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the Date and Place of the Event in which the Video was created.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MasteredDate" type="ddexC:EventDate" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the Date and Place of the Event in which the Video was originally mastered (in either analogue or digital form).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="VideoDetailsByTerritory" type="ernm:VideoDetailsByTerritory" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of Descriptors and other attributes of the Video which may vary according to Territory of release.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="IsUpdated" type="xs:boolean" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Flag indicating whether the Video Element was updated (=True) or not (=False). The Flag may only be used when the UpdateIndicator is set to UpdateMessage. When this Boolean Flag is set to true, the MessageRecipient is expected to replace any previously provided Video data with the now provided data.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Language and script for the Elements of the Video as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="VideoDetailsByTerritory">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of Descriptors and other attributes of a Video which may vary according to Territory of release.</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="ddexC:SoundRecordingDetailsByTerritory">
+                <xs:sequence>
+                    <xs:element name="CourtesyLine" type="ddexC:CourtesyLine" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing an Annotation Annotation which acknowledges record companies and/or other Parties giving permission for guests Artists or others featured on the Video.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="SequenceNumber" type="xs:string" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>The number indicating the order of the Video in a group of Videos in a Release.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="HostSoundCarrier" type="ddexC:HostSoundCarrier" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of a HostSoundCarrier on which the Video appears (e.g., the CD on which it was originally released). This Composite exists in the ERN DdexMessageSuite, Main Profile, to support the identification and matching of Video information.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="MarketingComment" type="ddexC:Comment" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing a Comment about the promotion and marketing of the Video.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Genre" type="ddexC:Genre" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of a Genre to which the Video belongs.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="ParentalWarningType" type="ddexC:ParentalWarningType" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of the classification of the Video according to advice which it carries about the level of explicitness or offensiveness of its content.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="AvRating" type="ddexC:AvRating" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of a rating for the Video.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="FulfillmentDate" type="ddexC:FulfillmentDate" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of a FulfillmentDate.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Keywords" type="ddexC:Keywords" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of a Description of the Video containing Keywords.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Synopsis" type="ddexC:Synopsis" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of a Synopsis of the Video.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="CLine" type="ddexC:CLine" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of the CLine for the Video.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="TechnicalVideoDetails" type="ernm:TechnicalVideoDetails" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing technical details of the Video.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Character" type="ddexC:Character" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of a Character in the Video. A Character may be described through Name, Identifier and Roles.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element name="MusicalWorkLicenseInformationMessage">
+        <xs:annotation>
+            <xs:documentation>A Message in the ERN MessageSuite, Main Profile, containing details of a MusicalWork utilised in a Release to aid licensing of such MusicalWorks.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MessageHeader" type="ddexC:MessageHeader">
+                    <xs:annotation>
+                        <xs:documentation>The MessageHeader for the MusicalWorkLicenseInformationMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="LicensedRelease" type="ernm:LicensedRelease" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of the Release containing the SoundRecordings.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="MessageSchemaVersionId" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation>The Identifier of the Version of the XML schema used for the Message. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>The Language and script for the Elements of the MusicalWorkLicenseInformationMessage as defined in IETF RfC 4646. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="NewDealMessage">
+        <xs:annotation>
+            <xs:documentation>A Message in the ERN MessageSuite, Main Profile, containing details of one or more new Deals applicable to one or more Releases.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MessageHeader" type="ddexC:MessageHeader">
+                    <xs:annotation>
+                        <xs:documentation>The MessageHeader for the NewDealMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ReleaseDeal" type="ernm:ReleaseDeal" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of one or more Deals pertaining to one or more Releases.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="MessageSchemaVersionId" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation>The Identifier of the Version of the XML schema used for the Message. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>The Language and script for the Elements of the NewDealMessage as defined in IETF RfC 4646. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="NewReleaseMessage">
+        <xs:annotation>
+            <xs:documentation>A Message in the ERN MessageSuite, Main Profile, containing details of a new Release.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MessageHeader" type="ddexC:MessageHeader">
+                    <xs:annotation>
+                        <xs:documentation>The MessageHeader for the NewReleaseMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="UpdateIndicator" type="ddex:UpdateIndicator">
+                    <xs:annotation>
+                        <xs:documentation>The indicator which distinguishes whether the Message contains original data or updates to previously sent data.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="WorkList" type="ddexC:WorkList" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of one or more MusicalWorks, a Performance of which is contained in the Resources of the NewReleaseMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="CueSheetList" type="ernm:CueSheetList" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of one or more CueSheets contained in Releases for which data is provided in the NewReleaseMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ResourceList" type="ernm:ResourceList">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of one or more Resources.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="CollectionList" type="ernm:CollectionList" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of one or more Collections contained in Releases for which data is provided in the NewReleaseMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ReleaseList" type="ernm:ReleaseList">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of one or more DDEX Releases contained in the NewReleaseMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="DealList" type="ernm:DealList" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of one or more Deals governing the Usage of the Releases in the Message.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="MessageSchemaVersionId" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation>The Identifier of the Version of the XML schema used for the Message. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>The Language and script for the Elements of the NewReleaseMessage as defined in IETF RfC 4646. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
