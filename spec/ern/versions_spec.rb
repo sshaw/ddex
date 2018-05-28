@@ -1,7 +1,7 @@
 require "spec_helper"
 require "active_support/core_ext/string"
 
-shared_examples_for "metadata serialization" do |path|
+shared_examples_for "ERN metadata serialization" do |path|
   it "serializes the metadata" do
     xml  = File.read(path)
     spec = DDEX::ERN.read(xml)
@@ -31,7 +31,7 @@ describe DDEX::ERN do
     describe "ERN #{version} metadata serialization" do
       each_fixture("ern/#{ version.tr(".", "") }").each do |path|
         context "given #{File.basename(path)}" do
-          include_examples "metadata serialization", path
+          include_examples "ERN metadata serialization", path
         end
       end
     end
