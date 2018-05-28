@@ -1,7 +1,7 @@
 require "spec_helper"
 require "active_support/core_ext/string"
 
-shared_examples_for "metadata serialization" do |path|
+shared_examples_for "ECHO metadata serialization" do |path|
   it "serializes the metadata" do
     xml  = File.read(path)
     spec = DDEX::ECHO.read(xml)
@@ -15,7 +15,7 @@ describe DDEX::ECHO do
     describe "ECHO #{version} metadata serialization" do
       each_fixture("echo/#{ version.tr(".", "") }").each do |path|
         context "given #{File.basename(path)}" do
-          include_examples "metadata serialization", path
+          include_examples "ECHO metadata serialization", path
         end
       end
     end
