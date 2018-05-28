@@ -2,8 +2,11 @@ http://ddex.net/xml/dsr/40: DDEX::DSR::V40
 http://ddex.net/xml/dsr/41: DDEX::DSR::V41
 http://ddex.net/xml/dsr/42: DDEX::DSR::V42
 http://ddex.net/xml/dsr/43: DDEX::DSR::V43
+http://ddex.net/xml/ern/382: DDEX::ERN::V382
 http://ddex.net/xml/ern/381: DDEX::ERN::V381
 http://ddex.net/xml/ern/38: DDEX::ERN::V38
+http://ddex.net/xml/ern/371: DDEX::ERN::V371
+http://ddex.net/xml/ern/37D2: DDEX::ERN::V37D2
 http://ddex.net/xml/ern/37: DDEX::ERN::V37
 http://ddex.net/xml/ern/36: DDEX::ERN::V36
 http://ddex.net/xml/ern/351: DDEX::ERN::V351
@@ -16,3 +19,9 @@ http://ddex.net/xml/20120719/ddexC: DDEX::V20120719::DDEXC
 http://ddex.net/xml/20120404/ddexC: DDEX::V20120404::DDEXC
 http://ddex.net/xml/20120214/ddexC: DDEX::V20120214::DDEXC
 http://ddex.net/xml/20110630/ddexC: DDEX::V20110630::DDEXC
+http://ddex.net/xml/2010/ern-main/32: DDEX::ERN::V32
+http://ddex.net/xml/20100712/ddexC: DDEX::V20100712::DDEXC
+http://ddex.net/xml/2011/echo/11: DDEX::ECHO::V11
+http://ddex.net/xml/20110120/ddexC: DDEX::V20110120::DDEXC
+http://ddex.net/xml/2011/amep/11: DDEX::V2011::AMEP::V11
+http://www.w3.org/2000/09/xmldsig: W3::V2000::V09::XMLDsig

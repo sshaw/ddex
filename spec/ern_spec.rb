@@ -4,19 +4,19 @@ require "ddex/ern/v36/new_release_message"
 describe DDEX::ERN do
   describe ".supports?" do
     it "returns true when the ERN version is supported" do
-      expect(DDEX::ERN.supports?("3.6")).to be_true
+      expect(DDEX::ERN.supports?("3.6")).to eql true
     end
 
     it "returns false when the ERN version is not supported" do
-      expect(DDEX::ERN.supports?("9.99999")).to be_false
+      expect(DDEX::ERN.supports?("9.99999")).to eql false
     end
 
     it "accepts supported MessageSchemaVersionId values" do
-      expect(DDEX::ERN.supports?("ern/36")).to be_true
+      expect(DDEX::ERN.supports?("ern/36")).to eql true
     end
 
     it "ignores case" do
-      expect(DDEX::ERN.supports?("eRn/36")).to be_true
+      expect(DDEX::ERN.supports?("eRn/36")).to eql true
     end
   end
 
