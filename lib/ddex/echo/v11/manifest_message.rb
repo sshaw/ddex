@@ -37,6 +37,12 @@ class ManifestMessage < Element
       xml_accessor :message_version_id, :from => "@MessageVersionId", :required => true
     
   
+  alias :_message_version_id :message_version_id
+  private :_message_version_id
+
+  def message_version_id
+    _message_version_id || DDEX::ECHO.config["V11"][:message_version_id]
+  end
 
 end
 
