@@ -44,7 +44,7 @@ Bundler:
 
 === Supported Versions
 
-Currently just ERN 3.3 - 3.7, DSR soon!
+See: https://github.com/sshaw/ddex/tree/master/lib/ddex
 
 === How This Differs From the Spec
 
