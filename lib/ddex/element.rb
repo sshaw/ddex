@@ -75,7 +75,7 @@ module DDEX
           value.respond_to?(:to_hash) ? value.to_hash : value
         end
 
-        hash[attr.attr_name.to_sym] = value unless value.nil?
+        hash[attr.attr_name.to_sym] = value if value.present?
       end
 
       hash

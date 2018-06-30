@@ -1,0 +1,3103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ern:NewReleaseMessage MessageSchemaVersionId="ern/371" ReleaseProfileVersionId="CommonReleaseTypes/13/AudioAlbumMusicandSpeech" xmlns:ern="http://ddex.net/xml/ern/371" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ddex.net/xml/ern/371 http://ddex.net/xml/ern/371/release-notification.xsd" xmlns:avs="http://ddex.net/xml/avs/avs">
+  <MessageHeader>
+    <MessageThreadId>FUGA_1387053701</MessageThreadId>
+    <MessageId>FUGA_1387053701</MessageId>
+    <MessageFileName>669447000013.xml</MessageFileName>
+    <MessageSender>
+      <PartyId>PADPIDA20110330020</PartyId>
+      <PartyName>
+        <FullName>FUGA</FullName>
+      </PartyName>
+    </MessageSender>
+    <SentOnBehalfOf>
+      <PartyId>PADPIDA2016090105F</PartyId>
+      <PartyName>
+        <FullName>SMLXL, INC</FullName>
+      </PartyName>
+    </SentOnBehalfOf>
+    <MessageRecipient>
+      <PartyId Namespace="PADPIDA20110330020">1386943585</PartyId>
+      <PartyName>
+        <FullName>SMLXL Backup DSP</FullName>
+      </PartyName>
+    </MessageRecipient>
+    <MessageCreatedDateTime>2018-02-05T19:50:41+01:00</MessageCreatedDateTime>
+    <MessageControlType>LiveMessage</MessageControlType>
+  </MessageHeader>
+  <UpdateIndicator>OriginalMessage</UpdateIndicator>
+  <ResourceList>
+    <SoundRecording>
+      <SoundRecordingType>MusicalWorkSoundRecording</SoundRecordingType>
+      <SoundRecordingId>
+        <ISRC>USGOT0203015</ISRC>
+        <ProprietaryId Namespace="PADPIDA20110330020">1254834815</ProprietaryId>
+      </SoundRecordingId>
+      <ResourceReference>A1</ResourceReference>
+      <ReferenceTitle>
+        <TitleText>Here We Go</TitleText>
+      </ReferenceTitle>
+      <Duration>PT3M19S</Duration>
+      <SoundRecordingDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <Title TitleType="DisplayTitle">
+          <TitleText>Here We Go</TitleText>
+        </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName>
+            <FullName>Grits</FullName>
+          </PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
+        <LabelName>Gotee Records</LabelName>
+        <OriginalResourceReleaseDate>2002-08-06</OriginalResourceReleaseDate>
+        <PLine>
+          <Year>2012</Year>
+          <PLineText>Gotee Records</PLineText>
+        </PLine>
+        <Genre>
+          <GenreText>Hip Hop/Rap</GenreText>
+        </Genre>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+        <TechnicalSoundRecordingDetails>
+          <TechnicalResourceDetailsReference>T1_0</TechnicalResourceDetailsReference>
+          <AudioCodecType Namespace="PADPIDA20110330020" UserDefinedValue="WAV">UserDefined</AudioCodecType>
+          <NumberOfChannels>2</NumberOfChannels>
+          <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+          <BitsPerSample>16</BitsPerSample>
+          <IsPreview>false</IsPreview>
+          <PreviewDetails>
+            <StartPoint>0</StartPoint>
+            <Duration>PT30S</Duration>
+            <ExpressionType>Instructive</ExpressionType>
+          </PreviewDetails>
+          <File>
+            <FileName>669447000013_T1_0_SoundRecording_001_001.wav</FileName>
+            <FilePath>resources/</FilePath>
+            <HashSum>
+              <HashSum>344e8bd4df5bb7d019117f6d694ea571</HashSum>
+              <HashSumAlgorithmType>MD5</HashSumAlgorithmType>
+            </HashSum>
+          </File>
+        </TechnicalSoundRecordingDetails>
+      </SoundRecordingDetailsByTerritory>
+      <TerritoryOfCommissioning>Worldwide</TerritoryOfCommissioning>
+    </SoundRecording>
+    <SoundRecording>
+      <SoundRecordingType>MusicalWorkSoundRecording</SoundRecordingType>
+      <SoundRecordingId>
+        <ISRC>USGOT0203017</ISRC>
+        <ProprietaryId Namespace="PADPIDA20110330020">1254750345</ProprietaryId>
+      </SoundRecordingId>
+      <ResourceReference>A2</ResourceReference>
+      <ReferenceTitle>
+        <TitleText>Ooh Ahh (My Life Be Like) (feat. Toby Mac)</TitleText>
+      </ReferenceTitle>
+      <Duration>PT3M53S</Duration>
+      <SoundRecordingDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <Title TitleType="DisplayTitle">
+          <TitleText>Ooh Ahh (My Life Be Like) (feat. Toby Mac)</TitleText>
+        </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName>
+            <FullName>Grits</FullName>
+          </PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
+        <DisplayArtist SequenceNumber="2">
+          <PartyName>
+            <FullName>tobyMac</FullName>
+          </PartyName>
+          <ArtistRole>FeaturedArtist</ArtistRole>
+        </DisplayArtist>
+        <LabelName>Gotee Records</LabelName>
+        <OriginalResourceReleaseDate>2002-08-06</OriginalResourceReleaseDate>
+        <PLine>
+          <Year>2017</Year>
+          <PLineText>Gotee Records</PLineText>
+        </PLine>
+        <Genre>
+          <GenreText>Hip Hop/Rap</GenreText>
+        </Genre>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+        <TechnicalSoundRecordingDetails>
+          <TechnicalResourceDetailsReference>T2_0</TechnicalResourceDetailsReference>
+          <AudioCodecType Namespace="PADPIDA20110330020" UserDefinedValue="WAV">UserDefined</AudioCodecType>
+          <NumberOfChannels>2</NumberOfChannels>
+          <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+          <BitsPerSample>16</BitsPerSample>
+          <IsPreview>false</IsPreview>
+          <PreviewDetails>
+            <StartPoint>0</StartPoint>
+            <Duration>PT30S</Duration>
+            <ExpressionType>Instructive</ExpressionType>
+          </PreviewDetails>
+          <File>
+            <FileName>669447000013_T2_0_SoundRecording_001_002.wav</FileName>
+            <FilePath>resources/</FilePath>
+            <HashSum>
+              <HashSum>d53d6f195b3e0590b9397aac588d939e</HashSum>
+              <HashSumAlgorithmType>MD5</HashSumAlgorithmType>
+            </HashSum>
+          </File>
+        </TechnicalSoundRecordingDetails>
+      </SoundRecordingDetailsByTerritory>
+      <TerritoryOfCommissioning>Worldwide</TerritoryOfCommissioning>
+    </SoundRecording>
+    <SoundRecording>
+      <SoundRecordingType>MusicalWorkSoundRecording</SoundRecordingType>
+      <SoundRecordingId>
+        <ISRC>USGOT0203018</ISRC>
+        <ProprietaryId Namespace="PADPIDA20110330020">1254750349</ProprietaryId>
+      </SoundRecordingId>
+      <ResourceReference>A3</ResourceReference>
+      <ReferenceTitle>
+        <TitleText>Runnin'</TitleText>
+      </ReferenceTitle>
+      <Duration>PT4M5S</Duration>
+      <SoundRecordingDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <Title TitleType="DisplayTitle">
+          <TitleText>Runnin'</TitleText>
+        </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName>
+            <FullName>Grits</FullName>
+          </PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
+        <LabelName>Gotee Records</LabelName>
+        <OriginalResourceReleaseDate>2002-08-06</OriginalResourceReleaseDate>
+        <PLine>
+          <Year>2012</Year>
+          <PLineText>Gotee Records</PLineText>
+        </PLine>
+        <Genre>
+          <GenreText>Hip Hop/Rap</GenreText>
+        </Genre>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+        <TechnicalSoundRecordingDetails>
+          <TechnicalResourceDetailsReference>T3_0</TechnicalResourceDetailsReference>
+          <AudioCodecType Namespace="PADPIDA20110330020" UserDefinedValue="WAV">UserDefined</AudioCodecType>
+          <NumberOfChannels>2</NumberOfChannels>
+          <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+          <BitsPerSample>16</BitsPerSample>
+          <IsPreview>false</IsPreview>
+          <PreviewDetails>
+            <StartPoint>0</StartPoint>
+            <Duration>PT30S</Duration>
+            <ExpressionType>Instructive</ExpressionType>
+          </PreviewDetails>
+          <File>
+            <FileName>669447000013_T3_0_SoundRecording_001_003.wav</FileName>
+            <FilePath>resources/</FilePath>
+            <HashSum>
+              <HashSum>89d70d14aa7a614c38d8af1c7fed1344</HashSum>
+              <HashSumAlgorithmType>MD5</HashSumAlgorithmType>
+            </HashSum>
+          </File>
+        </TechnicalSoundRecordingDetails>
+      </SoundRecordingDetailsByTerritory>
+      <TerritoryOfCommissioning>Worldwide</TerritoryOfCommissioning>
+    </SoundRecording>
+    <SoundRecording>
+      <SoundRecordingType>MusicalWorkSoundRecording</SoundRecordingType>
+      <SoundRecordingId>
+        <ISRC>USGOT0203020</ISRC>
+        <ProprietaryId Namespace="PADPIDA20110330020">1254834828</ProprietaryId>
+      </SoundRecordingId>
+      <ResourceReference>A4</ResourceReference>
+      <ReferenceTitle>
+        <TitleText>Tennessee Bwoys</TitleText>
+      </ReferenceTitle>
+      <Duration>PT4M5S</Duration>
+      <SoundRecordingDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <Title TitleType="DisplayTitle">
+          <TitleText>Tennessee Bwoys</TitleText>
+        </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName>
+            <FullName>Grits</FullName>
+          </PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
+        <LabelName>Gotee Records</LabelName>
+        <OriginalResourceReleaseDate>2002-08-06</OriginalResourceReleaseDate>
+        <PLine>
+          <Year>2012</Year>
+          <PLineText>Gotee Records</PLineText>
+        </PLine>
+        <Genre>
+          <GenreText>Hip Hop/Rap</GenreText>
+        </Genre>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+        <TechnicalSoundRecordingDetails>
+          <TechnicalResourceDetailsReference>T4_0</TechnicalResourceDetailsReference>
+          <AudioCodecType Namespace="PADPIDA20110330020" UserDefinedValue="WAV">UserDefined</AudioCodecType>
+          <NumberOfChannels>2</NumberOfChannels>
+          <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+          <BitsPerSample>16</BitsPerSample>
+          <IsPreview>false</IsPreview>
+          <PreviewDetails>
+            <StartPoint>0</StartPoint>
+            <Duration>PT30S</Duration>
+            <ExpressionType>Instructive</ExpressionType>
+          </PreviewDetails>
+          <File>
+            <FileName>669447000013_T4_0_SoundRecording_001_004.wav</FileName>
+            <FilePath>resources/</FilePath>
+            <HashSum>
+              <HashSum>7e3f58be64a9ab34f57ea93023fe89da</HashSum>
+              <HashSumAlgorithmType>MD5</HashSumAlgorithmType>
+            </HashSum>
+          </File>
+        </TechnicalSoundRecordingDetails>
+      </SoundRecordingDetailsByTerritory>
+      <TerritoryOfCommissioning>Worldwide</TerritoryOfCommissioning>
+    </SoundRecording>
+    <SoundRecording>
+      <SoundRecordingType>MusicalWorkSoundRecording</SoundRecordingType>
+      <SoundRecordingId>
+        <ISRC>USGOT0203021</ISRC>
+        <ProprietaryId Namespace="PADPIDA20110330020">1254750355</ProprietaryId>
+      </SoundRecordingId>
+      <ResourceReference>A5</ResourceReference>
+      <ReferenceTitle>
+        <TitleText>Be Mine</TitleText>
+      </ReferenceTitle>
+      <Duration>PT4M22S</Duration>
+      <SoundRecordingDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <Title TitleType="DisplayTitle">
+          <TitleText>Be Mine</TitleText>
+        </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName>
+            <FullName>Grits</FullName>
+          </PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
+        <LabelName>Gotee Records</LabelName>
+        <OriginalResourceReleaseDate>2002-08-06</OriginalResourceReleaseDate>
+        <PLine>
+          <Year>2012</Year>
+          <PLineText>Gotee Records</PLineText>
+        </PLine>
+        <Genre>
+          <GenreText>Hip Hop/Rap</GenreText>
+        </Genre>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+        <TechnicalSoundRecordingDetails>
+          <TechnicalResourceDetailsReference>T5_0</TechnicalResourceDetailsReference>
+          <AudioCodecType Namespace="PADPIDA20110330020" UserDefinedValue="WAV">UserDefined</AudioCodecType>
+          <NumberOfChannels>2</NumberOfChannels>
+          <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+          <BitsPerSample>16</BitsPerSample>
+          <IsPreview>false</IsPreview>
+          <PreviewDetails>
+            <StartPoint>0</StartPoint>
+            <Duration>PT30S</Duration>
+            <ExpressionType>Instructive</ExpressionType>
+          </PreviewDetails>
+          <File>
+            <FileName>669447000013_T5_0_SoundRecording_001_005.wav</FileName>
+            <FilePath>resources/</FilePath>
+            <HashSum>
+              <HashSum>757a6ef7b3f479c50560af79131be1e7</HashSum>
+              <HashSumAlgorithmType>MD5</HashSumAlgorithmType>
+            </HashSum>
+          </File>
+        </TechnicalSoundRecordingDetails>
+      </SoundRecordingDetailsByTerritory>
+      <TerritoryOfCommissioning>Worldwide</TerritoryOfCommissioning>
+    </SoundRecording>
+    <SoundRecording>
+      <SoundRecordingType>MusicalWorkSoundRecording</SoundRecordingType>
+      <SoundRecordingId>
+        <ISRC>USGOT0203019</ISRC>
+        <ProprietaryId Namespace="PADPIDA20110330020">1254750358</ProprietaryId>
+      </SoundRecordingId>
+      <ResourceReference>A6</ResourceReference>
+      <ReferenceTitle>
+        <TitleText>Ill Coined Phrase (Interlude)</TitleText>
+      </ReferenceTitle>
+      <Duration>PT1M8S</Duration>
+      <SoundRecordingDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <Title TitleType="DisplayTitle">
+          <TitleText>Ill Coined Phrase (Interlude)</TitleText>
+        </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName>
+            <FullName>Grits</FullName>
+          </PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
+        <LabelName>Gotee Records</LabelName>
+        <OriginalResourceReleaseDate>2002-08-06</OriginalResourceReleaseDate>
+        <PLine>
+          <Year>2017</Year>
+          <PLineText>Gotee Records</PLineText>
+        </PLine>
+        <Genre>
+          <GenreText>Hip Hop/Rap</GenreText>
+        </Genre>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+        <TechnicalSoundRecordingDetails>
+          <TechnicalResourceDetailsReference>T6_0</TechnicalResourceDetailsReference>
+          <AudioCodecType Namespace="PADPIDA20110330020" UserDefinedValue="WAV">UserDefined</AudioCodecType>
+          <NumberOfChannels>2</NumberOfChannels>
+          <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+          <BitsPerSample>16</BitsPerSample>
+          <IsPreview>false</IsPreview>
+          <PreviewDetails>
+            <StartPoint>0</StartPoint>
+            <Duration>PT30S</Duration>
+            <ExpressionType>Instructive</ExpressionType>
+          </PreviewDetails>
+          <File>
+            <FileName>669447000013_T6_0_SoundRecording_001_006.wav</FileName>
+            <FilePath>resources/</FilePath>
+            <HashSum>
+              <HashSum>fdc77a12efe72f5c374480e5392cdad7</HashSum>
+              <HashSumAlgorithmType>MD5</HashSumAlgorithmType>
+            </HashSum>
+          </File>
+        </TechnicalSoundRecordingDetails>
+      </SoundRecordingDetailsByTerritory>
+      <TerritoryOfCommissioning>Worldwide</TerritoryOfCommissioning>
+    </SoundRecording>
+    <SoundRecording>
+      <SoundRecordingType>MusicalWorkSoundRecording</SoundRecordingType>
+      <SoundRecordingId>
+        <ISRC>USGOT0203016</ISRC>
+        <ProprietaryId Namespace="PADPIDA20110330020">1254750361</ProprietaryId>
+      </SoundRecordingId>
+      <ResourceReference>A7</ResourceReference>
+      <ReferenceTitle>
+        <TitleText>Seriously</TitleText>
+      </ReferenceTitle>
+      <Duration>PT3M41S</Duration>
+      <SoundRecordingDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <Title TitleType="DisplayTitle">
+          <TitleText>Seriously</TitleText>
+        </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName>
+            <FullName>Grits</FullName>
+          </PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
+        <LabelName>Gotee Records</LabelName>
+        <OriginalResourceReleaseDate>2002-08-06</OriginalResourceReleaseDate>
+        <PLine>
+          <Year>2012</Year>
+          <PLineText>Gotee Records</PLineText>
+        </PLine>
+        <Genre>
+          <GenreText>Hip Hop/Rap</GenreText>
+        </Genre>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+        <TechnicalSoundRecordingDetails>
+          <TechnicalResourceDetailsReference>T7_0</TechnicalResourceDetailsReference>
+          <AudioCodecType Namespace="PADPIDA20110330020" UserDefinedValue="WAV">UserDefined</AudioCodecType>
+          <NumberOfChannels>2</NumberOfChannels>
+          <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+          <BitsPerSample>16</BitsPerSample>
+          <IsPreview>false</IsPreview>
+          <PreviewDetails>
+            <StartPoint>0</StartPoint>
+            <Duration>PT30S</Duration>
+            <ExpressionType>Instructive</ExpressionType>
+          </PreviewDetails>
+          <File>
+            <FileName>669447000013_T7_0_SoundRecording_001_007.wav</FileName>
+            <FilePath>resources/</FilePath>
+            <HashSum>
+              <HashSum>c025cd378791003cf4f6fb240fbb0e98</HashSum>
+              <HashSumAlgorithmType>MD5</HashSumAlgorithmType>
+            </HashSum>
+          </File>
+        </TechnicalSoundRecordingDetails>
+      </SoundRecordingDetailsByTerritory>
+      <TerritoryOfCommissioning>Worldwide</TerritoryOfCommissioning>
+    </SoundRecording>
+    <SoundRecording>
+      <SoundRecordingType>MusicalWorkSoundRecording</SoundRecordingType>
+      <SoundRecordingId>
+        <ISRC>USGOT0203022</ISRC>
+        <ProprietaryId Namespace="PADPIDA20110330020">1254750364</ProprietaryId>
+      </SoundRecordingId>
+      <ResourceReference>A8</ResourceReference>
+      <ReferenceTitle>
+        <TitleText>At The Video Shoot (Interlude)</TitleText>
+      </ReferenceTitle>
+      <Duration>PT1M28S</Duration>
+      <SoundRecordingDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <Title TitleType="DisplayTitle">
+          <TitleText>At The Video Shoot (Interlude)</TitleText>
+        </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName>
+            <FullName>Grits</FullName>
+          </PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
+        <LabelName>Gotee Records</LabelName>
+        <OriginalResourceReleaseDate>2002-08-06</OriginalResourceReleaseDate>
+        <PLine>
+          <Year>2017</Year>
+          <PLineText>Gotee Records</PLineText>
+        </PLine>
+        <Genre>
+          <GenreText>Hip Hop/Rap</GenreText>
+        </Genre>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+        <TechnicalSoundRecordingDetails>
+          <TechnicalResourceDetailsReference>T8_0</TechnicalResourceDetailsReference>
+          <AudioCodecType Namespace="PADPIDA20110330020" UserDefinedValue="WAV">UserDefined</AudioCodecType>
+          <NumberOfChannels>2</NumberOfChannels>
+          <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+          <BitsPerSample>16</BitsPerSample>
+          <IsPreview>false</IsPreview>
+          <PreviewDetails>
+            <StartPoint>0</StartPoint>
+            <Duration>PT30S</Duration>
+            <ExpressionType>Instructive</ExpressionType>
+          </PreviewDetails>
+          <File>
+            <FileName>669447000013_T8_0_SoundRecording_001_008.wav</FileName>
+            <FilePath>resources/</FilePath>
+            <HashSum>
+              <HashSum>6a2782ff6500ddd2fa05bbe9da57ee27</HashSum>
+              <HashSumAlgorithmType>MD5</HashSumAlgorithmType>
+            </HashSum>
+          </File>
+        </TechnicalSoundRecordingDetails>
+      </SoundRecordingDetailsByTerritory>
+      <TerritoryOfCommissioning>Worldwide</TerritoryOfCommissioning>
+    </SoundRecording>
+    <SoundRecording>
+      <SoundRecordingType>MusicalWorkSoundRecording</SoundRecordingType>
+      <SoundRecordingId>
+        <ISRC>USGOT0203023</ISRC>
+        <ProprietaryId Namespace="PADPIDA20110330020">1254750367</ProprietaryId>
+      </SoundRecordingId>
+      <ResourceReference>A9</ResourceReference>
+      <ReferenceTitle>
+        <TitleText>Video Girl</TitleText>
+      </ReferenceTitle>
+      <Duration>PT3M50S</Duration>
+      <SoundRecordingDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <Title TitleType="DisplayTitle">
+          <TitleText>Video Girl</TitleText>
+        </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName>
+            <FullName>Grits</FullName>
+          </PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
+        <LabelName>Gotee Records</LabelName>
+        <OriginalResourceReleaseDate>2002-08-06</OriginalResourceReleaseDate>
+        <PLine>
+          <Year>2012</Year>
+          <PLineText>Gotee Records</PLineText>
+        </PLine>
+        <Genre>
+          <GenreText>Hip Hop/Rap</GenreText>
+        </Genre>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+        <TechnicalSoundRecordingDetails>
+          <TechnicalResourceDetailsReference>T9_0</TechnicalResourceDetailsReference>
+          <AudioCodecType Namespace="PADPIDA20110330020" UserDefinedValue="WAV">UserDefined</AudioCodecType>
+          <NumberOfChannels>2</NumberOfChannels>
+          <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+          <BitsPerSample>16</BitsPerSample>
+          <IsPreview>false</IsPreview>
+          <PreviewDetails>
+            <StartPoint>0</StartPoint>
+            <Duration>PT30S</Duration>
+            <ExpressionType>Instructive</ExpressionType>
+          </PreviewDetails>
+          <File>
+            <FileName>669447000013_T9_0_SoundRecording_001_009.wav</FileName>
+            <FilePath>resources/</FilePath>
+            <HashSum>
+              <HashSum>fe263163141479e824dd2ad2f1271bf1</HashSum>
+              <HashSumAlgorithmType>MD5</HashSumAlgorithmType>
+            </HashSum>
+          </File>
+        </TechnicalSoundRecordingDetails>
+      </SoundRecordingDetailsByTerritory>
+      <TerritoryOfCommissioning>Worldwide</TerritoryOfCommissioning>
+    </SoundRecording>
+    <SoundRecording>
+      <SoundRecordingType>MusicalWorkSoundRecording</SoundRecordingType>
+      <SoundRecordingId>
+        <ISRC>USGOT0203025</ISRC>
+        <ProprietaryId Namespace="PADPIDA20110330020">1254750370</ProprietaryId>
+      </SoundRecordingId>
+      <ResourceReference>A10</ResourceReference>
+      <ReferenceTitle>
+        <TitleText>Believe</TitleText>
+      </ReferenceTitle>
+      <Duration>PT3M20S</Duration>
+      <SoundRecordingDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <Title TitleType="DisplayTitle">
+          <TitleText>Believe</TitleText>
+        </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName>
+            <FullName>Grits</FullName>
+          </PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
+        <LabelName>Gotee Records</LabelName>
+        <OriginalResourceReleaseDate>2002-08-06</OriginalResourceReleaseDate>
+        <PLine>
+          <Year>2012</Year>
+          <PLineText>Gotee Records</PLineText>
+        </PLine>
+        <Genre>
+          <GenreText>Hip Hop/Rap</GenreText>
+        </Genre>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+        <TechnicalSoundRecordingDetails>
+          <TechnicalResourceDetailsReference>T10_0</TechnicalResourceDetailsReference>
+          <AudioCodecType Namespace="PADPIDA20110330020" UserDefinedValue="WAV">UserDefined</AudioCodecType>
+          <NumberOfChannels>2</NumberOfChannels>
+          <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+          <BitsPerSample>16</BitsPerSample>
+          <IsPreview>false</IsPreview>
+          <PreviewDetails>
+            <StartPoint>0</StartPoint>
+            <Duration>PT30S</Duration>
+            <ExpressionType>Instructive</ExpressionType>
+          </PreviewDetails>
+          <File>
+            <FileName>669447000013_T10_0_SoundRecording_001_010.wav</FileName>
+            <FilePath>resources/</FilePath>
+            <HashSum>
+              <HashSum>3673248608164e95fd9682bd8b7bcd6b</HashSum>
+              <HashSumAlgorithmType>MD5</HashSumAlgorithmType>
+            </HashSum>
+          </File>
+        </TechnicalSoundRecordingDetails>
+      </SoundRecordingDetailsByTerritory>
+      <TerritoryOfCommissioning>Worldwide</TerritoryOfCommissioning>
+    </SoundRecording>
+    <SoundRecording>
+      <SoundRecordingType>MusicalWorkSoundRecording</SoundRecordingType>
+      <SoundRecordingId>
+        <ISRC>USGOT0203024</ISRC>
+        <ProprietaryId Namespace="PADPIDA20110330020">1254750373</ProprietaryId>
+      </SoundRecordingId>
+      <ResourceReference>A11</ResourceReference>
+      <ReferenceTitle>
+        <TitleText>What Do You Believe? (Interlude)</TitleText>
+      </ReferenceTitle>
+      <Duration>PT1M34S</Duration>
+      <SoundRecordingDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <Title TitleType="DisplayTitle">
+          <TitleText>What Do You Believe? (Interlude)</TitleText>
+        </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName>
+            <FullName>Grits</FullName>
+          </PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
+        <LabelName>Gotee Records</LabelName>
+        <OriginalResourceReleaseDate>2002-08-06</OriginalResourceReleaseDate>
+        <PLine>
+          <Year>2017</Year>
+          <PLineText>Gotee Records</PLineText>
+        </PLine>
+        <Genre>
+          <GenreText>Hip Hop/Rap</GenreText>
+        </Genre>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+        <TechnicalSoundRecordingDetails>
+          <TechnicalResourceDetailsReference>T11_0</TechnicalResourceDetailsReference>
+          <AudioCodecType Namespace="PADPIDA20110330020" UserDefinedValue="WAV">UserDefined</AudioCodecType>
+          <NumberOfChannels>2</NumberOfChannels>
+          <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+          <BitsPerSample>16</BitsPerSample>
+          <IsPreview>false</IsPreview>
+          <PreviewDetails>
+            <StartPoint>0</StartPoint>
+            <Duration>PT30S</Duration>
+            <ExpressionType>Instructive</ExpressionType>
+          </PreviewDetails>
+          <File>
+            <FileName>669447000013_T11_0_SoundRecording_001_011.wav</FileName>
+            <FilePath>resources/</FilePath>
+            <HashSum>
+              <HashSum>b77a5960074183b3c8a0303847434616</HashSum>
+              <HashSumAlgorithmType>MD5</HashSumAlgorithmType>
+            </HashSum>
+          </File>
+        </TechnicalSoundRecordingDetails>
+      </SoundRecordingDetailsByTerritory>
+      <TerritoryOfCommissioning>Worldwide</TerritoryOfCommissioning>
+    </SoundRecording>
+    <SoundRecording>
+      <SoundRecordingType>MusicalWorkSoundRecording</SoundRecordingType>
+      <SoundRecordingId>
+        <ISRC>USGOT0203026</ISRC>
+        <ProprietaryId Namespace="PADPIDA20110330020">1254750376</ProprietaryId>
+      </SoundRecordingId>
+      <ResourceReference>A12</ResourceReference>
+      <ReferenceTitle>
+        <TitleText>Get It</TitleText>
+      </ReferenceTitle>
+      <Duration>PT3M52S</Duration>
+      <SoundRecordingDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <Title TitleType="DisplayTitle">
+          <TitleText>Get It</TitleText>
+        </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName>
+            <FullName>Grits</FullName>
+          </PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
+        <LabelName>Gotee Records</LabelName>
+        <OriginalResourceReleaseDate>2002-08-06</OriginalResourceReleaseDate>
+        <PLine>
+          <Year>2012</Year>
+          <PLineText>Gotee Records</PLineText>
+        </PLine>
+        <Genre>
+          <GenreText>Hip Hop/Rap</GenreText>
+        </Genre>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+        <TechnicalSoundRecordingDetails>
+          <TechnicalResourceDetailsReference>T12_0</TechnicalResourceDetailsReference>
+          <AudioCodecType Namespace="PADPIDA20110330020" UserDefinedValue="WAV">UserDefined</AudioCodecType>
+          <NumberOfChannels>2</NumberOfChannels>
+          <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+          <BitsPerSample>16</BitsPerSample>
+          <IsPreview>false</IsPreview>
+          <PreviewDetails>
+            <StartPoint>0</StartPoint>
+            <Duration>PT30S</Duration>
+            <ExpressionType>Instructive</ExpressionType>
+          </PreviewDetails>
+          <File>
+            <FileName>669447000013_T12_0_SoundRecording_001_012.wav</FileName>
+            <FilePath>resources/</FilePath>
+            <HashSum>
+              <HashSum>696506ff872b7382225dcc6d12e5a1dc</HashSum>
+              <HashSumAlgorithmType>MD5</HashSumAlgorithmType>
+            </HashSum>
+          </File>
+        </TechnicalSoundRecordingDetails>
+      </SoundRecordingDetailsByTerritory>
+      <TerritoryOfCommissioning>Worldwide</TerritoryOfCommissioning>
+    </SoundRecording>
+    <SoundRecording>
+      <SoundRecordingType>MusicalWorkSoundRecording</SoundRecordingType>
+      <SoundRecordingId>
+        <ISRC>USGOT0203027</ISRC>
+        <ProprietaryId Namespace="PADPIDA20110330020">1254750379</ProprietaryId>
+      </SoundRecordingId>
+      <ResourceReference>A13</ResourceReference>
+      <ReferenceTitle>
+        <TitleText>Make Room</TitleText>
+      </ReferenceTitle>
+      <Duration>PT3M31S</Duration>
+      <SoundRecordingDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <Title TitleType="DisplayTitle">
+          <TitleText>Make Room</TitleText>
+        </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName>
+            <FullName>Grits</FullName>
+          </PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
+        <LabelName>Gotee Records</LabelName>
+        <OriginalResourceReleaseDate>2002-08-06</OriginalResourceReleaseDate>
+        <PLine>
+          <Year>2012</Year>
+          <PLineText>Gotee Records</PLineText>
+        </PLine>
+        <Genre>
+          <GenreText>Hip Hop/Rap</GenreText>
+        </Genre>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+        <TechnicalSoundRecordingDetails>
+          <TechnicalResourceDetailsReference>T13_0</TechnicalResourceDetailsReference>
+          <AudioCodecType Namespace="PADPIDA20110330020" UserDefinedValue="WAV">UserDefined</AudioCodecType>
+          <NumberOfChannels>2</NumberOfChannels>
+          <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+          <BitsPerSample>16</BitsPerSample>
+          <IsPreview>false</IsPreview>
+          <PreviewDetails>
+            <StartPoint>0</StartPoint>
+            <Duration>PT30S</Duration>
+            <ExpressionType>Instructive</ExpressionType>
+          </PreviewDetails>
+          <File>
+            <FileName>669447000013_T13_0_SoundRecording_001_013.wav</FileName>
+            <FilePath>resources/</FilePath>
+            <HashSum>
+              <HashSum>40063c398ad638fb77c7f5b8f9726f29</HashSum>
+              <HashSumAlgorithmType>MD5</HashSumAlgorithmType>
+            </HashSum>
+          </File>
+        </TechnicalSoundRecordingDetails>
+      </SoundRecordingDetailsByTerritory>
+      <TerritoryOfCommissioning>Worldwide</TerritoryOfCommissioning>
+    </SoundRecording>
+    <SoundRecording>
+      <SoundRecordingType>MusicalWorkSoundRecording</SoundRecordingType>
+      <SoundRecordingId>
+        <ISRC>USGOT0203028</ISRC>
+        <ProprietaryId Namespace="PADPIDA20110330020">1254750383</ProprietaryId>
+      </SoundRecordingId>
+      <ResourceReference>A14</ResourceReference>
+      <ReferenceTitle>
+        <TitleText>Keep Movin' (Interlude)</TitleText>
+      </ReferenceTitle>
+      <Duration>PT1M2S</Duration>
+      <SoundRecordingDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <Title TitleType="DisplayTitle">
+          <TitleText>Keep Movin' (Interlude)</TitleText>
+        </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName>
+            <FullName>Grits</FullName>
+          </PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
+        <LabelName>Gotee Records</LabelName>
+        <OriginalResourceReleaseDate>2002-08-06</OriginalResourceReleaseDate>
+        <PLine>
+          <Year>2017</Year>
+          <PLineText>Gotee Records</PLineText>
+        </PLine>
+        <Genre>
+          <GenreText>Hip Hop/Rap</GenreText>
+        </Genre>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+        <TechnicalSoundRecordingDetails>
+          <TechnicalResourceDetailsReference>T14_0</TechnicalResourceDetailsReference>
+          <AudioCodecType Namespace="PADPIDA20110330020" UserDefinedValue="WAV">UserDefined</AudioCodecType>
+          <NumberOfChannels>2</NumberOfChannels>
+          <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+          <BitsPerSample>16</BitsPerSample>
+          <IsPreview>false</IsPreview>
+          <PreviewDetails>
+            <StartPoint>0</StartPoint>
+            <Duration>PT30S</Duration>
+            <ExpressionType>Instructive</ExpressionType>
+          </PreviewDetails>
+          <File>
+            <FileName>669447000013_T14_0_SoundRecording_001_014.wav</FileName>
+            <FilePath>resources/</FilePath>
+            <HashSum>
+              <HashSum>c331c01a39c0ab2b05ec9498ec9ad0e9</HashSum>
+              <HashSumAlgorithmType>MD5</HashSumAlgorithmType>
+            </HashSum>
+          </File>
+        </TechnicalSoundRecordingDetails>
+      </SoundRecordingDetailsByTerritory>
+      <TerritoryOfCommissioning>Worldwide</TerritoryOfCommissioning>
+    </SoundRecording>
+    <SoundRecording>
+      <SoundRecordingType>MusicalWorkSoundRecording</SoundRecordingType>
+      <SoundRecordingId>
+        <ISRC>USGOT0203029</ISRC>
+        <ProprietaryId Namespace="PADPIDA20110330020">1254750386</ProprietaryId>
+      </SoundRecordingId>
+      <ResourceReference>A15</ResourceReference>
+      <ReferenceTitle>
+        <TitleText>Sunny Days</TitleText>
+      </ReferenceTitle>
+      <Duration>PT3M39S</Duration>
+      <SoundRecordingDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <Title TitleType="DisplayTitle">
+          <TitleText>Sunny Days</TitleText>
+        </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName>
+            <FullName>Grits</FullName>
+          </PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
+        <LabelName>Gotee Records</LabelName>
+        <OriginalResourceReleaseDate>2002-08-06</OriginalResourceReleaseDate>
+        <PLine>
+          <Year>2012</Year>
+          <PLineText>Gotee Records</PLineText>
+        </PLine>
+        <Genre>
+          <GenreText>Hip Hop/Rap</GenreText>
+        </Genre>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+        <TechnicalSoundRecordingDetails>
+          <TechnicalResourceDetailsReference>T15_0</TechnicalResourceDetailsReference>
+          <AudioCodecType Namespace="PADPIDA20110330020" UserDefinedValue="WAV">UserDefined</AudioCodecType>
+          <NumberOfChannels>2</NumberOfChannels>
+          <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+          <BitsPerSample>16</BitsPerSample>
+          <IsPreview>false</IsPreview>
+          <PreviewDetails>
+            <StartPoint>0</StartPoint>
+            <Duration>PT30S</Duration>
+            <ExpressionType>Instructive</ExpressionType>
+          </PreviewDetails>
+          <File>
+            <FileName>669447000013_T15_0_SoundRecording_001_015.wav</FileName>
+            <FilePath>resources/</FilePath>
+            <HashSum>
+              <HashSum>5b6fdb56c5d454b3131b4b82d6cb7a42</HashSum>
+              <HashSumAlgorithmType>MD5</HashSumAlgorithmType>
+            </HashSum>
+          </File>
+        </TechnicalSoundRecordingDetails>
+      </SoundRecordingDetailsByTerritory>
+      <TerritoryOfCommissioning>Worldwide</TerritoryOfCommissioning>
+    </SoundRecording>
+    <SoundRecording>
+      <SoundRecordingType>MusicalWorkSoundRecording</SoundRecordingType>
+      <SoundRecordingId>
+        <ISRC>USGOT0203030</ISRC>
+        <ProprietaryId Namespace="PADPIDA20110330020">1254834868</ProprietaryId>
+      </SoundRecordingId>
+      <ResourceReference>A16</ResourceReference>
+      <ReferenceTitle>
+        <TitleText>Lovechild</TitleText>
+      </ReferenceTitle>
+      <Duration>PT3M28S</Duration>
+      <SoundRecordingDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <Title TitleType="DisplayTitle">
+          <TitleText>Lovechild</TitleText>
+        </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName>
+            <FullName>Grits</FullName>
+          </PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
+        <LabelName>Gotee Records</LabelName>
+        <OriginalResourceReleaseDate>2002-08-06</OriginalResourceReleaseDate>
+        <PLine>
+          <Year>2017</Year>
+          <PLineText>Gotee Records</PLineText>
+        </PLine>
+        <Genre>
+          <GenreText>Hip Hop/Rap</GenreText>
+        </Genre>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+        <TechnicalSoundRecordingDetails>
+          <TechnicalResourceDetailsReference>T16_0</TechnicalResourceDetailsReference>
+          <AudioCodecType Namespace="PADPIDA20110330020" UserDefinedValue="WAV">UserDefined</AudioCodecType>
+          <NumberOfChannels>2</NumberOfChannels>
+          <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+          <BitsPerSample>16</BitsPerSample>
+          <IsPreview>false</IsPreview>
+          <PreviewDetails>
+            <StartPoint>0</StartPoint>
+            <Duration>PT30S</Duration>
+            <ExpressionType>Instructive</ExpressionType>
+          </PreviewDetails>
+          <File>
+            <FileName>669447000013_T16_0_SoundRecording_001_016.wav</FileName>
+            <FilePath>resources/</FilePath>
+            <HashSum>
+              <HashSum>6b671ad71116bf263829e047bd8e6c2b</HashSum>
+              <HashSumAlgorithmType>MD5</HashSumAlgorithmType>
+            </HashSum>
+          </File>
+        </TechnicalSoundRecordingDetails>
+      </SoundRecordingDetailsByTerritory>
+      <TerritoryOfCommissioning>Worldwide</TerritoryOfCommissioning>
+    </SoundRecording>
+    <SoundRecording>
+      <SoundRecordingType>MusicalWorkSoundRecording</SoundRecordingType>
+      <SoundRecordingId>
+        <ISRC>USGOT0203031</ISRC>
+        <ProprietaryId Namespace="PADPIDA20110330020">1254750394</ProprietaryId>
+      </SoundRecordingId>
+      <ResourceReference>A17</ResourceReference>
+      <ReferenceTitle>
+        <TitleText>The Art Of Translation</TitleText>
+      </ReferenceTitle>
+      <Duration>PT2M57S</Duration>
+      <SoundRecordingDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <Title TitleType="DisplayTitle">
+          <TitleText>The Art Of Translation</TitleText>
+        </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName>
+            <FullName>Grits</FullName>
+          </PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
+        <LabelName>Gotee Records</LabelName>
+        <OriginalResourceReleaseDate>2002-08-06</OriginalResourceReleaseDate>
+        <PLine>
+          <Year>2017</Year>
+          <PLineText>Gotee Records</PLineText>
+        </PLine>
+        <Genre>
+          <GenreText>Hip Hop/Rap</GenreText>
+        </Genre>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+        <TechnicalSoundRecordingDetails>
+          <TechnicalResourceDetailsReference>T17_0</TechnicalResourceDetailsReference>
+          <AudioCodecType Namespace="PADPIDA20110330020" UserDefinedValue="WAV">UserDefined</AudioCodecType>
+          <NumberOfChannels>2</NumberOfChannels>
+          <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+          <BitsPerSample>16</BitsPerSample>
+          <IsPreview>false</IsPreview>
+          <PreviewDetails>
+            <StartPoint>0</StartPoint>
+            <Duration>PT30S</Duration>
+            <ExpressionType>Instructive</ExpressionType>
+          </PreviewDetails>
+          <File>
+            <FileName>669447000013_T17_0_SoundRecording_001_017.wav</FileName>
+            <FilePath>resources/</FilePath>
+            <HashSum>
+              <HashSum>740452cae3e3723e51b2d20785f600a5</HashSum>
+              <HashSumAlgorithmType>MD5</HashSumAlgorithmType>
+            </HashSum>
+          </File>
+        </TechnicalSoundRecordingDetails>
+      </SoundRecordingDetailsByTerritory>
+      <TerritoryOfCommissioning>Worldwide</TerritoryOfCommissioning>
+    </SoundRecording>
+    <Image>
+      <ImageType>FrontCoverImage</ImageType>
+      <ImageId>
+        <ProprietaryId Namespace="PADPIDA20110330020">1254834804</ProprietaryId>
+      </ImageId>
+      <ResourceReference>A18</ResourceReference>
+      <ImageDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <TechnicalImageDetails>
+          <TechnicalResourceDetailsReference>T18</TechnicalResourceDetailsReference>
+          <ImageCodecType>JPEG</ImageCodecType>
+          <File>
+            <FileName>669447000013_T18_Image.jpg</FileName>
+            <FilePath>resources/</FilePath>
+            <HashSum>
+              <HashSum>5b00d478a289112a1ff123c43ffad708</HashSum>
+              <HashSumAlgorithmType>MD5</HashSumAlgorithmType>
+            </HashSum>
+          </File>
+        </TechnicalImageDetails>
+      </ImageDetailsByTerritory>
+    </Image>
+  </ResourceList>
+  <ReleaseList>
+    <Release IsMainRelease="true">
+      <ReleaseId>
+        <ICPN IsEan="false">669447000013</ICPN>
+        <CatalogNumber Namespace="PADPIDA20110330020">GOT0013</CatalogNumber>
+        <ProprietaryId Namespace="PADPIDA20110330020">1387053697</ProprietaryId>
+      </ReleaseId>
+      <ReleaseReference>R0</ReleaseReference>
+      <ReferenceTitle>
+        <TitleText>The Art of Translation</TitleText>
+      </ReferenceTitle>
+      <ReleaseResourceReferenceList>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A1</ReleaseResourceReference>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A2</ReleaseResourceReference>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A3</ReleaseResourceReference>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A4</ReleaseResourceReference>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A5</ReleaseResourceReference>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A6</ReleaseResourceReference>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A7</ReleaseResourceReference>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A8</ReleaseResourceReference>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A9</ReleaseResourceReference>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A10</ReleaseResourceReference>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A11</ReleaseResourceReference>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A12</ReleaseResourceReference>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A13</ReleaseResourceReference>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A14</ReleaseResourceReference>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A15</ReleaseResourceReference>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A16</ReleaseResourceReference>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A17</ReleaseResourceReference>
+        <ReleaseResourceReference ReleaseResourceType="SecondaryResource">A18</ReleaseResourceReference>
+      </ReleaseResourceReferenceList>
+      <ReleaseType>Album</ReleaseType>
+      <ReleaseDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <DisplayArtistName>Grits</DisplayArtistName>
+        <LabelName>Gotee Records</LabelName>
+        <Title TitleType="FormalTitle">
+          <TitleText>The Art of Translation</TitleText>
+        </Title>
+        <Title TitleType="DisplayTitle">
+          <TitleText>The Art of Translation</TitleText>
+        </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName>
+            <FullName>Grits</FullName>
+          </PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+        <ResourceGroup>
+          <ResourceGroup>
+            <Title>
+              <TitleText>Disc-1</TitleText>
+            </Title>
+            <SequenceNumber>1</SequenceNumber>
+            <ResourceGroupContentItem>
+              <SequenceNumber>1</SequenceNumber>
+              <ResourceType>SoundRecording</ResourceType>
+              <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A1</ReleaseResourceReference>
+              <IsInstantGratificationResource>false</IsInstantGratificationResource>
+              <IsPreOrderIncentiveResource>false</IsPreOrderIncentiveResource>
+            </ResourceGroupContentItem>
+            <ResourceGroupContentItem>
+              <SequenceNumber>2</SequenceNumber>
+              <ResourceType>SoundRecording</ResourceType>
+              <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A2</ReleaseResourceReference>
+              <IsInstantGratificationResource>false</IsInstantGratificationResource>
+              <IsPreOrderIncentiveResource>false</IsPreOrderIncentiveResource>
+            </ResourceGroupContentItem>
+            <ResourceGroupContentItem>
+              <SequenceNumber>3</SequenceNumber>
+              <ResourceType>SoundRecording</ResourceType>
+              <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A3</ReleaseResourceReference>
+              <IsInstantGratificationResource>false</IsInstantGratificationResource>
+              <IsPreOrderIncentiveResource>false</IsPreOrderIncentiveResource>
+            </ResourceGroupContentItem>
+            <ResourceGroupContentItem>
+              <SequenceNumber>4</SequenceNumber>
+              <ResourceType>SoundRecording</ResourceType>
+              <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A4</ReleaseResourceReference>
+              <IsInstantGratificationResource>false</IsInstantGratificationResource>
+              <IsPreOrderIncentiveResource>false</IsPreOrderIncentiveResource>
+            </ResourceGroupContentItem>
+            <ResourceGroupContentItem>
+              <SequenceNumber>5</SequenceNumber>
+              <ResourceType>SoundRecording</ResourceType>
+              <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A5</ReleaseResourceReference>
+              <IsInstantGratificationResource>false</IsInstantGratificationResource>
+              <IsPreOrderIncentiveResource>false</IsPreOrderIncentiveResource>
+            </ResourceGroupContentItem>
+            <ResourceGroupContentItem>
+              <SequenceNumber>6</SequenceNumber>
+              <ResourceType>SoundRecording</ResourceType>
+              <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A6</ReleaseResourceReference>
+              <IsInstantGratificationResource>false</IsInstantGratificationResource>
+              <IsPreOrderIncentiveResource>false</IsPreOrderIncentiveResource>
+            </ResourceGroupContentItem>
+            <ResourceGroupContentItem>
+              <SequenceNumber>7</SequenceNumber>
+              <ResourceType>SoundRecording</ResourceType>
+              <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A7</ReleaseResourceReference>
+              <IsInstantGratificationResource>false</IsInstantGratificationResource>
+              <IsPreOrderIncentiveResource>false</IsPreOrderIncentiveResource>
+            </ResourceGroupContentItem>
+            <ResourceGroupContentItem>
+              <SequenceNumber>8</SequenceNumber>
+              <ResourceType>SoundRecording</ResourceType>
+              <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A8</ReleaseResourceReference>
+              <IsInstantGratificationResource>false</IsInstantGratificationResource>
+              <IsPreOrderIncentiveResource>false</IsPreOrderIncentiveResource>
+            </ResourceGroupContentItem>
+            <ResourceGroupContentItem>
+              <SequenceNumber>9</SequenceNumber>
+              <ResourceType>SoundRecording</ResourceType>
+              <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A9</ReleaseResourceReference>
+              <IsInstantGratificationResource>false</IsInstantGratificationResource>
+              <IsPreOrderIncentiveResource>false</IsPreOrderIncentiveResource>
+            </ResourceGroupContentItem>
+            <ResourceGroupContentItem>
+              <SequenceNumber>10</SequenceNumber>
+              <ResourceType>SoundRecording</ResourceType>
+              <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A10</ReleaseResourceReference>
+              <IsInstantGratificationResource>false</IsInstantGratificationResource>
+              <IsPreOrderIncentiveResource>false</IsPreOrderIncentiveResource>
+            </ResourceGroupContentItem>
+            <ResourceGroupContentItem>
+              <SequenceNumber>11</SequenceNumber>
+              <ResourceType>SoundRecording</ResourceType>
+              <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A11</ReleaseResourceReference>
+              <IsInstantGratificationResource>false</IsInstantGratificationResource>
+              <IsPreOrderIncentiveResource>false</IsPreOrderIncentiveResource>
+            </ResourceGroupContentItem>
+            <ResourceGroupContentItem>
+              <SequenceNumber>12</SequenceNumber>
+              <ResourceType>SoundRecording</ResourceType>
+              <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A12</ReleaseResourceReference>
+              <IsInstantGratificationResource>false</IsInstantGratificationResource>
+              <IsPreOrderIncentiveResource>false</IsPreOrderIncentiveResource>
+            </ResourceGroupContentItem>
+            <ResourceGroupContentItem>
+              <SequenceNumber>13</SequenceNumber>
+              <ResourceType>SoundRecording</ResourceType>
+              <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A13</ReleaseResourceReference>
+              <IsInstantGratificationResource>false</IsInstantGratificationResource>
+              <IsPreOrderIncentiveResource>false</IsPreOrderIncentiveResource>
+            </ResourceGroupContentItem>
+            <ResourceGroupContentItem>
+              <SequenceNumber>14</SequenceNumber>
+              <ResourceType>SoundRecording</ResourceType>
+              <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A14</ReleaseResourceReference>
+              <IsInstantGratificationResource>false</IsInstantGratificationResource>
+              <IsPreOrderIncentiveResource>false</IsPreOrderIncentiveResource>
+            </ResourceGroupContentItem>
+            <ResourceGroupContentItem>
+              <SequenceNumber>15</SequenceNumber>
+              <ResourceType>SoundRecording</ResourceType>
+              <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A15</ReleaseResourceReference>
+              <IsInstantGratificationResource>false</IsInstantGratificationResource>
+              <IsPreOrderIncentiveResource>false</IsPreOrderIncentiveResource>
+            </ResourceGroupContentItem>
+            <ResourceGroupContentItem>
+              <SequenceNumber>16</SequenceNumber>
+              <ResourceType>SoundRecording</ResourceType>
+              <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A16</ReleaseResourceReference>
+              <IsInstantGratificationResource>false</IsInstantGratificationResource>
+              <IsPreOrderIncentiveResource>false</IsPreOrderIncentiveResource>
+            </ResourceGroupContentItem>
+            <ResourceGroupContentItem>
+              <SequenceNumber>17</SequenceNumber>
+              <ResourceType>SoundRecording</ResourceType>
+              <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A17</ReleaseResourceReference>
+              <IsInstantGratificationResource>false</IsInstantGratificationResource>
+              <IsPreOrderIncentiveResource>false</IsPreOrderIncentiveResource>
+            </ResourceGroupContentItem>
+          </ResourceGroup>
+          <ResourceGroupContentItem>
+            <ReleaseResourceReference ReleaseResourceType="SecondaryResource">A18</ReleaseResourceReference>
+          </ResourceGroupContentItem>
+        </ResourceGroup>
+        <Genre>
+          <GenreText>Hip Hop/Rap</GenreText>
+        </Genre>
+        <ReleaseDate>2012-02-01</ReleaseDate>
+        <OriginalReleaseDate>2002-08-06</OriginalReleaseDate>
+      </ReleaseDetailsByTerritory>
+      <PLine>
+        <Year>2012</Year>
+        <PLineText>Gotee Records</PLineText>
+      </PLine>
+      <CLine>
+        <Year>2012</Year>
+        <CLineText>Gotee Records</CLineText>
+      </CLine>
+    </Release>
+    <Release>
+      <ReleaseId>
+        <ISRC>USGOT0203015</ISRC>
+      </ReleaseId>
+      <ReleaseReference>R1</ReleaseReference>
+      <ReferenceTitle>
+        <TitleText>Here We Go</TitleText>
+      </ReferenceTitle>
+      <ReleaseResourceReferenceList>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A1</ReleaseResourceReference>
+      </ReleaseResourceReferenceList>
+      <ReleaseType>TrackRelease</ReleaseType>
+      <ReleaseDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <DisplayArtistName>Grits</DisplayArtistName>
+        <LabelName>Gotee Records</LabelName>
+        <Title TitleType="FormalTitle">
+          <TitleText>Here We Go</TitleText>
+        </Title>
+        <Title TitleType="DisplayTitle">
+          <TitleText>Here We Go</TitleText>
+        </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName>
+            <FullName>Grits</FullName>
+          </PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
+        <RelatedRelease>
+          <ReleaseId>
+            <ICPN IsEan="false">669447000013</ICPN>
+          </ReleaseId>
+          <ReleaseRelationshipType>IsReleaseFromRelease</ReleaseRelationshipType>
+        </RelatedRelease>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+        <ResourceGroup>
+          <ResourceGroupContentItem>
+            <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A1</ReleaseResourceReference>
+          </ResourceGroupContentItem>
+        </ResourceGroup>
+        <Genre>
+          <GenreText>Hip Hop/Rap</GenreText>
+        </Genre>
+        <ReleaseDate>2012-02-01</ReleaseDate>
+        <OriginalReleaseDate>2002-08-06</OriginalReleaseDate>
+      </ReleaseDetailsByTerritory>
+      <PLine>
+        <Year>2012</Year>
+        <PLineText>Gotee Records</PLineText>
+      </PLine>
+      <CLine>
+        <Year>2012</Year>
+        <CLineText>Gotee Records</CLineText>
+      </CLine>
+    </Release>
+    <Release>
+      <ReleaseId>
+        <ISRC>USGOT0203017</ISRC>
+      </ReleaseId>
+      <ReleaseReference>R2</ReleaseReference>
+      <ReferenceTitle>
+        <TitleText>Ooh Ahh (My Life Be Like) (feat. Toby Mac)</TitleText>
+      </ReferenceTitle>
+      <ReleaseResourceReferenceList>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A2</ReleaseResourceReference>
+      </ReleaseResourceReferenceList>
+      <ReleaseType>TrackRelease</ReleaseType>
+      <ReleaseDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <DisplayArtistName>Grits</DisplayArtistName>
+        <LabelName>Gotee Records</LabelName>
+        <Title TitleType="FormalTitle">
+          <TitleText>Ooh Ahh (My Life Be Like) (feat. Toby Mac)</TitleText>
+        </Title>
+        <Title TitleType="DisplayTitle">
+          <TitleText>Ooh Ahh (My Life Be Like) (feat. Toby Mac)</TitleText>
+        </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName>
+            <FullName>Grits</FullName>
+          </PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
+        <DisplayArtist SequenceNumber="2">
+          <PartyName>
+            <FullName>tobyMac</FullName>
+          </PartyName>
+          <ArtistRole>FeaturedArtist</ArtistRole>
+        </DisplayArtist>
+        <RelatedRelease>
+          <ReleaseId>
+            <ICPN IsEan="false">669447000013</ICPN>
+          </ReleaseId>
+          <ReleaseRelationshipType>IsReleaseFromRelease</ReleaseRelationshipType>
+        </RelatedRelease>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+        <ResourceGroup>
+          <ResourceGroupContentItem>
+            <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A2</ReleaseResourceReference>
+          </ResourceGroupContentItem>
+        </ResourceGroup>
+        <Genre>
+          <GenreText>Hip Hop/Rap</GenreText>
+        </Genre>
+        <ReleaseDate>2012-02-01</ReleaseDate>
+        <OriginalReleaseDate>2002-08-06</OriginalReleaseDate>
+      </ReleaseDetailsByTerritory>
+      <PLine>
+        <Year>2017</Year>
+        <PLineText>Gotee Records</PLineText>
+      </PLine>
+      <CLine>
+        <Year>2012</Year>
+        <CLineText>Gotee Records</CLineText>
+      </CLine>
+    </Release>
+    <Release>
+      <ReleaseId>
+        <ISRC>USGOT0203018</ISRC>
+      </ReleaseId>
+      <ReleaseReference>R3</ReleaseReference>
+      <ReferenceTitle>
+        <TitleText>Runnin'</TitleText>
+      </ReferenceTitle>
+      <ReleaseResourceReferenceList>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A3</ReleaseResourceReference>
+      </ReleaseResourceReferenceList>
+      <ReleaseType>TrackRelease</ReleaseType>
+      <ReleaseDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <DisplayArtistName>Grits</DisplayArtistName>
+        <LabelName>Gotee Records</LabelName>
+        <Title TitleType="FormalTitle">
+          <TitleText>Runnin'</TitleText>
+        </Title>
+        <Title TitleType="DisplayTitle">
+          <TitleText>Runnin'</TitleText>
+        </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName>
+            <FullName>Grits</FullName>
+          </PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
+        <RelatedRelease>
+          <ReleaseId>
+            <ICPN IsEan="false">669447000013</ICPN>
+          </ReleaseId>
+          <ReleaseRelationshipType>IsReleaseFromRelease</ReleaseRelationshipType>
+        </RelatedRelease>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+        <ResourceGroup>
+          <ResourceGroupContentItem>
+            <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A3</ReleaseResourceReference>
+          </ResourceGroupContentItem>
+        </ResourceGroup>
+        <Genre>
+          <GenreText>Hip Hop/Rap</GenreText>
+        </Genre>
+        <ReleaseDate>2012-02-01</ReleaseDate>
+        <OriginalReleaseDate>2002-08-06</OriginalReleaseDate>
+      </ReleaseDetailsByTerritory>
+      <PLine>
+        <Year>2012</Year>
+        <PLineText>Gotee Records</PLineText>
+      </PLine>
+      <CLine>
+        <Year>2012</Year>
+        <CLineText>Gotee Records</CLineText>
+      </CLine>
+    </Release>
+    <Release>
+      <ReleaseId>
+        <ISRC>USGOT0203020</ISRC>
+      </ReleaseId>
+      <ReleaseReference>R4</ReleaseReference>
+      <ReferenceTitle>
+        <TitleText>Tennessee Bwoys</TitleText>
+      </ReferenceTitle>
+      <ReleaseResourceReferenceList>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A4</ReleaseResourceReference>
+      </ReleaseResourceReferenceList>
+      <ReleaseType>TrackRelease</ReleaseType>
+      <ReleaseDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <DisplayArtistName>Grits</DisplayArtistName>
+        <LabelName>Gotee Records</LabelName>
+        <Title TitleType="FormalTitle">
+          <TitleText>Tennessee Bwoys</TitleText>
+        </Title>
+        <Title TitleType="DisplayTitle">
+          <TitleText>Tennessee Bwoys</TitleText>
+        </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName>
+            <FullName>Grits</FullName>
+          </PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
+        <RelatedRelease>
+          <ReleaseId>
+            <ICPN IsEan="false">669447000013</ICPN>
+          </ReleaseId>
+          <ReleaseRelationshipType>IsReleaseFromRelease</ReleaseRelationshipType>
+        </RelatedRelease>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+        <ResourceGroup>
+          <ResourceGroupContentItem>
+            <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A4</ReleaseResourceReference>
+          </ResourceGroupContentItem>
+        </ResourceGroup>
+        <Genre>
+          <GenreText>Hip Hop/Rap</GenreText>
+        </Genre>
+        <ReleaseDate>2012-02-01</ReleaseDate>
+        <OriginalReleaseDate>2002-08-06</OriginalReleaseDate>
+      </ReleaseDetailsByTerritory>
+      <PLine>
+        <Year>2012</Year>
+        <PLineText>Gotee Records</PLineText>
+      </PLine>
+      <CLine>
+        <Year>2012</Year>
+        <CLineText>Gotee Records</CLineText>
+      </CLine>
+    </Release>
+    <Release>
+      <ReleaseId>
+        <ISRC>USGOT0203021</ISRC>
+      </ReleaseId>
+      <ReleaseReference>R5</ReleaseReference>
+      <ReferenceTitle>
+        <TitleText>Be Mine</TitleText>
+      </ReferenceTitle>
+      <ReleaseResourceReferenceList>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A5</ReleaseResourceReference>
+      </ReleaseResourceReferenceList>
+      <ReleaseType>TrackRelease</ReleaseType>
+      <ReleaseDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <DisplayArtistName>Grits</DisplayArtistName>
+        <LabelName>Gotee Records</LabelName>
+        <Title TitleType="FormalTitle">
+          <TitleText>Be Mine</TitleText>
+        </Title>
+        <Title TitleType="DisplayTitle">
+          <TitleText>Be Mine</TitleText>
+        </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName>
+            <FullName>Grits</FullName>
+          </PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
+        <RelatedRelease>
+          <ReleaseId>
+            <ICPN IsEan="false">669447000013</ICPN>
+          </ReleaseId>
+          <ReleaseRelationshipType>IsReleaseFromRelease</ReleaseRelationshipType>
+        </RelatedRelease>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+        <ResourceGroup>
+          <ResourceGroupContentItem>
+            <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A5</ReleaseResourceReference>
+          </ResourceGroupContentItem>
+        </ResourceGroup>
+        <Genre>
+          <GenreText>Hip Hop/Rap</GenreText>
+        </Genre>
+        <ReleaseDate>2012-02-01</ReleaseDate>
+        <OriginalReleaseDate>2002-08-06</OriginalReleaseDate>
+      </ReleaseDetailsByTerritory>
+      <PLine>
+        <Year>2012</Year>
+        <PLineText>Gotee Records</PLineText>
+      </PLine>
+      <CLine>
+        <Year>2012</Year>
+        <CLineText>Gotee Records</CLineText>
+      </CLine>
+    </Release>
+    <Release>
+      <ReleaseId>
+        <ISRC>USGOT0203019</ISRC>
+      </ReleaseId>
+      <ReleaseReference>R6</ReleaseReference>
+      <ReferenceTitle>
+        <TitleText>Ill Coined Phrase (Interlude)</TitleText>
+      </ReferenceTitle>
+      <ReleaseResourceReferenceList>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A6</ReleaseResourceReference>
+      </ReleaseResourceReferenceList>
+      <ReleaseType>TrackRelease</ReleaseType>
+      <ReleaseDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <DisplayArtistName>Grits</DisplayArtistName>
+        <LabelName>Gotee Records</LabelName>
+        <Title TitleType="FormalTitle">
+          <TitleText>Ill Coined Phrase (Interlude)</TitleText>
+        </Title>
+        <Title TitleType="DisplayTitle">
+          <TitleText>Ill Coined Phrase (Interlude)</TitleText>
+        </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName>
+            <FullName>Grits</FullName>
+          </PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
+        <RelatedRelease>
+          <ReleaseId>
+            <ICPN IsEan="false">669447000013</ICPN>
+          </ReleaseId>
+          <ReleaseRelationshipType>IsReleaseFromRelease</ReleaseRelationshipType>
+        </RelatedRelease>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+        <ResourceGroup>
+          <ResourceGroupContentItem>
+            <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A6</ReleaseResourceReference>
+          </ResourceGroupContentItem>
+        </ResourceGroup>
+        <Genre>
+          <GenreText>Hip Hop/Rap</GenreText>
+        </Genre>
+        <ReleaseDate>2012-02-01</ReleaseDate>
+        <OriginalReleaseDate>2002-08-06</OriginalReleaseDate>
+      </ReleaseDetailsByTerritory>
+      <PLine>
+        <Year>2017</Year>
+        <PLineText>Gotee Records</PLineText>
+      </PLine>
+      <CLine>
+        <Year>2012</Year>
+        <CLineText>Gotee Records</CLineText>
+      </CLine>
+    </Release>
+    <Release>
+      <ReleaseId>
+        <ISRC>USGOT0203016</ISRC>
+      </ReleaseId>
+      <ReleaseReference>R7</ReleaseReference>
+      <ReferenceTitle>
+        <TitleText>Seriously</TitleText>
+      </ReferenceTitle>
+      <ReleaseResourceReferenceList>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A7</ReleaseResourceReference>
+      </ReleaseResourceReferenceList>
+      <ReleaseType>TrackRelease</ReleaseType>
+      <ReleaseDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <DisplayArtistName>Grits</DisplayArtistName>
+        <LabelName>Gotee Records</LabelName>
+        <Title TitleType="FormalTitle">
+          <TitleText>Seriously</TitleText>
+        </Title>
+        <Title TitleType="DisplayTitle">
+          <TitleText>Seriously</TitleText>
+        </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName>
+            <FullName>Grits</FullName>
+          </PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
+        <RelatedRelease>
+          <ReleaseId>
+            <ICPN IsEan="false">669447000013</ICPN>
+          </ReleaseId>
+          <ReleaseRelationshipType>IsReleaseFromRelease</ReleaseRelationshipType>
+        </RelatedRelease>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+        <ResourceGroup>
+          <ResourceGroupContentItem>
+            <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A7</ReleaseResourceReference>
+          </ResourceGroupContentItem>
+        </ResourceGroup>
+        <Genre>
+          <GenreText>Hip Hop/Rap</GenreText>
+        </Genre>
+        <ReleaseDate>2012-02-01</ReleaseDate>
+        <OriginalReleaseDate>2002-08-06</OriginalReleaseDate>
+      </ReleaseDetailsByTerritory>
+      <PLine>
+        <Year>2012</Year>
+        <PLineText>Gotee Records</PLineText>
+      </PLine>
+      <CLine>
+        <Year>2012</Year>
+        <CLineText>Gotee Records</CLineText>
+      </CLine>
+    </Release>
+    <Release>
+      <ReleaseId>
+        <ISRC>USGOT0203022</ISRC>
+      </ReleaseId>
+      <ReleaseReference>R8</ReleaseReference>
+      <ReferenceTitle>
+        <TitleText>At The Video Shoot (Interlude)</TitleText>
+      </ReferenceTitle>
+      <ReleaseResourceReferenceList>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A8</ReleaseResourceReference>
+      </ReleaseResourceReferenceList>
+      <ReleaseType>TrackRelease</ReleaseType>
+      <ReleaseDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <DisplayArtistName>Grits</DisplayArtistName>
+        <LabelName>Gotee Records</LabelName>
+        <Title TitleType="FormalTitle">
+          <TitleText>At The Video Shoot (Interlude)</TitleText>
+        </Title>
+        <Title TitleType="DisplayTitle">
+          <TitleText>At The Video Shoot (Interlude)</TitleText>
+        </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName>
+            <FullName>Grits</FullName>
+          </PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
+        <RelatedRelease>
+          <ReleaseId>
+            <ICPN IsEan="false">669447000013</ICPN>
+          </ReleaseId>
+          <ReleaseRelationshipType>IsReleaseFromRelease</ReleaseRelationshipType>
+        </RelatedRelease>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+        <ResourceGroup>
+          <ResourceGroupContentItem>
+            <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A8</ReleaseResourceReference>
+          </ResourceGroupContentItem>
+        </ResourceGroup>
+        <Genre>
+          <GenreText>Hip Hop/Rap</GenreText>
+        </Genre>
+        <ReleaseDate>2012-02-01</ReleaseDate>
+        <OriginalReleaseDate>2002-08-06</OriginalReleaseDate>
+      </ReleaseDetailsByTerritory>
+      <PLine>
+        <Year>2017</Year>
+        <PLineText>Gotee Records</PLineText>
+      </PLine>
+      <CLine>
+        <Year>2012</Year>
+        <CLineText>Gotee Records</CLineText>
+      </CLine>
+    </Release>
+    <Release>
+      <ReleaseId>
+        <ISRC>USGOT0203023</ISRC>
+      </ReleaseId>
+      <ReleaseReference>R9</ReleaseReference>
+      <ReferenceTitle>
+        <TitleText>Video Girl</TitleText>
+      </ReferenceTitle>
+      <ReleaseResourceReferenceList>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A9</ReleaseResourceReference>
+      </ReleaseResourceReferenceList>
+      <ReleaseType>TrackRelease</ReleaseType>
+      <ReleaseDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <DisplayArtistName>Grits</DisplayArtistName>
+        <LabelName>Gotee Records</LabelName>
+        <Title TitleType="FormalTitle">
+          <TitleText>Video Girl</TitleText>
+        </Title>
+        <Title TitleType="DisplayTitle">
+          <TitleText>Video Girl</TitleText>
+        </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName>
+            <FullName>Grits</FullName>
+          </PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
+        <RelatedRelease>
+          <ReleaseId>
+            <ICPN IsEan="false">669447000013</ICPN>
+          </ReleaseId>
+          <ReleaseRelationshipType>IsReleaseFromRelease</ReleaseRelationshipType>
+        </RelatedRelease>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+        <ResourceGroup>
+          <ResourceGroupContentItem>
+            <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A9</ReleaseResourceReference>
+          </ResourceGroupContentItem>
+        </ResourceGroup>
+        <Genre>
+          <GenreText>Hip Hop/Rap</GenreText>
+        </Genre>
+        <ReleaseDate>2012-02-01</ReleaseDate>
+        <OriginalReleaseDate>2002-08-06</OriginalReleaseDate>
+      </ReleaseDetailsByTerritory>
+      <PLine>
+        <Year>2012</Year>
+        <PLineText>Gotee Records</PLineText>
+      </PLine>
+      <CLine>
+        <Year>2012</Year>
+        <CLineText>Gotee Records</CLineText>
+      </CLine>
+    </Release>
+    <Release>
+      <ReleaseId>
+        <ISRC>USGOT0203025</ISRC>
+      </ReleaseId>
+      <ReleaseReference>R10</ReleaseReference>
+      <ReferenceTitle>
+        <TitleText>Believe</TitleText>
+      </ReferenceTitle>
+      <ReleaseResourceReferenceList>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A10</ReleaseResourceReference>
+      </ReleaseResourceReferenceList>
+      <ReleaseType>TrackRelease</ReleaseType>
+      <ReleaseDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <DisplayArtistName>Grits</DisplayArtistName>
+        <LabelName>Gotee Records</LabelName>
+        <Title TitleType="FormalTitle">
+          <TitleText>Believe</TitleText>
+        </Title>
+        <Title TitleType="DisplayTitle">
+          <TitleText>Believe</TitleText>
+        </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName>
+            <FullName>Grits</FullName>
+          </PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
+        <RelatedRelease>
+          <ReleaseId>
+            <ICPN IsEan="false">669447000013</ICPN>
+          </ReleaseId>
+          <ReleaseRelationshipType>IsReleaseFromRelease</ReleaseRelationshipType>
+        </RelatedRelease>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+        <ResourceGroup>
+          <ResourceGroupContentItem>
+            <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A10</ReleaseResourceReference>
+          </ResourceGroupContentItem>
+        </ResourceGroup>
+        <Genre>
+          <GenreText>Hip Hop/Rap</GenreText>
+        </Genre>
+        <ReleaseDate>2012-02-01</ReleaseDate>
+        <OriginalReleaseDate>2002-08-06</OriginalReleaseDate>
+      </ReleaseDetailsByTerritory>
+      <PLine>
+        <Year>2012</Year>
+        <PLineText>Gotee Records</PLineText>
+      </PLine>
+      <CLine>
+        <Year>2012</Year>
+        <CLineText>Gotee Records</CLineText>
+      </CLine>
+    </Release>
+    <Release>
+      <ReleaseId>
+        <ISRC>USGOT0203024</ISRC>
+      </ReleaseId>
+      <ReleaseReference>R11</ReleaseReference>
+      <ReferenceTitle>
+        <TitleText>What Do You Believe? (Interlude)</TitleText>
+      </ReferenceTitle>
+      <ReleaseResourceReferenceList>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A11</ReleaseResourceReference>
+      </ReleaseResourceReferenceList>
+      <ReleaseType>TrackRelease</ReleaseType>
+      <ReleaseDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <DisplayArtistName>Grits</DisplayArtistName>
+        <LabelName>Gotee Records</LabelName>
+        <Title TitleType="FormalTitle">
+          <TitleText>What Do You Believe? (Interlude)</TitleText>
+        </Title>
+        <Title TitleType="DisplayTitle">
+          <TitleText>What Do You Believe? (Interlude)</TitleText>
+        </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName>
+            <FullName>Grits</FullName>
+          </PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
+        <RelatedRelease>
+          <ReleaseId>
+            <ICPN IsEan="false">669447000013</ICPN>
+          </ReleaseId>
+          <ReleaseRelationshipType>IsReleaseFromRelease</ReleaseRelationshipType>
+        </RelatedRelease>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+        <ResourceGroup>
+          <ResourceGroupContentItem>
+            <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A11</ReleaseResourceReference>
+          </ResourceGroupContentItem>
+        </ResourceGroup>
+        <Genre>
+          <GenreText>Hip Hop/Rap</GenreText>
+        </Genre>
+        <ReleaseDate>2012-02-01</ReleaseDate>
+        <OriginalReleaseDate>2002-08-06</OriginalReleaseDate>
+      </ReleaseDetailsByTerritory>
+      <PLine>
+        <Year>2017</Year>
+        <PLineText>Gotee Records</PLineText>
+      </PLine>
+      <CLine>
+        <Year>2012</Year>
+        <CLineText>Gotee Records</CLineText>
+      </CLine>
+    </Release>
+    <Release>
+      <ReleaseId>
+        <ISRC>USGOT0203026</ISRC>
+      </ReleaseId>
+      <ReleaseReference>R12</ReleaseReference>
+      <ReferenceTitle>
+        <TitleText>Get It</TitleText>
+      </ReferenceTitle>
+      <ReleaseResourceReferenceList>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A12</ReleaseResourceReference>
+      </ReleaseResourceReferenceList>
+      <ReleaseType>TrackRelease</ReleaseType>
+      <ReleaseDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <DisplayArtistName>Grits</DisplayArtistName>
+        <LabelName>Gotee Records</LabelName>
+        <Title TitleType="FormalTitle">
+          <TitleText>Get It</TitleText>
+        </Title>
+        <Title TitleType="DisplayTitle">
+          <TitleText>Get It</TitleText>
+        </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName>
+            <FullName>Grits</FullName>
+          </PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
+        <RelatedRelease>
+          <ReleaseId>
+            <ICPN IsEan="false">669447000013</ICPN>
+          </ReleaseId>
+          <ReleaseRelationshipType>IsReleaseFromRelease</ReleaseRelationshipType>
+        </RelatedRelease>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+        <ResourceGroup>
+          <ResourceGroupContentItem>
+            <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A12</ReleaseResourceReference>
+          </ResourceGroupContentItem>
+        </ResourceGroup>
+        <Genre>
+          <GenreText>Hip Hop/Rap</GenreText>
+        </Genre>
+        <ReleaseDate>2012-02-01</ReleaseDate>
+        <OriginalReleaseDate>2002-08-06</OriginalReleaseDate>
+      </ReleaseDetailsByTerritory>
+      <PLine>
+        <Year>2012</Year>
+        <PLineText>Gotee Records</PLineText>
+      </PLine>
+      <CLine>
+        <Year>2012</Year>
+        <CLineText>Gotee Records</CLineText>
+      </CLine>
+    </Release>
+    <Release>
+      <ReleaseId>
+        <ISRC>USGOT0203027</ISRC>
+      </ReleaseId>
+      <ReleaseReference>R13</ReleaseReference>
+      <ReferenceTitle>
+        <TitleText>Make Room</TitleText>
+      </ReferenceTitle>
+      <ReleaseResourceReferenceList>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A13</ReleaseResourceReference>
+      </ReleaseResourceReferenceList>
+      <ReleaseType>TrackRelease</ReleaseType>
+      <ReleaseDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <DisplayArtistName>Grits</DisplayArtistName>
+        <LabelName>Gotee Records</LabelName>
+        <Title TitleType="FormalTitle">
+          <TitleText>Make Room</TitleText>
+        </Title>
+        <Title TitleType="DisplayTitle">
+          <TitleText>Make Room</TitleText>
+        </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName>
+            <FullName>Grits</FullName>
+          </PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
+        <RelatedRelease>
+          <ReleaseId>
+            <ICPN IsEan="false">669447000013</ICPN>
+          </ReleaseId>
+          <ReleaseRelationshipType>IsReleaseFromRelease</ReleaseRelationshipType>
+        </RelatedRelease>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+        <ResourceGroup>
+          <ResourceGroupContentItem>
+            <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A13</ReleaseResourceReference>
+          </ResourceGroupContentItem>
+        </ResourceGroup>
+        <Genre>
+          <GenreText>Hip Hop/Rap</GenreText>
+        </Genre>
+        <ReleaseDate>2012-02-01</ReleaseDate>
+        <OriginalReleaseDate>2002-08-06</OriginalReleaseDate>
+      </ReleaseDetailsByTerritory>
+      <PLine>
+        <Year>2012</Year>
+        <PLineText>Gotee Records</PLineText>
+      </PLine>
+      <CLine>
+        <Year>2012</Year>
+        <CLineText>Gotee Records</CLineText>
+      </CLine>
+    </Release>
+    <Release>
+      <ReleaseId>
+        <ISRC>USGOT0203028</ISRC>
+      </ReleaseId>
+      <ReleaseReference>R14</ReleaseReference>
+      <ReferenceTitle>
+        <TitleText>Keep Movin' (Interlude)</TitleText>
+      </ReferenceTitle>
+      <ReleaseResourceReferenceList>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A14</ReleaseResourceReference>
+      </ReleaseResourceReferenceList>
+      <ReleaseType>TrackRelease</ReleaseType>
+      <ReleaseDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <DisplayArtistName>Grits</DisplayArtistName>
+        <LabelName>Gotee Records</LabelName>
+        <Title TitleType="FormalTitle">
+          <TitleText>Keep Movin' (Interlude)</TitleText>
+        </Title>
+        <Title TitleType="DisplayTitle">
+          <TitleText>Keep Movin' (Interlude)</TitleText>
+        </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName>
+            <FullName>Grits</FullName>
+          </PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
+        <RelatedRelease>
+          <ReleaseId>
+            <ICPN IsEan="false">669447000013</ICPN>
+          </ReleaseId>
+          <ReleaseRelationshipType>IsReleaseFromRelease</ReleaseRelationshipType>
+        </RelatedRelease>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+        <ResourceGroup>
+          <ResourceGroupContentItem>
+            <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A14</ReleaseResourceReference>
+          </ResourceGroupContentItem>
+        </ResourceGroup>
+        <Genre>
+          <GenreText>Hip Hop/Rap</GenreText>
+        </Genre>
+        <ReleaseDate>2012-02-01</ReleaseDate>
+        <OriginalReleaseDate>2002-08-06</OriginalReleaseDate>
+      </ReleaseDetailsByTerritory>
+      <PLine>
+        <Year>2017</Year>
+        <PLineText>Gotee Records</PLineText>
+      </PLine>
+      <CLine>
+        <Year>2012</Year>
+        <CLineText>Gotee Records</CLineText>
+      </CLine>
+    </Release>
+    <Release>
+      <ReleaseId>
+        <ISRC>USGOT0203029</ISRC>
+      </ReleaseId>
+      <ReleaseReference>R15</ReleaseReference>
+      <ReferenceTitle>
+        <TitleText>Sunny Days</TitleText>
+      </ReferenceTitle>
+      <ReleaseResourceReferenceList>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A15</ReleaseResourceReference>
+      </ReleaseResourceReferenceList>
+      <ReleaseType>TrackRelease</ReleaseType>
+      <ReleaseDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <DisplayArtistName>Grits</DisplayArtistName>
+        <LabelName>Gotee Records</LabelName>
+        <Title TitleType="FormalTitle">
+          <TitleText>Sunny Days</TitleText>
+        </Title>
+        <Title TitleType="DisplayTitle">
+          <TitleText>Sunny Days</TitleText>
+        </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName>
+            <FullName>Grits</FullName>
+          </PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
+        <RelatedRelease>
+          <ReleaseId>
+            <ICPN IsEan="false">669447000013</ICPN>
+          </ReleaseId>
+          <ReleaseRelationshipType>IsReleaseFromRelease</ReleaseRelationshipType>
+        </RelatedRelease>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+        <ResourceGroup>
+          <ResourceGroupContentItem>
+            <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A15</ReleaseResourceReference>
+          </ResourceGroupContentItem>
+        </ResourceGroup>
+        <Genre>
+          <GenreText>Hip Hop/Rap</GenreText>
+        </Genre>
+        <ReleaseDate>2012-02-01</ReleaseDate>
+        <OriginalReleaseDate>2002-08-06</OriginalReleaseDate>
+      </ReleaseDetailsByTerritory>
+      <PLine>
+        <Year>2012</Year>
+        <PLineText>Gotee Records</PLineText>
+      </PLine>
+      <CLine>
+        <Year>2012</Year>
+        <CLineText>Gotee Records</CLineText>
+      </CLine>
+    </Release>
+    <Release>
+      <ReleaseId>
+        <ISRC>USGOT0203030</ISRC>
+      </ReleaseId>
+      <ReleaseReference>R16</ReleaseReference>
+      <ReferenceTitle>
+        <TitleText>Lovechild</TitleText>
+      </ReferenceTitle>
+      <ReleaseResourceReferenceList>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A16</ReleaseResourceReference>
+      </ReleaseResourceReferenceList>
+      <ReleaseType>TrackRelease</ReleaseType>
+      <ReleaseDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <DisplayArtistName>Grits</DisplayArtistName>
+        <LabelName>Gotee Records</LabelName>
+        <Title TitleType="FormalTitle">
+          <TitleText>Lovechild</TitleText>
+        </Title>
+        <Title TitleType="DisplayTitle">
+          <TitleText>Lovechild</TitleText>
+        </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName>
+            <FullName>Grits</FullName>
+          </PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
+        <RelatedRelease>
+          <ReleaseId>
+            <ICPN IsEan="false">669447000013</ICPN>
+          </ReleaseId>
+          <ReleaseRelationshipType>IsReleaseFromRelease</ReleaseRelationshipType>
+        </RelatedRelease>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+        <ResourceGroup>
+          <ResourceGroupContentItem>
+            <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A16</ReleaseResourceReference>
+          </ResourceGroupContentItem>
+        </ResourceGroup>
+        <Genre>
+          <GenreText>Hip Hop/Rap</GenreText>
+        </Genre>
+        <ReleaseDate>2012-02-01</ReleaseDate>
+        <OriginalReleaseDate>2002-08-06</OriginalReleaseDate>
+      </ReleaseDetailsByTerritory>
+      <PLine>
+        <Year>2017</Year>
+        <PLineText>Gotee Records</PLineText>
+      </PLine>
+      <CLine>
+        <Year>2012</Year>
+        <CLineText>Gotee Records</CLineText>
+      </CLine>
+    </Release>
+    <Release>
+      <ReleaseId>
+        <ISRC>USGOT0203031</ISRC>
+      </ReleaseId>
+      <ReleaseReference>R17</ReleaseReference>
+      <ReferenceTitle>
+        <TitleText>The Art Of Translation</TitleText>
+      </ReferenceTitle>
+      <ReleaseResourceReferenceList>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A17</ReleaseResourceReference>
+      </ReleaseResourceReferenceList>
+      <ReleaseType>TrackRelease</ReleaseType>
+      <ReleaseDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <DisplayArtistName>Grits</DisplayArtistName>
+        <LabelName>Gotee Records</LabelName>
+        <Title TitleType="FormalTitle">
+          <TitleText>The Art Of Translation</TitleText>
+        </Title>
+        <Title TitleType="DisplayTitle">
+          <TitleText>The Art Of Translation</TitleText>
+        </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName>
+            <FullName>Grits</FullName>
+          </PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
+        <RelatedRelease>
+          <ReleaseId>
+            <ICPN IsEan="false">669447000013</ICPN>
+          </ReleaseId>
+          <ReleaseRelationshipType>IsReleaseFromRelease</ReleaseRelationshipType>
+        </RelatedRelease>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+        <ResourceGroup>
+          <ResourceGroupContentItem>
+            <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A17</ReleaseResourceReference>
+          </ResourceGroupContentItem>
+        </ResourceGroup>
+        <Genre>
+          <GenreText>Hip Hop/Rap</GenreText>
+        </Genre>
+        <ReleaseDate>2012-02-01</ReleaseDate>
+        <OriginalReleaseDate>2002-08-06</OriginalReleaseDate>
+      </ReleaseDetailsByTerritory>
+      <PLine>
+        <Year>2017</Year>
+        <PLineText>Gotee Records</PLineText>
+      </PLine>
+      <CLine>
+        <Year>2012</Year>
+        <CLineText>Gotee Records</CLineText>
+      </CLine>
+    </Release>
+  </ReleaseList>
+  <DealList>
+    <ReleaseDeal>
+      <DealReleaseReference>R0</DealReleaseReference>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+          <Usage>
+            <UseType>PermanentDownload</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">FRONT</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">FRONT</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>SubscriptionModel</CommercialModelType>
+          <Usage>
+            <UseType>ConditionalDownload</UseType>
+            <UseType>OnDemandStream</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">FRONT</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">FRONT</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+          <Usage>
+            <UseType>OnDemandStream</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">FRONT</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">FRONT</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <EffectiveDate>2018-02-05</EffectiveDate>
+    </ReleaseDeal>
+    <ReleaseDeal>
+      <DealReleaseReference>R1</DealReleaseReference>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+          <Usage>
+            <UseType>PermanentDownload</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">MID</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">MID</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>SubscriptionModel</CommercialModelType>
+          <Usage>
+            <UseType>ConditionalDownload</UseType>
+            <UseType>OnDemandStream</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">MID</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">MID</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+          <Usage>
+            <UseType>OnDemandStream</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">MID</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">MID</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <EffectiveDate>2018-02-05</EffectiveDate>
+    </ReleaseDeal>
+    <ReleaseDeal>
+      <DealReleaseReference>R2</DealReleaseReference>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+          <Usage>
+            <UseType>PermanentDownload</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">MID</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">MID</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>SubscriptionModel</CommercialModelType>
+          <Usage>
+            <UseType>ConditionalDownload</UseType>
+            <UseType>OnDemandStream</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">MID</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">MID</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+          <Usage>
+            <UseType>OnDemandStream</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">MID</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">MID</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <EffectiveDate>2018-02-05</EffectiveDate>
+    </ReleaseDeal>
+    <ReleaseDeal>
+      <DealReleaseReference>R3</DealReleaseReference>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+          <Usage>
+            <UseType>PermanentDownload</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">MID</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">MID</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>SubscriptionModel</CommercialModelType>
+          <Usage>
+            <UseType>ConditionalDownload</UseType>
+            <UseType>OnDemandStream</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">MID</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">MID</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+          <Usage>
+            <UseType>OnDemandStream</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">MID</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">MID</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <EffectiveDate>2018-02-05</EffectiveDate>
+    </ReleaseDeal>
+    <ReleaseDeal>
+      <DealReleaseReference>R4</DealReleaseReference>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+          <Usage>
+            <UseType>PermanentDownload</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">MID</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">MID</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>SubscriptionModel</CommercialModelType>
+          <Usage>
+            <UseType>ConditionalDownload</UseType>
+            <UseType>OnDemandStream</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">MID</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">MID</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+          <Usage>
+            <UseType>OnDemandStream</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">MID</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">MID</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <EffectiveDate>2018-02-05</EffectiveDate>
+    </ReleaseDeal>
+    <ReleaseDeal>
+      <DealReleaseReference>R5</DealReleaseReference>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+          <Usage>
+            <UseType>PermanentDownload</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">MID</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">MID</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>SubscriptionModel</CommercialModelType>
+          <Usage>
+            <UseType>ConditionalDownload</UseType>
+            <UseType>OnDemandStream</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">MID</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">MID</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+          <Usage>
+            <UseType>OnDemandStream</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">MID</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">MID</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <EffectiveDate>2018-02-05</EffectiveDate>
+    </ReleaseDeal>
+    <ReleaseDeal>
+      <DealReleaseReference>R6</DealReleaseReference>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+          <Usage>
+            <UseType>PermanentDownload</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">MID</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">MID</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>SubscriptionModel</CommercialModelType>
+          <Usage>
+            <UseType>ConditionalDownload</UseType>
+            <UseType>OnDemandStream</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">MID</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">MID</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+          <Usage>
+            <UseType>OnDemandStream</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">MID</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">MID</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <EffectiveDate>2018-02-05</EffectiveDate>
+    </ReleaseDeal>
+    <ReleaseDeal>
+      <DealReleaseReference>R7</DealReleaseReference>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+          <Usage>
+            <UseType>PermanentDownload</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">MID</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">MID</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>SubscriptionModel</CommercialModelType>
+          <Usage>
+            <UseType>ConditionalDownload</UseType>
+            <UseType>OnDemandStream</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">MID</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">MID</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+          <Usage>
+            <UseType>OnDemandStream</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">MID</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">MID</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <EffectiveDate>2018-02-05</EffectiveDate>
+    </ReleaseDeal>
+    <ReleaseDeal>
+      <DealReleaseReference>R8</DealReleaseReference>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+          <Usage>
+            <UseType>PermanentDownload</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">MID</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">MID</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>SubscriptionModel</CommercialModelType>
+          <Usage>
+            <UseType>ConditionalDownload</UseType>
+            <UseType>OnDemandStream</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">MID</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">MID</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+          <Usage>
+            <UseType>OnDemandStream</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">MID</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">MID</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <EffectiveDate>2018-02-05</EffectiveDate>
+    </ReleaseDeal>
+    <ReleaseDeal>
+      <DealReleaseReference>R9</DealReleaseReference>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+          <Usage>
+            <UseType>PermanentDownload</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">MID</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">MID</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>SubscriptionModel</CommercialModelType>
+          <Usage>
+            <UseType>ConditionalDownload</UseType>
+            <UseType>OnDemandStream</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">MID</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">MID</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+          <Usage>
+            <UseType>OnDemandStream</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">MID</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">MID</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <EffectiveDate>2018-02-05</EffectiveDate>
+    </ReleaseDeal>
+    <ReleaseDeal>
+      <DealReleaseReference>R10</DealReleaseReference>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+          <Usage>
+            <UseType>PermanentDownload</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">MID</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">MID</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>SubscriptionModel</CommercialModelType>
+          <Usage>
+            <UseType>ConditionalDownload</UseType>
+            <UseType>OnDemandStream</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">MID</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">MID</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+          <Usage>
+            <UseType>OnDemandStream</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">MID</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">MID</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <EffectiveDate>2018-02-05</EffectiveDate>
+    </ReleaseDeal>
+    <ReleaseDeal>
+      <DealReleaseReference>R11</DealReleaseReference>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+          <Usage>
+            <UseType>PermanentDownload</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">MID</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">MID</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>SubscriptionModel</CommercialModelType>
+          <Usage>
+            <UseType>ConditionalDownload</UseType>
+            <UseType>OnDemandStream</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">MID</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">MID</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+          <Usage>
+            <UseType>OnDemandStream</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">MID</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">MID</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <EffectiveDate>2018-02-05</EffectiveDate>
+    </ReleaseDeal>
+    <ReleaseDeal>
+      <DealReleaseReference>R12</DealReleaseReference>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+          <Usage>
+            <UseType>PermanentDownload</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">MID</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">MID</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>SubscriptionModel</CommercialModelType>
+          <Usage>
+            <UseType>ConditionalDownload</UseType>
+            <UseType>OnDemandStream</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">MID</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">MID</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+          <Usage>
+            <UseType>OnDemandStream</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">MID</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">MID</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <EffectiveDate>2018-02-05</EffectiveDate>
+    </ReleaseDeal>
+    <ReleaseDeal>
+      <DealReleaseReference>R13</DealReleaseReference>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+          <Usage>
+            <UseType>PermanentDownload</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">MID</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">MID</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>SubscriptionModel</CommercialModelType>
+          <Usage>
+            <UseType>ConditionalDownload</UseType>
+            <UseType>OnDemandStream</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">MID</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">MID</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+          <Usage>
+            <UseType>OnDemandStream</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">MID</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">MID</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <EffectiveDate>2018-02-05</EffectiveDate>
+    </ReleaseDeal>
+    <ReleaseDeal>
+      <DealReleaseReference>R14</DealReleaseReference>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+          <Usage>
+            <UseType>PermanentDownload</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">MID</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">MID</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>SubscriptionModel</CommercialModelType>
+          <Usage>
+            <UseType>ConditionalDownload</UseType>
+            <UseType>OnDemandStream</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">MID</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">MID</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+          <Usage>
+            <UseType>OnDemandStream</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">MID</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">MID</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <EffectiveDate>2018-02-05</EffectiveDate>
+    </ReleaseDeal>
+    <ReleaseDeal>
+      <DealReleaseReference>R15</DealReleaseReference>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+          <Usage>
+            <UseType>PermanentDownload</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">MID</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">MID</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>SubscriptionModel</CommercialModelType>
+          <Usage>
+            <UseType>ConditionalDownload</UseType>
+            <UseType>OnDemandStream</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">MID</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">MID</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+          <Usage>
+            <UseType>OnDemandStream</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">MID</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">MID</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <EffectiveDate>2018-02-05</EffectiveDate>
+    </ReleaseDeal>
+    <ReleaseDeal>
+      <DealReleaseReference>R16</DealReleaseReference>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+          <Usage>
+            <UseType>PermanentDownload</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">MID</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">MID</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>SubscriptionModel</CommercialModelType>
+          <Usage>
+            <UseType>ConditionalDownload</UseType>
+            <UseType>OnDemandStream</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">MID</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">MID</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+          <Usage>
+            <UseType>OnDemandStream</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">MID</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">MID</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <EffectiveDate>2018-02-05</EffectiveDate>
+    </ReleaseDeal>
+    <ReleaseDeal>
+      <DealReleaseReference>R17</DealReleaseReference>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+          <Usage>
+            <UseType>PermanentDownload</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">MID</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">MID</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>SubscriptionModel</CommercialModelType>
+          <Usage>
+            <UseType>ConditionalDownload</UseType>
+            <UseType>OnDemandStream</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">MID</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">MID</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+          <Usage>
+            <UseType>OnDemandStream</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <PriceInformation>
+            <PriceRangeType Namespace="PADPIDA20110330020">MID</PriceRangeType>
+            <PriceType Namespace="PADPIDA20110330020">MID</PriceType>
+          </PriceInformation>
+          <ValidityPeriod>
+            <StartDate>2012-02-01</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <EffectiveDate>2018-02-05</EffectiveDate>
+    </ReleaseDeal>
+  </DealList>
+</ern:NewReleaseMessage>

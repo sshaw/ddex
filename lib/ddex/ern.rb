@@ -3,20 +3,30 @@ require "nokogiri"
 
 module DDEX
   module ERN
+    autoload :V32,  "ddex/ern/v32"
     autoload :V33,  "ddex/ern/v33"
     autoload :V34,  "ddex/ern/v34"
     autoload :V341, "ddex/ern/v341"
     autoload :V35,  "ddex/ern/v35"
     autoload :V351, "ddex/ern/v351"
     autoload :V36,  "ddex/ern/v36"
+    autoload :V371,  "ddex/ern/v371"
+    autoload :V37D2,  "ddex/ern/v37_d2"
     autoload :V37,  "ddex/ern/v37"
     autoload :V38,  "ddex/ern/v38"
     autoload :V381,  "ddex/ern/v381"
+    autoload :V382,  "ddex/ern/v382"
 
     ROOT_ELEMENT = "NewReleaseMessage".freeze
     VERSION_ATTR = "MessageSchemaVersionId".freeze
 
     DEFAULT_CONFIG  = {
+      "V382" => {
+        :schema => "http://ddex.net/xml/ern/382/release-notification.xsd",
+        :version => "3.8.2",
+        :message_schema_version_id => "ern/382"
+      },
+
       "V381" => {
         :schema => "http://ddex.net/xml/ern/381/release-notification.xsd",
         :version => "3.8.1",
@@ -27,6 +37,18 @@ module DDEX
         :schema => "http://ddex.net/xml/ern/38/release-notification.xsd",
         :version => "3.8",
         :message_schema_version_id => "ern/38"
+      },
+
+      "V371" => {
+        :schema => "http://ddex.net/xml/ern/371/release-notification.xsd",
+        :version => "3.7.1",
+        :message_schema_version_id => "ern/371"
+      },
+
+      "V37D2" => {
+        :schema => "http://ddex.net/xml/ern/37D2/release-notification.xsd",
+        :version => "3.7_D2",
+        :message_schema_version_id => "ern/37D2"
       },
 
       "V37" => {
@@ -69,6 +91,12 @@ module DDEX
         :schema => "http://ddex.net/xml/2011/ern-main/33/ern-main.xsd",
         :version => "3.3",
         :message_schema_version_id => "2011/ern-main/33"
+      },
+
+      "V32" => {
+        :schema => "http://ddex.net/xml/2010/ern-main/32/ern-main.xsd",
+        :version => "3.2",
+        :message_schema_version_id => "2010/ern-main/32"
       }
     }.freeze
 
