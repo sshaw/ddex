@@ -29,7 +29,7 @@ class RightShare < Element
   include ROXML
 
 
-  xml_name "ns1:RightShare"
+  xml_name "RightShare"
 
       xml_accessor :right_share_id, :as => RightsAgreementId, :from => "RightShareId", :required => false
       xml_accessor :right_share_reference, :from => "RightShareReference", :required => true

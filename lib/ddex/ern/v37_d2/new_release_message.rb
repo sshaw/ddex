@@ -26,7 +26,7 @@ class NewReleaseMessage < Element
 
     setns "ns1", "http://ddex.net/xml/ern/37D2"
 
-  xml_name "ns1:NewReleaseMessage"
+  xml_name "NewReleaseMessage"
 
       xml_accessor :message_header, :as => MessageHeader, :from => "MessageHeader", :required => true
       xml_accessor :update_indicator, :from => "UpdateIndicator", :required => false

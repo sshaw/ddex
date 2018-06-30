@@ -19,7 +19,7 @@ class PartyDescriptor < Element
   include ROXML
 
 
-  xml_name "ns1:PartyDescriptor"
+  xml_name "PartyDescriptor"
 
       xml_accessor :party_names, :as => [PartyName], :from => "PartyName", :required => false
       xml_accessor :party_ids, :as => [PartyId], :from => "PartyId", :required => false

@@ -25,7 +25,7 @@ class TechnicalSheetMusicDetails < Element
   include ROXML
 
 
-  xml_name "ns1:TechnicalSheetMusicDetails"
+  xml_name "TechnicalSheetMusicDetails"
 
       xml_accessor :technical_resource_details_reference, :from => "TechnicalResourceDetailsReference", :required => true
       xml_accessor :drm_platform_type, :as => DrmPlatformType, :from => "DrmPlatformType", :required => false

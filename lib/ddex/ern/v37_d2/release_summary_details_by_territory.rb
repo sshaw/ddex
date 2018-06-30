@@ -21,7 +21,7 @@ class ReleaseSummaryDetailsByTerritory < Element
   include ROXML
 
 
-  xml_name "ns1:ReleaseSummaryDetailsByTerritory"
+  xml_name "ReleaseSummaryDetailsByTerritory"
 
       xml_accessor :excluded_territory_codes, :as => [CurrentTerritoryCode], :from => "ExcludedTerritoryCode", :required => false
       xml_accessor :territory_codes, :as => [CurrentTerritoryCode], :from => "TerritoryCode", :required => false

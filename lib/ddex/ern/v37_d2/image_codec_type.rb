@@ -17,7 +17,7 @@ class ImageCodecType < Element
   include ROXML
 
 
-  xml_name "ns1:ImageCodecType"
+  xml_name "ImageCodecType"
 
 
     xml_accessor :value, :from => ".", :required => false

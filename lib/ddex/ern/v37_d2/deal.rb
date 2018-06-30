@@ -22,7 +22,7 @@ class Deal < Element
   include ROXML
 
 
-  xml_name "ns1:Deal"
+  xml_name "Deal"
 
       xml_accessor :deal_references, :as => [DealReference], :from => "DealReference", :required => false
       xml_accessor :deal_terms, :as => DealTerms, :from => "DealTerms", :required => false

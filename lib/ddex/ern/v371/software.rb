@@ -25,7 +25,7 @@ class Software < Element
   include ROXML
 
 
-  xml_name "ns1:Software"
+  xml_name "Software"
 
       xml_accessor :software_type, :as => SoftwareType, :from => "SoftwareType", :required => false
       xml_accessor :artist_related?, :from => "IsArtistRelated", :required => false

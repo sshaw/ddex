@@ -21,7 +21,7 @@ class CatalogTransfer < Element
   include ROXML
 
 
-  xml_name "ns1:CatalogTransfer"
+  xml_name "CatalogTransfer"
 
       xml_accessor :catalog_transfer_completed?, :from => "CatalogTransferCompleted", :required => false
       xml_accessor :effective_transfer_date, :as => EventDate, :from => "EffectiveTransferDate", :required => false

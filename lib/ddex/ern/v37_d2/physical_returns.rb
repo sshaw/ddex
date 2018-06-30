@@ -17,7 +17,7 @@ class PhysicalReturns < Element
   include ROXML
 
 
-  xml_name "ns1:PhysicalReturns"
+  xml_name "PhysicalReturns"
 
       xml_accessor :physical_returns_allowed?, :from => "PhysicalReturnsAllowed", :required => false
       xml_accessor :latest_date_for_physical_returns, :as => Date, :from => "LatestDateForPhysicalReturns", :required => false

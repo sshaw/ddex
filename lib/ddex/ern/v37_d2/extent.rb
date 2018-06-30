@@ -17,7 +17,7 @@ class Extent < Element
   include ROXML
 
 
-  xml_name "ns1:Extent"
+  xml_name "Extent"
 
 
     xml_accessor :value, :from => ".", :required => false

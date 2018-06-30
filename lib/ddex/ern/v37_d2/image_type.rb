@@ -17,7 +17,7 @@ class ImageType < Element
   include ROXML
 
 
-  xml_name "ns1:ImageType"
+  xml_name "ImageType"
 
 
     xml_accessor :value, :from => ".", :required => false

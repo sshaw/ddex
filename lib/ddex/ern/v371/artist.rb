@@ -20,7 +20,7 @@ class Artist < Element
   include ROXML
 
 
-  xml_name "ns1:Artist"
+  xml_name "Artist"
 
       xml_accessor :party_names, :as => [PartyName], :from => "PartyName", :required => false
       xml_accessor :party_ids, :as => [PartyId], :from => "PartyId", :required => false

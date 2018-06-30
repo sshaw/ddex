@@ -18,7 +18,7 @@ class DealList < Element
   include ROXML
 
 
-  xml_name "ns1:DealList"
+  xml_name "DealList"
 
       xml_accessor :release_deals, :as => [ReleaseDeal], :from => "ReleaseDeal", :required => false
 

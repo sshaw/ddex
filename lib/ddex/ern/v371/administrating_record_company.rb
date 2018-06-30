@@ -19,7 +19,7 @@ class AdministratingRecordCompany < Element
   include ROXML
 
 
-  xml_name "ns1:AdministratingRecordCompany"
+  xml_name "AdministratingRecordCompany"
 
       xml_accessor :party_names, :as => [PartyName], :from => "PartyName", :required => false
       xml_accessor :party_ids, :as => [PartyId], :from => "PartyId", :required => false

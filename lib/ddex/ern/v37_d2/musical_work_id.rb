@@ -18,7 +18,7 @@ class MusicalWorkId < Element
   include ROXML
 
 
-  xml_name "ns1:MusicalWorkId"
+  xml_name "MusicalWorkId"
 
       xml_accessor :iswc, :from => "ISWC", :required => false
       xml_accessor :opus_number, :from => "OpusNumber", :required => false

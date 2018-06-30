@@ -17,7 +17,7 @@ class ParentalWarningType < Element
   include ROXML
 
 
-  xml_name "ns1:ParentalWarningType"
+  xml_name "ParentalWarningType"
 
 
     xml_accessor :value, :from => ".", :required => false

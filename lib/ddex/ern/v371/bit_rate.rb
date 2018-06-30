@@ -17,7 +17,7 @@ class BitRate < Element
   include ROXML
 
 
-  xml_name "ns1:BitRate"
+  xml_name "BitRate"
 
 
     xml_accessor :value, :from => ".", :required => false

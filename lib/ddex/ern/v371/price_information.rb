@@ -21,7 +21,7 @@ class PriceInformation < Element
   include ROXML
 
 
-  xml_name "ns1:PriceInformation"
+  xml_name "PriceInformation"
 
       xml_accessor :description, :as => Description, :from => "Description", :required => false
       xml_accessor :price_range_type, :as => PriceRangeType, :from => "PriceRangeType", :required => false

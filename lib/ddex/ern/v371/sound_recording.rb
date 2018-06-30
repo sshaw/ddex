@@ -29,7 +29,7 @@ class SoundRecording < Element
   include ROXML
 
 
-  xml_name "ns1:SoundRecording"
+  xml_name "SoundRecording"
 
       xml_accessor :sound_recording_type, :as => SoundRecordingType, :from => "SoundRecordingType", :required => false
       xml_accessor :artist_related?, :from => "IsArtistRelated", :required => false

@@ -25,7 +25,7 @@ class TechnicalTextDetails < Element
   include ROXML
 
 
-  xml_name "ns1:TechnicalTextDetails"
+  xml_name "TechnicalTextDetails"
 
       xml_accessor :technical_resource_details_reference, :from => "TechnicalResourceDetailsReference", :required => true
       xml_accessor :drm_platform_type, :as => DrmPlatformType, :from => "DrmPlatformType", :required => false

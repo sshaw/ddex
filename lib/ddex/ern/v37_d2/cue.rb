@@ -30,7 +30,7 @@ class Cue < Element
   include ROXML
 
 
-  xml_name "ns1:Cue"
+  xml_name "Cue"
 
       xml_accessor :cue_use_type, :as => CueUseType, :from => "CueUseType", :required => false
       xml_accessor :cue_theme_type, :as => CueThemeType, :from => "CueThemeType", :required => false

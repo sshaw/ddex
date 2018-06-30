@@ -17,7 +17,7 @@ class CLine < Element
   include ROXML
 
 
-  xml_name "ns1:CLine"
+  xml_name "CLine"
 
       xml_accessor :year, :from => "Year", :required => false
       xml_accessor :c_line_company, :from => "CLineCompany", :required => false

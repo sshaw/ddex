@@ -29,7 +29,7 @@ class DetailedResourceContributor < Element
   include ROXML
 
 
-  xml_name "ns1:DetailedResourceContributor"
+  xml_name "DetailedResourceContributor"
 
       xml_accessor :party_names, :as => [PartyName], :from => "PartyName", :required => false
       xml_accessor :party_ids, :as => [PartyId], :from => "PartyId", :required => false

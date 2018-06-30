@@ -27,7 +27,7 @@ class CatalogItem < Element
   include ROXML
 
 
-  xml_name "ns1:CatalogItem"
+  xml_name "CatalogItem"
 
       xml_accessor :territory_codes, :as => [AllTerritoryCode], :from => "TerritoryCode", :required => true
       xml_accessor :release_ids, :as => [ReleaseId], :from => "ReleaseId", :required => true

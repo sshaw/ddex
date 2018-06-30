@@ -18,7 +18,7 @@ class CollectionList < Element
   include ROXML
 
 
-  xml_name "ns1:CollectionList"
+  xml_name "CollectionList"
 
       xml_accessor :collections, :as => [Collection], :from => "Collection", :required => true
 

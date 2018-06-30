@@ -17,7 +17,7 @@ class SoftwareType < Element
   include ROXML
 
 
-  xml_name "ns1:SoftwareType"
+  xml_name "SoftwareType"
 
 
     xml_accessor :value, :from => ".", :required => false

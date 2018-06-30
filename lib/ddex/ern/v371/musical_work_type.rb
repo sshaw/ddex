@@ -17,7 +17,7 @@ class MusicalWorkType < Element
   include ROXML
 
 
-  xml_name "ns1:MusicalWorkType"
+  xml_name "MusicalWorkType"
 
 
     xml_accessor :value, :from => ".", :required => false

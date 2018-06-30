@@ -21,7 +21,7 @@ class MusicalWorkContributor < Element
   include ROXML
 
 
-  xml_name "ns1:MusicalWorkContributor"
+  xml_name "MusicalWorkContributor"
 
       xml_accessor :party_names, :as => [PartyName], :from => "PartyName", :required => false
       xml_accessor :party_ids, :as => [PartyId], :from => "PartyId", :required => false

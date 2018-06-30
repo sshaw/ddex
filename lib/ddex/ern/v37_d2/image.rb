@@ -22,7 +22,7 @@ class Image < Element
   include ROXML
 
 
-  xml_name "ns1:Image"
+  xml_name "Image"
 
       xml_accessor :image_type, :as => ImageType, :from => "ImageType", :required => false
       xml_accessor :artist_related?, :from => "IsArtistRelated", :required => false

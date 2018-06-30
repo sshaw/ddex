@@ -17,7 +17,7 @@ class CollectionResourceReference < Element
   include ROXML
 
 
-  xml_name "ns1:CollectionResourceReference"
+  xml_name "CollectionResourceReference"
 
       xml_accessor :sequence_number, :as => Integer, :from => "SequenceNumber", :required => false
       xml_accessor :collection_resource_reference, :from => "CollectionResourceReference", :required => true

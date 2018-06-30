@@ -20,7 +20,7 @@ class CueSheet < Element
   include ROXML
 
 
-  xml_name "ns1:CueSheet"
+  xml_name "CueSheet"
 
       xml_accessor :cue_sheet_ids, :as => [ProprietaryId], :from => "CueSheetId", :required => false
       xml_accessor :cue_sheet_reference, :from => "CueSheetReference", :required => true

@@ -17,7 +17,7 @@ class LinkedReleaseResourceReference < Element
   include ROXML
 
 
-  xml_name "ns1:LinkedReleaseResourceReference"
+  xml_name "LinkedReleaseResourceReference"
 
 
     xml_accessor :value, :from => ".", :required => false

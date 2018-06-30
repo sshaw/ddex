@@ -17,7 +17,7 @@ class HashSumAlgorithmType < Element
   include ROXML
 
 
-  xml_name "ns1:HashSumAlgorithmType"
+  xml_name "HashSumAlgorithmType"
 
 
     xml_accessor :value, :from => ".", :required => false

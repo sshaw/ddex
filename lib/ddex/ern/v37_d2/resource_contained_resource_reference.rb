@@ -18,7 +18,7 @@ class ResourceContainedResourceReference < Element
   include ROXML
 
 
-  xml_name "ns1:ResourceContainedResourceReference"
+  xml_name "ResourceContainedResourceReference"
 
       xml_accessor :resource_contained_resource_reference, :from => "ResourceContainedResourceReference", :required => true
       xml_accessor :duration_used, :from => "DurationUsed", :required => false

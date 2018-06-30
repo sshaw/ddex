@@ -17,7 +17,7 @@ class CommercialModelType < Element
   include ROXML
 
 
-  xml_name "ns1:CommercialModelType"
+  xml_name "CommercialModelType"
 
 
     xml_accessor :value, :from => ".", :required => false

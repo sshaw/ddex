@@ -19,7 +19,7 @@ class VideoId < Element
   include ROXML
 
 
-  xml_name "ns1:VideoId"
+  xml_name "VideoId"
 
       xml_accessor :isrc, :from => "ISRC", :required => false
       xml_accessor :isan, :from => "ISAN", :required => false

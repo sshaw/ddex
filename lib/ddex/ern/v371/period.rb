@@ -19,7 +19,7 @@ class Period < Element
   include ROXML
 
 
-  xml_name "ns1:Period"
+  xml_name "Period"
 
       xml_accessor :start_date_time, :as => EventDateTime, :from => "StartDateTime", :required => false
       xml_accessor :end_date_time, :as => EventDateTime, :from => "EndDateTime", :required => false

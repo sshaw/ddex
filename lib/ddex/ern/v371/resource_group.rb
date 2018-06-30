@@ -26,7 +26,7 @@ class ResourceGroup < Element
   include ROXML
 
 
-  xml_name "ns1:ResourceGroup"
+  xml_name "ResourceGroup"
 
       xml_accessor :titles, :as => [Title], :from => "Title", :required => false
       xml_accessor :sequence_number, :as => Integer, :from => "SequenceNumber", :required => false

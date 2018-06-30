@@ -25,7 +25,7 @@ class ResourceList < Element
   include ROXML
 
 
-  xml_name "ns1:ResourceList"
+  xml_name "ResourceList"
 
       xml_accessor :sound_recordings, :as => [SoundRecording], :from => "SoundRecording", :required => false
       xml_accessor :midis, :as => [MIDI], :from => "MIDI", :required => false

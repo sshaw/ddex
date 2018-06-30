@@ -20,7 +20,7 @@ class TypedRightsController < Element
   include ROXML
 
 
-  xml_name "ns1:TypedRightsController"
+  xml_name "TypedRightsController"
 
       xml_accessor :party_names, :as => [PartyName], :from => "PartyName", :required => false
       xml_accessor :party_ids, :as => [PartyId], :from => "PartyId", :required => false

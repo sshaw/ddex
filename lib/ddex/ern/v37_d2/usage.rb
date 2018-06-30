@@ -22,7 +22,7 @@ class Usage < Element
   include ROXML
 
 
-  xml_name "ns1:Usage"
+  xml_name "Usage"
 
       xml_accessor :use_types, :as => [UseType], :from => "UseType", :required => true
       xml_accessor :user_interface_types, :as => [UserInterfaceType], :from => "UserInterfaceType", :required => false

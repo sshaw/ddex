@@ -18,7 +18,7 @@ class TechnicalInstantiation < Element
   include ROXML
 
 
-  xml_name "ns1:TechnicalInstantiation"
+  xml_name "TechnicalInstantiation"
 
       xml_accessor :drm_enforcement_type, :from => "DrmEnforcementType", :required => false
       xml_accessor :video_definition_type, :from => "VideoDefinitionType", :required => false

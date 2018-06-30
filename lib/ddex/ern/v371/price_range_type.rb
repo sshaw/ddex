@@ -17,7 +17,7 @@ class PriceRangeType < Element
   include ROXML
 
 
-  xml_name "ns1:PriceRangeType"
+  xml_name "PriceRangeType"
 
 
     xml_accessor :value, :from => ".", :required => false

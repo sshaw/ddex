@@ -17,7 +17,7 @@ class DrmPlatformType < Element
   include ROXML
 
 
-  xml_name "ns1:DrmPlatformType"
+  xml_name "DrmPlatformType"
 
 
     xml_accessor :value, :from => ".", :required => false

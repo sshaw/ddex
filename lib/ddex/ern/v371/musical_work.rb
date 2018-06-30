@@ -24,7 +24,7 @@ class MusicalWork < Element
   include ROXML
 
 
-  xml_name "ns1:MusicalWork"
+  xml_name "MusicalWork"
 
       xml_accessor :musical_work_ids, :as => [MusicalWorkId], :from => "MusicalWorkId", :required => true
       xml_accessor :musical_work_reference, :from => "MusicalWorkReference", :required => true

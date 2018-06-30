@@ -20,7 +20,7 @@ class CatalogListMessage < Element
 
     setns "ns1", "http://ddex.net/xml/ern/371"
 
-  xml_name "ns1:CatalogListMessage"
+  xml_name "CatalogListMessage"
 
       xml_accessor :message_header, :as => MessageHeader, :from => "MessageHeader", :required => true
       xml_accessor :publication_date, :as => DateTime, :from => "PublicationDate", :required => true

@@ -17,7 +17,7 @@ class PLine < Element
   include ROXML
 
 
-  xml_name "ns1:PLine"
+  xml_name "PLine"
 
       xml_accessor :year, :from => "Year", :required => false
       xml_accessor :p_line_company, :from => "PLineCompany", :required => false

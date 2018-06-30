@@ -18,7 +18,7 @@ class ResourceContainedResourceReferenceList < Element
   include ROXML
 
 
-  xml_name "ns1:ResourceContainedResourceReferenceList"
+  xml_name "ResourceContainedResourceReferenceList"
 
       xml_accessor :resource_contained_resource_references, :as => [ResourceContainedResourceReference], :from => "ResourceContainedResourceReference", :required => true
 

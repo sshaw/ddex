@@ -18,7 +18,7 @@ class ImageId < Element
   include ROXML
 
 
-  xml_name "ns1:ImageId"
+  xml_name "ImageId"
 
       xml_accessor :proprietary_ids, :as => [ProprietaryId], :from => "ProprietaryId", :required => true
 

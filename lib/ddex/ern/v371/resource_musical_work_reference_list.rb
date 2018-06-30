@@ -18,7 +18,7 @@ class ResourceMusicalWorkReferenceList < Element
   include ROXML
 
 
-  xml_name "ns1:ResourceMusicalWorkReferenceList"
+  xml_name "ResourceMusicalWorkReferenceList"
 
       xml_accessor :resource_musical_work_references, :as => [ResourceMusicalWorkReference], :from => "ResourceMusicalWorkReference", :required => true
 

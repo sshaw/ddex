@@ -20,7 +20,7 @@ class MessagingParty < Element
   include ROXML
 
 
-  xml_name "ns1:MessagingParty"
+  xml_name "MessagingParty"
 
       xml_accessor :party_ids, :as => [PartyId], :from => "PartyId", :required => true
       xml_accessor :party_name, :as => PartyName, :from => "PartyName", :required => false

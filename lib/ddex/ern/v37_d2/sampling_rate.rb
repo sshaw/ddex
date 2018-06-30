@@ -17,7 +17,7 @@ class SamplingRate < Element
   include ROXML
 
 
-  xml_name "ns1:SamplingRate"
+  xml_name "SamplingRate"
 
 
     xml_accessor :value, :from => ".", :required => false

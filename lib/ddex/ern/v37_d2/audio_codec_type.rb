@@ -17,7 +17,7 @@ class AudioCodecType < Element
   include ROXML
 
 
-  xml_name "ns1:AudioCodecType"
+  xml_name "AudioCodecType"
 
 
     xml_accessor :value, :from => ".", :required => false

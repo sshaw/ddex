@@ -18,7 +18,7 @@ class WorkList < Element
   include ROXML
 
 
-  xml_name "ns1:WorkList"
+  xml_name "WorkList"
 
       xml_accessor :musical_works, :as => [MusicalWork], :from => "MusicalWork", :required => true
 

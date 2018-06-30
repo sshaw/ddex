@@ -17,7 +17,7 @@ class Synopsis < Element
   include ROXML
 
 
-  xml_name "ns1:Synopsis"
+  xml_name "Synopsis"
 
 
     xml_accessor :value, :from => ".", :required => false

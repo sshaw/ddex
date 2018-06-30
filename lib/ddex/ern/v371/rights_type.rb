@@ -17,7 +17,7 @@ class RightsType < Element
   include ROXML
 
 
-  xml_name "ns1:RightsType"
+  xml_name "RightsType"
 
 
     xml_accessor :value, :from => ".", :required => false

@@ -18,7 +18,7 @@ class File < Element
   include ROXML
 
 
-  xml_name "ns1:File"
+  xml_name "File"
 
       xml_accessor :url, :from => "URL", :required => false
       xml_accessor :file_name, :from => "FileName", :required => false

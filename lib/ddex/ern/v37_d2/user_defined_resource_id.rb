@@ -18,7 +18,7 @@ class UserDefinedResourceId < Element
   include ROXML
 
 
-  xml_name "ns1:UserDefinedResourceId"
+  xml_name "UserDefinedResourceId"
 
       xml_accessor :proprietary_ids, :as => [ProprietaryId], :from => "ProprietaryId", :required => true
 

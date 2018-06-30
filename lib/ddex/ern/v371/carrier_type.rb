@@ -17,7 +17,7 @@ class CarrierType < Element
   include ROXML
 
 
-  xml_name "ns1:CarrierType"
+  xml_name "CarrierType"
 
 
     xml_accessor :value, :from => ".", :required => false

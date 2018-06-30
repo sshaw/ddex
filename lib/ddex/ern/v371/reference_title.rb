@@ -19,7 +19,7 @@ class ReferenceTitle < Element
   include ROXML
 
 
-  xml_name "ns1:ReferenceTitle"
+  xml_name "ReferenceTitle"
 
       xml_accessor :title_text, :as => TitleText, :from => "TitleText", :required => true
       xml_accessor :sub_title, :as => SubTitle, :from => "SubTitle", :required => false

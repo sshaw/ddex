@@ -18,7 +18,7 @@ class MidiId < Element
   include ROXML
 
 
-  xml_name "ns1:MidiId"
+  xml_name "MidiId"
 
       xml_accessor :proprietary_ids, :as => [ProprietaryId], :from => "ProprietaryId", :required => true
 

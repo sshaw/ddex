@@ -18,7 +18,7 @@ class CollectionWorkReferenceList < Element
   include ROXML
 
 
-  xml_name "ns1:CollectionWorkReferenceList"
+  xml_name "CollectionWorkReferenceList"
 
       xml_accessor :collection_work_references, :as => [CollectionWorkReference], :from => "CollectionWorkReference", :required => true
 

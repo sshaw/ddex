@@ -19,7 +19,7 @@ class SoundRecordingId < Element
   include ROXML
 
 
-  xml_name "ns1:SoundRecordingId"
+  xml_name "SoundRecordingId"
 
       xml_accessor :isrc, :from => "ISRC", :required => false
       xml_accessor :catalog_number, :as => CatalogNumber, :from => "CatalogNumber", :required => false

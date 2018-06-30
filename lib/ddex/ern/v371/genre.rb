@@ -18,7 +18,7 @@ class Genre < Element
   include ROXML
 
 
-  xml_name "ns1:Genre"
+  xml_name "Genre"
 
       xml_accessor :genre_text, :as => Description, :from => "GenreText", :required => true
       xml_accessor :sub_genre, :as => Description, :from => "SubGenre", :required => false

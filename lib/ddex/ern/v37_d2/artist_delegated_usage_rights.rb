@@ -21,7 +21,7 @@ class ArtistDelegatedUsageRights < Element
   include ROXML
 
 
-  xml_name "ns1:ArtistDelegatedUsageRights"
+  xml_name "ArtistDelegatedUsageRights"
 
       xml_accessor :use_types, :as => [UseType], :from => "UseType", :required => true
       xml_accessor :user_interface_types, :as => [UserInterfaceType], :from => "UserInterfaceType", :required => false

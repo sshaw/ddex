@@ -22,7 +22,7 @@ class HostSoundCarrier < Element
   include ROXML
 
 
-  xml_name "ns1:HostSoundCarrier"
+  xml_name "HostSoundCarrier"
 
       xml_accessor :release_ids, :as => [ReleaseId], :from => "ReleaseId", :required => false
       xml_accessor :rights_agreement_id, :as => RightsAgreementId, :from => "RightsAgreementId", :required => false

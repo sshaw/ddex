@@ -18,7 +18,7 @@ class MessageAuditTrail < Element
   include ROXML
 
 
-  xml_name "ns1:MessageAuditTrail"
+  xml_name "MessageAuditTrail"
 
       xml_accessor :message_audit_trail_events, :as => [MessageAuditTrailEvent], :from => "MessageAuditTrailEvent", :required => true
 

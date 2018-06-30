@@ -17,7 +17,7 @@ class MidiType < Element
   include ROXML
 
 
-  xml_name "ns1:MidiType"
+  xml_name "MidiType"
 
 
     xml_accessor :value, :from => ".", :required => false

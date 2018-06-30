@@ -18,7 +18,7 @@ class PreviewDetails < Element
   include ROXML
 
 
-  xml_name "ns1:PreviewDetails"
+  xml_name "PreviewDetails"
 
       xml_accessor :part_type, :as => Description, :from => "PartType", :required => false
       xml_accessor :top_left_corner, :as => Float, :from => "TopLeftCorner", :required => false

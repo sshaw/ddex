@@ -18,7 +18,7 @@ class SheetMusicId < Element
   include ROXML
 
 
-  xml_name "ns1:SheetMusicId"
+  xml_name "SheetMusicId"
 
       xml_accessor :ismn, :from => "ISMN", :required => false
       xml_accessor :proprietary_ids, :as => [ProprietaryId], :from => "ProprietaryId", :required => false

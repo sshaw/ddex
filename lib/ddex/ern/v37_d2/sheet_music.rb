@@ -26,7 +26,7 @@ class SheetMusic < Element
   include ROXML
 
 
-  xml_name "ns1:SheetMusic"
+  xml_name "SheetMusic"
 
       xml_accessor :sheet_music_type, :as => SheetMusicType, :from => "SheetMusicType", :required => false
       xml_accessor :artist_related?, :from => "IsArtistRelated", :required => false

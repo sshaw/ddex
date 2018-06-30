@@ -32,7 +32,7 @@ class Video < Element
   include ROXML
 
 
-  xml_name "ns1:Video"
+  xml_name "Video"
 
       xml_accessor :video_type, :as => VideoType, :from => "VideoType", :required => false
       xml_accessor :artist_related?, :from => "IsArtistRelated", :required => false

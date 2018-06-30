@@ -18,7 +18,7 @@ class ReleaseDeal < Element
   include ROXML
 
 
-  xml_name "ns1:ReleaseDeal"
+  xml_name "ReleaseDeal"
 
       xml_accessor :deal_release_references, :as => [], :from => "DealReleaseReference", :required => true
       xml_accessor :deals, :as => [Deal], :from => "Deal", :required => true

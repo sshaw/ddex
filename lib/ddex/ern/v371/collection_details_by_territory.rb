@@ -21,7 +21,7 @@ class CollectionDetailsByTerritory < Element
   include ROXML
 
 
-  xml_name "ns1:CollectionDetailsByTerritory"
+  xml_name "CollectionDetailsByTerritory"
 
       xml_accessor :excluded_territory_codes, :as => [CurrentTerritoryCode], :from => "ExcludedTerritoryCode", :required => false
       xml_accessor :territory_codes, :as => [CurrentTerritoryCode], :from => "TerritoryCode", :required => false

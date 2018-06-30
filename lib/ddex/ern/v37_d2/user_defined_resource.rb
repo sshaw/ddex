@@ -25,7 +25,7 @@ class UserDefinedResource < Element
   include ROXML
 
 
-  xml_name "ns1:UserDefinedResource"
+  xml_name "UserDefinedResource"
 
       xml_accessor :user_defined_resource_type, :as => UserDefinedResourceType, :from => "UserDefinedResourceType", :required => false
       xml_accessor :artist_related?, :from => "IsArtistRelated", :required => false

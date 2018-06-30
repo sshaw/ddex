@@ -20,7 +20,7 @@ class SalesReportingProxyReleaseId < Element
   include ROXML
 
 
-  xml_name "ns1:SalesReportingProxyReleaseId"
+  xml_name "SalesReportingProxyReleaseId"
 
       xml_accessor :release_id, :as => ReleaseId, :from => "ReleaseId", :required => true
       xml_accessor :reason, :as => Reason, :from => "Reason", :required => false

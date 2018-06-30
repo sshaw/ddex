@@ -18,7 +18,7 @@ class ReleaseList < Element
   include ROXML
 
 
-  xml_name "ns1:ReleaseList"
+  xml_name "ReleaseList"
 
       xml_accessor :releases, :as => [Release], :from => "Release", :required => false
 
