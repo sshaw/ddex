@@ -67,7 +67,7 @@
           <BitsPerSample>16</BitsPerSample>
           <IsPreview>false</IsPreview>
           <PreviewDetails>
-            <StartPoint>0</StartPoint>
+            <StartPoint>0.0</StartPoint>
             <Duration>PT30S</Duration>
             <ExpressionType>Instructive</ExpressionType>
           </PreviewDetails>
@@ -129,7 +129,7 @@
           <BitsPerSample>16</BitsPerSample>
           <IsPreview>false</IsPreview>
           <PreviewDetails>
-            <StartPoint>0</StartPoint>
+            <StartPoint>0.0</StartPoint>
             <Duration>PT30S</Duration>
             <ExpressionType>Instructive</ExpressionType>
           </PreviewDetails>
@@ -185,7 +185,7 @@
           <BitsPerSample>16</BitsPerSample>
           <IsPreview>false</IsPreview>
           <PreviewDetails>
-            <StartPoint>0</StartPoint>
+            <StartPoint>0.0</StartPoint>
             <Duration>PT30S</Duration>
             <ExpressionType>Instructive</ExpressionType>
           </PreviewDetails>
@@ -241,7 +241,7 @@
           <BitsPerSample>16</BitsPerSample>
           <IsPreview>false</IsPreview>
           <PreviewDetails>
-            <StartPoint>0</StartPoint>
+            <StartPoint>0.0</StartPoint>
             <Duration>PT30S</Duration>
             <ExpressionType>Instructive</ExpressionType>
           </PreviewDetails>
@@ -297,7 +297,7 @@
           <BitsPerSample>16</BitsPerSample>
           <IsPreview>false</IsPreview>
           <PreviewDetails>
-            <StartPoint>0</StartPoint>
+            <StartPoint>0.0</StartPoint>
             <Duration>PT30S</Duration>
             <ExpressionType>Instructive</ExpressionType>
           </PreviewDetails>
@@ -353,7 +353,7 @@
           <BitsPerSample>16</BitsPerSample>
           <IsPreview>false</IsPreview>
           <PreviewDetails>
-            <StartPoint>0</StartPoint>
+            <StartPoint>0.0</StartPoint>
             <Duration>PT30S</Duration>
             <ExpressionType>Instructive</ExpressionType>
           </PreviewDetails>
@@ -409,7 +409,7 @@
           <BitsPerSample>16</BitsPerSample>
           <IsPreview>false</IsPreview>
           <PreviewDetails>
-            <StartPoint>0</StartPoint>
+            <StartPoint>0.0</StartPoint>
             <Duration>PT30S</Duration>
             <ExpressionType>Instructive</ExpressionType>
           </PreviewDetails>
@@ -465,7 +465,7 @@
           <BitsPerSample>16</BitsPerSample>
           <IsPreview>false</IsPreview>
           <PreviewDetails>
-            <StartPoint>0</StartPoint>
+            <StartPoint>0.0</StartPoint>
             <Duration>PT30S</Duration>
             <ExpressionType>Instructive</ExpressionType>
           </PreviewDetails>
@@ -521,7 +521,7 @@
           <BitsPerSample>16</BitsPerSample>
           <IsPreview>false</IsPreview>
           <PreviewDetails>
-            <StartPoint>0</StartPoint>
+            <StartPoint>0.0</StartPoint>
             <Duration>PT30S</Duration>
             <ExpressionType>Instructive</ExpressionType>
           </PreviewDetails>
@@ -577,7 +577,7 @@
           <BitsPerSample>16</BitsPerSample>
           <IsPreview>false</IsPreview>
           <PreviewDetails>
-            <StartPoint>0</StartPoint>
+            <StartPoint>0.0</StartPoint>
             <Duration>PT30S</Duration>
             <ExpressionType>Instructive</ExpressionType>
           </PreviewDetails>
@@ -633,7 +633,7 @@
           <BitsPerSample>16</BitsPerSample>
           <IsPreview>false</IsPreview>
           <PreviewDetails>
-            <StartPoint>0</StartPoint>
+            <StartPoint>0.0</StartPoint>
             <Duration>PT30S</Duration>
             <ExpressionType>Instructive</ExpressionType>
           </PreviewDetails>
@@ -689,7 +689,7 @@
           <BitsPerSample>16</BitsPerSample>
           <IsPreview>false</IsPreview>
           <PreviewDetails>
-            <StartPoint>0</StartPoint>
+            <StartPoint>0.0</StartPoint>
             <Duration>PT30S</Duration>
             <ExpressionType>Instructive</ExpressionType>
           </PreviewDetails>
@@ -745,7 +745,7 @@
           <BitsPerSample>16</BitsPerSample>
           <IsPreview>false</IsPreview>
           <PreviewDetails>
-            <StartPoint>0</StartPoint>
+            <StartPoint>0.0</StartPoint>
             <Duration>PT30S</Duration>
             <ExpressionType>Instructive</ExpressionType>
           </PreviewDetails>
@@ -801,7 +801,7 @@
           <BitsPerSample>16</BitsPerSample>
           <IsPreview>false</IsPreview>
           <PreviewDetails>
-            <StartPoint>0</StartPoint>
+            <StartPoint>0.0</StartPoint>
             <Duration>PT30S</Duration>
             <ExpressionType>Instructive</ExpressionType>
           </PreviewDetails>
@@ -857,7 +857,7 @@
           <BitsPerSample>16</BitsPerSample>
           <IsPreview>false</IsPreview>
           <PreviewDetails>
-            <StartPoint>0</StartPoint>
+            <StartPoint>0.0</StartPoint>
             <Duration>PT30S</Duration>
             <ExpressionType>Instructive</ExpressionType>
           </PreviewDetails>
@@ -913,7 +913,7 @@
           <BitsPerSample>16</BitsPerSample>
           <IsPreview>false</IsPreview>
           <PreviewDetails>
-            <StartPoint>0</StartPoint>
+            <StartPoint>0.0</StartPoint>
             <Duration>PT30S</Duration>
             <ExpressionType>Instructive</ExpressionType>
           </PreviewDetails>
@@ -969,7 +969,7 @@
           <BitsPerSample>16</BitsPerSample>
           <IsPreview>false</IsPreview>
           <PreviewDetails>
-            <StartPoint>0</StartPoint>
+            <StartPoint>0.0</StartPoint>
             <Duration>PT30S</Duration>
             <ExpressionType>Instructive</ExpressionType>
           </PreviewDetails>

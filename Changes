@@ -1,3 +1,7 @@
+v0.0.5    2018-06-30
+--------------------
+* Added support for ERN 3.2, 3.7D2, 3.7.1 and 3.8.2 (thanks Ancor Cruz and Ben Alavi)
+
 v0.0.4    2016-03-23
 --------------------
 * Fixed DDEX.write bug when outputting to ERN 3.8 and 3.8.1 (thanks Ben Alavi)

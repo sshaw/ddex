@@ -130,7 +130,7 @@
           <SamplingRate UnitOfMeasure="kHz">44100</SamplingRate>
           <IsPreview>false</IsPreview>
           <PreviewDetails>
-            <StartPoint>45</StartPoint>
+            <StartPoint>45.0</StartPoint>
             <ExpressionType>Informative</ExpressionType>
           </PreviewDetails>
           <File>
@@ -265,7 +265,7 @@
           <SamplingRate UnitOfMeasure="kHz">44100</SamplingRate>
           <IsPreview>false</IsPreview>
           <PreviewDetails>
-            <StartPoint>45</StartPoint>
+            <StartPoint>45.0</StartPoint>
             <ExpressionType>Informative</ExpressionType>
           </PreviewDetails>
           <File>
@@ -394,7 +394,7 @@
           <SamplingRate UnitOfMeasure="kHz">44100</SamplingRate>
           <IsPreview>false</IsPreview>
           <PreviewDetails>
-            <StartPoint>45</StartPoint>
+            <StartPoint>45.0</StartPoint>
             <ExpressionType>Informative</ExpressionType>
           </PreviewDetails>
           <File>
@@ -487,7 +487,7 @@
           <SamplingRate UnitOfMeasure="kHz">44100</SamplingRate>
           <IsPreview>false</IsPreview>
           <PreviewDetails>
-            <StartPoint>45</StartPoint>
+            <StartPoint>45.0</StartPoint>
             <ExpressionType>Informative</ExpressionType>
           </PreviewDetails>
           <File>
@@ -622,7 +622,7 @@
           <SamplingRate UnitOfMeasure="kHz">44100</SamplingRate>
           <IsPreview>false</IsPreview>
           <PreviewDetails>
-            <StartPoint>45</StartPoint>
+            <StartPoint>45.0</StartPoint>
             <ExpressionType>Informative</ExpressionType>
           </PreviewDetails>
           <File>
@@ -763,7 +763,7 @@
           <SamplingRate UnitOfMeasure="kHz">44100</SamplingRate>
           <IsPreview>false</IsPreview>
           <PreviewDetails>
-            <StartPoint>45</StartPoint>
+            <StartPoint>45.0</StartPoint>
             <ExpressionType>Informative</ExpressionType>
           </PreviewDetails>
           <File>
@@ -886,7 +886,7 @@
           <SamplingRate UnitOfMeasure="kHz">44100</SamplingRate>
           <IsPreview>false</IsPreview>
           <PreviewDetails>
-            <StartPoint>45</StartPoint>
+            <StartPoint>45.0</StartPoint>
             <ExpressionType>Informative</ExpressionType>
           </PreviewDetails>
           <File>
@@ -997,7 +997,7 @@
           <SamplingRate UnitOfMeasure="kHz">44100</SamplingRate>
           <IsPreview>false</IsPreview>
           <PreviewDetails>
-            <StartPoint>45</StartPoint>
+            <StartPoint>45.0</StartPoint>
             <ExpressionType>Informative</ExpressionType>
           </PreviewDetails>
           <File>
@@ -1114,7 +1114,7 @@
           <SamplingRate UnitOfMeasure="kHz">44100</SamplingRate>
           <IsPreview>false</IsPreview>
           <PreviewDetails>
-            <StartPoint>45</StartPoint>
+            <StartPoint>45.0</StartPoint>
             <ExpressionType>Informative</ExpressionType>
           </PreviewDetails>
           <File>
@@ -1207,7 +1207,7 @@
           <SamplingRate UnitOfMeasure="kHz">44100</SamplingRate>
           <IsPreview>false</IsPreview>
           <PreviewDetails>
-            <StartPoint>45</StartPoint>
+            <StartPoint>45.0</StartPoint>
             <ExpressionType>Informative</ExpressionType>
           </PreviewDetails>
           <File>
