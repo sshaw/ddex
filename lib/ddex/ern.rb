@@ -47,7 +47,7 @@ module DDEX
 
       "V37D2" => {
         :schema => "http://ddex.net/xml/ern/37D2/release-notification.xsd",
-        :version => "3.7_D2",
+        :version => "3.7D2",
         :message_schema_version_id => "ern/37D2"
       },
 
