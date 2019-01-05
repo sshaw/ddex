@@ -16,6 +16,6 @@ Gem::Specification.new do |s|
   s.add_dependency "nokogiri"
   s.add_dependency "roxml"
   s.add_dependency "activesupport", ">= 3.0"
-  s.add_development_dependency "bundler", "~> 1.3"
+  s.add_development_dependency "bundler", "~> 1.17"
   s.add_development_dependency "rake"
 end

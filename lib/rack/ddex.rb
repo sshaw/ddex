@@ -11,7 +11,7 @@ module Rack
         obj  = ::DDEX.read(env["rack.input"])
         json = JSON.dump(obj.to_hash)
 
-        [200, HEADERS.merge("Content-Length" => Rack::Utils.bytesize(json)), [json]]
+        [200, HEADERS.merge("Content-Length" => json.bytesize.to_s), [json]]
       rescue => e
         code = e.is_a?(::DDEX::DDEXError) ? 400 : 500
         json = JSON.dump(:error => e.message)
