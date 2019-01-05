@@ -5,16 +5,17 @@ rvm:
   - 2.0
   - 2.1
   - 2.2
-  - 2.3
+  # - 2.3 # Fails due to bunder error
   - 2.4
   - 2.5
 
 before_install:
-  - gem update bundler
+  - gem install bundler -v 1.17
 
 matrix:
   allow_failures:
-    - rvm: jruby-19mode
+    rvm:
+      - jruby-19mode
 
 notifications:
   email: false
