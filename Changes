@@ -1,3 +1,7 @@
+v0.0.6    2019-02-13
+--------------------
+* Fix content length bug in Rack middleware (#18 thanks Sam Millar)
+
 v0.0.5    2018-06-30
 --------------------
 * Added support for ERN 3.2, 3.7D2, 3.7.1 and 3.8.2 (thanks Ancor Cruz and Ben Alavi)
