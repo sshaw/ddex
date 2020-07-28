@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   s.license     = "MIT"
   s.add_dependency "nokogiri"
   s.add_dependency "roxml"
-  s.add_dependency "activesupport", ">= 3.0"
-  s.add_development_dependency "bundler", "~> 1.3"
+  s.add_dependency "activesupport", ">= 3.0", "< 7"
+  s.add_development_dependency "bundler"
   s.add_development_dependency "rake"
 end

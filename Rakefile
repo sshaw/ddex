@@ -1,10 +1,35 @@
 require "bundler/gem_tasks"
 require "rspec/core/rake_task"
 require "tmpdir"
+require "pp"
+
+require "ddex"
 
 RSpec::Core::RakeTask.new(:spec)
 
 task :default => "spec"
+
+desc "call DDEX.read on file given by FILE and write it to a new file via DDEX.write"
+task :to_xml do |t|
+  abort "usage: #{t.name} FILE=path/ddex/file.xml" unless ENV["FILE"]
+
+  ext = File.extname(ENV["FILE"])
+  out = File.basename(ENV["FILE"], ext)
+  out << ".out"
+  out << ext unless ext.empty?
+
+  doc = DDEX.write(DDEX.read(ENV["FILE"]))
+
+  puts "Saving output to #{out}"
+  File.write(out, doc)
+end
+
+desc "call DDEX.read on the file given by FILE and print its Hash representation"
+task :to_hash do |t|
+  abort "usage: #{t.name} FILE=path/ddex/file.xml" unless ENV["FILE"]
+
+  pp DDEX.read(ENV["FILE"]).to_hash
+end
 
 desc "Generate code from the schema given by SCHEMA"
 task :generate do
@@ -20,6 +45,7 @@ task :generate do
 
   puts "Files output to #{output}"
   # TODO: Automate this
+  # Does not seem to be valid for ERN 4X
   puts "REMEMBER: you'll need to modify RelatedReleaseOfferSet:", <<-DEAL
     # remove this require:
     require "ddex/ern/vXX/deal"

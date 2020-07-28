@@ -89,7 +89,9 @@ module DDEX
       eql?(other)
     end
 
-    # TODO: hash()
+    def hash
+      to_hash.hash
+    end
 
     private
     def roxml_attributes
