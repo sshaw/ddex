@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<echo:ManifestMessage xmlns:echo="http://ddex.net/xml/2011/echo/11"
+                      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                      xsi:schemaLocation="http://ddex.net/xml/2011/echo/11 http://ddex.net/xml/2011/echo/11/echo.xsd"
+                      MessageVersionId="2011/echo/11">
+  <MessageHeader>
+    <MessageSender>
+      <PartyId>Mq8ut9BhCZrlP0VOFZSYR-LJ9tNYK</PartyId>
+      <PartyName>
+        <FullName>M_rT45h7w1eTbuQX</FullName>
+      </PartyName>
+    </MessageSender>
+    <MessageRecipient>
+      <PartyId>uDzICEV0XI5D9V7vzbXV50d5sSfN</PartyId>
+      <PartyName>
+        <FullName>sHmRFZ</FullName>
+      </PartyName>
+    </MessageRecipient>
+    <MessageCreatedDateTime>2011-03-28T15:11:34+00:00</MessageCreatedDateTime>
+  </MessageHeader>
+  <IsTestFlag>false</IsTestFlag>
+  <DeliveryType UserDefinedValue="EnviOrDp2qbeW"
+                Namespace="SN5iML8pp4llkWbvgeUQ5UzkC">UserDefined</DeliveryType>
+  <BatchProductType UserDefinedValue="KgoOcgeEOyBc17gQqP"
+                    Namespace="LBPAmNulx4vkQoYGT">UserDefined</BatchProductType>
+  <RootDirectory>./</RootDirectory>
+  <NumberOfMessages>1</NumberOfMessages>
+  <MessageInBatch>
+    <MessageType>NewReleaseMessage</MessageType>
+    <MessageId>qfHU.qWvchc7sxj</MessageId>
+    <URL>./69jtpN1eeTe/69jtpN1eeTe.xml</URL>
+    <IncludedReleaseId>
+      <GRid>yinOJxe.TZ1fRAJ9O81</GRid>
+      <ICPN IsEan="true">hy7GKFQBacWezRqIdLB2ZtMh</ICPN>
+      <ProprietaryId Namespace="wsnMrdVCxQ">eeuY</ProprietaryId>
+    </IncludedReleaseId>
+    <HashSum>
+      <HashSum>lpdsirgmXDIZ15OHwKg</HashSum>
+      <HashSumAlgorithmType>SHA1</HashSumAlgorithmType>
+    </HashSum>
+  </MessageInBatch>
+</echo:ManifestMessage>
