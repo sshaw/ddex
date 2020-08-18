@@ -203,7 +203,7 @@ See CONTRIBUTING.md
 === See Also
 
 * {grid-number}[https://github.com/ScreenStaring/grid-number] - Class for managing Global Release Identifiers
-* {iTunes Store Transporter: GUI}[http://transportergui.com] - GUI and workflow automation for the iTunes Store’s Transporter (`iTMSTransporter`)
+* {iTunes Store Transporter: GUI}[http://transportergui.com] - GUI and workflow automation for the iTunes Store’s Transporter (+iTMSTransporter+)
 
 === Author
 
