@@ -17,11 +17,18 @@ module DDEX
     autoload :V381,  "ddex/ern/v381"
     autoload :V382,  "ddex/ern/v382"
     autoload :V41,  "ddex/ern/v41"
+    autoload :V411,  "ddex/ern/v411"
 
     ROOT_ELEMENT = "NewReleaseMessage".freeze
     VERSION_ATTR = "MessageSchemaVersionId".freeze
 
     DEFAULT_CONFIG  = {
+      "V411" => {
+        :schema => "http://service.ddex.net/xml/ern/411/release-notification.xsd",
+        :version => "4.1.1",
+        :message_schema_version_id => "ern/411"
+      },
+
       "V41" => {
         :schema => "http://service.ddex.net/xml/ern/41/release-notification.xsd",
         :version => "4.1",
@@ -116,7 +123,7 @@ module DDEX
       end
 
       def supports?(version)
-        version = version.downcase.strip
+        version = version.to_s.downcase.strip
         config.any? { |name,cfg| name == version || cfg[:version] == version || cfg[:message_schema_version_id] == version }
       end
 
@@ -131,7 +138,7 @@ module DDEX
 
         begin
           klass.from_xml(doc)
-        rescue NoMethodError => e         # Yes, fo real... this is from ROXML
+        rescue NoMethodError => e         # Yes, 4 real... this is from ROXML
           raise unless e.name == :root    # It's legit
           raise XMLLoadError, "XML is not well-formed"
         # This is a subclass of Exception(!) so we must name it

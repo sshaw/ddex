@@ -6,7 +6,7 @@ shared_examples_for "ERN metadata serialization" do |path|
     xml  = File.read(path)
     spec = DDEX::ERN.read(xml)
     # TODO: DDEX.read(xml), DDEX.write
-    expect(DDEX::ERN.write(spec)).to equal_xml(xml)
+    expect(DDEX::ERN.write(spec, :encoding => "UTF-8")).to equal_xml(xml)
   end
 end
 
