@@ -44,9 +44,7 @@ task :generate do
   end
 
   puts "Files output to #{output}"
-  # TODO: Automate this
-  # Does not seem to be valid for ERN 4X
-  puts "REMEMBER: you'll need to modify RelatedReleaseOfferSet:", <<-DEAL
+  puts "REMEMBER: for ERN < v4 you'll need to modify RelatedReleaseOfferSet:", <<-DEAL
     # remove this require:
     require "ddex/ern/vXX/deal"
 
