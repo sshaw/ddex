@@ -16,6 +16,7 @@ module DDEX
     autoload :V38,  "ddex/ern/v38"
     autoload :V381,  "ddex/ern/v381"
     autoload :V382,  "ddex/ern/v382"
+    autoload :V383,  "ddex/ern/v383"
     autoload :V41,  "ddex/ern/v41"
 
     ROOT_ELEMENT = "NewReleaseMessage".freeze
@@ -26,6 +27,12 @@ module DDEX
         :schema => "http://service.ddex.net/xml/ern/41/release-notification.xsd",
         :version => "4.1",
         :message_schema_version_id => "ern/41"
+      },
+
+      "V383" => {
+        :schema => "http://ddex.net/xml/ern/383/release-notification.xsd",
+        :version => "3.8.3",
+        :message_schema_version_id => "ern/383"
       },
 
       "V382" => {

@@ -38,7 +38,7 @@ describe DDEX::ERN do
   end
 end
 
-%w[36 37 371 37D2 38 381 382].each do |v|
+%w[36 37 371 37D2 38 381 382 383].each do |v|
   describe "DDEX::ERN::V#{v}::PriceInformation".constantize do
     let(:instance) { described_class.new(:type => "a",
                                          :price_type => "DDEX::ERN::V#{v}::PriceType".constantize.new(:value => "b")) }
