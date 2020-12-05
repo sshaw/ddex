@@ -1,0 +1,2647 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ern:NewReleaseMessage xmlns:ern="http://ddex.net/xml/ern/42"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://ddex.net/xml/ern/42 http://ddex.net/xml/ern/42/release-notification.xsd"
+   ReleaseProfileVersionId="MixedMedia" LanguageAndScriptCode="en">
+   <MessageHeader>
+      <MessageThreadId>test1</MessageThreadId>
+      <MessageId>test1</MessageId>
+      <MessageSender>
+         <PartyId>PADPIDA2013042401U</PartyId>
+         <PartyName>
+            <FullName>UniversalMusicGroup</FullName>
+         </PartyName>
+      </MessageSender>
+      <MessageRecipient>
+         <PartyId>PADPIDA2009101501Y</PartyId>
+         <PartyName>
+            <FullName>Sony DADC</FullName>
+         </PartyName>
+      </MessageRecipient>
+      <MessageCreatedDateTime>2014-09-24T14:57:25+01:00</MessageCreatedDateTime>
+   </MessageHeader>
+   <PartyList>
+      <Party>
+         <PartyReference>PAnnaMariaZimmermann</PartyReference>
+         <PartyName>
+            <FullName>Anna-Maria Zimmermann</FullName>
+            <FullNameIndexed>Zimmermann, Anna-Maria</FullNameIndexed>
+         </PartyName>
+      </Party>
+      <Party>
+         <PartyReference>PJrgBausch</PartyReference>
+         <PartyName>
+            <FullName>Jörg Bausch</FullName>
+            <FullNameIndexed>Bausch, Jörg</FullNameIndexed>
+         </PartyName>
+      </Party>
+      <Party>
+         <PartyReference>PEMI</PartyReference>
+         <PartyName>
+            <FullName>EMI</FullName>
+         </PartyName>
+      </Party>
+   </PartyList>
+   <ResourceList>
+      <SoundRecording LanguageAndScriptCode="de">
+         <ResourceReference>A1</ResourceReference>
+         <Type>MusicalWorkSoundRecording</Type>
+         <ResourceId>
+            <ISRC>DEC610900439</ISRC>
+         </ResourceId>
+         <DisplayTitleText>1000 Träume weit (Tornero)</DisplayTitleText>
+         <DisplayTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>1000 Träume weit (Tornero)</TitleText>
+         </DisplayTitle>
+         <DisplayArtistName ApplicableTerritoryCode="Worldwide">Anna-Maria Zimmermann</DisplayArtistName>
+         <DisplayArtist SequenceNumber="1">
+            <ArtistPartyReference>PAnnaMariaZimmermann</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <PLine>
+            <Year>2009</Year>
+            <PLineText>(P) 2009 The copyright in this sound recording is owned by
+               Frömelt/Zimmermann/Rötgens/Wessling at Xtreme Sound Cologne under exclusive licence
+               to EMI Music Catalogue Marketing, a division of EMI Music Germany GmbH &amp;
+               Co.KG</PLineText>
+         </PLine>
+         <Duration>PT4M10S</Duration>
+         <CreationDate IsApproximate="true">2009-01-01</CreationDate>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+         <IsInstrumental>false</IsInstrumental>
+         <LanguageOfPerformance>de</LanguageOfPerformance>
+         <TechnicalDetails>
+            <TechnicalResourceDetailsReference>T1</TechnicalResourceDetailsReference>
+            <PreviewDetails>
+               <StartPoint>45.0</StartPoint>
+               <ExpressionType>Instructive</ExpressionType>
+            </PreviewDetails>
+            <File>
+               <URI>5099907138457_01_001.wav</URI>
+            </File>
+         </TechnicalDetails>
+      </SoundRecording>
+      <SoundRecording LanguageAndScriptCode="en">
+         <ResourceReference>A2</ResourceReference>
+         <Type>MusicalWorkSoundRecording</Type>
+         <ResourceId>
+            <ISRC>DEC611000431</ISRC>
+         </ResourceId>
+         <DisplayTitleText>Frei sein</DisplayTitleText>
+         <DisplayTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>Frei sein</TitleText>
+            <SubTitle>Radio Edit</SubTitle>
+         </DisplayTitle>
+         <DisplayArtistName ApplicableTerritoryCode="Worldwide">Anna-Maria Zimmermann</DisplayArtistName>
+         <DisplayArtist SequenceNumber="1">
+            <ArtistPartyReference>PAnnaMariaZimmermann</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <PLine>
+            <Year>2010</Year>
+            <PLineText>(P) 2010 The copyright in this sound recording is owned by Zimmermann,
+               Frömelt, Fiebich at Di Tune under exclusive licence to EMI Music Catalogue Marketing,
+               a division of EMI Music Germany GmbH &amp; Co.KG</PLineText>
+         </PLine>
+         <Duration>PT3M29S</Duration>
+         <CreationDate IsApproximate="true">2010-01-01</CreationDate>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+         <IsInstrumental>false</IsInstrumental>
+         <LanguageOfPerformance>de</LanguageOfPerformance>
+         <TechnicalDetails>
+            <TechnicalResourceDetailsReference>T2</TechnicalResourceDetailsReference>
+            <PreviewDetails>
+               <StartPoint>45.0</StartPoint>
+               <ExpressionType>Instructive</ExpressionType>
+            </PreviewDetails>
+            <File>
+               <URI>5099907138457_01_002.wav</URI>
+            </File>
+         </TechnicalDetails>
+      </SoundRecording>
+      <SoundRecording LanguageAndScriptCode="de">
+         <ResourceReference>A3</ResourceReference>
+         <Type>MusicalWorkSoundRecording</Type>
+         <ResourceId>
+            <ISRC>DEC611000907</ISRC>
+         </ResourceId>
+         <DisplayTitleText>Zum Teufel mit dem Kerl</DisplayTitleText>
+         <DisplayTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>Zum Teufel mit dem Kerl</TitleText>
+         </DisplayTitle>
+         <DisplayArtistName ApplicableTerritoryCode="Worldwide">Anna-Maria Zimmermann</DisplayArtistName>
+         <DisplayArtist SequenceNumber="1">
+            <ArtistPartyReference>PAnnaMariaZimmermann</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <PLine>
+            <Year>2010</Year>
+            <PLineText>(P) 2010 The copyright in this sound recording is owned by Bausch Recording
+               under exclusive licence to EMI Music Catalogue Marketing, a division of EMI Music
+               Germany GmbH &amp; Co. KG</PLineText>
+         </PLine>
+         <Duration>PT3M18S</Duration>
+         <CreationDate IsApproximate="true">2010-01-01</CreationDate>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+         <IsInstrumental>false</IsInstrumental>
+         <LanguageOfPerformance>de</LanguageOfPerformance>
+         <TechnicalDetails>
+            <TechnicalResourceDetailsReference>T3</TechnicalResourceDetailsReference>
+            <PreviewDetails>
+               <StartPoint>45.0</StartPoint>
+               <ExpressionType>Instructive</ExpressionType>
+            </PreviewDetails>
+            <File>
+               <URI>5099907138457_01_003.wav</URI>
+            </File>
+         </TechnicalDetails>
+      </SoundRecording>
+      <SoundRecording LanguageAndScriptCode="en">
+         <ResourceReference>A4</ResourceReference>
+         <Type>MusicalWorkSoundRecording</Type>
+         <ResourceId>
+            <ISRC>DEC611000871</ISRC>
+         </ResourceId>
+         <DisplayTitleText>7 Wolken (Radio Edit)</DisplayTitleText>
+         <DisplayTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>7 Wolken</TitleText>
+            <SubTitle>Radio Edit</SubTitle>
+         </DisplayTitle>
+         <DisplayArtistName ApplicableTerritoryCode="Worldwide">Anna-Maria Zimmermann</DisplayArtistName>
+         <DisplayArtist SequenceNumber="1">
+            <ArtistPartyReference>PAnnaMariaZimmermann</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <PLine>
+            <Year>2010</Year>
+            <PLineText>(P) 2010 The copyright in this sound recording is owned by Xtreme Sound Mike
+               Rötgens/Hartmut Wessling/Alex Frömelt und Anna-Maria Zimmermann under exclusive
+               licence to EMI Music Catalogue Marketing, a division of EMI Music Germany GmbH &amp;
+               Co. KG</PLineText>
+         </PLine>
+         <Duration>PT3M50S</Duration>
+         <CreationDate IsApproximate="true">2010-01-01</CreationDate>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+         <IsInstrumental>false</IsInstrumental>
+         <LanguageOfPerformance>de</LanguageOfPerformance>
+         <TechnicalDetails>
+            <TechnicalResourceDetailsReference>T4</TechnicalResourceDetailsReference>
+            <PreviewDetails>
+               <StartPoint>45.0</StartPoint>
+               <ExpressionType>Instructive</ExpressionType>
+            </PreviewDetails>
+            <File>
+               <URI>5099907138457_01_004.wav</URI>
+            </File>
+         </TechnicalDetails>
+      </SoundRecording>
+      <SoundRecording LanguageAndScriptCode="de">
+         <ResourceReference>A5</ResourceReference>
+         <Type>MusicalWorkSoundRecording</Type>
+         <ResourceId>
+            <ISRC>DEC610900969</ISRC>
+         </ResourceId>
+         <DisplayTitleText>Bin ich Dir nicht gut genug</DisplayTitleText>
+         <DisplayTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>Bin ich Dir nicht gut genug</TitleText>
+         </DisplayTitle>
+         <DisplayArtistName ApplicableTerritoryCode="Worldwide">Anna-Maria Zimmermann</DisplayArtistName>
+         <DisplayArtist SequenceNumber="1">
+            <ArtistPartyReference>PAnnaMariaZimmermann</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <PLine>
+            <Year>2010</Year>
+            <PLineText>(P) 2010 The copyright in this sound recording is owned by Bausch Recording
+               under exclusive licence to EMI Music Catalogue Marketing, a division of EMI Music
+               Germany GmbH</PLineText>
+         </PLine>
+         <Duration>PT2M53S</Duration>
+         <CreationDate IsApproximate="true">2009-01-01</CreationDate>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+         <IsInstrumental>false</IsInstrumental>
+         <LanguageOfPerformance>de</LanguageOfPerformance>
+         <TechnicalDetails>
+            <TechnicalResourceDetailsReference>T5</TechnicalResourceDetailsReference>
+            <PreviewDetails>
+               <StartPoint>45.0</StartPoint>
+               <ExpressionType>Instructive</ExpressionType>
+            </PreviewDetails>
+            <File>
+               <URI>5099907138457_01_005.wav</URI>
+            </File>
+         </TechnicalDetails>
+      </SoundRecording>
+      <SoundRecording LanguageAndScriptCode="de">
+         <ResourceReference>A6</ResourceReference>
+         <Type>MusicalWorkSoundRecording</Type>
+         <ResourceId>
+            <ISRC>DEC611000904</ISRC>
+         </ResourceId>
+         <DisplayTitleText>Ohne Dich</DisplayTitleText>
+         <DisplayTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>Ohne Dich</TitleText>
+         </DisplayTitle>
+         <DisplayArtistName ApplicableTerritoryCode="Worldwide">Anna-Maria Zimmermann</DisplayArtistName>
+         <DisplayArtist SequenceNumber="1">
+            <ArtistPartyReference>PAnnaMariaZimmermann</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <PLine>
+            <Year>2010</Year>
+            <PLineText>(P) 2010 The copyright in this sound recording is owned by Echo Lane
+               Recording Kai Schwerdtfeger/Alex Frömelt und Anna-Maria Zimmermann under exclusive
+               licence to EMI Music Germany GmbH &amp; Co. KG</PLineText>
+         </PLine>
+         <Duration>PT4M8S</Duration>
+         <CreationDate IsApproximate="true">2010-01-01</CreationDate>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+         <IsInstrumental>false</IsInstrumental>
+         <LanguageOfPerformance>de</LanguageOfPerformance>
+         <TechnicalDetails>
+            <TechnicalResourceDetailsReference>T6</TechnicalResourceDetailsReference>
+            <PreviewDetails>
+               <StartPoint>45.0</StartPoint>
+               <ExpressionType>Instructive</ExpressionType>
+            </PreviewDetails>
+            <File>
+               <URI>5099907138457_01_006.wav</URI>
+            </File>
+         </TechnicalDetails>
+      </SoundRecording>
+      <SoundRecording LanguageAndScriptCode="de">
+         <ResourceReference>A7</ResourceReference>
+         <Type>MusicalWorkSoundRecording</Type>
+         <ResourceId>
+            <ISRC>ATW590800730</ISRC>
+         </ResourceId>
+         <DisplayTitleText>Wer ist dieser DJ? (Radiocut)</DisplayTitleText>
+         <DisplayTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>Wer ist dieser DJ?</TitleText>
+            <SubTitle>Radiocut</SubTitle>
+         </DisplayTitle>
+         <DisplayArtistName ApplicableTerritoryCode="Worldwide">Anna-Maria Zimmermann</DisplayArtistName>
+         <DisplayArtist SequenceNumber="1">
+            <ArtistPartyReference>PAnnaMariaZimmermann</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <PLine>
+            <Year>2008</Year>
+            <PLineText>(P) 2008 The copyright in this sound recording is owned by Watts Music GmbH
+               under exclusive license to Universal Music Domestic Pop/Mainstream, a division of
+               Universal Music GmbH</PLineText>
+         </PLine>
+         <Duration>PT3M45S</Duration>
+         <CreationDate IsApproximate="true">2008-01-01</CreationDate>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+         <IsInstrumental>false</IsInstrumental>
+         <LanguageOfPerformance>de</LanguageOfPerformance>
+         <TechnicalDetails>
+            <TechnicalResourceDetailsReference>T7</TechnicalResourceDetailsReference>
+            <PreviewDetails>
+               <StartPoint>45.0</StartPoint>
+               <ExpressionType>Instructive</ExpressionType>
+            </PreviewDetails>
+            <File>
+               <URI>5099907138457_01_007.wav</URI>
+            </File>
+         </TechnicalDetails>
+      </SoundRecording>
+      <SoundRecording LanguageAndScriptCode="de">
+         <ResourceReference>A8</ResourceReference>
+         <Type>MusicalWorkSoundRecording</Type>
+         <ResourceId>
+            <ISRC>DEC611000336</ISRC>
+         </ResourceId>
+         <DisplayTitleText>Rote Karte</DisplayTitleText>
+         <DisplayTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>Rote Karte</TitleText>
+         </DisplayTitle>
+         <DisplayArtistName ApplicableTerritoryCode="Worldwide">Anna-Maria Zimmermann</DisplayArtistName>
+         <DisplayArtist SequenceNumber="1">
+            <ArtistPartyReference>PAnnaMariaZimmermann</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <PLine>
+            <Year>2010</Year>
+            <PLineText>(P) 2010 The copyright in this sound recording is owned by Alex Frömelt,
+               Anna-Maria Zimmermann und Marco Kloss under exclusive licence to EMI Music Catalogue
+               Marketing, a division of EMI Music Germany GmbH &amp; Co.KG</PLineText>
+         </PLine>
+         <Duration>PT3M21S</Duration>
+         <CreationDate IsApproximate="true">2010-01-01</CreationDate>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+         <IsInstrumental>false</IsInstrumental>
+         <LanguageOfPerformance>de</LanguageOfPerformance>
+         <TechnicalDetails>
+            <TechnicalResourceDetailsReference>T8</TechnicalResourceDetailsReference>
+            <PreviewDetails>
+               <StartPoint>45.0</StartPoint>
+               <ExpressionType>Instructive</ExpressionType>
+            </PreviewDetails>
+            <File>
+               <URI>5099907138457_01_008.wav</URI>
+            </File>
+         </TechnicalDetails>
+      </SoundRecording>
+      <SoundRecording LanguageAndScriptCode="de">
+         <ResourceReference>A9</ResourceReference>
+         <Type>MusicalWorkSoundRecording</Type>
+         <ResourceId>
+            <ISRC>DEC610900441</ISRC>
+         </ResourceId>
+         <DisplayTitleText>Lust am Leben (Radio Version)</DisplayTitleText>
+         <DisplayTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>Lust am Leben</TitleText>
+            <SubTitle>Radio Version</SubTitle>
+         </DisplayTitle>
+         <DisplayArtistName ApplicableTerritoryCode="Worldwide">Anna-Maria Zimmermann</DisplayArtistName>
+         <DisplayArtist SequenceNumber="1">
+            <ArtistPartyReference>PAnnaMariaZimmermann</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <Contributor SequenceNumber="1">
+            <ContributorPartyReference>PJrgBausch</ContributorPartyReference>
+         </Contributor>
+         <PLine>
+            <Year>2009</Year>
+            <PLineText>(P) 2009 The copyright in this sound recording is owned by
+               Frömelt/Zimmermann/Rötgens/Wessling at Xtreme Sound Cologne under exclusive licence
+               to EMI Music Catalogue Marketing, a division of EMI Music Germany GmbH &amp;
+               Co.KG</PLineText>
+         </PLine>
+         <Duration>PT3M29S</Duration>
+         <CreationDate IsApproximate="true">2009-01-01</CreationDate>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+         <IsInstrumental>false</IsInstrumental>
+         <LanguageOfPerformance>de</LanguageOfPerformance>
+         <TechnicalDetails>
+            <TechnicalResourceDetailsReference>T9</TechnicalResourceDetailsReference>
+            <PreviewDetails>
+               <StartPoint>45.0</StartPoint>
+               <ExpressionType>Instructive</ExpressionType>
+            </PreviewDetails>
+            <File>
+               <URI>5099907138457_01_009.wav</URI>
+            </File>
+         </TechnicalDetails>
+      </SoundRecording>
+      <SoundRecording LanguageAndScriptCode="de">
+         <ResourceReference>A10</ResourceReference>
+         <Type>MusicalWorkSoundRecording</Type>
+         <ResourceId>
+            <ISRC>DEC610900938</ISRC>
+         </ResourceId>
+         <DisplayTitleText>Hurra wir leben noch</DisplayTitleText>
+         <DisplayTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>Hurra wir leben noch</TitleText>
+         </DisplayTitle>
+         <DisplayArtistName ApplicableTerritoryCode="Worldwide">Anna-Maria Zimmermann</DisplayArtistName>
+         <DisplayArtist SequenceNumber="1">
+            <ArtistPartyReference>PAnnaMariaZimmermann</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <PLine>
+            <Year>2009</Year>
+            <PLineText>(P) 2009 The copyright in this sound recording is owned by Frömelt /
+               Zimmermann under exclusive licence to EMI Music Catalogue Marketing, a division of
+               EMI Music Germany GmbH &amp; Co.KG</PLineText>
+         </PLine>
+         <Duration>PT3M30S</Duration>
+         <CreationDate IsApproximate="true">2009-01-01</CreationDate>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+         <IsInstrumental>false</IsInstrumental>
+         <LanguageOfPerformance>de</LanguageOfPerformance>
+         <TechnicalDetails>
+            <TechnicalResourceDetailsReference>T10</TechnicalResourceDetailsReference>
+            <PreviewDetails>
+               <StartPoint>45.0</StartPoint>
+               <ExpressionType>Instructive</ExpressionType>
+            </PreviewDetails>
+            <File>
+               <URI>5099907138457_01_010.wav</URI>
+            </File>
+         </TechnicalDetails>
+      </SoundRecording>
+      <SoundRecording LanguageAndScriptCode="en">
+         <ResourceReference>A11</ResourceReference>
+         <Type>MusicalWorkSoundRecording</Type>
+         <ResourceId>
+            <ISRC>DEC611000905</ISRC>
+         </ResourceId>
+         <DisplayTitleText>7 Wolken (Party Mix)</DisplayTitleText>
+         <DisplayTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>7 Wolken</TitleText>
+            <SubTitle>Party Mix</SubTitle>
+         </DisplayTitle>
+         <DisplayArtistName ApplicableTerritoryCode="Worldwide">Anna-Maria Zimmermann</DisplayArtistName>
+         <DisplayArtist SequenceNumber="1">
+            <ArtistPartyReference>PAnnaMariaZimmermann</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <PLine>
+            <Year>2010</Year>
+            <PLineText>(P) 2010 The copyright in this sound recording is owned by Xtreme Sound Mike
+               Rötgens/Hartmut Wessling/Alex Frömelt und Anna-Maria Zimmermann under exclusive
+               licence to EMI Music Catalogue Marketing, a division of EMI Music Germany GmbH &amp;
+               Co. KG</PLineText>
+         </PLine>
+         <Duration>PT4M8S</Duration>
+         <CreationDate IsApproximate="true">2010-01-01</CreationDate>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+         <IsInstrumental>false</IsInstrumental>
+         <LanguageOfPerformance>de</LanguageOfPerformance>
+         <TechnicalDetails>
+            <TechnicalResourceDetailsReference>T11</TechnicalResourceDetailsReference>
+            <PreviewDetails>
+               <StartPoint>45.0</StartPoint>
+               <ExpressionType>Instructive</ExpressionType>
+            </PreviewDetails>
+            <File>
+               <URI>5099907138457_01_011.wav</URI>
+            </File>
+         </TechnicalDetails>
+      </SoundRecording>
+      <SoundRecording LanguageAndScriptCode="de">
+         <ResourceReference>A12</ResourceReference>
+         <Type>MusicalWorkSoundRecording</Type>
+         <ResourceId>
+            <ISRC>DEC611000430</ISRC>
+         </ResourceId>
+         <DisplayTitleText>Frei sein (Party Version)</DisplayTitleText>
+         <DisplayTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>Frei sein</TitleText>
+            <SubTitle>Party Version</SubTitle>
+         </DisplayTitle>
+         <DisplayArtistName ApplicableTerritoryCode="Worldwide">Anna-Maria Zimmermann</DisplayArtistName>
+         <DisplayArtist SequenceNumber="1">
+            <ArtistPartyReference>PAnnaMariaZimmermann</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <PLine>
+            <Year>2010</Year>
+            <PLineText>(P) 2010 The copyright in this sound recording is owned by Zimmermann,
+               Frömelt, Fiebich at Di Tune under exclusive licence to EMI Music Catalogue Marketing,
+               a division of EMI Music Germany GmbH &amp; Co.KG</PLineText>
+         </PLine>
+         <Duration>PT3M29S</Duration>
+         <CreationDate IsApproximate="true">2010-01-01</CreationDate>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+         <IsInstrumental>false</IsInstrumental>
+         <LanguageOfPerformance>de</LanguageOfPerformance>
+         <TechnicalDetails>
+            <TechnicalResourceDetailsReference>T12</TechnicalResourceDetailsReference>
+            <PreviewDetails>
+               <StartPoint>45.0</StartPoint>
+               <ExpressionType>Instructive</ExpressionType>
+            </PreviewDetails>
+            <File>
+               <URI>5099907138457_01_012.wav</URI>
+            </File>
+         </TechnicalDetails>
+      </SoundRecording>
+      <SoundRecording LanguageAndScriptCode="de">
+         <ResourceReference>A13</ResourceReference>
+         <Type>MusicalWorkSoundRecording</Type>
+         <ResourceId>
+            <ISRC>DEC611000908</ISRC>
+         </ResourceId>
+         <DisplayTitleText>DJ Mix (Medley)</DisplayTitleText>
+         <DisplayTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>DJ Mix (Medley)</TitleText>
+         </DisplayTitle>
+         <DisplayArtistName ApplicableTerritoryCode="Worldwide">Anna-Maria Zimmermann</DisplayArtistName>
+         <DisplayArtist SequenceNumber="1">
+            <ArtistPartyReference>PAnnaMariaZimmermann</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <PLine>
+            <Year>2010</Year>
+            <PLineText>(P) 2010 The copyright in this sound recording is owned by Kai Schwerdtfeger
+               im Auftrag von Alex Frömelt und Anna-Maria Zimmermann under exclusive licence to EMI
+               Music Catalogue Marketing, a division of EMI Music Germany GmbH &amp; Co.
+               KG</PLineText>
+         </PLine>
+         <Duration>PT4M4S</Duration>
+         <CreationDate IsApproximate="true">2010-01-01</CreationDate>
+         <ParentalWarningType>NotExplicit</ParentalWarningType>
+         <IsInstrumental>false</IsInstrumental>
+         <LanguageOfPerformance>de</LanguageOfPerformance>
+         <TechnicalDetails>
+            <TechnicalResourceDetailsReference>T13</TechnicalResourceDetailsReference>
+            <PreviewDetails>
+               <StartPoint>45.0</StartPoint>
+               <ExpressionType>Instructive</ExpressionType>
+            </PreviewDetails>
+            <File>
+               <URI>5099907138457_01_013.wav</URI>
+            </File>
+         </TechnicalDetails>
+      </SoundRecording>
+      <SoundRecording LanguageAndScriptCode="en">
+         <ResourceReference>A14</ResourceReference>
+         <Type>MusicalWorkSoundRecording</Type>
+         <ResourceId>
+            <ISRC>DEC611000913</ISRC>
+         </ResourceId>
+         <DisplayTitleText>7 Wolken (Piano Version)</DisplayTitleText>
+         <DisplayTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>7 Wolken</TitleText>
+            <SubTitle>Piano Version</SubTitle>
+         </DisplayTitle>
+         <DisplayArtistName ApplicableTerritoryCode="Worldwide">Anna-Maria Zimmermann</DisplayArtistName>
+         <DisplayArtist SequenceNumber="1">
+            <ArtistPartyReference>PAnnaMariaZimmermann</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <PLine>
+            <Year>2010</Year>
+            <PLineText>(P) 2010 The copyright in this sound recording is owned by Alex Frömelt und
+               Anna-Maria Zimmermann under exclusive licence to EMI Music Germany</PLineText>
+         </PLine>
+         <Duration>PT4M8S</Duration>
+         <CreationDate IsApproximate="true">2010-01-01</CreationDate>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+         <IsInstrumental>false</IsInstrumental>
+         <LanguageOfPerformance>de</LanguageOfPerformance>
+         <TechnicalDetails>
+            <TechnicalResourceDetailsReference>T14</TechnicalResourceDetailsReference>
+            <PreviewDetails>
+               <StartPoint>45.0</StartPoint>
+               <ExpressionType>Instructive</ExpressionType>
+            </PreviewDetails>
+            <File>
+               <URI>5099907138457_01_014.wav</URI>
+            </File>
+         </TechnicalDetails>
+      </SoundRecording>
+      <Video LanguageAndScriptCode="de">
+         <ResourceReference>A15</ResourceReference>
+         <Type>ShortFormMusicalWorkVideo</Type>
+         <ResourceId>
+            <ISRC>DEC620900219</ISRC>
+         </ResourceId>
+         <DisplayTitleText>1000 Träume weit (Tornero)</DisplayTitleText>
+         <DisplayTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>1000 Träume weit (Tornero)</TitleText>
+         </DisplayTitle>
+         <DisplayArtistName ApplicableTerritoryCode="Worldwide">Anna-Maria Zimmermann</DisplayArtistName>
+         <DisplayArtist SequenceNumber="1">
+            <ArtistPartyReference>PAnnaMariaZimmermann</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <PLine>
+            <Year>2009</Year>
+            <PLineText>(P) 2009 The copyright in this audiovisual recording is owned by
+               Frömelt/Zimmermann/Rötgens/Wessling at Xtreme Sound Cologne under exclusive licence
+               to EMI Music Catalogue Marketing, a division of EMI Music Germany GmbH &amp;
+               Co.KG</PLineText>
+         </PLine>
+         <Duration>PT4M10S</Duration>
+         <CreationDate IsApproximate="true">2009-01-01</CreationDate>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+         <IsInstrumental>false</IsInstrumental>
+         <LanguageOfPerformance>de</LanguageOfPerformance>
+         <TechnicalDetails>
+            <TechnicalResourceDetailsReference>T15</TechnicalResourceDetailsReference>
+            <File>
+               <URI>5099907138556_01_001.mpg</URI>
+            </File>
+         </TechnicalDetails>
+      </Video>
+      <Video LanguageAndScriptCode="de">
+         <ResourceReference>A16</ResourceReference>
+         <Type>ShortFormMusicalWorkVideo</Type>
+         <ResourceId>
+            <ISRC>DEC620900246</ISRC>
+         </ResourceId>
+         <DisplayTitleText>Hurra wir leben noch (DJ Version)</DisplayTitleText>
+         <DisplayTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>Hurra wir leben noch</TitleText>
+            <SubTitle>DJ Version</SubTitle>
+         </DisplayTitle>
+         <DisplayArtistName ApplicableTerritoryCode="Worldwide">Anna-Maria Zimmermann</DisplayArtistName>
+         <DisplayArtist SequenceNumber="1">
+            <ArtistPartyReference>PAnnaMariaZimmermann</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <PLine>
+            <Year>2010</Year>
+            <PLineText>(P) 2010 The copyright in this audiovisual recording is owned by Frömelt /
+               Zimmermann under exclusive licence to EMI Music Catalogue Marketing, a division of
+               EMI Music Germany GmbH &amp; Co.KG</PLineText>
+         </PLine>
+         <Duration>PT2M56S</Duration>
+         <CreationDate IsApproximate="true">2009-01-01</CreationDate>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+         <IsInstrumental>false</IsInstrumental>
+         <LanguageOfPerformance>de</LanguageOfPerformance>
+         <TechnicalDetails>
+            <TechnicalResourceDetailsReference>T16</TechnicalResourceDetailsReference>
+            <File>
+               <URI>5099907138556_01_002.mpg</URI>
+            </File>
+         </TechnicalDetails>
+      </Video>
+      <Video LanguageAndScriptCode="de">
+         <ResourceReference>A17</ResourceReference>
+         <Type>ShortFormMusicalWorkVideo</Type>
+         <ResourceId>
+            <ISRC>DEC621000081</ISRC>
+         </ResourceId>
+         <DisplayTitleText>Frei sein (Video)</DisplayTitleText>
+         <DisplayTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>Frei sein</TitleText>
+            <SubTitle>Video</SubTitle>
+         </DisplayTitle>
+         <DisplayArtistName ApplicableTerritoryCode="Worldwide">Anna-Maria Zimmermann</DisplayArtistName>
+         <DisplayArtist SequenceNumber="1">
+            <ArtistPartyReference>PAnnaMariaZimmermann</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <PLine>
+            <Year>2010</Year>
+            <PLineText>(P) 2010 The copyright in this audiovisual recording is owned by Zimmermann,
+               Frömelt, Fiebich at Di Tune under exclusive licence to EMI Music Catalogue Marketing,
+               a division of EMI Music Germany GmbH &amp; Co.KG</PLineText>
+         </PLine>
+         <Duration>PT3M33S</Duration>
+         <CreationDate IsApproximate="true">2010-01-01</CreationDate>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+         <IsInstrumental>false</IsInstrumental>
+         <LanguageOfPerformance>de</LanguageOfPerformance>
+         <TechnicalDetails>
+            <TechnicalResourceDetailsReference>T17</TechnicalResourceDetailsReference>
+            <File>
+               <URI>5099907138556_01_003.mpg</URI>
+            </File>
+         </TechnicalDetails>
+      </Video>
+      <Image LanguageAndScriptCode="de">
+         <ResourceReference>A18</ResourceReference>
+         <Type>FrontCoverImage</Type>
+         <ResourceId>
+            <ProprietaryId Namespace="PADPIDA2013042401U">PACKSHOT:5099907138655</ProprietaryId>
+         </ResourceId>
+         <ParentalWarningType>NotExplicit</ParentalWarningType>
+         <TechnicalDetails>
+            <TechnicalResourceDetailsReference>T18</TechnicalResourceDetailsReference>
+            <File>
+               <URI>5099907138655.jpg</URI>
+            </File>
+         </TechnicalDetails>
+      </Image>
+      <Image LanguageAndScriptCode="de">
+         <ResourceReference>A19</ResourceReference>
+         <Type>VideoScreenCapture</Type>
+         <ResourceId>
+            <ProprietaryId Namespace="PADPIDA2013042401U">SCREENGRAB:5099907138556_01_001</ProprietaryId>
+         </ResourceId>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+         <TechnicalDetails>
+            <TechnicalResourceDetailsReference>T19</TechnicalResourceDetailsReference>
+            <File>
+               <URI>5099907138556_01_001.jpg</URI>
+            </File>
+         </TechnicalDetails>
+      </Image>
+      <Image LanguageAndScriptCode="de">
+         <ResourceReference>A20</ResourceReference>
+         <Type>VideoScreenCapture</Type>
+         <ResourceId>
+            <ProprietaryId Namespace="PADPIDA2013042401U">SCREENGRAB:5099907138556_01_002</ProprietaryId>
+         </ResourceId>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+         <TechnicalDetails>
+            <TechnicalResourceDetailsReference>T20</TechnicalResourceDetailsReference>
+            <File>
+               <URI>5099907138556_01_002.jpg</URI>
+            </File>
+         </TechnicalDetails>
+      </Image>
+      <Image LanguageAndScriptCode="de">
+         <ResourceReference>A21</ResourceReference>
+         <Type>VideoScreenCapture</Type>
+         <ResourceId>
+            <ProprietaryId Namespace="PADPIDA2013042401U">SCREENGRAB:5099907138556_01_003</ProprietaryId>
+         </ResourceId>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+         <TechnicalDetails>
+            <TechnicalResourceDetailsReference>T21</TechnicalResourceDetailsReference>
+            <File>
+               <URI>5099907138556_01_003.jpg</URI>
+            </File>
+         </TechnicalDetails>
+      </Image>
+      <Text>
+         <ResourceReference>A22</ResourceReference>
+         <Type>NonInteractiveBooklet</Type>
+         <ResourceId>
+            <ProprietaryId Namespace="PADPIDA2013042401U">TEXT:5099907138655_00</ProprietaryId>
+         </ResourceId>
+         <TechnicalDetails>
+            <TechnicalResourceDetailsReference>T22</TechnicalResourceDetailsReference>
+            <File>
+               <URI>5099907138655_00.pdf</URI>
+            </File>
+         </TechnicalDetails>
+      </Text>
+   </ResourceList>
+   <ReleaseList>
+      <Release LanguageAndScriptCode="de">
+         <ReleaseReference>R0</ReleaseReference>
+         <ReleaseType>Bundle</ReleaseType>
+         <ReleaseId>
+            <ICPN>05099907138655</ICPN>
+         </ReleaseId>
+         <DisplayTitleText>Einfach Anna!</DisplayTitleText>
+         <DisplayTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>Einfach Anna!</TitleText>
+         </DisplayTitle>
+         <DisplayArtistName ApplicableTerritoryCode="Worldwide">Anna-Maria Zimmermann</DisplayArtistName>
+         <DisplayArtist SequenceNumber="1">
+            <ArtistPartyReference>PAnnaMariaZimmermann</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <ReleaseLabelReference ApplicableTerritoryCode="Worldwide">PEMI</ReleaseLabelReference>
+         <Duration>PT1H2M21S</Duration>
+         <Genre ApplicableTerritoryCode="Worldwide">
+            <GenreText>German Pop</GenreText>
+         </Genre>
+         <ParentalWarningType>NotExplicit</ParentalWarningType>
+         <RelatedRelease>
+            <ReleaseRelationshipType>IsDigitalEquivalentToPhysical</ReleaseRelationshipType>
+            <ReleaseId>
+               <ICPN>05099907106125</ICPN>
+            </ReleaseId>
+         </RelatedRelease>
+         <IsMultiArtistCompilation>false</IsMultiArtistCompilation>
+         <ResourceGroup>
+            <ResourceGroup ResourceGroupType="Component">
+               <AdditionalTitle>
+                  <TitleText>Component 1</TitleText>
+               </AdditionalTitle>
+               <SequenceNumber>1</SequenceNumber>
+               <ReleaseId>
+                  <ICPN>5099907138457</ICPN>
+               </ReleaseId>
+               <ResourceGroupContentItem>
+                  <SequenceNumber>1</SequenceNumber>
+                  <ReleaseResourceReference>A1</ReleaseResourceReference>
+               </ResourceGroupContentItem>
+               <ResourceGroupContentItem>
+                  <SequenceNumber>2</SequenceNumber>
+                  <ReleaseResourceReference>A2</ReleaseResourceReference>
+               </ResourceGroupContentItem>
+               <ResourceGroupContentItem>
+                  <SequenceNumber>3</SequenceNumber>
+                  <ReleaseResourceReference>A3</ReleaseResourceReference>
+               </ResourceGroupContentItem>
+               <ResourceGroupContentItem>
+                  <SequenceNumber>4</SequenceNumber>
+                  <ReleaseResourceReference>A4</ReleaseResourceReference>
+               </ResourceGroupContentItem>
+               <ResourceGroupContentItem>
+                  <SequenceNumber>5</SequenceNumber>
+                  <ReleaseResourceReference>A5</ReleaseResourceReference>
+               </ResourceGroupContentItem>
+               <ResourceGroupContentItem>
+                  <SequenceNumber>6</SequenceNumber>
+                  <ReleaseResourceReference>A6</ReleaseResourceReference>
+               </ResourceGroupContentItem>
+               <ResourceGroupContentItem>
+                  <SequenceNumber>7</SequenceNumber>
+                  <ReleaseResourceReference>A7</ReleaseResourceReference>
+               </ResourceGroupContentItem>
+               <ResourceGroupContentItem>
+                  <SequenceNumber>8</SequenceNumber>
+                  <ReleaseResourceReference>A8</ReleaseResourceReference>
+               </ResourceGroupContentItem>
+               <ResourceGroupContentItem>
+                  <SequenceNumber>9</SequenceNumber>
+                  <ReleaseResourceReference>A9</ReleaseResourceReference>
+               </ResourceGroupContentItem>
+               <ResourceGroupContentItem>
+                  <SequenceNumber>10</SequenceNumber>
+                  <ReleaseResourceReference>A10</ReleaseResourceReference>
+               </ResourceGroupContentItem>
+               <ResourceGroupContentItem>
+                  <SequenceNumber>11</SequenceNumber>
+                  <ReleaseResourceReference>A11</ReleaseResourceReference>
+               </ResourceGroupContentItem>
+               <ResourceGroupContentItem>
+                  <SequenceNumber>12</SequenceNumber>
+                  <ReleaseResourceReference>A12</ReleaseResourceReference>
+               </ResourceGroupContentItem>
+               <ResourceGroupContentItem>
+                  <SequenceNumber>13</SequenceNumber>
+                  <ReleaseResourceReference>A13</ReleaseResourceReference>
+               </ResourceGroupContentItem>
+               <ResourceGroupContentItem>
+                  <SequenceNumber>14</SequenceNumber>
+                  <ReleaseResourceReference>A14</ReleaseResourceReference>
+               </ResourceGroupContentItem>
+            </ResourceGroup>
+            <ResourceGroup ResourceGroupType="Component">
+               <AdditionalTitle>
+                  <TitleText>Component 2</TitleText>
+               </AdditionalTitle>
+               <SequenceNumber>2</SequenceNumber>
+               <ReleaseId>
+                  <ICPN>5099907138556</ICPN>
+               </ReleaseId>
+               <ResourceGroupContentItem>
+                  <SequenceNumber>1</SequenceNumber>
+                  <ReleaseResourceReference>A15</ReleaseResourceReference>
+                  <LinkedReleaseResourceReference LinkDescription="VideoScreenCapture"
+                     >A19</LinkedReleaseResourceReference>
+               </ResourceGroupContentItem>
+               <ResourceGroupContentItem>
+                  <SequenceNumber>2</SequenceNumber>
+                  <ReleaseResourceReference>A16</ReleaseResourceReference>
+                  <LinkedReleaseResourceReference LinkDescription="VideoScreenCapture"
+                     >A20</LinkedReleaseResourceReference>
+               </ResourceGroupContentItem>
+               <ResourceGroupContentItem>
+                  <SequenceNumber>3</SequenceNumber>
+                  <ReleaseResourceReference>A17</ReleaseResourceReference>
+                  <LinkedReleaseResourceReference LinkDescription="VideoScreenCapture"
+                     >A21</LinkedReleaseResourceReference>
+               </ResourceGroupContentItem>
+            </ResourceGroup>
+            <ResourceGroupContentItem>
+               <ReleaseResourceReference>A22</ReleaseResourceReference>
+            </ResourceGroupContentItem>
+            <LinkedReleaseResourceReference>A18</LinkedReleaseResourceReference>
+         </ResourceGroup>
+      </Release>
+      <TrackRelease>
+         <ReleaseReference>R1</ReleaseReference>
+         <ReleaseId>
+            <ProprietaryId Namespace="PADPIDA2013042401U">05099907138655_DEC610900439_R1</ProprietaryId>
+         </ReleaseId>
+         <AdditionalTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>1000 Träume weit (Tornero)</TitleText>
+         </AdditionalTitle>
+         <ReleaseResourceReference>A1</ReleaseResourceReference>
+         <ReleaseLabelReference ApplicableTerritoryCode="Worldwide">PEMI</ReleaseLabelReference>
+         <Genre ApplicableTerritoryCode="Worldwide">
+            <GenreText>German Pop</GenreText>
+         </Genre>
+      </TrackRelease>
+      <TrackRelease>
+         <ReleaseReference>R2</ReleaseReference>
+         <ReleaseId>
+            <ProprietaryId Namespace="PADPIDA2013042401U">05099907138655_DEC611000431_R2</ProprietaryId>
+         </ReleaseId>
+         <DisplayTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>Frei sein (Radio Edit)</TitleText>
+         </DisplayTitle>
+         <AdditionalTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>Frei sein</TitleText>
+            <SubTitle>Radio Edit</SubTitle>
+         </AdditionalTitle>
+         <ReleaseResourceReference>A2</ReleaseResourceReference>
+         <ReleaseLabelReference ApplicableTerritoryCode="Worldwide">PEMI</ReleaseLabelReference>
+         <Genre ApplicableTerritoryCode="Worldwide">
+            <GenreText>German Pop</GenreText>
+         </Genre>
+      </TrackRelease>
+      <TrackRelease>
+         <ReleaseReference>R3</ReleaseReference>
+         <ReleaseId>
+            <ProprietaryId Namespace="PADPIDA2013042401U">05099907138655_DEC611000907_R3</ProprietaryId>
+         </ReleaseId>
+         <AdditionalTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>Zum Teufel mit dem Kerl</TitleText>
+         </AdditionalTitle>
+         <ReleaseResourceReference>A3</ReleaseResourceReference>
+         <ReleaseLabelReference ApplicableTerritoryCode="Worldwide">PEMI</ReleaseLabelReference>
+         <Genre ApplicableTerritoryCode="Worldwide">
+            <GenreText>German Pop</GenreText>
+         </Genre>
+      </TrackRelease>
+      <TrackRelease>
+         <ReleaseReference>R4</ReleaseReference>
+         <ReleaseId>
+            <ProprietaryId Namespace="PADPIDA2013042401U">05099907138655_DEC611000871_R4</ProprietaryId>
+         </ReleaseId>
+         <DisplayTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>7 Wolken (Radio Edit)</TitleText>
+         </DisplayTitle>
+         <AdditionalTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>7 Wolken</TitleText>
+            <SubTitle>Radio Edit</SubTitle>
+         </AdditionalTitle>
+         <ReleaseResourceReference>A4</ReleaseResourceReference>
+         <ReleaseLabelReference ApplicableTerritoryCode="Worldwide">PEMI</ReleaseLabelReference>
+         <Genre ApplicableTerritoryCode="Worldwide">
+            <GenreText>German Pop</GenreText>
+         </Genre>
+      </TrackRelease>
+      <TrackRelease>
+         <ReleaseReference>R5</ReleaseReference>
+         <ReleaseId>
+            <ProprietaryId Namespace="PADPIDA2013042401U">05099907138655_DEC610900969_R5</ProprietaryId>
+         </ReleaseId>
+         <AdditionalTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>Bin ich Dir nicht gut genug</TitleText>
+         </AdditionalTitle>
+         <ReleaseResourceReference>A5</ReleaseResourceReference>
+         <ReleaseLabelReference ApplicableTerritoryCode="Worldwide">PEMI</ReleaseLabelReference>
+         <Genre ApplicableTerritoryCode="Worldwide">
+            <GenreText>German Pop</GenreText>
+         </Genre>
+      </TrackRelease>
+      <TrackRelease>
+         <ReleaseReference>R6</ReleaseReference>
+         <ReleaseId>
+            <ProprietaryId Namespace="PADPIDA2013042401U">05099907138655_DEC611000904_R6</ProprietaryId>
+         </ReleaseId>
+         <AdditionalTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>Ohne Dich</TitleText>
+         </AdditionalTitle>
+         <ReleaseResourceReference>A6</ReleaseResourceReference>
+         <ReleaseLabelReference ApplicableTerritoryCode="Worldwide">PEMI</ReleaseLabelReference>
+         <Genre ApplicableTerritoryCode="Worldwide">
+            <GenreText>German Pop</GenreText>
+         </Genre>
+      </TrackRelease>
+      <TrackRelease>
+         <ReleaseReference>R7</ReleaseReference>
+         <ReleaseId>
+            <ProprietaryId Namespace="PADPIDA2013042401U">05099907138655_ATW590800730_R7</ProprietaryId>
+         </ReleaseId>
+         <DisplayTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>Wer ist dieser DJ? (Radiocut)</TitleText>
+         </DisplayTitle>
+         <AdditionalTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>Wer ist dieser DJ?</TitleText>
+            <SubTitle>Radiocut</SubTitle>
+         </AdditionalTitle>
+         <ReleaseResourceReference>A7</ReleaseResourceReference>
+         <ReleaseLabelReference ApplicableTerritoryCode="Worldwide">PEMI</ReleaseLabelReference>
+         <Genre ApplicableTerritoryCode="Worldwide">
+            <GenreText>German Pop</GenreText>
+         </Genre>
+      </TrackRelease>
+      <TrackRelease>
+         <ReleaseReference>R8</ReleaseReference>
+         <ReleaseId>
+            <ProprietaryId Namespace="PADPIDA2013042401U">05099907138655_DEC611000336_R8</ProprietaryId>
+         </ReleaseId>
+         <AdditionalTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>Rote Karte</TitleText>
+         </AdditionalTitle>
+         <ReleaseResourceReference>A8</ReleaseResourceReference>
+         <ReleaseLabelReference ApplicableTerritoryCode="Worldwide">PEMI</ReleaseLabelReference>
+         <Genre ApplicableTerritoryCode="Worldwide">
+            <GenreText>German Pop</GenreText>
+         </Genre>
+      </TrackRelease>
+      <TrackRelease>
+         <ReleaseReference>R9</ReleaseReference>
+         <ReleaseId>
+            <ProprietaryId Namespace="PADPIDA2013042401U">05099907138655_DEC610900441_R9</ProprietaryId>
+         </ReleaseId>
+         <DisplayTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>Lust am Leben (Radio Version)</TitleText>
+         </DisplayTitle>
+         <AdditionalTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>Lust am Leben</TitleText>
+            <SubTitle>Radio Version</SubTitle>
+         </AdditionalTitle>
+         <ReleaseResourceReference>A9</ReleaseResourceReference>
+         <ReleaseLabelReference ApplicableTerritoryCode="Worldwide">PEMI</ReleaseLabelReference>
+         <Genre ApplicableTerritoryCode="Worldwide">
+            <GenreText>German Pop</GenreText>
+         </Genre>
+      </TrackRelease>
+      <TrackRelease>
+         <ReleaseReference>R10</ReleaseReference>
+         <ReleaseId>
+            <ProprietaryId Namespace="PADPIDA2013042401U">05099907138655_DEC610900938_R10</ProprietaryId>
+         </ReleaseId>
+         <AdditionalTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>Hurra wir leben noch</TitleText>
+         </AdditionalTitle>
+         <ReleaseResourceReference>A10</ReleaseResourceReference>
+         <ReleaseLabelReference ApplicableTerritoryCode="Worldwide">PEMI</ReleaseLabelReference>
+         <Genre ApplicableTerritoryCode="Worldwide">
+            <GenreText>German Pop</GenreText>
+         </Genre>
+      </TrackRelease>
+      <TrackRelease>
+         <ReleaseReference>R11</ReleaseReference>
+         <ReleaseId>
+            <ProprietaryId Namespace="PADPIDA2013042401U">05099907138655_DEC611000905_R11</ProprietaryId>
+         </ReleaseId>
+         <DisplayTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>7 Wolken (Party Mix)</TitleText>
+         </DisplayTitle>
+         <AdditionalTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>7 Wolken</TitleText>
+            <SubTitle>Party Mix</SubTitle>
+         </AdditionalTitle>
+         <ReleaseResourceReference>A11</ReleaseResourceReference>
+         <ReleaseLabelReference ApplicableTerritoryCode="Worldwide">PEMI</ReleaseLabelReference>
+         <Genre ApplicableTerritoryCode="Worldwide">
+            <GenreText>German Pop</GenreText>
+         </Genre>
+      </TrackRelease>
+      <TrackRelease>
+         <ReleaseReference>R12</ReleaseReference>
+         <ReleaseId>
+            <ProprietaryId Namespace="PADPIDA2013042401U">05099907138655_DEC611000430_R12</ProprietaryId>
+         </ReleaseId>
+         <DisplayTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>Frei sein (Party Version)</TitleText>
+         </DisplayTitle>
+         <AdditionalTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>Frei sein</TitleText>
+            <SubTitle>Party Version</SubTitle>
+         </AdditionalTitle>
+         <ReleaseResourceReference>A12</ReleaseResourceReference>
+         <ReleaseLabelReference ApplicableTerritoryCode="Worldwide">PEMI</ReleaseLabelReference>
+         <Genre ApplicableTerritoryCode="Worldwide">
+            <GenreText>German Pop</GenreText>
+         </Genre>
+      </TrackRelease>
+      <TrackRelease>
+         <ReleaseReference>R13</ReleaseReference>
+         <ReleaseId>
+            <ProprietaryId Namespace="PADPIDA2013042401U">05099907138655_DEC611000908_R13</ProprietaryId>
+         </ReleaseId>
+         <AdditionalTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>DJ Mix (Medley)</TitleText>
+         </AdditionalTitle>
+         <ReleaseResourceReference>A13</ReleaseResourceReference>
+         <ReleaseLabelReference ApplicableTerritoryCode="Worldwide">PEMI</ReleaseLabelReference>
+         <Genre ApplicableTerritoryCode="Worldwide">
+            <GenreText>German Pop</GenreText>
+         </Genre>
+      </TrackRelease>
+      <TrackRelease>
+         <ReleaseReference>R14</ReleaseReference>
+         <ReleaseId>
+            <ProprietaryId Namespace="PADPIDA2013042401U">05099907138655_DEC611000913_R14</ProprietaryId>
+         </ReleaseId>
+         <DisplayTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>7 Wolken (Piano Version)</TitleText>
+         </DisplayTitle>
+         <AdditionalTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>7 Wolken</TitleText>
+            <SubTitle>Piano Version</SubTitle>
+         </AdditionalTitle>
+         <ReleaseResourceReference>A14</ReleaseResourceReference>
+         <ReleaseLabelReference ApplicableTerritoryCode="Worldwide">PEMI</ReleaseLabelReference>
+         <Genre ApplicableTerritoryCode="Worldwide">
+            <GenreText>German Pop</GenreText>
+         </Genre>
+      </TrackRelease>
+      <TrackRelease>
+         <ReleaseReference>R15</ReleaseReference>
+         <ReleaseId>
+            <ProprietaryId Namespace="PADPIDA2013042401U">05099907138655_DEC620900219_R15</ProprietaryId>
+         </ReleaseId>
+         <AdditionalTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>1000 Träume weit (Tornero)</TitleText>
+         </AdditionalTitle>
+         <ReleaseResourceReference>A15</ReleaseResourceReference>
+         <ReleaseLabelReference ApplicableTerritoryCode="Worldwide">PEMI</ReleaseLabelReference>
+         <Genre ApplicableTerritoryCode="Worldwide">
+            <GenreText>German Pop</GenreText>
+         </Genre>
+      </TrackRelease>
+      <TrackRelease>
+         <ReleaseReference>R16</ReleaseReference>
+         <ReleaseId>
+            <ProprietaryId Namespace="PADPIDA2013042401U">05099907138655_DEC620900246_R16</ProprietaryId>
+         </ReleaseId>
+         <DisplayTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>Hurra wir leben noch (DJ Version)</TitleText>
+         </DisplayTitle>
+         <AdditionalTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>Hurra wir leben noch</TitleText>
+            <SubTitle>DJ Version</SubTitle>
+         </AdditionalTitle>
+         <ReleaseResourceReference>A16</ReleaseResourceReference>
+         <ReleaseLabelReference ApplicableTerritoryCode="Worldwide">PEMI</ReleaseLabelReference>
+         <Genre ApplicableTerritoryCode="Worldwide">
+            <GenreText>German Pop</GenreText>
+         </Genre>
+      </TrackRelease>
+      <TrackRelease>
+         <ReleaseReference>R17</ReleaseReference>
+         <ReleaseId>
+            <ProprietaryId Namespace="PADPIDA2013042401U">05099907138655_DEC621000081_R17</ProprietaryId>
+         </ReleaseId>
+         <DisplayTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>Frei sein (Video)</TitleText>
+         </DisplayTitle>
+         <AdditionalTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>Frei sein</TitleText>
+            <SubTitle>Video</SubTitle>
+         </AdditionalTitle>
+         <ReleaseResourceReference>A17</ReleaseResourceReference>
+         <ReleaseLabelReference ApplicableTerritoryCode="Worldwide">PEMI</ReleaseLabelReference>
+         <Genre ApplicableTerritoryCode="Worldwide">
+            <GenreText>German Pop</GenreText>
+         </Genre>
+      </TrackRelease>
+   </ReleaseList>
+   <DealList>
+      <ReleaseDeal>
+         <DealReleaseReference>R0</DealReleaseReference>
+         <Deal>
+            <DealTerms>
+               <TerritoryCode>AT</TerritoryCode>
+               <TerritoryCode>CH</TerritoryCode>
+               <TerritoryCode>DE</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2010-12-10</StartDate>
+               </ValidityPeriod>
+               <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+               <UseType>PermanentDownload</UseType>
+               <UseType>ConditionalDownload</UseType>
+               <UseType>UserMakeAvailableLabelProvided</UseType>
+               <UseType>UserMakeAvailableUserProvided</UseType>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>iTunes UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test2</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>Universal UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test1</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <PriceInformation>
+                  <PriceCode Namespace="PADPIDA2013042401U">AAAA</PriceCode>
+               </PriceInformation>
+            </DealTerms>
+         </Deal>
+      </ReleaseDeal>
+      <ReleaseDeal>
+         <DealReleaseReference>R15</DealReleaseReference>
+         <DealReleaseReference>R16</DealReleaseReference>
+         <DealReleaseReference>R17</DealReleaseReference>
+         <Deal>
+            <DealTerms>
+               <TerritoryCode>AT</TerritoryCode>
+               <TerritoryCode>CH</TerritoryCode>
+               <TerritoryCode>DE</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2010-12-10</StartDate>
+               </ValidityPeriod>
+               <CommercialModelType>SubscriptionModel</CommercialModelType>
+               <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+               <UseType>UserMakeAvailableLabelProvided</UseType>
+               <UseType>UserMakeAvailableUserProvided</UseType>
+               <UseType>ConditionalDownload</UseType>
+               <UseType>Stream</UseType>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>iTunes UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test2</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>Universal UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test1</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+            </DealTerms>
+         </Deal>
+         <Deal>
+            <DealTerms>
+               <TerritoryCode>AT</TerritoryCode>
+               <TerritoryCode>CH</TerritoryCode>
+               <TerritoryCode>DE</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2010-12-10</StartDate>
+               </ValidityPeriod>
+               <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+               <UseType>PermanentDownload</UseType>
+               <UseType>ConditionalDownload</UseType>
+               <UseType>UserMakeAvailableLabelProvided</UseType>
+               <UseType>UserMakeAvailableUserProvided</UseType>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>iTunes UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test2</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>Universal UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test1</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <PriceInformation>
+                  <PriceCode Namespace="PADPIDA2013042401U">AAAA</PriceCode>
+               </PriceInformation>
+            </DealTerms>
+         </Deal>
+      </ReleaseDeal>
+      <ReleaseDeal>
+         <DealReleaseReference>R3</DealReleaseReference>
+         <Deal>
+            <DealTerms>
+               <TerritoryCode>AT</TerritoryCode>
+               <TerritoryCode>CH</TerritoryCode>
+               <TerritoryCode>DE</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2010-12-10</StartDate>
+                  <EndDate>2013-07-09</EndDate>
+               </ValidityPeriod>
+               <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+               <UseType>PermanentDownload</UseType>
+               <UseType>ConditionalDownload</UseType>
+               <UseType>UserMakeAvailableLabelProvided</UseType>
+               <UseType>UserMakeAvailableUserProvided</UseType>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>iTunes UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test2</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>Universal UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test1</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <PriceInformation>
+                  <PriceCode Namespace="PADPIDA2013042401U">AAAA</PriceCode>
+               </PriceInformation>
+            </DealTerms>
+         </Deal>
+         <Deal>
+            <DealTerms>
+               <TerritoryCode>AT</TerritoryCode>
+               <TerritoryCode>CH</TerritoryCode>
+               <TerritoryCode>DE</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2010-12-10</StartDate>
+               </ValidityPeriod>
+               <CommercialModelType>SubscriptionModel</CommercialModelType>
+               <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+               <UseType>UserMakeAvailableLabelProvided</UseType>
+               <UseType>UserMakeAvailableUserProvided</UseType>
+               <UseType>ConditionalDownload</UseType>
+               <UseType>Stream</UseType>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>iTunes UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test2</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>Universal UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test1</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+            </DealTerms>
+         </Deal>
+         <Deal>
+            <DealReference>PriceCampaignID:GPS ISRC: DEC611000907 EventRef: 5989756</DealReference>
+            <DealTerms>
+               <TerritoryCode>AT</TerritoryCode>
+               <TerritoryCode>CH</TerritoryCode>
+               <TerritoryCode>DE</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2013-07-10</StartDate>
+               </ValidityPeriod>
+               <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+               <UseType>PermanentDownload</UseType>
+               <UseType>ConditionalDownload</UseType>
+               <UseType>UserMakeAvailableLabelProvided</UseType>
+               <UseType>UserMakeAvailableUserProvided</UseType>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>iTunes UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test2</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>Universal UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test1</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <PriceInformation>
+                  <PriceCode Namespace="PADPIDA2013042401U">AAAA</PriceCode>
+               </PriceInformation>
+            </DealTerms>
+         </Deal>
+      </ReleaseDeal>
+      <ReleaseDeal>
+         <DealReleaseReference>R4</DealReleaseReference>
+         <Deal>
+            <DealTerms>
+               <TerritoryCode>AT</TerritoryCode>
+               <TerritoryCode>CH</TerritoryCode>
+               <TerritoryCode>DE</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2010-12-10</StartDate>
+                  <EndDate>2013-07-09</EndDate>
+               </ValidityPeriod>
+               <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+               <UseType>PermanentDownload</UseType>
+               <UseType>ConditionalDownload</UseType>
+               <UseType>UserMakeAvailableLabelProvided</UseType>
+               <UseType>UserMakeAvailableUserProvided</UseType>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>iTunes UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test2</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>Universal UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test1</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <PriceInformation>
+                  <PriceCode Namespace="PADPIDA2013042401U">AAAA</PriceCode>
+               </PriceInformation>
+            </DealTerms>
+         </Deal>
+         <Deal>
+            <DealTerms>
+               <TerritoryCode>AT</TerritoryCode>
+               <TerritoryCode>CH</TerritoryCode>
+               <TerritoryCode>DE</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2010-12-10</StartDate>
+               </ValidityPeriod>
+               <CommercialModelType>SubscriptionModel</CommercialModelType>
+               <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+               <UseType>UserMakeAvailableLabelProvided</UseType>
+               <UseType>UserMakeAvailableUserProvided</UseType>
+               <UseType>ConditionalDownload</UseType>
+               <UseType>Stream</UseType>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>iTunes UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test2</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>Universal UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test1</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+            </DealTerms>
+         </Deal>
+         <Deal>
+            <DealReference>PriceCampaignID:GPS ISRC: DEC611000871 EventRef: 5989750</DealReference>
+            <DealTerms>
+               <TerritoryCode>AT</TerritoryCode>
+               <TerritoryCode>CH</TerritoryCode>
+               <TerritoryCode>DE</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2013-07-10</StartDate>
+               </ValidityPeriod>
+               <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+               <UseType>PermanentDownload</UseType>
+               <UseType>ConditionalDownload</UseType>
+               <UseType>UserMakeAvailableLabelProvided</UseType>
+               <UseType>UserMakeAvailableUserProvided</UseType>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>iTunes UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test2</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>Universal UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test1</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <PriceInformation>
+                  <PriceCode Namespace="PADPIDA2013042401U">AAAA</PriceCode>
+               </PriceInformation>
+            </DealTerms>
+         </Deal>
+      </ReleaseDeal>
+      <ReleaseDeal>
+         <DealReleaseReference>R5</DealReleaseReference>
+         <Deal>
+            <DealTerms>
+               <TerritoryCode>AT</TerritoryCode>
+               <TerritoryCode>CH</TerritoryCode>
+               <TerritoryCode>DE</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2010-12-10</StartDate>
+                  <EndDate>2013-07-09</EndDate>
+               </ValidityPeriod>
+               <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+               <UseType>PermanentDownload</UseType>
+               <UseType>ConditionalDownload</UseType>
+               <UseType>UserMakeAvailableLabelProvided</UseType>
+               <UseType>UserMakeAvailableUserProvided</UseType>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>iTunes UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test2</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>Universal UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test1</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <PriceInformation>
+                  <PriceCode Namespace="PADPIDA2013042401U">AAAA</PriceCode>
+               </PriceInformation>
+            </DealTerms>
+         </Deal>
+         <Deal>
+            <DealTerms>
+               <TerritoryCode>AT</TerritoryCode>
+               <TerritoryCode>CH</TerritoryCode>
+               <TerritoryCode>DE</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2010-12-10</StartDate>
+               </ValidityPeriod>
+               <CommercialModelType>SubscriptionModel</CommercialModelType>
+               <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+               <UseType>UserMakeAvailableLabelProvided</UseType>
+               <UseType>UserMakeAvailableUserProvided</UseType>
+               <UseType>ConditionalDownload</UseType>
+               <UseType>Stream</UseType>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>iTunes UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test2</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>Universal UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test1</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+            </DealTerms>
+         </Deal>
+         <Deal>
+            <DealReference>PriceCampaignID:GPS ISRC: DEC610900969 EventRef: 5989742</DealReference>
+            <DealTerms>
+               <TerritoryCode>AT</TerritoryCode>
+               <TerritoryCode>CH</TerritoryCode>
+               <TerritoryCode>DE</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2013-07-10</StartDate>
+               </ValidityPeriod>
+               <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+               <UseType>PermanentDownload</UseType>
+               <UseType>ConditionalDownload</UseType>
+               <UseType>UserMakeAvailableLabelProvided</UseType>
+               <UseType>UserMakeAvailableUserProvided</UseType>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>iTunes UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test2</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>Universal UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test1</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <PriceInformation>
+                  <PriceCode Namespace="PADPIDA2013042401U">AAAA</PriceCode>
+               </PriceInformation>
+            </DealTerms>
+         </Deal>
+      </ReleaseDeal>
+      <ReleaseDeal>
+         <DealReleaseReference>R6</DealReleaseReference>
+         <Deal>
+            <DealTerms>
+               <TerritoryCode>AT</TerritoryCode>
+               <TerritoryCode>CH</TerritoryCode>
+               <TerritoryCode>DE</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2010-12-10</StartDate>
+                  <EndDate>2013-07-09</EndDate>
+               </ValidityPeriod>
+               <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+               <UseType>PermanentDownload</UseType>
+               <UseType>ConditionalDownload</UseType>
+               <UseType>UserMakeAvailableLabelProvided</UseType>
+               <UseType>UserMakeAvailableUserProvided</UseType>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>iTunes UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test2</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>Universal UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test1</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <PriceInformation>
+                  <PriceCode Namespace="PADPIDA2013042401U">AAAA</PriceCode>
+               </PriceInformation>
+            </DealTerms>
+         </Deal>
+         <Deal>
+            <DealTerms>
+               <TerritoryCode>AT</TerritoryCode>
+               <TerritoryCode>CH</TerritoryCode>
+               <TerritoryCode>DE</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2010-12-10</StartDate>
+               </ValidityPeriod>
+               <CommercialModelType>SubscriptionModel</CommercialModelType>
+               <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+               <UseType>UserMakeAvailableLabelProvided</UseType>
+               <UseType>UserMakeAvailableUserProvided</UseType>
+               <UseType>ConditionalDownload</UseType>
+               <UseType>Stream</UseType>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>iTunes UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test2</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>Universal UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test1</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+            </DealTerms>
+         </Deal>
+         <Deal>
+            <DealReference>PriceCampaignID:GPS ISRC: DEC611000904 EventRef: 5989752</DealReference>
+            <DealTerms>
+               <TerritoryCode>AT</TerritoryCode>
+               <TerritoryCode>CH</TerritoryCode>
+               <TerritoryCode>DE</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2013-07-10</StartDate>
+               </ValidityPeriod>
+               <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+               <UseType>PermanentDownload</UseType>
+               <UseType>ConditionalDownload</UseType>
+               <UseType>UserMakeAvailableLabelProvided</UseType>
+               <UseType>UserMakeAvailableUserProvided</UseType>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>iTunes UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test2</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>Universal UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test1</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <PriceInformation>
+                  <PriceCode Namespace="PADPIDA2013042401U">AAAA</PriceCode>
+               </PriceInformation>
+            </DealTerms>
+         </Deal>
+      </ReleaseDeal>
+      <ReleaseDeal>
+         <DealReleaseReference>R8</DealReleaseReference>
+         <Deal>
+            <DealTerms>
+               <TerritoryCode>AT</TerritoryCode>
+               <TerritoryCode>CH</TerritoryCode>
+               <TerritoryCode>DE</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2010-12-10</StartDate>
+                  <EndDate>2013-07-09</EndDate>
+               </ValidityPeriod>
+               <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+               <UseType>PermanentDownload</UseType>
+               <UseType>ConditionalDownload</UseType>
+               <UseType>UserMakeAvailableLabelProvided</UseType>
+               <UseType>UserMakeAvailableUserProvided</UseType>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>iTunes UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test2</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>Universal UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test1</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <PriceInformation>
+                  <PriceCode Namespace="PADPIDA2013042401U">AAAA</PriceCode>
+               </PriceInformation>
+            </DealTerms>
+         </Deal>
+         <Deal>
+            <DealTerms>
+               <TerritoryCode>AT</TerritoryCode>
+               <TerritoryCode>CH</TerritoryCode>
+               <TerritoryCode>DE</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2010-12-10</StartDate>
+               </ValidityPeriod>
+               <CommercialModelType>SubscriptionModel</CommercialModelType>
+               <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+               <UseType>UserMakeAvailableLabelProvided</UseType>
+               <UseType>UserMakeAvailableUserProvided</UseType>
+               <UseType>ConditionalDownload</UseType>
+               <UseType>Stream</UseType>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>iTunes UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test2</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>Universal UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test1</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+            </DealTerms>
+         </Deal>
+         <Deal>
+            <DealReference>PriceCampaignID:GPS ISRC: DEC611000336 EventRef: 5626334</DealReference>
+            <DealTerms>
+               <TerritoryCode>AT</TerritoryCode>
+               <TerritoryCode>CH</TerritoryCode>
+               <TerritoryCode>DE</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2013-07-10</StartDate>
+               </ValidityPeriod>
+               <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+               <UseType>PermanentDownload</UseType>
+               <UseType>ConditionalDownload</UseType>
+               <UseType>UserMakeAvailableLabelProvided</UseType>
+               <UseType>UserMakeAvailableUserProvided</UseType>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>iTunes UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test2</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>Universal UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test1</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <PriceInformation>
+                  <PriceCode Namespace="PADPIDA2013042401U">AAAA</PriceCode>
+               </PriceInformation>
+            </DealTerms>
+         </Deal>
+      </ReleaseDeal>
+      <ReleaseDeal>
+         <DealReleaseReference>R9</DealReleaseReference>
+         <Deal>
+            <DealTerms>
+               <TerritoryCode>AT</TerritoryCode>
+               <TerritoryCode>CH</TerritoryCode>
+               <TerritoryCode>DE</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2010-12-10</StartDate>
+                  <EndDate>2013-07-09</EndDate>
+               </ValidityPeriod>
+               <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+               <UseType>PermanentDownload</UseType>
+               <UseType>ConditionalDownload</UseType>
+               <UseType>UserMakeAvailableLabelProvided</UseType>
+               <UseType>UserMakeAvailableUserProvided</UseType>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>iTunes UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test2</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>Universal UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test1</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <PriceInformation>
+                  <PriceCode Namespace="PADPIDA2013042401U">AAAA</PriceCode>
+               </PriceInformation>
+            </DealTerms>
+         </Deal>
+         <Deal>
+            <DealTerms>
+               <TerritoryCode>AT</TerritoryCode>
+               <TerritoryCode>CH</TerritoryCode>
+               <TerritoryCode>DE</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2010-12-10</StartDate>
+               </ValidityPeriod>
+               <CommercialModelType>SubscriptionModel</CommercialModelType>
+               <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+               <UseType>UserMakeAvailableLabelProvided</UseType>
+               <UseType>UserMakeAvailableUserProvided</UseType>
+               <UseType>ConditionalDownload</UseType>
+               <UseType>Stream</UseType>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>iTunes UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test2</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>Universal UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test1</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+            </DealTerms>
+         </Deal>
+         <Deal>
+            <DealReference>PriceCampaignID:GPS ISRC: DEC610900441 EventRef: 5650762</DealReference>
+            <DealTerms>
+               <TerritoryCode>AT</TerritoryCode>
+               <TerritoryCode>CH</TerritoryCode>
+               <TerritoryCode>DE</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2013-07-10</StartDate>
+               </ValidityPeriod>
+               <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+               <UseType>PermanentDownload</UseType>
+               <UseType>ConditionalDownload</UseType>
+               <UseType>UserMakeAvailableLabelProvided</UseType>
+               <UseType>UserMakeAvailableUserProvided</UseType>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>iTunes UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test2</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>Universal UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test1</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <PriceInformation>
+                  <PriceCode Namespace="PADPIDA2013042401U">AAAA</PriceCode>
+               </PriceInformation>
+            </DealTerms>
+         </Deal>
+      </ReleaseDeal>
+      <ReleaseDeal>
+         <DealReleaseReference>R10</DealReleaseReference>
+         <Deal>
+            <DealTerms>
+               <TerritoryCode>AT</TerritoryCode>
+               <TerritoryCode>CH</TerritoryCode>
+               <TerritoryCode>DE</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2010-12-10</StartDate>
+                  <EndDate>2013-07-09</EndDate>
+               </ValidityPeriod>
+               <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+               <UseType>PermanentDownload</UseType>
+               <UseType>ConditionalDownload</UseType>
+               <UseType>UserMakeAvailableLabelProvided</UseType>
+               <UseType>UserMakeAvailableUserProvided</UseType>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>iTunes UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test2</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>Universal UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test1</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <PriceInformation>
+                  <PriceCode Namespace="PADPIDA2013042401U">AAAA</PriceCode>
+               </PriceInformation>
+            </DealTerms>
+         </Deal>
+         <Deal>
+            <DealTerms>
+               <TerritoryCode>AT</TerritoryCode>
+               <TerritoryCode>CH</TerritoryCode>
+               <TerritoryCode>DE</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2010-12-10</StartDate>
+               </ValidityPeriod>
+               <CommercialModelType>SubscriptionModel</CommercialModelType>
+               <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+               <UseType>UserMakeAvailableLabelProvided</UseType>
+               <UseType>UserMakeAvailableUserProvided</UseType>
+               <UseType>ConditionalDownload</UseType>
+               <UseType>Stream</UseType>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>iTunes UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test2</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>Universal UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test1</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+            </DealTerms>
+         </Deal>
+         <Deal>
+            <DealReference>PriceCampaignID:GPS ISRC: DEC610900938 EventRef: 5989740</DealReference>
+            <DealTerms>
+               <TerritoryCode>AT</TerritoryCode>
+               <TerritoryCode>CH</TerritoryCode>
+               <TerritoryCode>DE</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2013-07-10</StartDate>
+               </ValidityPeriod>
+               <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+               <UseType>PermanentDownload</UseType>
+               <UseType>ConditionalDownload</UseType>
+               <UseType>UserMakeAvailableLabelProvided</UseType>
+               <UseType>UserMakeAvailableUserProvided</UseType>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>iTunes UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test2</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>Universal UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test1</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <PriceInformation>
+                  <PriceCode Namespace="PADPIDA2013042401U">AAAA</PriceCode>
+               </PriceInformation>
+            </DealTerms>
+         </Deal>
+      </ReleaseDeal>
+      <ReleaseDeal>
+         <DealReleaseReference>R12</DealReleaseReference>
+         <Deal>
+            <DealTerms>
+               <TerritoryCode>AT</TerritoryCode>
+               <TerritoryCode>CH</TerritoryCode>
+               <TerritoryCode>DE</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2010-12-10</StartDate>
+                  <EndDate>2013-07-09</EndDate>
+               </ValidityPeriod>
+               <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+               <UseType>PermanentDownload</UseType>
+               <UseType>ConditionalDownload</UseType>
+               <UseType>UserMakeAvailableLabelProvided</UseType>
+               <UseType>UserMakeAvailableUserProvided</UseType>
+               <DistributionChannel>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2013042401U">itunesumg</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <PriceInformation>
+                  <PriceCode Namespace="PADPIDA2013042401U">AAAA</PriceCode>
+               </PriceInformation>
+            </DealTerms>
+         </Deal>
+         <Deal>
+            <DealTerms>
+               <TerritoryCode>AT</TerritoryCode>
+               <TerritoryCode>CH</TerritoryCode>
+               <TerritoryCode>DE</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2010-12-10</StartDate>
+                  <EndDate>2014-08-21</EndDate>
+               </ValidityPeriod>
+               <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+               <UseType>PermanentDownload</UseType>
+               <UseType>ConditionalDownload</UseType>
+               <UseType>UserMakeAvailableLabelProvided</UseType>
+               <UseType>UserMakeAvailableUserProvided</UseType>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>Universal UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test1</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <PriceInformation>
+                  <PriceCode Namespace="PADPIDA2013042401U">AAAA</PriceCode>
+               </PriceInformation>
+            </DealTerms>
+         </Deal>
+         <Deal>
+            <DealReference>PriceCampaignID:GPS ISRC: DEC611000430 EventRef: 10445011</DealReference>
+            <DealTerms>
+               <TerritoryCode>AT</TerritoryCode>
+               <TerritoryCode>CH</TerritoryCode>
+               <TerritoryCode>DE</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2014-08-22</StartDate>
+               </ValidityPeriod>
+               <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+               <UseType>PermanentDownload</UseType>
+               <UseType>ConditionalDownload</UseType>
+               <UseType>UserMakeAvailableLabelProvided</UseType>
+               <UseType>UserMakeAvailableUserProvided</UseType>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>Universal UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test1</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <PriceInformation>
+                  <PriceCode Namespace="PADPIDA2013042401U">AAAA</PriceCode>
+               </PriceInformation>
+            </DealTerms>
+         </Deal>
+         <Deal>
+            <DealTerms>
+               <TerritoryCode>AT</TerritoryCode>
+               <TerritoryCode>CH</TerritoryCode>
+               <TerritoryCode>DE</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2010-12-10</StartDate>
+               </ValidityPeriod>
+               <CommercialModelType>SubscriptionModel</CommercialModelType>
+               <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+               <UseType>UserMakeAvailableLabelProvided</UseType>
+               <UseType>UserMakeAvailableUserProvided</UseType>
+               <UseType>ConditionalDownload</UseType>
+               <UseType>Stream</UseType>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>iTunes UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test2</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>Universal UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test1</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+            </DealTerms>
+         </Deal>
+         <Deal>
+            <DealReference>PriceCampaignID:GPS ISRC: DEC611000430 EventRef: 5989746</DealReference>
+            <DealTerms>
+               <TerritoryCode>AT</TerritoryCode>
+               <TerritoryCode>CH</TerritoryCode>
+               <TerritoryCode>DE</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2013-07-10</StartDate>
+               </ValidityPeriod>
+               <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+               <UseType>PermanentDownload</UseType>
+               <UseType>ConditionalDownload</UseType>
+               <UseType>UserMakeAvailableLabelProvided</UseType>
+               <UseType>UserMakeAvailableUserProvided</UseType>
+               <DistributionChannel>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2013042401U">itunesumg</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <PriceInformation>
+                  <PriceCode Namespace="PADPIDA2013042401U">AAAA</PriceCode>
+               </PriceInformation>
+            </DealTerms>
+         </Deal>
+      </ReleaseDeal>
+      <ReleaseDeal>
+         <DealReleaseReference>R13</DealReleaseReference>
+         <Deal>
+            <DealTerms>
+               <TerritoryCode>AT</TerritoryCode>
+               <TerritoryCode>CH</TerritoryCode>
+               <TerritoryCode>DE</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2010-12-10</StartDate>
+                  <EndDate>2013-07-09</EndDate>
+               </ValidityPeriod>
+               <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+               <UseType>PermanentDownload</UseType>
+               <UseType>ConditionalDownload</UseType>
+               <UseType>UserMakeAvailableLabelProvided</UseType>
+               <UseType>UserMakeAvailableUserProvided</UseType>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>iTunes UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test2</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>Universal UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test1</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <PriceInformation>
+                  <PriceCode Namespace="PADPIDA2013042401U">AAAA</PriceCode>
+               </PriceInformation>
+            </DealTerms>
+         </Deal>
+         <Deal>
+            <DealTerms>
+               <TerritoryCode>AT</TerritoryCode>
+               <TerritoryCode>CH</TerritoryCode>
+               <TerritoryCode>DE</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2010-12-10</StartDate>
+               </ValidityPeriod>
+               <CommercialModelType>SubscriptionModel</CommercialModelType>
+               <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+               <UseType>UserMakeAvailableLabelProvided</UseType>
+               <UseType>UserMakeAvailableUserProvided</UseType>
+               <UseType>ConditionalDownload</UseType>
+               <UseType>Stream</UseType>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>iTunes UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test2</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>Universal UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test1</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+            </DealTerms>
+         </Deal>
+         <Deal>
+            <DealReference>PriceCampaignID:GPS ISRC: DEC611000908 EventRef: 5989758</DealReference>
+            <DealTerms>
+               <TerritoryCode>AT</TerritoryCode>
+               <TerritoryCode>CH</TerritoryCode>
+               <TerritoryCode>DE</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2013-07-10</StartDate>
+               </ValidityPeriod>
+               <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+               <UseType>PermanentDownload</UseType>
+               <UseType>ConditionalDownload</UseType>
+               <UseType>UserMakeAvailableLabelProvided</UseType>
+               <UseType>UserMakeAvailableUserProvided</UseType>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>iTunes UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test2</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>Universal UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test1</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <PriceInformation>
+                  <PriceCode Namespace="PADPIDA2013042401U">AAAA</PriceCode>
+               </PriceInformation>
+            </DealTerms>
+         </Deal>
+      </ReleaseDeal>
+      <ReleaseDeal>
+         <DealReleaseReference>R2</DealReleaseReference>
+         <Deal>
+            <DealTerms>
+               <TerritoryCode>AT</TerritoryCode>
+               <TerritoryCode>CH</TerritoryCode>
+               <TerritoryCode>DE</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2010-12-10</StartDate>
+               </ValidityPeriod>
+               <CommercialModelType>SubscriptionModel</CommercialModelType>
+               <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+               <UseType>UserMakeAvailableLabelProvided</UseType>
+               <UseType>UserMakeAvailableUserProvided</UseType>
+               <UseType>ConditionalDownload</UseType>
+               <UseType>Stream</UseType>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>iTunes UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test2</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>Universal UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test1</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+            </DealTerms>
+         </Deal>
+         <Deal>
+            <DealTerms>
+               <TerritoryCode>AT</TerritoryCode>
+               <TerritoryCode>CH</TerritoryCode>
+               <TerritoryCode>DE</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2010-12-10</StartDate>
+               </ValidityPeriod>
+               <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+               <UseType>PermanentDownload</UseType>
+               <UseType>ConditionalDownload</UseType>
+               <UseType>UserMakeAvailableLabelProvided</UseType>
+               <UseType>UserMakeAvailableUserProvided</UseType>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>iTunes UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test2</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>Universal UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test1</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <PriceInformation>
+                  <PriceCode Namespace="PADPIDA2013042401U">AAAA</PriceCode>
+               </PriceInformation>
+            </DealTerms>
+         </Deal>
+      </ReleaseDeal>
+      <ReleaseDeal>
+         <DealReleaseReference>R1</DealReleaseReference>
+         <Deal>
+            <DealTerms>
+               <TerritoryCode>AT</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2010-12-10</StartDate>
+                  <EndDate>2014-08-19</EndDate>
+               </ValidityPeriod>
+               <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+               <UseType>PermanentDownload</UseType>
+               <UseType>ConditionalDownload</UseType>
+               <UseType>UserMakeAvailableLabelProvided</UseType>
+               <UseType>UserMakeAvailableUserProvided</UseType>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>iTunes UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test2</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>Universal UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test1</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <PriceInformation>
+                  <PriceCode Namespace="PADPIDA2013042401U">AAAA</PriceCode>
+               </PriceInformation>
+            </DealTerms>
+         </Deal>
+         <Deal>
+            <DealTerms>
+               <TerritoryCode>CH</TerritoryCode>
+               <TerritoryCode>DE</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2010-12-10</StartDate>
+                  <EndDate>2014-08-18</EndDate>
+               </ValidityPeriod>
+               <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+               <UseType>PermanentDownload</UseType>
+               <UseType>ConditionalDownload</UseType>
+               <UseType>UserMakeAvailableLabelProvided</UseType>
+               <UseType>UserMakeAvailableUserProvided</UseType>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>iTunes UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test2</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>Universal UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test1</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <PriceInformation>
+                  <PriceCode Namespace="PADPIDA2013042401U">AAAA</PriceCode>
+               </PriceInformation>
+            </DealTerms>
+         </Deal>
+         <Deal>
+            <DealReference>PriceCampaignID:GPS ISRC: DEC610900439 EventRef: 8966794</DealReference>
+            <DealTerms>
+               <TerritoryCode>AT</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2014-08-20</StartDate>
+               </ValidityPeriod>
+               <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+               <UseType>PermanentDownload</UseType>
+               <UseType>ConditionalDownload</UseType>
+               <UseType>UserMakeAvailableLabelProvided</UseType>
+               <UseType>UserMakeAvailableUserProvided</UseType>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>iTunes UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test2</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>Universal UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test1</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <PriceInformation>
+                  <PriceCode Namespace="PADPIDA2013042401U">AAAA</PriceCode>
+               </PriceInformation>
+            </DealTerms>
+         </Deal>
+         <Deal>
+            <DealTerms>
+               <TerritoryCode>AT</TerritoryCode>
+               <TerritoryCode>CH</TerritoryCode>
+               <TerritoryCode>DE</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2010-12-10</StartDate>
+               </ValidityPeriod>
+               <CommercialModelType>SubscriptionModel</CommercialModelType>
+               <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+               <UseType>UserMakeAvailableLabelProvided</UseType>
+               <UseType>UserMakeAvailableUserProvided</UseType>
+               <UseType>ConditionalDownload</UseType>
+               <UseType>Stream</UseType>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>iTunes UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test2</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>Universal UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test1</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+            </DealTerms>
+         </Deal>
+         <Deal>
+            <DealReference>PriceCampaignID:GPS ISRC: DEC610900439 EventRef: 8764676</DealReference>
+            <DealTerms>
+               <TerritoryCode>CH</TerritoryCode>
+               <TerritoryCode>DE</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2014-08-19</StartDate>
+               </ValidityPeriod>
+               <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+               <UseType>PermanentDownload</UseType>
+               <UseType>ConditionalDownload</UseType>
+               <UseType>UserMakeAvailableLabelProvided</UseType>
+               <UseType>UserMakeAvailableUserProvided</UseType>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>iTunes UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test2</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>Universal UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test1</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <PriceInformation>
+                  <PriceCode Namespace="PADPIDA2013042401U">AAAA</PriceCode>
+               </PriceInformation>
+            </DealTerms>
+         </Deal>
+      </ReleaseDeal>
+      <ReleaseDeal>
+         <DealReleaseReference>R11</DealReleaseReference>
+         <Deal>
+            <DealTerms>
+               <TerritoryCode>AT</TerritoryCode>
+               <TerritoryCode>CH</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2010-12-10</StartDate>
+                  <EndDate>2013-07-09</EndDate>
+               </ValidityPeriod>
+               <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+               <UseType>PermanentDownload</UseType>
+               <UseType>ConditionalDownload</UseType>
+               <UseType>UserMakeAvailableLabelProvided</UseType>
+               <UseType>UserMakeAvailableUserProvided</UseType>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>iTunes UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test2</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>Universal UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test1</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <PriceInformation>
+                  <PriceCode Namespace="PADPIDA2013042401U">AAAA</PriceCode>
+               </PriceInformation>
+            </DealTerms>
+         </Deal>
+         <Deal>
+            <DealTerms>
+               <TerritoryCode>DE</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2010-12-10</StartDate>
+                  <EndDate>2013-08-22</EndDate>
+               </ValidityPeriod>
+               <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+               <UseType>PermanentDownload</UseType>
+               <UseType>ConditionalDownload</UseType>
+               <UseType>UserMakeAvailableLabelProvided</UseType>
+               <UseType>UserMakeAvailableUserProvided</UseType>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>iTunes UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test2</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>Universal UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test1</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <PriceInformation>
+                  <PriceCode Namespace="PADPIDA2013042401U">AAAA</PriceCode>
+               </PriceInformation>
+            </DealTerms>
+         </Deal>
+         <Deal>
+            <DealReference>PriceCampaignID:GPS ISRC: DEC611000905 EventRef: 7866871</DealReference>
+            <DealTerms>
+               <TerritoryCode>AT</TerritoryCode>
+               <TerritoryCode>CH</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2013-07-10</StartDate>
+               </ValidityPeriod>
+               <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+               <UseType>PermanentDownload</UseType>
+               <UseType>ConditionalDownload</UseType>
+               <UseType>UserMakeAvailableLabelProvided</UseType>
+               <UseType>UserMakeAvailableUserProvided</UseType>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>iTunes UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test2</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>Universal UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test1</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <PriceInformation>
+                  <PriceCode Namespace="PADPIDA2013042401U">AAAA</PriceCode>
+               </PriceInformation>
+            </DealTerms>
+         </Deal>
+         <Deal>
+            <DealTerms>
+               <TerritoryCode>AT</TerritoryCode>
+               <TerritoryCode>CH</TerritoryCode>
+               <TerritoryCode>DE</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2010-12-10</StartDate>
+               </ValidityPeriod>
+               <CommercialModelType>SubscriptionModel</CommercialModelType>
+               <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+               <UseType>UserMakeAvailableLabelProvided</UseType>
+               <UseType>UserMakeAvailableUserProvided</UseType>
+               <UseType>ConditionalDownload</UseType>
+               <UseType>Stream</UseType>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>iTunes UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test2</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>Universal UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test1</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+            </DealTerms>
+         </Deal>
+         <Deal>
+            <DealReference>PriceCampaignID:GPS ISRC: DEC611000905 EventRef: 6133380</DealReference>
+            <DealTerms>
+               <TerritoryCode>DE</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2013-08-23</StartDate>
+               </ValidityPeriod>
+               <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+               <UseType>PermanentDownload</UseType>
+               <UseType>ConditionalDownload</UseType>
+               <UseType>UserMakeAvailableLabelProvided</UseType>
+               <UseType>UserMakeAvailableUserProvided</UseType>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>iTunes UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test2</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>Universal UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test1</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <PriceInformation>
+                  <PriceCode Namespace="PADPIDA2013042401U">AAAA</PriceCode>
+               </PriceInformation>
+            </DealTerms>
+         </Deal>
+      </ReleaseDeal>
+   </DealList>
+</ern:NewReleaseMessage>
