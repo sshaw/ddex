@@ -1,21 +1,18 @@
 language: ruby
+cache: bundler
 rvm:
-  - 1.9.3
-  - jruby-19mode
   - 2.0
   - 2.1
   - 2.2
-  # - 2.3 # Fails due to bunder error
+  - 2.3
   - 2.4
   - 2.5
+  - 2.6
+  - 2.7
 
 before_install:
-  - gem install bundler -v 1.17
-
-matrix:
-  allow_failures:
-    rvm:
-      - jruby-19mode
+  - gem uninstall -v '>= 2' -i $(rvm gemdir)@global -ax bundler || true
+  - gem install bundler -v '< 2'
 
 notifications:
   email: false

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ern:NewReleaseMessage xmlns:ern="http://ddex.net/xml/ern/42"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://ddex.net/xml/ern/42 http://ddex.net/xml/ern/42/release-notification.xsd"
+   ReleaseProfileVersionId="SimpleVideoSingle" LanguageAndScriptCode="en">
+   <MessageHeader>
+      <MessageThreadId>W83751545</MessageThreadId>
+      <MessageId>W83751545</MessageId>
+      <MessageSender>
+         <PartyId>PADPIDA2007050901U</PartyId>
+         <PartyName>
+            <FullName>Warner Music Group</FullName>
+         </PartyName>
+      </MessageSender>
+      <SentOnBehalfOf>
+         <PartyId>PADPIDA2007050901U</PartyId>
+         <PartyName>
+            <FullName>Warner Music Group</FullName>
+         </PartyName>
+      </SentOnBehalfOf>
+      <MessageRecipient>
+         <PartyId>PADPIDA2010121001I</PartyId>
+         <PartyName>
+            <FullName>226-24-7 MusicShop LLC</FullName>
+         </PartyName>
+      </MessageRecipient>
+      <MessageCreatedDateTime>2017-04-24T15:00:16+00:00</MessageCreatedDateTime>
+      <MessageControlType>LiveMessage</MessageControlType>
+   </MessageHeader>
+   <PartyList>
+      <Party>
+         <PartyReference>PAsh</PartyReference>
+         <PartyName>
+            <FullName>Ash</FullName>
+         </PartyName>
+         <PartyId>
+            <ProprietaryId Namespace="PADPIDA2007050901U">3524</ProprietaryId>
+         </PartyId>
+      </Party>
+      <Party>
+         <PartyReference>PDeceptikonz</PartyReference>
+         <PartyName>
+            <FullName>Deceptikonz</FullName>
+         </PartyName>
+      </Party>
+      <Party>
+         <PartyReference>PWM</PartyReference>
+         <PartyName>
+            <FullName>WM South Africa</FullName>
+         </PartyName>
+      </Party>
+   </PartyList>
+   <ResourceList>
+      <Video>
+         <ResourceReference>A1</ResourceReference>
+         <Type>ShortFormMusicalWorkVideo</Type>
+         <ResourceId>
+            <ISRC>ZA34L1600009</ISRC>
+         </ResourceId>
+         <DisplayTitleText>Been Waiting</DisplayTitleText>
+         <DisplayTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>Been Waiting</TitleText>
+         </DisplayTitle>
+         <AdditionalTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>Been Waiting</TitleText>
+         </AdditionalTitle>
+         <DisplayArtistName ApplicableTerritoryCode="Worldwide">Ash</DisplayArtistName>
+         <DisplayArtist SequenceNumber="1">
+            <ArtistPartyReference>PAsh</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <Contributor>
+            <ContributorPartyReference>PDeceptikonz</ContributorPartyReference>
+            <Role>StudioProducer</Role>
+         </Contributor>
+         <PLine>
+            <Year>2016</Year>
+            <PLineText>2016 Warner Music South Africa</PLineText>
+         </PLine>
+         <Duration>PT3M26.2S</Duration>
+         <ParentalWarningType>Explicit</ParentalWarningType>
+         <TechnicalDetails>
+            <TechnicalResourceDetailsReference>T1</TechnicalResourceDetailsReference>
+            <OverallBitRate UnitOfMeasure="kbps">15320</OverallBitRate>
+            <VideoCodecType>MPEG-4</VideoCodecType>
+            <FrameRate>25</FrameRate>
+            <ImageHeight>268</ImageHeight>
+            <ImageWidth>640</ImageWidth>
+            <AudioBitRate UnitOfMeasure="kbps">320</AudioBitRate>
+            <NumberOfAudioChannels>2</NumberOfAudioChannels>
+            <AudioSamplingRate UnitOfMeasure="kHz">48</AudioSamplingRate>
+            <IsPreview>false</IsPreview>
+            <PreviewDetails>
+               <StartPoint>43.0</StartPoint>
+               <Duration>PT0S</Duration>
+               <ExpressionType>Informative</ExpressionType>
+            </PreviewDetails>
+            <File>
+               <URI>resources/ZA34L1600009_15320.mp4</URI>
+               <HashSum>
+                  <Algorithm>MD5</Algorithm>
+                  <HashSumValue>2a7d3c4dc0165498104368a03e2d9914</HashSumValue>
+               </HashSum>
+            </File>
+         </TechnicalDetails>
+      </Video>
+      <Image>
+         <ResourceReference>A2</ResourceReference>
+         <Type>VideoScreenCapture</Type>
+         <ResourceId>
+            <ProprietaryId Namespace="PADPIDA2007050901U">ZA34L1600009_SCREEN_CAPTURE</ProprietaryId>
+         </ResourceId>
+         <TechnicalDetails>
+            <TechnicalResourceDetailsReference>T2</TechnicalResourceDetailsReference>
+            <ImageCodecType>JPEG</ImageCodecType>
+            <ImageHeight>480</ImageHeight>
+            <ImageWidth>640</ImageWidth>
+            <File>
+               <URI>resources/ZA34L1600009.sc1.jpg</URI>
+               <HashSum>
+                  <Algorithm>MD5</Algorithm>
+                  <HashSumValue>28849f068e86d5d063c7b60d75a8c709</HashSumValue>
+               </HashSum>
+            </File>
+         </TechnicalDetails>
+      </Image>
+   </ResourceList>
+   <ReleaseList>
+      <Release>
+         <ReleaseReference>R0</ReleaseReference>
+         <ReleaseType>SingleResourceRelease</ReleaseType>
+         <ReleaseType Namespace="PADPIDA2007050901U" UserDefinedValue="Video">UserDefined</ReleaseType>
+         <ReleaseId>
+            <GRid>A10302B0003662026S</GRid>
+            <ProprietaryId Namespace="PADPIDA2007050901U">ZA34L1600009</ProprietaryId>
+         </ReleaseId>
+         <DisplayTitleText>Been Waiting</DisplayTitleText>
+         <DisplayTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>Been Waiting</TitleText>
+         </DisplayTitle>
+         <AdditionalTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>Been Waiting</TitleText>
+         </AdditionalTitle>
+         <DisplayArtistName ApplicableTerritoryCode="Worldwide">Ash</DisplayArtistName>
+         <DisplayArtist SequenceNumber="1">
+            <ArtistPartyReference>PAsh</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <ReleaseLabelReference ApplicableTerritoryCode="Worldwide">PWM</ReleaseLabelReference>
+         <PLine>
+            <Year>2016</Year>
+            <PLineText>2016 Warner Music South Africa</PLineText>
+         </PLine>
+         <CLine>
+            <Year>2016</Year>
+            <CLineText>2016 Warner Music South Africa</CLineText>
+         </CLine>
+         <Genre ApplicableTerritoryCode="Worldwide">
+            <GenreText>R&amp;B</GenreText>
+         </Genre>
+         <ReleaseVisibilityReference>V0</ReleaseVisibilityReference>
+         <ParentalWarningType>Explicit</ParentalWarningType>
+         <ResourceGroup>
+            <SequenceNumber>1</SequenceNumber>
+            <ResourceGroupContentItem>
+               <SequenceNumber>1</SequenceNumber>
+               <ReleaseResourceReference>A1</ReleaseResourceReference>
+               <LinkedReleaseResourceReference LinkDescription="VideoScreenCapture"
+                  >A2</LinkedReleaseResourceReference>
+            </ResourceGroupContentItem>
+         </ResourceGroup>
+         <Keywords>Ash Been Waiting R&amp;B </Keywords>
+      </Release>
+   </ReleaseList>
+   <DealList>
+      <ReleaseDeal>
+         <DealReleaseReference>R0</DealReleaseReference>
+         <Deal>
+            <DealTerms>
+               <TerritoryCode>ZA</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2017-04-25</StartDate>
+               </ValidityPeriod>
+               <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+               <UseType>NonInteractiveStream</UseType>
+               <UseType>OnDemandStream</UseType>
+            </DealTerms>
+         </Deal>
+         <Deal>
+            <DealTerms>
+               <TerritoryCode>ZA</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2017-04-25</StartDate>
+               </ValidityPeriod>
+               <CommercialModelType>SubscriptionModel</CommercialModelType>
+               <UseType>ConditionalDownload</UseType>
+               <UseType>NonInteractiveStream</UseType>
+               <UseType>OnDemandStream</UseType>
+            </DealTerms>
+         </Deal>
+         <Deal>
+            <DealTerms>
+               <TerritoryCode>ZA</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2017-04-25</StartDate>
+               </ValidityPeriod>
+               <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+               <UseType>PermanentDownload</UseType>
+               <PriceInformation>
+                  <PriceCode Namespace="PADPIDA2007050901U">V01</PriceCode>
+               </PriceInformation>
+            </DealTerms>
+         </Deal>
+      </ReleaseDeal>
+      <ReleaseVisibility>
+         <VisibilityReference>V0</VisibilityReference>
+         <ReleaseDisplayStartDateTime>2017-04-25T00:00:00+00:00</ReleaseDisplayStartDateTime>
+         <CoverArtPreviewStartDateTime>2017-04-25T00:00:00+00:00</CoverArtPreviewStartDateTime>
+         <FullTrackListingPreviewStartDateTime>2017-04-25T00:00:00+00:00</FullTrackListingPreviewStartDateTime>
+      </ReleaseVisibility>
+   </DealList>
+</ern:NewReleaseMessage>

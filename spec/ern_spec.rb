@@ -67,7 +67,13 @@ describe DDEX::ERN do
     end
 
     context "when the object is not a NewReleaseMessage" do
-      it "returns the XML representation for the object"
+      it "returns the XML representation for the object" do
+        e = DDEX::ERN::V36::SoftwareType.new
+        e.value = "bulletproof"
+        e.namespace = "foo"
+
+        expect(DDEX::ERN.write(e)).to equal_xml("<SoftwareType Namespace='foo'>bulletproof</SoftwareType>")
+      end
     end
 
     # TODO: this seems a little off

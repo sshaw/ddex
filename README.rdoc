@@ -107,17 +107,28 @@ For example, <code>SoundRecording/IsArtistRelated</code>:
 
 These changes only affect the object model, the resulting XML will conform to the appropriate DDEX schema.
 
-===== ERN >= v3.6
+===== ERN >= v3.6 < v4.0
 
 <code>PriceInformation/@PriceType</code> has been renamed to <code>PriceInformation#type</code> to avoid conflicting with the
 element of the same name (<code>PriceInformation/PriceType</code>).
 
 === Specification Version Detection
 
-The specification version is determined by the <code>MessageSchemaVersionId</code>, which can be:
+An attempt is made to detect the version. How this is done varies by spec and version. See below for details.
 
-1. Detected based on the root element's value i.e., <code>/node()/@MessageSchemaVersionId</code> (the root element varies by specification)
-2. Explicitly given to DDEX.read via the <code>:version</code> option
+The version can always be explicitly given to <code>DDEX.read</code> via the <code>:version</code> option.
+
+==== ERN >= 4
+
+Version is determined by the DDEX XML namespace associated with the doc.
+
+For example, given a namespace of: <code>http://ddex.net/xml/ern/41</code> we'll try to match the end, either
+<code>"ern/41"</code> or <code>"ern/41/"</code>. The values used to match the come from
+<code>DDEX::ERN.config[V][:message_schema_version_id]</code> where <code>V</code> is a version string, e.g., <code>"V41"</code>.
+
+==== ERN < 4
+
+The version is detected based on the root element's value i.e., <code>/node()/@MessageSchemaVersionId</code>.
 
 By default the <code>MessageSchemaVersionId</code> is assumed to be in <code>SPEC/VERSION</code> or <code>VERSION</code> format
 (any leading, trailing, or duplicate slashes will be stripped), as this seems to be the convention used by most instance docs -though the DDEX specifications
@@ -129,9 +140,6 @@ that vary from this format, and explicitly setting the version is not practical,
   # ...
 
 Note that the version key must match the version's module name.
-
-Feel free to {open an issue}[https://github.com/sshaw/ddex/issues] if you feel this arrangement is problematic or should
-be modified to accommodate something else.
 
 === Validation
 
@@ -195,7 +203,7 @@ See CONTRIBUTING.md
 === See Also
 
 * {grid-number}[https://github.com/ScreenStaring/grid-number] - Class for managing Global Release Identifiers
-* {iTunes Store Transporter: GUI}[http://transportergui.com] - GUI and workflow automation for the iTunes Store’s Transporter (`iTMSTransporter`)
+* {iTunes Store Transporter: GUI}[http://transportergui.com] - GUI and workflow automation for the iTunes Store’s Transporter (+iTMSTransporter+)
 
 === Author
 
@@ -203,7 +211,7 @@ Skye Shaw  [skye.shaw {AT} gmail.com]
 
 === License
 
-Copyright (c) 2013 Skye Shaw. Released under the {MIT License}[www.opensource.org/licenses/MIT].
+Copyright (c) 2013-2020 Skye Shaw. Released under the {MIT License}[www.opensource.org/licenses/MIT].
 
 ---
 

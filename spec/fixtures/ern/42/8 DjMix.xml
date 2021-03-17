@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ern:NewReleaseMessage xmlns:avs="http://ddex.net/xml/avs/avs"
+    xmlns:ern="http://ddex.net/xml/ern/42"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://ddex.net/xml/ern/42 http://ddex.net/xml/ern/42/release-notification.xsd"
+    ReleaseProfileVersionId="DjMix" LanguageAndScriptCode="en">
+    <MessageHeader>
+        <MessageThreadId/>
+        <MessageId/>
+        <MessageSender>
+            <PartyId>PADPIDA3897722461G</PartyId>
+        </MessageSender>
+        <MessageRecipient>
+            <PartyId>PADPIDA3897722461G</PartyId>
+        </MessageRecipient>
+        <MessageCreatedDateTime>2015-07-09T07:39:00+00:00</MessageCreatedDateTime>
+    </MessageHeader>
+    <PartyList>
+        <Party>
+            <PartyReference>POriginalSpinner</PartyReference>
+            <PartyName>
+                <FullName>Original Spinner</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>PChromeo</PartyReference>
+            <PartyName>
+                <FullName>Chromeo</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>PVampireWeekend</PartyReference>
+            <PartyName>
+                <FullName>Vampire Weekend</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>PTwinShadow</PartyReference>
+            <PartyName>
+                <FullName>Twin Shadow</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>PGrimes</PartyReference>
+            <PartyName>
+                <FullName>Grimes</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>PBonIver</PartyReference>
+            <PartyName>
+                <FullName>Bon Iver</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>PDannyBrown</PartyReference>
+            <PartyName>
+                <FullName>Danny Brown</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>PFlyingLotus</PartyReference>
+            <PartyName>
+                <FullName>Flying Lotus</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>PRuntheJewels</PartyReference>
+            <PartyName>
+                <FullName>Run the Jewels</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>PDubSet</PartyReference>
+            <PartyName>
+                <FullName>DubSetMedia</FullName>
+            </PartyName>
+        </Party>
+    </PartyList>
+    <ResourceList>
+        <SoundRecording>
+            <ResourceReference>A1</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <ResourceId>
+                <ISRC>USWE34255410</ISRC>
+                <ProprietaryId Namespace="PADPIDA2014120401D">5621440669702d4571100000</ProprietaryId>
+            </ResourceId>
+            <DisplayTitleText>MMix</DisplayTitleText>
+            <DisplayTitle ApplicableTerritoryCode="Worldwide">
+                <TitleText>MMix</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Original Spinner</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>POriginalSpinner</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+            </DisplayArtist>
+            <PLine>
+                <Year>2017</Year>
+                <PLineText>(P) 2017 Dubset Media</PLineText>
+            </PLine>
+            <Duration>PT12M31S</Duration>
+            <FirstPublicationDate>2017</FirstPublicationDate>
+            <ParentalWarningType>NotExplicit</ParentalWarningType>
+            <RelatedResource>
+                <ResourceRelationshipType>HasContentFrom</ResourceRelationshipType>
+                <ResourceRelatedResourceReference>A2</ResourceRelatedResourceReference>
+                <Timing>
+                    <StartPoint>PT0M0S</StartPoint>
+                    <DurationUsed>PT1M16S</DurationUsed>
+                </Timing>
+            </RelatedResource>
+            <RelatedResource>
+                <ResourceRelationshipType>HasContentFrom</ResourceRelationshipType>
+                <ResourceRelatedResourceReference>A3</ResourceRelatedResourceReference>
+                <Timing>
+                    <StartPoint>PT1M16S</StartPoint>
+                    <DurationUsed>PT1M29S</DurationUsed>
+                </Timing>
+            </RelatedResource>
+            <RelatedResource>
+                <ResourceRelationshipType>HasContentFrom</ResourceRelationshipType>
+                <ResourceRelatedResourceReference>A4</ResourceRelatedResourceReference>
+                <Timing>
+                    <StartPoint>PT2M45S</StartPoint>
+                    <DurationUsed>PT1M15S</DurationUsed>
+                </Timing>
+            </RelatedResource>
+            <RelatedResource>
+                <ResourceRelationshipType>HasContentFrom</ResourceRelationshipType>
+                <ResourceRelatedResourceReference>A5</ResourceRelatedResourceReference>
+                <Timing>
+                    <StartPoint>PT4M0S</StartPoint>
+                    <DurationUsed>PT1M5S</DurationUsed>
+                </Timing>
+            </RelatedResource>
+            <RelatedResource>
+                <ResourceRelationshipType>HasContentFrom</ResourceRelationshipType>
+                <ResourceRelatedResourceReference>A6</ResourceRelatedResourceReference>
+                <Timing>
+                    <StartPoint>PT5M5S</StartPoint>
+                    <DurationUsed>PT1M40S</DurationUsed>
+                </Timing>
+            </RelatedResource>
+            <RelatedResource>
+                <ResourceRelationshipType>HasContentFrom</ResourceRelationshipType>
+                <ResourceRelatedResourceReference>A7</ResourceRelatedResourceReference>
+                <Timing>
+                    <StartPoint>PT6M45S</StartPoint>
+                    <DurationUsed>PT1M27S</DurationUsed>
+                </Timing>
+            </RelatedResource>
+            <RelatedResource>
+                <ResourceRelationshipType>HasContentFrom</ResourceRelationshipType>
+                <ResourceRelatedResourceReference>A8</ResourceRelatedResourceReference>
+                <Timing>
+                    <StartPoint>PT8M12S</StartPoint>
+                    <DurationUsed>PT1M33S</DurationUsed>
+                </Timing>
+            </RelatedResource>
+            <RelatedResource>
+                <ResourceRelationshipType>HasContentFrom</ResourceRelationshipType>
+                <ResourceRelatedResourceReference>A9</ResourceRelatedResourceReference>
+                <Timing>
+                    <StartPoint>PT9M45S</StartPoint>
+                    <DurationUsed>PT3M9S</DurationUsed>
+                </Timing>
+            </RelatedResource>
+            <TechnicalDetails>
+                <TechnicalResourceDetailsReference>T1</TechnicalResourceDetailsReference>
+                <File>
+                    <URI>A1UCASE0000000001X_01_01.wav</URI>
+                </File>
+            </TechnicalDetails>
+        </SoundRecording>
+        <SoundRecording IsSupplemental="true">
+            <ResourceReference>A2</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <ResourceId>
+                <ProprietaryId Namespace="PADPIDA3897722461G">USAT21400507</ProprietaryId>
+            </ResourceId>
+            <DisplayTitleText>Fall Back 2U</DisplayTitleText>
+            <DisplayTitle>
+                <TitleText>Fall Back 2U</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Chromeo</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>PChromeo</ArtistPartyReference>
+                <DisplayArtistRole>Artist</DisplayArtistRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>PChromeo</ContributorPartyReference>
+                <Role>DJ</Role>
+            </Contributor>
+            <Duration>PT1M16S</Duration>
+            <ParentalWarningType>NotExplicit</ParentalWarningType>
+        </SoundRecording>
+        <SoundRecording IsSupplemental="true">
+            <ResourceReference>A3</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <ResourceId>
+                <ProprietaryId Namespace="PADPIDA3897722461G">GBBPW1223440</ProprietaryId>
+            </ResourceId>
+            <DisplayTitleText>Giant</DisplayTitleText>
+            <DisplayTitle>
+                <TitleText>Giant</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Vampire Weekend</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>PVampireWeekend</ArtistPartyReference>
+                <DisplayArtistRole>Artist</DisplayArtistRole>
+            </DisplayArtist>
+            <Duration>PT1M39S</Duration>
+            <ParentalWarningType>NotExplicit</ParentalWarningType>
+        </SoundRecording>
+        <SoundRecording IsSupplemental="true">
+            <ResourceReference>A4</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <ResourceId>
+                <ProprietaryId Namespace="PADPIDA3897722461G">GBBPW1223440</ProprietaryId>
+            </ResourceId>
+            <DisplayTitleText>For Now</DisplayTitleText>
+            <DisplayTitle>
+                <TitleText>For Now</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Twin Shadow</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>PTwinShadow</ArtistPartyReference>
+                <DisplayArtistRole>Artist</DisplayArtistRole>
+            </DisplayArtist>
+            <Duration>PT1M13S</Duration>
+            <ParentalWarningType>NotExplicit</ParentalWarningType>
+        </SoundRecording>
+        <SoundRecording IsSupplemental="true">
+            <ResourceReference>A5</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <ResourceId>
+                <ProprietaryId Namespace="PADPIDA3897722461G">CA2101200001</ProprietaryId>
+            </ResourceId>
+            <DisplayTitleText>Infinite Love Without Fulfillment</DisplayTitleText>
+            <DisplayTitle>
+                <TitleText>Infinite Love Without Fulfillment</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Grimes</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>PGrimes</ArtistPartyReference>
+                <DisplayArtistRole>Artist</DisplayArtistRole>
+            </DisplayArtist>
+            <Duration>PT0M59S</Duration>
+            <ParentalWarningType>Explicit</ParentalWarningType>
+        </SoundRecording>
+        <SoundRecording IsSupplemental="true">
+            <ResourceReference>A6</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <ResourceId>
+                <ProprietaryId Namespace="PADPIDA3897722461G">US38Y0811509</ProprietaryId>
+            </ResourceId>
+            <DisplayTitleText>Re:Stacks</DisplayTitleText>
+            <DisplayTitle>
+                <TitleText>Re:Stacks</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Bon Iver</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>PBonIver</ArtistPartyReference>
+                <DisplayArtistRole>Artist</DisplayArtistRole>
+            </DisplayArtist>
+            <Duration>PT1M36S</Duration>
+            <ParentalWarningType>Unknown</ParentalWarningType>
+        </SoundRecording>
+        <SoundRecording IsSupplemental="true">
+            <ResourceReference>A7</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <ResourceId>
+                <ProprietaryId Namespace="PADPIDA3897722461G">QMSDU1300261</ProprietaryId>
+            </ResourceId>
+            <DisplayTitleText>Side B (Dope Song)</DisplayTitleText>
+            <DisplayTitle>
+                <TitleText>Side B</TitleText>
+                <SubTitle>Dope Song</SubTitle>
+            </DisplayTitle>
+            <DisplayArtistName>Danny Brown</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>PDannyBrown</ArtistPartyReference>
+                <DisplayArtistRole>Artist</DisplayArtistRole>
+            </DisplayArtist>
+            <Duration>PT1M26S</Duration>
+            <ParentalWarningType>NotExplicit</ParentalWarningType>
+        </SoundRecording>
+        <SoundRecording IsSupplemental="true">
+            <ResourceReference>A8</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <ResourceId>
+                <ProprietaryId Namespace="PADPIDA3897722461G">GBBPW1200124</ProprietaryId>
+            </ResourceId>
+            <DisplayTitleText>Putty Boy Strut</DisplayTitleText>
+            <DisplayTitle>
+                <TitleText>Putty Boy Strut</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Flying Lotus</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>PFlyingLotus</ArtistPartyReference>
+                <DisplayArtistRole>Artist</DisplayArtistRole>
+            </DisplayArtist>
+            <Duration>PT1M13S</Duration>
+            <ParentalWarningType>NotExplicit</ParentalWarningType>
+        </SoundRecording>
+        <SoundRecording IsSupplemental="true">
+            <ResourceReference>A9</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <ResourceId>
+                <ProprietaryId Namespace="PADPIDA3897722461G">QM8RL1400011</ProprietaryId>
+            </ResourceId>
+            <DisplayTitleText>Get it</DisplayTitleText>
+            <DisplayTitle>
+                <TitleText>Get it</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Run the Jewels</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>PRuntheJewels</ArtistPartyReference>
+                <DisplayArtistRole>Artist</DisplayArtistRole>
+            </DisplayArtist>
+            <Duration>PT2M46S</Duration>
+            <ParentalWarningType>NotExplicit</ParentalWarningType>
+        </SoundRecording>
+        <Image>
+            <ResourceReference>A10</ResourceReference>
+            <Type>FrontCoverImage</Type>
+            <ResourceId>
+                <ProprietaryId Namespace="PADPIDA3897722461G">5705c78e69702d23ec120000</ProprietaryId>
+            </ResourceId>
+            <ParentalWarningType>NotExplicit</ParentalWarningType>
+            <TechnicalDetails>
+                <TechnicalResourceDetailsReference>T2</TechnicalResourceDetailsReference>
+                <File>
+                    <URI> QZ38A1600000_T2.jpeg</URI>
+                </File>
+            </TechnicalDetails>
+        </Image>
+    </ResourceList>
+    <ReleaseList>
+        <Release>
+            <ReleaseReference>R0</ReleaseReference>
+            <ReleaseType>DjMix</ReleaseType>
+            <ReleaseId>
+                <ICPN>123123123123</ICPN>
+            </ReleaseId>
+            <DisplayTitleText>MMix</DisplayTitleText>
+            <DisplayTitle>
+                <TitleText>MMix</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Monkey Claw</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>POriginalSpinner</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+            </DisplayArtist>
+            <ReleaseLabelReference>PDubSet</ReleaseLabelReference>
+            <PLine>
+                <Year>2017</Year>
+                <PLineText>(P) 2017 Dubset Media</PLineText>
+            </PLine>
+            <CLine>
+                <Year>2017</Year>
+                <CLineText>(C) 2017 Dubset Media</CLineText>
+            </CLine>
+            <Genre>
+                <GenreText>Nu Disco</GenreText>
+            </Genre>
+            <OriginalReleaseDate IsApproximate="false">2017-01-02</OriginalReleaseDate>
+            <ParentalWarningType>NotExplicit</ParentalWarningType>
+            <ResourceGroup>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>1</SequenceNumber>
+                    <ReleaseResourceReference>A1</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+				<LinkedReleaseResourceReference LinkDescription="CoverArt">A10</LinkedReleaseResourceReference>
+            </ResourceGroup>
+        </Release>
+    </ReleaseList>
+    <DealList>
+        <ReleaseDeal>
+            <DealReleaseReference>R0</DealReleaseReference>
+            <Deal>
+                <DealTerms>
+                    <TerritoryCode>KR</TerritoryCode>
+                    <TerritoryCode>AU</TerritoryCode>
+                    <TerritoryCode>PE</TerritoryCode>
+                    <TerritoryCode>SG</TerritoryCode>
+                    <TerritoryCode>SI</TerritoryCode>
+                    <TerritoryCode>GB</TerritoryCode>
+                    <TerritoryCode>US</TerritoryCode>
+                    <TerritoryCode>VN</TerritoryCode>
+                    <TerritoryCode>CA</TerritoryCode>
+                    <TerritoryCode>DO</TerritoryCode>
+                    <TerritoryCode>FR</TerritoryCode>
+                    <TerritoryCode>DE</TerritoryCode>
+                    <ValidityPeriod>
+                        <StartDate>2017-01-02</StartDate>
+                    </ValidityPeriod>
+                    <CommercialModelType>SubscriptionModel</CommercialModelType>
+                    <CommercialModelType UserDefinedValue="DSP Program 6" Namespace="PADPIDA3897722461G">UserDefined</CommercialModelType>
+                    <UseType>ConditionalDownload</UseType>
+                    <UseType>OnDemandStream</UseType>
+                </DealTerms>
+            </Deal>
+        </ReleaseDeal>
+    </DealList>
+</ern:NewReleaseMessage>
