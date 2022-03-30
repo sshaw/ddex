@@ -1,3 +1,7 @@
+v0.0.9    2022-03-30
+--------------------
+* Add support for ActiveRecord 7+ (#21 thanks Eugene (@CromonMS))
+
 v0.0.8    2021-02-02
 --------------------
 * Add support for ERN 4.2
