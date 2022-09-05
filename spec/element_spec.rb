@@ -45,7 +45,7 @@ describe DDEX::Element do
     end
   end
 
-  describe "#new" do
+  describe "#initialize" do
     it "sets the instance's attributes" do
       nested = parent_attr
       nested[:child] = Child.new(child_attr)
@@ -57,6 +57,22 @@ describe DDEX::Element do
       expect(parent.numbers).to eq nested[:numbers]
       expect(parent.child).to eq nested[:child]
       expect(parent.children).to eq nested[:children]
+    end
+
+    it "instantiates the object tree from a nested attribute hash" do
+      attributes = parent_attr.merge(:child => child_attr, :children => [ child_attr ])
+      parent = Parent.new(attributes)
+
+      expect(parent.name).to eq "sshaw"
+      expect(parent.numbers).to eq [1,2,3]
+
+      expect(parent.child).to_not be_nil
+      expect(parent.child.name).to eq "fofinha"
+      expect(parent.child.numbers).to eq [4,5,6]
+
+      expect(parent.children.size).to eq 1
+      expect(parent.children[0].name).to eq "fofinha"
+      expect(parent.children[0].numbers).to eq [4,5,6]
     end
   end
 

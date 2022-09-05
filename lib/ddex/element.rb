@@ -25,7 +25,7 @@ module DDEX
     #
     # === Arguments
     #
-    # [attributes (Hash)] Values to set on the instance's attributes, a nested +Hash+ <b>will not</b> result in instantiation of child objects.
+    # [attributes (Hash)] Values to set on the instance's attributes, a nested +Hash+ will result in instantiation of child objects.
     #
     # === Errors
     #
@@ -40,8 +40,21 @@ module DDEX
         method = "#{name}="
         next unless attr = roxml_attributes[name] and respond_to?(method)
 
-        value = Array(value) if !attr.sought_type.instance_of?(Symbol) && attr.array? # If it's not a ROXML directive && ...
-        send(method, value)
+        if !attr.sought_type.instance_of?(Symbol) && attr.array? # If it's not a ROXML directive && ...
+          value = Array(value)
+        end
+
+        if !value.is_a?(DDEX::Element) && attr.sought_type.is_a?(Class) && attr.sought_type.ancestors.include?(DDEX::Element)
+          value = if attr.array? && value.is_a?(Array)
+            value.map { |v| v.is_a?(DDEX::Element) ? v : attr.sought_type.new(v) }
+          elsif !value.is_a?(Hash)
+            attr.sought_type.new(name => value)
+          else
+            attr.sought_type.new(value)
+          end
+        end
+
+        public_send(method, value)
       end
     end
 
