@@ -202,6 +202,7 @@ See CONTRIBUTING.md
 
 === See Also
 
+* {Metadata GUI}[http://metadatagui.com/] - Web-based GUI for managing DDEX metadata and exporting XML files
 * {grid-number}[https://github.com/ScreenStaring/grid-number] - Class for managing Global Release Identifiers
 * {iTunes Store Transporter: GUI}[http://transportergui.com] - GUI and workflow automation for the iTunes Store’s Transporter (+iTMSTransporter+)
 
