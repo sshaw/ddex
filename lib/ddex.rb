@@ -3,12 +3,13 @@ require "ddex/element"
 
 module DDEX
   autoload :ERN, "ddex/ern"
+  autoload :ECHO, "ddex/echo"
 
   XML_SCHEMA_INSTANCE_PREFIX = "xsi".freeze
   XML_SCHEMA_INSTANCE_NS     = "http://www.w3.org/2001/XMLSchema-instance".freeze
   XML_SCHEMA_INSTANCE_ATTR   = "#{XML_SCHEMA_INSTANCE_PREFIX}:schemaLocation".freeze
 
-  SPECS = %w[ERN]
+  SPECS = %w[ERN ECHO]
 
   class DDEXError < StandardError; end
   class UnknownVersionError < DDEXError; end
