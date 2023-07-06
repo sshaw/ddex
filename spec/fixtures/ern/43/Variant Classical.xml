@@ -1,0 +1,1239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ern:NewReleaseMessage xmlns:ern="http://ddex.net/xml/ern/43"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://ddex.net/xml/ern/43 http://ddex.net/xml/ern/43/release-notification.xsd"
+   ReleaseProfileVersionId="Audio" ReleaseProfileVariantVersionId="Classical"
+   LanguageAndScriptCode="en" AvsVersionId="3">
+   <MessageHeader>
+      <MessageThreadId>1234</MessageThreadId>
+      <MessageId>1234-1</MessageId>
+      <MessageSender>
+         <PartyId>PADPIDA111111111</PartyId>
+         <PartyName>
+            <FullName>UMG</FullName>
+         </PartyName>
+      </MessageSender>
+      <MessageRecipient>
+         <PartyId>PADPIDA2222222222</PartyId>
+         <PartyName>
+            <FullName>Test</FullName>
+         </PartyName>
+      </MessageRecipient>
+      <MessageCreatedDateTime>2017-04-25T15:00:29+00:00</MessageCreatedDateTime>
+      <MessageControlType>LiveMessage</MessageControlType>
+   </MessageHeader>
+   <PartyList>
+      <Party>
+         <PartyReference>PDG</PartyReference>
+         <PartyName>
+            <FullName>Deutsche Grammophon</FullName>
+         </PartyName>
+      </Party>
+      <Party>
+         <PartyReference>PSS</PartyReference>
+         <PartyName>
+            <FullName>Simon Standage</FullName>
+         </PartyName>
+      </Party>
+      <Party>
+         <PartyReference>PEC</PartyReference>
+         <PartyName>
+            <FullName>The English Concert</FullName>
+         </PartyName>
+      </Party>
+      <Party>
+         <PartyReference>PEW</PartyReference>
+         <PartyName>
+            <FullName>Elizabeth Wilcock</FullName>
+         </PartyName>
+      </Party>
+      <Party>
+         <PartyReference>PDR</PartyReference>
+         <PartyName>
+            <FullName>David Reichenberg</FullName>
+         </PartyName>
+      </Party>
+      <Party>
+         <PartyReference>PTP</PartyReference>
+         <PartyName>
+            <FullName>Trevor Pinnock</FullName>
+         </PartyName>
+      </Party>
+      <Party>
+         <PartyReference>PAV</PartyReference>
+         <PartyName>
+            <FullName>Antonio Vivaldi</FullName>
+         </PartyName>
+      </Party>
+   </PartyList>
+   <ResourceList>
+      <SoundRecording>
+         <ResourceReference>A1</ResourceReference>
+         <Type>MusicalWorkSoundRecording</Type>
+         <SoundRecordingEdition>
+            <ResourceId>
+               <ISRC>DE0000311111</ISRC>
+            </ResourceId>
+            <PLine>
+               <Year>2003</Year>
+               <PLineText>2003 Deutsche Grammphon</PLineText>
+            </PLine>
+            <TechnicalDetails>
+               <TechnicalResourceDetailsReference>T1</TechnicalResourceDetailsReference>
+               <DeliveryFile>
+                  <Type>AudioFile</Type>
+                  <AudioCodecType>FLAC</AudioCodecType>
+                  <NumberOfChannels>2</NumberOfChannels>
+                  <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                  <BitsPerSample>16</BitsPerSample>
+                  <File>
+                     <URI>resources/1.flac</URI>
+                     <HashSum>
+                        <Algorithm>MD5</Algorithm>
+                        <HashSumValue>db7dd2f3bb9b322646e3f4d7b65b47ab</HashSumValue>
+                     </HashSum>
+                  </File>
+               </DeliveryFile>
+               <ClipDetails>
+                  <TechnicalResourceDetailsReference>T1C</TechnicalResourceDetailsReference>
+                  <ClipType>Preview</ClipType>
+                  <Timing>
+                     <StartPoint>0.0</StartPoint>
+                     <DurationUsed>PT1M</DurationUsed>
+                  </Timing>
+                  <ExpressionType>Informative</ExpressionType>
+               </ClipDetails>
+            </TechnicalDetails>
+         </SoundRecordingEdition>
+         <DisplayTitleText>Vivaldi: Concerto For Violin And Strings In E Major, Op.8, No.1, RV 269 "La Primavera". 1 Allegro</DisplayTitleText>
+         <DisplayTitle>
+            <TitleText>Vivaldi: Concerto For Violin And Strings In E Major, Op.8, No.1, RV 269 "La Primavera". 1 Allegro</TitleText>
+         </DisplayTitle>
+         <AdditionalTitle TitleType="FormalTitle">
+            <TitleText>Concerto For Violin And Strings In E Major, Op.8, No.1, RV 269 "La Primavera". 1 Allegro</TitleText>
+         </AdditionalTitle>
+         <DisplayArtistName>The English Concert, Simon Standage, Trevor Pinnock</DisplayArtistName>
+         <DisplayArtist SequenceNumber="1">
+            <ArtistPartyReference>PEC</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <DisplayArtist SequenceNumber="2">
+            <ArtistPartyReference>PSS</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <DisplayArtist SequenceNumber="3">
+            <ArtistPartyReference>PTP</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <Contributor>
+            <ContributorPartyReference>PAV</ContributorPartyReference>
+            <Role>Composer</Role>
+         </Contributor>
+         <Contributor>
+            <ContributorPartyReference>PEC</ContributorPartyReference>
+            <Role>Orchestra</Role>
+         </Contributor>
+         <Contributor>
+            <ContributorPartyReference>PTP</ContributorPartyReference>
+            <Role>Soloist</Role>
+            <InstrumentType>Harpsichord</InstrumentType>
+         </Contributor>
+         <Contributor>
+            <ContributorPartyReference>PSS</ContributorPartyReference>
+            <Role>Soloist</Role>
+            <InstrumentType>Violin</InstrumentType>
+         </Contributor>
+         <Duration>PT3M21S</Duration>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+      </SoundRecording>
+      <SoundRecording>
+         <ResourceReference>A2</ResourceReference>
+         <Type>MusicalWorkSoundRecording</Type>
+         <SoundRecordingEdition>
+            <ResourceId>
+               <ISRC>DE0000322222</ISRC>
+            </ResourceId>
+            <PLine>
+               <Year>2003</Year>
+               <PLineText>2003 Deutsche Grammphon</PLineText>
+            </PLine>
+            <TechnicalDetails>
+               <TechnicalResourceDetailsReference>T2</TechnicalResourceDetailsReference>
+               <DeliveryFile>
+                  <Type>AudioFile</Type>
+                  <AudioCodecType>FLAC</AudioCodecType>
+                  <NumberOfChannels>2</NumberOfChannels>
+                  <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                  <BitsPerSample>16</BitsPerSample>
+                  <File>
+                     <URI>resources/2.flac</URI>
+                     <HashSum>
+                        <Algorithm>MD5</Algorithm>
+                        <HashSumValue>db7dd2f3bb9b322646e3f4d7b65b47ab</HashSumValue>
+                     </HashSum>
+                  </File>
+               </DeliveryFile>
+               <ClipDetails>
+                  <TechnicalResourceDetailsReference>T2C</TechnicalResourceDetailsReference>
+                  <ClipType>Preview</ClipType>
+                  <Timing>
+                     <StartPoint>0.0</StartPoint>
+                     <DurationUsed>PT1M</DurationUsed>
+                  </Timing>
+                  <ExpressionType>Informative</ExpressionType>
+               </ClipDetails>
+            </TechnicalDetails>
+         </SoundRecordingEdition>
+         <DisplayTitleText>Vivaldi: Concerto For Violin And Strings In E Major, Op.8, No.1, RV 269 "La Primavera". 2 Largo</DisplayTitleText>
+         <DisplayTitle>
+            <TitleText>Vivaldi: Concerto For Violin And Strings In E Major, Op.8, No.1, RV 269 "La Primavera". 2 Largo</TitleText>
+         </DisplayTitle>
+         <AdditionalTitle TitleType="FormalTitle">
+            <TitleText>Concerto For Violin And Strings In E Major, Op.8, No.1, RV 269 "La Primavera". 2 Largo</TitleText>
+         </AdditionalTitle>
+         <DisplayArtistName>The English Concert, Simon Standage, Trevor Pinnock</DisplayArtistName>
+         <DisplayArtist SequenceNumber="1">
+            <ArtistPartyReference>PEC</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <DisplayArtist SequenceNumber="2">
+            <ArtistPartyReference>PSS</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <DisplayArtist SequenceNumber="3">
+            <ArtistPartyReference>PTP</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <Contributor>
+            <ContributorPartyReference>PAV</ContributorPartyReference>
+            <Role>Composer</Role>
+         </Contributor>
+         <Contributor>
+            <ContributorPartyReference>PEC</ContributorPartyReference>
+            <Role>Orchestra</Role>
+         </Contributor>
+         <Contributor>
+            <ContributorPartyReference>PTP</ContributorPartyReference>
+            <Role>Soloist</Role>
+            <InstrumentType>Harpsichord</InstrumentType>
+         </Contributor>
+         <Contributor>
+            <ContributorPartyReference>PSS</ContributorPartyReference>
+            <Role>Soloist</Role>
+            <InstrumentType>Violin</InstrumentType>
+         </Contributor>
+         <Duration>PT2M41S</Duration>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+      </SoundRecording>
+      <SoundRecording>
+         <ResourceReference>A3</ResourceReference>
+         <Type>MusicalWorkSoundRecording</Type>
+         <SoundRecordingEdition>
+            <ResourceId>
+               <ISRC>DE0000333333</ISRC>
+            </ResourceId>
+            <PLine>
+               <Year>2003</Year>
+               <PLineText>2003 Deutsche Grammphon</PLineText>
+            </PLine>
+            <TechnicalDetails>
+               <TechnicalResourceDetailsReference>T3</TechnicalResourceDetailsReference>
+               <DeliveryFile>
+                  <Type>AudioFile</Type>
+                  <AudioCodecType>FLAC</AudioCodecType>
+                  <NumberOfChannels>2</NumberOfChannels>
+                  <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                  <BitsPerSample>16</BitsPerSample>
+                  <File>
+                     <URI>resources/3.flac</URI>
+                     <HashSum>
+                        <Algorithm>MD5</Algorithm>
+                        <HashSumValue>db7dd2f3bb9b322646e3f4d7b65b47ab</HashSumValue>
+                     </HashSum>
+                  </File>
+               </DeliveryFile>
+               <ClipDetails>
+                  <TechnicalResourceDetailsReference>T3C</TechnicalResourceDetailsReference>
+                  <ClipType>Preview</ClipType>
+                  <Timing>
+                     <StartPoint>0.0</StartPoint>
+                     <DurationUsed>PT1M</DurationUsed>
+                  </Timing>
+                  <ExpressionType>Informative</ExpressionType>
+               </ClipDetails>
+            </TechnicalDetails>
+         </SoundRecordingEdition>
+         <DisplayTitleText>Vivaldi: Concerto For Violin And Strings In E Major, Op.8, No.1, RV 269 "La Primavera". 3 Allegro (Danza pastorale)</DisplayTitleText>
+         <DisplayTitle>
+            <TitleText>Vivaldi: Concerto For Violin And Strings In E Major, Op.8, No.1, RV 269 "La Primavera". 3 Allegro (Danza pastorale)</TitleText>
+         </DisplayTitle>
+         <AdditionalTitle TitleType="FormalTitle">
+            <TitleText>Concerto For Violin And Strings In E Major, Op.8, No.1, RV 269 "La Primavera". 3 Allegro (Danza pastorale)</TitleText>
+         </AdditionalTitle>
+         <DisplayArtistName>The English Concert, Simon Standage, Trevor Pinnock</DisplayArtistName>
+         <DisplayArtist SequenceNumber="1">
+            <ArtistPartyReference>PEC</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <DisplayArtist SequenceNumber="2">
+            <ArtistPartyReference>PSS</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <DisplayArtist SequenceNumber="3">
+            <ArtistPartyReference>PTP</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <Contributor>
+            <ContributorPartyReference>PAV</ContributorPartyReference>
+            <Role>Composer</Role>
+         </Contributor>
+         <Contributor>
+            <ContributorPartyReference>PEC</ContributorPartyReference>
+            <Role>Orchestra</Role>
+         </Contributor>
+         <Contributor>
+            <ContributorPartyReference>PTP</ContributorPartyReference>
+            <Role>Soloist</Role>
+            <InstrumentType>Harpsichord</InstrumentType>
+         </Contributor>
+         <Contributor>
+            <ContributorPartyReference>PSS</ContributorPartyReference>
+            <Role>Soloist</Role>
+            <InstrumentType>Violin</InstrumentType>
+         </Contributor>
+         <Duration>PT3M39S</Duration>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+      </SoundRecording>
+      <SoundRecording>
+         <ResourceReference>A4</ResourceReference>
+         <Type>MusicalWorkSoundRecording</Type>
+         <SoundRecordingEdition>
+            <ResourceId>
+               <ISRC>DE0000344444</ISRC>
+            </ResourceId>
+            <PLine>
+               <Year>2003</Year>
+               <PLineText>2003 Deutsche Grammphon</PLineText>
+            </PLine>
+            <TechnicalDetails>
+               <TechnicalResourceDetailsReference>T4</TechnicalResourceDetailsReference>
+               <DeliveryFile>
+                  <Type>AudioFile</Type>
+                  <AudioCodecType>FLAC</AudioCodecType>
+                  <NumberOfChannels>2</NumberOfChannels>
+                  <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                  <BitsPerSample>16</BitsPerSample>
+                  <File>
+                     <URI>resources/4.flac</URI>
+                     <HashSum>
+                        <Algorithm>MD5</Algorithm>
+                        <HashSumValue>db7dd2f3bb9b322646e3f4d7b65b47ab</HashSumValue>
+                     </HashSum>
+                  </File>
+               </DeliveryFile>
+               <ClipDetails>
+                  <TechnicalResourceDetailsReference>T4C</TechnicalResourceDetailsReference>
+                  <ClipType>Preview</ClipType>
+                  <Timing>
+                     <StartPoint>0.0</StartPoint>
+                     <DurationUsed>PT1M</DurationUsed>
+                  </Timing>
+                  <ExpressionType>Informative</ExpressionType>
+               </ClipDetails>
+            </TechnicalDetails>
+         </SoundRecordingEdition>
+         <DisplayTitleText>Vivaldi: Concerto For Violin And Strings In G Minor, Op.8, No.2, RV 315 "L'estate". 1 Allegro non molto - Allegro</DisplayTitleText>
+         <DisplayTitle>
+            <TitleText>Vivaldi: Concerto For Violin And Strings In G Minor, Op.8, No.2, RV 315 "L'estate". 1 Allegro non molto - Allegro</TitleText>
+         </DisplayTitle>
+         <AdditionalTitle TitleType="FormalTitle">
+            <TitleText>Concerto For Violin And Strings In G Minor, Op.8, No.2, RV 315 "L'estate". 1 Allegro non molto - Allegro</TitleText>
+         </AdditionalTitle>
+         <DisplayArtistName>The English Concert, Simon Standage, Trevor Pinnock</DisplayArtistName>
+         <DisplayArtist SequenceNumber="1">
+            <ArtistPartyReference>PEC</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <DisplayArtist SequenceNumber="2">
+            <ArtistPartyReference>PSS</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <Contributor>
+            <ContributorPartyReference>PAV</ContributorPartyReference>
+            <Role>Composer</Role>
+         </Contributor>
+         <Contributor>
+            <ContributorPartyReference>PEC</ContributorPartyReference>
+            <Role>Orchestra</Role>
+         </Contributor>
+         <Contributor>
+            <ContributorPartyReference>PSS</ContributorPartyReference>
+            <Role>Soloist</Role>
+            <InstrumentType>Violin</InstrumentType>
+         </Contributor>
+         <Duration>PT4M45S</Duration>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+      </SoundRecording>
+      <SoundRecording>
+         <ResourceReference>A5</ResourceReference>
+         <Type>MusicalWorkSoundRecording</Type>
+         <SoundRecordingEdition>
+            <ResourceId>
+               <ISRC>DE0000355555</ISRC>
+            </ResourceId>
+            <PLine>
+               <Year>2003</Year>
+               <PLineText>2003 Deutsche Grammphon</PLineText>
+            </PLine>
+            <TechnicalDetails>
+               <TechnicalResourceDetailsReference>T5</TechnicalResourceDetailsReference>
+               <DeliveryFile>
+                  <Type>AudioFile</Type>
+                  <AudioCodecType>FLAC</AudioCodecType>
+                  <NumberOfChannels>2</NumberOfChannels>
+                  <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                  <BitsPerSample>16</BitsPerSample>
+                  <File>
+                     <URI>resources/5.flac</URI>
+                     <HashSum>
+                        <Algorithm>MD5</Algorithm>
+                        <HashSumValue>db7dd2f3bb9b322646e3f4d7b65b47ab</HashSumValue>
+                     </HashSum>
+                  </File>
+               </DeliveryFile>
+               <ClipDetails>
+                  <TechnicalResourceDetailsReference>T5C</TechnicalResourceDetailsReference>
+                  <ClipType>Preview</ClipType>
+                  <Timing>
+                     <StartPoint>0.0</StartPoint>
+                     <DurationUsed>PT1M</DurationUsed>
+                  </Timing>
+                  <ExpressionType>Informative</ExpressionType>
+               </ClipDetails>
+            </TechnicalDetails>
+         </SoundRecordingEdition>
+         <DisplayTitleText>Vivaldi: Concerto For Violin And Strings In G Minor, Op.8, No.2, RV 315 "L'estate". 2 Adagio - Presto - Adagio</DisplayTitleText>
+         <DisplayTitle>
+            <TitleText>Vivaldi: Concerto For Violin And Strings In G Minor, Op.8, No.2, RV 315 "L'estate". 2 Adagio - Presto - Adagio</TitleText>
+         </DisplayTitle>
+         <AdditionalTitle TitleType="FormalTitle">
+            <TitleText>Concerto For Violin And Strings In G Minor, Op.8, No.2, RV 315 "L'estate". 2 Adagio - Presto - Adagio</TitleText>
+         </AdditionalTitle>
+         <DisplayArtistName>The English Concert, Simon Standage, Trevor Pinnock</DisplayArtistName>
+         <DisplayArtist SequenceNumber="1">
+            <ArtistPartyReference>PEC</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <DisplayArtist SequenceNumber="2">
+            <ArtistPartyReference>PSS</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <Contributor>
+            <ContributorPartyReference>PAV</ContributorPartyReference>
+            <Role>Composer</Role>
+         </Contributor>
+         <Contributor>
+            <ContributorPartyReference>PEC</ContributorPartyReference>
+            <Role>Orchestra</Role>
+         </Contributor>
+         <Contributor>
+            <ContributorPartyReference>PSS</ContributorPartyReference>
+            <Role>Soloist</Role>
+            <InstrumentType>Violin</InstrumentType>
+         </Contributor>
+         <Duration>PT2M17S</Duration>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+
+      </SoundRecording>
+      <SoundRecording>
+         <ResourceReference>A6</ResourceReference>
+         <Type>MusicalWorkSoundRecording</Type>
+         <SoundRecordingEdition>
+            <ResourceId>
+               <ISRC>DE0000366666</ISRC>
+            </ResourceId>
+            <PLine>
+               <Year>2003</Year>
+               <PLineText>2003 Deutsche Grammphon</PLineText>
+            </PLine>
+            <TechnicalDetails>
+               <TechnicalResourceDetailsReference>T6</TechnicalResourceDetailsReference>
+               <DeliveryFile>
+                  <Type>AudioFile</Type>
+                  <AudioCodecType>FLAC</AudioCodecType>
+                  <NumberOfChannels>2</NumberOfChannels>
+                  <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                  <BitsPerSample>16</BitsPerSample>
+                  <File>
+                     <URI>resources/6.flac</URI>
+                     <HashSum>
+                        <Algorithm>MD5</Algorithm>
+                        <HashSumValue>db7dd2f3bb9b322646e3f4d7b65b47ab</HashSumValue>
+                     </HashSum>
+                  </File>
+               </DeliveryFile>
+               <ClipDetails>
+                  <TechnicalResourceDetailsReference>T6C</TechnicalResourceDetailsReference>
+                  <ClipType>Preview</ClipType>
+                  <Timing>
+                     <StartPoint>0.0</StartPoint>
+                     <DurationUsed>PT1M</DurationUsed>
+                  </Timing>
+                  <ExpressionType>Informative</ExpressionType>
+               </ClipDetails>
+            </TechnicalDetails>
+         </SoundRecordingEdition>
+         <DisplayTitleText>Vivaldi: Concerto For Violin And Strings In G Minor, Op.8, No.2, RV 315 "L'estate". 3 Presto (Tempo impetuoso d'estate)</DisplayTitleText>
+         <DisplayTitle>
+            <TitleText>Vivaldi: Concerto For Violin And Strings In G Minor, Op.8, No.2, RV 315 "L'estate". 3 Presto (Tempo impetuoso d'estate)</TitleText>
+         </DisplayTitle>
+         <AdditionalTitle TitleType="FormalTitle">
+            <TitleText>Concerto For Violin And Strings In G Minor, Op.8, No.2, RV 315 "L'estate". 3 Presto (Tempo impetuoso d'estate)</TitleText>
+         </AdditionalTitle>
+         <DisplayArtistName>The English Concert, Simon Standage, Trevor Pinnock</DisplayArtistName>
+         <DisplayArtist SequenceNumber="1">
+            <ArtistPartyReference>PEC</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <DisplayArtist SequenceNumber="2">
+            <ArtistPartyReference>PSS</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <Contributor>
+            <ContributorPartyReference>PAV</ContributorPartyReference>
+            <Role>Composer</Role>
+         </Contributor>
+         <Contributor>
+            <ContributorPartyReference>PEC</ContributorPartyReference>
+            <Role>Orchestra</Role>
+         </Contributor>
+         <Contributor>
+            <ContributorPartyReference>PSS</ContributorPartyReference>
+            <Role>Soloist</Role>
+            <InstrumentType>Violin</InstrumentType>
+         </Contributor>
+         <Duration>PT2M45S</Duration>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+      </SoundRecording>
+      <SoundRecording>
+         <ResourceReference>A7</ResourceReference>
+         <Type>MusicalWorkSoundRecording</Type>
+         <SoundRecordingEdition>
+            <ResourceId>
+               <ISRC>DE0000377777</ISRC>
+            </ResourceId>
+            <PLine>
+               <Year>2003</Year>
+               <PLineText>2003 Deutsche Grammphon</PLineText>
+            </PLine>
+            <TechnicalDetails>
+               <TechnicalResourceDetailsReference>T7</TechnicalResourceDetailsReference>
+               <DeliveryFile>
+                  <Type>AudioFile</Type>
+                  <AudioCodecType>FLAC</AudioCodecType>
+                  <NumberOfChannels>2</NumberOfChannels>
+                  <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                  <BitsPerSample>16</BitsPerSample>
+                  <File>
+                     <URI>resources/7.flac</URI>
+                     <HashSum>
+                        <Algorithm>MD5</Algorithm>
+                        <HashSumValue>db7dd2f3bb9b322646e3f4d7b65b47ab</HashSumValue>
+                     </HashSum>
+                  </File>
+               </DeliveryFile>
+               <ClipDetails>
+                  <TechnicalResourceDetailsReference>T7C</TechnicalResourceDetailsReference>
+                  <ClipType>Preview</ClipType>
+                  <Timing>
+                     <StartPoint>0.0</StartPoint>
+                     <DurationUsed>PT1M</DurationUsed>
+                  </Timing>
+                  <ExpressionType>Informative</ExpressionType>
+               </ClipDetails>
+            </TechnicalDetails>
+         </SoundRecordingEdition>
+         <DisplayTitleText>Vivaldi: Concerto For Violin And Strings In F Major, Op.8, No.3, RV 293 "L'autunno". 1 Allegro (Ballo, e canto de' villanelli)</DisplayTitleText>
+         <DisplayTitle>
+            <TitleText>Vivaldi: Concerto For Violin And Strings In F Major, Op.8, No.3, RV 293 "L'autunno". 1 Allegro (Ballo, e canto de' villanelli)</TitleText>
+         </DisplayTitle>
+         <AdditionalTitle TitleType="FormalTitle">
+            <TitleText>Concerto For Violin And Strings In F Major, Op.8, No.3, RV 293 "L'autunno". 1 Allegro (Ballo, e canto de' villanelli)</TitleText>
+         </AdditionalTitle>
+         <DisplayArtistName>The English Concert, Simon Standage, Trevor Pinnock</DisplayArtistName>
+         <DisplayArtist SequenceNumber="1">
+            <ArtistPartyReference>PEC</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <DisplayArtist SequenceNumber="2">
+            <ArtistPartyReference>PSS</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <Contributor>
+            <ContributorPartyReference>PAV</ContributorPartyReference>
+            <Role>Composer</Role>
+         </Contributor>
+         <Contributor>
+            <ContributorPartyReference>PEC</ContributorPartyReference>
+            <Role>Orchestra</Role>
+         </Contributor>
+         <Contributor>
+            <ContributorPartyReference>PSS</ContributorPartyReference>
+            <Role>Soloist</Role>
+            <InstrumentType>Violin</InstrumentType>
+         </Contributor>
+         <Duration>PT4M52S</Duration>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+      </SoundRecording>
+      <SoundRecording>
+         <ResourceReference>A8</ResourceReference>
+         <Type>MusicalWorkSoundRecording</Type>
+         <SoundRecordingEdition>
+            <ResourceId>
+               <ISRC>DE0000388888</ISRC>
+            </ResourceId>
+            <PLine>
+               <Year>2003</Year>
+               <PLineText>2003 Deutsche Grammphon</PLineText>
+            </PLine>
+            <TechnicalDetails>
+               <TechnicalResourceDetailsReference>T8</TechnicalResourceDetailsReference>
+               <DeliveryFile>
+                  <Type>AudioFile</Type>
+                  <AudioCodecType>FLAC</AudioCodecType>
+                  <NumberOfChannels>2</NumberOfChannels>
+                  <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                  <BitsPerSample>16</BitsPerSample>
+                  <File>
+                     <URI>resources/8.flac</URI>
+                     <HashSum>
+                        <Algorithm>MD5</Algorithm>
+                        <HashSumValue>db7dd2f3bb9b322646e3f4d7b65b47ab</HashSumValue>
+                     </HashSum>
+                  </File>
+               </DeliveryFile>
+               <ClipDetails>
+                  <TechnicalResourceDetailsReference>T8C</TechnicalResourceDetailsReference>
+                  <ClipType>Preview</ClipType>
+                  <Timing>
+                     <StartPoint>0.0</StartPoint>
+                     <DurationUsed>PT1M</DurationUsed>
+                  </Timing>
+                  <ExpressionType>Informative</ExpressionType>
+               </ClipDetails>
+            </TechnicalDetails>
+         </SoundRecordingEdition>
+         <DisplayTitleText>Vivaldi: Concerto For Violin And Strings In F Major, Op.8, No.3, RV 293 "L'autunno". 2 Adagio molto (Ubriachi dormienti)</DisplayTitleText>
+         <DisplayTitle>
+            <TitleText>Vivaldi: Concerto For Violin And Strings In F Major, Op.8, No.3, RV 293 "L'autunno". 2 Adagio molto (Ubriachi dormienti)</TitleText>
+         </DisplayTitle>
+         <AdditionalTitle TitleType="FormalTitle">
+            <TitleText>Concerto For Violin And Strings In F Major, Op.8, No.3, RV 293 "L'autunno". 2 Adagio molto (Ubriachi dormienti)</TitleText>
+         </AdditionalTitle>
+         <DisplayArtistName>The English Concert, Simon Standage, Trevor Pinnock</DisplayArtistName>
+         <DisplayArtist SequenceNumber="1">
+            <ArtistPartyReference>PEC</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <DisplayArtist SequenceNumber="2">
+            <ArtistPartyReference>PSS</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <Contributor>
+            <ContributorPartyReference>PAV</ContributorPartyReference>
+            <Role>Composer</Role>
+         </Contributor>
+         <Contributor>
+            <ContributorPartyReference>PEC</ContributorPartyReference>
+            <Role>Orchestra</Role>
+         </Contributor>
+         <Contributor>
+            <ContributorPartyReference>PSS</ContributorPartyReference>
+            <Role>Soloist</Role>
+            <InstrumentType>Violin</InstrumentType>
+         </Contributor>
+         <Duration>PT2M30S</Duration>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+      </SoundRecording>
+      <SoundRecording>
+         <ResourceReference>A9</ResourceReference>
+         <Type>MusicalWorkSoundRecording</Type>
+         <SoundRecordingEdition>
+            <ResourceId>
+               <ISRC>DE0000399999</ISRC>
+            </ResourceId>
+            <PLine>
+               <Year>2003</Year>
+               <PLineText>2003 Deutsche Grammphon</PLineText>
+            </PLine>
+            <TechnicalDetails>
+               <TechnicalResourceDetailsReference>T9</TechnicalResourceDetailsReference>
+               <DeliveryFile>
+                  <Type>AudioFile</Type>
+                  <AudioCodecType>FLAC</AudioCodecType>
+                  <NumberOfChannels>2</NumberOfChannels>
+                  <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                  <BitsPerSample>16</BitsPerSample>
+                  <File>
+                     <URI>resources/8.flac</URI>
+                     <HashSum>
+                        <Algorithm>MD5</Algorithm>
+                        <HashSumValue>db7dd2f3bb9b322646e3f4d7b65b47ab</HashSumValue>
+                     </HashSum>
+                  </File>
+               </DeliveryFile>
+               <ClipDetails>
+                  <TechnicalResourceDetailsReference>T9C</TechnicalResourceDetailsReference>
+                  <ClipType>Preview</ClipType>
+                  <Timing>
+                     <StartPoint>0.0</StartPoint>
+                     <DurationUsed>PT1M</DurationUsed>
+                  </Timing>
+                  <ExpressionType>Informative</ExpressionType>
+               </ClipDetails>
+            </TechnicalDetails>
+         </SoundRecordingEdition>
+         <DisplayTitleText>Vivaldi: Concerto For Violin And Strings In F Major, Op.8, No.3, RV 293 "L'autunno". 3 Allegro (La caccia)</DisplayTitleText>
+         <DisplayTitle>
+            <TitleText>Vivaldi: Concerto For Violin And Strings In F Major, Op.8, No.3, RV 293 "L'autunno". 3 Allegro (La caccia)</TitleText>
+         </DisplayTitle>
+         <AdditionalTitle TitleType="FormalTitle">
+            <TitleText>Concerto For Violin And Strings In F Major, Op.8, No.3, RV 293 "L'autunno". 3 Allegro (La caccia)</TitleText>
+         </AdditionalTitle>
+         <DisplayArtistName>The English Concert, Simon Standage, Trevor Pinnock</DisplayArtistName>
+         <DisplayArtist SequenceNumber="1">
+            <ArtistPartyReference>PEC</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <DisplayArtist SequenceNumber="2">
+            <ArtistPartyReference>PSS</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <Contributor>
+            <ContributorPartyReference>PAV</ContributorPartyReference>
+            <Role>Composer</Role>
+         </Contributor>
+         <Contributor>
+            <ContributorPartyReference>PEC</ContributorPartyReference>
+            <Role>Orchestra</Role>
+         </Contributor>
+         <Contributor>
+            <ContributorPartyReference>PSS</ContributorPartyReference>
+            <Role>Soloist</Role>
+            <InstrumentType>Violin</InstrumentType>
+         </Contributor>
+         <Duration>PT3M2S</Duration>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+      </SoundRecording>
+      <SoundRecording>
+         <ResourceReference>A10</ResourceReference>
+         <Type>MusicalWorkSoundRecording</Type>
+         <SoundRecordingEdition>
+            <ResourceId>
+               <ISRC>DE0000310101</ISRC>
+            </ResourceId>
+            <PLine>
+               <Year>2003</Year>
+               <PLineText>2003 Deutsche Grammphon</PLineText>
+            </PLine>
+            <TechnicalDetails>
+               <TechnicalResourceDetailsReference>T10</TechnicalResourceDetailsReference>
+               <DeliveryFile>
+                  <Type>AudioFile</Type>
+                  <AudioCodecType>FLAC</AudioCodecType>
+                  <NumberOfChannels>2</NumberOfChannels>
+                  <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                  <BitsPerSample>16</BitsPerSample>
+                  <File>
+                     <URI>resources/10.flac</URI>
+                     <HashSum>
+                        <Algorithm>MD5</Algorithm>
+                        <HashSumValue>db7dd2f3bb9b322646e3f4d7b65b47ab</HashSumValue>
+                     </HashSum>
+                  </File>
+               </DeliveryFile>
+               <ClipDetails>
+                  <TechnicalResourceDetailsReference>T10C</TechnicalResourceDetailsReference>
+                  <ClipType>Preview</ClipType>
+                  <Timing>
+                     <StartPoint>0.0</StartPoint>
+                     <DurationUsed>PT1M</DurationUsed>
+                  </Timing>
+                  <ExpressionType>Informative</ExpressionType>
+               </ClipDetails>
+            </TechnicalDetails>
+         </SoundRecordingEdition>
+         <DisplayTitleText>Vivaldi: Concerto For Violin And Strings In F Minor, Op.8, No.4, RV 297 "L'inverno". 1 Allegro non molto</DisplayTitleText>
+         <DisplayTitle>
+            <TitleText>Vivaldi: Concerto For Violin And Strings In F Minor, Op.8, No.4, RV 297 "L'inverno". 1 Allegro non molto</TitleText>
+         </DisplayTitle>
+         <AdditionalTitle TitleType="FormalTitle">
+            <TitleText>Concerto For Violin And Strings In F Minor, Op.8, No.4, RV 297 "L'inverno". 1 Allegro non molto</TitleText>
+         </AdditionalTitle>
+         <DisplayArtistName>The English Concert, Simon Standage, Trevor Pinnock</DisplayArtistName>
+         <DisplayArtist SequenceNumber="1">
+            <ArtistPartyReference>PEC</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <DisplayArtist SequenceNumber="2">
+            <ArtistPartyReference>PSS</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <Contributor>
+            <ContributorPartyReference>PAV</ContributorPartyReference>
+            <Role>Composer</Role>
+         </Contributor>
+         <Contributor>
+            <ContributorPartyReference>PEC</ContributorPartyReference>
+            <Role>Orchestra</Role>
+         </Contributor>
+         <Contributor>
+            <ContributorPartyReference>PSS</ContributorPartyReference>
+            <Role>Soloist</Role>
+            <InstrumentType>Violin</InstrumentType>
+         </Contributor>
+         <Duration>PT3M14S</Duration>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+      </SoundRecording>
+      <SoundRecording>
+         <ResourceReference>A11</ResourceReference>
+         <Type>MusicalWorkSoundRecording</Type>
+         <SoundRecordingEdition>
+            <ResourceId>
+               <ISRC>DE0000301010</ISRC>
+            </ResourceId>
+            <PLine>
+               <Year>2003</Year>
+               <PLineText>2003 Deutsche Grammphon</PLineText>
+            </PLine>
+            <TechnicalDetails>
+               <TechnicalResourceDetailsReference>T11</TechnicalResourceDetailsReference>
+               <DeliveryFile>
+                  <Type>AudioFile</Type>
+                  <AudioCodecType>FLAC</AudioCodecType>
+                  <NumberOfChannels>2</NumberOfChannels>
+                  <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                  <BitsPerSample>16</BitsPerSample>
+                  <File>
+                     <URI>resources/11.flac</URI>
+                     <HashSum>
+                        <Algorithm>MD5</Algorithm>
+                        <HashSumValue>db7dd2f3bb9b322646e3f4d7b65b47ab</HashSumValue>
+                     </HashSum>
+                  </File>
+               </DeliveryFile>
+               <ClipDetails>
+                  <TechnicalResourceDetailsReference>T11C</TechnicalResourceDetailsReference>
+                  <ClipType>Preview</ClipType>
+                  <Timing>
+                     <StartPoint>0.0</StartPoint>
+                     <DurationUsed>PT1M</DurationUsed>
+                  </Timing>
+                  <ExpressionType>Informative</ExpressionType>
+               </ClipDetails>
+            </TechnicalDetails>
+         </SoundRecordingEdition>
+         <DisplayTitleText>Vivaldi: Concerto For Violin And Strings In F Minor, Op.8, No.4, RV 297 "L'inverno". 2 Largo</DisplayTitleText>
+         <DisplayTitle>
+            <TitleText>Vivaldi: Concerto For Violin And Strings In F Minor, Op.8, No.4, RV 297 "L'inverno". 2 Largo</TitleText>
+         </DisplayTitle>
+         <AdditionalTitle TitleType="FormalTitle">
+            <TitleText>Concerto For Violin And Strings In F Minor, Op.8, No.4, RV 297 "L'inverno". 2 Largo</TitleText>
+         </AdditionalTitle>
+         <DisplayArtistName>The English Concert, Simon Standage, Trevor Pinnock</DisplayArtistName>
+         <DisplayArtist SequenceNumber="1">
+            <ArtistPartyReference>PEC</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <DisplayArtist SequenceNumber="2">
+            <ArtistPartyReference>PSS</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <Contributor>
+            <ContributorPartyReference>PAV</ContributorPartyReference>
+            <Role>Composer</Role>
+         </Contributor>
+         <Contributor>
+            <ContributorPartyReference>PEC</ContributorPartyReference>
+            <Role>Orchestra</Role>
+         </Contributor>
+         <Contributor>
+            <ContributorPartyReference>PSS</ContributorPartyReference>
+            <Role>Soloist</Role>
+            <InstrumentType>Violin</InstrumentType>
+         </Contributor>
+         <Duration>PT1M52S</Duration>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+      </SoundRecording>
+      <SoundRecording>
+         <ResourceReference>A12</ResourceReference>
+         <Type>MusicalWorkSoundRecording</Type>
+         <SoundRecordingEdition>
+            <ResourceId>
+               <ISRC>DE0000312121</ISRC>
+            </ResourceId>
+            <PLine>
+               <Year>2003</Year>
+               <PLineText>2003 Deutsche Grammphon</PLineText>
+            </PLine>
+            <TechnicalDetails>
+               <TechnicalResourceDetailsReference>T12</TechnicalResourceDetailsReference>
+               <DeliveryFile>
+                  <Type>AudioFile</Type>
+                  <AudioCodecType>FLAC</AudioCodecType>
+                  <NumberOfChannels>2</NumberOfChannels>
+                  <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                  <BitsPerSample>16</BitsPerSample>
+                  <File>
+                     <URI>resources/12.flac</URI>
+                     <HashSum>
+                        <Algorithm>MD5</Algorithm>
+                        <HashSumValue>db7dd2f3bb9b322646e3f4d7b65b47ab</HashSumValue>
+                     </HashSum>
+                  </File>
+               </DeliveryFile>
+               <ClipDetails>
+                  <TechnicalResourceDetailsReference>T12C</TechnicalResourceDetailsReference>
+                  <ClipType>Preview</ClipType>
+                  <Timing>
+                     <StartPoint>0.0</StartPoint>
+                     <DurationUsed>PT1M</DurationUsed>
+                  </Timing>
+                  <ExpressionType>Informative</ExpressionType>
+               </ClipDetails>
+            </TechnicalDetails>
+         </SoundRecordingEdition>
+         <DisplayTitleText>Vivaldi: Concerto For Violin And Strings In F Minor, Op.8, No.4, RV 297 "L'inverno". 3 Allegro</DisplayTitleText>
+         <DisplayTitle>
+            <TitleText>Vivaldi: Concerto For Violin And Strings In F Minor, Op.8, No.4, RV 297 "L'inverno". 3 Allegro</TitleText>
+         </DisplayTitle>
+         <AdditionalTitle TitleType="FormalTitle">
+            <TitleText>Concerto For Violin And Strings In F Minor, Op.8, No.4, RV 297 "L'inverno". 3 Allegro</TitleText>
+         </AdditionalTitle>
+         <DisplayArtistName>The English Concert, Simon Standage, Trevor Pinnock</DisplayArtistName>
+         <DisplayArtist SequenceNumber="1">
+            <ArtistPartyReference>PEC</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <DisplayArtist SequenceNumber="2">
+            <ArtistPartyReference>PSS</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <Contributor>
+            <ContributorPartyReference>PAV</ContributorPartyReference>
+            <Role>Composer</Role>
+         </Contributor>
+         <Contributor>
+            <ContributorPartyReference>PEC</ContributorPartyReference>
+            <Role>Orchestra</Role>
+         </Contributor>
+         <Contributor>
+            <ContributorPartyReference>PSS</ContributorPartyReference>
+            <Role>Soloist</Role>
+            <InstrumentType>Violin</InstrumentType>
+         </Contributor>
+         <Duration>PT2M45S</Duration>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+      </SoundRecording>
+      <Image>
+         <ResourceReference>A0</ResourceReference>
+         <Type>FrontCoverImage</Type>
+         <ResourceId>
+            <ProprietaryId Namespace="PADPIDA111111111">0094631432057</ProprietaryId>
+         </ResourceId>
+         <ParentalWarningType>NotExplicit</ParentalWarningType>
+         <TechnicalDetails>
+            <TechnicalResourceDetailsReference>T0</TechnicalResourceDetailsReference>
+            <File>
+               <URI>0.jpg</URI>
+            </File>
+         </TechnicalDetails>
+      </Image>
+   </ResourceList>
+   <ReleaseList>
+      <Release>
+         <ReleaseReference>R0</ReleaseReference>
+         <ReleaseType>Album</ReleaseType>
+         <ReleaseId>
+            <GRid>A10302B0003989564F</GRid>
+         </ReleaseId>
+         <DisplayTitleText>Antonio Vivaldi: The Four Seasons (Concertos for Violins and Strings)</DisplayTitleText>
+         <DisplayTitle>
+            <TitleText>Antonio Vivaldi: The Four Seasons</TitleText>
+            <SubTitle>Concertos for Violins and Strings</SubTitle>
+         </DisplayTitle>
+         <DisplayArtistName>The English Concert, Simon Standage, Trevor Pinnock</DisplayArtistName>
+         <DisplayArtist SequenceNumber="1">
+            <ArtistPartyReference>PEC</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <DisplayArtist SequenceNumber="2">
+            <ArtistPartyReference>PSS</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <DisplayArtist SequenceNumber="3">
+            <ArtistPartyReference>PTP</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <ReleaseLabelReference ApplicableTerritoryCode="Worldwide">PDG</ReleaseLabelReference>
+         <PLine>
+            <Year>2003</Year>
+            <PLineText>2003 Deutsche Grammphon</PLineText>
+         </PLine>
+         <CLine>
+            <Year>2003</Year>
+            <CLineText>2003 Deutsche Grammphon</CLineText>
+         </CLine>
+         <Genre ApplicableTerritoryCode="Worldwide">
+            <GenreText>Classical</GenreText>
+         </Genre>
+         <ReleaseVisibilityReference>V0</ReleaseVisibilityReference>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+         <ResourceGroup>
+            <ResourceGroup ResourceGroupType="MultiWorkPart">
+               <AdditionalTitle TitleType="FormalTitle">
+                  <TitleText>Concerto For Violin And Strings In E Major, Op.8, No.1, RV 269 "La Primavera"</TitleText>
+               </AdditionalTitle>
+               <SequenceNumber>1</SequenceNumber>
+               <ResourceGroupContentItem>
+                  <SequenceNumber>1</SequenceNumber>
+                  <ReleaseResourceReference>A1</ReleaseResourceReference>
+               </ResourceGroupContentItem>
+               <ResourceGroupContentItem>
+                  <SequenceNumber>2</SequenceNumber>
+                  <ReleaseResourceReference>A2</ReleaseResourceReference>
+               </ResourceGroupContentItem>
+               <ResourceGroupContentItem>
+                  <SequenceNumber>3</SequenceNumber>
+                  <ReleaseResourceReference>A3</ReleaseResourceReference>
+               </ResourceGroupContentItem>
+            </ResourceGroup>
+            <ResourceGroup ResourceGroupType="MultiWorkPart">
+               <AdditionalTitle TitleType="FormalTitle">
+                  <TitleText>Concerto For Violin And Strings In G Minor, Op.8, No.2, RV 315 "L'estate"</TitleText>
+               </AdditionalTitle>
+               <SequenceNumber>2</SequenceNumber>
+               <ResourceGroupContentItem>
+                  <SequenceNumber>1</SequenceNumber>
+                  <ReleaseResourceReference>A4</ReleaseResourceReference>
+               </ResourceGroupContentItem>
+               <ResourceGroupContentItem>
+                  <SequenceNumber>2</SequenceNumber>
+                  <ReleaseResourceReference>A5</ReleaseResourceReference>
+               </ResourceGroupContentItem>
+               <ResourceGroupContentItem>
+                  <SequenceNumber>3</SequenceNumber>
+                  <ReleaseResourceReference>A6</ReleaseResourceReference>
+               </ResourceGroupContentItem>
+            </ResourceGroup>
+            <ResourceGroup ResourceGroupType="MultiWorkPart">
+               <AdditionalTitle TitleType="FormalTitle">
+                  <TitleText>Concerto For Violin And Strings In F Major, Op.8, No.3, RV 293 "L'autunno"</TitleText>
+               </AdditionalTitle>
+               <SequenceNumber>3</SequenceNumber>
+               <ResourceGroupContentItem>
+                  <SequenceNumber>1</SequenceNumber>
+                  <ReleaseResourceReference>A7</ReleaseResourceReference>
+               </ResourceGroupContentItem>
+               <ResourceGroupContentItem>
+                  <SequenceNumber>2</SequenceNumber>
+                  <ReleaseResourceReference>A8</ReleaseResourceReference>
+               </ResourceGroupContentItem>
+               <ResourceGroupContentItem>
+                  <SequenceNumber>3</SequenceNumber>
+                  <ReleaseResourceReference>A9</ReleaseResourceReference>
+               </ResourceGroupContentItem>
+            </ResourceGroup>
+            <ResourceGroup ResourceGroupType="MultiWorkPart">
+               <AdditionalTitle TitleType="FormalTitle">
+                  <TitleText>Concerto For Violin And Strings In F Minor, Op.8, No.4, RV 297 "L'inverno"</TitleText>
+               </AdditionalTitle>
+               <SequenceNumber>4</SequenceNumber>
+               <ResourceGroupContentItem>
+                  <SequenceNumber>1</SequenceNumber>
+                  <ReleaseResourceReference>A10</ReleaseResourceReference>
+               </ResourceGroupContentItem>
+               <ResourceGroupContentItem>
+                  <SequenceNumber>2</SequenceNumber>
+                  <ReleaseResourceReference>A11</ReleaseResourceReference>
+               </ResourceGroupContentItem>
+               <ResourceGroupContentItem>
+                  <SequenceNumber>3</SequenceNumber>
+                  <ReleaseResourceReference>A12</ReleaseResourceReference>
+               </ResourceGroupContentItem>
+            </ResourceGroup>
+            <LinkedReleaseResourceReference>A0</LinkedReleaseResourceReference>
+         </ResourceGroup>
+      </Release>
+      <TrackRelease>
+         <ReleaseReference>R1</ReleaseReference>
+         <ReleaseId>
+            <ProprietaryId Namespace="PADPIDA111111111">A10302B0003989564F-DE0000311111</ProprietaryId>
+         </ReleaseId>
+         <ReleaseResourceReference>A1</ReleaseResourceReference>
+         <ReleaseLabelReference ApplicableTerritoryCode="Worldwide">PDG</ReleaseLabelReference>
+         <Genre>
+            <GenreText>Classical</GenreText>
+         </Genre>
+         <ReleaseVisibilityReference>V1</ReleaseVisibilityReference>
+      </TrackRelease>
+      <TrackRelease>
+         <ReleaseReference>R2</ReleaseReference>
+         <ReleaseId>
+            <ProprietaryId Namespace="PADPIDA111111111">A10302B0003989564F-DE0000344444</ProprietaryId>
+         </ReleaseId>
+         <ReleaseResourceReference>A2</ReleaseResourceReference>
+         <ReleaseLabelReference ApplicableTerritoryCode="Worldwide">PDG</ReleaseLabelReference>
+         <Genre>
+            <GenreText>Classical</GenreText>
+         </Genre>
+         <ReleaseVisibilityReference>V1</ReleaseVisibilityReference>
+      </TrackRelease>
+      <TrackRelease>
+         <ReleaseReference>R3</ReleaseReference>
+         <ReleaseId>
+            <ProprietaryId Namespace="PADPIDA111111111">A10302B0003989564F-DE0000322222</ProprietaryId>
+         </ReleaseId>
+         <ReleaseResourceReference>A3</ReleaseResourceReference>
+         <ReleaseLabelReference ApplicableTerritoryCode="Worldwide">PDG</ReleaseLabelReference>
+         <Genre>
+            <GenreText>Classical</GenreText>
+         </Genre>
+         <ReleaseVisibilityReference>V1</ReleaseVisibilityReference>
+      </TrackRelease>
+      <TrackRelease>
+         <ReleaseReference>R4</ReleaseReference>
+         <ReleaseId>
+            <ProprietaryId Namespace="PADPIDA111111111">A10302B0003989564F-DE0000344444</ProprietaryId>
+         </ReleaseId>
+         <ReleaseResourceReference>A4</ReleaseResourceReference>
+         <ReleaseLabelReference ApplicableTerritoryCode="Worldwide">PDG</ReleaseLabelReference>
+         <Genre>
+            <GenreText>Classical</GenreText>
+         </Genre>
+         <ReleaseVisibilityReference>V1</ReleaseVisibilityReference>
+      </TrackRelease>
+      <TrackRelease>
+         <ReleaseReference>R5</ReleaseReference>
+         <ReleaseId>
+            <ProprietaryId Namespace="PADPIDA111111111">A10302B0003989564F-DE0000355555</ProprietaryId>
+         </ReleaseId>
+         <ReleaseResourceReference>A5</ReleaseResourceReference>
+         <ReleaseLabelReference ApplicableTerritoryCode="Worldwide">PDG</ReleaseLabelReference>
+         <Genre>
+            <GenreText>Classical</GenreText>
+         </Genre>
+         <ReleaseVisibilityReference>V1</ReleaseVisibilityReference>
+      </TrackRelease>
+      <TrackRelease>
+         <ReleaseReference>R6</ReleaseReference>
+         <ReleaseId>
+            <ProprietaryId Namespace="PADPIDA111111111">A10302B0003989564F-DE0000366666</ProprietaryId>
+         </ReleaseId>
+         <ReleaseResourceReference>A6</ReleaseResourceReference>
+         <ReleaseLabelReference ApplicableTerritoryCode="Worldwide">PDG</ReleaseLabelReference>
+         <Genre>
+            <GenreText>Classical</GenreText>
+         </Genre>
+         <ReleaseVisibilityReference>V1</ReleaseVisibilityReference>
+      </TrackRelease>
+      <TrackRelease>
+         <ReleaseReference>R7</ReleaseReference>
+         <ReleaseId>
+            <ProprietaryId Namespace="PADPIDA111111111">A10302B0003989564F-DE0000377777</ProprietaryId>
+         </ReleaseId>
+         <ReleaseResourceReference>A7</ReleaseResourceReference>
+         <ReleaseLabelReference ApplicableTerritoryCode="Worldwide">PDG</ReleaseLabelReference>
+         <Genre>
+            <GenreText>Classical</GenreText>
+         </Genre>
+         <ReleaseVisibilityReference>V1</ReleaseVisibilityReference>
+      </TrackRelease>
+      <TrackRelease>
+         <ReleaseReference>R8</ReleaseReference>
+         <ReleaseId>
+            <ProprietaryId Namespace="PADPIDA111111111">A10302B0003989564F-DE0000388888</ProprietaryId>
+         </ReleaseId>
+         <ReleaseResourceReference>A8</ReleaseResourceReference>
+         <ReleaseLabelReference ApplicableTerritoryCode="Worldwide">PDG</ReleaseLabelReference>
+         <Genre>
+            <GenreText>Classical</GenreText>
+         </Genre>
+         <ReleaseVisibilityReference>V1</ReleaseVisibilityReference>
+      </TrackRelease>
+      <TrackRelease>
+         <ReleaseReference>R9</ReleaseReference>
+         <ReleaseId>
+            <ProprietaryId Namespace="PADPIDA111111111">A10302B0003989564F-DE0000399999</ProprietaryId>
+         </ReleaseId>
+         <ReleaseResourceReference>A9</ReleaseResourceReference>
+         <ReleaseLabelReference ApplicableTerritoryCode="Worldwide">PDG</ReleaseLabelReference>
+         <Genre>
+            <GenreText>Classical</GenreText>
+         </Genre>
+         <ReleaseVisibilityReference>V1</ReleaseVisibilityReference>
+      </TrackRelease>
+      <TrackRelease>
+         <ReleaseReference>R10</ReleaseReference>
+         <ReleaseId>
+            <ProprietaryId Namespace="PADPIDA111111111">A10302B0003989564F-DE0000310101</ProprietaryId>
+         </ReleaseId>
+         <ReleaseResourceReference>A10</ReleaseResourceReference>
+         <ReleaseLabelReference ApplicableTerritoryCode="Worldwide">PDG</ReleaseLabelReference>
+         <Genre>
+            <GenreText>Classical</GenreText>
+         </Genre>
+         <ReleaseVisibilityReference>V1</ReleaseVisibilityReference>
+      </TrackRelease>
+      <TrackRelease>
+         <ReleaseReference>R11</ReleaseReference>
+         <ReleaseId>
+            <ProprietaryId Namespace="PADPIDA111111111">A10302B0003989564F-DE0000301010</ProprietaryId>
+         </ReleaseId>
+         <ReleaseResourceReference>A11</ReleaseResourceReference>
+         <ReleaseLabelReference ApplicableTerritoryCode="Worldwide">PDG</ReleaseLabelReference>
+         <Genre>
+            <GenreText>Classical</GenreText>
+         </Genre>
+         <ReleaseVisibilityReference>V1</ReleaseVisibilityReference>
+      </TrackRelease>
+      <TrackRelease>
+         <ReleaseReference>R12</ReleaseReference>
+         <ReleaseId>
+            <ProprietaryId Namespace="PADPIDA111111111">A10302B0003989564F-DE0000312121</ProprietaryId>
+         </ReleaseId>
+         <ReleaseResourceReference>A12</ReleaseResourceReference>
+         <ReleaseLabelReference ApplicableTerritoryCode="Worldwide">PDG</ReleaseLabelReference>
+         <Genre>
+            <GenreText>Classical</GenreText>
+         </Genre>
+         <ReleaseVisibilityReference>V1</ReleaseVisibilityReference>
+      </TrackRelease>
+   </ReleaseList>
+   <DealList>
+      <ReleaseDeal>
+         <DealReleaseReference>R0</DealReleaseReference>
+         <Deal>
+            <DealTerms>
+               <TerritoryCode>AD</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2017-04-25</StartDate>
+               </ValidityPeriod>
+               <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+               <UseType>PermanentDownload</UseType>
+            </DealTerms>
+         </Deal>
+      </ReleaseDeal>
+      <ReleaseVisibility>
+         <VisibilityReference>V0</VisibilityReference>
+         <ReleaseDisplayStartDateTime>2017-04-25T00:00:00+00:00</ReleaseDisplayStartDateTime>
+         <CoverArtPreviewStartDateTime>2017-04-25T00:00:00+00:00</CoverArtPreviewStartDateTime>
+         <FullTrackListingPreviewStartDateTime>2017-04-25T00:00:00+00:00</FullTrackListingPreviewStartDateTime>
+      </ReleaseVisibility>
+      <TrackReleaseVisibility>
+         <VisibilityReference>V1</VisibilityReference>
+         <TrackListingPreviewStartDateTime>2017-04-25T00:00:00+00:00</TrackListingPreviewStartDateTime>
+         <ClipPreviewStartDateTime>2017-04-25T00:00:00+00:00</ClipPreviewStartDateTime>
+      </TrackReleaseVisibility>
+   </DealList>
+</ern:NewReleaseMessage>

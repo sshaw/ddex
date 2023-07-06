@@ -1,0 +1,1073 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ern:NewReleaseMessage xmlns:ern="http://ddex.net/xml/ern/43"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://ddex.net/xml/ern/43 http://ddex.net/xml/ern/43/release-notification.xsd"
+   ReleaseProfileVersionId="LongFormMusicalWorkVideo" LanguageAndScriptCode="en" AvsVersionId="3">
+   <MessageHeader>
+      <MessageThreadId>3000027906924</MessageThreadId>
+      <MessageId>3000027906924_67385405006</MessageId>
+      <MessageFileName>UMG_Metadata_TestBP_00602537022502_2016-07-25_20-38-54_LongformVideo.xml</MessageFileName>
+      <MessageSender>
+         <PartyId>PADPIDA2010032301A</PartyId>
+         <PartyName>
+            <FullName>Digiplug</FullName>
+         </PartyName>
+      </MessageSender>
+      <SentOnBehalfOf>
+         <PartyId>PADPIDA2012031302R</PartyId>
+         <PartyName>
+            <FullName>Universal Music Group International</FullName>
+         </PartyName>
+      </SentOnBehalfOf>
+      <MessageRecipient>
+         <PartyId>PADPIDA2012031302R</PartyId>
+         <PartyName>
+            <FullName>TestBP</FullName>
+         </PartyName>
+      </MessageRecipient>
+      <MessageCreatedDateTime>2016-07-25T20:38:54+00:00</MessageCreatedDateTime>
+      <MessageControlType>LiveMessage</MessageControlType>
+   </MessageHeader>
+   <PartyList>
+      <Party>
+         <PartyReference>PPatrizioBuanne</PartyReference>
+         <PartyName>
+            <FullName>Patrizio Buanne</FullName>
+            <NamesBeforeKeyName>Patrizio</NamesBeforeKeyName>
+            <KeyName>Buanne</KeyName>
+         </PartyName>
+      </Party>
+      <Party>
+         <PartyReference>PAlasdairMacmillan</PartyReference>
+         <PartyName>
+            <FullName>Alasdair Macmillan</FullName>
+            <NamesBeforeKeyName>Alasdair</NamesBeforeKeyName>
+            <KeyName>Macmillan</KeyName>
+         </PartyName>
+      </Party>
+      <Party>
+         <PartyReference>PColinFay</PartyReference>
+         <PartyName>
+            <FullName>Colin Fay</FullName>
+            <NamesBeforeKeyName>Colin</NamesBeforeKeyName>
+            <KeyName>Fay</KeyName>
+         </PartyName>
+      </Party>
+      <Party>
+         <PartyReference>PUMG</PartyReference>
+         <PartyName>
+            <FullName>Universal Music Ltd.</FullName>
+         </PartyName>
+      </Party>
+   </PartyList>
+   <CueSheetList>
+      <CueSheet>
+         <CueSheetReference>Q1</CueSheetReference>
+         <CueSheetType>StandardCueSheet</CueSheetType>
+         <Cue>
+            <CueUseType>OnScreenMusic</CueUseType>
+            <ResourceId>
+               <ISRC>GBUV71200495</ISRC>
+               <ProprietaryId Namespace="PADPIDA2012031302R">20001018380</ProprietaryId>
+            </ResourceId>
+            <DisplayTitle>
+               <TitleText>Il Mondo</TitleText>
+            </DisplayTitle>
+            <Contributor SequenceNumber="1">
+               <ContributorPartyReference>PAlasdairMacmillan</ContributorPartyReference>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+               <ContributorPartyReference>PColinFay</ContributorPartyReference>
+            </Contributor>
+            <HasMusicalContent>true</HasMusicalContent>
+            <PLine>
+               <PLineText>(P) 2005 Hit Galaxy musicentertainment GmbH</PLineText>
+            </PLine>
+            <StartTime>PT0S</StartTime>
+            <Duration>PT3M4S</Duration>
+         </Cue>
+         <Cue>
+            <CueUseType>OnScreenMusic</CueUseType>
+            <ResourceId>
+               <ISRC>GBUV71200495</ISRC>
+               <ProprietaryId Namespace="PADPIDA2012031302R">40058904235</ProprietaryId>
+            </ResourceId>
+            <DisplayTitle>
+               <TitleText>Amore Scusami</TitleText>
+            </DisplayTitle>
+            <Contributor SequenceNumber="1">
+               <ContributorPartyReference>PAlasdairMacmillan</ContributorPartyReference>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+               <ContributorPartyReference>PColinFay</ContributorPartyReference>
+            </Contributor>
+            <HasMusicalContent>true</HasMusicalContent>
+            <PLine>
+               <PLineText>(P) 2005 Hit Galaxy musicentertainment GmbH</PLineText>
+            </PLine>
+            <StartTime>PT3M22S</StartTime>
+            <Duration>PT2M47S</Duration>
+         </Cue>
+         <Cue>
+            <CueUseType>OnScreenMusic</CueUseType>
+            <ResourceId>
+               <ISRC>GBUV71200495</ISRC>
+               <ProprietaryId Namespace="PADPIDA2012031302R">40058904483</ProprietaryId>
+            </ResourceId>
+            <DisplayTitle>
+               <TitleText>On An Evening In Roma</TitleText>
+            </DisplayTitle>
+            <Contributor SequenceNumber="1">
+               <ContributorPartyReference>PAlasdairMacmillan</ContributorPartyReference>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+               <ContributorPartyReference>PColinFay</ContributorPartyReference>
+            </Contributor>
+            <HasMusicalContent>true</HasMusicalContent>
+            <PLine>
+               <PLineText>(P) 2005 Hit Galaxy musicentertainment GmbH</PLineText>
+            </PLine>
+            <StartTime>PT6M19S</StartTime>
+            <Duration>PT2M23S</Duration>
+         </Cue>
+         <Cue>
+            <CueUseType>OnScreenMusic</CueUseType>
+            <ResourceId>
+               <ISRC>GBUV71200495</ISRC>
+               <ProprietaryId Namespace="PADPIDA2012031302R">40058921358</ProprietaryId>
+            </ResourceId>
+            <DisplayTitle>
+               <TitleText>A Man Without Love</TitleText>
+            </DisplayTitle>
+            <Contributor SequenceNumber="1">
+               <ContributorPartyReference>PAlasdairMacmillan</ContributorPartyReference>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+               <ContributorPartyReference>PColinFay</ContributorPartyReference>
+            </Contributor>
+            <HasMusicalContent>true</HasMusicalContent>
+            <PLine>
+               <PLineText>(P) 2005 Hit Galaxy musicentertainment GmbH</PLineText>
+            </PLine>
+            <StartTime>PT9M52S</StartTime>
+            <Duration>PT3M20S</Duration>
+         </Cue>
+         <Cue>
+            <CueUseType>OnScreenMusic</CueUseType>
+            <ResourceId>
+               <ISRC>GBUV71200495</ISRC>
+               <ProprietaryId Namespace="PADPIDA2012031302R">40058904427</ProprietaryId>
+            </ResourceId>
+            <DisplayTitle>
+               <TitleText>Parla Piu Piano</TitleText>
+            </DisplayTitle>
+            <Contributor SequenceNumber="1">
+               <ContributorPartyReference>PAlasdairMacmillan</ContributorPartyReference>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+               <ContributorPartyReference>PColinFay</ContributorPartyReference>
+            </Contributor>
+            <HasMusicalContent>true</HasMusicalContent>
+            <PLine>
+               <PLineText>(P) 2005 Hit Galaxy musicentertainment GmbH</PLineText>
+            </PLine>
+            <StartTime>PT13M58S</StartTime>
+            <Duration>PT3M1S</Duration>
+         </Cue>
+         <Cue>
+            <CueUseType>OnScreenMusic</CueUseType>
+            <ResourceId>
+               <ISRC>GBUV71200495</ISRC>
+               <ProprietaryId Namespace="PADPIDA2012031302R">40058921805</ProprietaryId>
+            </ResourceId>
+            <DisplayTitle>
+               <TitleText>'Na Sera 'E Maggio</TitleText>
+            </DisplayTitle>
+            <Contributor SequenceNumber="1">
+               <ContributorPartyReference>PAlasdairMacmillan</ContributorPartyReference>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+               <ContributorPartyReference>PColinFay</ContributorPartyReference>
+            </Contributor>
+            <HasMusicalContent>true</HasMusicalContent>
+            <PLine>
+               <PLineText>(P) 2005 Hit Galaxy musicentertainment GmbH</PLineText>
+            </PLine>
+            <StartTime>PT17M27S</StartTime>
+            <Duration>PT3M40S</Duration>
+         </Cue>
+         <Cue>
+            <CueUseType>OnScreenMusic</CueUseType>
+            <ResourceId>
+               <ISRC>GBUV71200495</ISRC>
+               <ProprietaryId Namespace="PADPIDA2012031302R">40058920781</ProprietaryId>
+            </ResourceId>
+            <DisplayTitle>
+               <TitleText>Home To Mamma</TitleText>
+            </DisplayTitle>
+            <Contributor SequenceNumber="1">
+               <ContributorPartyReference>PAlasdairMacmillan</ContributorPartyReference>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+               <ContributorPartyReference>PColinFay</ContributorPartyReference>
+            </Contributor>
+            <HasMusicalContent>true</HasMusicalContent>
+            <PLine>
+               <PLineText>(P) 2005 Hit Galaxy musicentertainment GmbH</PLineText>
+            </PLine>
+            <StartTime>PT21M25S</StartTime>
+            <Duration>PT2M27S</Duration>
+         </Cue>
+         <Cue>
+            <CueUseType>OnScreenMusic</CueUseType>
+            <ResourceId>
+               <ISRC>GBUV71200495</ISRC>
+               <ProprietaryId Namespace="PADPIDA2012031302R">40058921178</ProprietaryId>
+            </ResourceId>
+            <DisplayTitle>
+               <TitleText>Luna Mezz 'O Mare</TitleText>
+            </DisplayTitle>
+            <Contributor SequenceNumber="1">
+               <ContributorPartyReference>PAlasdairMacmillan</ContributorPartyReference>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+               <ContributorPartyReference>PColinFay</ContributorPartyReference>
+            </Contributor>
+            <HasMusicalContent>true</HasMusicalContent>
+            <PLine>
+               <PLineText>(P) 2005 Hit Galaxy musicentertainment GmbH</PLineText>
+            </PLine>
+            <StartTime>PT24M</StartTime>
+            <Duration>PT2M29S</Duration>
+         </Cue>
+         <Cue>
+            <CueUseType>OnScreenMusic</CueUseType>
+            <ResourceId>
+               <ISRC>GBUV71200495</ISRC>
+               <ProprietaryId Namespace="PADPIDA2012031302R">20001046688</ProprietaryId>
+            </ResourceId>
+            <DisplayTitle>
+               <TitleText>Alta Marea</TitleText>
+            </DisplayTitle>
+            <Contributor SequenceNumber="1">
+               <ContributorPartyReference>PAlasdairMacmillan</ContributorPartyReference>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+               <ContributorPartyReference>PColinFay</ContributorPartyReference>
+            </Contributor>
+            <HasMusicalContent>true</HasMusicalContent>
+            <PLine>
+               <PLineText>(P) 2005 Hit Galaxy musicentertainment GmbH</PLineText>
+            </PLine>
+            <StartTime>PT26M37S</StartTime>
+            <Duration>PT3M53S</Duration>
+         </Cue>
+         <Cue>
+            <CueUseType>OnScreenMusic</CueUseType>
+            <ResourceId>
+               <ISRC>GBUV71200495</ISRC>
+               <ProprietaryId Namespace="PADPIDA2012031302R">40058904671</ProprietaryId>
+            </ResourceId>
+            <DisplayTitle>
+               <TitleText>Che Sara</TitleText>
+            </DisplayTitle>
+            <Contributor SequenceNumber="1">
+               <ContributorPartyReference>PAlasdairMacmillan</ContributorPartyReference>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+               <ContributorPartyReference>PColinFay</ContributorPartyReference>
+            </Contributor>
+            <HasMusicalContent>true</HasMusicalContent>
+            <PLine>
+               <PLineText>(P) 2005 Hit Galaxy musicentertainment GmbH</PLineText>
+            </PLine>
+            <StartTime>PT31M8S</StartTime>
+            <Duration>PT4M39S</Duration>
+         </Cue>
+         <Cue>
+            <CueUseType>OnScreenMusic</CueUseType>
+            <ResourceId>
+               <ISRC>GBUV71200495</ISRC>
+               <ProprietaryId Namespace="PADPIDA2012031302R">40058921312</ProprietaryId>
+            </ResourceId>
+            <DisplayTitle>
+               <TitleText>Soli</TitleText>
+            </DisplayTitle>
+            <Contributor SequenceNumber="1">
+               <ContributorPartyReference>PAlasdairMacmillan</ContributorPartyReference>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+               <ContributorPartyReference>PColinFay</ContributorPartyReference>
+            </Contributor>
+            <HasMusicalContent>true</HasMusicalContent>
+            <PLine>
+               <PLineText>(P) 2005 Hit Galaxy musicentertainment GmbH</PLineText>
+            </PLine>
+            <StartTime>PT36M2S</StartTime>
+            <Duration>PT3M52S</Duration>
+         </Cue>
+         <Cue>
+            <CueUseType>OnScreenMusic</CueUseType>
+            <ResourceId>
+               <ISRC>GBUV71200495</ISRC>
+               <ProprietaryId Namespace="PADPIDA2012031302R">40058905026</ProprietaryId>
+            </ResourceId>
+            <DisplayTitle>
+               <TitleText>L'Italiano</TitleText>
+            </DisplayTitle>
+            <Contributor SequenceNumber="1">
+               <ContributorPartyReference>PAlasdairMacmillan</ContributorPartyReference>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+               <ContributorPartyReference>PColinFay</ContributorPartyReference>
+            </Contributor>
+            <HasMusicalContent>true</HasMusicalContent>
+            <PLine>
+               <PLineText>(P) 2005 Hit Galaxy musicentertainment GmbH</PLineText>
+            </PLine>
+            <StartTime>PT40M42S</StartTime>
+            <Duration>PT5M</Duration>
+         </Cue>
+         <Cue>
+            <CueUseType>OnScreenMusic</CueUseType>
+            <ResourceId>
+               <ISRC>GBUV71200495</ISRC>
+               <ProprietaryId Namespace="PADPIDA2012031302R">40009612284</ProprietaryId>
+            </ResourceId>
+            <DisplayTitle>
+               <TitleText>Volare</TitleText>
+            </DisplayTitle>
+            <Contributor SequenceNumber="1">
+               <ContributorPartyReference>PAlasdairMacmillan</ContributorPartyReference>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+               <ContributorPartyReference>PColinFay</ContributorPartyReference>
+            </Contributor>
+            <HasMusicalContent>true</HasMusicalContent>
+            <PLine>
+               <PLineText>(P) 2005 Hit Galaxy musicentertainment GmbH</PLineText>
+            </PLine>
+            <StartTime>PT45M54S</StartTime>
+            <Duration>PT1M54S</Duration>
+         </Cue>
+         <Cue>
+            <CueUseType>OnScreenMusic</CueUseType>
+            <ResourceId>
+               <ISRC>GBUV71200495</ISRC>
+               <ProprietaryId Namespace="PADPIDA2012031302R">20001066697</ProprietaryId>
+            </ResourceId>
+            <DisplayTitle>
+               <TitleText>Ciao Ciao Bambina</TitleText>
+            </DisplayTitle>
+            <Contributor SequenceNumber="1">
+               <ContributorPartyReference>PAlasdairMacmillan</ContributorPartyReference>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+               <ContributorPartyReference>PColinFay</ContributorPartyReference>
+            </Contributor>
+            <HasMusicalContent>true</HasMusicalContent>
+            <PLine>
+               <PLineText>(P) 2005 Hit Galaxy musicentertainment GmbH</PLineText>
+            </PLine>
+            <Duration>PT2M31S</Duration>
+         </Cue>
+         <Cue>
+            <CueUseType>OnScreenMusic</CueUseType>
+            <ResourceId>
+               <ISRC>GBUV71200495</ISRC>
+               <ProprietaryId Namespace="PADPIDA2012031302R">30153217813</ProprietaryId>
+            </ResourceId>
+            <DisplayTitle>
+               <TitleText>Spoken Word</TitleText>
+            </DisplayTitle>
+            <Contributor SequenceNumber="1">
+               <ContributorPartyReference>PAlasdairMacmillan</ContributorPartyReference>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+               <ContributorPartyReference>PColinFay</ContributorPartyReference>
+            </Contributor>
+            <HasMusicalContent>true</HasMusicalContent>
+            <PLine>
+               <PLineText>(P) 2005 Hit Galaxy musicentertainment GmbH</PLineText>
+            </PLine>
+            <Duration>PT5M37S</Duration>
+         </Cue>
+      </CueSheet>
+   </CueSheetList>
+   <ResourceList>
+      <Video>
+         <ResourceReference>A15</ResourceReference>
+         <Type>LongFormMusicalWorkVideo</Type>
+         <VideoEdition>
+            <ResourceId>
+               <ISRC>GBUV71200494</ISRC>
+            </ResourceId>
+            <PLine>
+               <PLineText>(P) 2005 Hit Galaxy musicentertainment GmbH, under exclusive license to Universal Music TV, a division of Universal Music Operations Ltd.</PLineText>
+            </PLine>
+            <PLine>
+               <PLineText>(P) 2005 Hit Galaxy musicentertainment GmbH</PLineText>
+            </PLine>
+            <CLine>
+               <CLineText>(C) 2005 Hit Galaxy musicentertainment GmbH, under exclusive license to Universal Music TV, a division of Universal Music Operations Ltd.</CLineText>
+            </CLine>
+            <CLine>
+               <CLineText>(C) 2005 Hit Galaxy musicentertainment GmbH</CLineText>
+            </CLine>
+         </VideoEdition>
+         <RecordingFormat>MusicalWorkTrailer</RecordingFormat>
+         <DisplayTitleText>The Italian - Live In Concert (Trailer)</DisplayTitleText>
+         <DisplayTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>The Italian - Live In Concert</TitleText>
+            <SubTitle>Trailer</SubTitle>
+         </DisplayTitle>
+         <DisplayArtistName ApplicableTerritoryCode="CN">Patrizio Buanne</DisplayArtistName>
+         <DisplayArtist SequenceNumber="1">
+            <ArtistPartyReference>PPatrizioBuanne</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <DisplayArtist SequenceNumber="2">
+            <ArtistPartyReference>PAlasdairMacmillan</ArtistPartyReference>
+            <DisplayArtistRole>FeaturedArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <DisplayArtist SequenceNumber="3">
+            <ArtistPartyReference>PColinFay</ArtistPartyReference>
+            <DisplayArtistRole>FeaturedArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <Contributor SequenceNumber="1">
+            <ContributorPartyReference>PColinFay</ContributorPartyReference>
+            <Role>Actor</Role>
+         </Contributor>
+         <Contributor SequenceNumber="2">
+            <ContributorPartyReference>PAlasdairMacmillan</ContributorPartyReference>
+            <Role>Actor</Role>
+         </Contributor>
+         <Duration>PT1M</Duration>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+      </Video>
+      <Video>
+         <ResourceReference>A16</ResourceReference>
+         <Type>LongFormMusicalWorkVideo</Type>
+         <VideoEdition>
+            <ResourceId>
+               <ISRC>GBUV71200495</ISRC>
+            </ResourceId>
+            <PLine>
+               <PLineText>(P) 2005 Hit Galaxy musicentertainment GmbH, under exclusive license to Universal Music TV, a division of Universal Music Operations Ltd.</PLineText>
+            </PLine>
+            <PLine>
+               <PLineText>(P) 2005 Hit Galaxy musicentertainment GmbH</PLineText>
+            </PLine>
+            <CLine>
+               <CLineText>(C) 2005 Hit Galaxy musicentertainment GmbH, under exclusive license to Universal Music TV, a division of Universal Music Operations Ltd.</CLineText>
+            </CLine>
+            <CLine>
+               <CLineText>(C) 2005 Hit Galaxy musicentertainment GmbH</CLineText>
+            </CLine>
+         </VideoEdition>
+         <DisplayTitleText>The Italian - Live In Concert (ConcertFilm)</DisplayTitleText>
+         <DisplayTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>The Italian - Live In Concert</TitleText>
+            <SubTitle>Concert Film</SubTitle>
+         </DisplayTitle>
+         <DisplayArtistName ApplicableTerritoryCode="CN">Patrizio Buanne</DisplayArtistName>
+         <DisplayArtist SequenceNumber="1">
+            <ArtistPartyReference>PPatrizioBuanne</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <DisplayArtist SequenceNumber="2">
+            <ArtistPartyReference>PAlasdairMacmillan</ArtistPartyReference>
+            <DisplayArtistRole>FeaturedArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <DisplayArtist SequenceNumber="3">
+            <ArtistPartyReference>PColinFay</ArtistPartyReference>
+            <DisplayArtistRole>FeaturedArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <Contributor SequenceNumber="1">
+            <ContributorPartyReference>PAlasdairMacmillan</ContributorPartyReference>
+            <Role>Actor</Role>
+         </Contributor>
+         <Contributor SequenceNumber="2">
+            <ContributorPartyReference>PColinFay</ContributorPartyReference>
+            <Role>Actor</Role>
+         </Contributor>
+         <Duration>PT50M37S</Duration>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+         <VideoCueSheetReference>Q1</VideoCueSheetReference>
+         <VideoChapterReference>X1</VideoChapterReference>
+         <VideoChapterReference>X2</VideoChapterReference>
+         <VideoChapterReference>X3</VideoChapterReference>
+         <VideoChapterReference>X4</VideoChapterReference>
+         <VideoChapterReference>X5</VideoChapterReference>
+         <VideoChapterReference>X6</VideoChapterReference>
+         <VideoChapterReference>X7</VideoChapterReference>
+      </Video>
+      <Image>
+         <ResourceReference>A1</ResourceReference>
+         <Type>VideoScreenCapture</Type>
+         <ResourceId>
+            <ProprietaryId Namespace="PADPIDA2012031302R">12UMGIM13040</ProprietaryId>
+         </ResourceId>
+         <DisplayTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>Il Mondo (My World)</TitleText>
+         </DisplayTitle>
+         <DisplayArtistName ApplicableTerritoryCode="Worldwide">Patrizio Buanne</DisplayArtistName>
+         <Contributor SequenceNumber="1">
+            <ContributorPartyReference>PPatrizioBuanne</ContributorPartyReference>
+         </Contributor>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+      </Image>
+      <Image>
+         <ResourceReference>A2</ResourceReference>
+         <Type>VideoScreenCapture</Type>
+         <ResourceId>
+            <ProprietaryId Namespace="PADPIDA2012031302R">12UMGIM13041</ProprietaryId>
+         </ResourceId>
+         <DisplayTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>Amore Scusami (My Love, Forgive Me)</TitleText>
+         </DisplayTitle>
+         <DisplayArtistName ApplicableTerritoryCode="Worldwide">Patrizio Buanne</DisplayArtistName>
+         <Contributor SequenceNumber="1">
+            <ContributorPartyReference>PPatrizioBuanne</ContributorPartyReference>
+         </Contributor>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+      </Image>
+      <Image>
+         <ResourceReference>A3</ResourceReference>
+         <Type>VideoScreenCapture</Type>
+         <ResourceId>
+            <ProprietaryId Namespace="PADPIDA2012031302R">12UMGIM13042</ProprietaryId>
+         </ResourceId>
+         <DisplayTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>On An Evening In Roma</TitleText>
+         </DisplayTitle>
+         <DisplayArtistName ApplicableTerritoryCode="Worldwide">Patrizio Buanne</DisplayArtistName>
+         <Contributor SequenceNumber="1">
+            <ContributorPartyReference>PPatrizioBuanne</ContributorPartyReference>
+         </Contributor>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+      </Image>
+      <Image>
+         <ResourceReference>A4</ResourceReference>
+         <Type>VideoScreenCapture</Type>
+         <ResourceId>
+            <ProprietaryId Namespace="PADPIDA2012031302R">12UMGIM13043</ProprietaryId>
+         </ResourceId>
+         <DisplayTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>A Man Without Love</TitleText>
+         </DisplayTitle>
+         <DisplayArtistName ApplicableTerritoryCode="Worldwide">Patrizio Buanne</DisplayArtistName>
+         <Contributor SequenceNumber="1">
+            <ContributorPartyReference>PPatrizioBuanne</ContributorPartyReference>
+         </Contributor>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+      </Image>
+      <Image>
+         <ResourceReference>A5</ResourceReference>
+         <Type>VideoScreenCapture</Type>
+         <ResourceId>
+            <ProprietaryId Namespace="PADPIDA2012031302R">12UMGIM13044</ProprietaryId>
+         </ResourceId>
+         <DisplayTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>Parla Piu Piano (Theme from "The Godfather")</TitleText>
+         </DisplayTitle>
+         <DisplayArtistName ApplicableTerritoryCode="Worldwide">Patrizio Buanne</DisplayArtistName>
+         <Contributor SequenceNumber="1">
+            <ContributorPartyReference>PPatrizioBuanne</ContributorPartyReference>
+         </Contributor>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+      </Image>
+      <Image>
+         <ResourceReference>A6</ResourceReference>
+         <Type>VideoScreenCapture</Type>
+         <ResourceId>
+            <ProprietaryId Namespace="PADPIDA2012031302R">12UMGIM13045</ProprietaryId>
+         </ResourceId>
+         <DisplayTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>Na Sera E Maggio (An Evening In May)</TitleText>
+         </DisplayTitle>
+         <DisplayArtistName ApplicableTerritoryCode="Worldwide">Patrizio Buanne</DisplayArtistName>
+         <Contributor SequenceNumber="1">
+            <ContributorPartyReference>PPatrizioBuanne</ContributorPartyReference>
+         </Contributor>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+      </Image>
+      <Image>
+         <ResourceReference>A7</ResourceReference>
+         <Type>VideoScreenCapture</Type>
+         <ResourceId>
+            <ProprietaryId Namespace="PADPIDA2012031302R">12UMGIM13046</ProprietaryId>
+         </ResourceId>
+         <DisplayTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>Home To Mamma</TitleText>
+         </DisplayTitle>
+         <DisplayArtistName ApplicableTerritoryCode="Worldwide">Patrizio Buanne</DisplayArtistName>
+         <Contributor SequenceNumber="1">
+            <ContributorPartyReference>PPatrizioBuanne</ContributorPartyReference>
+         </Contributor>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+      </Image>
+      <Image>
+         <ResourceReference>A8</ResourceReference>
+         <Type>VideoScreenCapture</Type>
+         <ResourceId>
+            <ProprietaryId Namespace="PADPIDA2012031302R">12UMGIM13047</ProprietaryId>
+         </ResourceId>
+         <DisplayTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>Luna Mezz'o Mare</TitleText>
+         </DisplayTitle>
+         <DisplayArtistName ApplicableTerritoryCode="Worldwide">Patrizio Buanne</DisplayArtistName>
+         <Contributor SequenceNumber="1">
+            <ContributorPartyReference>PPatrizioBuanne</ContributorPartyReference>
+         </Contributor>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+      </Image>
+      <Image>
+         <ResourceReference>A9</ResourceReference>
+         <Type>VideoScreenCapture</Type>
+         <ResourceId>
+            <ProprietaryId Namespace="PADPIDA2012031302R">12UMGIM13048</ProprietaryId>
+         </ResourceId>
+         <DisplayTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>Alta Marea</TitleText>
+         </DisplayTitle>
+         <DisplayArtistName ApplicableTerritoryCode="Worldwide">Patrizio Buanne</DisplayArtistName>
+         <Contributor SequenceNumber="1">
+            <ContributorPartyReference>PPatrizioBuanne</ContributorPartyReference>
+         </Contributor>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+      </Image>
+      <Image>
+         <ResourceReference>A10</ResourceReference>
+         <Type>VideoScreenCapture</Type>
+         <ResourceId>
+            <ProprietaryId Namespace="PADPIDA2012031302R">12UMGIM13049</ProprietaryId>
+         </ResourceId>
+         <DisplayTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>Che Sara</TitleText>
+         </DisplayTitle>
+         <DisplayArtistName ApplicableTerritoryCode="Worldwide">Patrizio Buanne</DisplayArtistName>
+         <Contributor SequenceNumber="1">
+            <ContributorPartyReference>PPatrizioBuanne</ContributorPartyReference>
+         </Contributor>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+      </Image>
+      <Image>
+         <ResourceReference>A11</ResourceReference>
+         <Type>VideoScreenCapture</Type>
+         <ResourceId>
+            <ProprietaryId Namespace="PADPIDA2012031302R">12UMGIM13050</ProprietaryId>
+         </ResourceId>
+         <DisplayTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>Soli</TitleText>
+         </DisplayTitle>
+         <DisplayArtistName ApplicableTerritoryCode="Worldwide">Patrizio Buanne</DisplayArtistName>
+         <Contributor SequenceNumber="1">
+            <ContributorPartyReference>PPatrizioBuanne</ContributorPartyReference>
+         </Contributor>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+      </Image>
+      <Image>
+         <ResourceReference>A12</ResourceReference>
+         <Type>VideoScreenCapture</Type>
+         <ResourceId>
+            <ProprietaryId Namespace="PADPIDA2012031302R">12UMGIM13051</ProprietaryId>
+         </ResourceId>
+         <DisplayTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>L'Italiano</TitleText>
+         </DisplayTitle>
+         <DisplayArtistName ApplicableTerritoryCode="Worldwide">Patrizio Buanne</DisplayArtistName>
+         <Contributor SequenceNumber="1">
+            <ContributorPartyReference>PPatrizioBuanne</ContributorPartyReference>
+         </Contributor>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+      </Image>
+      <Image>
+         <ResourceReference>A13</ResourceReference>
+         <Type>VideoScreenCapture</Type>
+         <ResourceId>
+            <ProprietaryId Namespace="PADPIDA2012031302R">12UMGIM13052</ProprietaryId>
+         </ResourceId>
+         <DisplayTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>Voltare/Ciao Ciao Bambina</TitleText>
+         </DisplayTitle>
+         <DisplayArtistName ApplicableTerritoryCode="Worldwide">Patrizio Buanne</DisplayArtistName>
+         <Contributor SequenceNumber="1">
+            <ContributorPartyReference>PPatrizioBuanne</ContributorPartyReference>
+         </Contributor>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+      </Image>
+      <Image>
+         <ResourceReference>A14</ResourceReference>
+         <Type>FrontCoverImage</Type>
+         <ResourceId>
+            <ProprietaryId Namespace="PADPIDA2012031302R">12UMGIM13038</ProprietaryId>
+         </ResourceId>
+         <DisplayTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>The Italian - Live In Concert</TitleText>
+         </DisplayTitle>
+         <DisplayArtistName ApplicableTerritoryCode="Worldwide">Patrizio Buanne</DisplayArtistName>
+         <Contributor SequenceNumber="1">
+            <ContributorPartyReference>PPatrizioBuanne</ContributorPartyReference>
+         </Contributor>
+         <CLine>
+            <CLineText>(C) 2005 Hit Galaxy musicentertainment GmbH, under exclusive license to Universal Music TV, a division of Universal Music Operations Ltd.</CLineText>
+         </CLine>
+         <CLine>
+            <CLineText>(C) 2005 Hit Galaxy musicentertainment GmbH</CLineText>
+         </CLine>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+      </Image>
+   </ResourceList>
+
+   <ChapterList>
+      <Chapter>
+         <ChapterReference>X1</ChapterReference>
+         <ChapterId Namespace="PADPIDA2010032301A">GBUV71200495_1</ChapterId>
+         <AdditionalTitle>
+            <TitleText>The Italian - Live In Concert - Il Mondo (My World)</TitleText>
+         </AdditionalTitle>
+         <RepresentativeImageReference>A1</RepresentativeImageReference>
+         <StartTime>PT0S</StartTime>
+         <Duration>PT5M10S</Duration>
+      </Chapter>
+      <Chapter>
+         <ChapterReference>X2</ChapterReference>
+         <ChapterId Namespace="PADPIDA2010032301A">GBUV71200495_2</ChapterId>
+         <AdditionalTitle>
+            <TitleText>The Italian - Live In Concert - Amore Scusami (My Love, Forgive Me)</TitleText>
+         </AdditionalTitle>
+         <RepresentativeImageReference>A2</RepresentativeImageReference>
+         <StartTime>PT5M10S</StartTime>
+         <Duration>PT2M12S</Duration>
+      </Chapter>
+      <Chapter>
+         <ChapterReference>X3</ChapterReference>
+         <ChapterId Namespace="PADPIDA2010032301A">GBUV71200495_3</ChapterId>
+         <AdditionalTitle>
+            <TitleText>The Italian - Live In Concert - On An Evening In Roma</TitleText>
+         </AdditionalTitle>
+         <RepresentativeImageReference>A3</RepresentativeImageReference>
+         <StartTime>PT7M22S</StartTime>
+         <Duration>PT1M1S</Duration>
+      </Chapter>
+      <Chapter>
+         <ChapterReference>X4</ChapterReference>
+         <ChapterId Namespace="PADPIDA2010032301A">GBUV71200495_4</ChapterId>
+         <AdditionalTitle>
+            <TitleText>The Italian - Live In Concert - A Man Without Love</TitleText>
+         </AdditionalTitle>
+         <RepresentativeImageReference>A1</RepresentativeImageReference>
+         <StartTime>PT8M23S</StartTime>
+         <Duration>PT10M37S</Duration>
+      </Chapter>
+      <Chapter>
+         <ChapterReference>X5</ChapterReference>
+         <ChapterId Namespace="PADPIDA2010032301A">GBUV71200495_5</ChapterId>
+         <AdditionalTitle>
+            <TitleText>The Italian - Live In Concert - Parla Piu Piano (Theme from "The Godfather")</TitleText>
+         </AdditionalTitle>
+         <RepresentativeImageReference>A5</RepresentativeImageReference>
+         <StartTime>PT19M</StartTime>
+         <Duration>PT4M2S</Duration>
+      </Chapter>
+      <Chapter>
+         <ChapterReference>X6</ChapterReference>
+         <ChapterId Namespace="PADPIDA2010032301A">GBUV71200495_6</ChapterId>
+         <AdditionalTitle>
+            <TitleText>The Italian - Live In Concert - Na Sera E Maggio (An Evening In May)</TitleText>
+         </AdditionalTitle>
+         <RepresentativeImageReference>A6</RepresentativeImageReference>
+         <StartTime>PT23M2S</StartTime>
+         <Duration>PT5M30S</Duration>
+      </Chapter>
+      <Chapter>
+         <ChapterReference>X7</ChapterReference>
+         <ChapterId Namespace="PADPIDA2010032301A">GBUV71200495_7</ChapterId>
+         <AdditionalTitle>
+            <TitleText>The Italian - Live In Concert - Home To Mamma</TitleText>
+         </AdditionalTitle>
+         <RepresentativeImageReference>A7</RepresentativeImageReference>
+         <StartTime>PT28M32S</StartTime>
+         <Duration>PT22M1S</Duration>
+      </Chapter>
+   </ChapterList>
+
+   <ReleaseList>
+      <Release>
+         <ReleaseReference>R0</ReleaseReference>
+         <ReleaseType>LongFormMusicalWorkVideoRelease</ReleaseType>
+         <ReleaseId>
+            <ICPN>00602537022502</ICPN>
+         </ReleaseId>
+         <DisplayTitleText>The Italian - Live In Concert (Concert Film)</DisplayTitleText>
+         <DisplayTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>The Italian - Live In Concert</TitleText>
+            <SubTitle>Concert Film</SubTitle>
+         </DisplayTitle>
+         <DisplayArtistName ApplicableTerritoryCode="Worldwide">Patrizio Buanne</DisplayArtistName>
+         <DisplayArtist SequenceNumber="1">
+            <ArtistPartyReference>PPatrizioBuanne</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <ReleaseLabelReference ApplicableTerritoryCode="CN">PUMG</ReleaseLabelReference>
+         <Genre ApplicableTerritoryCode="Worldwide">
+            <GenreText>Easy Listening</GenreText>
+         </Genre>
+         <ReleaseVisibilityReference>V0</ReleaseVisibilityReference>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+         <ResourceGroup>
+            <ResourceGroup ResourceGroupType="Component">
+               <SequenceNumber>1</SequenceNumber>
+               <ResourceGroupContentItem>
+                  <SequenceNumber>1</SequenceNumber>
+                  <ReleaseResourceReference>A16</ReleaseResourceReference>
+                  <LinkedReleaseResourceReference LinkDescription="VideoScreenCapture"
+                     >A1</LinkedReleaseResourceReference>
+                  <LinkedReleaseResourceReference LinkDescription="VideoScreenCapture"
+                     >A2</LinkedReleaseResourceReference>
+                  <LinkedReleaseResourceReference LinkDescription="VideoScreenCapture"
+                     >A3</LinkedReleaseResourceReference>
+                  <LinkedReleaseResourceReference LinkDescription="VideoScreenCapture"
+                     >A4</LinkedReleaseResourceReference>
+                  <LinkedReleaseResourceReference LinkDescription="VideoScreenCapture"
+                     >A5</LinkedReleaseResourceReference>
+                  <LinkedReleaseResourceReference LinkDescription="VideoScreenCapture"
+                     >A6</LinkedReleaseResourceReference>
+                  <LinkedReleaseResourceReference LinkDescription="VideoScreenCapture"
+                     >A7</LinkedReleaseResourceReference>
+                  <LinkedReleaseResourceReference LinkDescription="VideoScreenCapture"
+                     >A8</LinkedReleaseResourceReference>
+                  <LinkedReleaseResourceReference LinkDescription="VideoScreenCapture"
+                     >A9</LinkedReleaseResourceReference>
+                  <LinkedReleaseResourceReference LinkDescription="VideoScreenCapture"
+                     >A10</LinkedReleaseResourceReference>
+                  <LinkedReleaseResourceReference LinkDescription="VideoScreenCapture"
+                     >A11</LinkedReleaseResourceReference>
+                  <LinkedReleaseResourceReference LinkDescription="VideoScreenCapture"
+                     >A12</LinkedReleaseResourceReference>
+                  <LinkedReleaseResourceReference LinkDescription="VideoScreenCapture"
+                     >A13</LinkedReleaseResourceReference>
+                  <IsInstantGratificationResource>false</IsInstantGratificationResource>
+                  <IsPreOrderIncentiveResource>false</IsPreOrderIncentiveResource>
+               </ResourceGroupContentItem>
+            </ResourceGroup>
+            <ResourceGroup ResourceGroupType="Component">
+               <SequenceNumber>2</SequenceNumber>
+               <ResourceGroupContentItem>
+                  <SequenceNumber>1</SequenceNumber>
+                  <ReleaseResourceReference>A15</ReleaseResourceReference>
+                  <IsInstantGratificationResource>false</IsInstantGratificationResource>
+                  <IsPreOrderIncentiveResource>false</IsPreOrderIncentiveResource>
+               </ResourceGroupContentItem>
+            </ResourceGroup>
+            <ResourceGroupContentItem>
+               <ReleaseResourceReference>A1</ReleaseResourceReference>
+               <IsInstantGratificationResource>false</IsInstantGratificationResource>
+               <IsPreOrderIncentiveResource>false</IsPreOrderIncentiveResource>
+            </ResourceGroupContentItem>
+            <ResourceGroupContentItem>
+               <ReleaseResourceReference>A2</ReleaseResourceReference>
+               <IsInstantGratificationResource>false</IsInstantGratificationResource>
+               <IsPreOrderIncentiveResource>false</IsPreOrderIncentiveResource>
+            </ResourceGroupContentItem>
+            <ResourceGroupContentItem>
+               <ReleaseResourceReference>A3</ReleaseResourceReference>
+               <IsInstantGratificationResource>false</IsInstantGratificationResource>
+               <IsPreOrderIncentiveResource>false</IsPreOrderIncentiveResource>
+            </ResourceGroupContentItem>
+            <ResourceGroupContentItem>
+               <ReleaseResourceReference>A4</ReleaseResourceReference>
+               <IsInstantGratificationResource>false</IsInstantGratificationResource>
+               <IsPreOrderIncentiveResource>false</IsPreOrderIncentiveResource>
+            </ResourceGroupContentItem>
+            <ResourceGroupContentItem>
+               <ReleaseResourceReference>A5</ReleaseResourceReference>
+               <IsInstantGratificationResource>false</IsInstantGratificationResource>
+               <IsPreOrderIncentiveResource>false</IsPreOrderIncentiveResource>
+            </ResourceGroupContentItem>
+            <ResourceGroupContentItem>
+               <ReleaseResourceReference>A6</ReleaseResourceReference>
+               <IsInstantGratificationResource>false</IsInstantGratificationResource>
+               <IsPreOrderIncentiveResource>false</IsPreOrderIncentiveResource>
+            </ResourceGroupContentItem>
+            <ResourceGroupContentItem>
+               <ReleaseResourceReference>A7</ReleaseResourceReference>
+               <IsInstantGratificationResource>false</IsInstantGratificationResource>
+               <IsPreOrderIncentiveResource>false</IsPreOrderIncentiveResource>
+            </ResourceGroupContentItem>
+            <ResourceGroupContentItem>
+               <ReleaseResourceReference>A8</ReleaseResourceReference>
+               <IsInstantGratificationResource>false</IsInstantGratificationResource>
+               <IsPreOrderIncentiveResource>false</IsPreOrderIncentiveResource>
+            </ResourceGroupContentItem>
+            <ResourceGroupContentItem>
+               <ReleaseResourceReference>A9</ReleaseResourceReference>
+               <IsInstantGratificationResource>false</IsInstantGratificationResource>
+               <IsPreOrderIncentiveResource>false</IsPreOrderIncentiveResource>
+            </ResourceGroupContentItem>
+            <ResourceGroupContentItem>
+               <ReleaseResourceReference>A10</ReleaseResourceReference>
+               <IsInstantGratificationResource>false</IsInstantGratificationResource>
+               <IsPreOrderIncentiveResource>false</IsPreOrderIncentiveResource>
+            </ResourceGroupContentItem>
+            <ResourceGroupContentItem>
+               <ReleaseResourceReference>A11</ReleaseResourceReference>
+               <IsInstantGratificationResource>false</IsInstantGratificationResource>
+               <IsPreOrderIncentiveResource>false</IsPreOrderIncentiveResource>
+            </ResourceGroupContentItem>
+            <ResourceGroupContentItem>
+               <ReleaseResourceReference>A12</ReleaseResourceReference>
+               <IsInstantGratificationResource>false</IsInstantGratificationResource>
+               <IsPreOrderIncentiveResource>false</IsPreOrderIncentiveResource>
+            </ResourceGroupContentItem>
+            <ResourceGroupContentItem>
+               <ReleaseResourceReference>A13</ReleaseResourceReference>
+               <IsInstantGratificationResource>false</IsInstantGratificationResource>
+               <IsPreOrderIncentiveResource>false</IsPreOrderIncentiveResource>
+            </ResourceGroupContentItem>
+            <LinkedReleaseResourceReference>A14</LinkedReleaseResourceReference>
+         </ResourceGroup>
+         <Synopsis>Patrizio Buanne: Live in concert, August 2005. A stunning live performance of his debut album 'The Italian' filmed in a beautiful Roman amphitheatre. Watch Patrizio at his best as the sun sets and night falls through the arches of this ancient arena - the perfect setting for an evening with 'The Italian'... Viva la dolce vita!</Synopsis>
+      </Release>
+   </ReleaseList>
+   <DealList>
+      <ReleaseDeal>
+         <DealReleaseReference>R0</DealReleaseReference>
+         <Deal>
+            <DealTerms>
+               <TerritoryCode>CN</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2016-07-25</StartDate>
+               </ValidityPeriod>
+               <CommercialModelType>SubscriptionModel</CommercialModelType>
+               <UseType>PermanentDownload</UseType>
+               <PriceInformation>
+                  <PriceCode Namespace="PADPIDA2012031302R">LF1</PriceCode>
+               </PriceInformation>
+               <IsPreOrderDeal>false</IsPreOrderDeal>
+            </DealTerms>
+         </Deal>
+         <Deal>
+            <DealTerms>
+               <TerritoryCode>CN</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2016-07-25</StartDate>
+               </ValidityPeriod>
+               <CommercialModelType>SubscriptionModel</CommercialModelType>
+               <UseType>Stream</UseType>
+               <PriceInformation>
+                  <PriceCode Namespace="PADPIDA2012031302R">LF1</PriceCode>
+               </PriceInformation>
+               <IsPreOrderDeal>false</IsPreOrderDeal>
+            </DealTerms>
+         </Deal>
+         <Deal>
+            <DealTerms>
+               <TerritoryCode>CN</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2016-07-25</StartDate>
+               </ValidityPeriod>
+               <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+               <UseType>PermanentDownload</UseType>
+               <PriceInformation>
+                  <PriceCode Namespace="PADPIDA2012031302R">LF1</PriceCode>
+               </PriceInformation>
+               <IsPreOrderDeal>false</IsPreOrderDeal>
+            </DealTerms>
+         </Deal>
+         <Deal>
+            <DealTerms>
+               <TerritoryCode>CN</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2016-07-25</StartDate>
+               </ValidityPeriod>
+               <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+               <UseType>Stream</UseType>
+               <PriceInformation>
+                  <PriceCode Namespace="PADPIDA2012031302R">LF1</PriceCode>
+               </PriceInformation>
+               <IsPreOrderDeal>false</IsPreOrderDeal>
+            </DealTerms>
+         </Deal>
+         <Deal>
+            <DealTerms>
+               <TerritoryCode>CN</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2016-07-25</StartDate>
+               </ValidityPeriod>
+               <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+               <UseType>ConditionalDownload</UseType>
+               <PriceInformation>
+                  <PriceCode Namespace="PADPIDA2012031302R">LF1</PriceCode>
+               </PriceInformation>
+               <IsPreOrderDeal>false</IsPreOrderDeal>
+            </DealTerms>
+         </Deal>
+         <Deal>
+            <DealTerms>
+               <TerritoryCode>CN</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2016-07-25</StartDate>
+               </ValidityPeriod>
+               <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+               <UseType>Stream</UseType>
+               <PriceInformation>
+                  <PriceCode Namespace="PADPIDA2012031302R">LF1</PriceCode>
+               </PriceInformation>
+               <IsPreOrderDeal>false</IsPreOrderDeal>
+            </DealTerms>
+         </Deal>
+         <Deal>
+            <DealTerms>
+               <TerritoryCode>CN</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2016-07-25</StartDate>
+               </ValidityPeriod>
+               <CommercialModelType>SubscriptionModel</CommercialModelType>
+               <UseType>ConditionalDownload</UseType>
+               <PriceInformation>
+                  <PriceCode Namespace="PADPIDA2012031302R">LF1</PriceCode>
+               </PriceInformation>
+               <IsPreOrderDeal>false</IsPreOrderDeal>
+            </DealTerms>
+         </Deal>
+         <Deal>
+            <DealTerms>
+               <TerritoryCode>CN</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2016-07-25</StartDate>
+               </ValidityPeriod>
+               <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+               <UseType>PermanentDownload</UseType>
+               <PriceInformation>
+                  <PriceCode Namespace="PADPIDA2012031302R">LF1</PriceCode>
+               </PriceInformation>
+               <IsPreOrderDeal>false</IsPreOrderDeal>
+            </DealTerms>
+         </Deal>
+         <Deal>
+            <DealTerms>
+               <TerritoryCode>CN</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2016-07-25</StartDate>
+               </ValidityPeriod>
+               <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+               <UseType>ConditionalDownload</UseType>
+               <PriceInformation>
+                  <PriceCode Namespace="PADPIDA2012031302R">LF1</PriceCode>
+               </PriceInformation>
+               <IsPreOrderDeal>false</IsPreOrderDeal>
+            </DealTerms>
+         </Deal>
+      </ReleaseDeal>
+      <ReleaseVisibility>
+         <VisibilityReference>V0</VisibilityReference>
+
+         <ReleaseDisplayStartDateTime>2012-08-29T00:00:00+00:00</ReleaseDisplayStartDateTime>
+         <CoverArtPreviewStartDateTime>2012-08-29T00:00:00+00:00</CoverArtPreviewStartDateTime>
+         <FullTrackListingPreviewStartDateTime>2012-08-29T00:00:00+00:00</FullTrackListingPreviewStartDateTime>
+      </ReleaseVisibility>
+
+   </DealList>
+</ern:NewReleaseMessage>

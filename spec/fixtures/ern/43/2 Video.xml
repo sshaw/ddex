@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ern:NewReleaseMessage xmlns:ern="http://ddex.net/xml/ern/43"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://ddex.net/xml/ern/43 http://ddex.net/xml/ern/43/release-notification.xsd"
+   ReleaseProfileVersionId="Video" LanguageAndScriptCode="en" AvsVersionId="3">
+   <MessageHeader>
+      <MessageThreadId>test1</MessageThreadId>
+      <MessageId>test1</MessageId>
+      <MessageSender>
+         <PartyId>PADPIDA2013042401U</PartyId>
+         <PartyName>
+            <FullName>UniversalMusicGroup</FullName>
+         </PartyName>
+      </MessageSender>
+      <MessageRecipient>
+         <PartyId>PADPIDA2009101501Y</PartyId>
+         <PartyName>
+            <FullName>Sony DADC</FullName>
+         </PartyName>
+      </MessageRecipient>
+      <MessageCreatedDateTime>2014-09-24T14:57:25+01:00</MessageCreatedDateTime>
+   </MessageHeader>
+   <PartyList>
+      <Party>
+         <PartyReference>PLolitaJolie</PartyReference>
+         <PartyName>
+            <FullName>Lolita Jolie</FullName>
+            <FullNameIndexed>Jolie, Lolita</FullNameIndexed>
+         </PartyName>
+      </Party>
+      <Party>
+         <PartyReference>PEMIGermany</PartyReference>
+         <PartyName>
+            <FullName>EMI Germany</FullName>
+         </PartyName>
+      </Party>
+      <Party>
+         <PartyReference>PCAPITOL</PartyReference>
+         <PartyName>
+            <FullName>Capitol Records</FullName>
+         </PartyName>
+      </Party>
+   </PartyList>
+   <ResourceList>
+      <Video LanguageAndScriptCode="fr">
+         <ResourceReference>A1</ResourceReference>
+         <Type>ShortFormMusicalWorkVideo</Type>
+         <VideoEdition>
+            <ResourceId>
+               <ISRC>DEMA61100471</ISRC>
+            </ResourceId>
+            <PLine>
+               <Year>2012</Year>
+               <PLineText>(P) 2012 The copyright in this audiovisual recording is owned by Planet Punk Music GbR under exclusive licence to EMI Music Germany GmbH &amp; Co.KG</PLineText>
+            </PLine>
+            <TechnicalDetails>
+               <TechnicalResourceDetailsReference>T1</TechnicalResourceDetailsReference>
+               <DeliveryFile>
+                  <Type>AudioVisualFile</Type>
+                  <File>
+                     <URI>5099962136853_01_001.mpg</URI>
+                  </File>
+               </DeliveryFile>
+            </TechnicalDetails>
+         </VideoEdition>
+         <DisplayTitleText>La Première Fois (Video 2D)</DisplayTitleText>
+         <DisplayTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>La Première Fois</TitleText>
+            <SubTitle>Video 2D</SubTitle>
+         </DisplayTitle>
+         <DisplayArtistName ApplicableTerritoryCode="Worldwide">Lolita Jolie</DisplayArtistName>
+         <DisplayArtist SequenceNumber="1">
+            <ArtistPartyReference>PLolitaJolie</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+
+         <Duration>PT3M10S</Duration>
+         <CreationDate IsApproximate="true">2011-01-01</CreationDate>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+         <IsInstrumental>false</IsInstrumental>
+         <LanguageOfPerformance>fr</LanguageOfPerformance>
+
+      </Video>
+      <Video LanguageAndScriptCode="fr">
+         <ResourceReference>A2</ResourceReference>
+         <Type>ShortFormMusicalWorkVideo</Type>
+         <VideoEdition>
+            <ResourceId>
+               <ISRC>DEMA61100472</ISRC>
+            </ResourceId>
+            <PLine>
+               <Year>2012</Year>
+               <PLineText>(P) 2012 The copyright in this audiovisual recording is owned by Planet Punk
+             Music GbR under exclusive licence to EMI Music Germany GmbH &amp; Co.KG</PLineText>
+            </PLine>
+            <TechnicalDetails>
+               <TechnicalResourceDetailsReference>T2</TechnicalResourceDetailsReference>
+               <DeliveryFile>
+                  <Type>AudioVisualFile</Type>
+                  <File>
+                     <URI>5099962136853_01_002.mpg</URI>
+                  </File>
+               </DeliveryFile>
+            </TechnicalDetails>
+         </VideoEdition>
+         <DisplayTitleText>La Première Fois (Video 3D)</DisplayTitleText>
+         <DisplayTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>La Première Fois</TitleText>
+            <SubTitle>Video 3D</SubTitle>
+         </DisplayTitle>
+         <DisplayArtistName ApplicableTerritoryCode="Worldwide">Lolita Jolie</DisplayArtistName>
+         <DisplayArtist SequenceNumber="1">
+            <ArtistPartyReference>PLolitaJolie</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <Duration>PT3M26S</Duration>
+         <CreationDate IsApproximate="true">2011-01-01</CreationDate>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+         <IsInstrumental>false</IsInstrumental>
+         <LanguageOfPerformance>fr</LanguageOfPerformance>
+      </Video>
+      <Image LanguageAndScriptCode="fr">
+         <ResourceReference>A3</ResourceReference>
+         <Type>FrontCoverImage</Type>
+         <ResourceId>
+            <ProprietaryId Namespace="PADPIDA2013042401U">PACKSHOT:5099962136853</ProprietaryId>
+         </ResourceId>
+         <ParentalWarningType>NotExplicit</ParentalWarningType>
+         <TechnicalDetails>
+            <TechnicalResourceDetailsReference>T3</TechnicalResourceDetailsReference>
+            <File>
+               <URI>5099962136853.jpg</URI>
+            </File>
+         </TechnicalDetails>
+      </Image>
+      <Image LanguageAndScriptCode="fr">
+         <ResourceReference>A4</ResourceReference>
+         <Type>VideoScreenCapture</Type>
+         <ResourceId>
+            <ProprietaryId Namespace="PADPIDA2013042401U">SCREENGRAB:5099962136853_01_001</ProprietaryId>
+         </ResourceId>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+         <TechnicalDetails>
+            <TechnicalResourceDetailsReference>T4</TechnicalResourceDetailsReference>
+            <File>
+               <URI>5099962136853_01_001.jpg</URI>
+            </File>
+         </TechnicalDetails>
+      </Image>
+      <Image LanguageAndScriptCode="fr">
+         <ResourceReference>A5</ResourceReference>
+         <Type>VideoScreenCapture</Type>
+         <ResourceId>
+            <ProprietaryId Namespace="PADPIDA2013042401U">SCREENGRAB:5099962136853_01_002</ProprietaryId>
+         </ResourceId>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+         <TechnicalDetails>
+            <TechnicalResourceDetailsReference>T5</TechnicalResourceDetailsReference>
+            <File>
+               <URI>5099962136853_01_002.jpg</URI>
+            </File>
+         </TechnicalDetails>
+      </Image>
+   </ResourceList>
+   <ReleaseList>
+      <Release LanguageAndScriptCode="fr">
+         <ReleaseReference>R0</ReleaseReference>
+         <ReleaseType>VideoAlbum</ReleaseType>
+         <ReleaseId>
+            <ICPN>05099962136853</ICPN>
+         </ReleaseId>
+         <DisplayTitleText>La Première Fois (Video)</DisplayTitleText>
+         <DisplayTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>La Première Fois</TitleText>
+            <SubTitle>Video</SubTitle>
+         </DisplayTitle>
+         <DisplayArtistName ApplicableTerritoryCode="Worldwide">Lolita Jolie</DisplayArtistName>
+         <DisplayArtist SequenceNumber="1">
+            <ArtistPartyReference>PLolitaJolie</ArtistPartyReference>
+            <DisplayArtistRole>MainArtist</DisplayArtistRole>
+         </DisplayArtist>
+         <ReleaseLabelReference ApplicableTerritoryCode="Worldwide">PCAPITOL</ReleaseLabelReference>
+         <AdministratingRecordCompany>
+            <RecordCompanyPartyReference>PEMIGermany</RecordCompanyPartyReference>
+            <Role>RightsAdministrator</Role>
+         </AdministratingRecordCompany>
+         <AdministratingRecordCompany>
+            <RecordCompanyPartyReference>PEMIGermany</RecordCompanyPartyReference>
+            <Role>RoyaltyAdministrator</Role>
+         </AdministratingRecordCompany>
+         <PLine>
+            <Year>2012</Year>
+            <PLineText>(P) 2012 The copyright in this audiovisual recording is owned by Planet Punk Music GbR under exclusive licence to EMI Music Germany GmbH &amp; Co.KG</PLineText>
+         </PLine>
+         <CLine>
+            <Year>2012</Year>
+            <CLineText>(C) 2012 Planet Punk Music GbRThis label copy information is the subject of copyright protection. All rights reserved.(C) EMI Music Germany GmbH &amp; Co. KG</CLineText>
+         </CLine>
+         <Duration>PT6M36S</Duration>
+         <Genre ApplicableTerritoryCode="Worldwide">
+            <GenreText>Pop</GenreText>
+         </Genre>
+         <ParentalWarningType>NoAdviceAvailable</ParentalWarningType>
+         <IsMultiArtistCompilation>false</IsMultiArtistCompilation>
+         <ResourceGroup>
+            <AdditionalTitle>
+               <TitleText>Component 1</TitleText>
+            </AdditionalTitle>
+            <SequenceNumber>1</SequenceNumber>
+            <ResourceGroupContentItem>
+               <SequenceNumber>1</SequenceNumber>
+               <ReleaseResourceReference>A1</ReleaseResourceReference>
+               <LinkedReleaseResourceReference LinkDescription="VideoScreenCapture"
+                  >A4</LinkedReleaseResourceReference>
+            </ResourceGroupContentItem>
+            <ResourceGroupContentItem>
+               <SequenceNumber>2</SequenceNumber>
+               <ReleaseResourceReference>A2</ReleaseResourceReference>
+               <LinkedReleaseResourceReference LinkDescription="VideoScreenCapture"
+                  >A5</LinkedReleaseResourceReference>
+            </ResourceGroupContentItem>
+            <LinkedReleaseResourceReference>A3</LinkedReleaseResourceReference>
+         </ResourceGroup>
+      </Release>
+      <TrackRelease>
+         <ReleaseReference>R1</ReleaseReference>
+         <ReleaseId>
+            <ProprietaryId Namespace="PADPIDA2013042401U">05099962136853_DEMA61100471_01_001</ProprietaryId>
+         </ReleaseId>
+         <DisplayTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>La Première Fois (Video 2D)</TitleText>
+         </DisplayTitle>
+         <AdditionalTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>La Première Fois</TitleText>
+            <SubTitle>Video 2D</SubTitle>
+         </AdditionalTitle>
+         <ReleaseResourceReference>A1</ReleaseResourceReference>
+         <ReleaseLabelReference ApplicableTerritoryCode="Worldwide">PCAPITOL</ReleaseLabelReference>
+         <Genre ApplicableTerritoryCode="Worldwide">
+            <GenreText>Pop</GenreText>
+         </Genre>
+      </TrackRelease>
+      <TrackRelease>
+         <ReleaseReference>R2</ReleaseReference>
+         <ReleaseId>
+            <ProprietaryId Namespace="PADPIDA2013042401U">05099962136853_DEMA61100472_01_002</ProprietaryId>
+         </ReleaseId>
+         <DisplayTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>La Première Fois (Video 3D)</TitleText>
+         </DisplayTitle>
+         <AdditionalTitle ApplicableTerritoryCode="Worldwide">
+            <TitleText>La Première Fois</TitleText>
+            <SubTitle>Video 3D</SubTitle>
+         </AdditionalTitle>
+         <ReleaseResourceReference>A2</ReleaseResourceReference>
+         <ReleaseLabelReference ApplicableTerritoryCode="Worldwide">PCAPITOL</ReleaseLabelReference>
+         <Genre ApplicableTerritoryCode="Worldwide">
+            <GenreText>Pop</GenreText>
+         </Genre>
+      </TrackRelease>
+   </ReleaseList>
+   <DealList>
+      <ReleaseDeal>
+         <DealReleaseReference>R0</DealReleaseReference>
+         <Deal>
+            <DealTerms>
+               <TerritoryCode>AT</TerritoryCode>
+               <TerritoryCode>CH</TerritoryCode>
+               <TerritoryCode>DE</TerritoryCode>
+               <ValidityPeriod>
+                  <StartDate>2012-02-17</StartDate>
+               </ValidityPeriod>
+               <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+               <UseType>PermanentDownload</UseType>
+               <UseType>ConditionalDownload</UseType>
+               <UseType>UserMakeAvailableLabelProvided</UseType>
+               <UseType>UserMakeAvailableUserProvided</UseType>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>iTunes UMG</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test2</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <DistributionChannel>
+                  <PartyName>
+                     <FullName>test1</FullName>
+                  </PartyName>
+                  <PartyId>
+                     <ProprietaryId Namespace="PADPIDA2007062701B">test1</ProprietaryId>
+                  </PartyId>
+               </DistributionChannel>
+               <PriceInformation>
+                  <PriceCode Namespace="PADPIDA2013042401U">AAAA</PriceCode>
+               </PriceInformation>
+            </DealTerms>
+         </Deal>
+      </ReleaseDeal>
+   </DealList>
+</ern:NewReleaseMessage>
