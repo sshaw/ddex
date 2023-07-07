@@ -6,7 +6,7 @@ This project's `Rakefile` contains several tasks that use `jaxb2ruby` to facilit
 Once you've generated your code you'll need to integrate it into the main `DDEX` module.
 
 You also need to write tests, which means you'll have to create XML test fixtures for the given spec and/or version you're adding.
-DDEX is bloated -<i>very bloated</i>, so this repository provides you with a way to generate XML fixtures too.
+DDEX is bloated –<i>very bloated</i>, so this repository provides you with a way to generate XML fixtures too.
 
 ## Code Generation
 
@@ -44,7 +44,7 @@ Where `ern` is the spec and `3.6` is the ERN version you want to incorporate.
 ## Adding Code to the Main Module
 
 If you're adding a version to an existing spec this is not necessary. Otherwise, once code is generated for a spec it must be accessible
-via the main DDEX module. [Take a look at the file](https://github.com/sshaw/ddex/tree/v0.0.1/lib/ddex.rb) to see how this is done for other specs.
+via the main DDEX module. [Take a look at the file](https://github.com/sshaw/ddex/blob/v0.0.10/lib/ddex/ern.rb) to see how this is done for other specs.
 
 ## Testing
 
