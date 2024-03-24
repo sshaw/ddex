@@ -107,6 +107,13 @@ module DDEX
     end
 
     private
+    # Returns array of internal reference objects, such as attributes
+    # and composed XML objects (superclass attrs first, please).
+    def self.roxml_attrs
+      @roxml_attrs ||= []
+      ((superclass.respond_to?(:roxml_attrs) ? superclass.roxml_attrs : []) + @roxml_attrs).freeze
+    end
+
     def roxml_attributes
       @roxml_attributes ||= begin
         attr = {}
