@@ -1,4 +1,3 @@
-require "active_support/core_ext/module/attribute_accessors"
 require "nokogiri"
 
 module DDEX
@@ -135,8 +134,10 @@ module DDEX
       }
     }.freeze
 
-    mattr_reader :config
     @@config = DEFAULT_CONFIG
+    def self.config
+      @@config
+    end
 
     class << self
       def supported_versions
