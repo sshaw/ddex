@@ -1,5 +1,11 @@
+v0.1.0     2025-12-06
+--------------------
+* ROXML-related dependency fixes to work with Ruby 3.4
+* Make middleware Rack 3 compliant (#24 thanks Frederic Morel)
+
 v0.0.11    2023-12-30
-* Add sypport for ERN 4.3
+--------------------
+* Add support for ERN 4.3
 
 v0.0.10    2022-12-17
 --------------------
